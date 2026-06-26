@@ -1,0 +1,91 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "description": "AI 图像生成 Prompt 模板库，支持 Midjourney / DALL·E 3 / Stable Diffusion",
+    "templates_count": 8,
+    "last_updated": "2026-06-26"
+  },
+  "global_modifiers": {
+    "style_clean": "clean infographic design, modern flat illustration style, soft natural lighting, high quality, 4K, professional food photography aesthetic",
+    "style_dark": "dark mode infographic, neon accent colors, sleek modern design, 4K, high contrast",
+    "style_chinese": "Chinese text labels, modern Chinese typography, clean layout, editorial design",
+    "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+  },
+  "templates": [
+    {
+      "id": "tpl-food-card",
+      "name": "食物GI卡片",
+      "description": "生成单个食物的GI/热量信息卡片，适合社交媒体分享",
+      "target_platform": "Midjourney / DALL·E 3",
+      "variables": ["name_zh", "name_en", "gi", "gi_level", "calories", "carbs", "blood_sugar_impact", "serving", "tips"],
+      "template": "A high-quality food photography of {name_zh} ({name_en}), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: {gi} ({gi_level}GI), 热量: {calories}千卡/100g, 碳水: {carbs}g/100g, 升糖影响: {blood_sugar_impact}. Serving suggestion: {serving}. Key tip: {tips}. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "template_dalle": "A professional food photograph of {name_zh}, beautifully styled on a marble surface. The image includes a clean text overlay: GI {gi} ({gi_level}GI), {calories} kcal/100g, carbs {carbs}g, glycemic impact: {blood_sugar_impact}. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "example_output": "A high-quality food photography of 苹果 (Apple), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 36 (低GI), 热量: 53千卡/100g, 碳水: 13.7g/100g, 升糖影响: 极低. Serving suggestion: 一个中等大小（约180g）. Key tip: 带皮吃保留更多膳食纤维和抗氧化物质. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw"
+    },
+    {
+      "id": "tpl-food-comparison",
+      "name": "高GI vs 低GI 食物对比",
+      "description": "并排对比高GI和低GI食物，直观展示升糖差异",
+      "target_platform": "Midjourney / DALL·E 3",
+      "variables": ["high_gi_food", "high_gi_value", "low_gi_food", "low_gi_value", "swap_advice"],
+      "template": "Split composition infographic: LEFT side - {high_gi_food} labeled '高GI {high_gi_value} ⚠️' with a reddish warning tint, RIGHT side - {low_gi_food} labeled '低GI {low_gi_value} ✓' with a green healthy tint. Center divider shows an arrow '替换建议 Replace with'. Bottom text: '{swap_advice}'. Modern healthcare infographic style, clean design, educational. --ar 16:9 --style raw",
+      "template_dalle": "A split-screen educational infographic. Left half shows {high_gi_food} with a subtle red warning border labeled '高GI {high_gi_value}'. Right half shows {low_gi_food} with a green healthy border labeled '低GI {low_gi_value}'. A central arrow indicates 'better choice'. Professional medical illustration style, clean and educational.",
+      "example_output": "Split composition infographic: LEFT side - 白米饭 labeled '高GI 83 ⚠️' with a reddish warning tint, RIGHT side - 糙米饭 labeled '低GI 68 ✓' with a green healthy tint. Center divider shows an arrow '替换建议 Replace with'. Bottom text: '把一半白米饭换成糙米，餐后血糖峰值降低约15%'. Modern healthcare infographic style, clean design, educational. --ar 16:9 --style raw"
+    },
+    {
+      "id": "tpl-meal-plate",
+      "name": "控糖餐盘",
+      "description": "展示理想控糖餐盘的食物比例和搭配",
+      "target_platform": "DALL·E 3 / SD",
+      "variables": ["protein", "vegetables", "carbs", "fat_source", "description"],
+      "template_dalle": "A top-down photograph of a balanced blood-sugar-friendly meal plate. The plate is divided: 50% filled with colorful non-starchy vegetables ({vegetables}), 25% with lean protein ({protein}), 25% with low-GI complex carbs ({carbs}), with a small amount of healthy fat from {fat_source}. Natural lighting, food styling, clean composition. The meal looks delicious, fresh, and nutritious. Text overlay: '{description}' in elegant Chinese typography.",
+      "example_output": "A top-down photograph of a balanced blood-sugar-friendly meal plate. The plate is divided: 50% filled with colorful non-starchy vegetables (西兰花、菠菜、番茄), 25% with lean protein (煎三文鱼), 25% with low-GI complex carbs (糙米饭), with a small amount of healthy fat from 橄榄油. Natural lighting, food styling, clean composition. The meal looks delicious, fresh, and nutritious. Text overlay: '理想控糖餐盘：蔬菜占一半，蛋白质和碳水各占四分之一' in elegant Chinese typography."
+    },
+    {
+      "id": "tpl-knowledge-info",
+      "name": "知识信息图",
+      "description": "血糖知识概念的可视化信息图",
+      "target_platform": "Midjourney / DALL·E 3",
+      "variables": ["title", "summary", "key_point_1", "key_point_2", "key_point_3"],
+      "template": "Modern infographic explaining '{title}'. Central visual element illustrating the concept. Three key points displayed as elegant callout cards: 1) {key_point_1}, 2) {key_point_2}, 3) {key_point_3}. Summary line at bottom: '{summary}'. Clean medical illustration style, blue and green color palette, educational, professional. --ar 16:9 --style raw",
+      "template_dalle": "An educational medical infographic about '{title}'. Clean layout with soft blue-green gradient background. Three icon-labeled sections explaining: {key_point_1}, {key_point_2}, {key_point_3}. A simple scientific illustration visually demonstrates the concept. Bottom banner reads '{summary}'. Professional healthcare design, suitable for social media sharing.",
+      "example_output": "Modern infographic explaining '什么是GI（血糖生成指数）'. Central visual element illustrating the concept. Three key points displayed as elegant callout cards: 1) GI ≤ 55：低GI食物，升糖慢, 2) GI 56-69：中GI食物, 3) GI ≥ 70：高GI食物，升糖快. Summary line at bottom: 'GI衡量食物中碳水化合物对血糖的影响速度'. Clean medical illustration style, blue and green color palette, educational, professional. --ar 16:9 --style raw"
+    },
+    {
+      "id": "tpl-gi-gl-quadrant",
+      "name": "GI-GL四象限图",
+      "description": "以象限图形式展示食物的GI/GL分布",
+      "target_platform": "Midjourney / DALL·E 3",
+      "variables": ["food_high_gi_low_gl", "food_high_gi_high_gl", "food_low_gi_low_gl", "food_low_gi_high_gl"],
+      "template_dalle": "A four-quadrant chart infographic explaining GI vs GL. X-axis: GI (低→高), Y-axis: GL (低→高). Quadrant I (top-left): 高GL+低GI food example '{food_low_gi_high_gl}' colored orange '注意份量'. Quadrant II (top-right): 高GL+高GI food example '{food_high_gi_high_gl}' colored red '危险区'. Quadrant III (bottom-left): 低GL+低GI food example '{food_low_gi_low_gl}' colored green '安全区'. Quadrant IV (bottom-right): 高GI+低GL food example '{food_high_gi_low_gl}' colored yellow '小份可行'. Modern data visualization style, clean typography.",
+      "example_output": "A four-quadrant chart infographic explaining GI vs GL. X-axis: GI (低→高), Y-axis: GL (低→高). Quadrant I (top-left): 高GL+低GI food example '大量全麦面包' colored orange '注意份量'. Quadrant II (top-right): 高GL+高GI food example '白米饭大碗' colored red '危险区'. Quadrant III (bottom-left): 低GL+低GI food example '西兰花、鸡蛋' colored green '安全区'. Quadrant IV (bottom-right): 高GI+低GL food example '一小块西瓜' colored yellow '小份可行'. Modern data visualization style, clean typography."
+    },
+    {
+      "id": "tpl-blood-sugar-curve",
+      "name": "血糖曲线对比图",
+      "description": "展示不同食物/方式对血糖曲线的影响对比",
+      "target_platform": "DALL·E 3",
+      "variables": ["scenario_a", "scenario_b", "conclusion"],
+      "template_dalle": "A clean medical chart showing two blood glucose response curves over 2 hours after eating. Blue curve labeled '{scenario_a}' shows a sharp spike then crash. Green curve labeled '{scenario_b}' shows a gentle rise and steady decline. The area between curves is shaded to highlight the difference. Time labels on X-axis (0min, 30min, 60min, 90min, 120min), blood glucose on Y-axis. Conclusion text at bottom: '{conclusion}'. Professional medical data visualization, white background, clean design.",
+      "example_output": "A clean medical chart showing two blood glucose response curves over 2 hours after eating. Blue curve labeled '先吃米饭再吃菜' shows a sharp spike then crash. Green curve labeled '先吃菜和蛋白质，最后吃米饭' shows a gentle rise and steady decline. The area between curves is shaded to highlight the difference. Time labels on X-axis (0min, 30min, 60min, 90min, 120min), blood glucose on Y-axis. Conclusion text at bottom: '同样食物，改变进食顺序可降低餐后血糖峰值20-40%'. Professional medical data visualization, white background, clean design."
+    },
+    {
+      "id": "tpl-food-ranking",
+      "name": "食物GI排行榜",
+      "description": "按GI值排列的多种食物对比展示",
+      "target_platform": "Midjourney / DALL·E 3",
+      "variables": ["category", "foods_list", "key_insight"],
+      "template_dalle": "A ranked horizontal bar chart infographic showing {category} ranked by Glycemic Index. Each bar represents a food item with its GI value, color-coded from green (low GI) through yellow (medium) to red (high GI). Food icons or small illustrations next to each label. Data items: {foods_list}. Key insight displayed prominently: '{key_insight}'. Clean data visualization, modern design, educational.  --ar 16:9 --style raw",
+      "example_output": "A ranked horizontal bar chart infographic showing 主食主食 ranked by Glycemic Index. Each bar represents a food item with its GI value, color-coded from green (low GI) through yellow (medium) to red (high GI). Food icons or small illustrations next to each label. Data items: 白米饭83, 馒头88, 全麦面包69, 糙米饭68, 燕麦片55, 红薯54, 藜麦53. Key insight displayed prominently: '同为主食，GI从53到88不等——选择比克制更重要'. Clean data visualization, modern design, educational. --ar 16:9 --style raw"
+    },
+    {
+      "id": "tpl-daily-tips",
+      "name": "每日控糖小贴士",
+      "description": "简短的每日控糖行动建议卡片",
+      "target_platform": "DALL·E 3",
+      "variables": ["tip_title", "tip_content", "action"],
+      "template_dalle": "A warm, motivational card design with soft gradient background (green to blue). Large, clean title: '{tip_title}'. The main message in elegant Chinese typography: '{tip_content}'. A simple, actionable call-to-action at the bottom: '{action}'. Small decorative elements of fresh vegetables or healthy food silhouettes. Cozy, encouraging, wellness aesthetic. Square format for social media.",
+      "example_output": "A warm, motivational card design with soft gradient background (green to blue). Large, clean title: '💡 今日控糖建议'. The main message in elegant Chinese typography: '餐后散步15分钟，可以显著降低餐后血糖峰值'. A simple, actionable call-to-action at the bottom: '今天午饭后试试吧！'. Small decorative elements of fresh vegetables or healthy food silhouettes. Cozy, encouraging, wellness aesthetic. Square format for social media."
+    }
+  ]
+}

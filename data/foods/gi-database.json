@@ -1,0 +1,5304 @@
+{
+  "_meta": {
+    "name": "血糖知识食物GI数据库",
+    "version": "2.0.0",
+    "description": "基于中国食物成分表（第6版）、悉尼大学GI数据库、USDA FoodData Central 整理",
+    "total_foods": 145,
+    "categories": [
+      "混合膳食",
+      "零食",
+      "饮品",
+      "肉蛋奶",
+      "谷类",
+      "水果",
+      "豆类",
+      "糖类",
+      "薯类",
+      "蔬菜"
+    ],
+    "gi_distribution": {
+      "低GI (≤55)": 87,
+      "中GI (56-70)": 26,
+      "高GI (>70)": 20,
+      "零碳水 (GI=0)": 12
+    },
+    "data_sources": {
+      "primary": [
+        "中国食物成分表（第6版）— 中国疾病预防控制中心营养与健康所",
+        "悉尼大学GI数据库 (glycemicindex.com) — 4277条记录",
+        "USDA FoodData Central (fdc.nal.usda.gov)"
+      ],
+      "reference": [
+        "中国居民膳食指南（2022）",
+        "中国2型糖尿病防治指南（2024版）"
+      ]
+    },
+    "gi_classification": {
+      "低GI": "≤55，升糖慢，适合糖尿病和控糖人群",
+      "中GI": "56-70，升糖中等，适量食用",
+      "高GI": ">70，升糖快，需严格控制"
+    },
+    "disclaimer": "数据仅供参考，实际GI值受烹饪方式、成熟度、个体差异等因素影响。不构成医疗建议。",
+    "last_updated": "2026-06-26"
+  },
+  "foods": [
+    {
+      "id": "food-001",
+      "name_zh": "葡萄糖",
+      "name_en": "Glucose",
+      "category": "糖类",
+      "subcategory": "单糖",
+      "gi": 100,
+      "gi_level": "高",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 10,
+      "serving_desc": "约10g",
+      "calories_per_100g": 400,
+      "carbs_per_100g": 100,
+      "protein_per_100g": 0,
+      "fat_per_100g": 0,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极高",
+      "best_timing": "无",
+      "suitable_for": "医疗急救低血糖时使用",
+      "caution_for": "非急救情况避免直接食用",
+      "tips": [
+        "血糖基准物质，GI=100",
+        "所有糖类中升糖最快",
+        "直接饮用葡萄糖水后血糖极速飙升"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-002",
+      "name_zh": "蔗糖/白砂糖",
+      "name_en": "Sucrose/White Sugar",
+      "category": "糖类",
+      "subcategory": "双糖",
+      "gi": 65,
+      "gi_level": "中",
+      "gl_per_serving": 7,
+      "gl_level": "低",
+      "serving_g": 10,
+      "serving_desc": "约10g",
+      "calories_per_100g": 387,
+      "carbs_per_100g": 99.9,
+      "protein_per_100g": 0,
+      "fat_per_100g": 0,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "中",
+      "best_timing": "无",
+      "suitable_for": "一般人群少量",
+      "caution_for": "糖尿病/减重者严格控制",
+      "tips": [
+        "中GI但纯热量无营养",
+        "每日添加糖应控制在25g以下",
+        "液态糖比固态糖升糖更快"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-003",
+      "name_zh": "蜂蜜",
+      "name_en": "Honey",
+      "category": "糖类",
+      "subcategory": "天然糖",
+      "gi": 61,
+      "gi_level": "中",
+      "gl_per_serving": 10,
+      "gl_level": "低",
+      "serving_g": 25,
+      "serving_desc": "约25g",
+      "calories_per_100g": 321,
+      "carbs_per_100g": 75.6,
+      "protein_per_100g": 0.4,
+      "fat_per_100g": 1.9,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "中",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "1岁以下婴儿禁用",
+      "tips": [
+        "天然蜂蜜GI略低于白糖",
+        "果糖含量约40%",
+        "一勺蜂蜜约21g糖"
+      ],
+      "recommended_combos": [
+        "柠檬水",
+        "燕麦"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-004",
+      "name_zh": "冰糖",
+      "name_en": "Rock Sugar",
+      "category": "糖类",
+      "subcategory": "加工糖",
+      "gi": 70,
+      "gi_level": "中",
+      "gl_per_serving": 7,
+      "gl_level": "低",
+      "serving_g": 10,
+      "serving_desc": "约10g",
+      "calories_per_100g": 397,
+      "carbs_per_100g": 99,
+      "protein_per_100g": 0,
+      "fat_per_100g": 0,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "中",
+      "best_timing": "无",
+      "suitable_for": "少量调味",
+      "caution_for": "糖尿病者避免",
+      "tips": [
+        "GI较高，与白糖接近",
+        "常用于中式炖品",
+        "控制用量"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-005",
+      "name_zh": "麦芽糖",
+      "name_en": "Maltose",
+      "category": "糖类",
+      "subcategory": "双糖",
+      "gi": 105,
+      "gi_level": "高",
+      "gl_per_serving": 11,
+      "gl_level": "中",
+      "serving_g": 10,
+      "serving_desc": "约10g",
+      "calories_per_100g": 336,
+      "carbs_per_100g": 84,
+      "protein_per_100g": 0,
+      "fat_per_100g": 0,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极高",
+      "best_timing": "无",
+      "suitable_for": "一般人群少量",
+      "caution_for": "糖尿病者避免",
+      "tips": [
+        "GI比葡萄糖还高",
+        "常用于烘焙和传统糖果",
+        "升糖极快"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-006",
+      "name_zh": "白米饭",
+      "name_en": "White Rice, cooked",
+      "category": "谷类",
+      "subcategory": "白米",
+      "gi": 83,
+      "gi_level": "高",
+      "gl_per_serving": 36,
+      "gl_level": "高",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 116,
+      "carbs_per_100g": 25.9,
+      "protein_per_100g": 2.6,
+      "fat_per_100g": 0.3,
+      "fiber_per_100g": 0.4,
+      "blood_sugar_impact": "极高",
+      "best_timing": "午餐",
+      "suitable_for": "血糖控制良好者可少量食用",
+      "caution_for": "糖尿病患者需严格控制份量",
+      "tips": [
+        "升糖速度极快，建议混合糙米或杂豆降低GI",
+        "放凉后部分淀粉变为抗性淀粉，升糖略降",
+        "每餐控制在一小碗（150g）以内",
+        "先吃蔬菜和蛋白质，最后吃米饭可延缓升糖"
+      ],
+      "recommended_combos": [
+        "绿叶蔬菜",
+        "瘦肉",
+        "鱼肉",
+        "豆制品"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-007",
+      "name_zh": "糙米饭",
+      "name_en": "Brown Rice, cooked",
+      "category": "谷类",
+      "subcategory": "全谷物",
+      "gi": 50,
+      "gi_level": "低",
+      "gl_per_serving": 17,
+      "gl_level": "中",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 111,
+      "carbs_per_100g": 23.0,
+      "protein_per_100g": 2.6,
+      "fat_per_100g": 0.9,
+      "fiber_per_100g": 1.8,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐",
+      "suitable_for": "血糖偏高者替代白米饭的首选",
+      "caution_for": "消化功能弱者适量",
+      "tips": [
+        "比白米升糖慢得多（GI低约33点）",
+        "麸皮含丰富膳食纤维和B族维生素",
+        "提前浸泡可改善口感，不改变GI",
+        "放凉后部分淀粉转为抗性淀粉"
+      ],
+      "recommended_combos": [
+        "菌菇类",
+        "豆类",
+        "鱼",
+        "蔬菜"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-008",
+      "name_zh": "糯米饭",
+      "name_en": "Glutinous Rice, cooked",
+      "category": "谷类",
+      "subcategory": "糯米",
+      "gi": 87,
+      "gi_level": "高",
+      "gl_per_serving": 35,
+      "gl_level": "高",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 97,
+      "carbs_per_100g": 23.0,
+      "protein_per_100g": 2.5,
+      "fat_per_100g": 0.3,
+      "fiber_per_100g": 0.3,
+      "blood_sugar_impact": "极高",
+      "best_timing": "无",
+      "suitable_for": "血糖正常人群偶尔少量",
+      "caution_for": "糖尿病及糖耐量异常者避免",
+      "tips": [
+        "支链淀粉含量极高，升糖速度最快的米饭",
+        "汤圆、粽子、糯米鸡均属此类",
+        "糖尿病患者应完全避免"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-009",
+      "name_zh": "大米粥",
+      "name_en": "Rice Porridge/Congee",
+      "category": "谷类",
+      "subcategory": "粥类",
+      "gi": 69,
+      "gi_level": "中",
+      "gl_per_serving": 9,
+      "gl_level": "低",
+      "serving_g": 200,
+      "serving_desc": "约200g",
+      "calories_per_100g": 46,
+      "carbs_per_100g": 9.8,
+      "protein_per_100g": 1.1,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 0.1,
+      "blood_sugar_impact": "中",
+      "best_timing": "早餐",
+      "suitable_for": "肠胃不适时少量食用",
+      "caution_for": "糖尿病患者避免单独食用白米粥",
+      "tips": [
+        "长时间熬煮使淀粉糊化，GI高于米饭",
+        "熬煮越久GI越高",
+        "可加入杂粮、豆类降低GI"
+      ],
+      "recommended_combos": [
+        "皮蛋瘦肉",
+        "蔬菜"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-010",
+      "name_zh": "小米粥",
+      "name_en": "Millet Porridge",
+      "category": "谷类",
+      "subcategory": "粥类",
+      "gi": 62,
+      "gi_level": "中",
+      "gl_per_serving": 10,
+      "gl_level": "低",
+      "serving_g": 200,
+      "serving_desc": "约200g",
+      "calories_per_100g": 46,
+      "carbs_per_100g": 8.4,
+      "protein_per_100g": 1.4,
+      "fat_per_100g": 0.7,
+      "fiber_per_100g": 0.3,
+      "blood_sugar_impact": "中",
+      "best_timing": "早餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病患者仍需控制份量",
+      "tips": [
+        "GI低于大米粥",
+        "含B族维生素丰富",
+        "养胃但升糖不低"
+      ],
+      "recommended_combos": [
+        "南瓜",
+        "红枣"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-011",
+      "name_zh": "馒头",
+      "name_en": "Steamed Bun/Mantou",
+      "category": "谷类",
+      "subcategory": "面食",
+      "gi": 88,
+      "gi_level": "高",
+      "gl_per_serving": 33,
+      "gl_level": "高",
+      "serving_g": 80,
+      "serving_desc": "约80g",
+      "calories_per_100g": 223,
+      "carbs_per_100g": 44.2,
+      "protein_per_100g": 7.0,
+      "fat_per_100g": 1.1,
+      "fiber_per_100g": 2.3,
+      "blood_sugar_impact": "极高",
+      "best_timing": "早餐",
+      "suitable_for": "血糖正常人群",
+      "caution_for": "糖尿病及糖耐量异常者应避免",
+      "tips": [
+        "升糖速度和幅度均很高",
+        "可替换为全麦馒头或杂粮馒头",
+        "如食用，务必搭配足量蔬菜和蛋白质"
+      ],
+      "recommended_combos": [
+        "豆浆（无糖）",
+        "鸡蛋",
+        "蔬菜沙拉"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-012",
+      "name_zh": "全麦面包",
+      "name_en": "Whole Wheat Bread",
+      "category": "谷类",
+      "subcategory": "面包",
+      "gi": 69,
+      "gi_level": "中",
+      "gl_per_serving": 14,
+      "gl_level": "中",
+      "serving_g": 70,
+      "serving_desc": "约70g",
+      "calories_per_100g": 247,
+      "carbs_per_100g": 41.3,
+      "protein_per_100g": 13.4,
+      "fat_per_100g": 3.4,
+      "fiber_per_100g": 6.0,
+      "blood_sugar_impact": "中",
+      "best_timing": "早餐",
+      "suitable_for": "血糖偏高者可适量替代白面包",
+      "caution_for": "注意份量（2片为宜）",
+      "tips": [
+        "选购时注意配料表第一位是否为全麦粉",
+        "市售全麦面包可能仅添加少量全麦粉",
+        "搭配鸡蛋或牛油果可进一步降低升糖"
+      ],
+      "recommended_combos": [
+        "鸡蛋",
+        "牛油果",
+        "生菜",
+        "番茄"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-013",
+      "name_zh": "白面包",
+      "name_en": "White Bread",
+      "category": "谷类",
+      "subcategory": "面包",
+      "gi": 88,
+      "gi_level": "高",
+      "gl_per_serving": 28,
+      "gl_level": "高",
+      "serving_g": 70,
+      "serving_desc": "约70g",
+      "calories_per_100g": 265,
+      "carbs_per_100g": 49.1,
+      "protein_per_100g": 9.0,
+      "fat_per_100g": 3.2,
+      "fiber_per_100g": 2.7,
+      "blood_sugar_impact": "极高",
+      "best_timing": "早餐",
+      "suitable_for": "一般人群偶尔",
+      "caution_for": "糖尿病者避免",
+      "tips": [
+        "精制小麦粉制作，GI很高",
+        "比全麦面包升糖快得多",
+        "法棍/吐司均属此类"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-014",
+      "name_zh": "法棍面包",
+      "name_en": "French Baguette",
+      "category": "谷类",
+      "subcategory": "面包",
+      "gi": 95,
+      "gi_level": "高",
+      "gl_per_serving": 35,
+      "gl_level": "高",
+      "serving_g": 70,
+      "serving_desc": "约70g",
+      "calories_per_100g": 272,
+      "carbs_per_100g": 51.9,
+      "protein_per_100g": 9.0,
+      "fat_per_100g": 1.3,
+      "fiber_per_100g": 2.7,
+      "blood_sugar_impact": "极高",
+      "best_timing": "无",
+      "suitable_for": "一般人群偶尔",
+      "caution_for": "糖尿病者避免",
+      "tips": [
+        "GI极高，接近葡萄糖",
+        "精制面粉烘焙",
+        "糖尿病患者应完全避免"
+      ],
+      "recommended_combos": [],
+      "data_sources": "SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-015",
+      "name_zh": "燕麦片（传统压制）",
+      "name_en": "Rolled Oats",
+      "category": "谷类",
+      "subcategory": "燕麦",
+      "gi": 55,
+      "gi_level": "低",
+      "gl_per_serving": 13,
+      "gl_level": "中",
+      "serving_g": 40,
+      "serving_desc": "约40g",
+      "calories_per_100g": 377,
+      "carbs_per_100g": 66.3,
+      "protein_per_100g": 13.2,
+      "fat_per_100g": 6.7,
+      "fiber_per_100g": 10.1,
+      "blood_sugar_impact": "极低",
+      "best_timing": "早餐",
+      "suitable_for": "血糖偏高者的优质早餐",
+      "caution_for": "即食燕麦GI偏高（79），慎选",
+      "tips": [
+        "选择传统压制或钢切燕麦，避免即食燕麦（GI高达79）",
+        "钢切燕麦GI仅为42，是最优选择",
+        "β-葡聚糖有助延缓血糖上升",
+        "不要加糖，用少量水果或肉桂粉调味"
+      ],
+      "recommended_combos": [
+        "坚果",
+        "鸡蛋",
+        "蓝莓",
+        "奇亚籽"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-016",
+      "name_zh": "即食燕麦片",
+      "name_en": "Instant Oats",
+      "category": "谷类",
+      "subcategory": "燕麦",
+      "gi": 79,
+      "gi_level": "高",
+      "gl_per_serving": 18,
+      "gl_level": "中",
+      "serving_g": 40,
+      "serving_desc": "约40g",
+      "calories_per_100g": 377,
+      "carbs_per_100g": 66.3,
+      "protein_per_100g": 13.2,
+      "fat_per_100g": 6.7,
+      "fiber_per_100g": 10.1,
+      "blood_sugar_impact": "极高",
+      "best_timing": "早餐",
+      "suitable_for": "一般人群偶尔",
+      "caution_for": "糖尿病者避免，选传统压制燕麦",
+      "tips": [
+        "加工度高导致GI远高于传统燕麦",
+        "预煮+压薄使淀粉易消化",
+        "不推荐血糖偏高者食用"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-017",
+      "name_zh": "钢切燕麦",
+      "name_en": "Steel Cut Oats",
+      "category": "谷类",
+      "subcategory": "燕麦",
+      "gi": 42,
+      "gi_level": "低",
+      "gl_per_serving": 9,
+      "gl_level": "低",
+      "serving_g": 40,
+      "serving_desc": "约40g",
+      "calories_per_100g": 380,
+      "carbs_per_100g": 67.0,
+      "protein_per_100g": 12.5,
+      "fat_per_100g": 6.5,
+      "fiber_per_100g": 10.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "早餐",
+      "suitable_for": "糖尿病患者的最优燕麦选择",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "GI最低的燕麦品类",
+        "加工最少，消化最慢",
+        "需要较长时间烹煮（20-30分钟）"
+      ],
+      "recommended_combos": [
+        "坚果",
+        "蓝莓",
+        "奇亚籽"
+      ],
+      "data_sources": "SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-018",
+      "name_zh": "荞麦面",
+      "name_en": "Buckwheat Noodles/Soba",
+      "category": "谷类",
+      "subcategory": "面条",
+      "gi": 49,
+      "gi_level": "低",
+      "gl_per_serving": 14,
+      "gl_level": "中",
+      "serving_g": 180,
+      "serving_desc": "约180g",
+      "calories_per_100g": 99,
+      "carbs_per_100g": 21.4,
+      "protein_per_100g": 4.8,
+      "fat_per_100g": 0.5,
+      "fiber_per_100g": 2.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "血糖偏高者可选的面食替代",
+      "caution_for": "市售荞麦面可能混入小麦粉",
+      "tips": [
+        "升糖速度显著低于小麦面条",
+        "含芦丁（Rutin），有助血管健康",
+        "注意汤底和酱料是否含糖",
+        "选购高荞麦含量（>50%）的面"
+      ],
+      "recommended_combos": [
+        "蔬菜",
+        "菌菇",
+        "鸡蛋",
+        "豆腐"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-019",
+      "name_zh": "意大利面",
+      "name_en": "Pasta/Spaghetti",
+      "category": "谷类",
+      "subcategory": "面条",
+      "gi": 45,
+      "gi_level": "低",
+      "gl_per_serving": 16,
+      "gl_level": "中",
+      "serving_g": 180,
+      "serving_desc": "约180g",
+      "calories_per_100g": 158,
+      "carbs_per_100g": 30.9,
+      "protein_per_100g": 5.8,
+      "fat_per_100g": 0.9,
+      "fiber_per_100g": 1.8,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "血糖偏高者可选的主食",
+      "caution_for": "注意酱料含糖量",
+      "tips": [
+        "硬质小麦制作的意面GI较低",
+        "煮5-15分钟GI不同，煮越久GI越高",
+        "al dente（有嚼劲）GI最低"
+      ],
+      "recommended_combos": [
+        "番茄酱（无糖）",
+        "蔬菜",
+        "橄榄油",
+        "肉酱"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-020",
+      "name_zh": "普通面条",
+      "name_en": "Chinese Noodles",
+      "category": "谷类",
+      "subcategory": "面条",
+      "gi": 82,
+      "gi_level": "高",
+      "gl_per_serving": 30,
+      "gl_level": "高",
+      "serving_g": 180,
+      "serving_desc": "约180g",
+      "calories_per_100g": 110,
+      "carbs_per_100g": 24.3,
+      "protein_per_100g": 3.5,
+      "fat_per_100g": 0.6,
+      "fiber_per_100g": 1.2,
+      "blood_sugar_impact": "极高",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者避免或少量",
+      "tips": [
+        "精制小麦粉制作，GI较高",
+        "汤面比拌面升糖更快",
+        "可加入大量蔬菜延缓升糖"
+      ],
+      "recommended_combos": [
+        "蔬菜",
+        "鸡蛋",
+        "瘦肉"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-021",
+      "name_zh": "米粉",
+      "name_en": "Rice Noodles",
+      "category": "谷类",
+      "subcategory": "面条",
+      "gi": 58,
+      "gi_level": "中",
+      "gl_per_serving": 20,
+      "gl_level": "中",
+      "serving_g": 180,
+      "serving_desc": "约180g",
+      "calories_per_100g": 109,
+      "carbs_per_100g": 24.9,
+      "protein_per_100g": 3.0,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 0.5,
+      "blood_sugar_impact": "中",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者少量",
+      "tips": [
+        "GI中等，低于白米饭但高于糙米",
+        "南方常见主食",
+        "炒粉比汤粉升糖稍慢"
+      ],
+      "recommended_combos": [
+        "蔬菜",
+        "瘦肉",
+        "鸡蛋"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-022",
+      "name_zh": "玉米（老）",
+      "name_en": "Corn",
+      "category": "谷类",
+      "subcategory": "玉米",
+      "gi": 52,
+      "gi_level": "低",
+      "gl_per_serving": 12,
+      "gl_level": "中",
+      "serving_g": 100,
+      "serving_desc": "约100g",
+      "calories_per_100g": 112,
+      "carbs_per_100g": 22.8,
+      "protein_per_100g": 4.0,
+      "fat_per_100g": 1.2,
+      "fiber_per_100g": 2.9,
+      "blood_sugar_impact": "极低",
+      "best_timing": "早餐/午餐",
+      "suitable_for": "血糖偏高者可适量食用",
+      "caution_for": "糯玉米需注意",
+      "tips": [
+        "老玉米GI低于甜玉米和糯玉米",
+        "甜玉米含糖量较高但GI仍属低",
+        "糯玉米支链淀粉多，消化快，需注意"
+      ],
+      "recommended_combos": [
+        "鸡蛋",
+        "牛奶",
+        "蔬菜"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-023",
+      "name_zh": "甜玉米",
+      "name_en": "Sweet Corn",
+      "category": "谷类",
+      "subcategory": "玉米",
+      "gi": 55,
+      "gi_level": "低",
+      "gl_per_serving": 13,
+      "gl_level": "中",
+      "serving_g": 100,
+      "serving_desc": "约100g",
+      "calories_per_100g": 86,
+      "carbs_per_100g": 19.0,
+      "protein_per_100g": 3.2,
+      "fat_per_100g": 1.2,
+      "fiber_per_100g": 2.7,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者注意份量",
+      "tips": [
+        "GI处于低GI上限",
+        "含糖量比老玉米高",
+        "水煮最佳，避免烤制加糖"
+      ],
+      "recommended_combos": [
+        "牛奶",
+        "鸡蛋"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-024",
+      "name_zh": "糯玉米",
+      "name_en": "Waxy Corn",
+      "category": "谷类",
+      "subcategory": "玉米",
+      "gi": 75,
+      "gi_level": "高",
+      "gl_per_serving": 18,
+      "gl_level": "中",
+      "serving_g": 100,
+      "serving_desc": "约100g",
+      "calories_per_100g": 130,
+      "carbs_per_100g": 28.0,
+      "protein_per_100g": 3.5,
+      "fat_per_100g": 1.0,
+      "fiber_per_100g": 2.0,
+      "blood_sugar_impact": "极高",
+      "best_timing": "无",
+      "suitable_for": "一般人群偶尔",
+      "caution_for": "糖尿病者避免",
+      "tips": [
+        "GI高，升糖快",
+        "支链淀粉含量高",
+        "口感软糯但血糖影响大"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-025",
+      "name_zh": "小米",
+      "name_en": "Millet",
+      "category": "谷类",
+      "subcategory": "杂粮",
+      "gi": 71,
+      "gi_level": "高",
+      "gl_per_serving": 14,
+      "gl_level": "中",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 358,
+      "carbs_per_100g": 72.0,
+      "protein_per_100g": 9.0,
+      "fat_per_100g": 3.1,
+      "fiber_per_100g": 1.3,
+      "blood_sugar_impact": "极高",
+      "best_timing": "早餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者控制份量",
+      "tips": [
+        "GI偏高但低于白米",
+        "常用于煮粥",
+        "可搭配豆类降低GI"
+      ],
+      "recommended_combos": [
+        "红豆",
+        "绿豆",
+        "蔬菜"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-026",
+      "name_zh": "藜麦",
+      "name_en": "Quinoa",
+      "category": "谷类",
+      "subcategory": "杂粮",
+      "gi": 53,
+      "gi_level": "低",
+      "gl_per_serving": 12,
+      "gl_level": "中",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 120,
+      "carbs_per_100g": 21.3,
+      "protein_per_100g": 4.1,
+      "fat_per_100g": 1.9,
+      "fiber_per_100g": 2.8,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "血糖偏高者的优质主食替代",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "全蛋白来源（含全部9种必需氨基酸）",
+        "GI低，纤维丰富",
+        "浸泡后煮熟，口感类似米饭",
+        "比白米饭升糖慢得多"
+      ],
+      "recommended_combos": [
+        "烤蔬菜",
+        "鸡胸肉",
+        "豆类",
+        "牛油果"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-027",
+      "name_zh": "糙米",
+      "name_en": "Brown Rice, raw",
+      "category": "谷类",
+      "subcategory": "全谷物",
+      "gi": 50,
+      "gi_level": "低",
+      "gl_per_serving": 17,
+      "gl_level": "中",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 348,
+      "carbs_per_100g": 72.0,
+      "protein_per_100g": 7.4,
+      "fat_per_100g": 2.7,
+      "fiber_per_100g": 3.4,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "血糖偏高者的主食首选",
+      "caution_for": "消化功能弱者适量",
+      "tips": [
+        "比白米升糖慢得多",
+        "富含膳食纤维和B族维生素",
+        "需提前浸泡烹煮"
+      ],
+      "recommended_combos": [
+        "蔬菜",
+        "豆类"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-028",
+      "name_zh": "黑米",
+      "name_en": "Black Rice",
+      "category": "谷类",
+      "subcategory": "全谷物",
+      "gi": 55,
+      "gi_level": "低",
+      "gl_per_serving": 13,
+      "gl_level": "中",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 333,
+      "carbs_per_100g": 68.0,
+      "protein_per_100g": 8.9,
+      "fat_per_100g": 2.2,
+      "fiber_per_100g": 3.5,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "花青素含量高，抗氧化",
+        "GI处于低GI上限",
+        "口感较硬需提前浸泡"
+      ],
+      "recommended_combos": [
+        "蔬菜",
+        "豆类"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-029",
+      "name_zh": "红米",
+      "name_en": "Red Rice",
+      "category": "谷类",
+      "subcategory": "全谷物",
+      "gi": 55,
+      "gi_level": "低",
+      "gl_per_serving": 14,
+      "gl_level": "中",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 340,
+      "carbs_per_100g": 70.0,
+      "protein_per_100g": 8.0,
+      "fat_per_100g": 2.5,
+      "fiber_per_100g": 3.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "富含花青素和铁",
+        "GI与黑米接近",
+        "口感较糙需浸泡"
+      ],
+      "recommended_combos": [
+        "蔬菜",
+        "豆类"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-030",
+      "name_zh": "小麦粉（白）",
+      "name_en": "White Wheat Flour",
+      "category": "谷类",
+      "subcategory": "面粉",
+      "gi": 85,
+      "gi_level": "高",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 0,
+      "serving_desc": "按需",
+      "calories_per_100g": 354,
+      "carbs_per_100g": 74.4,
+      "protein_per_100g": 11.2,
+      "fat_per_100g": 1.5,
+      "fiber_per_100g": 2.8,
+      "blood_sugar_impact": "极高",
+      "best_timing": "无",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者控制摄入",
+      "tips": [
+        "精制面粉GI很高",
+        "用于制作馒头、面包、面条等",
+        "全麦粉GI约69，优于白面粉"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-031",
+      "name_zh": "红薯（蒸）",
+      "name_en": "Sweet Potato, steamed",
+      "category": "薯类",
+      "subcategory": "红薯",
+      "gi": 54,
+      "gi_level": "低",
+      "gl_per_serving": 13,
+      "gl_level": "中",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 86,
+      "carbs_per_100g": 20.1,
+      "protein_per_100g": 1.6,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 2.6,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐",
+      "suitable_for": "蒸/煮方式适用血糖偏高者",
+      "caution_for": "烤红薯升糖极快（GI 82-94），需避免",
+      "tips": [
+        "蒸/煮红薯GI约44-54（低GI），烤红薯GI高达82-94",
+        "放凉后抗性淀粉增加，升糖更慢",
+        "红薯纤维丰富，饱腹感强"
+      ],
+      "recommended_combos": [
+        "绿叶蔬菜",
+        "鸡蛋",
+        "鸡胸肉"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-032",
+      "name_zh": "红薯（烤）",
+      "name_en": "Sweet Potato, baked",
+      "category": "薯类",
+      "subcategory": "红薯",
+      "gi": 82,
+      "gi_level": "高",
+      "gl_per_serving": 20,
+      "gl_level": "中",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 90,
+      "carbs_per_100g": 21.0,
+      "protein_per_100g": 1.5,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 2.5,
+      "blood_sugar_impact": "极高",
+      "best_timing": "无",
+      "suitable_for": "一般人群偶尔",
+      "caution_for": "糖尿病者避免",
+      "tips": [
+        "烤制使淀粉高度糊化，GI暴增",
+        "升糖速度接近白米饭",
+        "糖尿病患者应避免烤红薯"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-033",
+      "name_zh": "紫薯",
+      "name_en": "Purple Sweet Potato",
+      "category": "薯类",
+      "subcategory": "红薯",
+      "gi": 54,
+      "gi_level": "低",
+      "gl_per_serving": 13,
+      "gl_level": "中",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 82,
+      "carbs_per_100g": 18.5,
+      "protein_per_100g": 1.4,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 2.5,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者蒸制可少量",
+      "tips": [
+        "花青素含量极高",
+        "GI与蒸红薯相近",
+        "蒸制最佳"
+      ],
+      "recommended_combos": [
+        "牛奶",
+        "鸡蛋"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-034",
+      "name_zh": "土豆（煮）",
+      "name_en": "Potato, boiled",
+      "category": "薯类",
+      "subcategory": "土豆",
+      "gi": 66,
+      "gi_level": "中",
+      "gl_per_serving": 14,
+      "gl_level": "中",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 87,
+      "carbs_per_100g": 20.0,
+      "protein_per_100g": 1.9,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 1.4,
+      "blood_sugar_impact": "中",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者注意份量",
+      "tips": [
+        "煮土豆GI中等",
+        "放凉后抗性淀粉增加（土豆沙拉GI更低）",
+        "新土豆GI低于老土豆"
+      ],
+      "recommended_combos": [
+        "蔬菜沙拉",
+        "鸡蛋"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-035",
+      "name_zh": "土豆（烤）",
+      "name_en": "Potato, baked",
+      "category": "薯类",
+      "subcategory": "土豆",
+      "gi": 85,
+      "gi_level": "高",
+      "gl_per_serving": 21,
+      "gl_level": "高",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 93,
+      "carbs_per_100g": 21.2,
+      "protein_per_100g": 2.0,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 1.5,
+      "blood_sugar_impact": "极高",
+      "best_timing": "无",
+      "suitable_for": "一般人群偶尔",
+      "caution_for": "糖尿病者避免",
+      "tips": [
+        "烤土豆GI很高",
+        "淀粉糊化程度高",
+        "升糖快"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-036",
+      "name_zh": "土豆泥",
+      "name_en": "Mashed Potato",
+      "category": "薯类",
+      "subcategory": "土豆",
+      "gi": 87,
+      "gi_level": "高",
+      "gl_per_serving": 17,
+      "gl_level": "中",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 106,
+      "carbs_per_100g": 17.0,
+      "protein_per_100g": 2.0,
+      "fat_per_100g": 3.5,
+      "fiber_per_100g": 1.0,
+      "blood_sugar_impact": "极高",
+      "best_timing": "无",
+      "suitable_for": "一般人群偶尔",
+      "caution_for": "糖尿病者避免",
+      "tips": [
+        "GI极高，升糖很快",
+        "搅碎过程加速消化",
+        "加黄油/牛奶可稍降GI"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-037",
+      "name_zh": "薯条",
+      "name_en": "French Fries",
+      "category": "薯类",
+      "subcategory": "土豆",
+      "gi": 75,
+      "gi_level": "高",
+      "gl_per_serving": 22,
+      "gl_level": "高",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 312,
+      "carbs_per_100g": 41.0,
+      "protein_per_100g": 3.4,
+      "fat_per_100g": 14.9,
+      "fiber_per_100g": 3.8,
+      "blood_sugar_impact": "极高",
+      "best_timing": "无",
+      "suitable_for": "一般人群偶尔",
+      "caution_for": "糖尿病/肥胖者避免",
+      "tips": [
+        "GI偏高且脂肪含量高",
+        "油炸食品，不健康",
+        "升糖+增重双重负面影响"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-038",
+      "name_zh": "芋头",
+      "name_en": "Taro",
+      "category": "薯类",
+      "subcategory": "芋头",
+      "gi": 48,
+      "gi_level": "低",
+      "gl_per_serving": 10,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 79,
+      "carbs_per_100g": 18.1,
+      "protein_per_100g": 2.2,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 1.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "血糖偏高者可适量替代主食",
+      "caution_for": "注意份量",
+      "tips": [
+        "GI低于土豆和红薯",
+        "口感软糯",
+        "蒸制最佳"
+      ],
+      "recommended_combos": [
+        "排骨",
+        "蔬菜"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-039",
+      "name_zh": "山药",
+      "name_en": "Chinese Yam",
+      "category": "薯类",
+      "subcategory": "山药",
+      "gi": 51,
+      "gi_level": "低",
+      "gl_per_serving": 11,
+      "gl_level": "中",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 57,
+      "carbs_per_100g": 12.4,
+      "protein_per_100g": 1.9,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 0.8,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "血糖偏高者可适量食用",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "GI低，适合替代部分主食",
+        "含黏蛋白，有助消化",
+        "蒸/煮/炒均可"
+      ],
+      "recommended_combos": [
+        "排骨",
+        "木耳",
+        "蔬菜"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-040",
+      "name_zh": "木薯粉",
+      "name_en": "Tapioca",
+      "category": "薯类",
+      "subcategory": "淀粉",
+      "gi": 67,
+      "gi_level": "中",
+      "gl_per_serving": 15,
+      "gl_level": "中",
+      "serving_g": 100,
+      "serving_desc": "约100g",
+      "calories_per_100g": 362,
+      "carbs_per_100g": 88.7,
+      "protein_per_100g": 1.5,
+      "fat_per_100g": 0.3,
+      "fiber_per_100g": 0.9,
+      "blood_sugar_impact": "中",
+      "best_timing": "无",
+      "suitable_for": "一般人群少量",
+      "caution_for": "糖尿病者避免",
+      "tips": [
+        "纯淀粉，GI偏高",
+        "常用于珍珠奶茶、芋圆等",
+        "加工食品升糖快"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-041",
+      "name_zh": "黄豆",
+      "name_en": "Soybean",
+      "category": "豆类",
+      "subcategory": "大豆",
+      "gi": 18,
+      "gi_level": "低",
+      "gl_per_serving": 2,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 359,
+      "carbs_per_100g": 34.2,
+      "protein_per_100g": 35.0,
+      "fat_per_100g": 16.0,
+      "fiber_per_100g": 15.5,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群，强烈推荐血糖偏高者",
+      "caution_for": "痛风急性期注意嘌呤",
+      "tips": [
+        "豆类中的慢消化碳水+高蛋白+高纤维，三重降升糖",
+        "大豆异黄酮对代谢健康有益",
+        "豆腐、豆浆等豆制品同样低GI"
+      ],
+      "recommended_combos": [
+        "糙米",
+        "蔬菜",
+        "海带"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-042",
+      "name_zh": "豆腐",
+      "name_en": "Tofu",
+      "category": "豆类",
+      "subcategory": "豆制品",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 1,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 81,
+      "carbs_per_100g": 4.2,
+      "protein_per_100g": 8.1,
+      "fat_per_100g": 3.7,
+      "fiber_per_100g": 0.4,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群，糖尿病友好",
+      "caution_for": "痛风急性期注意",
+      "tips": [
+        "GI极低，几乎不升糖",
+        "优质植物蛋白来源",
+        "适合各种烹饪方式"
+      ],
+      "recommended_combos": [
+        "蔬菜",
+        "菌菇",
+        "瘦肉"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-043",
+      "name_zh": "豆浆（无糖）",
+      "name_en": "Soy Milk, unsweetened",
+      "category": "豆类",
+      "subcategory": "豆制品",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 1,
+      "gl_level": "低",
+      "serving_g": 250,
+      "serving_desc": "约250g",
+      "calories_per_100g": 31,
+      "carbs_per_100g": 1.2,
+      "protein_per_100g": 3.0,
+      "fat_per_100g": 1.6,
+      "fiber_per_100g": 0.6,
+      "blood_sugar_impact": "极低",
+      "best_timing": "早餐",
+      "suitable_for": "所有人群",
+      "caution_for": "选择无糖版本",
+      "tips": [
+        "GI极低",
+        "优质植物蛋白",
+        "注意选择无糖版本"
+      ],
+      "recommended_combos": [
+        "全麦面包",
+        "鸡蛋"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-044",
+      "name_zh": "绿豆",
+      "name_en": "Mung Bean",
+      "category": "豆类",
+      "subcategory": "杂豆",
+      "gi": 27,
+      "gi_level": "低",
+      "gl_per_serving": 4,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 316,
+      "carbs_per_100g": 62.0,
+      "protein_per_100g": 21.6,
+      "fat_per_100g": 0.8,
+      "fiber_per_100g": 6.4,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "血糖偏高者推荐",
+      "caution_for": "脾胃虚寒者不宜多食",
+      "tips": [
+        "GI很低，适合糖友",
+        "夏季消暑佳品",
+        "绿豆汤不要加糖"
+      ],
+      "recommended_combos": [
+        "糙米",
+        "蔬菜",
+        "薏米"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-045",
+      "name_zh": "红豆",
+      "name_en": "Adzuki Bean",
+      "category": "豆类",
+      "subcategory": "杂豆",
+      "gi": 23,
+      "gi_level": "低",
+      "gl_per_serving": 3,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 309,
+      "carbs_per_100g": 63.5,
+      "protein_per_100g": 20.2,
+      "fat_per_100g": 0.6,
+      "fiber_per_100g": 7.7,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "血糖偏高者推荐",
+      "caution_for": "注意甜品中的红豆加糖",
+      "tips": [
+        "GI很低",
+        "富含铁和钾",
+        "红豆沙/红豆糕因加糖GI升高"
+      ],
+      "recommended_combos": [
+        "糙米",
+        "蔬菜"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-046",
+      "name_zh": "鹰嘴豆",
+      "name_en": "Chickpea",
+      "category": "豆类",
+      "subcategory": "杂豆",
+      "gi": 28,
+      "gi_level": "低",
+      "gl_per_serving": 3,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 164,
+      "carbs_per_100g": 27.4,
+      "protein_per_100g": 8.9,
+      "fat_per_100g": 2.6,
+      "fiber_per_100g": 7.6,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "血糖偏高者推荐",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "GI很低，蛋白质丰富",
+        "可做鹰嘴豆泥（Hummus）",
+        "中东和印度料理常用"
+      ],
+      "recommended_combos": [
+        "沙拉",
+        "蔬菜",
+        "糙米"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-047",
+      "name_zh": "芸豆",
+      "name_en": "Kidney Bean",
+      "category": "豆类",
+      "subcategory": "杂豆",
+      "gi": 24,
+      "gi_level": "低",
+      "gl_per_serving": 3,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 127,
+      "carbs_per_100g": 22.8,
+      "protein_per_100g": 8.7,
+      "fat_per_100g": 0.5,
+      "fiber_per_100g": 6.4,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "血糖偏高者推荐",
+      "caution_for": "必须充分煮熟",
+      "tips": [
+        "GI很低",
+        "富含蛋白质和纤维",
+        "需充分煮熟（生芸豆有毒）"
+      ],
+      "recommended_combos": [
+        "糙米",
+        "蔬菜"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-048",
+      "name_zh": "豌豆",
+      "name_en": "Green Pea",
+      "category": "豆类",
+      "subcategory": "鲜豆",
+      "gi": 22,
+      "gi_level": "低",
+      "gl_per_serving": 3,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 81,
+      "carbs_per_100g": 14.5,
+      "protein_per_100g": 5.4,
+      "fat_per_100g": 0.4,
+      "fiber_per_100g": 5.7,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "GI很低",
+        "维生素C丰富",
+        "淀粉含量比叶菜高"
+      ],
+      "recommended_combos": [
+        "胡萝卜",
+        "玉米",
+        "鸡肉"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-049",
+      "name_zh": "毛豆",
+      "name_en": "Edamame",
+      "category": "豆类",
+      "subcategory": "鲜豆",
+      "gi": 18,
+      "gi_level": "低",
+      "gl_per_serving": 2,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 131,
+      "carbs_per_100g": 11.0,
+      "protein_per_100g": 13.1,
+      "fat_per_100g": 5.0,
+      "fiber_per_100g": 5.4,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "所有人群，糖尿病友好",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "GI极低",
+        "高蛋白低碳水",
+        "优质加餐选择"
+      ],
+      "recommended_combos": [
+        "单独煮食即可"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-050",
+      "name_zh": "黑豆",
+      "name_en": "Black Bean",
+      "category": "豆类",
+      "subcategory": "杂豆",
+      "gi": 30,
+      "gi_level": "低",
+      "gl_per_serving": 4,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 401,
+      "carbs_per_100g": 55.0,
+      "protein_per_100g": 36.0,
+      "fat_per_100g": 15.9,
+      "fiber_per_100g": 10.2,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "血糖偏高者推荐",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "GI低",
+        "花青素含量高",
+        "可做黑豆浆、黑豆饭"
+      ],
+      "recommended_combos": [
+        "糙米",
+        "蔬菜"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-051",
+      "name_zh": "花生",
+      "name_en": "Peanut",
+      "category": "豆类",
+      "subcategory": "坚果",
+      "gi": 14,
+      "gi_level": "低",
+      "gl_per_serving": 1,
+      "gl_level": "低",
+      "serving_g": 30,
+      "serving_desc": "约30g",
+      "calories_per_100g": 567,
+      "carbs_per_100g": 16.1,
+      "protein_per_100g": 25.8,
+      "fat_per_100g": 49.2,
+      "fiber_per_100g": 8.3,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "血糖偏高者的健康加餐选择",
+      "caution_for": "热量高，减重者控制份量；过敏者避免",
+      "tips": [
+        "富含健康脂肪和蛋白质，升糖极慢",
+        "高热量需注意总量控制（每天一小把）",
+        "作为加餐可中和主食升糖"
+      ],
+      "recommended_combos": [
+        "苹果",
+        "酸奶"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-052",
+      "name_zh": "黑芝麻",
+      "name_en": "Black Sesame",
+      "category": "豆类",
+      "subcategory": "种子",
+      "gi": 20,
+      "gi_level": "低",
+      "gl_per_serving": 1,
+      "gl_level": "低",
+      "serving_g": 30,
+      "serving_desc": "约30g",
+      "calories_per_100g": 559,
+      "carbs_per_100g": 10.2,
+      "protein_per_100g": 19.1,
+      "fat_per_100g": 46.1,
+      "fiber_per_100g": 6.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "黑芝麻糊加糖后GI升高",
+      "tips": [
+        "GI很低",
+        "富含钙和铁",
+        "黑芝麻糊因加糖GI升高"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-053",
+      "name_zh": "核桃",
+      "name_en": "Walnut",
+      "category": "豆类",
+      "subcategory": "坚果",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 1,
+      "gl_level": "低",
+      "serving_g": 30,
+      "serving_desc": "约30g",
+      "calories_per_100g": 654,
+      "carbs_per_100g": 13.7,
+      "protein_per_100g": 15.2,
+      "fat_per_100g": 65.2,
+      "fiber_per_100g": 6.7,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "血糖偏高者的健康加餐",
+      "caution_for": "热量高，控制份量",
+      "tips": [
+        "GI极低",
+        "Omega-3脂肪酸丰富",
+        "每天2-3个即可"
+      ],
+      "recommended_combos": [
+        "酸奶",
+        "沙拉"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-054",
+      "name_zh": "杏仁",
+      "name_en": "Almond",
+      "category": "豆类",
+      "subcategory": "坚果",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 1,
+      "gl_level": "低",
+      "serving_g": 30,
+      "serving_desc": "约30g",
+      "calories_per_100g": 579,
+      "carbs_per_100g": 21.6,
+      "protein_per_100g": 21.2,
+      "fat_per_100g": 49.4,
+      "fiber_per_100g": 12.5,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "血糖偏高者的健康加餐",
+      "caution_for": "热量高，控制份量",
+      "tips": [
+        "GI极低",
+        "维生素E含量高",
+        "每天一小把（约23粒）"
+      ],
+      "recommended_combos": [
+        "酸奶",
+        "水果"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-055",
+      "name_zh": "腰果",
+      "name_en": "Cashew",
+      "category": "豆类",
+      "subcategory": "坚果",
+      "gi": 22,
+      "gi_level": "低",
+      "gl_per_serving": 2,
+      "gl_level": "低",
+      "serving_g": 30,
+      "serving_desc": "约30g",
+      "calories_per_100g": 553,
+      "carbs_per_100g": 30.2,
+      "protein_per_100g": 18.2,
+      "fat_per_100g": 43.9,
+      "fiber_per_100g": 3.3,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "血糖偏高者适量",
+      "caution_for": "热量高，控制份量",
+      "tips": [
+        "GI很低",
+        "碳水含量略高于其他坚果",
+        "每天一小把"
+      ],
+      "recommended_combos": [
+        "炒菜"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-056",
+      "name_zh": "西兰花",
+      "name_en": "Broccoli",
+      "category": "蔬菜",
+      "subcategory": "花菜类",
+      "gi": 10,
+      "gi_level": "低",
+      "gl_per_serving": 1,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 34,
+      "carbs_per_100g": 6.6,
+      "protein_per_100g": 2.8,
+      "fat_per_100g": 0.4,
+      "fiber_per_100g": 2.6,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群，糖尿病患者的蔬菜首选",
+      "caution_for": "服用抗凝药物者注意维生素K含量",
+      "tips": [
+        "升糖几乎可以忽略，强烈推荐",
+        "含萝卜硫素（Sulforaphane），有益血糖控制",
+        "蒸/焯水后凉拌最佳，避免油炸"
+      ],
+      "recommended_combos": [
+        "蒜",
+        "橄榄油",
+        "鸡胸肉",
+        "三文鱼"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-057",
+      "name_zh": "花菜",
+      "name_en": "Cauliflower",
+      "category": "蔬菜",
+      "subcategory": "花菜类",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 1,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 25,
+      "carbs_per_100g": 4.9,
+      "protein_per_100g": 1.9,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 2.1,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "GI极低",
+        "可做花菜饭替代米饭",
+        "低碳饮食常用替代品"
+      ],
+      "recommended_combos": [
+        "奶酪",
+        "鸡蛋",
+        "鸡肉"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-058",
+      "name_zh": "菠菜",
+      "name_en": "Spinach",
+      "category": "蔬菜",
+      "subcategory": "叶菜",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 23,
+      "carbs_per_100g": 3.6,
+      "protein_per_100g": 2.9,
+      "fat_per_100g": 0.3,
+      "fiber_per_100g": 2.2,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "草酸含量高，肾结石患者注意",
+      "tips": [
+        "深绿色叶菜，碳水含量极低",
+        "富含镁，有助改善胰岛素敏感性",
+        "富含叶黄素和维生素K"
+      ],
+      "recommended_combos": [
+        "蒜",
+        "鸡蛋",
+        "蘑菇",
+        "番茄"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-059",
+      "name_zh": "生菜",
+      "name_en": "Lettuce",
+      "category": "蔬菜",
+      "subcategory": "叶菜",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 13,
+      "carbs_per_100g": 1.8,
+      "protein_per_100g": 1.4,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 0.5,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "碳水极低，水分含量高",
+        "饱腹感强但热量极低",
+        "沙拉首选"
+      ],
+      "recommended_combos": [
+        "鸡蛋",
+        "牛油果",
+        "鸡胸肉"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-060",
+      "name_zh": "小白菜",
+      "name_en": "Bok Choy",
+      "category": "蔬菜",
+      "subcategory": "叶菜",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 15,
+      "carbs_per_100g": 2.7,
+      "protein_per_100g": 1.5,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 1.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "碳水极低",
+        "钙含量高",
+        "快炒保留营养"
+      ],
+      "recommended_combos": [
+        "蒜",
+        "豆腐"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-061",
+      "name_zh": "芹菜",
+      "name_en": "Celery",
+      "category": "蔬菜",
+      "subcategory": "茎菜",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 16,
+      "carbs_per_100g": 3.5,
+      "protein_per_100g": 0.7,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 1.6,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "碳水极低",
+        "富含纤维，有助控糖",
+        "降压作用（高钾）"
+      ],
+      "recommended_combos": [
+        "百合",
+        "瘦肉"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-062",
+      "name_zh": "黄瓜",
+      "name_en": "Cucumber",
+      "category": "蔬菜",
+      "subcategory": "瓜菜",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 16,
+      "carbs_per_100g": 3.6,
+      "protein_per_100g": 0.8,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 0.5,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐/午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "碳水极低，水分含量95%",
+        "热量极低",
+        "生食/凉拌最佳"
+      ],
+      "recommended_combos": [
+        "蒜",
+        "醋"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-063",
+      "name_zh": "番茄",
+      "name_en": "Tomato",
+      "category": "蔬菜",
+      "subcategory": "茄果",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 1,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 18,
+      "carbs_per_100g": 3.9,
+      "protein_per_100g": 0.9,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 1.2,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "胃酸过多者空腹不宜大量食用",
+      "tips": [
+        "加热后番茄红素更易吸收",
+        "生食维生素C保留更好",
+        "小番茄含糖略高但总量仍然很低"
+      ],
+      "recommended_combos": [
+        "鸡蛋",
+        "西兰花",
+        "橄榄油",
+        "牛油果"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-064",
+      "name_zh": "茄子",
+      "name_en": "Eggplant",
+      "category": "蔬菜",
+      "subcategory": "茄果",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 1,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 21,
+      "carbs_per_100g": 4.9,
+      "protein_per_100g": 1.1,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 1.3,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "避免油炸茄子（吸油量大）",
+      "tips": [
+        "GI低但吸油性强",
+        "蒸/烤比油炸健康",
+        "花青素含量高（紫皮）"
+      ],
+      "recommended_combos": [
+        "蒜",
+        "酱油"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-065",
+      "name_zh": "胡萝卜",
+      "name_en": "Carrot",
+      "category": "蔬菜",
+      "subcategory": "根菜",
+      "gi": 47,
+      "gi_level": "低",
+      "gl_per_serving": 5,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 39,
+      "carbs_per_100g": 8.8,
+      "protein_per_100g": 1.0,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 2.8,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者注意份量",
+      "tips": [
+        "GI中等（旧数据曾误报为高GI 92）",
+        "煮熟后GI略升高",
+        "β-胡萝卜素丰富"
+      ],
+      "recommended_combos": [
+        "鸡蛋",
+        "肉类"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-066",
+      "name_zh": "白萝卜",
+      "name_en": "White Radish",
+      "category": "蔬菜",
+      "subcategory": "根菜",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 21,
+      "carbs_per_100g": 5.0,
+      "protein_per_100g": 0.9,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 1.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "碳水极低",
+        "助消化",
+        "炖汤/凉拌均可"
+      ],
+      "recommended_combos": [
+        "排骨",
+        "海带"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-067",
+      "name_zh": "莲藕",
+      "name_en": "Lotus Root",
+      "category": "蔬菜",
+      "subcategory": "根菜",
+      "gi": 38,
+      "gi_level": "低",
+      "gl_per_serving": 5,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 47,
+      "carbs_per_100g": 11.5,
+      "protein_per_100g": 1.9,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 4.9,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者注意份量（碳水较高）",
+      "tips": [
+        "GI低但碳水含量高于叶菜",
+        "淀粉含量较高，可部分替代主食",
+        "凉拌/清炒最佳"
+      ],
+      "recommended_combos": [
+        "排骨",
+        "木耳"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-068",
+      "name_zh": "洋葱",
+      "name_en": "Onion",
+      "category": "蔬菜",
+      "subcategory": "鳞茎",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 1,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 40,
+      "carbs_per_100g": 9.3,
+      "protein_per_100g": 1.1,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 0.9,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "胃病患者不宜空腹生食",
+      "tips": [
+        "碳水低",
+        "含槲皮素，有抗氧化作用",
+        "生食/炒菜均可"
+      ],
+      "recommended_combos": [
+        "牛肉",
+        "鸡蛋"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-069",
+      "name_zh": "南瓜",
+      "name_en": "Pumpkin",
+      "category": "蔬菜",
+      "subcategory": "瓜菜",
+      "gi": 64,
+      "gi_level": "中",
+      "gl_per_serving": 5,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 26,
+      "carbs_per_100g": 6.5,
+      "protein_per_100g": 1.0,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 0.5,
+      "blood_sugar_impact": "中",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "血糖偏高者少量食用影响可控",
+      "caution_for": "大量食用或南瓜汤升糖仍快",
+      "tips": [
+        "GI中等但碳水含量低（每百克仅6.5g），实际升糖有限",
+        "典型中GI低GL食物，控制份量即可",
+        "富含β-胡萝卜素和维生素A"
+      ],
+      "recommended_combos": [
+        "瘦肉",
+        "蛋",
+        "绿叶蔬菜"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-070",
+      "name_zh": "冬瓜",
+      "name_en": "Winter Melon",
+      "category": "蔬菜",
+      "subcategory": "瓜菜",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 12,
+      "carbs_per_100g": 2.6,
+      "protein_per_100g": 0.4,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 0.7,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "碳水极低，热量极低",
+        "利尿消肿",
+        "减肥控糖佳品"
+      ],
+      "recommended_combos": [
+        "虾皮",
+        "排骨"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-071",
+      "name_zh": "苦瓜",
+      "name_en": "Bitter Melon",
+      "category": "蔬菜",
+      "subcategory": "瓜菜",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 22,
+      "carbs_per_100g": 4.9,
+      "protein_per_100g": 1.0,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 1.4,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "孕妇慎食",
+      "tips": [
+        "传统认为有辅助控糖作用",
+        "碳水极低",
+        "凉拌/炒蛋/榨汁均可"
+      ],
+      "recommended_combos": [
+        "鸡蛋",
+        "瘦肉"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-072",
+      "name_zh": "蘑菇",
+      "name_en": "Mushroom",
+      "category": "蔬菜",
+      "subcategory": "菌菇",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 22,
+      "carbs_per_100g": 4.1,
+      "protein_per_100g": 3.3,
+      "fat_per_100g": 0.3,
+      "fiber_per_100g": 2.1,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "注意野生蘑菇安全性",
+      "tips": [
+        "碳水极低",
+        "多糖类有助免疫力",
+        "鲜菇/干菇均可"
+      ],
+      "recommended_combos": [
+        "鸡肉",
+        "蔬菜",
+        "豆腐"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-073",
+      "name_zh": "木耳",
+      "name_en": "Wood Ear Mushroom",
+      "category": "蔬菜",
+      "subcategory": "菌菇",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 21,
+      "carbs_per_100g": 6.0,
+      "protein_per_100g": 1.5,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 7.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "泡发时间不宜过长",
+      "tips": [
+        "碳水低，纤维极高",
+        "有助控糖和降脂",
+        "泡发后凉拌/炒菜"
+      ],
+      "recommended_combos": [
+        "鸡蛋",
+        "瘦肉"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-074",
+      "name_zh": "海带",
+      "name_en": "Kelp",
+      "category": "蔬菜",
+      "subcategory": "海藻",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 13,
+      "carbs_per_100g": 2.1,
+      "protein_per_100g": 1.2,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 1.3,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "甲亢患者注意碘摄入",
+      "tips": [
+        "碳水极低",
+        "碘含量高",
+        "褐藻多糖有助控糖"
+      ],
+      "recommended_combos": [
+        "排骨",
+        "豆腐"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-075",
+      "name_zh": "芦笋",
+      "name_en": "Asparagus",
+      "category": "蔬菜",
+      "subcategory": "茎菜",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 20,
+      "carbs_per_100g": 4.9,
+      "protein_per_100g": 2.2,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 2.1,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "碳水极低",
+        "叶酸含量高",
+        "清炒/蒸制最佳"
+      ],
+      "recommended_combos": [
+        "鸡蛋",
+        "三文鱼"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-076",
+      "name_zh": "苹果",
+      "name_en": "Apple",
+      "category": "水果",
+      "subcategory": "仁果",
+      "gi": 36,
+      "gi_level": "低",
+      "gl_per_serving": 5,
+      "gl_level": "低",
+      "serving_g": 180,
+      "serving_desc": "约180g",
+      "calories_per_100g": 53,
+      "carbs_per_100g": 13.7,
+      "protein_per_100g": 0.2,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 1.2,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "所有人群，包括糖尿病患者",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "带皮吃保留更多膳食纤维和抗氧化物质",
+        "果胶有助延缓糖分吸收",
+        "每天1个为宜，不要榨汁"
+      ],
+      "recommended_combos": [
+        "坚果",
+        "无糖酸奶"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-077",
+      "name_zh": "梨",
+      "name_en": "Pear",
+      "category": "水果",
+      "subcategory": "仁果",
+      "gi": 36,
+      "gi_level": "低",
+      "gl_per_serving": 4,
+      "gl_level": "低",
+      "serving_g": 180,
+      "serving_desc": "约180g",
+      "calories_per_100g": 50,
+      "carbs_per_100g": 13.3,
+      "protein_per_100g": 0.4,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 3.1,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "所有人群",
+      "caution_for": "脾胃虚寒者不宜多食",
+      "tips": [
+        "GI低",
+        "水分高，纤维丰富",
+        "清热润肺"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-078",
+      "name_zh": "桃子",
+      "name_en": "Peach",
+      "category": "水果",
+      "subcategory": "核果",
+      "gi": 28,
+      "gi_level": "低",
+      "gl_per_serving": 3,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 51,
+      "carbs_per_100g": 12.2,
+      "protein_per_100g": 0.9,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 1.3,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "所有人群",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "GI很低",
+        "维生素C丰富",
+        "夏季时令水果"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-079",
+      "name_zh": "李子",
+      "name_en": "Plum",
+      "category": "水果",
+      "subcategory": "核果",
+      "gi": 24,
+      "gi_level": "低",
+      "gl_per_serving": 3,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 38,
+      "carbs_per_100g": 8.7,
+      "protein_per_100g": 0.7,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 1.4,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "胃酸过多者不宜空腹",
+      "tips": [
+        "GI很低",
+        "酸味来自有机酸",
+        "促消化"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-080",
+      "name_zh": "樱桃",
+      "name_en": "Cherry",
+      "category": "水果",
+      "subcategory": "核果",
+      "gi": 22,
+      "gi_level": "低",
+      "gl_per_serving": 3,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 63,
+      "carbs_per_100g": 16.0,
+      "protein_per_100g": 1.1,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 2.1,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "所有人群，糖尿病友好",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "GI极低，是糖尿病患者的理想水果",
+        "含花青素，有助抗氧化和抗炎",
+        "天然褪黑素来源，晚间少量食用或助睡眠"
+      ],
+      "recommended_combos": [
+        "坚果",
+        "无糖酸奶",
+        "黑巧克力（>70%）"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-081",
+      "name_zh": "草莓",
+      "name_en": "Strawberry",
+      "category": "水果",
+      "subcategory": "浆果",
+      "gi": 40,
+      "gi_level": "低",
+      "gl_per_serving": 4,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 32,
+      "carbs_per_100g": 7.1,
+      "protein_per_100g": 0.7,
+      "fat_per_100g": 0.3,
+      "fiber_per_100g": 2.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "所有人群",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "GI低",
+        "维生素C含量高于橙子",
+        "升糖指数低"
+      ],
+      "recommended_combos": [
+        "无糖酸奶"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-082",
+      "name_zh": "蓝莓",
+      "name_en": "Blueberry",
+      "category": "水果",
+      "subcategory": "浆果",
+      "gi": 53,
+      "gi_level": "低",
+      "gl_per_serving": 6,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 57,
+      "carbs_per_100g": 14.5,
+      "protein_per_100g": 0.7,
+      "fat_per_100g": 0.3,
+      "fiber_per_100g": 2.4,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "所有人群，糖尿病友好",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "GI低",
+        "花青素含量极高",
+        "抗氧化能力强的超级食物"
+      ],
+      "recommended_combos": [
+        "无糖酸奶",
+        "燕麦",
+        "坚果"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-083",
+      "name_zh": "葡萄",
+      "name_en": "Grape",
+      "category": "水果",
+      "subcategory": "浆果",
+      "gi": 43,
+      "gi_level": "低",
+      "gl_per_serving": 5,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 44,
+      "carbs_per_100g": 10.3,
+      "protein_per_100g": 0.5,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 0.4,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者控制份量（10-15粒）",
+      "tips": [
+        "GI低-中",
+        "葡萄糖含量较高但总量有限",
+        "不要代替正餐大量食用"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-084",
+      "name_zh": "香蕉",
+      "name_en": "Banana",
+      "category": "水果",
+      "subcategory": "热带水果",
+      "gi": 52,
+      "gi_level": "低",
+      "gl_per_serving": 11,
+      "gl_level": "中",
+      "serving_g": 120,
+      "serving_desc": "约120g",
+      "calories_per_100g": 93,
+      "carbs_per_100g": 22.0,
+      "protein_per_100g": 1.4,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 1.2,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐/运动前后",
+      "suitable_for": "血糖正常者及控制良好者可适量",
+      "caution_for": "血糖控制不佳时选青香蕉或减量",
+      "tips": [
+        "青香蕉含更多抗性淀粉，GI更低（约30）",
+        "熟透的香蕉（皮有黑点）GI升至约62",
+        "含钾丰富，适合运动后补充"
+      ],
+      "recommended_combos": [
+        "坚果",
+        "无糖酸奶"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-085",
+      "name_zh": "橙子",
+      "name_en": "Orange",
+      "category": "水果",
+      "subcategory": "柑橘",
+      "gi": 43,
+      "gi_level": "低",
+      "gl_per_serving": 4,
+      "gl_level": "低",
+      "serving_g": 180,
+      "serving_desc": "约180g",
+      "calories_per_100g": 48,
+      "carbs_per_100g": 11.1,
+      "protein_per_100g": 0.8,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 0.6,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "所有人群",
+      "caution_for": "不要代替水果喝橙汁",
+      "tips": [
+        "GI低",
+        "维生素C丰富",
+        "不要榨汁（果汁GI升高）"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-086",
+      "name_zh": "柚子",
+      "name_en": "Pomelo/Grapefruit",
+      "category": "水果",
+      "subcategory": "柑橘",
+      "gi": 25,
+      "gi_level": "低",
+      "gl_per_serving": 3,
+      "gl_level": "低",
+      "serving_g": 200,
+      "serving_desc": "约200g",
+      "calories_per_100g": 42,
+      "carbs_per_100g": 9.5,
+      "protein_per_100g": 0.8,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 1.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "所有人群，糖尿病友好",
+      "caution_for": "服用降压药/降脂药者注意相互作用",
+      "tips": [
+        "GI极低",
+        "维生素C丰富",
+        "有助消化"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-087",
+      "name_zh": "猕猴桃",
+      "name_en": "Kiwi",
+      "category": "水果",
+      "subcategory": "浆果",
+      "gi": 50,
+      "gi_level": "低",
+      "gl_per_serving": 5,
+      "gl_level": "低",
+      "serving_g": 100,
+      "serving_desc": "约100g",
+      "calories_per_100g": 61,
+      "carbs_per_100g": 14.5,
+      "protein_per_100g": 0.8,
+      "fat_per_100g": 0.5,
+      "fiber_per_100g": 3.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "所有人群",
+      "caution_for": "对猕猴桃过敏者避免",
+      "tips": [
+        "GI低",
+        "维生素C含量极高",
+        "纤维丰富"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-088",
+      "name_zh": "芒果",
+      "name_en": "Mango",
+      "category": "水果",
+      "subcategory": "热带水果",
+      "gi": 55,
+      "gi_level": "低",
+      "gl_per_serving": 8,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 60,
+      "carbs_per_100g": 15.0,
+      "protein_per_100g": 0.8,
+      "fat_per_100g": 0.4,
+      "fiber_per_100g": 1.6,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者注意份量",
+      "tips": [
+        "GI处于低GI上限",
+        "β-胡萝卜素丰富",
+        "含糖量较高"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-089",
+      "name_zh": "菠萝",
+      "name_en": "Pineapple",
+      "category": "水果",
+      "subcategory": "热带水果",
+      "gi": 66,
+      "gi_level": "中",
+      "gl_per_serving": 7,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 41,
+      "carbs_per_100g": 10.8,
+      "protein_per_100g": 0.5,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 1.4,
+      "blood_sugar_impact": "中",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者少量",
+      "tips": [
+        "GI中等",
+        "含菠萝蛋白酶，助消化",
+        "控制份量"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-090",
+      "name_zh": "西瓜",
+      "name_en": "Watermelon",
+      "category": "水果",
+      "subcategory": "瓜果",
+      "gi": 76,
+      "gi_level": "高",
+      "gl_per_serving": 5,
+      "gl_level": "低",
+      "serving_g": 200,
+      "serving_desc": "约200g",
+      "calories_per_100g": 31,
+      "carbs_per_100g": 7.6,
+      "protein_per_100g": 0.6,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 0.4,
+      "blood_sugar_impact": "极高",
+      "best_timing": "加餐",
+      "suitable_for": "小份食用对血糖偏高者影响可控",
+      "caution_for": "大口大量吃升糖仍快",
+      "tips": [
+        "典型高GI低GL食物：每份碳水少，单次升糖有限",
+        "关键是控制份量，小份食用影响不大",
+        "不要榨汁，榨汁后升糖速度大幅上升"
+      ],
+      "recommended_combos": [
+        "无糖酸奶",
+        "薄荷"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-091",
+      "name_zh": "哈密瓜",
+      "name_en": "Cantaloupe",
+      "category": "水果",
+      "subcategory": "瓜果",
+      "gi": 65,
+      "gi_level": "中",
+      "gl_per_serving": 5,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 34,
+      "carbs_per_100g": 8.0,
+      "protein_per_100g": 0.8,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 0.9,
+      "blood_sugar_impact": "中",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者少量",
+      "tips": [
+        "GI中等",
+        "β-胡萝卜素丰富",
+        "控制份量"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-092",
+      "name_zh": "木瓜",
+      "name_en": "Papaya",
+      "category": "水果",
+      "subcategory": "热带水果",
+      "gi": 60,
+      "gi_level": "中",
+      "gl_per_serving": 6,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 43,
+      "carbs_per_100g": 10.8,
+      "protein_per_100g": 0.5,
+      "fat_per_100g": 0.3,
+      "fiber_per_100g": 1.7,
+      "blood_sugar_impact": "中",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者少量",
+      "tips": [
+        "GI中等",
+        "木瓜蛋白酶助消化",
+        "控制份量"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-093",
+      "name_zh": "牛油果",
+      "name_en": "Avocado",
+      "category": "水果",
+      "subcategory": "热带水果",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 1,
+      "gl_level": "低",
+      "serving_g": 100,
+      "serving_desc": "约100g",
+      "calories_per_100g": 160,
+      "carbs_per_100g": 8.5,
+      "protein_per_100g": 2.0,
+      "fat_per_100g": 14.7,
+      "fiber_per_100g": 6.7,
+      "blood_sugar_impact": "极低",
+      "best_timing": "早餐/加餐",
+      "suitable_for": "所有人群，糖尿病患者的理想水果",
+      "caution_for": "热量较高，减重时注意份量",
+      "tips": [
+        "几乎不含糖，富含单不饱和脂肪酸",
+        "高纤维延缓胃排空，减缓碳水吸收",
+        "代替黄油/蛋黄酱抹面包，既降升糖又美味"
+      ],
+      "recommended_combos": [
+        "全麦面包",
+        "鸡蛋",
+        "番茄",
+        "三文鱼"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-094",
+      "name_zh": "石榴",
+      "name_en": "Pomegranate",
+      "category": "水果",
+      "subcategory": "浆果",
+      "gi": 35,
+      "gi_level": "低",
+      "gl_per_serving": 5,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 72,
+      "carbs_per_100g": 18.7,
+      "protein_per_100g": 1.4,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 3.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者注意份量",
+      "tips": [
+        "GI低",
+        "花青素和鞣花酸丰富",
+        "抗氧化能力强"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-095",
+      "name_zh": "鲜枣",
+      "name_en": "Fresh Jujube",
+      "category": "水果",
+      "subcategory": "核果",
+      "gi": 42,
+      "gi_level": "低",
+      "gl_per_serving": 10,
+      "gl_level": "低",
+      "serving_g": 100,
+      "serving_desc": "约100g",
+      "calories_per_100g": 122,
+      "carbs_per_100g": 30.5,
+      "protein_per_100g": 1.1,
+      "fat_per_100g": 0.3,
+      "fiber_per_100g": 1.9,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者严格控制份量",
+      "tips": [
+        "维生素C含量极高",
+        "碳水含量较高",
+        "控制份量"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-096",
+      "name_zh": "牛奶",
+      "name_en": "Whole Milk",
+      "category": "肉蛋奶",
+      "subcategory": "乳制品",
+      "gi": 27,
+      "gi_level": "低",
+      "gl_per_serving": 3,
+      "gl_level": "低",
+      "serving_g": 250,
+      "serving_desc": "约250g",
+      "calories_per_100g": 61,
+      "carbs_per_100g": 4.8,
+      "protein_per_100g": 3.2,
+      "fat_per_100g": 3.3,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "早餐/加餐",
+      "suitable_for": "所有人群（乳糖不耐受者除外）",
+      "caution_for": "乳糖不耐受者选无乳糖牛奶",
+      "tips": [
+        "乳糖GI低，乳清蛋白有助刺激胰岛素分泌",
+        "全脂比脱脂更有饱腹感",
+        "选择无糖/原味，避免调味乳"
+      ],
+      "recommended_combos": [
+        "燕麦",
+        "坚果",
+        "全麦面包"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-097",
+      "name_zh": "脱脂牛奶",
+      "name_en": "Skim Milk",
+      "category": "肉蛋奶",
+      "subcategory": "乳制品",
+      "gi": 27,
+      "gi_level": "低",
+      "gl_per_serving": 3,
+      "gl_level": "低",
+      "serving_g": 250,
+      "serving_desc": "约250g",
+      "calories_per_100g": 35,
+      "carbs_per_100g": 5.0,
+      "protein_per_100g": 3.4,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "早餐",
+      "suitable_for": "减重人群",
+      "caution_for": "乳糖不耐受者选无乳糖版本",
+      "tips": [
+        "GI与全脂牛奶相近",
+        "热量较低",
+        "饱腹感稍弱"
+      ],
+      "recommended_combos": [
+        "燕麦"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-098",
+      "name_zh": "无糖酸奶",
+      "name_en": "Plain Yogurt",
+      "category": "肉蛋奶",
+      "subcategory": "乳制品",
+      "gi": 36,
+      "gi_level": "低",
+      "gl_per_serving": 4,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 63,
+      "carbs_per_100g": 5.7,
+      "protein_per_100g": 3.5,
+      "fat_per_100g": 3.2,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "早餐/加餐",
+      "suitable_for": "所有人群，糖尿病友好",
+      "caution_for": "确保选择无糖版本",
+      "tips": [
+        "注意选择无糖或原味",
+        "希腊酸奶GI仅12，蛋白质含量翻倍",
+        "益生菌有助肠道健康，或间接改善血糖代谢"
+      ],
+      "recommended_combos": [
+        "蓝莓",
+        "坚果",
+        "奇亚籽",
+        "燕麦"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-099",
+      "name_zh": "希腊酸奶",
+      "name_en": "Greek Yogurt",
+      "category": "肉蛋奶",
+      "subcategory": "乳制品",
+      "gi": 12,
+      "gi_level": "低",
+      "gl_per_serving": 2,
+      "gl_level": "低",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 97,
+      "carbs_per_100g": 4.0,
+      "protein_per_100g": 9.0,
+      "fat_per_100g": 5.0,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "早餐/加餐",
+      "suitable_for": "所有人群，糖尿病友好",
+      "caution_for": "选择无糖版本",
+      "tips": [
+        "GI极低",
+        "蛋白质含量是普通酸奶的2倍",
+        "饱腹感极强"
+      ],
+      "recommended_combos": [
+        "蜂蜜（少量）",
+        "坚果",
+        "水果"
+      ],
+      "data_sources": "SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-100",
+      "name_zh": "奶酪",
+      "name_en": "Cheese",
+      "category": "肉蛋奶",
+      "subcategory": "乳制品",
+      "gi": 10,
+      "gi_level": "低",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 30,
+      "serving_desc": "约30g",
+      "calories_per_100g": 328,
+      "carbs_per_100g": 3.5,
+      "protein_per_100g": 25.7,
+      "fat_per_100g": 23.5,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "高血脂者注意饱和脂肪",
+      "tips": [
+        "GI极低（几乎零碳水）",
+        "蛋白质和钙含量高",
+        "高热量注意份量"
+      ],
+      "recommended_combos": [
+        "全麦面包",
+        "蔬菜"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-101",
+      "name_zh": "豆浆（无糖）",
+      "name_en": "Soy Milk, unsweetened",
+      "category": "肉蛋奶",
+      "subcategory": "植物奶",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 1,
+      "gl_level": "低",
+      "serving_g": 250,
+      "serving_desc": "约250g",
+      "calories_per_100g": 31,
+      "carbs_per_100g": 1.2,
+      "protein_per_100g": 3.0,
+      "fat_per_100g": 1.6,
+      "fiber_per_100g": 0.6,
+      "blood_sugar_impact": "极低",
+      "best_timing": "早餐",
+      "suitable_for": "所有人群",
+      "caution_for": "选择无糖版本",
+      "tips": [
+        "GI极低",
+        "优质植物蛋白",
+        "注意选择无糖版本"
+      ],
+      "recommended_combos": [
+        "全麦面包",
+        "鸡蛋"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-102",
+      "name_zh": "燕麦奶（无糖）",
+      "name_en": "Oat Milk, unsweetened",
+      "category": "肉蛋奶",
+      "subcategory": "植物奶",
+      "gi": 30,
+      "gi_level": "低",
+      "gl_per_serving": 4,
+      "gl_level": "低",
+      "serving_g": 250,
+      "serving_desc": "约250g",
+      "calories_per_100g": 45,
+      "carbs_per_100g": 8.0,
+      "protein_per_100g": 1.3,
+      "fat_per_100g": 1.5,
+      "fiber_per_100g": 1.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "早餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "注意选择无糖版本",
+      "tips": [
+        "GI低于牛奶（因β-葡聚糖）",
+        "选择无糖版本",
+        "市售燕麦奶可能加糖"
+      ],
+      "recommended_combos": [
+        "咖啡",
+        "茶"
+      ],
+      "data_sources": "SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-103",
+      "name_zh": "椰子水",
+      "name_en": "Coconut Water",
+      "category": "肉蛋奶",
+      "subcategory": "饮品",
+      "gi": 50,
+      "gi_level": "低",
+      "gl_per_serving": 7,
+      "gl_level": "低",
+      "serving_g": 250,
+      "serving_desc": "约250g",
+      "calories_per_100g": 19,
+      "carbs_per_100g": 3.7,
+      "protein_per_100g": 0.7,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 1.1,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐/运动前后",
+      "suitable_for": "血糖偏高者可适量饮用",
+      "caution_for": "市售调味椰子水可能添加糖",
+      "tips": [
+        "天然低糖电解质饮料，GI较低",
+        "含钾镁等电解质，运动后补水佳选",
+        "选择无添加糖的天然椰子水"
+      ],
+      "recommended_combos": [
+        "单独饮用即可"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-104",
+      "name_zh": "鸡蛋",
+      "name_en": "Egg",
+      "category": "肉蛋奶",
+      "subcategory": "蛋类",
+      "gi": 0,
+      "gi_level": "零碳水",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 50,
+      "serving_desc": "约50g",
+      "calories_per_100g": 155,
+      "carbs_per_100g": 1.1,
+      "protein_per_100g": 13.3,
+      "fat_per_100g": 8.8,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低（零碳水）",
+      "best_timing": "早餐",
+      "suitable_for": "所有人群（鸡蛋过敏者除外）",
+      "caution_for": "高胆固醇血症者咨询医生",
+      "tips": [
+        "几乎不含碳水，对血糖零影响",
+        "优质蛋白质来源，饱腹感强",
+        "水煮/蒸蛋最佳，避免油炸",
+        "每天1-2个对大多数人是安全的"
+      ],
+      "recommended_combos": [
+        "全麦面包",
+        "蔬菜",
+        "牛油果"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-105",
+      "name_zh": "鸡胸肉",
+      "name_en": "Chicken Breast",
+      "category": "肉蛋奶",
+      "subcategory": "禽肉",
+      "gi": 0,
+      "gi_level": "零碳水",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 100,
+      "serving_desc": "约100g",
+      "calories_per_100g": 133,
+      "carbs_per_100g": 0,
+      "protein_per_100g": 31.0,
+      "fat_per_100g": 1.2,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低（零碳水）",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "肾脏疾病患者需遵医嘱",
+      "tips": [
+        "纯蛋白质来源，零碳水",
+        "增加餐中蛋白质比例可延缓整体升糖",
+        "优先蒸、煮、煎（少油），避免裹粉油炸"
+      ],
+      "recommended_combos": [
+        "蔬菜沙拉",
+        "糙米",
+        "藜麦"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-106",
+      "name_zh": "猪里脊",
+      "name_en": "Pork Tenderloin",
+      "category": "肉蛋奶",
+      "subcategory": "畜肉",
+      "gi": 0,
+      "gi_level": "零碳水",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 100,
+      "serving_desc": "约100g",
+      "calories_per_100g": 155,
+      "carbs_per_100g": 0,
+      "protein_per_100g": 20.2,
+      "fat_per_100g": 7.9,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低（零碳水）",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "高血脂者选择瘦肉部分",
+      "tips": [
+        "零碳水，高蛋白",
+        "脂肪含量低于肥猪肉",
+        "蒸/煮/炒均可"
+      ],
+      "recommended_combos": [
+        "蔬菜",
+        "菌菇"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-107",
+      "name_zh": "牛里脊",
+      "name_en": "Beef Tenderloin",
+      "category": "肉蛋奶",
+      "subcategory": "畜肉",
+      "gi": 0,
+      "gi_level": "零碳水",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 100,
+      "serving_desc": "约100g",
+      "calories_per_100g": 135,
+      "carbs_per_100g": 0,
+      "protein_per_100g": 22.3,
+      "fat_per_100g": 5.0,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低（零碳水）",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "高血脂者注意份量",
+      "tips": [
+        "零碳水",
+        "富含铁和锌",
+        "选择瘦肉部位"
+      ],
+      "recommended_combos": [
+        "西兰花",
+        "蔬菜",
+        "糙米"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-108",
+      "name_zh": "三文鱼",
+      "name_en": "Salmon",
+      "category": "肉蛋奶",
+      "subcategory": "鱼类",
+      "gi": 0,
+      "gi_level": "零碳水",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 100,
+      "serving_desc": "约100g",
+      "calories_per_100g": 208,
+      "carbs_per_100g": 0,
+      "protein_per_100g": 20.4,
+      "fat_per_100g": 13.4,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低（零碳水）",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群，尤其推荐糖尿病患者",
+      "caution_for": "痛风急性期注意嘌呤",
+      "tips": [
+        "Omega-3脂肪酸有助减轻炎症、改善胰岛素敏感性",
+        "每周2-3次富含脂肪的鱼类有助心血管健康",
+        "清蒸或烤制，避免油炸和重糖酱汁"
+      ],
+      "recommended_combos": [
+        "西兰花",
+        "芦笋",
+        "柠檬",
+        "糙米"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-109",
+      "name_zh": "鳕鱼",
+      "name_en": "Cod",
+      "category": "肉蛋奶",
+      "subcategory": "鱼类",
+      "gi": 0,
+      "gi_level": "零碳水",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 100,
+      "serving_desc": "约100g",
+      "calories_per_100g": 82,
+      "carbs_per_100g": 0,
+      "protein_per_100g": 17.8,
+      "fat_per_100g": 0.5,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低（零碳水）",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "所有人群",
+      "caution_for": "无明显禁忌",
+      "tips": [
+        "零碳水，低脂肪高蛋白",
+        "热量极低",
+        "清蒸/煎制均可"
+      ],
+      "recommended_combos": [
+        "蔬菜",
+        "柠檬"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-110",
+      "name_zh": "虾",
+      "name_en": "Shrimp",
+      "category": "肉蛋奶",
+      "subcategory": "水产",
+      "gi": 0,
+      "gi_level": "零碳水",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 100,
+      "serving_desc": "约100g",
+      "calories_per_100g": 87,
+      "carbs_per_100g": 0,
+      "protein_per_100g": 18.6,
+      "fat_per_100g": 1.3,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低（零碳水）",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "高尿酸/痛风者注意",
+      "tips": [
+        "零碳水",
+        "高蛋白低脂肪",
+        "水煮/清蒸最佳"
+      ],
+      "recommended_combos": [
+        "蔬菜",
+        "西兰花"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-111",
+      "name_zh": "带鱼",
+      "name_en": "Hairtail",
+      "category": "肉蛋奶",
+      "subcategory": "鱼类",
+      "gi": 0,
+      "gi_level": "零碳水",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 100,
+      "serving_desc": "约100g",
+      "calories_per_100g": 127,
+      "carbs_per_100g": 0,
+      "protein_per_100g": 17.7,
+      "fat_per_100g": 4.9,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低（零碳水）",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "痛风者注意嘌呤",
+      "tips": [
+        "零碳水",
+        "富含Omega-3",
+        "煎/蒸均可"
+      ],
+      "recommended_combos": [
+        "蔬菜"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-112",
+      "name_zh": "瘦牛肉",
+      "name_en": "Lean Beef",
+      "category": "肉蛋奶",
+      "subcategory": "畜肉",
+      "gi": 0,
+      "gi_level": "零碳水",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 100,
+      "serving_desc": "约100g",
+      "calories_per_100g": 125,
+      "carbs_per_100g": 0,
+      "protein_per_100g": 20.2,
+      "fat_per_100g": 2.3,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低（零碳水）",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "高血脂者注意份量",
+      "tips": [
+        "零碳水高蛋白",
+        "富含铁和维生素B12",
+        "炖/炒均可"
+      ],
+      "recommended_combos": [
+        "西兰花",
+        "洋葱",
+        "蔬菜"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-113",
+      "name_zh": "鸭肉",
+      "name_en": "Duck",
+      "category": "肉蛋奶",
+      "subcategory": "禽肉",
+      "gi": 0,
+      "gi_level": "零碳水",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 100,
+      "serving_desc": "约100g",
+      "calories_per_100g": 240,
+      "carbs_per_100g": 0,
+      "protein_per_100g": 15.5,
+      "fat_per_100g": 19.7,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低（零碳水）",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "高血脂者去皮食用",
+      "tips": [
+        "零碳水",
+        "脂肪含量高于鸡肉",
+        "去皮可减少脂肪摄入"
+      ],
+      "recommended_combos": [
+        "蔬菜",
+        "菌菇"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-114",
+      "name_zh": "可乐",
+      "name_en": "Cola",
+      "category": "饮品",
+      "subcategory": "碳酸饮料",
+      "gi": 63,
+      "gi_level": "中",
+      "gl_per_serving": 20,
+      "gl_level": "中",
+      "serving_g": 330,
+      "serving_desc": "约330g",
+      "calories_per_100g": 42,
+      "carbs_per_100g": 10.6,
+      "protein_per_100g": 0,
+      "fat_per_100g": 0,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "中",
+      "best_timing": "无",
+      "suitable_for": "无特殊推荐",
+      "caution_for": "所有人群尤其是糖尿病、肥胖患者应避免",
+      "tips": [
+        "液态糖吸收极快，对血糖冲击巨大",
+        "一罐可乐约含35g糖（约7块方糖）",
+        "无糖/零度版本使用代糖，对血糖无直接影响",
+        "果糖含量高的饮料还会加重脂肪肝"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-115",
+      "name_zh": "橙汁",
+      "name_en": "Orange Juice",
+      "category": "饮品",
+      "subcategory": "果汁",
+      "gi": 50,
+      "gi_level": "低",
+      "gl_per_serving": 12,
+      "gl_level": "中",
+      "serving_g": 250,
+      "serving_desc": "约250g",
+      "calories_per_100g": 47,
+      "carbs_per_100g": 11.2,
+      "protein_per_100g": 0.7,
+      "fat_per_100g": 0.2,
+      "fiber_per_100g": 0.2,
+      "blood_sugar_impact": "极低",
+      "best_timing": "无",
+      "suitable_for": "一般人群偶尔少量",
+      "caution_for": "糖尿病者避免",
+      "tips": [
+        "榨汁过程破坏纤维，GI升高",
+        "液态糖吸收快",
+        "建议直接吃水果而非喝果汁"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-116",
+      "name_zh": "苹果汁",
+      "name_en": "Apple Juice",
+      "category": "饮品",
+      "subcategory": "果汁",
+      "gi": 44,
+      "gi_level": "低",
+      "gl_per_serving": 13,
+      "gl_level": "中",
+      "serving_g": 250,
+      "serving_desc": "约250g",
+      "calories_per_100g": 46,
+      "carbs_per_100g": 11.5,
+      "protein_per_100g": 0.1,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 0.2,
+      "blood_sugar_impact": "极低",
+      "best_timing": "无",
+      "suitable_for": "一般人群偶尔少量",
+      "caution_for": "糖尿病者避免",
+      "tips": [
+        "比橙汁GI稍低但仍然高",
+        "榨汁去除纤维",
+        "不如直接吃苹果"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-117",
+      "name_zh": "黑咖啡",
+      "name_en": "Black Coffee",
+      "category": "饮品",
+      "subcategory": "咖啡",
+      "gi": 0,
+      "gi_level": "零碳水",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 250,
+      "serving_desc": "约250g",
+      "calories_per_100g": 1,
+      "carbs_per_100g": 0,
+      "protein_per_100g": 0.1,
+      "fat_per_100g": 0,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低（零碳水）",
+      "best_timing": "早餐/加餐",
+      "suitable_for": "所有人群",
+      "caution_for": "胃病患者注意；孕妇控制咖啡因",
+      "tips": [
+        "零卡路里零碳水",
+        "有助提高代谢",
+        "不加糖不影响血糖"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-118",
+      "name_zh": "绿茶",
+      "name_en": "Green Tea",
+      "category": "饮品",
+      "subcategory": "茶",
+      "gi": 0,
+      "gi_level": "零碳水",
+      "gl_per_serving": 0,
+      "gl_level": "低",
+      "serving_g": 250,
+      "serving_desc": "约250g",
+      "calories_per_100g": 1,
+      "carbs_per_100g": 0,
+      "protein_per_100g": 0.2,
+      "fat_per_100g": 0,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低（零碳水）",
+      "best_timing": "全天",
+      "suitable_for": "所有人群",
+      "caution_for": "空腹不宜浓茶",
+      "tips": [
+        "零卡零碳水",
+        "富含儿茶素（EGCG），有助控糖",
+        "不加糖不影响血糖"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-119",
+      "name_zh": "奶茶（全糖）",
+      "name_en": "Milk Tea, sweetened",
+      "category": "饮品",
+      "subcategory": "奶茶",
+      "gi": 65,
+      "gi_level": "中",
+      "gl_per_serving": 18,
+      "gl_level": "中",
+      "serving_g": 500,
+      "serving_desc": "约500g",
+      "calories_per_100g": 95,
+      "carbs_per_100g": 18.0,
+      "protein_per_100g": 2.0,
+      "fat_per_100g": 3.0,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "中",
+      "best_timing": "无",
+      "suitable_for": "无特殊推荐",
+      "caution_for": "糖尿病/肥胖者应避免",
+      "tips": [
+        "含糖量极高，一杯全糖奶茶含糖约30-50g",
+        "液态糖+奶精/植脂末",
+        "升糖快且热量高"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-120",
+      "name_zh": "奶茶（无糖）",
+      "name_en": "Milk Tea, sugar-free",
+      "category": "饮品",
+      "subcategory": "奶茶",
+      "gi": 30,
+      "gi_level": "低",
+      "gl_per_serving": 5,
+      "gl_level": "低",
+      "serving_g": 500,
+      "serving_desc": "约500g",
+      "calories_per_100g": 45,
+      "carbs_per_100g": 7.0,
+      "protein_per_100g": 2.0,
+      "fat_per_100g": 2.0,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "注意是否有隐藏糖分",
+      "tips": [
+        "无糖版本升糖大幅降低",
+        "仍有奶中乳糖",
+        "选择真奶而非奶精"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-121",
+      "name_zh": "豆奶（无糖）",
+      "name_en": "Soy Milk, unsweetened",
+      "category": "饮品",
+      "subcategory": "植物奶",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 1,
+      "gl_level": "低",
+      "serving_g": 250,
+      "serving_desc": "约250g",
+      "calories_per_100g": 31,
+      "carbs_per_100g": 1.2,
+      "protein_per_100g": 3.0,
+      "fat_per_100g": 1.6,
+      "fiber_per_100g": 0.6,
+      "blood_sugar_impact": "极低",
+      "best_timing": "早餐",
+      "suitable_for": "所有人群",
+      "caution_for": "选择无糖版本",
+      "tips": [
+        "GI极低",
+        "优质植物蛋白",
+        "选择无糖版本"
+      ],
+      "recommended_combos": [
+        "全麦面包",
+        "鸡蛋"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-122",
+      "name_zh": "运动饮料",
+      "name_en": "Sports Drink",
+      "category": "饮品",
+      "subcategory": "功能饮料",
+      "gi": 78,
+      "gi_level": "高",
+      "gl_per_serving": 14,
+      "gl_level": "中",
+      "serving_g": 350,
+      "serving_desc": "约350g",
+      "calories_per_100g": 26,
+      "carbs_per_100g": 6.0,
+      "protein_per_100g": 0,
+      "fat_per_100g": 0,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极高",
+      "best_timing": "运动中",
+      "suitable_for": "高强度运动时适量",
+      "caution_for": "非运动/糖尿病者避免",
+      "tips": [
+        "含电解质但含糖量高",
+        "运动中补充快速能量",
+        "非运动时不宜当水喝"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-123",
+      "name_zh": "蜂蜜柠檬水",
+      "name_en": "Honey Lemon Water",
+      "category": "饮品",
+      "subcategory": "混合饮品",
+      "gi": 55,
+      "gi_level": "低",
+      "gl_per_serving": 8,
+      "gl_level": "低",
+      "serving_g": 250,
+      "serving_desc": "约250g",
+      "calories_per_100g": 40,
+      "carbs_per_100g": 9.5,
+      "protein_per_100g": 0.2,
+      "fat_per_100g": 0.1,
+      "fiber_per_100g": 0.2,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者控制蜂蜜用量",
+      "tips": [
+        "GI中等",
+        "蜂蜜比白糖GI低",
+        "控制蜂蜜用量"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-124",
+      "name_zh": "黑巧克力（70%+）",
+      "name_en": "Dark Chocolate 70%+",
+      "category": "零食",
+      "subcategory": "巧克力",
+      "gi": 23,
+      "gi_level": "低",
+      "gl_per_serving": 2,
+      "gl_level": "低",
+      "serving_g": 20,
+      "serving_desc": "约20g",
+      "calories_per_100g": 598,
+      "carbs_per_100g": 46.0,
+      "protein_per_100g": 7.8,
+      "fat_per_100g": 43.0,
+      "fiber_per_100g": 5.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "血糖偏高者少量食用",
+      "caution_for": "注意份量，热量密度高",
+      "tips": [
+        "可可含量越高，糖含量越低，GI越低",
+        "黄烷醇有助改善血管功能和胰岛素敏感性",
+        "选≥70%可可，避免牛奶巧克力和白巧克力",
+        "每天不超过20-30g"
+      ],
+      "recommended_combos": [
+        "坚果",
+        "无糖茶/黑咖啡"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-125",
+      "name_zh": "牛奶巧克力",
+      "name_en": "Milk Chocolate",
+      "category": "零食",
+      "subcategory": "巧克力",
+      "gi": 45,
+      "gi_level": "低",
+      "gl_per_serving": 6,
+      "gl_level": "低",
+      "serving_g": 20,
+      "serving_desc": "约20g",
+      "calories_per_100g": 535,
+      "carbs_per_100g": 59.0,
+      "protein_per_100g": 7.7,
+      "fat_per_100g": 30.3,
+      "fiber_per_100g": 3.4,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群偶尔少量",
+      "caution_for": "糖尿病者避免",
+      "tips": [
+        "含糖量远高于黑巧克力",
+        "GI中等",
+        "不推荐血糖偏高者"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-126",
+      "name_zh": "白巧克力",
+      "name_en": "White Chocolate",
+      "category": "零食",
+      "subcategory": "巧克力",
+      "gi": 42,
+      "gi_level": "低",
+      "gl_per_serving": 6,
+      "gl_level": "低",
+      "serving_g": 20,
+      "serving_desc": "约20g",
+      "calories_per_100g": 539,
+      "carbs_per_100g": 59.0,
+      "protein_per_100g": 5.9,
+      "fat_per_100g": 32.0,
+      "fiber_per_100g": 0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群偶尔少量",
+      "caution_for": "糖尿病者避免",
+      "tips": [
+        "含糖量最高",
+        "几乎不含可可",
+        "不推荐血糖偏高者"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-127",
+      "name_zh": "薯片",
+      "name_en": "Potato Chips",
+      "category": "零食",
+      "subcategory": "膨化食品",
+      "gi": 57,
+      "gi_level": "中",
+      "gl_per_serving": 10,
+      "gl_level": "低",
+      "serving_g": 50,
+      "serving_desc": "约50g",
+      "calories_per_100g": 547,
+      "carbs_per_100g": 49.7,
+      "protein_per_100g": 6.6,
+      "fat_per_100g": 34.6,
+      "fiber_per_100g": 4.4,
+      "blood_sugar_impact": "中",
+      "best_timing": "无",
+      "suitable_for": "一般人群偶尔少量",
+      "caution_for": "糖尿病/肥胖者避免",
+      "tips": [
+        "GI中等但脂肪极高",
+        "油炸食品",
+        "升糖+增重双重负面"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-128",
+      "name_zh": "饼干（消化饼）",
+      "name_en": "Digestive Biscuits",
+      "category": "零食",
+      "subcategory": "饼干",
+      "gi": 69,
+      "gi_level": "中",
+      "gl_per_serving": 12,
+      "gl_level": "中",
+      "serving_g": 50,
+      "serving_desc": "约50g",
+      "calories_per_100g": 478,
+      "carbs_per_100g": 65.0,
+      "protein_per_100g": 7.0,
+      "fat_per_100g": 21.0,
+      "fiber_per_100g": 3.0,
+      "blood_sugar_impact": "中",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群偶尔少量",
+      "caution_for": "糖尿病者避免",
+      "tips": [
+        "GI偏高",
+        "虽含纤维但糖分不低",
+        "不如全麦面包"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-129",
+      "name_zh": "蛋糕",
+      "name_en": "Cake",
+      "category": "零食",
+      "subcategory": "烘焙",
+      "gi": 70,
+      "gi_level": "中",
+      "gl_per_serving": 15,
+      "gl_level": "中",
+      "serving_g": 80,
+      "serving_desc": "约80g",
+      "calories_per_100g": 350,
+      "carbs_per_100g": 55.0,
+      "protein_per_100g": 5.0,
+      "fat_per_100g": 15.0,
+      "fiber_per_100g": 1.0,
+      "blood_sugar_impact": "中",
+      "best_timing": "无",
+      "suitable_for": "一般人群偶尔",
+      "caution_for": "糖尿病者避免",
+      "tips": [
+        "GI高",
+        "精制糖+精制面粉",
+        "升糖极快"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-130",
+      "name_zh": "甜甜圈",
+      "name_en": "Donut",
+      "category": "零食",
+      "subcategory": "烘焙",
+      "gi": 75,
+      "gi_level": "高",
+      "gl_per_serving": 18,
+      "gl_level": "中",
+      "serving_g": 80,
+      "serving_desc": "约80g",
+      "calories_per_100g": 452,
+      "carbs_per_100g": 51.0,
+      "protein_per_100g": 4.9,
+      "fat_per_100g": 25.0,
+      "fiber_per_100g": 1.2,
+      "blood_sugar_impact": "极高",
+      "best_timing": "无",
+      "suitable_for": "一般人群偶尔",
+      "caution_for": "糖尿病/肥胖者避免",
+      "tips": [
+        "GI高",
+        "油炸+高糖",
+        "升糖极快且热量极高"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-131",
+      "name_zh": "冰淇淋",
+      "name_en": "Ice Cream",
+      "category": "零食",
+      "subcategory": "冷饮",
+      "gi": 61,
+      "gi_level": "中",
+      "gl_per_serving": 8,
+      "gl_level": "低",
+      "serving_g": 80,
+      "serving_desc": "约80g",
+      "calories_per_100g": 127,
+      "carbs_per_100g": 17.3,
+      "protein_per_100g": 2.4,
+      "fat_per_100g": 6.8,
+      "fiber_per_100g": 0.5,
+      "blood_sugar_impact": "中",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群偶尔少量",
+      "caution_for": "糖尿病者避免或选无糖",
+      "tips": [
+        "GI中等",
+        "含糖量高但脂肪延缓部分吸收",
+        "选择无糖版本GI更低"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-132",
+      "name_zh": "爆米花（无糖）",
+      "name_en": "Popcorn, unsweetened",
+      "category": "零食",
+      "subcategory": "膨化食品",
+      "gi": 55,
+      "gi_level": "低",
+      "gl_per_serving": 6,
+      "gl_level": "低",
+      "serving_g": 30,
+      "serving_desc": "约30g",
+      "calories_per_100g": 387,
+      "carbs_per_100g": 77.8,
+      "protein_per_100g": 12.9,
+      "fat_per_100g": 4.5,
+      "fiber_per_100g": 15.1,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群适量（无糖版）",
+      "caution_for": "焦糖爆米花GI高",
+      "tips": [
+        "GI中等（无糖版）",
+        "全谷物零食",
+        "注意不要加糖/焦糖"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-133",
+      "name_zh": "坚果混合（无盐）",
+      "name_en": "Mixed Nuts, unsalted",
+      "category": "零食",
+      "subcategory": "坚果",
+      "gi": 15,
+      "gi_level": "低",
+      "gl_per_serving": 1,
+      "gl_level": "低",
+      "serving_g": 30,
+      "serving_desc": "约30g",
+      "calories_per_100g": 607,
+      "carbs_per_100g": 16.0,
+      "protein_per_100g": 20.0,
+      "fat_per_100g": 52.0,
+      "fiber_per_100g": 7.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "血糖偏高者的健康加餐首选",
+      "caution_for": "热量高，控制份量；过敏者注意",
+      "tips": [
+        "GI极低",
+        "健康脂肪和蛋白质",
+        "每天一小把（30g）"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-134",
+      "name_zh": "果干（混合）",
+      "name_en": "Dried Fruits",
+      "category": "零食",
+      "subcategory": "果干",
+      "gi": 50,
+      "gi_level": "低",
+      "gl_per_serving": 15,
+      "gl_level": "中",
+      "serving_g": 40,
+      "serving_desc": "约40g",
+      "calories_per_100g": 320,
+      "carbs_per_100g": 75.0,
+      "protein_per_100g": 2.5,
+      "fat_per_100g": 0.5,
+      "fiber_per_100g": 8.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "加餐",
+      "suitable_for": "一般人群少量",
+      "caution_for": "糖尿病者严格控制份量",
+      "tips": [
+        "脱水后果糖浓度高",
+        "GI虽中等但糖密度大",
+        "控制份量，每次一小把"
+      ],
+      "recommended_combos": [
+        "坚果"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-135",
+      "name_zh": "能量棒",
+      "name_en": "Energy Bar",
+      "category": "零食",
+      "subcategory": "代餐",
+      "gi": 60,
+      "gi_level": "中",
+      "gl_per_serving": 12,
+      "gl_level": "中",
+      "serving_g": 40,
+      "serving_desc": "约40g",
+      "calories_per_100g": 380,
+      "carbs_per_100g": 55.0,
+      "protein_per_100g": 15.0,
+      "fat_per_100g": 12.0,
+      "fiber_per_100g": 5.0,
+      "blood_sugar_impact": "中",
+      "best_timing": "运动后",
+      "suitable_for": "运动后补充",
+      "caution_for": "糖尿病者注意配料表含糖量",
+      "tips": [
+        "GI中等",
+        "看配料表选低糖版",
+        "代餐不能完全替代正餐"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-136",
+      "name_zh": "饺子（猪肉）",
+      "name_en": "Dumpling, pork",
+      "category": "混合膳食",
+      "subcategory": "中式",
+      "gi": 60,
+      "gi_level": "中",
+      "gl_per_serving": 12,
+      "gl_level": "中",
+      "serving_g": 200,
+      "serving_desc": "约200g",
+      "calories_per_100g": 250,
+      "carbs_per_100g": 30.0,
+      "protein_per_100g": 10.0,
+      "fat_per_100g": 8.0,
+      "fiber_per_100g": 2.0,
+      "blood_sugar_impact": "中",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者控制数量（6-8个）",
+      "tips": [
+        "GI中等",
+        "皮是精制面粉但馅料有蛋白质+蔬菜",
+        "蒸优于煎"
+      ],
+      "recommended_combos": [
+        "醋"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-137",
+      "name_zh": "包子（猪肉）",
+      "name_en": "Steamed Bun with filling",
+      "category": "混合膳食",
+      "subcategory": "中式",
+      "gi": 65,
+      "gi_level": "中",
+      "gl_per_serving": 14,
+      "gl_level": "中",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 230,
+      "carbs_per_100g": 28.0,
+      "protein_per_100g": 9.0,
+      "fat_per_100g": 7.0,
+      "fiber_per_100g": 1.5,
+      "blood_sugar_impact": "中",
+      "best_timing": "早餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者控制份量",
+      "tips": [
+        "GI中等",
+        "皮是精制面粉",
+        "馅料含蛋白质可延缓升糖"
+      ],
+      "recommended_combos": [
+        "豆浆"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-138",
+      "name_zh": "炒饭",
+      "name_en": "Fried Rice",
+      "category": "混合膳食",
+      "subcategory": "中式",
+      "gi": 70,
+      "gi_level": "中",
+      "gl_per_serving": 20,
+      "gl_level": "中",
+      "serving_g": 250,
+      "serving_desc": "约250g",
+      "calories_per_100g": 180,
+      "carbs_per_100g": 25.0,
+      "protein_per_100g": 6.0,
+      "fat_per_100g": 7.0,
+      "fiber_per_100g": 1.5,
+      "blood_sugar_impact": "中",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者少量",
+      "tips": [
+        "GI偏高",
+        "白米饭+油",
+        "加入鸡蛋/蔬菜/肉可稍降GI"
+      ],
+      "recommended_combos": [
+        "蔬菜汤"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-139",
+      "name_zh": "炒面",
+      "name_en": "Fried Noodles",
+      "category": "混合膳食",
+      "subcategory": "中式",
+      "gi": 75,
+      "gi_level": "高",
+      "gl_per_serving": 25,
+      "gl_level": "高",
+      "serving_g": 250,
+      "serving_desc": "约250g",
+      "calories_per_100g": 170,
+      "carbs_per_100g": 22.0,
+      "protein_per_100g": 5.0,
+      "fat_per_100g": 6.0,
+      "fiber_per_100g": 1.5,
+      "blood_sugar_impact": "极高",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者避免",
+      "tips": [
+        "GI高",
+        "精制面条+油",
+        "加入蔬菜可稍降GI"
+      ],
+      "recommended_combos": [
+        "蔬菜"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-140",
+      "name_zh": "汉堡",
+      "name_en": "Hamburger",
+      "category": "混合膳食",
+      "subcategory": "西式",
+      "gi": 66,
+      "gi_level": "中",
+      "gl_per_serving": 15,
+      "gl_level": "中",
+      "serving_g": 200,
+      "serving_desc": "约200g",
+      "calories_per_100g": 295,
+      "carbs_per_100g": 24.0,
+      "protein_per_100g": 17.0,
+      "fat_per_100g": 14.0,
+      "fiber_per_100g": 1.5,
+      "blood_sugar_impact": "中",
+      "best_timing": "午餐",
+      "suitable_for": "一般人群偶尔",
+      "caution_for": "糖尿病者偶尔少量",
+      "tips": [
+        "GI中等",
+        "面包GI高但肉饼蛋白质延缓升糖",
+        "快餐汉堡脂肪含量高"
+      ],
+      "recommended_combos": [
+        "蔬菜沙拉"
+      ],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-141",
+      "name_zh": "披萨",
+      "name_en": "Pizza",
+      "category": "混合膳食",
+      "subcategory": "西式",
+      "gi": 60,
+      "gi_level": "中",
+      "gl_per_serving": 18,
+      "gl_level": "中",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 266,
+      "carbs_per_100g": 33.0,
+      "protein_per_100g": 11.0,
+      "fat_per_100g": 10.0,
+      "fiber_per_100g": 2.3,
+      "blood_sugar_impact": "中",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群偶尔",
+      "caution_for": "糖尿病者偶尔少量",
+      "tips": [
+        "GI中等",
+        "面团+奶酪+ toppings",
+        "蛋白质和脂肪延缓部分升糖"
+      ],
+      "recommended_combos": [
+        "蔬菜沙拉"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-142",
+      "name_zh": "寿司",
+      "name_en": "Sushi",
+      "category": "混合膳食",
+      "subcategory": "日式",
+      "gi": 55,
+      "gi_level": "低",
+      "gl_per_serving": 12,
+      "gl_level": "中",
+      "serving_g": 150,
+      "serving_desc": "约150g",
+      "calories_per_100g": 150,
+      "carbs_per_100g": 28.0,
+      "protein_per_100g": 6.0,
+      "fat_per_100g": 1.0,
+      "fiber_per_100g": 0.5,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群适量",
+      "caution_for": "糖尿病者注意份量",
+      "tips": [
+        "GI中等",
+        "米饭+鱼+海苔",
+        "蛋白质有助延缓升糖",
+        "注意酱油含钠"
+      ],
+      "recommended_combos": [
+        "味噌汤"
+      ],
+      "data_sources": "CN+SYD",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-143",
+      "name_zh": "粥+鸡蛋+蔬菜",
+      "name_en": "Congee + Egg + Veg",
+      "category": "混合膳食",
+      "subcategory": "中式",
+      "gi": 55,
+      "gi_level": "低",
+      "gl_per_serving": 8,
+      "gl_level": "低",
+      "serving_g": 400,
+      "serving_desc": "约400g",
+      "calories_per_100g": 120,
+      "carbs_per_100g": 18.0,
+      "protein_per_100g": 8.0,
+      "fat_per_100g": 3.0,
+      "fiber_per_100g": 2.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "早餐",
+      "suitable_for": "一般人群",
+      "caution_for": "糖尿病者用杂粮粥替代白米粥",
+      "tips": [
+        "混合膳食比单喝粥GI低",
+        "蛋白质和纤维延缓升糖",
+        "比纯白米粥好得多"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-144",
+      "name_zh": "米饭+肉+菜（标准中式正餐）",
+      "name_en": "Rice + Meat + Veg",
+      "category": "混合膳食",
+      "subcategory": "中式",
+      "gi": 60,
+      "gi_level": "中",
+      "gl_per_serving": 15,
+      "gl_level": "中",
+      "serving_g": 400,
+      "serving_desc": "约400g",
+      "calories_per_100g": 180,
+      "carbs_per_100g": 22.0,
+      "protein_per_100g": 10.0,
+      "fat_per_100g": 5.0,
+      "fiber_per_100g": 3.0,
+      "blood_sugar_impact": "中",
+      "best_timing": "午餐/晚餐",
+      "suitable_for": "一般人群",
+      "caution_for": "糖尿病者控制米饭份量",
+      "tips": [
+        "混合膳食GI低于纯米饭",
+        "先吃菜再吃肉最后吃饭可进一步降GI",
+        "标准中式正餐结构"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    },
+    {
+      "id": "food-145",
+      "name_zh": "全麦三明治",
+      "name_en": "Whole Wheat Sandwich",
+      "category": "混合膳食",
+      "subcategory": "西式",
+      "gi": 50,
+      "gi_level": "低",
+      "gl_per_serving": 10,
+      "gl_level": "低",
+      "serving_g": 200,
+      "serving_desc": "约200g",
+      "calories_per_100g": 230,
+      "carbs_per_100g": 28.0,
+      "protein_per_100g": 12.0,
+      "fat_per_100g": 8.0,
+      "fiber_per_100g": 4.0,
+      "blood_sugar_impact": "极低",
+      "best_timing": "午餐",
+      "suitable_for": "一般人群",
+      "caution_for": "选择真全麦面包",
+      "tips": [
+        "GI低",
+        "全麦面包+蛋白质+蔬菜",
+        "健康的一餐选择"
+      ],
+      "recommended_combos": [],
+      "data_sources": "CN",
+      "data_source_detail": {
+        "CN": "中国食物成分表（第6版）",
+        "SYD": "悉尼大学GI数据库 (glycemicindex.com)",
+        "USDA": "USDA FoodData Central"
+      }
+    }
+  ]
+}

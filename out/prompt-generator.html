@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>血糖知识 Prompt 生成器</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#f7f5f0;--bg2:#fff;--bg3:#ede9e0;
+  --ink:#2c2520;--muted:#8a7f72;--rule:#d9d0c5;
+  --accent:#0d7c66;--accent2:#c44d3a;--accent3:#2563eb;
+  --warn:#e9a23b;--selected:#0d7c66;--selected-bg:#e8f5f0;
+}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;font-size:15px}
+.app{max-width:760px;margin:0 auto;padding:0 16px 60px}
+
+/* Hero */
+.hero{text-align:center;padding:48px 0 32px}
+.hero h1{font-size:1.6rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:8px}
+.hero .sub{font-size:0.88rem;color:var(--muted);max-width:480px;margin:0 auto}
+.hero .flow{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:20px;font-size:0.76rem;color:var(--muted)}
+.hero .flow .s{background:var(--bg2);border:1px solid var(--rule);border-radius:6px;padding:3px 10px;font-weight:600;white-space:nowrap}
+.hero .flow .a{color:var(--accent);font-weight:700}
+
+/* Step */
+.step{margin:24px 0;background:var(--bg2);border-radius:14px;overflow:hidden;border:1px solid var(--rule)}
+.step-head{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--rule);background:var(--bg3)}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:700;flex-shrink:0}
+.step-title{font-weight:700;font-size:1rem}
+.step-desc{font-size:0.78rem;color:var(--muted);margin-left:auto}
+.step-body{padding:16px 18px}
+
+/* Option grids */
+.opt-grid{display:grid;gap:8px}
+.opt-grid.cols-3{grid-template-columns:repeat(3,1fr)}
+.opt-grid.cols-4{grid-template-columns:repeat(4,1fr)}
+.opt-grid.cols-2{grid-template-columns:repeat(2,1fr)}
+
+.opt{
+  border:2px solid var(--rule);border-radius:10px;padding:12px 10px;cursor:pointer;
+  transition:all .15s;text-align:center;background:var(--bg2);position:relative;
+}
+.opt:hover{border-color:var(--accent);background:var(--selected-bg)}
+.opt.active{border-color:var(--accent);background:var(--selected-bg);box-shadow:0 0 0 1px var(--accent)}
+.opt .icon{font-size:1.4rem;margin-bottom:4px}
+.opt .label{font-size:0.82rem;font-weight:600;line-height:1.3}
+.opt .desc{font-size:0.7rem;color:var(--muted);margin-top:3px;line-height:1.4}
+.opt .tag{position:absolute;top:-7px;right:6px;background:var(--warn);color:#fff;font-size:0.6rem;padding:1px 6px;border-radius:4px;font-weight:700}
+
+.opt-mini{padding:8px 6px}
+.opt-mini .icon{font-size:1.1rem;margin-bottom:2px}
+.opt-mini .label{font-size:0.76rem}
+
+/* Food list */
+.food-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+.food-item{
+  border:2px solid var(--rule);border-radius:10px;padding:10px;cursor:pointer;
+  transition:all .15s;background:var(--bg2);
+}
+.food-item:hover{border-color:var(--accent);background:var(--selected-bg)}
+.food-item.active{border-color:var(--accent);background:var(--selected-bg);box-shadow:0 0 0 1px var(--accent)}
+.food-item .gi-badge{display:inline-block;font-size:0.65rem;padding:1px 6px;border-radius:4px;font-weight:700;margin-bottom:4px}
+.gi-low{background:#e6f7f0;color:#0d7c66}
+.gi-mid{background:#fef5e7;color:#b7791f}
+.gi-high{background:#fdebe6;color:#c44d3a}
+.food-item .name{font-size:0.84rem;font-weight:600}
+.food-item .cat{font-size:0.68rem;color:var(--muted);margin-top:2px}
+.food-item .gi-val{font-size:0.72rem;color:var(--ink);margin-top:3px;font-weight:700}
+
+/* Output */
+.output{margin:28px 0;background:var(--bg2);border-radius:14px;overflow:hidden;border:1px solid var(--rule)}
+.output-head{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--rule);background:var(--bg3)}
+.output-head .badge{font-size:0.7rem;font-family:monospace;background:var(--accent);color:#fff;padding:2px 8px;border-radius:4px;font-weight:700}
+.output-breadcrumb{font-size:0.78rem;color:var(--muted);margin-left:auto;font-weight:600}
+.output-body{padding:0}
+.output-tabs{display:flex;border-bottom:1px solid var(--rule)}
+.output-tab{padding:10px 18px;font-size:0.82rem;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s}
+.output-tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+.output-content{padding:16px 18px}
+.output-content pre{
+  background:#1e293b;color:#e2e8f0;padding:16px;border-radius:8px;
+  overflow-x:auto;font-family:"JetBrains Mono","Cascadia Code",monospace;
+  font-size:0.76rem;line-height:1.65;white-space:pre-wrap;word-break:break-word;
+}
+.copy-btn{
+  margin:12px 18px;padding:10px 20px;background:var(--accent);color:#fff;
+  border:none;border-radius:8px;font-size:0.85rem;font-weight:700;cursor:pointer;
+  transition:all .15s;display:flex;align-items:center;gap:6px;
+}
+.copy-btn:hover{background:#0a5d4d}
+.copy-btn:active{transform:scale(0.97)}
+.copy-btn.copied{background:#0a5d4d}
+
+.empty{text-align:center;padding:40px 20px;color:var(--muted);font-size:0.88rem}
+
+/* Footer */
+.footer{text-align:center;padding:20px;font-size:0.72rem;color:var(--muted);border-top:1px solid var(--rule);margin-top:24px}
+
+/* Responsive */
+@media(max-width:600px){
+  .opt-grid.cols-3,.opt-grid.cols-4{grid-template-columns:repeat(2,1fr)}
+  .food-list{grid-template-columns:repeat(2,1fr)}
+  .hero h1{font-size:1.3rem}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- Hero -->
+  <div class="hero">
+    <h1>🩸 血糖知识 Prompt 生成器</h1>
+    <p class="sub">选内容 → 选主题 → 选模式 → 选风格 → 生成完整提示词 → 发 Claude 联网查资料 → 发香蕉Pro/即梦出图</p>
+    <div class="flow">
+      <span class="s">选内容主线</span><span class="a">→</span>
+      <span class="s">选具体主题</span><span class="a">→</span>
+      <span class="s">选出图模式</span><span class="a">→</span>
+      <span class="s">选视觉风格</span><span class="a">→</span>
+      <span class="s">生成Prompt</span>
+    </div>
+  </div>
+
+  <!-- Step 1: 内容主线 -->
+  <div class="step">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div class="step-title">选内容主线</div>
+      <div class="step-desc">决定整张图的核心目的</div>
+    </div>
+    <div class="step-body">
+      <div class="opt-grid cols-3" id="line-grid">
+        <div class="opt active" data-line="food">
+          <div class="icon">🍎</div>
+          <div class="label">食物线</div>
+          <div class="desc">GI速查/对比/排行榜</div>
+        </div>
+        <div class="opt" data-line="knowledge">
+          <div class="icon">📚</div>
+          <div class="label">知识线</div>
+          <div class="desc">GI概念/血糖范围/误区</div>
+        </div>
+        <div class="opt" data-line="action">
+          <div class="icon">⚡</div>
+          <div class="label">行动线</div>
+          <div class="desc">用餐顺序/控糖方案</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 2: 具体主题 -->
+  <div class="step">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div class="step-title" id="step2-title">选具体食物</div>
+      <div class="step-desc" id="step2-desc">点击选择</div>
+    </div>
+    <div class="step-body" id="step2-body">
+      <!-- 动态填充 -->
+    </div>
+  </div>
+
+  <!-- Step 3: 出图模式 -->
+  <div class="step">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div class="step-title">选出图模式</div>
+      <div class="step-desc">单张快速验证 / 系列完整覆盖</div>
+    </div>
+    <div class="step-body">
+      <div class="opt-grid cols-3" id="mode-grid">
+        <div class="opt active" data-mode="single">
+          <div class="icon">📄</div>
+          <div class="label">单张速查卡</div>
+          <div class="desc">1张·核心数据速查</div>
+          <div class="tag">推荐</div>
+        </div>
+        <div class="opt" data-mode="series3">
+          <div class="icon">📖</div>
+          <div class="label">系列3张</div>
+          <div class="desc">是什么→误区→怎么做</div>
+        </div>
+        <div class="opt" data-mode="series4">
+          <div class="icon">🗂️</div>
+          <div class="label">系列4张</div>
+          <div class="desc">速查→曲线→建议→冷知识</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 4: 风格 -->
+  <div class="step">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div class="step-title">选视觉风格</div>
+      <div class="step-desc">风格匹配受众和内容类型</div>
+    </div>
+    <div class="step-body">
+      <div class="opt-grid cols-2" id="style-grid">
+        <div class="opt active" data-style="medical">
+          <div class="icon">🏥</div>
+          <div class="label">医学信息图风</div>
+          <div class="desc">深蓝+白底+几何线条，权威感强。适合知识科普、诊断标准、误区纠正</div>
+        </div>
+        <div class="opt" data-style="warm">
+          <div class="icon">🎨</div>
+          <div class="label">温暖科普插画风</div>
+          <div class="desc">暖橙+米白+手绘食物，亲切感强。适合食物卡片、饮食建议</div>
+        </div>
+        <div class="opt" data-style="dataviz">
+          <div class="icon">📊</div>
+          <div class="label">数据可视化风</div>
+          <div class="desc">白底+大色块+大数字，极简现代。适合排行榜、曲线对比</div>
+        </div>
+        <div class="opt" data-style="chinese">
+          <div class="icon">🏮</div>
+          <div class="label">新中式健康风</div>
+          <div class="desc">米黄底+国潮插画+茶棕色，中西结合。适合养生内容</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Output -->
+  <div class="output" id="output-section" style="display:none">
+    <div class="step-head">
+      <div class="step-num">✓</div>
+      <div class="step-title">生成结果</div>
+      <span class="badge">READY</span>
+      <div class="output-breadcrumb" id="breadcrumb"></div>
+    </div>
+    <div class="output-tabs">
+      <div class="output-tab active" data-tab="prompt">📋 图片框架提示词</div>
+      <div class="output-tab" data-tab="copy">📝 发布文案</div>
+      <div class="output-tab" data-tab="verify">🔍 数据验证</div>
+    </div>
+    <div class="output-content" id="output-prompt">
+      <pre id="prompt-text"></pre>
+    </div>
+    <div class="output-content" id="output-copy" style="display:none">
+      <pre id="copy-text"></pre>
+    </div>
+    <div class="output-content" id="output-verify" style="display:none">
+      <div id="verify-content" style="padding:16px 18px"></div>
+    </div>
+    <button class="copy-btn" id="copy-btn">📋 一键复制当前内容</button>
+  </div>
+
+  <div class="empty" id="empty-state">
+    👆 完成上方4步选择，自动生成完整 Prompt
+  </div>
+
+  <div class="footer">
+    血糖知识 Prompt 生成器 · 数据来源：悉尼大学GI数据库(4277条) / USDA FoodData Central / 中国食物成分表(第6版·259种)<br>
+    内容仅供参考，不构成医疗建议 · 生成后请发 Claude 联网核实数据再出图
+  </div>
+</div>
+
+<script>
+// ========== DATA ==========
+const FOODS=[
+{id:"food-001",name:"葡萄糖",en:"Glucose",cat:"糖类",sub:"单糖",gi:100,giLevel:"高",gl:0,glLevel:"低",cal:400,carbs:100,protein:0,fat:0,fiber:0,impact:"极高",serving:"约10g",timing:"无",suitable:"医疗急救低血糖时使用",caution:"非急救情况避免直接食用",tips:["血糖基准物质，GI=100", "所有糖类中升糖最快", "直接饮用葡萄糖水后血糖极速飙升"],combos:[],src:"CN+SYD"},
+{id:"food-002",name:"蔗糖/白砂糖",en:"Sucrose/White Sugar",cat:"糖类",sub:"双糖",gi:65,giLevel:"中",gl:7,glLevel:"低",cal:387,carbs:99.9,protein:0,fat:0,fiber:0,impact:"中",serving:"约10g",timing:"无",suitable:"一般人群少量",caution:"糖尿病/减重者严格控制",tips:["中GI但纯热量无营养", "每日添加糖应控制在25g以下", "液态糖比固态糖升糖更快"],combos:[],src:"CN+SYD"},
+{id:"food-003",name:"蜂蜜",en:"Honey",cat:"糖类",sub:"天然糖",gi:61,giLevel:"中",gl:10,glLevel:"低",cal:321,carbs:75.6,protein:0.4,fat:1.9,fiber:0,impact:"中",serving:"约25g",timing:"加餐",suitable:"一般人群适量",caution:"1岁以下婴儿禁用",tips:["天然蜂蜜GI略低于白糖", "果糖含量约40%", "一勺蜂蜜约21g糖"],combos:["柠檬水", "燕麦"],src:"CN+SYD"},
+{id:"food-004",name:"冰糖",en:"Rock Sugar",cat:"糖类",sub:"加工糖",gi:70,giLevel:"中",gl:7,glLevel:"低",cal:397,carbs:99,protein:0,fat:0,fiber:0,impact:"中",serving:"约10g",timing:"无",suitable:"少量调味",caution:"糖尿病者避免",tips:["GI较高，与白糖接近", "常用于中式炖品", "控制用量"],combos:[],src:"CN"},
+{id:"food-005",name:"麦芽糖",en:"Maltose",cat:"糖类",sub:"双糖",gi:105,giLevel:"高",gl:11,glLevel:"中",cal:336,carbs:84,protein:0,fat:0,fiber:0,impact:"极高",serving:"约10g",timing:"无",suitable:"一般人群少量",caution:"糖尿病者避免",tips:["GI比葡萄糖还高", "常用于烘焙和传统糖果", "升糖极快"],combos:[],src:"CN+SYD"},
+{id:"food-006",name:"白米饭",en:"White Rice, cooked",cat:"谷类",sub:"白米",gi:83,giLevel:"高",gl:36,glLevel:"高",cal:116,carbs:25.9,protein:2.6,fat:0.3,fiber:0.4,impact:"极高",serving:"约150g",timing:"午餐",suitable:"血糖控制良好者可少量食用",caution:"糖尿病患者需严格控制份量",tips:["升糖速度极快，建议混合糙米或杂豆降低GI", "放凉后部分淀粉变为抗性淀粉，升糖略降", "每餐控制在一小碗（150g）以内", "先吃蔬菜和蛋白质，最后吃米饭可延缓升糖"],combos:["绿叶蔬菜", "瘦肉", "鱼肉", "豆制品"],src:"CN+SYD"},
+{id:"food-007",name:"糙米饭",en:"Brown Rice, cooked",cat:"谷类",sub:"全谷物",gi:50,giLevel:"低",gl:17,glLevel:"中",cal:111,carbs:23.0,protein:2.6,fat:0.9,fiber:1.8,impact:"极低",serving:"约150g",timing:"午餐",suitable:"血糖偏高者替代白米饭的首选",caution:"消化功能弱者适量",tips:["比白米升糖慢得多（GI低约33点）", "麸皮含丰富膳食纤维和B族维生素", "提前浸泡可改善口感，不改变GI", "放凉后部分淀粉转为抗性淀粉"],combos:["菌菇类", "豆类", "鱼", "蔬菜"],src:"CN+SYD"},
+{id:"food-008",name:"糯米饭",en:"Glutinous Rice, cooked",cat:"谷类",sub:"糯米",gi:87,giLevel:"高",gl:35,glLevel:"高",cal:97,carbs:23.0,protein:2.5,fat:0.3,fiber:0.3,impact:"极高",serving:"约150g",timing:"无",suitable:"血糖正常人群偶尔少量",caution:"糖尿病及糖耐量异常者避免",tips:["支链淀粉含量极高，升糖速度最快的米饭", "汤圆、粽子、糯米鸡均属此类", "糖尿病患者应完全避免"],combos:[],src:"CN+SYD"},
+{id:"food-009",name:"大米粥",en:"Rice Porridge/Congee",cat:"谷类",sub:"粥类",gi:69,giLevel:"中",gl:9,glLevel:"低",cal:46,carbs:9.8,protein:1.1,fat:0.2,fiber:0.1,impact:"中",serving:"约200g",timing:"早餐",suitable:"肠胃不适时少量食用",caution:"糖尿病患者避免单独食用白米粥",tips:["长时间熬煮使淀粉糊化，GI高于米饭", "熬煮越久GI越高", "可加入杂粮、豆类降低GI"],combos:["皮蛋瘦肉", "蔬菜"],src:"CN+SYD"},
+{id:"food-010",name:"小米粥",en:"Millet Porridge",cat:"谷类",sub:"粥类",gi:62,giLevel:"中",gl:10,glLevel:"低",cal:46,carbs:8.4,protein:1.4,fat:0.7,fiber:0.3,impact:"中",serving:"约200g",timing:"早餐",suitable:"一般人群适量",caution:"糖尿病患者仍需控制份量",tips:["GI低于大米粥", "含B族维生素丰富", "养胃但升糖不低"],combos:["南瓜", "红枣"],src:"CN"},
+{id:"food-011",name:"馒头",en:"Steamed Bun/Mantou",cat:"谷类",sub:"面食",gi:88,giLevel:"高",gl:33,glLevel:"高",cal:223,carbs:44.2,protein:7.0,fat:1.1,fiber:2.3,impact:"极高",serving:"约80g",timing:"早餐",suitable:"血糖正常人群",caution:"糖尿病及糖耐量异常者应避免",tips:["升糖速度和幅度均很高", "可替换为全麦馒头或杂粮馒头", "如食用，务必搭配足量蔬菜和蛋白质"],combos:["豆浆（无糖）", "鸡蛋", "蔬菜沙拉"],src:"CN+SYD"},
+{id:"food-012",name:"全麦面包",en:"Whole Wheat Bread",cat:"谷类",sub:"面包",gi:69,giLevel:"中",gl:14,glLevel:"中",cal:247,carbs:41.3,protein:13.4,fat:3.4,fiber:6.0,impact:"中",serving:"约70g",timing:"早餐",suitable:"血糖偏高者可适量替代白面包",caution:"注意份量（2片为宜）",tips:["选购时注意配料表第一位是否为全麦粉", "市售全麦面包可能仅添加少量全麦粉", "搭配鸡蛋或牛油果可进一步降低升糖"],combos:["鸡蛋", "牛油果", "生菜", "番茄"],src:"CN+SYD"},
+{id:"food-013",name:"白面包",en:"White Bread",cat:"谷类",sub:"面包",gi:88,giLevel:"高",gl:28,glLevel:"高",cal:265,carbs:49.1,protein:9.0,fat:3.2,fiber:2.7,impact:"极高",serving:"约70g",timing:"早餐",suitable:"一般人群偶尔",caution:"糖尿病者避免",tips:["精制小麦粉制作，GI很高", "比全麦面包升糖快得多", "法棍/吐司均属此类"],combos:[],src:"CN+SYD"},
+{id:"food-014",name:"法棍面包",en:"French Baguette",cat:"谷类",sub:"面包",gi:95,giLevel:"高",gl:35,glLevel:"高",cal:272,carbs:51.9,protein:9.0,fat:1.3,fiber:2.7,impact:"极高",serving:"约70g",timing:"无",suitable:"一般人群偶尔",caution:"糖尿病者避免",tips:["GI极高，接近葡萄糖", "精制面粉烘焙", "糖尿病患者应完全避免"],combos:[],src:"SYD"},
+{id:"food-015",name:"燕麦片（传统压制）",en:"Rolled Oats",cat:"谷类",sub:"燕麦",gi:55,giLevel:"低",gl:13,glLevel:"中",cal:377,carbs:66.3,protein:13.2,fat:6.7,fiber:10.1,impact:"极低",serving:"约40g",timing:"早餐",suitable:"血糖偏高者的优质早餐",caution:"即食燕麦GI偏高（79），慎选",tips:["选择传统压制或钢切燕麦，避免即食燕麦（GI高达79）", "钢切燕麦GI仅为42，是最优选择", "β-葡聚糖有助延缓血糖上升", "不要加糖，用少量水果或肉桂粉调味"],combos:["坚果", "鸡蛋", "蓝莓", "奇亚籽"],src:"CN+SYD"},
+{id:"food-016",name:"即食燕麦片",en:"Instant Oats",cat:"谷类",sub:"燕麦",gi:79,giLevel:"高",gl:18,glLevel:"中",cal:377,carbs:66.3,protein:13.2,fat:6.7,fiber:10.1,impact:"极高",serving:"约40g",timing:"早餐",suitable:"一般人群偶尔",caution:"糖尿病者避免，选传统压制燕麦",tips:["加工度高导致GI远高于传统燕麦", "预煮+压薄使淀粉易消化", "不推荐血糖偏高者食用"],combos:[],src:"CN+SYD"},
+{id:"food-017",name:"钢切燕麦",en:"Steel Cut Oats",cat:"谷类",sub:"燕麦",gi:42,giLevel:"低",gl:9,glLevel:"低",cal:380,carbs:67.0,protein:12.5,fat:6.5,fiber:10.0,impact:"极低",serving:"约40g",timing:"早餐",suitable:"糖尿病患者的最优燕麦选择",caution:"无明显禁忌",tips:["GI最低的燕麦品类", "加工最少，消化最慢", "需要较长时间烹煮（20-30分钟）"],combos:["坚果", "蓝莓", "奇亚籽"],src:"SYD"},
+{id:"food-018",name:"荞麦面",en:"Buckwheat Noodles/Soba",cat:"谷类",sub:"面条",gi:49,giLevel:"低",gl:14,glLevel:"中",cal:99,carbs:21.4,protein:4.8,fat:0.5,fiber:2.0,impact:"极低",serving:"约180g",timing:"午餐/晚餐",suitable:"血糖偏高者可选的面食替代",caution:"市售荞麦面可能混入小麦粉",tips:["升糖速度显著低于小麦面条", "含芦丁（Rutin），有助血管健康", "注意汤底和酱料是否含糖", "选购高荞麦含量（>50%）的面"],combos:["蔬菜", "菌菇", "鸡蛋", "豆腐"],src:"CN+SYD"},
+{id:"food-019",name:"意大利面",en:"Pasta/Spaghetti",cat:"谷类",sub:"面条",gi:45,giLevel:"低",gl:16,glLevel:"中",cal:158,carbs:30.9,protein:5.8,fat:0.9,fiber:1.8,impact:"极低",serving:"约180g",timing:"午餐/晚餐",suitable:"血糖偏高者可选的主食",caution:"注意酱料含糖量",tips:["硬质小麦制作的意面GI较低", "煮5-15分钟GI不同，煮越久GI越高", "al dente（有嚼劲）GI最低"],combos:["番茄酱（无糖）", "蔬菜", "橄榄油", "肉酱"],src:"CN+SYD"},
+{id:"food-020",name:"普通面条",en:"Chinese Noodles",cat:"谷类",sub:"面条",gi:82,giLevel:"高",gl:30,glLevel:"高",cal:110,carbs:24.3,protein:3.5,fat:0.6,fiber:1.2,impact:"极高",serving:"约180g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"糖尿病者避免或少量",tips:["精制小麦粉制作，GI较高", "汤面比拌面升糖更快", "可加入大量蔬菜延缓升糖"],combos:["蔬菜", "鸡蛋", "瘦肉"],src:"CN"},
+{id:"food-021",name:"米粉",en:"Rice Noodles",cat:"谷类",sub:"面条",gi:58,giLevel:"中",gl:20,glLevel:"中",cal:109,carbs:24.9,protein:3.0,fat:0.2,fiber:0.5,impact:"中",serving:"约180g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"糖尿病者少量",tips:["GI中等，低于白米饭但高于糙米", "南方常见主食", "炒粉比汤粉升糖稍慢"],combos:["蔬菜", "瘦肉", "鸡蛋"],src:"CN"},
+{id:"food-022",name:"玉米（老）",en:"Corn",cat:"谷类",sub:"玉米",gi:52,giLevel:"低",gl:12,glLevel:"中",cal:112,carbs:22.8,protein:4.0,fat:1.2,fiber:2.9,impact:"极低",serving:"约100g",timing:"早餐/午餐",suitable:"血糖偏高者可适量食用",caution:"糯玉米需注意",tips:["老玉米GI低于甜玉米和糯玉米", "甜玉米含糖量较高但GI仍属低", "糯玉米支链淀粉多，消化快，需注意"],combos:["鸡蛋", "牛奶", "蔬菜"],src:"CN+SYD"},
+{id:"food-023",name:"甜玉米",en:"Sweet Corn",cat:"谷类",sub:"玉米",gi:55,giLevel:"低",gl:13,glLevel:"中",cal:86,carbs:19.0,protein:3.2,fat:1.2,fiber:2.7,impact:"极低",serving:"约100g",timing:"加餐",suitable:"一般人群适量",caution:"糖尿病者注意份量",tips:["GI处于低GI上限", "含糖量比老玉米高", "水煮最佳，避免烤制加糖"],combos:["牛奶", "鸡蛋"],src:"CN+SYD"},
+{id:"food-024",name:"糯玉米",en:"Waxy Corn",cat:"谷类",sub:"玉米",gi:75,giLevel:"高",gl:18,glLevel:"中",cal:130,carbs:28.0,protein:3.5,fat:1.0,fiber:2.0,impact:"极高",serving:"约100g",timing:"无",suitable:"一般人群偶尔",caution:"糖尿病者避免",tips:["GI高，升糖快", "支链淀粉含量高", "口感软糯但血糖影响大"],combos:[],src:"CN"},
+{id:"food-025",name:"小米",en:"Millet",cat:"谷类",sub:"杂粮",gi:71,giLevel:"高",gl:14,glLevel:"中",cal:358,carbs:72.0,protein:9.0,fat:3.1,fiber:1.3,impact:"极高",serving:"约150g",timing:"早餐",suitable:"一般人群适量",caution:"糖尿病者控制份量",tips:["GI偏高但低于白米", "常用于煮粥", "可搭配豆类降低GI"],combos:["红豆", "绿豆", "蔬菜"],src:"CN"},
+{id:"food-026",name:"藜麦",en:"Quinoa",cat:"谷类",sub:"杂粮",gi:53,giLevel:"低",gl:12,glLevel:"中",cal:120,carbs:21.3,protein:4.1,fat:1.9,fiber:2.8,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"血糖偏高者的优质主食替代",caution:"无明显禁忌",tips:["全蛋白来源（含全部9种必需氨基酸）", "GI低，纤维丰富", "浸泡后煮熟，口感类似米饭", "比白米饭升糖慢得多"],combos:["烤蔬菜", "鸡胸肉", "豆类", "牛油果"],src:"CN+SYD"},
+{id:"food-027",name:"糙米",en:"Brown Rice, raw",cat:"谷类",sub:"全谷物",gi:50,giLevel:"低",gl:17,glLevel:"中",cal:348,carbs:72.0,protein:7.4,fat:2.7,fiber:3.4,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"血糖偏高者的主食首选",caution:"消化功能弱者适量",tips:["比白米升糖慢得多", "富含膳食纤维和B族维生素", "需提前浸泡烹煮"],combos:["蔬菜", "豆类"],src:"CN+SYD"},
+{id:"food-028",name:"黑米",en:"Black Rice",cat:"谷类",sub:"全谷物",gi:55,giLevel:"低",gl:13,glLevel:"中",cal:333,carbs:68.0,protein:8.9,fat:2.2,fiber:3.5,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"无明显禁忌",tips:["花青素含量高，抗氧化", "GI处于低GI上限", "口感较硬需提前浸泡"],combos:["蔬菜", "豆类"],src:"CN"},
+{id:"food-029",name:"红米",en:"Red Rice",cat:"谷类",sub:"全谷物",gi:55,giLevel:"低",gl:14,glLevel:"中",cal:340,carbs:70.0,protein:8.0,fat:2.5,fiber:3.0,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"无明显禁忌",tips:["富含花青素和铁", "GI与黑米接近", "口感较糙需浸泡"],combos:["蔬菜", "豆类"],src:"CN"},
+{id:"food-030",name:"小麦粉（白）",en:"White Wheat Flour",cat:"谷类",sub:"面粉",gi:85,giLevel:"高",gl:0,glLevel:"低",cal:354,carbs:74.4,protein:11.2,fat:1.5,fiber:2.8,impact:"极高",serving:"按需",timing:"无",suitable:"一般人群适量",caution:"糖尿病者控制摄入",tips:["精制面粉GI很高", "用于制作馒头、面包、面条等", "全麦粉GI约69，优于白面粉"],combos:[],src:"CN"},
+{id:"food-031",name:"红薯（蒸）",en:"Sweet Potato, steamed",cat:"薯类",sub:"红薯",gi:54,giLevel:"低",gl:13,glLevel:"中",cal:86,carbs:20.1,protein:1.6,fat:0.1,fiber:2.6,impact:"极低",serving:"约150g",timing:"午餐",suitable:"蒸/煮方式适用血糖偏高者",caution:"烤红薯升糖极快（GI 82-94），需避免",tips:["蒸/煮红薯GI约44-54（低GI），烤红薯GI高达82-94", "放凉后抗性淀粉增加，升糖更慢", "红薯纤维丰富，饱腹感强"],combos:["绿叶蔬菜", "鸡蛋", "鸡胸肉"],src:"CN+SYD"},
+{id:"food-032",name:"红薯（烤）",en:"Sweet Potato, baked",cat:"薯类",sub:"红薯",gi:82,giLevel:"高",gl:20,glLevel:"中",cal:90,carbs:21.0,protein:1.5,fat:0.1,fiber:2.5,impact:"极高",serving:"约150g",timing:"无",suitable:"一般人群偶尔",caution:"糖尿病者避免",tips:["烤制使淀粉高度糊化，GI暴增", "升糖速度接近白米饭", "糖尿病患者应避免烤红薯"],combos:[],src:"CN+SYD"},
+{id:"food-033",name:"紫薯",en:"Purple Sweet Potato",cat:"薯类",sub:"红薯",gi:54,giLevel:"低",gl:13,glLevel:"中",cal:82,carbs:18.5,protein:1.4,fat:0.1,fiber:2.5,impact:"极低",serving:"约150g",timing:"加餐",suitable:"一般人群适量",caution:"糖尿病者蒸制可少量",tips:["花青素含量极高", "GI与蒸红薯相近", "蒸制最佳"],combos:["牛奶", "鸡蛋"],src:"CN"},
+{id:"food-034",name:"土豆（煮）",en:"Potato, boiled",cat:"薯类",sub:"土豆",gi:66,giLevel:"中",gl:14,glLevel:"中",cal:87,carbs:20.0,protein:1.9,fat:0.1,fiber:1.4,impact:"中",serving:"约150g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"糖尿病者注意份量",tips:["煮土豆GI中等", "放凉后抗性淀粉增加（土豆沙拉GI更低）", "新土豆GI低于老土豆"],combos:["蔬菜沙拉", "鸡蛋"],src:"CN+SYD"},
+{id:"food-035",name:"土豆（烤）",en:"Potato, baked",cat:"薯类",sub:"土豆",gi:85,giLevel:"高",gl:21,glLevel:"高",cal:93,carbs:21.2,protein:2.0,fat:0.1,fiber:1.5,impact:"极高",serving:"约150g",timing:"无",suitable:"一般人群偶尔",caution:"糖尿病者避免",tips:["烤土豆GI很高", "淀粉糊化程度高", "升糖快"],combos:[],src:"CN+SYD"},
+{id:"food-036",name:"土豆泥",en:"Mashed Potato",cat:"薯类",sub:"土豆",gi:87,giLevel:"高",gl:17,glLevel:"中",cal:106,carbs:17.0,protein:2.0,fat:3.5,fiber:1.0,impact:"极高",serving:"约150g",timing:"无",suitable:"一般人群偶尔",caution:"糖尿病者避免",tips:["GI极高，升糖很快", "搅碎过程加速消化", "加黄油/牛奶可稍降GI"],combos:[],src:"CN+SYD"},
+{id:"food-037",name:"薯条",en:"French Fries",cat:"薯类",sub:"土豆",gi:75,giLevel:"高",gl:22,glLevel:"高",cal:312,carbs:41.0,protein:3.4,fat:14.9,fiber:3.8,impact:"极高",serving:"约150g",timing:"无",suitable:"一般人群偶尔",caution:"糖尿病/肥胖者避免",tips:["GI偏高且脂肪含量高", "油炸食品，不健康", "升糖+增重双重负面影响"],combos:[],src:"CN+SYD"},
+{id:"food-038",name:"芋头",en:"Taro",cat:"薯类",sub:"芋头",gi:48,giLevel:"低",gl:10,glLevel:"低",cal:79,carbs:18.1,protein:2.2,fat:0.2,fiber:1.0,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"血糖偏高者可适量替代主食",caution:"注意份量",tips:["GI低于土豆和红薯", "口感软糯", "蒸制最佳"],combos:["排骨", "蔬菜"],src:"CN"},
+{id:"food-039",name:"山药",en:"Chinese Yam",cat:"薯类",sub:"山药",gi:51,giLevel:"低",gl:11,glLevel:"中",cal:57,carbs:12.4,protein:1.9,fat:0.2,fiber:0.8,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"血糖偏高者可适量食用",caution:"无明显禁忌",tips:["GI低，适合替代部分主食", "含黏蛋白，有助消化", "蒸/煮/炒均可"],combos:["排骨", "木耳", "蔬菜"],src:"CN"},
+{id:"food-040",name:"木薯粉",en:"Tapioca",cat:"薯类",sub:"淀粉",gi:67,giLevel:"中",gl:15,glLevel:"中",cal:362,carbs:88.7,protein:1.5,fat:0.3,fiber:0.9,impact:"中",serving:"约100g",timing:"无",suitable:"一般人群少量",caution:"糖尿病者避免",tips:["纯淀粉，GI偏高", "常用于珍珠奶茶、芋圆等", "加工食品升糖快"],combos:[],src:"CN"},
+{id:"food-041",name:"黄豆",en:"Soybean",cat:"豆类",sub:"大豆",gi:18,giLevel:"低",gl:2,glLevel:"低",cal:359,carbs:34.2,protein:35.0,fat:16.0,fiber:15.5,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群，强烈推荐血糖偏高者",caution:"痛风急性期注意嘌呤",tips:["豆类中的慢消化碳水+高蛋白+高纤维，三重降升糖", "大豆异黄酮对代谢健康有益", "豆腐、豆浆等豆制品同样低GI"],combos:["糙米", "蔬菜", "海带"],src:"CN+SYD"},
+{id:"food-042",name:"豆腐",en:"Tofu",cat:"豆类",sub:"豆制品",gi:15,giLevel:"低",gl:1,glLevel:"低",cal:81,carbs:4.2,protein:8.1,fat:3.7,fiber:0.4,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群，糖尿病友好",caution:"痛风急性期注意",tips:["GI极低，几乎不升糖", "优质植物蛋白来源", "适合各种烹饪方式"],combos:["蔬菜", "菌菇", "瘦肉"],src:"CN"},
+{id:"food-043",name:"豆浆（无糖）",en:"Soy Milk, unsweetened",cat:"豆类",sub:"豆制品",gi:15,giLevel:"低",gl:1,glLevel:"低",cal:31,carbs:1.2,protein:3.0,fat:1.6,fiber:0.6,impact:"极低",serving:"约250g",timing:"早餐",suitable:"所有人群",caution:"选择无糖版本",tips:["GI极低", "优质植物蛋白", "注意选择无糖版本"],combos:["全麦面包", "鸡蛋"],src:"CN"},
+{id:"food-044",name:"绿豆",en:"Mung Bean",cat:"豆类",sub:"杂豆",gi:27,giLevel:"低",gl:4,glLevel:"低",cal:316,carbs:62.0,protein:21.6,fat:0.8,fiber:6.4,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"血糖偏高者推荐",caution:"脾胃虚寒者不宜多食",tips:["GI很低，适合糖友", "夏季消暑佳品", "绿豆汤不要加糖"],combos:["糙米", "蔬菜", "薏米"],src:"CN+SYD"},
+{id:"food-045",name:"红豆",en:"Adzuki Bean",cat:"豆类",sub:"杂豆",gi:23,giLevel:"低",gl:3,glLevel:"低",cal:309,carbs:63.5,protein:20.2,fat:0.6,fiber:7.7,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"血糖偏高者推荐",caution:"注意甜品中的红豆加糖",tips:["GI很低", "富含铁和钾", "红豆沙/红豆糕因加糖GI升高"],combos:["糙米", "蔬菜"],src:"CN"},
+{id:"food-046",name:"鹰嘴豆",en:"Chickpea",cat:"豆类",sub:"杂豆",gi:28,giLevel:"低",gl:3,glLevel:"低",cal:164,carbs:27.4,protein:8.9,fat:2.6,fiber:7.6,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"血糖偏高者推荐",caution:"无明显禁忌",tips:["GI很低，蛋白质丰富", "可做鹰嘴豆泥（Hummus）", "中东和印度料理常用"],combos:["沙拉", "蔬菜", "糙米"],src:"CN+SYD"},
+{id:"food-047",name:"芸豆",en:"Kidney Bean",cat:"豆类",sub:"杂豆",gi:24,giLevel:"低",gl:3,glLevel:"低",cal:127,carbs:22.8,protein:8.7,fat:0.5,fiber:6.4,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"血糖偏高者推荐",caution:"必须充分煮熟",tips:["GI很低", "富含蛋白质和纤维", "需充分煮熟（生芸豆有毒）"],combos:["糙米", "蔬菜"],src:"CN+SYD"},
+{id:"food-048",name:"豌豆",en:"Green Pea",cat:"豆类",sub:"鲜豆",gi:22,giLevel:"低",gl:3,glLevel:"低",cal:81,carbs:14.5,protein:5.4,fat:0.4,fiber:5.7,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群",caution:"无明显禁忌",tips:["GI很低", "维生素C丰富", "淀粉含量比叶菜高"],combos:["胡萝卜", "玉米", "鸡肉"],src:"CN"},
+{id:"food-049",name:"毛豆",en:"Edamame",cat:"豆类",sub:"鲜豆",gi:18,giLevel:"低",gl:2,glLevel:"低",cal:131,carbs:11.0,protein:13.1,fat:5.0,fiber:5.4,impact:"极低",serving:"约150g",timing:"加餐",suitable:"所有人群，糖尿病友好",caution:"无明显禁忌",tips:["GI极低", "高蛋白低碳水", "优质加餐选择"],combos:["单独煮食即可"],src:"CN"},
+{id:"food-050",name:"黑豆",en:"Black Bean",cat:"豆类",sub:"杂豆",gi:30,giLevel:"低",gl:4,glLevel:"低",cal:401,carbs:55.0,protein:36.0,fat:15.9,fiber:10.2,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"血糖偏高者推荐",caution:"无明显禁忌",tips:["GI低", "花青素含量高", "可做黑豆浆、黑豆饭"],combos:["糙米", "蔬菜"],src:"CN"},
+{id:"food-051",name:"花生",en:"Peanut",cat:"豆类",sub:"坚果",gi:14,giLevel:"低",gl:1,glLevel:"低",cal:567,carbs:16.1,protein:25.8,fat:49.2,fiber:8.3,impact:"极低",serving:"约30g",timing:"加餐",suitable:"血糖偏高者的健康加餐选择",caution:"热量高，减重者控制份量；过敏者避免",tips:["富含健康脂肪和蛋白质，升糖极慢", "高热量需注意总量控制（每天一小把）", "作为加餐可中和主食升糖"],combos:["苹果", "酸奶"],src:"CN+SYD"},
+{id:"food-052",name:"黑芝麻",en:"Black Sesame",cat:"豆类",sub:"种子",gi:20,giLevel:"低",gl:1,glLevel:"低",cal:559,carbs:10.2,protein:19.1,fat:46.1,fiber:6.0,impact:"极低",serving:"约30g",timing:"加餐",suitable:"一般人群适量",caution:"黑芝麻糊加糖后GI升高",tips:["GI很低", "富含钙和铁", "黑芝麻糊因加糖GI升高"],combos:[],src:"CN"},
+{id:"food-053",name:"核桃",en:"Walnut",cat:"豆类",sub:"坚果",gi:15,giLevel:"低",gl:1,glLevel:"低",cal:654,carbs:13.7,protein:15.2,fat:65.2,fiber:6.7,impact:"极低",serving:"约30g",timing:"加餐",suitable:"血糖偏高者的健康加餐",caution:"热量高，控制份量",tips:["GI极低", "Omega-3脂肪酸丰富", "每天2-3个即可"],combos:["酸奶", "沙拉"],src:"CN"},
+{id:"food-054",name:"杏仁",en:"Almond",cat:"豆类",sub:"坚果",gi:15,giLevel:"低",gl:1,glLevel:"低",cal:579,carbs:21.6,protein:21.2,fat:49.4,fiber:12.5,impact:"极低",serving:"约30g",timing:"加餐",suitable:"血糖偏高者的健康加餐",caution:"热量高，控制份量",tips:["GI极低", "维生素E含量高", "每天一小把（约23粒）"],combos:["酸奶", "水果"],src:"CN"},
+{id:"food-055",name:"腰果",en:"Cashew",cat:"豆类",sub:"坚果",gi:22,giLevel:"低",gl:2,glLevel:"低",cal:553,carbs:30.2,protein:18.2,fat:43.9,fiber:3.3,impact:"极低",serving:"约30g",timing:"加餐",suitable:"血糖偏高者适量",caution:"热量高，控制份量",tips:["GI很低", "碳水含量略高于其他坚果", "每天一小把"],combos:["炒菜"],src:"CN"},
+{id:"food-056",name:"西兰花",en:"Broccoli",cat:"蔬菜",sub:"花菜类",gi:10,giLevel:"低",gl:1,glLevel:"低",cal:34,carbs:6.6,protein:2.8,fat:0.4,fiber:2.6,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群，糖尿病患者的蔬菜首选",caution:"服用抗凝药物者注意维生素K含量",tips:["升糖几乎可以忽略，强烈推荐", "含萝卜硫素（Sulforaphane），有益血糖控制", "蒸/焯水后凉拌最佳，避免油炸"],combos:["蒜", "橄榄油", "鸡胸肉", "三文鱼"],src:"CN+SYD"},
+{id:"food-057",name:"花菜",en:"Cauliflower",cat:"蔬菜",sub:"花菜类",gi:15,giLevel:"低",gl:1,glLevel:"低",cal:25,carbs:4.9,protein:1.9,fat:0.2,fiber:2.1,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群",caution:"无明显禁忌",tips:["GI极低", "可做花菜饭替代米饭", "低碳饮食常用替代品"],combos:["奶酪", "鸡蛋", "鸡肉"],src:"CN"},
+{id:"food-058",name:"菠菜",en:"Spinach",cat:"蔬菜",sub:"叶菜",gi:15,giLevel:"低",gl:0,glLevel:"低",cal:23,carbs:3.6,protein:2.9,fat:0.3,fiber:2.2,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群",caution:"草酸含量高，肾结石患者注意",tips:["深绿色叶菜，碳水含量极低", "富含镁，有助改善胰岛素敏感性", "富含叶黄素和维生素K"],combos:["蒜", "鸡蛋", "蘑菇", "番茄"],src:"CN"},
+{id:"food-059",name:"生菜",en:"Lettuce",cat:"蔬菜",sub:"叶菜",gi:15,giLevel:"低",gl:0,glLevel:"低",cal:13,carbs:1.8,protein:1.4,fat:0.2,fiber:0.5,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群",caution:"无明显禁忌",tips:["碳水极低，水分含量高", "饱腹感强但热量极低", "沙拉首选"],combos:["鸡蛋", "牛油果", "鸡胸肉"],src:"CN"},
+{id:"food-060",name:"小白菜",en:"Bok Choy",cat:"蔬菜",sub:"叶菜",gi:15,giLevel:"低",gl:0,glLevel:"低",cal:15,carbs:2.7,protein:1.5,fat:0.1,fiber:1.0,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群",caution:"无明显禁忌",tips:["碳水极低", "钙含量高", "快炒保留营养"],combos:["蒜", "豆腐"],src:"CN"},
+{id:"food-061",name:"芹菜",en:"Celery",cat:"蔬菜",sub:"茎菜",gi:15,giLevel:"低",gl:0,glLevel:"低",cal:16,carbs:3.5,protein:0.7,fat:0.2,fiber:1.6,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群",caution:"无明显禁忌",tips:["碳水极低", "富含纤维，有助控糖", "降压作用（高钾）"],combos:["百合", "瘦肉"],src:"CN"},
+{id:"food-062",name:"黄瓜",en:"Cucumber",cat:"蔬菜",sub:"瓜菜",gi:15,giLevel:"低",gl:0,glLevel:"低",cal:16,carbs:3.6,protein:0.8,fat:0.2,fiber:0.5,impact:"极低",serving:"约150g",timing:"加餐/午餐/晚餐",suitable:"所有人群",caution:"无明显禁忌",tips:["碳水极低，水分含量95%", "热量极低", "生食/凉拌最佳"],combos:["蒜", "醋"],src:"CN"},
+{id:"food-063",name:"番茄",en:"Tomato",cat:"蔬菜",sub:"茄果",gi:15,giLevel:"低",gl:1,glLevel:"低",cal:18,carbs:3.9,protein:0.9,fat:0.2,fiber:1.2,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群",caution:"胃酸过多者空腹不宜大量食用",tips:["加热后番茄红素更易吸收", "生食维生素C保留更好", "小番茄含糖略高但总量仍然很低"],combos:["鸡蛋", "西兰花", "橄榄油", "牛油果"],src:"CN"},
+{id:"food-064",name:"茄子",en:"Eggplant",cat:"蔬菜",sub:"茄果",gi:15,giLevel:"低",gl:1,glLevel:"低",cal:21,carbs:4.9,protein:1.1,fat:0.2,fiber:1.3,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群",caution:"避免油炸茄子（吸油量大）",tips:["GI低但吸油性强", "蒸/烤比油炸健康", "花青素含量高（紫皮）"],combos:["蒜", "酱油"],src:"CN"},
+{id:"food-065",name:"胡萝卜",en:"Carrot",cat:"蔬菜",sub:"根菜",gi:47,giLevel:"低",gl:5,glLevel:"低",cal:39,carbs:8.8,protein:1.0,fat:0.2,fiber:2.8,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"糖尿病者注意份量",tips:["GI中等（旧数据曾误报为高GI 92）", "煮熟后GI略升高", "β-胡萝卜素丰富"],combos:["鸡蛋", "肉类"],src:"CN+SYD"},
+{id:"food-066",name:"白萝卜",en:"White Radish",cat:"蔬菜",sub:"根菜",gi:15,giLevel:"低",gl:0,glLevel:"低",cal:21,carbs:5.0,protein:0.9,fat:0.1,fiber:1.0,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群",caution:"无明显禁忌",tips:["碳水极低", "助消化", "炖汤/凉拌均可"],combos:["排骨", "海带"],src:"CN"},
+{id:"food-067",name:"莲藕",en:"Lotus Root",cat:"蔬菜",sub:"根菜",gi:38,giLevel:"低",gl:5,glLevel:"低",cal:47,carbs:11.5,protein:1.9,fat:0.2,fiber:4.9,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"糖尿病者注意份量（碳水较高）",tips:["GI低但碳水含量高于叶菜", "淀粉含量较高，可部分替代主食", "凉拌/清炒最佳"],combos:["排骨", "木耳"],src:"CN"},
+{id:"food-068",name:"洋葱",en:"Onion",cat:"蔬菜",sub:"鳞茎",gi:15,giLevel:"低",gl:1,glLevel:"低",cal:40,carbs:9.3,protein:1.1,fat:0.1,fiber:0.9,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群",caution:"胃病患者不宜空腹生食",tips:["碳水低", "含槲皮素，有抗氧化作用", "生食/炒菜均可"],combos:["牛肉", "鸡蛋"],src:"CN"},
+{id:"food-069",name:"南瓜",en:"Pumpkin",cat:"蔬菜",sub:"瓜菜",gi:64,giLevel:"中",gl:5,glLevel:"低",cal:26,carbs:6.5,protein:1.0,fat:0.1,fiber:0.5,impact:"中",serving:"约150g",timing:"午餐/晚餐",suitable:"血糖偏高者少量食用影响可控",caution:"大量食用或南瓜汤升糖仍快",tips:["GI中等但碳水含量低（每百克仅6.5g），实际升糖有限", "典型中GI低GL食物，控制份量即可", "富含β-胡萝卜素和维生素A"],combos:["瘦肉", "蛋", "绿叶蔬菜"],src:"CN+SYD"},
+{id:"food-070",name:"冬瓜",en:"Winter Melon",cat:"蔬菜",sub:"瓜菜",gi:15,giLevel:"低",gl:0,glLevel:"低",cal:12,carbs:2.6,protein:0.4,fat:0.2,fiber:0.7,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群",caution:"无明显禁忌",tips:["碳水极低，热量极低", "利尿消肿", "减肥控糖佳品"],combos:["虾皮", "排骨"],src:"CN"},
+{id:"food-071",name:"苦瓜",en:"Bitter Melon",cat:"蔬菜",sub:"瓜菜",gi:15,giLevel:"低",gl:0,glLevel:"低",cal:22,carbs:4.9,protein:1.0,fat:0.1,fiber:1.4,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群",caution:"孕妇慎食",tips:["传统认为有辅助控糖作用", "碳水极低", "凉拌/炒蛋/榨汁均可"],combos:["鸡蛋", "瘦肉"],src:"CN"},
+{id:"food-072",name:"蘑菇",en:"Mushroom",cat:"蔬菜",sub:"菌菇",gi:15,giLevel:"低",gl:0,glLevel:"低",cal:22,carbs:4.1,protein:3.3,fat:0.3,fiber:2.1,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群",caution:"注意野生蘑菇安全性",tips:["碳水极低", "多糖类有助免疫力", "鲜菇/干菇均可"],combos:["鸡肉", "蔬菜", "豆腐"],src:"CN"},
+{id:"food-073",name:"木耳",en:"Wood Ear Mushroom",cat:"蔬菜",sub:"菌菇",gi:15,giLevel:"低",gl:0,glLevel:"低",cal:21,carbs:6.0,protein:1.5,fat:0.2,fiber:7.0,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群",caution:"泡发时间不宜过长",tips:["碳水低，纤维极高", "有助控糖和降脂", "泡发后凉拌/炒菜"],combos:["鸡蛋", "瘦肉"],src:"CN"},
+{id:"food-074",name:"海带",en:"Kelp",cat:"蔬菜",sub:"海藻",gi:15,giLevel:"低",gl:0,glLevel:"低",cal:13,carbs:2.1,protein:1.2,fat:0.1,fiber:1.3,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"甲亢患者注意碘摄入",tips:["碳水极低", "碘含量高", "褐藻多糖有助控糖"],combos:["排骨", "豆腐"],src:"CN"},
+{id:"food-075",name:"芦笋",en:"Asparagus",cat:"蔬菜",sub:"茎菜",gi:15,giLevel:"低",gl:0,glLevel:"低",cal:20,carbs:4.9,protein:2.2,fat:0.1,fiber:2.1,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"所有人群",caution:"无明显禁忌",tips:["碳水极低", "叶酸含量高", "清炒/蒸制最佳"],combos:["鸡蛋", "三文鱼"],src:"CN"},
+{id:"food-076",name:"苹果",en:"Apple",cat:"水果",sub:"仁果",gi:36,giLevel:"低",gl:5,glLevel:"低",cal:53,carbs:13.7,protein:0.2,fat:0.2,fiber:1.2,impact:"极低",serving:"约180g",timing:"加餐",suitable:"所有人群，包括糖尿病患者",caution:"无明显禁忌",tips:["带皮吃保留更多膳食纤维和抗氧化物质", "果胶有助延缓糖分吸收", "每天1个为宜，不要榨汁"],combos:["坚果", "无糖酸奶"],src:"CN+SYD"},
+{id:"food-077",name:"梨",en:"Pear",cat:"水果",sub:"仁果",gi:36,giLevel:"低",gl:4,glLevel:"低",cal:50,carbs:13.3,protein:0.4,fat:0.2,fiber:3.1,impact:"极低",serving:"约180g",timing:"加餐",suitable:"所有人群",caution:"脾胃虚寒者不宜多食",tips:["GI低", "水分高，纤维丰富", "清热润肺"],combos:[],src:"CN+SYD"},
+{id:"food-078",name:"桃子",en:"Peach",cat:"水果",sub:"核果",gi:28,giLevel:"低",gl:3,glLevel:"低",cal:51,carbs:12.2,protein:0.9,fat:0.1,fiber:1.3,impact:"极低",serving:"约150g",timing:"加餐",suitable:"所有人群",caution:"无明显禁忌",tips:["GI很低", "维生素C丰富", "夏季时令水果"],combos:[],src:"CN+SYD"},
+{id:"food-079",name:"李子",en:"Plum",cat:"水果",sub:"核果",gi:24,giLevel:"低",gl:3,glLevel:"低",cal:38,carbs:8.7,protein:0.7,fat:0.2,fiber:1.4,impact:"极低",serving:"约150g",timing:"加餐",suitable:"一般人群适量",caution:"胃酸过多者不宜空腹",tips:["GI很低", "酸味来自有机酸", "促消化"],combos:[],src:"CN"},
+{id:"food-080",name:"樱桃",en:"Cherry",cat:"水果",sub:"核果",gi:22,giLevel:"低",gl:3,glLevel:"低",cal:63,carbs:16.0,protein:1.1,fat:0.2,fiber:2.1,impact:"极低",serving:"约150g",timing:"加餐",suitable:"所有人群，糖尿病友好",caution:"无明显禁忌",tips:["GI极低，是糖尿病患者的理想水果", "含花青素，有助抗氧化和抗炎", "天然褪黑素来源，晚间少量食用或助睡眠"],combos:["坚果", "无糖酸奶", "黑巧克力（>70%）"],src:"CN+SYD"},
+{id:"food-081",name:"草莓",en:"Strawberry",cat:"水果",sub:"浆果",gi:40,giLevel:"低",gl:4,glLevel:"低",cal:32,carbs:7.1,protein:0.7,fat:0.3,fiber:2.0,impact:"极低",serving:"约150g",timing:"加餐",suitable:"所有人群",caution:"无明显禁忌",tips:["GI低", "维生素C含量高于橙子", "升糖指数低"],combos:["无糖酸奶"],src:"CN+SYD"},
+{id:"food-082",name:"蓝莓",en:"Blueberry",cat:"水果",sub:"浆果",gi:53,giLevel:"低",gl:6,glLevel:"低",cal:57,carbs:14.5,protein:0.7,fat:0.3,fiber:2.4,impact:"极低",serving:"约150g",timing:"加餐",suitable:"所有人群，糖尿病友好",caution:"无明显禁忌",tips:["GI低", "花青素含量极高", "抗氧化能力强的超级食物"],combos:["无糖酸奶", "燕麦", "坚果"],src:"CN+SYD"},
+{id:"food-083",name:"葡萄",en:"Grape",cat:"水果",sub:"浆果",gi:43,giLevel:"低",gl:5,glLevel:"低",cal:44,carbs:10.3,protein:0.5,fat:0.2,fiber:0.4,impact:"极低",serving:"约150g",timing:"加餐",suitable:"一般人群适量",caution:"糖尿病者控制份量（10-15粒）",tips:["GI低-中", "葡萄糖含量较高但总量有限", "不要代替正餐大量食用"],combos:[],src:"CN+SYD"},
+{id:"food-084",name:"香蕉",en:"Banana",cat:"水果",sub:"热带水果",gi:52,giLevel:"低",gl:11,glLevel:"中",cal:93,carbs:22.0,protein:1.4,fat:0.2,fiber:1.2,impact:"极低",serving:"约120g",timing:"加餐/运动前后",suitable:"血糖正常者及控制良好者可适量",caution:"血糖控制不佳时选青香蕉或减量",tips:["青香蕉含更多抗性淀粉，GI更低（约30）", "熟透的香蕉（皮有黑点）GI升至约62", "含钾丰富，适合运动后补充"],combos:["坚果", "无糖酸奶"],src:"CN+SYD"},
+{id:"food-085",name:"橙子",en:"Orange",cat:"水果",sub:"柑橘",gi:43,giLevel:"低",gl:4,glLevel:"低",cal:48,carbs:11.1,protein:0.8,fat:0.2,fiber:0.6,impact:"极低",serving:"约180g",timing:"加餐",suitable:"所有人群",caution:"不要代替水果喝橙汁",tips:["GI低", "维生素C丰富", "不要榨汁（果汁GI升高）"],combos:[],src:"CN+SYD"},
+{id:"food-086",name:"柚子",en:"Pomelo/Grapefruit",cat:"水果",sub:"柑橘",gi:25,giLevel:"低",gl:3,glLevel:"低",cal:42,carbs:9.5,protein:0.8,fat:0.2,fiber:1.0,impact:"极低",serving:"约200g",timing:"加餐",suitable:"所有人群，糖尿病友好",caution:"服用降压药/降脂药者注意相互作用",tips:["GI极低", "维生素C丰富", "有助消化"],combos:[],src:"CN+SYD"},
+{id:"food-087",name:"猕猴桃",en:"Kiwi",cat:"水果",sub:"浆果",gi:50,giLevel:"低",gl:5,glLevel:"低",cal:61,carbs:14.5,protein:0.8,fat:0.5,fiber:3.0,impact:"极低",serving:"约100g",timing:"加餐",suitable:"所有人群",caution:"对猕猴桃过敏者避免",tips:["GI低", "维生素C含量极高", "纤维丰富"],combos:[],src:"CN+SYD"},
+{id:"food-088",name:"芒果",en:"Mango",cat:"水果",sub:"热带水果",gi:55,giLevel:"低",gl:8,glLevel:"低",cal:60,carbs:15.0,protein:0.8,fat:0.4,fiber:1.6,impact:"极低",serving:"约150g",timing:"加餐",suitable:"一般人群适量",caution:"糖尿病者注意份量",tips:["GI处于低GI上限", "β-胡萝卜素丰富", "含糖量较高"],combos:[],src:"CN+SYD"},
+{id:"food-089",name:"菠萝",en:"Pineapple",cat:"水果",sub:"热带水果",gi:66,giLevel:"中",gl:7,glLevel:"低",cal:41,carbs:10.8,protein:0.5,fat:0.1,fiber:1.4,impact:"中",serving:"约150g",timing:"加餐",suitable:"一般人群适量",caution:"糖尿病者少量",tips:["GI中等", "含菠萝蛋白酶，助消化", "控制份量"],combos:[],src:"CN+SYD"},
+{id:"food-090",name:"西瓜",en:"Watermelon",cat:"水果",sub:"瓜果",gi:76,giLevel:"高",gl:5,glLevel:"低",cal:31,carbs:7.6,protein:0.6,fat:0.2,fiber:0.4,impact:"极高",serving:"约200g",timing:"加餐",suitable:"小份食用对血糖偏高者影响可控",caution:"大口大量吃升糖仍快",tips:["典型高GI低GL食物：每份碳水少，单次升糖有限", "关键是控制份量，小份食用影响不大", "不要榨汁，榨汁后升糖速度大幅上升"],combos:["无糖酸奶", "薄荷"],src:"CN+SYD"},
+{id:"food-091",name:"哈密瓜",en:"Cantaloupe",cat:"水果",sub:"瓜果",gi:65,giLevel:"中",gl:5,glLevel:"低",cal:34,carbs:8.0,protein:0.8,fat:0.2,fiber:0.9,impact:"中",serving:"约150g",timing:"加餐",suitable:"一般人群适量",caution:"糖尿病者少量",tips:["GI中等", "β-胡萝卜素丰富", "控制份量"],combos:[],src:"CN"},
+{id:"food-092",name:"木瓜",en:"Papaya",cat:"水果",sub:"热带水果",gi:60,giLevel:"中",gl:6,glLevel:"低",cal:43,carbs:10.8,protein:0.5,fat:0.3,fiber:1.7,impact:"中",serving:"约150g",timing:"加餐",suitable:"一般人群适量",caution:"糖尿病者少量",tips:["GI中等", "木瓜蛋白酶助消化", "控制份量"],combos:[],src:"CN"},
+{id:"food-093",name:"牛油果",en:"Avocado",cat:"水果",sub:"热带水果",gi:15,giLevel:"低",gl:1,glLevel:"低",cal:160,carbs:8.5,protein:2.0,fat:14.7,fiber:6.7,impact:"极低",serving:"约100g",timing:"早餐/加餐",suitable:"所有人群，糖尿病患者的理想水果",caution:"热量较高，减重时注意份量",tips:["几乎不含糖，富含单不饱和脂肪酸", "高纤维延缓胃排空，减缓碳水吸收", "代替黄油/蛋黄酱抹面包，既降升糖又美味"],combos:["全麦面包", "鸡蛋", "番茄", "三文鱼"],src:"CN+SYD"},
+{id:"food-094",name:"石榴",en:"Pomegranate",cat:"水果",sub:"浆果",gi:35,giLevel:"低",gl:5,glLevel:"低",cal:72,carbs:18.7,protein:1.4,fat:0.2,fiber:3.0,impact:"极低",serving:"约150g",timing:"加餐",suitable:"一般人群适量",caution:"糖尿病者注意份量",tips:["GI低", "花青素和鞣花酸丰富", "抗氧化能力强"],combos:[],src:"CN"},
+{id:"food-095",name:"鲜枣",en:"Fresh Jujube",cat:"水果",sub:"核果",gi:42,giLevel:"低",gl:10,glLevel:"低",cal:122,carbs:30.5,protein:1.1,fat:0.3,fiber:1.9,impact:"极低",serving:"约100g",timing:"加餐",suitable:"一般人群适量",caution:"糖尿病者严格控制份量",tips:["维生素C含量极高", "碳水含量较高", "控制份量"],combos:[],src:"CN"},
+{id:"food-096",name:"牛奶",en:"Whole Milk",cat:"肉蛋奶",sub:"乳制品",gi:27,giLevel:"低",gl:3,glLevel:"低",cal:61,carbs:4.8,protein:3.2,fat:3.3,fiber:0,impact:"极低",serving:"约250g",timing:"早餐/加餐",suitable:"所有人群（乳糖不耐受者除外）",caution:"乳糖不耐受者选无乳糖牛奶",tips:["乳糖GI低，乳清蛋白有助刺激胰岛素分泌", "全脂比脱脂更有饱腹感", "选择无糖/原味，避免调味乳"],combos:["燕麦", "坚果", "全麦面包"],src:"CN+SYD"},
+{id:"food-097",name:"脱脂牛奶",en:"Skim Milk",cat:"肉蛋奶",sub:"乳制品",gi:27,giLevel:"低",gl:3,glLevel:"低",cal:35,carbs:5.0,protein:3.4,fat:0.1,fiber:0,impact:"极低",serving:"约250g",timing:"早餐",suitable:"减重人群",caution:"乳糖不耐受者选无乳糖版本",tips:["GI与全脂牛奶相近", "热量较低", "饱腹感稍弱"],combos:["燕麦"],src:"CN+SYD"},
+{id:"food-098",name:"无糖酸奶",en:"Plain Yogurt",cat:"肉蛋奶",sub:"乳制品",gi:36,giLevel:"低",gl:4,glLevel:"低",cal:63,carbs:5.7,protein:3.5,fat:3.2,fiber:0,impact:"极低",serving:"约150g",timing:"早餐/加餐",suitable:"所有人群，糖尿病友好",caution:"确保选择无糖版本",tips:["注意选择无糖或原味", "希腊酸奶GI仅12，蛋白质含量翻倍", "益生菌有助肠道健康，或间接改善血糖代谢"],combos:["蓝莓", "坚果", "奇亚籽", "燕麦"],src:"CN+SYD"},
+{id:"food-099",name:"希腊酸奶",en:"Greek Yogurt",cat:"肉蛋奶",sub:"乳制品",gi:12,giLevel:"低",gl:2,glLevel:"低",cal:97,carbs:4.0,protein:9.0,fat:5.0,fiber:0,impact:"极低",serving:"约150g",timing:"早餐/加餐",suitable:"所有人群，糖尿病友好",caution:"选择无糖版本",tips:["GI极低", "蛋白质含量是普通酸奶的2倍", "饱腹感极强"],combos:["蜂蜜（少量）", "坚果", "水果"],src:"SYD"},
+{id:"food-100",name:"奶酪",en:"Cheese",cat:"肉蛋奶",sub:"乳制品",gi:10,giLevel:"低",gl:0,glLevel:"低",cal:328,carbs:3.5,protein:25.7,fat:23.5,fiber:0,impact:"极低",serving:"约30g",timing:"加餐",suitable:"一般人群适量",caution:"高血脂者注意饱和脂肪",tips:["GI极低（几乎零碳水）", "蛋白质和钙含量高", "高热量注意份量"],combos:["全麦面包", "蔬菜"],src:"CN"},
+{id:"food-101",name:"豆浆（无糖）",en:"Soy Milk, unsweetened",cat:"肉蛋奶",sub:"植物奶",gi:15,giLevel:"低",gl:1,glLevel:"低",cal:31,carbs:1.2,protein:3.0,fat:1.6,fiber:0.6,impact:"极低",serving:"约250g",timing:"早餐",suitable:"所有人群",caution:"选择无糖版本",tips:["GI极低", "优质植物蛋白", "注意选择无糖版本"],combos:["全麦面包", "鸡蛋"],src:"CN"},
+{id:"food-102",name:"燕麦奶（无糖）",en:"Oat Milk, unsweetened",cat:"肉蛋奶",sub:"植物奶",gi:30,giLevel:"低",gl:4,glLevel:"低",cal:45,carbs:8.0,protein:1.3,fat:1.5,fiber:1.0,impact:"极低",serving:"约250g",timing:"早餐",suitable:"一般人群适量",caution:"注意选择无糖版本",tips:["GI低于牛奶（因β-葡聚糖）", "选择无糖版本", "市售燕麦奶可能加糖"],combos:["咖啡", "茶"],src:"SYD"},
+{id:"food-103",name:"椰子水",en:"Coconut Water",cat:"肉蛋奶",sub:"饮品",gi:50,giLevel:"低",gl:7,glLevel:"低",cal:19,carbs:3.7,protein:0.7,fat:0.2,fiber:1.1,impact:"极低",serving:"约250g",timing:"加餐/运动前后",suitable:"血糖偏高者可适量饮用",caution:"市售调味椰子水可能添加糖",tips:["天然低糖电解质饮料，GI较低", "含钾镁等电解质，运动后补水佳选", "选择无添加糖的天然椰子水"],combos:["单独饮用即可"],src:"CN"},
+{id:"food-104",name:"鸡蛋",en:"Egg",cat:"肉蛋奶",sub:"蛋类",gi:0,giLevel:"零碳水",gl:0,glLevel:"低",cal:155,carbs:1.1,protein:13.3,fat:8.8,fiber:0,impact:"极低（零碳水）",serving:"约50g",timing:"早餐",suitable:"所有人群（鸡蛋过敏者除外）",caution:"高胆固醇血症者咨询医生",tips:["几乎不含碳水，对血糖零影响", "优质蛋白质来源，饱腹感强", "水煮/蒸蛋最佳，避免油炸", "每天1-2个对大多数人是安全的"],combos:["全麦面包", "蔬菜", "牛油果"],src:"CN"},
+{id:"food-105",name:"鸡胸肉",en:"Chicken Breast",cat:"肉蛋奶",sub:"禽肉",gi:0,giLevel:"零碳水",gl:0,glLevel:"低",cal:133,carbs:0,protein:31.0,fat:1.2,fiber:0,impact:"极低（零碳水）",serving:"约100g",timing:"午餐/晚餐",suitable:"所有人群",caution:"肾脏疾病患者需遵医嘱",tips:["纯蛋白质来源，零碳水", "增加餐中蛋白质比例可延缓整体升糖", "优先蒸、煮、煎（少油），避免裹粉油炸"],combos:["蔬菜沙拉", "糙米", "藜麦"],src:"CN"},
+{id:"food-106",name:"猪里脊",en:"Pork Tenderloin",cat:"肉蛋奶",sub:"畜肉",gi:0,giLevel:"零碳水",gl:0,glLevel:"低",cal:155,carbs:0,protein:20.2,fat:7.9,fiber:0,impact:"极低（零碳水）",serving:"约100g",timing:"午餐/晚餐",suitable:"所有人群",caution:"高血脂者选择瘦肉部分",tips:["零碳水，高蛋白", "脂肪含量低于肥猪肉", "蒸/煮/炒均可"],combos:["蔬菜", "菌菇"],src:"CN"},
+{id:"food-107",name:"牛里脊",en:"Beef Tenderloin",cat:"肉蛋奶",sub:"畜肉",gi:0,giLevel:"零碳水",gl:0,glLevel:"低",cal:135,carbs:0,protein:22.3,fat:5.0,fiber:0,impact:"极低（零碳水）",serving:"约100g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"高血脂者注意份量",tips:["零碳水", "富含铁和锌", "选择瘦肉部位"],combos:["西兰花", "蔬菜", "糙米"],src:"CN"},
+{id:"food-108",name:"三文鱼",en:"Salmon",cat:"肉蛋奶",sub:"鱼类",gi:0,giLevel:"零碳水",gl:0,glLevel:"低",cal:208,carbs:0,protein:20.4,fat:13.4,fiber:0,impact:"极低（零碳水）",serving:"约100g",timing:"午餐/晚餐",suitable:"所有人群，尤其推荐糖尿病患者",caution:"痛风急性期注意嘌呤",tips:["Omega-3脂肪酸有助减轻炎症、改善胰岛素敏感性", "每周2-3次富含脂肪的鱼类有助心血管健康", "清蒸或烤制，避免油炸和重糖酱汁"],combos:["西兰花", "芦笋", "柠檬", "糙米"],src:"CN+SYD"},
+{id:"food-109",name:"鳕鱼",en:"Cod",cat:"肉蛋奶",sub:"鱼类",gi:0,giLevel:"零碳水",gl:0,glLevel:"低",cal:82,carbs:0,protein:17.8,fat:0.5,fiber:0,impact:"极低（零碳水）",serving:"约100g",timing:"午餐/晚餐",suitable:"所有人群",caution:"无明显禁忌",tips:["零碳水，低脂肪高蛋白", "热量极低", "清蒸/煎制均可"],combos:["蔬菜", "柠檬"],src:"CN"},
+{id:"food-110",name:"虾",en:"Shrimp",cat:"肉蛋奶",sub:"水产",gi:0,giLevel:"零碳水",gl:0,glLevel:"低",cal:87,carbs:0,protein:18.6,fat:1.3,fiber:0,impact:"极低（零碳水）",serving:"约100g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"高尿酸/痛风者注意",tips:["零碳水", "高蛋白低脂肪", "水煮/清蒸最佳"],combos:["蔬菜", "西兰花"],src:"CN"},
+{id:"food-111",name:"带鱼",en:"Hairtail",cat:"肉蛋奶",sub:"鱼类",gi:0,giLevel:"零碳水",gl:0,glLevel:"低",cal:127,carbs:0,protein:17.7,fat:4.9,fiber:0,impact:"极低（零碳水）",serving:"约100g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"痛风者注意嘌呤",tips:["零碳水", "富含Omega-3", "煎/蒸均可"],combos:["蔬菜"],src:"CN"},
+{id:"food-112",name:"瘦牛肉",en:"Lean Beef",cat:"肉蛋奶",sub:"畜肉",gi:0,giLevel:"零碳水",gl:0,glLevel:"低",cal:125,carbs:0,protein:20.2,fat:2.3,fiber:0,impact:"极低（零碳水）",serving:"约100g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"高血脂者注意份量",tips:["零碳水高蛋白", "富含铁和维生素B12", "炖/炒均可"],combos:["西兰花", "洋葱", "蔬菜"],src:"CN"},
+{id:"food-113",name:"鸭肉",en:"Duck",cat:"肉蛋奶",sub:"禽肉",gi:0,giLevel:"零碳水",gl:0,glLevel:"低",cal:240,carbs:0,protein:15.5,fat:19.7,fiber:0,impact:"极低（零碳水）",serving:"约100g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"高血脂者去皮食用",tips:["零碳水", "脂肪含量高于鸡肉", "去皮可减少脂肪摄入"],combos:["蔬菜", "菌菇"],src:"CN"},
+{id:"food-114",name:"可乐",en:"Cola",cat:"饮品",sub:"碳酸饮料",gi:63,giLevel:"中",gl:20,glLevel:"中",cal:42,carbs:10.6,protein:0,fat:0,fiber:0,impact:"中",serving:"约330g",timing:"无",suitable:"无特殊推荐",caution:"所有人群尤其是糖尿病、肥胖患者应避免",tips:["液态糖吸收极快，对血糖冲击巨大", "一罐可乐约含35g糖（约7块方糖）", "无糖/零度版本使用代糖，对血糖无直接影响", "果糖含量高的饮料还会加重脂肪肝"],combos:[],src:"CN+SYD"},
+{id:"food-115",name:"橙汁",en:"Orange Juice",cat:"饮品",sub:"果汁",gi:50,giLevel:"低",gl:12,glLevel:"中",cal:47,carbs:11.2,protein:0.7,fat:0.2,fiber:0.2,impact:"极低",serving:"约250g",timing:"无",suitable:"一般人群偶尔少量",caution:"糖尿病者避免",tips:["榨汁过程破坏纤维，GI升高", "液态糖吸收快", "建议直接吃水果而非喝果汁"],combos:[],src:"CN+SYD"},
+{id:"food-116",name:"苹果汁",en:"Apple Juice",cat:"饮品",sub:"果汁",gi:44,giLevel:"低",gl:13,glLevel:"中",cal:46,carbs:11.5,protein:0.1,fat:0.1,fiber:0.2,impact:"极低",serving:"约250g",timing:"无",suitable:"一般人群偶尔少量",caution:"糖尿病者避免",tips:["比橙汁GI稍低但仍然高", "榨汁去除纤维", "不如直接吃苹果"],combos:[],src:"CN+SYD"},
+{id:"food-117",name:"黑咖啡",en:"Black Coffee",cat:"饮品",sub:"咖啡",gi:0,giLevel:"零碳水",gl:0,glLevel:"低",cal:1,carbs:0,protein:0.1,fat:0,fiber:0,impact:"极低（零碳水）",serving:"约250g",timing:"早餐/加餐",suitable:"所有人群",caution:"胃病患者注意；孕妇控制咖啡因",tips:["零卡路里零碳水", "有助提高代谢", "不加糖不影响血糖"],combos:[],src:"CN"},
+{id:"food-118",name:"绿茶",en:"Green Tea",cat:"饮品",sub:"茶",gi:0,giLevel:"零碳水",gl:0,glLevel:"低",cal:1,carbs:0,protein:0.2,fat:0,fiber:0,impact:"极低（零碳水）",serving:"约250g",timing:"全天",suitable:"所有人群",caution:"空腹不宜浓茶",tips:["零卡零碳水", "富含儿茶素（EGCG），有助控糖", "不加糖不影响血糖"],combos:[],src:"CN"},
+{id:"food-119",name:"奶茶（全糖）",en:"Milk Tea, sweetened",cat:"饮品",sub:"奶茶",gi:65,giLevel:"中",gl:18,glLevel:"中",cal:95,carbs:18.0,protein:2.0,fat:3.0,fiber:0,impact:"中",serving:"约500g",timing:"无",suitable:"无特殊推荐",caution:"糖尿病/肥胖者应避免",tips:["含糖量极高，一杯全糖奶茶含糖约30-50g", "液态糖+奶精/植脂末", "升糖快且热量高"],combos:[],src:"CN"},
+{id:"food-120",name:"奶茶（无糖）",en:"Milk Tea, sugar-free",cat:"饮品",sub:"奶茶",gi:30,giLevel:"低",gl:5,glLevel:"低",cal:45,carbs:7.0,protein:2.0,fat:2.0,fiber:0,impact:"极低",serving:"约500g",timing:"加餐",suitable:"一般人群适量",caution:"注意是否有隐藏糖分",tips:["无糖版本升糖大幅降低", "仍有奶中乳糖", "选择真奶而非奶精"],combos:[],src:"CN"},
+{id:"food-121",name:"豆奶（无糖）",en:"Soy Milk, unsweetened",cat:"饮品",sub:"植物奶",gi:15,giLevel:"低",gl:1,glLevel:"低",cal:31,carbs:1.2,protein:3.0,fat:1.6,fiber:0.6,impact:"极低",serving:"约250g",timing:"早餐",suitable:"所有人群",caution:"选择无糖版本",tips:["GI极低", "优质植物蛋白", "选择无糖版本"],combos:["全麦面包", "鸡蛋"],src:"CN"},
+{id:"food-122",name:"运动饮料",en:"Sports Drink",cat:"饮品",sub:"功能饮料",gi:78,giLevel:"高",gl:14,glLevel:"中",cal:26,carbs:6.0,protein:0,fat:0,fiber:0,impact:"极高",serving:"约350g",timing:"运动中",suitable:"高强度运动时适量",caution:"非运动/糖尿病者避免",tips:["含电解质但含糖量高", "运动中补充快速能量", "非运动时不宜当水喝"],combos:[],src:"CN"},
+{id:"food-123",name:"蜂蜜柠檬水",en:"Honey Lemon Water",cat:"饮品",sub:"混合饮品",gi:55,giLevel:"低",gl:8,glLevel:"低",cal:40,carbs:9.5,protein:0.2,fat:0.1,fiber:0.2,impact:"极低",serving:"约250g",timing:"加餐",suitable:"一般人群适量",caution:"糖尿病者控制蜂蜜用量",tips:["GI中等", "蜂蜜比白糖GI低", "控制蜂蜜用量"],combos:[],src:"CN"},
+{id:"food-124",name:"黑巧克力（70%+）",en:"Dark Chocolate 70%+",cat:"零食",sub:"巧克力",gi:23,giLevel:"低",gl:2,glLevel:"低",cal:598,carbs:46.0,protein:7.8,fat:43.0,fiber:5.0,impact:"极低",serving:"约20g",timing:"加餐",suitable:"血糖偏高者少量食用",caution:"注意份量，热量密度高",tips:["可可含量越高，糖含量越低，GI越低", "黄烷醇有助改善血管功能和胰岛素敏感性", "选≥70%可可，避免牛奶巧克力和白巧克力", "每天不超过20-30g"],combos:["坚果", "无糖茶/黑咖啡"],src:"CN+SYD"},
+{id:"food-125",name:"牛奶巧克力",en:"Milk Chocolate",cat:"零食",sub:"巧克力",gi:45,giLevel:"低",gl:6,glLevel:"低",cal:535,carbs:59.0,protein:7.7,fat:30.3,fiber:3.4,impact:"极低",serving:"约20g",timing:"加餐",suitable:"一般人群偶尔少量",caution:"糖尿病者避免",tips:["含糖量远高于黑巧克力", "GI中等", "不推荐血糖偏高者"],combos:[],src:"CN"},
+{id:"food-126",name:"白巧克力",en:"White Chocolate",cat:"零食",sub:"巧克力",gi:42,giLevel:"低",gl:6,glLevel:"低",cal:539,carbs:59.0,protein:5.9,fat:32.0,fiber:0,impact:"极低",serving:"约20g",timing:"加餐",suitable:"一般人群偶尔少量",caution:"糖尿病者避免",tips:["含糖量最高", "几乎不含可可", "不推荐血糖偏高者"],combos:[],src:"CN"},
+{id:"food-127",name:"薯片",en:"Potato Chips",cat:"零食",sub:"膨化食品",gi:57,giLevel:"中",gl:10,glLevel:"低",cal:547,carbs:49.7,protein:6.6,fat:34.6,fiber:4.4,impact:"中",serving:"约50g",timing:"无",suitable:"一般人群偶尔少量",caution:"糖尿病/肥胖者避免",tips:["GI中等但脂肪极高", "油炸食品", "升糖+增重双重负面"],combos:[],src:"CN"},
+{id:"food-128",name:"饼干（消化饼）",en:"Digestive Biscuits",cat:"零食",sub:"饼干",gi:69,giLevel:"中",gl:12,glLevel:"中",cal:478,carbs:65.0,protein:7.0,fat:21.0,fiber:3.0,impact:"中",serving:"约50g",timing:"加餐",suitable:"一般人群偶尔少量",caution:"糖尿病者避免",tips:["GI偏高", "虽含纤维但糖分不低", "不如全麦面包"],combos:[],src:"CN"},
+{id:"food-129",name:"蛋糕",en:"Cake",cat:"零食",sub:"烘焙",gi:70,giLevel:"中",gl:15,glLevel:"中",cal:350,carbs:55.0,protein:5.0,fat:15.0,fiber:1.0,impact:"中",serving:"约80g",timing:"无",suitable:"一般人群偶尔",caution:"糖尿病者避免",tips:["GI高", "精制糖+精制面粉", "升糖极快"],combos:[],src:"CN"},
+{id:"food-130",name:"甜甜圈",en:"Donut",cat:"零食",sub:"烘焙",gi:75,giLevel:"高",gl:18,glLevel:"中",cal:452,carbs:51.0,protein:4.9,fat:25.0,fiber:1.2,impact:"极高",serving:"约80g",timing:"无",suitable:"一般人群偶尔",caution:"糖尿病/肥胖者避免",tips:["GI高", "油炸+高糖", "升糖极快且热量极高"],combos:[],src:"CN"},
+{id:"food-131",name:"冰淇淋",en:"Ice Cream",cat:"零食",sub:"冷饮",gi:61,giLevel:"中",gl:8,glLevel:"低",cal:127,carbs:17.3,protein:2.4,fat:6.8,fiber:0.5,impact:"中",serving:"约80g",timing:"加餐",suitable:"一般人群偶尔少量",caution:"糖尿病者避免或选无糖",tips:["GI中等", "含糖量高但脂肪延缓部分吸收", "选择无糖版本GI更低"],combos:[],src:"CN+SYD"},
+{id:"food-132",name:"爆米花（无糖）",en:"Popcorn, unsweetened",cat:"零食",sub:"膨化食品",gi:55,giLevel:"低",gl:6,glLevel:"低",cal:387,carbs:77.8,protein:12.9,fat:4.5,fiber:15.1,impact:"极低",serving:"约30g",timing:"加餐",suitable:"一般人群适量（无糖版）",caution:"焦糖爆米花GI高",tips:["GI中等（无糖版）", "全谷物零食", "注意不要加糖/焦糖"],combos:[],src:"CN+SYD"},
+{id:"food-133",name:"坚果混合（无盐）",en:"Mixed Nuts, unsalted",cat:"零食",sub:"坚果",gi:15,giLevel:"低",gl:1,glLevel:"低",cal:607,carbs:16.0,protein:20.0,fat:52.0,fiber:7.0,impact:"极低",serving:"约30g",timing:"加餐",suitable:"血糖偏高者的健康加餐首选",caution:"热量高，控制份量；过敏者注意",tips:["GI极低", "健康脂肪和蛋白质", "每天一小把（30g）"],combos:[],src:"CN"},
+{id:"food-134",name:"果干（混合）",en:"Dried Fruits",cat:"零食",sub:"果干",gi:50,giLevel:"低",gl:15,glLevel:"中",cal:320,carbs:75.0,protein:2.5,fat:0.5,fiber:8.0,impact:"极低",serving:"约40g",timing:"加餐",suitable:"一般人群少量",caution:"糖尿病者严格控制份量",tips:["脱水后果糖浓度高", "GI虽中等但糖密度大", "控制份量，每次一小把"],combos:["坚果"],src:"CN"},
+{id:"food-135",name:"能量棒",en:"Energy Bar",cat:"零食",sub:"代餐",gi:60,giLevel:"中",gl:12,glLevel:"中",cal:380,carbs:55.0,protein:15.0,fat:12.0,fiber:5.0,impact:"中",serving:"约40g",timing:"运动后",suitable:"运动后补充",caution:"糖尿病者注意配料表含糖量",tips:["GI中等", "看配料表选低糖版", "代餐不能完全替代正餐"],combos:[],src:"CN"},
+{id:"food-136",name:"饺子（猪肉）",en:"Dumpling, pork",cat:"混合膳食",sub:"中式",gi:60,giLevel:"中",gl:12,glLevel:"中",cal:250,carbs:30.0,protein:10.0,fat:8.0,fiber:2.0,impact:"中",serving:"约200g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"糖尿病者控制数量（6-8个）",tips:["GI中等", "皮是精制面粉但馅料有蛋白质+蔬菜", "蒸优于煎"],combos:["醋"],src:"CN"},
+{id:"food-137",name:"包子（猪肉）",en:"Steamed Bun with filling",cat:"混合膳食",sub:"中式",gi:65,giLevel:"中",gl:14,glLevel:"中",cal:230,carbs:28.0,protein:9.0,fat:7.0,fiber:1.5,impact:"中",serving:"约150g",timing:"早餐",suitable:"一般人群适量",caution:"糖尿病者控制份量",tips:["GI中等", "皮是精制面粉", "馅料含蛋白质可延缓升糖"],combos:["豆浆"],src:"CN"},
+{id:"food-138",name:"炒饭",en:"Fried Rice",cat:"混合膳食",sub:"中式",gi:70,giLevel:"中",gl:20,glLevel:"中",cal:180,carbs:25.0,protein:6.0,fat:7.0,fiber:1.5,impact:"中",serving:"约250g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"糖尿病者少量",tips:["GI偏高", "白米饭+油", "加入鸡蛋/蔬菜/肉可稍降GI"],combos:["蔬菜汤"],src:"CN"},
+{id:"food-139",name:"炒面",en:"Fried Noodles",cat:"混合膳食",sub:"中式",gi:75,giLevel:"高",gl:25,glLevel:"高",cal:170,carbs:22.0,protein:5.0,fat:6.0,fiber:1.5,impact:"极高",serving:"约250g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"糖尿病者避免",tips:["GI高", "精制面条+油", "加入蔬菜可稍降GI"],combos:["蔬菜"],src:"CN"},
+{id:"food-140",name:"汉堡",en:"Hamburger",cat:"混合膳食",sub:"西式",gi:66,giLevel:"中",gl:15,glLevel:"中",cal:295,carbs:24.0,protein:17.0,fat:14.0,fiber:1.5,impact:"中",serving:"约200g",timing:"午餐",suitable:"一般人群偶尔",caution:"糖尿病者偶尔少量",tips:["GI中等", "面包GI高但肉饼蛋白质延缓升糖", "快餐汉堡脂肪含量高"],combos:["蔬菜沙拉"],src:"CN"},
+{id:"food-141",name:"披萨",en:"Pizza",cat:"混合膳食",sub:"西式",gi:60,giLevel:"中",gl:18,glLevel:"中",cal:266,carbs:33.0,protein:11.0,fat:10.0,fiber:2.3,impact:"中",serving:"约150g",timing:"午餐/晚餐",suitable:"一般人群偶尔",caution:"糖尿病者偶尔少量",tips:["GI中等", "面团+奶酪+ toppings", "蛋白质和脂肪延缓部分升糖"],combos:["蔬菜沙拉"],src:"CN+SYD"},
+{id:"food-142",name:"寿司",en:"Sushi",cat:"混合膳食",sub:"日式",gi:55,giLevel:"低",gl:12,glLevel:"中",cal:150,carbs:28.0,protein:6.0,fat:1.0,fiber:0.5,impact:"极低",serving:"约150g",timing:"午餐/晚餐",suitable:"一般人群适量",caution:"糖尿病者注意份量",tips:["GI中等", "米饭+鱼+海苔", "蛋白质有助延缓升糖", "注意酱油含钠"],combos:["味噌汤"],src:"CN+SYD"},
+{id:"food-143",name:"粥+鸡蛋+蔬菜",en:"Congee + Egg + Veg",cat:"混合膳食",sub:"中式",gi:55,giLevel:"低",gl:8,glLevel:"低",cal:120,carbs:18.0,protein:8.0,fat:3.0,fiber:2.0,impact:"极低",serving:"约400g",timing:"早餐",suitable:"一般人群",caution:"糖尿病者用杂粮粥替代白米粥",tips:["混合膳食比单喝粥GI低", "蛋白质和纤维延缓升糖", "比纯白米粥好得多"],combos:[],src:"CN"},
+{id:"food-144",name:"米饭+肉+菜（标准中式正餐）",en:"Rice + Meat + Veg",cat:"混合膳食",sub:"中式",gi:60,giLevel:"中",gl:15,glLevel:"中",cal:180,carbs:22.0,protein:10.0,fat:5.0,fiber:3.0,impact:"中",serving:"约400g",timing:"午餐/晚餐",suitable:"一般人群",caution:"糖尿病者控制米饭份量",tips:["混合膳食GI低于纯米饭", "先吃菜再吃肉最后吃饭可进一步降GI", "标准中式正餐结构"],combos:[],src:"CN"},
+{id:"food-145",name:"全麦三明治",en:"Whole Wheat Sandwich",cat:"混合膳食",sub:"西式",gi:50,giLevel:"低",gl:10,glLevel:"低",cal:230,carbs:28.0,protein:12.0,fat:8.0,fiber:4.0,impact:"极低",serving:"约200g",timing:"午餐",suitable:"一般人群",caution:"选择真全麦面包",tips:["GI低", "全麦面包+蛋白质+蔬菜", "健康的一餐选择"],combos:[],src:"CN"},
+];
+
+const KNOWLEDGE=[
+{id:"k01",title:"什么是GI（血糖生成指数）",cat:"基础概念",summary:"GI衡量食物中碳水化合物对血糖的影响速度。以葡萄糖为100，GI越高，升糖越快。",points:["GI ≤ 55：低GI食物，升糖慢","GI 56-69：中GI食物","GI ≥ 70：高GI食物，升糖快","GI只反映速度，不反映碳水总量"],visType:"信息图"},
+{id:"k02",title:"什么是GL（血糖负荷）",cat:"基础概念",summary:"GL = GI × 每份食物碳水克数 ÷ 100，同时考虑升糖速度和碳水总量，是更全面的评估指标。",points:["GL ≤ 10：低血糖负荷","GL 11-19：中血糖负荷","GL ≥ 20：高血糖负荷","西瓜高GI低GL是典型例子——GI=76但每份碳水少"],visType:"信息图"},
+{id:"k03",title:"GI vs GL：为什么两者都重要",cat:"基础概念",summary:"GI告诉你升糖多快，GL告诉你升糖多少。两者结合使用才能准确评估食物对血糖的真实影响。",points:["高GI+低GL（如西瓜）：少量吃影响不大","低GI+高GL（如大量全麦面包）：仍需注意份量","高GI+高GL（如白米饭）：最危险组合","低GI+低GL（如蔬菜）：安全区"],visType:"象限图"},
+{id:"k04",title:"血糖波动的正常范围",cat:"基础概念",summary:"正常人空腹血糖3.9-6.1 mmol/L，餐后2小时<7.8 mmol/L。糖尿病诊断标准及血糖监测要点。",points:["空腹正常：3.9-6.1 mmol/L","餐后2h正常：<7.8 mmol/L","HbA1c正常：<5.7%","糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1"],visType:"数据图表"},
+{id:"k05",title:"什么是胰岛素抵抗",cat:"病理机制",summary:"胰岛素抵抗是细胞对胰岛素信号反应减弱，导致胰腺分泌更多胰岛素来维持血糖正常，是2型糖尿病的核心病理。",points:["胰岛素是钥匙，细胞是锁，抵抗=锁生锈了","早期血糖可能正常（高胰岛素代偿期）","腹部肥胖是最常见诱因","运动可显著改善胰岛素敏感性"],visType:"机制图解"},
+{id:"k06",title:"1型 vs 2型糖尿病",cat:"疾病分型",summary:"1型是胰岛β细胞被自身免疫破坏，胰岛素绝对缺乏；2型以胰岛素抵抗为主伴相对缺乏。",points:["1型：多在青少年发病，必须注射胰岛素","2型：多在成年发病，与生活方式强相关","2型可通过饮食运动和减重改善","妊娠糖尿病是孕期特有的暂时性高血糖"],visType:"对比表"},
+{id:"k07",title:"低GI饮食核心原则",cat:"饮食管理",summary:"低GI饮食的核心不是完全不吃碳水，而是选择优质碳水、搭配蛋白质和纤维、控制份量。",points:["优先选全谷物、豆类、非淀粉蔬菜","每餐必有蛋白质（肉/鱼/蛋/豆）","先吃蔬菜→蛋白质→最后吃主食","避免液态糖（含糖饮料、果汁）"],visType:"原则卡片"},
+{id:"k08",title:"用餐顺序法降低升糖",cat:"饮食管理",summary:"改变进食顺序——先吃蔬菜、再吃蛋白质、最后吃主食——可显著降低餐后血糖峰值。",points:["纤维先形成物理屏障，延缓碳水吸收","蛋白质刺激GLP-1分泌，延缓胃排空","可将餐后血糖峰值降低20-40%","同样食物，不同顺序，血糖反应差异显著"],visType:"流程图"},
+{id:"k09",title:"血糖友好的加餐选择",cat:"饮食管理",summary:"低GI加餐可以在两餐之间稳定血糖，避免因过度饥饿导致的暴食和血糖剧烈波动。",points:["苹果+一小把花生","无糖酸奶+蓝莓","小份黑巧克力（≥70%）","煮鸡蛋","黄瓜/小番茄无限量"],visType:"食物组合卡片"},
+{id:"k10",title:"运动对血糖的影响",cat:"生活方式",summary:"运动通过增加肌肉葡萄糖摄取来提高胰岛素敏感性，效果可持续24-48小时。",points:["餐后散步15-30分钟即可显著降低餐后血糖","力量训练增加肌肉量，提高基础葡萄糖处理能力","高强度运动可能暂时升高血糖（应激反应）","每周≥150分钟中等强度运动"],visType:"信息图"},
+{id:"k11",title:"影响GI的因素",cat:"基础概念",summary:"食物的GI值并非固定不变，受烹饪方式、成熟度、加工方式、搭配食物等多种因素影响。",points:["烹饪时间越长，GI越高（煮烂的粥>稍硬的饭）","水果越熟GI越高（青香蕉30→熟香蕉62）","精加工GI更高（全麦粉69→白面粉85+）","酸性食物（醋、柠檬）可降低整体餐食GI"],visType:"关系图"},
+{id:"k12",title:"血糖监测：什么时间测、看什么",cat:"监测管理",summary:"血糖监测是糖尿病管理的基石。了解空腹、餐前、餐后2小时、睡前等不同时间点的意义。",points:["空腹血糖：反映基础胰岛素水平和肝糖输出","餐后2小时：反映饮食和餐时胰岛素效果","睡前：指导是否需要加餐防夜间低血糖","CGM动态血糖仪可看到完整24h血糖曲线"],visType:"时间线图"}
+];
+
+const ACTIONS=[
+{id:"a01",title:"用餐顺序法",cat:"饮食管理",summary:"先蔬菜→再蛋白质→最后主食，餐后血糖峰值降低20-40%",points:["纤维先形成物理屏障","蛋白质刺激GLP-1分泌","同样食物不同顺序效果差异显著"]},
+{id:"a02",title:"控糖一日时间表",cat:"生活方式",summary:"从早到晚6个时段的控糖行动方案",points:["早餐选低GI主食","午餐用顺序法","加餐选低GI组合","餐后运动15分钟"]},
+{id:"a03",title:"血糖友好加餐选择",cat:"饮食管理",summary:"5种低GI加餐组合，稳定血糖不暴食",points:["苹果+花生","无糖酸奶+蓝莓","黑巧克力≥70%","煮鸡蛋","黄瓜/小番茄"]}
+];
+
+const STYLES={
+medical:{name:"医学信息图风",desc:"深蓝+白底+几何线条，权威感强",prompt:"Professional medical infographic style, deep blue and white color palette, clean geometric lines, sans-serif Chinese typography, authoritative and trustworthy appearance, data-driven layout with clear hierarchy"},
+warm:{name:"温暖科普插画风",desc:"暖橙+米白+手绘食物，亲切感强",prompt:"Warm educational illustration style, warm orange and cream color palette, hand-drawn food illustrations, rounded card design, friendly and approachable, soft natural lighting, cozy wellness aesthetic"},
+dataviz:{name:"数据可视化风",desc:"白底+大色块+大数字，极简现代",prompt:"Modern data visualization style, white background, large color blocks, oversized numbers, minimal layout, clean typography, high contrast data presentation, Swiss design influence"},
+chinese:{name:"新中式健康风",desc:"米黄底+国潮插画+茶棕色，中西结合",prompt:"New Chinese health illustration style, warm beige background, modern Chinese trend illustration elements, tea brown and sage green palette, elegant fusion of traditional and modern aesthetics"}
+};
+
+const NEG="english text, brand logos, percentage symbols, arrow symbols, vitamin labels, blurry text, distorted food illustration, watermark, messy layout, photorealistic human faces";
+const DISCLAIMER="内容仅供参考，不构成医疗建议。糖尿病等疾病的诊断和治疗请咨询专业医生。";
+
+// ========== STATE ==========
+let state={line:"food",item:null,mode:"single",style:"medical"};
+let currentTab="prompt";
+
+// ========== RENDER ==========
+const giColor={低:"gi-low",中:"gi-mid",高:"gi-high"};
+const lineDesc={food:"选具体食物",knowledge:"选知识主题",action:"选行动方案"};
+
+function renderStep2(){
+  const body=document.getElementById("step2-body");
+  const title=document.getElementById("step2-title");
+  const desc=document.getElementById("step2-desc");
+  title.textContent=lineDesc[state.line];
+  state.item=null;
+  let html="";
+
+  if(state.line==="food"){
+    desc.textContent=FOODS.length+"种常见食物 · 点击选择";
+    // group by category
+    const cats={};
+    FOODS.forEach(f=>{if(!cats[f.cat])cats[f.cat]=[];cats[f.cat].push(f)});
+    for(const[cat,list] of Object.entries(cats)){
+      html+=`<div style="font-size:0.72rem;color:var(--muted);font-weight:700;margin:10px 0 6px;text-transform:uppercase;letter-spacing:0.05em">${cat}</div>`;
+      html+=`<div class="food-list">`;
+      list.forEach(f=>{
+        html+=`<div class="food-item" data-id="${f.id}"><span class="gi-badge ${giColor[f.giLevel]}">${f.giLevel}GI</span><div class="name">${f.name}</div><div class="cat">${f.en}</div><div class="gi-val">GI=${f.gi}</div></div>`;
+      });
+      html+=`</div>`;
+    }
+  }else if(state.line==="knowledge"){
+    desc.textContent="12个知识主题 · 点击选择";
+    html+=`<div class="opt-grid cols-2">`;
+    KNOWLEDGE.forEach(k=>{
+      html+=`<div class="opt opt-mini" data-id="${k.id}"><div class="icon">📋</div><div class="label">${k.title}</div><div class="desc">${k.cat} · ${k.visType}</div></div>`;
+    });
+    html+=`</div>`;
+  }else{
+    desc.textContent="3个行动方案 · 点击选择";
+    html+=`<div class="opt-grid cols-3">`;
+    ACTIONS.forEach(a=>{
+      html+=`<div class="opt opt-mini" data-id="${a.id}"><div class="icon">⚡</div><div class="label">${a.title}</div><div class="desc">${a.cat}</div></div>`;
+    });
+    html+=`</div>`;
+  }
+  body.innerHTML=html;
+  // bind
+  body.querySelectorAll("[data-id]").forEach(el=>{
+    el.addEventListener("click",()=>{
+      body.querySelectorAll("[data-id]").forEach(e=>e.classList.remove("active"));
+      el.classList.add("active");
+      state.item=el.dataset.id;
+      updateOutput();
+    });
+  });
+  updateOutput();
+}
+
+function getSelectedItem(){
+  if(!state.item)return null;
+  if(state.line==="food")return FOODS.find(f=>f.id===state.item);
+  if(state.line==="knowledge")return KNOWLEDGE.find(k=>k.id===state.item);
+  if(state.line==="action")return ACTIONS.find(a=>a.id===state.item);
+}
+
+function buildPrompt(){
+  const item=getSelectedItem();
+  if(!item)return null;
+  const styleName=STYLES[state.style].name;
+  const stylePrompt=STYLES[state.style].prompt;
+  let prompt="";
+
+  if(state.line==="food"){
+    prompt=buildFoodPrompt(item,styleName,stylePrompt);
+  }else if(state.line==="knowledge"){
+    prompt=buildKnowledgePrompt(item,styleName,stylePrompt);
+  }else{
+    prompt=buildActionPrompt(item,styleName,stylePrompt);
+  }
+  return prompt;
+}
+
+function buildFoodPrompt(f,styleName,stylePrompt){
+  const giColorText=f.giLevel==="高"?"红色标注":f.giLevel==="中"?"黄色标注":"绿色标注";
+  let p=`【数据查证指令】
+请联网搜索以下权威来源核实数据：
+
+1. GI值查证：
+   打开悉尼大学GI数据库 https://glycemicindex.com/gi-search/
+   搜索食物名称"${f.en}"，核对GI值是否为${f.gi}
+
+2. 营养数据查证：
+   打开USDA FoodData Central https://fdc.nal.usda.gov/
+   搜索"${f.en}"，核对热量(${f.cal}kcal/100g)、碳水(${f.carbs}g)、蛋白质(${f.protein||0}g)、脂肪(${f.fat||0}g)、纤维(${f.fiber||0}g)
+
+3. 中国数据交叉验证：
+   参考"中国好营养"公众号发布的259种食物GI数据
+   来源：中国食物成分表（第6版）附表
+
+核实后填充以下数据，每条标注出处。如发现数据不一致，以悉尼大学GI数据库为准。
+
+【内容定义】
+主题：${f.name}（${f.en}）
+内容类型：食物GI速查卡`;
+  if(state.mode==="series4"){
+    p+=`\n出图模式：系列4张（速查卡→升糖曲线→食用建议→冷知识）`;
+  }else{
+    p+=`\n出图模式：单张速查卡`;
+  }
+  p+=`
+风格：${styleName}
+
+【铁律约束】
+- 所有文字必须使用中文，不得替换为英文
+- GI数值${f.gi}必须精确显示，不得四舍五入
+- 食物名称必须显示为"${f.name}"，不得替换
+- 插画中不得出现英文文字、品牌标识
+- 图面不得出现百分比数字
+- 编号使用圆圈数字①②③，不使用箭头
+- 底部必须包含"${DISCLAIMER}"
+
+【出图内容·第1张·GI速查卡】
+食物名称：${f.name}（${f.en}）
+分类：${f.cat} · ${f.sub||""}
+GI值：${f.gi}（${f.giLevel}GI）${giColorText}
+GL值：${f.gl}（${f.glLevel}GL）
+热量：${f.cal}千卡/100g
+碳水：${f.carbs}g/100g
+蛋白质：${f.protein||0}g/100g
+脂肪：${f.fat||0}g/100g
+膳食纤维：${f.fiber||0}g/100g
+升糖影响：${f.impact}
+标准份量：${f.serving}
+最佳食用时段：${f.timing}
+适合人群：${f.suitable}
+注意事项：${f.caution}
+数据来源：${f.src||"CN+SYD"}
+
+食用建议：
+${f.tips.map((t,i)=>`①${t}`).join("\n")}
+
+推荐搭配（降低整体升糖）：
+${f.combos.join("、")}`;
+
+  if(state.mode==="series4"){
+    p+=`
+
+【出图内容·第2张·升糖曲线对比图】
+图表标题：同样吃一份${f.name}，血糖怎么变？
+Y轴：血糖浓度(mmol/L)
+X轴：0min / 30min / 60min / 90min / 120min
+绘制${f.name}（GI=${f.gi}）的血糖反应曲线
+对比同类高GI食物的曲线
+标注峰值和到达时间
+结论：${f.impact==="极高"?"升糖极快，峰值高":"升糖"+f.impact}
+
+【出图内容·第3张·食用建议+搭配方案卡】
+卡片标题：${f.name}怎么吃才控糖
+3-4条具体建议 + 推荐搭配方案
+每条建议附原理说明
+
+【出图内容·第4张·控糖冷知识卡】
+卡片标题：关于${f.name}你不知道的3件事
+3条反常识冷知识，每条带数据支撑
+传播钩子："发给那个总说${f.name}不能吃的人"`;
+  }
+
+  p+=`
+
+【风格指令】
+${stylePrompt}
+
+【负面提示词】
+--no ${NEG}
+
+--ar 1:1 --style raw`;
+  return p;
+}
+
+function buildKnowledgePrompt(k,styleName,stylePrompt){
+  let p=`【数据查证指令】
+请联网搜索以下来源核实知识内容：
+- 中国2型糖尿病防治指南(2024版)
+- 中华医学会糖尿病学分会科普资料
+- 相关权威医学来源
+核实后填充概念定义和关键点。
+
+【内容定义】
+主题：${k.title}
+内容类型：知识科普信息图`;
+  if(state.mode==="series3"){
+    p+=`\n出图模式：系列3张（是什么→误区纠正→怎么做）`;
+  }else{
+    p+=`\n出图模式：单张信息图`;
+  }
+  p+=`
+风格：${styleName}
+
+【铁律约束】
+- 所有文字必须使用中文
+- 概念定义必须准确，不得自行编造
+- 图面不得出现百分比
+- 编号使用圆圈数字①②③
+- 底部包含"${DISCLAIMER}"
+
+【出图内容·第1张·知识信息图】
+卡片标题：${k.title}
+概念定义：${k.summary}
+关键知识点：
+${k.points.map((pt,i)=>`①${pt}`).join("\n")}`;
+
+  if(state.mode==="series3"){
+    p+=`
+
+【出图内容·第2张·误区纠正图】
+卡片标题：关于${k.title}，90%的人都搞错了
+3组"你以为vs实际上"对比
+每组附数据支撑和来源
+
+【出图内容·第3张·行动步骤图】
+卡片标题：${k.title}·5步行动指南
+5个具体操作步骤
+每步附预期效果`;
+  }
+
+  p+=`
+
+【风格指令】
+${stylePrompt}
+
+【负面提示词】
+--no ${NEG}
+
+--ar 16:9 --style raw`;
+  return p;
+}
+
+function buildActionPrompt(a,styleName,stylePrompt){
+  let p=`【数据查证指令】
+请联网搜索以下来源核实建议：
+- 中国居民膳食指南(2022)
+- 中国2型糖尿病防治指南(2024版)
+核实后填充具体操作步骤。
+
+【内容定义】
+主题：${a.title}
+内容类型：操作步骤流程图
+风格：${styleName}
+
+【铁律约束】
+- 所有文字必须使用中文
+- 步骤编号使用圆圈数字①②③④⑤
+- 每步必须有具体操作描述
+- 图面不得出现百分比
+- 底部包含"${DISCLAIMER}"
+
+【出图内容】
+卡片标题：${a.title}
+核心原理：${a.summary}
+
+行动步骤：
+${a.points.map((pt,i)=>`①${pt}`).join("\n")}
+
+【风格指令】
+${stylePrompt}
+
+【负面提示词】
+--no ${NEG}
+
+--ar 3:4 --style raw`;
+  return p;
+}
+
+function buildCopy(){
+  const item=getSelectedItem();
+  if(!item)return"";
+  const styleName=STYLES[state.style].name;
+  let title="";
+  if(state.line==="food"){
+    title=`${item.name}GI=${item.gi}｜${item.giLevel}GI食物${item.impact==="极高"?"升糖极快":"升糖"+item.impact}`;
+  }else if(state.line==="knowledge"){
+    title=`${item.title}｜一张图搞懂血糖知识`;
+  }else{
+    title=`${item.title}｜${item.summary}`;
+  }
+  return `【标题】
+${title}
+
+【正文】
+${state.line==="food"?`${item.name}的GI值是${item.gi}，属于${item.giLevel}GI食物。${item.impact==="极高"?"升糖速度极快，需要严格控制份量。":item.impact==="极低"?"对血糖影响极小，可以放心食用。":"升糖影响中等，适量食用即可。"}
+
+标准份量：${item.serving}
+热量：${item.cal}千卡/100g
+
+食用建议：
+${item.tips.map((t,i)=>`${i+1}. ${t}`).join("\n")}
+
+#血糖 #GI指数 #${item.name} #控糖饮食 #糖尿病饮食 #低GI食物`:`${item.title}
+
+${item.summary}
+
+${item.points.map((p,i)=>`${i+1}. ${p}`).join("\n")}
+
+#血糖 #控糖 #${item.cat} #健康知识 #糖尿病`}
+
+【小红书文案】
+${title}
+
+${state.line==="food"?"你在吃"+item.name+"吗？知道它的GI值是多少吗？":"今天分享一个血糖知识点。"}
+
+${item.summary}
+
+收藏起来，发给需要的人 ❤️
+
+#血糖知识 #控糖 #健康饮食 #${state.line==="food"?item.name:item.title}`;
+}
+
+function updateOutput(){
+  const item=getSelectedItem();
+  const outputSection=document.getElementById("output-section");
+  const emptyState=document.getElementById("empty-state");
+  if(!item){
+    outputSection.style.display="none";
+    emptyState.style.display="block";
+    return;
+  }
+  outputSection.style.display="block";
+  emptyState.style.display="none";
+
+  // breadcrumb
+  const lineName={food:"食物线",knowledge:"知识线",action:"行动线"}[state.line];
+  const itemName=item.name||item.title;
+  const modeName={single:"单张速查卡",series3:"系列3张",series4:"系列4张"}[state.mode];
+  const bc=document.getElementById("breadcrumb");
+  bc.textContent=`${lineName} · ${itemName} · ${modeName} · ${STYLES[state.style].name}`;
+
+  // prompt
+  const prompt=buildPrompt();
+  document.getElementById("prompt-text").textContent=prompt||"";
+  const copy=buildCopy();
+  document.getElementById("copy-text").textContent=copy||"";
+  // 如果当前在验证tab，刷新验证内容
+  if(currentTab==="verify")renderVerify();
+}
+
+function renderVerify(){
+  const item=getSelectedItem();
+  const el=document.getElementById("verify-content");
+  if(!item){el.innerHTML="<p style='color:var(--muted);text-align:center'>请先选择一个食物</p>";return}
+
+  if(state.line!=="food"){
+    el.innerHTML=`<div style="background:var(--bg3);border-radius:10px;padding:20px;text-align:center">
+      <p style="font-weight:700;margin-bottom:8px">📚 知识线和行动线的数据验证</p>
+      <p style="font-size:0.85rem;color:var(--muted);margin:0">知识主题的数据来自中国2型糖尿病防治指南(2024版)和中华医学会糖尿病学分会科普资料。<br>请在生成Prompt后发给联网Claude自动查证。</p>
+    </div>`;
+    return;
+  }
+
+  const f=item;
+  const giSearchUrl="https://glycemicindex.com/gi-search/";
+  const usdaUrl="https://fdc.nal.usda.gov/fdc-app.html#/?query="+encodeURIComponent(f.en);
+
+  el.innerHTML=`
+    <div style="margin-bottom:16px">
+      <h4 style="font-size:1rem;font-weight:700;margin-bottom:4px">${f.name}（${f.en}）数据验证</h4>
+      <p style="font-size:0.8rem;color:var(--muted)">本数据库中该食物的GI值=${f.gi}（${f.giLevel}GI），数据来源标记：${f.src||"CN+SYD"}</p>
+    </div>
+
+    <div style="display:grid;gap:12px">
+      <div style="border:1px solid var(--rule);border-radius:10px;overflow:hidden">
+        <div style="background:var(--bg3);padding:10px 16px;font-weight:700;font-size:0.88rem;display:flex;align-items:center;gap:8px">
+          <span style="background:#0d7c66;color:#fff;padding:2px 8px;border-radius:4px;font-size:0.7rem">来源1</span>
+          悉尼大学GI数据库
+        </div>
+        <div style="padding:14px 16px">
+          <p style="font-size:0.82rem;margin-bottom:8px;color:var(--ink)"><strong>验证GI值：</strong>搜索 "${f.en}" 核对GI是否为 ${f.gi}</p>
+          <p style="font-size:0.78rem;color:var(--muted);margin-bottom:10px">该数据库收录4277条食物GI数据，是全球最权威的GI来源。数据来自实际人体测试（ISO 26642标准）。</p>
+          <a href="${giSearchUrl}" target="_blank" rel="noopener" style="display:inline-block;background:#0d7c66;color:#fff;padding:8px 16px;border-radius:8px;font-size:0.82rem;font-weight:700;text-decoration:none">🔍 前往查询 GI值 →</a>
+        </div>
+      </div>
+
+      <div style="border:1px solid var(--rule);border-radius:10px;overflow:hidden">
+        <div style="background:var(--bg3);padding:10px 16px;font-weight:700;font-size:0.88rem;display:flex;align-items:center;gap:8px">
+          <span style="background:#2563eb;color:#fff;padding:2px 8px;border-radius:4px;font-size:0.7rem">来源2</span>
+          USDA FoodData Central
+        </div>
+        <div style="padding:14px 16px">
+          <p style="font-size:0.82rem;margin-bottom:8px;color:var(--ink)"><strong>验证营养数据：</strong>搜索 "${f.en}" 核对以下数据</p>
+          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin:10px 0;font-size:0.78rem">
+            <div style="background:var(--bg);padding:6px 10px;border-radius:6px">热量：<strong>${f.cal} kcal/100g</strong></div>
+            <div style="background:var(--bg);padding:6px 10px;border-radius:6px">碳水：<strong>${f.carbs} g/100g</strong></div>
+            <div style="background:var(--bg);padding:6px 10px;border-radius:6px">蛋白质：<strong>${f.protein||0} g/100g</strong></div>
+            <div style="background:var(--bg);padding:6px 10px;border-radius:6px">脂肪：<strong>${f.fat||0} g/100g</strong></div>
+            <div style="background:var(--bg);padding:6px 10px;border-radius:6px">纤维：<strong>${f.fiber||0} g/100g</strong></div>
+            <div style="background:var(--bg);padding:6px 10px;border-radius:6px">GL值：<strong>${f.gl}（${f.glLevel}GL）</strong></div>
+          </div>
+          <a href="${usdaUrl}" target="_blank" rel="noopener" style="display:inline-block;background:#2563eb;color:#fff;padding:8px 16px;border-radius:8px;font-size:0.82rem;font-weight:700;text-decoration:none">🔍 前往查询 营养数据 →</a>
+        </div>
+      </div>
+
+      <div style="border:1px solid var(--rule);border-radius:10px;overflow:hidden">
+        <div style="background:var(--bg3);padding:10px 16px;font-weight:700;font-size:0.88rem;display:flex;align-items:center;gap:8px">
+          <span style="background:#e9a23b;color:#fff;padding:2px 8px;border-radius:4px;font-size:0.7rem">来源3</span>
+          中国食物成分表（第6版）
+        </div>
+        <div style="padding:14px 16px">
+          <p style="font-size:0.82rem;margin-bottom:8px;color:var(--ink)"><strong>交叉验证：</strong>核对259种食物GI数据中的 "${f.name}"</p>
+          <p style="font-size:0.78rem;color:var(--muted);margin-bottom:10px">由中国疾病预防控制中心营养与健康所发布，涵盖11大类259种中国常见食物。可通过"中国好营养"公众号查看完整列表。</p>
+          <div style="background:var(--bg);padding:10px 14px;border-radius:8px;font-size:0.76rem;color:var(--muted)">
+            <strong style="color:var(--ink)">验证步骤：</strong><br>
+            1. 微信搜索"中国好营养"公众号<br>
+            2. 搜索关键词"259种食物GI"<br>
+            3. 对照表中"${f.name}"的GI值<br>
+            4. 或购买《中国食物成分表标准版·第6版》书籍查阅
+          </div>
+        </div>
+      </div>
+
+      <div style="border:1px solid var(--accent2);border-radius:10px;overflow:hidden;background:#fef5f0">
+        <div style="padding:14px 16px">
+          <p style="font-size:0.82rem;font-weight:700;margin-bottom:6px;color:var(--accent2)">⚠️ 数据不一致怎么办？</p>
+          <p style="font-size:0.78rem;color:var(--ink);margin-bottom:8px">不同来源的GI值可能因测试方法、食物品种、烹饪方式而异。处理原则：</p>
+          <ul style="font-size:0.76rem;color:var(--ink);padding-left:18px;margin:0;line-height:1.8">
+            <li><strong>GI值优先级：</strong>悉尼大学数据库 > 中国食物成分表 > 其他来源</li>
+            <li><strong>营养数据优先级：</strong>USDA FoodData Central > 中国食物成分表</li>
+            <li><strong>烹饪方式影响：</strong>同种食物不同烹饪法GI不同（如蒸红薯GI=54，烤红薯GI=82）</li>
+            <li><strong>品种差异：</strong>不同品种的同类食物GI可能差异很大（如老玉米vs糯玉米）</li>
+            <li><strong>最终验证：</strong>将Prompt发给联网Claude，它会自动联网查证并标注数据出处</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// ========== EVENTS ==========
+// Step 1
+document.getElementById("line-grid").querySelectorAll(".opt").forEach(el=>{
+  el.addEventListener("click",()=>{
+    document.getElementById("line-grid").querySelectorAll(".opt").forEach(e=>e.classList.remove("active"));
+    el.classList.add("active");
+    state.line=el.dataset.line;
+    renderStep2();
+  });
+});
+
+// Step 3
+document.getElementById("mode-grid").querySelectorAll(".opt").forEach(el=>{
+  el.addEventListener("click",()=>{
+    document.getElementById("mode-grid").querySelectorAll(".opt").forEach(e=>e.classList.remove("active"));
+    el.classList.add("active");
+    state.mode=el.dataset.mode;
+    updateOutput();
+  });
+});
+
+// Step 4
+document.getElementById("style-grid").querySelectorAll(".opt").forEach(el=>{
+  el.addEventListener("click",()=>{
+    document.getElementById("style-grid").querySelectorAll(".opt").forEach(e=>e.classList.remove("active"));
+    el.classList.add("active");
+    state.style=el.dataset.style;
+    updateOutput();
+  });
+});
+
+// Tabs
+document.querySelectorAll(".output-tab").forEach(tab=>{
+  tab.addEventListener("click",()=>{
+    document.querySelectorAll(".output-tab").forEach(t=>t.classList.remove("active"));
+    tab.classList.add("active");
+    currentTab=tab.dataset.tab;
+    document.getElementById("output-prompt").style.display=currentTab==="prompt"?"block":"none";
+    document.getElementById("output-copy").style.display=currentTab==="copy"?"block":"none";
+    document.getElementById("output-verify").style.display=currentTab==="verify"?"block":"none";
+    // 切换到验证tab时生成验证内容
+    if(currentTab==="verify")renderVerify();
+  });
+});
+
+// Copy
+document.getElementById("copy-btn").addEventListener("click",()=>{
+  let text="";
+  if(currentTab==="prompt")text=document.getElementById("prompt-text").textContent;
+  else if(currentTab==="copy")text=document.getElementById("copy-text").textContent;
+  else if(currentTab==="verify")text="数据验证链接已打开，请点击上方按钮前往各权威数据源查询";
+  if(!text)return;
+  navigator.clipboard.writeText(text).then(()=>{
+    const btn=document.getElementById("copy-btn");
+    const orig=btn.textContent;
+    btn.textContent="✅ 已复制到剪贴板";
+    btn.classList.add("copied");
+    setTimeout(()=>{btn.textContent=orig;btn.classList.remove("copied")},2000);
+  });
+});
+
+// INIT
+renderStep2();
+</script>
+</body>
+</html>

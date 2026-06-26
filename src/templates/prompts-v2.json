@@ -1,0 +1,262 @@
+{
+  "_meta": {
+    "version": "2.0.0",
+    "description": "升级版 Prompt 模板系统 — 支持系列出图、数据查证、风格匹配、铁律约束",
+    "based_on": "阿坚AIGC图文方法论（6篇文章通用工作流）",
+    "templates_count": 4,
+    "last_updated": "2026-06-26",
+    "changelog": "v2.0: 从8套单张模板升级为4套系列模板，内嵌数据查证+铁律+风格匹配+防重复"
+  },
+
+  "global_modules": {
+    "data_verification": {
+      "description": "嵌入 Prompt 开头，强制 AI 联网查证后再填充数据",
+      "sources": {
+        "gi": "悉尼大学GI数据库 glycemicindex.net",
+        "nutrition": "USDA FoodData Central",
+        "china_food": "中国食物成分表（第6版）",
+        "diagnosis": "中国2型糖尿病防治指南（2024版）",
+        "diet_guide": "中国居民膳食指南（2022）"
+      },
+      "instruction": "请联网搜索以下权威来源核实数据，查证后填充并标注出处：\n{sources}\n\n核实后输出每条数据的来源标注。不得使用未经验证的数据。"
+    },
+
+    "iron_rules": {
+      "description": "从阿坚方法论中提取的7条出图铁律，防止常见 AI 出图错误",
+      "rules": [
+        "所有标题和文字必须使用中文，不得替换为英文",
+        "布局百分比仅作为参考，不得出现在图面文字中",
+        "GI/GL/热量等数值必须精确显示，不得四舍五入或使用'约'",
+        "食物名称必须使用指定文字，不得替换为类似食物",
+        "插画中不得出现英文文字、品牌标识、维生素标签",
+        "编号使用圆圈数字①②③，不使用箭头符号↳",
+        "系列图中每张图的食物/数据/知识点不得与其他张重复"
+      ],
+      "negative_prompt": "english text, brand logos, percentage symbols, arrow symbols, vitamin labels, blurry text, distorted food illustration, watermark, messy layout, photorealistic human faces"
+    },
+
+    "styles": {
+      "medical-info": {
+        "name": "医学信息图风",
+        "description": "深蓝+白底+几何线条，权威感强",
+        "prompt_fragment": "Professional medical infographic style, deep blue and white color palette, clean geometric lines, sans-serif Chinese typography, authoritative and trustworthy appearance, data-driven layout with clear hierarchy",
+        "best_for": ["knowledge-info", "myth-buster", "self-check", "gi-ranking"],
+        "audience": "关注健康知识的成年人，需要权威感"
+      },
+      "warm-illustration": {
+        "name": "温暖科普插画风",
+        "description": "暖橙+米白底+手绘食物插画，亲切感强",
+        "prompt_fragment": "Warm educational illustration style, warm orange and cream color palette, hand-drawn food illustrations, rounded card design, friendly and approachable, soft natural lighting, cozy wellness aesthetic",
+        "best_for": ["food-card", "meal-plate", "step-flow", "daily-tips"],
+        "audience": "需要行动指导的普通用户，特别是中老年人群"
+      },
+      "data-viz": {
+        "name": "现代数据可视化风",
+        "description": "白底+大色块+大数字，极简现代",
+        "prompt_fragment": "Modern data visualization style, white background, large color blocks, oversized numbers, minimal layout, clean typography, high contrast data presentation, Swiss design influence",
+        "best_for": ["gi-ranking", "curve-comparison", "quadrant", "food-comparison"],
+        "audience": "年轻健康意识强的人群，数据敏感型用户"
+      },
+      "chinese-health": {
+        "name": "新中式健康风",
+        "description": "米黄底+国潮插画+茶棕色系，中西结合",
+        "prompt_fragment": "New Chinese health illustration style, warm beige background, modern Chinese trend illustration elements, tea brown and sage green palette, elegant fusion of traditional and modern aesthetics, refined editorial feel",
+        "best_for": ["food-card", "meal-plate", "daily-tips", "knowledge-info"],
+        "audience": "注重养生文化的中高端受众"
+      }
+    },
+
+    "disclaimer": "内容仅供参考，不构成医疗建议。糖尿病等疾病的诊断和治疗请咨询专业医生。"
+  },
+
+  "templates": [
+    {
+      "id": "tpl-series-food",
+      "name": "食物主题4张系列",
+      "description": "以单个食物为核心，4张图覆盖"能不能吃→升糖多快→怎么吃→冷知识"完整链路",
+      "target_platform": "Midjourney / DALL·E 3 / 即梦 / 香蕉Pro",
+      "mode": "series-4",
+      "anti_repeat": true,
+      "recommended_styles": ["warm-illustration", "data-viz"],
+      "variables": [
+        "name_zh", "name_en", "gi", "gi_level", "gl_per_serving", "gl_level",
+        "calories_per_100g", "carbs_per_100g", "blood_sugar_impact",
+        "serving_size", "meal_timing", "tips", "combinations", "suitable_for", "caution_for"
+      ],
+      "cards": [
+        {
+          "card_index": 1,
+          "card_type": "GI速查卡",
+          "unique_value": "核心数据速查",
+          "style": "warm-illustration",
+          "variables_used": ["name_zh", "gi", "gi_level", "gl_per_serving", "gl_level", "calories_per_100g", "carbs_per_100g", "blood_sugar_impact", "serving_size", "meal_timing"],
+          "template": "【数据查证指令】\n请联网搜索以下权威来源核实数据：\n- GI值：悉尼大学GI数据库 glycemicindex.net（{name_en}）\n- 营养数据：USDA FoodData Central\n核实后填充以下数据，每条标注出处。\n\n【内容定义】\n主题：{name_zh}\n内容类型：食物GI速查卡\n风格：warm-illustration（温暖科普插画风）\n\n【铁律约束】\n- 所有文字必须使用中文，不得替换为英文\n- GI数值{gi}必须精确显示，不得四舍五入\n- 食物名称必须显示为"{name_zh}"，不得替换\n- 插画中不得出现英文文字、品牌标识\n- 图面不得出现百分比数字\n- 底部必须包含"{disclaimer}"\n\n【出图内容】\n食物名称：{name_zh}\nGI值：{gi}（{gi_level}GI）\nGI等级：{gi_level}\nGL值：{gl_per_serving}（{gl_level}GL）\n热量：{calories_per_100g}千卡/100g\n碳水：{carbs_per_100g}g/100g\n升糖影响：{blood_sugar_impact}\n标准份量：{serving_size}\n最佳食用时段：{meal_timing}\n\n【风格指令】\n温暖科普插画风：暖橙色+米白色调，手绘风格的食物插画，圆角卡片设计，数据用清晰的无衬线中文字体，GI值用对应等级颜色突出（高GI红色/中GI黄色/低GI绿色），底部小字标注数据来源和免责声明\n\n【负面提示词】\n--no english text, brand logos, percentage symbols, arrow symbols, photorealistic, messy layout, watermark, blurry text\n--ar 1:1 --style raw"
+        },
+        {
+          "card_index": 2,
+          "card_type": "升糖曲线对比图",
+          "unique_value": "动态升糖可视化",
+          "style": "data-viz",
+          "variables_used": ["name_zh", "gi", "blood_sugar_impact"],
+          "template": "【数据查证指令】\n请联网搜索以下来源核实血糖曲线数据：\n- 悉尼大学GI数据库中{name_zh}(GI={gi})和同类高GI食物的血糖反应曲线\n核实后填充曲线数据。\n\n【内容定义】\n主题：{name_zh} vs 同类高GI食物 血糖反应对比\n内容类型：血糖曲线对比图\n风格：data-viz（现代数据可视化风）\n\n【铁律约束】\n- 所有文字必须使用中文\n- Y轴标注"血糖浓度(mmol/L)"，不得使用mg/dL\n- X轴标注时间（0min/30min/60min/90min/120min）\n- 曲线数据点必须标注具体数值\n- 图面不得出现百分比\n- 底部包含"{disclaimer}"\n\n【出图内容】\n图表标题：同样吃一份，血糖差距有多大？\n红色曲线：高GI同类食物 —— 急升急降型\n绿色曲线：{name_zh}（GI={gi}）—— 标注曲线类型\n关键标注：峰值差距、到达峰值时间差\n结论文字：数据对比结论\n替换建议：行动指导\n\n【风格指令】\n现代数据可视化风：白色背景，干净网格线，红色和绿色曲线，曲线间浅色填充突出差异，大数字标注峰值差距，极简排版\n\n--no english text, percentage, watermark, messy\n--ar 16:9 --style raw"
+        },
+        {
+          "card_index": 3,
+          "card_type": "食用建议+搭配方案卡",
+          "unique_value": "行动指导",
+          "style": "warm-illustration",
+          "variables_used": ["name_zh", "tips", "combinations", "suitable_for", "caution_for", "meal_timing"],
+          "template": "【数据查证指令】\n请联网搜索以下来源核实食用建议：\n- 中国居民膳食指南(2022)相关建议\n- {name_zh}的饮食搭配原则\n核实后填充建议内容。\n\n【内容定义】\n主题：{name_zh}怎么吃才控糖\n内容类型：食用建议+搭配方案卡\n风格：warm-illustration（温暖科普插画风）\n\n【铁律约束】\n- 所有文字必须使用中文\n- 编号使用圆圈数字①②③，不使用箭头\n- 图面不得出现百分比\n- 数据必须精确\n- 底部包含"{disclaimer}"\n\n【出图内容】\n卡片标题：{name_zh}怎么吃才控糖\n\n食用建议（3-4条）：\n{tips_formatted}\n\n推荐搭配（降低整体升糖）：\n{combinations_formatted}\n\n适合人群：{suitable_for}\n注意事项：{caution_for}\n最佳食用时段：{meal_timing}\n\n【风格指令】\n温暖科普插画风：暖橙+米白色调，手绘食物搭配插画，建议用圆圈数字编号，搭配方案用图标+文字组合展示，整体亲切实用\n\n--no english text, brand logos, arrow symbols, percentage, watermark\n--ar 3:4 --style raw"
+        },
+        {
+          "card_index": 4,
+          "card_type": "控糖冷知识卡",
+          "unique_value": "传播钩子",
+          "style": "data-viz",
+          "variables_used": ["name_zh", "gi", "blood_sugar_impact"],
+          "template": "【数据查证指令】\n请联网搜索以下来源核实冷知识：\n- {name_zh}的营养学研究、GI相关反常识发现\n- USDA FoodData Central 营养数据\n核实后填充3条冷知识。\n\n【内容定义】\n主题：关于{name_zh}你不知道的3件事\n内容类型：控糖冷知识卡\n风格：data-viz（现代数据可视化风）\n\n【铁律约束】\n- 所有文字必须使用中文\n- 编号使用圆圈数字①②③\n- 每条冷知识必须带数据支撑\n- 图面不得出现百分比\n- 底部包含"{disclaimer}"\n\n【出图内容】\n卡片标题：关于{name_zh}你不知道的3件事\n\n冷知识①：[反常识发现] + 数据支撑\n冷知识②：[反常识发现] + 数据支撑  \n冷知识③：[反常识发现] + 数据支撑\n\n传播钩子："发给那个总说{name_zh}不能吃的人"\n\n【风格指令】\n现代数据可视化风：白底大色块大数字，每条冷知识用大号编号，数据用强调色突出，极简现代排版，信息密度高但视觉清晰\n\n--no english text, brand logos, percentage, arrow symbols, watermark\n--ar 1:1 --style raw"
+        }
+      ]
+    },
+
+    {
+      "id": "tpl-series-knowledge",
+      "name": "知识主题3张系列",
+      "description": "以知识概念为核心，3张图覆盖"是什么→误区纠正→怎么做"完整链路",
+      "target_platform": "Midjourney / DALL·E 3 / 即梦 / 香蕉Pro",
+      "mode": "series-3",
+      "anti_repeat": true,
+      "recommended_styles": ["medical-info"],
+      "variables": ["title_zh", "summary", "key_points", "visual_type"],
+      "cards": [
+        {
+          "card_index": 1,
+          "card_type": "知识信息图",
+          "unique_value": "教育入门",
+          "style": "medical-info",
+          "template": "【数据查证指令】\n请联网搜索以下来源核实知识内容：\n- 中国2型糖尿病防治指南(2024版)\n- 中华医学会糖尿病学分会科普资料\n核实后填充概念定义和关键点。\n\n【内容定义】\n主题：{title_zh}\n内容类型：知识科普信息图\n风格：medical-info（医学信息图风）\n\n【铁律约束】\n- 所有文字必须使用中文\n- 概念定义必须准确，不得自行编造\n- 图面不得出现百分比\n- 底部包含"{disclaimer}"\n\n【出图内容】\n卡片标题：{title_zh}\n概念定义：{summary}\n关键知识点（3-4个）：\n{key_points_formatted}\n\n【风格指令】\n医学信息图风：深蓝+白色主调，中心视觉元素图解概念，关键点用callout卡片展示，底部摘要文字，权威专业感\n\n--no english text, percentage, watermark, messy layout\n--ar 16:9 --style raw"
+        },
+        {
+          "card_index": 2,
+          "card_type": "误区纠正图",
+          "unique_value": "打破认知偏差",
+          "style": "medical-info",
+          "template": "【数据查证指令】\n请联网搜索以下来源核实误区：\n- 中国2型糖尿病防治指南(2024版)\n- 相关领域的常见认知误区\n核实每个误区的正确说法和数据支撑。\n\n【内容定义】\n主题：关于{title_zh}的3个常见误区\n内容类型：控糖误区纠正图\n风格：medical-info（医学信息图风）\n\n【铁律约束】\n- 所有文字必须使用中文\n- 编号使用圆圈数字①②③\n- 每条必须有数据支撑\n- 图面不得出现百分比\n- 底部包含"{disclaimer}"\n\n【出图内容】\n卡片标题：关于{title_zh}，90%的人都搞错了\n\n误区①\n你以为：[常见错误认知]\n实际上：[正确说法] + 数据来源\n\n误区②\n你以为：[常见错误认知]\n实际上：[正确说法] + 数据来源\n\n误区③\n你以为：[常见错误认知]\n实际上：[正确说法] + 数据来源\n\n传播钩子："你中了几个？发给家人看看"\n\n【风格指令】\n医学信息图风：三组对比用"红叉vs绿勾"结构，左侧浅红色背景，右侧浅绿色背景，编号用大号圆圈数字\n\n--no english text, brand logos, percentage, arrow symbols, watermark\n--ar 9:16 --style raw"
+        },
+        {
+          "card_index": 3,
+          "card_type": "行动步骤图",
+          "unique_value": "从知道到做到",
+          "style": "warm-illustration",
+          "template": "【数据查证指令】\n请联网搜索以下来源核实行动建议：\n- 中国居民膳食指南(2022)\n- 相关领域的实践操作建议\n核实后填充具体步骤。\n\n【内容定义】\n主题：{title_zh}·怎么做\n内容类型：操作步骤流程图\n风格：warm-illustration（温暖科普插画风）\n\n【铁律约束】\n- 所有文字必须使用中文\n- 步骤编号使用圆圈数字①②③④⑤\n- 每步必须有具体操作描述\n- 图面不得出现百分比\n- 底部包含"{disclaimer}"\n\n【出图内容】\n卡片标题：{title_zh}·5步行动指南\n\n步骤①：[具体操作] + 预期效果\n步骤②：[具体操作] + 预期效果\n步骤③：[具体操作] + 预期效果\n步骤④：[具体操作] + 预期效果\n步骤⑤：[具体操作] + 预期效果\n\n互动钩子："今天从第①步开始"\n\n【风格指令】\n温暖科普插画风：暖橙+米白色调，步骤用竖向时间线排列，每步配简约手绘图标，圆圈数字编号，整体亲切实用\n\n--no english text, brand logos, percentage, arrow symbols, watermark\n--ar 3:4 --style raw"
+        }
+      ]
+    },
+
+    {
+      "id": "tpl-series-comparison",
+      "name": "食物对比3张系列",
+      "description": "同类食物高GI vs 低GI对比，3张图覆盖"换什么→全部排名→血糖差距"",
+      "target_platform": "Midjourney / DALL·E 3 / 即梦 / 香蕉Pro",
+      "mode": "series-3",
+      "anti_repeat": true,
+      "recommended_styles": ["data-viz"],
+      "variables": ["category", "foods_list", "high_gi_food", "low_gi_food"],
+      "cards": [
+        {
+          "card_index": 1,
+          "card_type": "高GI vs 低GI对比图",
+          "unique_value": "替换建议",
+          "style": "data-viz",
+          "template": "【数据查证指令】\n请联网搜索以下来源核实GI数据：\n- 悉尼大学GI数据库 glycemicindex.net\n核实高GI和低GI食物的GI值。\n\n【内容定义】\n主题：{category}·高GI vs 低GI 替换指南\n内容类型：对比图\n风格：data-viz（现代数据可视化风）\n\n【铁律约束】\n- 所有文字必须使用中文\n- GI数值必须精确\n- 食物名称不得替换\n- 图面不得出现百分比\n- 底部包含"{disclaimer}"\n\n【出图内容】\n左侧（红色区域）：{high_gi_food} GI={high_gi_value} ⚠️ 高GI\n右侧（绿色区域）：{low_gi_food} GI={low_gi_value} ✓ 低GI\n中间箭头：替换建议\n底部文字：替换后餐后血糖峰值降低约{reduction}%\n\n【风格指令】\n现代数据可视化风：左右分割构图，红色和绿色对比，中间替换箭头，大数字突出GI差值\n\n--no english text, percentage, brand logos, watermark\n--ar 16:9 --style raw"
+        },
+        {
+          "card_index": 2,
+          "card_type": "GI排行榜",
+          "unique_value": "全部排名",
+          "style": "data-viz",
+          "template": "【数据查证指令】\n请联网搜索以下来源核实GI排名：\n- 悉尼大学GI数据库 glycemicindex.net\n- glycemicsnap.com\n核实每个食物的GI值。\n\n【内容定义】\n主题：{category}·GI排行榜\n内容类型：GI排行榜\n风格：data-viz（现代数据可视化风）\n\n【铁律约束】\n- 所有文字必须使用中文\n- GI数值必须精确排序\n- 食物名称不得替换\n- 图面不得出现百分比（GI数值除外）\n- 底部包含"{disclaimer}"\n\n【出图内容】\n标题：{category}GI排行榜\n横向条形图，按GI从高到低排列\n颜色编码：红色(高GI≥70) / 黄色(中GI 56-69) / 绿色(低GI≤55)\n每个条形标注：食物名 + GI值\n{foods_list_formatted}\n关键洞察：{key_insight}\n\n【风格指令】\n现代数据可视化风：白底，横向条形图，红黄绿三色编码，每个食物配简约图标，大字标注关键洞察\n\n--no english text, brand logos, percentage, watermark\n--ar 16:9 --style raw"
+        },
+        {
+          "card_index": 3,
+          "card_type": "血糖曲线对比",
+          "unique_value": "血糖差距可视化",
+          "style": "data-viz",
+          "template": "【数据查证指令】\n请联网搜索以下来源核实血糖曲线：\n- 悉尼大学GI数据库中高GI和低GI食物的血糖反应曲线\n核实后填充曲线数据。\n\n【内容定义】\n主题：高GI vs 低GI·血糖反应曲线\n内容类型：血糖曲线对比图\n风格：data-viz（现代数据可视化风）\n\n【铁律约束】\n- 所有文字必须使用中文\n- Y轴标注"血糖浓度(mmol/L)"\n- X轴标注时间（0-120min）\n- 图面不得出现百分比\n- 底部包含"{disclaimer}"\n\n【出图内容】\n红色曲线：{high_gi_food}（高GI）——急升急降\n绿色曲线：{low_gi_food}（低GI）——缓升缓降\n标注：峰值差距、峰值时间差、曲线下面积差异\n结论：同样份量不同食物，血糖差距可达{diff}mmol/L\n\n【风格指令】\n现代数据可视化风：白底，红绿双曲线，曲线间浅色填充，大数字标注差距，极简排版\n\n--no english text, percentage, watermark\n--ar 16:9 --style raw"
+        }
+      ]
+    },
+
+    {
+      "id": "tpl-series-action-plan",
+      "name": "控糖行动方案6张系列",
+      "description": "一天的完整控糖方案，6张图覆盖早中晚+加餐+运动+总结",
+      "target_platform": "Midjourney / DALL·E 3 / 即梦 / 香蕉Pro",
+      "mode": "series-6",
+      "anti_repeat": true,
+      "recommended_styles": ["warm-illustration"],
+      "variables": [],
+      "cards": [
+        {
+          "card_index": 1,
+          "card_type": "封面图",
+          "unique_value": "痛点钩子",
+          "style": "warm-illustration",
+          "template": "【数据查证指令】\n请联网搜索以下来源：\n- 中国2型糖尿病防治指南(2024版)日常管理建议\n- 中国居民膳食指南(2022)\n\n【内容定义】\n主题：一天控糖时间表\n内容类型：封面图\n风格：warm-illustration\n\n【铁律约束】\n- 所有文字使用中文\n- 底部包含"{disclaimer}"\n\n【出图内容】\n大标题：一天控糖时间表\n副标题：从早到晚，6个时段稳住血糖\n钩子句："原来控糖不是不吃主食，而是吃对顺序"\n\n【风格指令】\n温暖科普插画风，时钟+食物元素，暖橙米白色调\n\n--no english text, brand logos, watermark\n--ar 1:1 --style raw"
+        },
+        {
+          "card_index": 2,
+          "card_type": "早餐方案",
+          "unique_value": "早晨控糖",
+          "style": "warm-illustration",
+          "template": "【数据查证指令】\n请联网搜索：\n- 低GI早餐食物推荐\n- 中国居民膳食指南(2022)早餐建议\n\n【内容定义】\n主题：控糖早餐方案\n风格：warm-illustration\n\n【铁律约束】\n- 所有文字使用中文\n- GI数值精确\n- 底部包含"{disclaimer}"\n\n【出图内容】\n标题：早餐·7:00-8:00\n推荐搭配：燕麦片(GI=55)+牛奶(GI=27)+鸡蛋(GI=0)\n避免：白粥(GI=90+)、馒头(GI=88)、含糖豆浆\n关键数据：传统压制燕麦GI=55，即食燕麦GI=79\n建议：选择钢切或传统压制燕麦\n\n【风格指令】\n温暖科普插画风，手绘早餐食物插画\n\n--no english text, brand logos, percentage, watermark\n--ar 1:1 --style raw"
+        },
+        {
+          "card_index": 3,
+          "card_type": "午餐方案",
+          "unique_value": "用餐顺序法",
+          "style": "warm-illustration",
+          "template": "【数据查证指令】\n请联网搜索：\n- 用餐顺序法研究（餐后血糖影响）\n- 中国居民膳食指南(2022)午餐建议\n\n【内容定义】\n主题：午餐·用餐顺序法\n风格：warm-illustration\n\n【铁律约束】\n- 所有文字使用中文\n- 编号使用圆圈数字\n- 底部包含"{disclaimer}"\n\n【出图内容】\n标题：午餐·12:00-13:00\n用餐顺序：①蔬菜→②蛋白质→③主食\n原理：纤维先形成物理屏障，蛋白质刺激GLP-1\n效果：餐后血糖峰值降低20-40%\n推荐主食：糙米(GI=50)、藜麦(GI=53)\n餐盘比例：蔬菜50%+蛋白质25%+主食25%\n\n【风格指令】\n温暖科普插画风，餐盘俯视图+顺序编号\n\n--no english text, brand logos, percentage, watermark\n--ar 1:1 --style raw"
+        },
+        {
+          "card_index": 4,
+          "card_type": "加餐方案",
+          "unique_value": "稳定血糖",
+          "style": "warm-illustration",
+          "template": "【数据查证指令】\n请联网搜索：\n- 低GI加餐食物推荐\n- 血糖友好零食研究\n\n【内容定义】\n主题：控糖加餐方案\n风格：warm-illustration\n\n【铁律约束】\n- 所有文字使用中文\n- GI数值精确\n- 底部包含"{disclaimer}"\n\n【出图内容】\n标题：加餐·15:00-16:00\n5种血糖友好加餐：\n①苹果(GI=36)+一小把花生(GI=14)\n②无糖酸奶(GI=36)+蓝莓\n③小份黑巧克力(GI=23, ≥70%可可)\n④煮鸡蛋(GI=0)\n⑤黄瓜/小番茄（无限量）\n原则：加餐热量控制在100-150千卡\n\n【风格指令】\n温暖科普插画风，5种加餐组合卡片式展示\n\n--no english text, brand logos, percentage, watermark\n--ar 1:1 --style raw"
+        },
+        {
+          "card_index": 5,
+          "card_type": "晚餐方案",
+          "unique_value": "睡前控糖",
+          "style": "warm-illustration",
+          "template": "【数据查证指令】\n请联网搜索：\n- 晚餐控糖饮食建议\n- 夜间血糖管理研究\n\n【内容定义】\n主题：控糖晚餐方案\n风格：warm-illustration\n\n【铁律约束】\n- 所有文字使用中文\n- 底部包含"{disclaimer}"\n\n【出图内容】\n标题：晚餐·18:00-19:00\n原则：清淡、少主食、多蔬菜\n推荐：清蒸鱼+西兰花(GI=10)+少量糙米\n避免：白米饭大碗、油炸食品、含糖饮料\n睡前血糖目标：6-8 mmol/L\n注意：晚餐后2小时不宜入睡\n\n【风格指令】\n温暖科普插画风，晚餐食物插画+注意事项\n\n--no english text, brand logos, percentage, watermark\n--ar 1:1 --style raw"
+        },
+        {
+          "card_index": 6,
+          "card_type": "运动方案",
+          "unique_value": "餐后运动",
+          "style": "warm-illustration",
+          "template": "【数据查证指令】\n请联网搜索：\n- 运动对血糖影响的研究\n- 糖尿病运动指南\n\n【内容定义】\n主题：餐后运动方案\n风格：warm-illustration\n\n【铁律约束】\n- 所有文字使用中文\n- 底部包含"{disclaimer}"\n\n【出图内容】\n标题：运动·控糖加速器\n餐后散步15-30分钟，显著降低餐后血糖峰值\n最佳时机：餐后30分钟开始\n推荐运动：快走、慢跑、骑车\n力量训练：每周2-3次，增加肌肉量\n注意：运动前血糖<5.6mmol/L需先加餐\n\n【风格指令】\n温暖科普插画风，运动场景插画+数据标注\n\n--no english text, brand logos, percentage, watermark\n--ar 1:1 --style raw"
+        }
+      ]
+    }
+  ],
+
+  "style_content_matrix": {
+    "description": "内容类型与风格的推荐匹配矩阵",
+    "matrix": {
+      "food-card": ["warm-illustration", "chinese-health"],
+      "food-comparison": ["data-viz", "medical-info"],
+      "gi-ranking": ["data-viz"],
+      "curve-comparison": ["data-viz"],
+      "knowledge-info": ["medical-info"],
+      "myth-buster": ["medical-info"],
+      "step-flow": ["warm-illustration", "chinese-health"],
+      "self-check": ["medical-info"],
+      "meal-plate": ["warm-illustration", "chinese-health"],
+      "daily-tips": ["warm-illustration", "chinese-health"],
+      "quadrant": ["data-viz"]
+    }
+  }
+}

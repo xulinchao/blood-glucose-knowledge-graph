@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "血糖相关食物数据模型",
+  "description": "用于血糖知识图谱的食物数据结构，覆盖 GI、GL、热量、营养成分及食用建议",
+  "type": "object",
+  "required": ["id", "name_zh", "category", "gi", "calories_per_100g"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "唯一标识符，如 food-001"
+    },
+    "name_zh": {
+      "type": "string",
+      "description": "中文名称"
+    },
+    "name_en": {
+      "type": "string",
+      "description": "英文名称"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "主食",
+        "蔬菜",
+        "水果",
+        "肉蛋奶",
+        "豆类",
+        "零食甜点",
+        "饮品",
+        "调味品",
+        "油脂"
+      ],
+      "description": "食物分类"
+    },
+    "gi": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 120,
+      "description": "血糖生成指数 (Glycemic Index), 参考葡萄糖=100"
+    },
+    "gi_level": {
+      "type": "string",
+      "enum": ["低", "中", "高"],
+      "description": "GI 等级: 低(≤55) / 中(56-69) / 高(≥70)"
+    },
+    "gl_per_serving": {
+      "type": "number",
+      "description": "血糖负荷 (Glycemic Load), 按标准份量计算"
+    },
+    "gl_level": {
+      "type": "string",
+      "enum": ["低", "中", "高"],
+      "description": "GL 等级: 低(≤10) / 中(11-19) / 高(≥20)"
+    },
+    "serving_size": {
+      "type": "object",
+      "properties": {
+        "amount": { "type": "number" },
+        "unit": { "type": "string", "enum": ["g", "ml", "个", "碗", "片", "杯", "勺"] },
+        "description": { "type": "string" }
+      }
+    },
+    "calories_per_100g": {
+      "type": "number",
+      "description": "每100g热量 (kcal)"
+    },
+    "nutrition_per_100g": {
+      "type": "object",
+      "properties": {
+        "carbs": { "type": "number", "description": "碳水化合物 (g)" },
+        "protein": { "type": "number", "description": "蛋白质 (g)" },
+        "fat": { "type": "number", "description": "脂肪 (g)" },
+        "fiber": { "type": "number", "description": "膳食纤维 (g)" },
+        "sugar": { "type": "number", "description": "糖 (g)" }
+      }
+    },
+    "blood_sugar_impact": {
+      "type": "string",
+      "enum": ["极低", "低", "中", "高", "极高"],
+      "description": "综合升糖影响评估"
+    },
+    "tips": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "食用建议/注意事项"
+    },
+    "suitable_for": {
+      "type": "string",
+      "description": "适用人群描述"
+    },
+    "caution_for": {
+      "type": "string",
+      "description": "慎用/禁忌人群"
+    },
+    "meal_timing": {
+      "type": "string",
+      "enum": ["适合早餐", "适合午餐", "适合晚餐", "适合加餐", "适合运动前后", "任意"],
+      "description": "最佳食用时段"
+    },
+    "combinations": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "推荐搭配食物，用于降低整体升糖"
+    },
+    "keywords": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "搜索关键词/标签"
+    }
+  }
+}
