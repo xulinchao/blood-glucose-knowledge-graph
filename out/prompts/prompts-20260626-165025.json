@@ -1,0 +1,724 @@
+{
+  "_meta": {
+    "generated_at": "2026-06-26T16:50:25.812779",
+    "total": 90
+  },
+  "prompts": [
+    {
+      "id": "food-001",
+      "type": "food_card",
+      "food_name": "白米饭",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 白米饭 (White Rice (cooked)), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 83 (高GI), 热量: 116千卡/100g, 碳水: 25.9g/100g, 升糖影响: 极高. Serving suggestion: 一小碗（约150g熟饭）. Key tip: 升糖速度极快，建议混合糙米或杂豆降低 GI. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-002",
+      "type": "food_card",
+      "food_name": "糙米饭",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 糙米饭 (Brown Rice (cooked, long grain)), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 50 (低GI), 热量: 111千卡/100g, 碳水: 23.0g/100g, 升糖影响: 低. Serving suggestion: 一小碗. Key tip: 比白米升糖慢得多（GI低约33点），是优秀的主食替代. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-003",
+      "type": "food_card",
+      "food_name": "馒头（精白面粉）",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 馒头（精白面粉） (Steamed Bun (white flour)), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 88 (高GI), 热量: 223千卡/100g, 碳水: 44.2g/100g, 升糖影响: 极高. Serving suggestion: 一个中等大小馒头. Key tip: 升糖速度和幅度均很高，应尽量避免. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-004",
+      "type": "food_card",
+      "food_name": "全麦面包",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 全麦面包 (Whole Wheat Bread), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 69 (中GI), 热量: 247千卡/100g, 碳水: 41.3g/100g, 升糖影响: 中. Serving suggestion: 2片. Key tip: 选购时注意配料表第一位是否为「全麦粉」. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-005",
+      "type": "food_card",
+      "food_name": "燕麦片（传统压制）",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 燕麦片（传统压制） (Rolled Oats (old-fashioned)), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 55 (低GI), 热量: 377千卡/100g, 碳水: 66.3g/100g, 升糖影响: 中. Serving suggestion: 干重约4勺. Key tip: 选择传统压制或钢切燕麦，避免即食燕麦（GI高达79）. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-006",
+      "type": "food_card",
+      "food_name": "荞麦面",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 荞麦面 (Buckwheat Noodles (Soba)), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 49 (低GI), 热量: 99千卡/100g, 碳水: 21.4g/100g, 升糖影响: 中. Serving suggestion: 一碗（熟重）. Key tip: 升糖速度显著低于小麦面条. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-007",
+      "type": "food_card",
+      "food_name": "红薯",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 红薯 (Sweet Potato), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 54 (低GI), 热量: 86千卡/100g, 碳水: 20.1g/100g, 升糖影响: 中. Serving suggestion: 一个中等大小. Key tip: 不同品种和烹饪方式 GI 差异大：烤红薯 GI 可高达 82-94（高GI），蒸/煮约 44-54（低GI）. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-008",
+      "type": "food_card",
+      "food_name": "玉米（煮）",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 玉米（煮） (Corn (boiled, sweet)), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 52 (低GI), 热量: 112千卡/100g, 碳水: 22.8g/100g, 升糖影响: 中. Serving suggestion: 一根中等大小玉米. Key tip: 老玉米 GI 低于甜玉米和糯玉米. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-009",
+      "type": "food_card",
+      "food_name": "苹果",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 苹果 (Apple), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 36 (低GI), 热量: 53千卡/100g, 碳水: 13.7g/100g, 升糖影响: 极低. Serving suggestion: 一个中等大小（约180g）. Key tip: 带皮吃保留更多膳食纤维和抗氧化物质. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-010",
+      "type": "food_card",
+      "food_name": "香蕉",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 香蕉 (Banana), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 52 (低GI), 热量: 93千卡/100g, 碳水: 22.0g/100g, 升糖影响: 中. Serving suggestion: 一根中等大小（约120g）. Key tip: 青香蕉含更多抗性淀粉，GI 更低（约30）. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-011",
+      "type": "food_card",
+      "food_name": "西瓜",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 西瓜 (Watermelon), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 76 (高GI), 热量: 31千卡/100g, 碳水: 7.6g/100g, 升糖影响: 中. Serving suggestion: 一小块（约200g）. Key tip: 典型「高GI低GL」食物：每份含碳水少（仅15g），单次升糖有限. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-012",
+      "type": "food_card",
+      "food_name": "樱桃",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 樱桃 (Cherry), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 22 (低GI), 热量: 63千卡/100g, 碳水: 16.0g/100g, 升糖影响: 极低. Serving suggestion: 约15-20颗. Key tip: GI 极低，是糖尿病患者的理想水果. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-013",
+      "type": "food_card",
+      "food_name": "西兰花",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 西兰花 (Broccoli), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 10 (低GI), 热量: 34千卡/100g, 碳水: 6.6g/100g, 升糖影响: 极低. Serving suggestion: 约一小碗. Key tip: 升糖几乎可以忽略，强烈推荐. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-014",
+      "type": "food_card",
+      "food_name": "菠菜",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 菠菜 (Spinach), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 15 (低GI), 热量: 23千卡/100g, 碳水: 3.6g/100g, 升糖影响: 极低. Serving suggestion: 约一小碗生菠菜或半碗熟菠菜. Key tip: 深绿色叶菜，碳水含量极低. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-015",
+      "type": "food_card",
+      "food_name": "番茄",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 番茄 (Tomato), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 15 (低GI), 热量: 18千卡/100g, 碳水: 3.9g/100g, 升糖影响: 极低. Serving suggestion: 一个中等大小（约150g）. Key tip: 加热后番茄红素更易吸收. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-016",
+      "type": "food_card",
+      "food_name": "鸡蛋",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 鸡蛋 (Egg (boiled)), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 0 (低GI), 热量: 155千卡/100g, 碳水: 1.1g/100g, 升糖影响: 极低. Serving suggestion: 一个中等鸡蛋（约50g）. Key tip: 几乎不含碳水，对血糖零影响. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-017",
+      "type": "food_card",
+      "food_name": "三文鱼",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 三文鱼 (Salmon), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 0 (低GI), 热量: 208千卡/100g, 碳水: 0.0g/100g, 升糖影响: 极低. Serving suggestion: 约一巴掌大小. Key tip: Omega-3 脂肪酸有助减轻炎症、改善胰岛素敏感性. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-018",
+      "type": "food_card",
+      "food_name": "鸡胸肉",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 鸡胸肉 (Chicken Breast), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 0 (低GI), 热量: 133千卡/100g, 碳水: 0.0g/100g, 升糖影响: 极低. Serving suggestion: 约一巴掌大小. Key tip: 纯蛋白质来源，零碳水. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-019",
+      "type": "food_card",
+      "food_name": "牛奶（全脂）",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 牛奶（全脂） (Whole Milk), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 27 (低GI), 热量: 61千卡/100g, 碳水: 4.8g/100g, 升糖影响: 极低. Serving suggestion: 一杯. Key tip: 乳糖 GI 低，乳清蛋白有助刺激胰岛素分泌. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-020",
+      "type": "food_card",
+      "food_name": "无糖酸奶（原味）",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 无糖酸奶（原味） (Plain Yogurt (unsweetened)), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 36 (低GI), 热量: 63千卡/100g, 碳水: 5.7g/100g, 升糖影响: 极低. Serving suggestion: 一小杯. Key tip: 注意选择「无糖」或「原味」，市售果味酸奶含糖量极高. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-021",
+      "type": "food_card",
+      "food_name": "黄豆",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 黄豆 (Soybean (cooked)), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 18 (低GI), 热量: 172千卡/100g, 碳水: 9.9g/100g, 升糖影响: 极低. Serving suggestion: 半碗（熟豆）. Key tip: 豆类中的慢消化碳水+高蛋白+高纤维，三重降升糖. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-022",
+      "type": "food_card",
+      "food_name": "花生",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 花生 (Peanut), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 14 (低GI), 热量: 567千卡/100g, 碳水: 16.1g/100g, 升糖影响: 极低. Serving suggestion: 一小把（约30粒）. Key tip: 富含健康脂肪和蛋白质，升糖极慢. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-023",
+      "type": "food_card",
+      "food_name": "可乐/含糖饮料",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 可乐/含糖饮料 (Cola / Sugary Soft Drink), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 63 (中GI), 热量: 42千卡/100g, 碳水: 10.6g/100g, 升糖影响: 极高. Serving suggestion: 一罐. Key tip: 液态糖吸收极快，对血糖冲击巨大. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-024",
+      "type": "food_card",
+      "food_name": "黑巧克力（≥70%可可）",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 黑巧克力（≥70%可可） (Dark Chocolate (≥70% cocoa)), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 23 (低GI), 热量: 598千卡/100g, 碳水: 46.0g/100g, 升糖影响: 低. Serving suggestion: 2小块. Key tip: 可可含量越高，糖含量越低，GI越低. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-025",
+      "type": "food_card",
+      "food_name": "牛油果",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 牛油果 (Avocado), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 15 (低GI), 热量: 160千卡/100g, 碳水: 8.5g/100g, 升糖影响: 极低. Serving suggestion: 半个中等大小. Key tip: 几乎不含糖，富含单不饱和脂肪酸. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-026",
+      "type": "food_card",
+      "food_name": "藜麦",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 藜麦 (Quinoa (cooked)), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 53 (低GI), 热量: 120千卡/100g, 碳水: 21.3g/100g, 升糖影响: 中. Serving suggestion: 一碗（熟重）. Key tip: 全蛋白来源（含全部9种必需氨基酸）. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-027",
+      "type": "food_card",
+      "food_name": "南瓜",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 南瓜 (Pumpkin), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 64 (中GI), 热量: 26千卡/100g, 碳水: 6.5g/100g, 升糖影响: 中. Serving suggestion: 一小碗. Key tip: GI中等但碳水含量低（每百克仅6.5g），实际升糖有限（GL=5，属低负荷）. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "food-028",
+      "type": "food_card",
+      "food_name": "椰子水（天然）",
+      "platform": "mj",
+      "prompt": "A high-quality food photography of 椰子水（天然） (Coconut Water (natural)), beautifully arranged on a clean surface. Overlaid as a modern health infographic card showing: GI值: 50 (低GI), 热量: 19千卡/100g, 碳水: 3.7g/100g, 升糖影响: 低. Serving suggestion: 一杯. Key tip: 天然低糖电解质饮料，GI较低. Clean minimalist design, soft neutral background, professional food styling. --ar 1:1 --style raw",
+      "negative_prompt": null
+    },
+    {
+      "id": "comparison-food-001-food-012",
+      "type": "food_comparison",
+      "foods": [
+        "白米饭",
+        "樱桃"
+      ],
+      "platform": "mj",
+      "prompt": "Split composition infographic: LEFT side - 白米饭 labeled '高GI 83 ⚠️' with a reddish warning tint, RIGHT side - 樱桃 labeled '低GI 22 ✓' with a green healthy tint. Center divider shows an arrow '替换建议 Replace with'. Bottom text: '用樱桃替代白米饭，GI从83降至22'. Modern healthcare infographic style, clean design, educational. --ar 16:9 --style raw"
+    },
+    {
+      "id": "food-001",
+      "type": "food_card",
+      "food_name": "白米饭",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 白米饭, beautifully styled on a marble surface. The image includes a clean text overlay: GI 83 (高GI), 116 kcal/100g, carbs 25.9g, glycemic impact: 极高. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-002",
+      "type": "food_card",
+      "food_name": "糙米饭",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 糙米饭, beautifully styled on a marble surface. The image includes a clean text overlay: GI 50 (低GI), 111 kcal/100g, carbs 23.0g, glycemic impact: 低. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-003",
+      "type": "food_card",
+      "food_name": "馒头（精白面粉）",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 馒头（精白面粉）, beautifully styled on a marble surface. The image includes a clean text overlay: GI 88 (高GI), 223 kcal/100g, carbs 44.2g, glycemic impact: 极高. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-004",
+      "type": "food_card",
+      "food_name": "全麦面包",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 全麦面包, beautifully styled on a marble surface. The image includes a clean text overlay: GI 69 (中GI), 247 kcal/100g, carbs 41.3g, glycemic impact: 中. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-005",
+      "type": "food_card",
+      "food_name": "燕麦片（传统压制）",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 燕麦片（传统压制）, beautifully styled on a marble surface. The image includes a clean text overlay: GI 55 (低GI), 377 kcal/100g, carbs 66.3g, glycemic impact: 中. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-006",
+      "type": "food_card",
+      "food_name": "荞麦面",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 荞麦面, beautifully styled on a marble surface. The image includes a clean text overlay: GI 49 (低GI), 99 kcal/100g, carbs 21.4g, glycemic impact: 中. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-007",
+      "type": "food_card",
+      "food_name": "红薯",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 红薯, beautifully styled on a marble surface. The image includes a clean text overlay: GI 54 (低GI), 86 kcal/100g, carbs 20.1g, glycemic impact: 中. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-008",
+      "type": "food_card",
+      "food_name": "玉米（煮）",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 玉米（煮）, beautifully styled on a marble surface. The image includes a clean text overlay: GI 52 (低GI), 112 kcal/100g, carbs 22.8g, glycemic impact: 中. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-009",
+      "type": "food_card",
+      "food_name": "苹果",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 苹果, beautifully styled on a marble surface. The image includes a clean text overlay: GI 36 (低GI), 53 kcal/100g, carbs 13.7g, glycemic impact: 极低. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-010",
+      "type": "food_card",
+      "food_name": "香蕉",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 香蕉, beautifully styled on a marble surface. The image includes a clean text overlay: GI 52 (低GI), 93 kcal/100g, carbs 22.0g, glycemic impact: 中. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-011",
+      "type": "food_card",
+      "food_name": "西瓜",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 西瓜, beautifully styled on a marble surface. The image includes a clean text overlay: GI 76 (高GI), 31 kcal/100g, carbs 7.6g, glycemic impact: 中. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-012",
+      "type": "food_card",
+      "food_name": "樱桃",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 樱桃, beautifully styled on a marble surface. The image includes a clean text overlay: GI 22 (低GI), 63 kcal/100g, carbs 16.0g, glycemic impact: 极低. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-013",
+      "type": "food_card",
+      "food_name": "西兰花",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 西兰花, beautifully styled on a marble surface. The image includes a clean text overlay: GI 10 (低GI), 34 kcal/100g, carbs 6.6g, glycemic impact: 极低. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-014",
+      "type": "food_card",
+      "food_name": "菠菜",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 菠菜, beautifully styled on a marble surface. The image includes a clean text overlay: GI 15 (低GI), 23 kcal/100g, carbs 3.6g, glycemic impact: 极低. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-015",
+      "type": "food_card",
+      "food_name": "番茄",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 番茄, beautifully styled on a marble surface. The image includes a clean text overlay: GI 15 (低GI), 18 kcal/100g, carbs 3.9g, glycemic impact: 极低. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-016",
+      "type": "food_card",
+      "food_name": "鸡蛋",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 鸡蛋, beautifully styled on a marble surface. The image includes a clean text overlay: GI 0 (低GI), 155 kcal/100g, carbs 1.1g, glycemic impact: 极低. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-017",
+      "type": "food_card",
+      "food_name": "三文鱼",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 三文鱼, beautifully styled on a marble surface. The image includes a clean text overlay: GI 0 (低GI), 208 kcal/100g, carbs 0.0g, glycemic impact: 极低. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-018",
+      "type": "food_card",
+      "food_name": "鸡胸肉",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 鸡胸肉, beautifully styled on a marble surface. The image includes a clean text overlay: GI 0 (低GI), 133 kcal/100g, carbs 0.0g, glycemic impact: 极低. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-019",
+      "type": "food_card",
+      "food_name": "牛奶（全脂）",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 牛奶（全脂）, beautifully styled on a marble surface. The image includes a clean text overlay: GI 27 (低GI), 61 kcal/100g, carbs 4.8g, glycemic impact: 极低. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-020",
+      "type": "food_card",
+      "food_name": "无糖酸奶（原味）",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 无糖酸奶（原味）, beautifully styled on a marble surface. The image includes a clean text overlay: GI 36 (低GI), 63 kcal/100g, carbs 5.7g, glycemic impact: 极低. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-021",
+      "type": "food_card",
+      "food_name": "黄豆",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 黄豆, beautifully styled on a marble surface. The image includes a clean text overlay: GI 18 (低GI), 172 kcal/100g, carbs 9.9g, glycemic impact: 极低. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-022",
+      "type": "food_card",
+      "food_name": "花生",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 花生, beautifully styled on a marble surface. The image includes a clean text overlay: GI 14 (低GI), 567 kcal/100g, carbs 16.1g, glycemic impact: 极低. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-023",
+      "type": "food_card",
+      "food_name": "可乐/含糖饮料",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 可乐/含糖饮料, beautifully styled on a marble surface. The image includes a clean text overlay: GI 63 (中GI), 42 kcal/100g, carbs 10.6g, glycemic impact: 极高. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-024",
+      "type": "food_card",
+      "food_name": "黑巧克力（≥70%可可）",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 黑巧克力（≥70%可可）, beautifully styled on a marble surface. The image includes a clean text overlay: GI 23 (低GI), 598 kcal/100g, carbs 46.0g, glycemic impact: 低. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-025",
+      "type": "food_card",
+      "food_name": "牛油果",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 牛油果, beautifully styled on a marble surface. The image includes a clean text overlay: GI 15 (低GI), 160 kcal/100g, carbs 8.5g, glycemic impact: 极低. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-026",
+      "type": "food_card",
+      "food_name": "藜麦",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 藜麦, beautifully styled on a marble surface. The image includes a clean text overlay: GI 53 (低GI), 120 kcal/100g, carbs 21.3g, glycemic impact: 中. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-027",
+      "type": "food_card",
+      "food_name": "南瓜",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 南瓜, beautifully styled on a marble surface. The image includes a clean text overlay: GI 64 (中GI), 26 kcal/100g, carbs 6.5g, glycemic impact: 中. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "food-028",
+      "type": "food_card",
+      "food_name": "椰子水（天然）",
+      "platform": "dalle",
+      "prompt": "A professional food photograph of 椰子水（天然）, beautifully styled on a marble surface. The image includes a clean text overlay: GI 50 (低GI), 19 kcal/100g, carbs 3.7g, glycemic impact: 低. Natural daylight, minimalist composition, shallow depth of field. The food looks fresh and appetizing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "comparison-food-001-food-012",
+      "type": "food_comparison",
+      "foods": [
+        "白米饭",
+        "樱桃"
+      ],
+      "platform": "dalle",
+      "prompt": "A split-screen educational infographic. Left half shows 白米饭 with a subtle red warning border labeled '高GI 83'. Right half shows 樱桃 with a green healthy border labeled '低GI 22'. A central arrow indicates 'better choice'. Professional medical illustration style, clean and educational."
+    },
+    {
+      "id": "topic-001",
+      "type": "knowledge_card",
+      "topic": "什么是GI（血糖生成指数）",
+      "platform": "mj",
+      "prompt": "Modern infographic explaining '什么是GI（血糖生成指数）'. Central visual element illustrating the concept. Three key points displayed as elegant callout cards: 1) GI ≤ 55：低GI食物，升糖慢, 2) GI 56-69：中GI食物, 3) GI ≥ 70：高GI食物，升糖快. Summary line at bottom: 'GI（Glycemic Index）衡量食物中碳水化合物对血糖的影响速度。以葡萄糖为100，GI越高，升糖越快。'. Clean medical illustration style, blue and green color palette, educational, professional. --ar 16:9 --style raw",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-002",
+      "type": "knowledge_card",
+      "topic": "什么是GL（血糖负荷）",
+      "platform": "mj",
+      "prompt": "Modern infographic explaining '什么是GL（血糖负荷）'. Central visual element illustrating the concept. Three key points displayed as elegant callout cards: 1) GL ≤ 10：低血糖负荷, 2) GL 11-19：中血糖负荷, 3) GL ≥ 20：高血糖负荷. Summary line at bottom: 'GL = GI × 每份食物碳水克数 ÷ 100，同时考虑食物的升糖速度和碳水总量，是更全面的评估指标。'. Clean medical illustration style, blue and green color palette, educational, professional. --ar 16:9 --style raw",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-003",
+      "type": "knowledge_card",
+      "topic": "GI vs GL：为什么两者都重要",
+      "platform": "mj",
+      "prompt": "Modern infographic explaining 'GI vs GL：为什么两者都重要'. Central visual element illustrating the concept. Three key points displayed as elegant callout cards: 1) 高GI+低GL（如西瓜）：少量吃影响不大, 2) 低GI+高GL（如大量全麦面包）：仍需注意份量, 3) 高GI+高GL（如白米饭）：最危险组合. Summary line at bottom: 'GI告诉你升糖多快，GL告诉你升糖多少。两者结合使用才能准确评估食物对血糖的真实影响。'. Clean medical illustration style, blue and green color palette, educational, professional. --ar 16:9 --style raw",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-004",
+      "type": "knowledge_card",
+      "topic": "血糖波动的正常范围",
+      "platform": "mj",
+      "prompt": "Modern infographic explaining '血糖波动的正常范围'. Central visual element illustrating the concept. Three key points displayed as elegant callout cards: 1) 空腹正常：3.9-6.1 mmol/L, 2) 餐后2h正常：＜7.8 mmol/L, 3) 糖化血红蛋白 HbA1c 正常：＜5.7%. Summary line at bottom: '正常人空腹血糖 3.9-6.1 mmol/L，餐后2小时＜7.8 mmol/L。糖尿病诊断标准及血糖监测要点。'. Clean medical illustration style, blue and green color palette, educational, professional. --ar 16:9 --style raw",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-005",
+      "type": "knowledge_card",
+      "topic": "什么是胰岛素抵抗",
+      "platform": "mj",
+      "prompt": "Modern infographic explaining '什么是胰岛素抵抗'. Central visual element illustrating the concept. Three key points displayed as elegant callout cards: 1) 胰岛素是「钥匙」，细胞是「锁」，抵抗=锁生锈了, 2) 早期血糖可能正常（高胰岛素代偿期）, 3) 腹部肥胖是最常见诱因. Summary line at bottom: '胰岛素抵抗是细胞对胰岛素信号反应减弱，导致胰腺分泌更多胰岛素来维持血糖正常，是2型糖尿病的核心病理。'. Clean medical illustration style, blue and green color palette, educational, professional. --ar 16:9 --style raw",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-006",
+      "type": "knowledge_card",
+      "topic": "1型 vs 2型糖尿病",
+      "platform": "mj",
+      "prompt": "Modern infographic explaining '1型 vs 2型糖尿病'. Central visual element illustrating the concept. Three key points displayed as elegant callout cards: 1) 1型：多在青少年发病，必须注射胰岛素, 2) 2型：多在成年发病，与生活方式强相关, 3) 2型可通过饮食运动和减重改善甚至缓解. Summary line at bottom: '1型糖尿病是胰岛β细胞被自身免疫破坏，胰岛素绝对缺乏；2型以胰岛素抵抗为主伴相对缺乏。两者病因、治疗和饮食管理策略不同。'. Clean medical illustration style, blue and green color palette, educational, professional. --ar 16:9 --style raw",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-007",
+      "type": "knowledge_card",
+      "topic": "低GI饮食核心原则",
+      "platform": "mj",
+      "prompt": "Modern infographic explaining '低GI饮食核心原则'. Central visual element illustrating the concept. Three key points displayed as elegant callout cards: 1) 优先选全谷物、豆类、非淀粉蔬菜, 2) 每餐必有蛋白质（肉/鱼/蛋/豆）, 3) 先吃蔬菜→蛋白质→最后吃主食. Summary line at bottom: '低GI饮食的核心不是完全不吃碳水，而是选择优质碳水、搭配蛋白质和纤维、控制份量。'. Clean medical illustration style, blue and green color palette, educational, professional. --ar 16:9 --style raw",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-008",
+      "type": "knowledge_card",
+      "topic": "「用餐顺序法」降低升糖",
+      "platform": "mj",
+      "prompt": "Modern infographic explaining '「用餐顺序法」降低升糖'. Central visual element illustrating the concept. Three key points displayed as elegant callout cards: 1) 纤维先形成物理屏障，延缓碳水吸收, 2) 蛋白质刺激GLP-1分泌，延缓胃排空, 3) 可将餐后血糖峰值降低20-40%. Summary line at bottom: '改变进食顺序——先吃蔬菜、再吃蛋白质、最后吃主食——可显著降低餐后血糖峰值，已被多项研究证实。'. Clean medical illustration style, blue and green color palette, educational, professional. --ar 16:9 --style raw",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-009",
+      "type": "knowledge_card",
+      "topic": "血糖友好的加餐选择",
+      "platform": "mj",
+      "prompt": "Modern infographic explaining '血糖友好的加餐选择'. Central visual element illustrating the concept. Three key points displayed as elegant callout cards: 1) 苹果+一小把花生, 2) 无糖酸奶+蓝莓, 3) 小份黑巧克力（≥70%）. Summary line at bottom: '低GI加餐可以在两餐之间稳定血糖，避免因过度饥饿导致的暴食和血糖剧烈波动。'. Clean medical illustration style, blue and green color palette, educational, professional. --ar 16:9 --style raw",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-010",
+      "type": "knowledge_card",
+      "topic": "运动对血糖的影响",
+      "platform": "mj",
+      "prompt": "Modern infographic explaining '运动对血糖的影响'. Central visual element illustrating the concept. Three key points displayed as elegant callout cards: 1) 餐后散步15-30分钟即可显著降低餐后血糖, 2) 力量训练增加肌肉量，提高基础葡萄糖处理能力, 3) 高强度运动可能暂时升高血糖（应激反应）. Summary line at bottom: '运动通过增加肌肉葡萄糖摄取来提高胰岛素敏感性，效果可持续24-48小时。有氧运动+力量训练是最佳组合。'. Clean medical illustration style, blue and green color palette, educational, professional. --ar 16:9 --style raw",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-011",
+      "type": "knowledge_card",
+      "topic": "影响GI的因素",
+      "platform": "mj",
+      "prompt": "Modern infographic explaining '影响GI的因素'. Central visual element illustrating the concept. Three key points displayed as elegant callout cards: 1) 烹饪时间越长，GI越高（如煮烂的粥>稍硬的饭）, 2) 水果越熟GI越高（青香蕉30→熟香蕉62）, 3) 精加工GI更高（全麦粉69→白面粉85+）. Summary line at bottom: '食物的GI值并非固定不变，受烹饪方式、成熟度、加工方式、搭配食物等多种因素影响。'. Clean medical illustration style, blue and green color palette, educational, professional. --ar 16:9 --style raw",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-012",
+      "type": "knowledge_card",
+      "topic": "血糖监测：什么时间测、看什么",
+      "platform": "mj",
+      "prompt": "Modern infographic explaining '血糖监测：什么时间测、看什么'. Central visual element illustrating the concept. Three key points displayed as elegant callout cards: 1) 空腹血糖：反映基础胰岛素水平和肝糖输出, 2) 餐后2小时：反映饮食和餐时胰岛素效果, 3) 睡前：指导是否需要加餐防夜间低血糖. Summary line at bottom: '血糖监测是糖尿病管理的基石。了解空腹、餐前、餐后2小时、睡前等不同时间点的意义。'. Clean medical illustration style, blue and green color palette, educational, professional. --ar 16:9 --style raw",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "quadrant-gi-gl",
+      "type": "quadrant_chart",
+      "topic": "GI vs GL 四象限图",
+      "platform": "mj",
+      "prompt": "A four-quadrant chart infographic explaining GI vs GL. X-axis: GI (低→高), Y-axis: GL (低→高). Quadrant I (top-left): 高GL+低GI food example '大量全麦面包' colored orange '注意份量'. Quadrant II (top-right): 高GL+高GI food example '白米饭大碗（GI=83, GL=36）' colored red '危险区'. Quadrant III (bottom-left): 低GL+低GI food example '樱桃·鸡蛋·西兰花' colored green '安全区'. Quadrant IV (bottom-right): 高GI+低GL food example '西瓜（GI=72, GL=5）' colored yellow '小份可行'. Modern data visualization style, clean typography."
+    },
+    {
+      "id": "meal-plate-001",
+      "type": "meal_plate",
+      "topic": "控糖餐盘",
+      "platform": "mj",
+      "prompt": "A top-down photograph of a balanced blood-sugar-friendly meal plate. The plate is divided: 50% filled with colorful non-starchy vegetables (西兰花、菠菜、番茄), 25% with lean protein (煎三文鱼), 25% with low-GI complex carbs (糙米饭), with a small amount of healthy fat from 橄榄油. Natural lighting, food styling, clean composition. The meal looks delicious, fresh, and nutritious. Text overlay: '理想控糖餐盘：蔬菜占一半，蛋白质和碳水各占四分之一' in elegant Chinese typography."
+    },
+    {
+      "id": "bs-curve-001",
+      "type": "chart",
+      "topic": "血糖曲线对比",
+      "platform": "mj",
+      "prompt": "A clean medical chart showing two blood glucose response curves over 2 hours after eating. Blue curve labeled '先吃米饭→血糖快速升高' shows a sharp spike then crash. Green curve labeled '先吃菜和蛋白质→血糖平稳' shows a gentle rise and steady decline. The area between curves is shaded to highlight the difference. Time labels on X-axis (0min, 30min, 60min, 90min, 120min), blood glucose on Y-axis. Conclusion text at bottom: '同样食物，改变进食顺序可降低餐后血糖峰值20-40%'. Professional medical data visualization, white background, clean design."
+    },
+    {
+      "id": "daily-tip-001",
+      "type": "daily_tip",
+      "topic": "每日控糖小贴士",
+      "platform": "mj",
+      "prompt": "A warm, motivational card design with soft gradient background (green to blue). Large, clean title: '💡 今日控糖建议'. The main message in elegant Chinese typography: '餐后散步15分钟，可以显著降低餐后血糖峰值'. A simple, actionable call-to-action at the bottom: '今天午饭后试试吧！'. Small decorative elements of fresh vegetables or healthy food silhouettes. Cozy, encouraging, wellness aesthetic. Square format for social media."
+    },
+    {
+      "id": "topic-001",
+      "type": "knowledge_card",
+      "topic": "什么是GI（血糖生成指数）",
+      "platform": "dalle",
+      "prompt": "An educational medical infographic about '什么是GI（血糖生成指数）'. Clean layout with soft blue-green gradient background. Three icon-labeled sections explaining: GI ≤ 55：低GI食物，升糖慢, GI 56-69：中GI食物, GI ≥ 70：高GI食物，升糖快. A simple scientific illustration visually demonstrates the concept. Bottom banner reads 'GI（Glycemic Index）衡量食物中碳水化合物对血糖的影响速度。以葡萄糖为100，GI越高，升糖越快。'. Professional healthcare design, suitable for social media sharing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-002",
+      "type": "knowledge_card",
+      "topic": "什么是GL（血糖负荷）",
+      "platform": "dalle",
+      "prompt": "An educational medical infographic about '什么是GL（血糖负荷）'. Clean layout with soft blue-green gradient background. Three icon-labeled sections explaining: GL ≤ 10：低血糖负荷, GL 11-19：中血糖负荷, GL ≥ 20：高血糖负荷. A simple scientific illustration visually demonstrates the concept. Bottom banner reads 'GL = GI × 每份食物碳水克数 ÷ 100，同时考虑食物的升糖速度和碳水总量，是更全面的评估指标。'. Professional healthcare design, suitable for social media sharing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-003",
+      "type": "knowledge_card",
+      "topic": "GI vs GL：为什么两者都重要",
+      "platform": "dalle",
+      "prompt": "An educational medical infographic about 'GI vs GL：为什么两者都重要'. Clean layout with soft blue-green gradient background. Three icon-labeled sections explaining: 高GI+低GL（如西瓜）：少量吃影响不大, 低GI+高GL（如大量全麦面包）：仍需注意份量, 高GI+高GL（如白米饭）：最危险组合. A simple scientific illustration visually demonstrates the concept. Bottom banner reads 'GI告诉你升糖多快，GL告诉你升糖多少。两者结合使用才能准确评估食物对血糖的真实影响。'. Professional healthcare design, suitable for social media sharing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-004",
+      "type": "knowledge_card",
+      "topic": "血糖波动的正常范围",
+      "platform": "dalle",
+      "prompt": "An educational medical infographic about '血糖波动的正常范围'. Clean layout with soft blue-green gradient background. Three icon-labeled sections explaining: 空腹正常：3.9-6.1 mmol/L, 餐后2h正常：＜7.8 mmol/L, 糖化血红蛋白 HbA1c 正常：＜5.7%. A simple scientific illustration visually demonstrates the concept. Bottom banner reads '正常人空腹血糖 3.9-6.1 mmol/L，餐后2小时＜7.8 mmol/L。糖尿病诊断标准及血糖监测要点。'. Professional healthcare design, suitable for social media sharing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-005",
+      "type": "knowledge_card",
+      "topic": "什么是胰岛素抵抗",
+      "platform": "dalle",
+      "prompt": "An educational medical infographic about '什么是胰岛素抵抗'. Clean layout with soft blue-green gradient background. Three icon-labeled sections explaining: 胰岛素是「钥匙」，细胞是「锁」，抵抗=锁生锈了, 早期血糖可能正常（高胰岛素代偿期）, 腹部肥胖是最常见诱因. A simple scientific illustration visually demonstrates the concept. Bottom banner reads '胰岛素抵抗是细胞对胰岛素信号反应减弱，导致胰腺分泌更多胰岛素来维持血糖正常，是2型糖尿病的核心病理。'. Professional healthcare design, suitable for social media sharing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-006",
+      "type": "knowledge_card",
+      "topic": "1型 vs 2型糖尿病",
+      "platform": "dalle",
+      "prompt": "An educational medical infographic about '1型 vs 2型糖尿病'. Clean layout with soft blue-green gradient background. Three icon-labeled sections explaining: 1型：多在青少年发病，必须注射胰岛素, 2型：多在成年发病，与生活方式强相关, 2型可通过饮食运动和减重改善甚至缓解. A simple scientific illustration visually demonstrates the concept. Bottom banner reads '1型糖尿病是胰岛β细胞被自身免疫破坏，胰岛素绝对缺乏；2型以胰岛素抵抗为主伴相对缺乏。两者病因、治疗和饮食管理策略不同。'. Professional healthcare design, suitable for social media sharing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-007",
+      "type": "knowledge_card",
+      "topic": "低GI饮食核心原则",
+      "platform": "dalle",
+      "prompt": "An educational medical infographic about '低GI饮食核心原则'. Clean layout with soft blue-green gradient background. Three icon-labeled sections explaining: 优先选全谷物、豆类、非淀粉蔬菜, 每餐必有蛋白质（肉/鱼/蛋/豆）, 先吃蔬菜→蛋白质→最后吃主食. A simple scientific illustration visually demonstrates the concept. Bottom banner reads '低GI饮食的核心不是完全不吃碳水，而是选择优质碳水、搭配蛋白质和纤维、控制份量。'. Professional healthcare design, suitable for social media sharing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-008",
+      "type": "knowledge_card",
+      "topic": "「用餐顺序法」降低升糖",
+      "platform": "dalle",
+      "prompt": "An educational medical infographic about '「用餐顺序法」降低升糖'. Clean layout with soft blue-green gradient background. Three icon-labeled sections explaining: 纤维先形成物理屏障，延缓碳水吸收, 蛋白质刺激GLP-1分泌，延缓胃排空, 可将餐后血糖峰值降低20-40%. A simple scientific illustration visually demonstrates the concept. Bottom banner reads '改变进食顺序——先吃蔬菜、再吃蛋白质、最后吃主食——可显著降低餐后血糖峰值，已被多项研究证实。'. Professional healthcare design, suitable for social media sharing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-009",
+      "type": "knowledge_card",
+      "topic": "血糖友好的加餐选择",
+      "platform": "dalle",
+      "prompt": "An educational medical infographic about '血糖友好的加餐选择'. Clean layout with soft blue-green gradient background. Three icon-labeled sections explaining: 苹果+一小把花生, 无糖酸奶+蓝莓, 小份黑巧克力（≥70%）. A simple scientific illustration visually demonstrates the concept. Bottom banner reads '低GI加餐可以在两餐之间稳定血糖，避免因过度饥饿导致的暴食和血糖剧烈波动。'. Professional healthcare design, suitable for social media sharing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-010",
+      "type": "knowledge_card",
+      "topic": "运动对血糖的影响",
+      "platform": "dalle",
+      "prompt": "An educational medical infographic about '运动对血糖的影响'. Clean layout with soft blue-green gradient background. Three icon-labeled sections explaining: 餐后散步15-30分钟即可显著降低餐后血糖, 力量训练增加肌肉量，提高基础葡萄糖处理能力, 高强度运动可能暂时升高血糖（应激反应）. A simple scientific illustration visually demonstrates the concept. Bottom banner reads '运动通过增加肌肉葡萄糖摄取来提高胰岛素敏感性，效果可持续24-48小时。有氧运动+力量训练是最佳组合。'. Professional healthcare design, suitable for social media sharing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-011",
+      "type": "knowledge_card",
+      "topic": "影响GI的因素",
+      "platform": "dalle",
+      "prompt": "An educational medical infographic about '影响GI的因素'. Clean layout with soft blue-green gradient background. Three icon-labeled sections explaining: 烹饪时间越长，GI越高（如煮烂的粥>稍硬的饭）, 水果越熟GI越高（青香蕉30→熟香蕉62）, 精加工GI更高（全麦粉69→白面粉85+）. A simple scientific illustration visually demonstrates the concept. Bottom banner reads '食物的GI值并非固定不变，受烹饪方式、成熟度、加工方式、搭配食物等多种因素影响。'. Professional healthcare design, suitable for social media sharing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "topic-012",
+      "type": "knowledge_card",
+      "topic": "血糖监测：什么时间测、看什么",
+      "platform": "dalle",
+      "prompt": "An educational medical infographic about '血糖监测：什么时间测、看什么'. Clean layout with soft blue-green gradient background. Three icon-labeled sections explaining: 空腹血糖：反映基础胰岛素水平和肝糖输出, 餐后2小时：反映饮食和餐时胰岛素效果, 睡前：指导是否需要加餐防夜间低血糖. A simple scientific illustration visually demonstrates the concept. Bottom banner reads '血糖监测是糖尿病管理的基石。了解空腹、餐前、餐后2小时、睡前等不同时间点的意义。'. Professional healthcare design, suitable for social media sharing.",
+      "negative_prompt": "blurry, low quality, distorted text, watermark, cluttered layout, photorealistic human faces, messy"
+    },
+    {
+      "id": "quadrant-gi-gl",
+      "type": "quadrant_chart",
+      "topic": "GI vs GL 四象限图",
+      "platform": "dalle",
+      "prompt": "A four-quadrant chart infographic explaining GI vs GL. X-axis: GI (低→高), Y-axis: GL (低→高). Quadrant I (top-left): 高GL+低GI food example '大量全麦面包' colored orange '注意份量'. Quadrant II (top-right): 高GL+高GI food example '白米饭大碗（GI=83, GL=36）' colored red '危险区'. Quadrant III (bottom-left): 低GL+低GI food example '樱桃·鸡蛋·西兰花' colored green '安全区'. Quadrant IV (bottom-right): 高GI+低GL food example '西瓜（GI=72, GL=5）' colored yellow '小份可行'. Modern data visualization style, clean typography."
+    },
+    {
+      "id": "meal-plate-001",
+      "type": "meal_plate",
+      "topic": "控糖餐盘",
+      "platform": "dalle",
+      "prompt": "A top-down photograph of a balanced blood-sugar-friendly meal plate. The plate is divided: 50% filled with colorful non-starchy vegetables (西兰花、菠菜、番茄), 25% with lean protein (煎三文鱼), 25% with low-GI complex carbs (糙米饭), with a small amount of healthy fat from 橄榄油. Natural lighting, food styling, clean composition. The meal looks delicious, fresh, and nutritious. Text overlay: '理想控糖餐盘：蔬菜占一半，蛋白质和碳水各占四分之一' in elegant Chinese typography."
+    },
+    {
+      "id": "bs-curve-001",
+      "type": "chart",
+      "topic": "血糖曲线对比",
+      "platform": "dalle",
+      "prompt": "A clean medical chart showing two blood glucose response curves over 2 hours after eating. Blue curve labeled '先吃米饭→血糖快速升高' shows a sharp spike then crash. Green curve labeled '先吃菜和蛋白质→血糖平稳' shows a gentle rise and steady decline. The area between curves is shaded to highlight the difference. Time labels on X-axis (0min, 30min, 60min, 90min, 120min), blood glucose on Y-axis. Conclusion text at bottom: '同样食物，改变进食顺序可降低餐后血糖峰值20-40%'. Professional medical data visualization, white background, clean design."
+    },
+    {
+      "id": "daily-tip-001",
+      "type": "daily_tip",
+      "topic": "每日控糖小贴士",
+      "platform": "dalle",
+      "prompt": "A warm, motivational card design with soft gradient background (green to blue). Large, clean title: '💡 今日控糖建议'. The main message in elegant Chinese typography: '餐后散步15分钟，可以显著降低餐后血糖峰值'. A simple, actionable call-to-action at the bottom: '今天午饭后试试吧！'. Small decorative elements of fresh vegetables or healthy food silhouettes. Cozy, encouraging, wellness aesthetic. Square format for social media."
+    }
+  ]
+}

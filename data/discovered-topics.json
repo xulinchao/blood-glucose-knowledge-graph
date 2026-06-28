@@ -1,0 +1,180 @@
+{
+  "version": "1.0",
+  "updated": "2026-06-28",
+  "topics": [
+    {
+      "id": "disc-001",
+      "title": "你以为的控糖早餐，可能全是中高GI",
+      "angle": "即食燕麦片GI 59-83、全麦面包GI 69、杂粮粥GI 65-75 —— 打破「健康早餐=低GI」的认知误区",
+      "category": "辟谣纠偏",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "high",
+      "heat_source": "头条/小红书大量「低GI零食实测」「伪低GI打假」内容正在爆发",
+      "source_urls": [
+        "http://m.toutiao.com/group/7655230827747344931/",
+        "http://m.toutiao.com/group/7651424592842342921/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-28"
+    },
+    {
+      "id": "disc-002",
+      "title": "2型糖尿病能缓解吗？有人可以，但有3个硬前提",
+      "angle": "蹭2026版缓解共识热度，区分缓解≠治愈，给出可执行路径（减重+饮食+运动），删除未确认的BMJ引用",
+      "category": "数字科普",
+      "platform": "dy,bili",
+      "duration": "45-60s",
+      "heat": "high",
+      "heat_source": "头条「糖尿病逆转」「缓解共识」文章大量出现，舆论热度高",
+      "source_urls": [
+        "http://m.toutiao.com/group/7656061108091879982/",
+        "http://m.toutiao.com/group/7655890885984485928/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-28"
+    },
+    {
+      "id": "disc-003",
+      "title": "测了50款低GI零食，这些品牌在骗你",
+      "angle": "测评赛道热门。市面上「低GI」产品体外模拟测试误差>30%，加隐形糖糊精。消费者要求品牌透明度",
+      "category": "工具测评",
+      "platform": "xhs,dy",
+      "duration": "30-45s",
+      "heat": "high",
+      "heat_source": "小红书「低GI零食实测」「控糖品牌对比」类内容爆发，成为新品类",
+      "source_urls": [
+        "http://m.toutiao.com/group/7651424592842342921/",
+        "http://m.toutiao.com/group/7655149081655804431/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-28"
+    },
+    {
+      "id": "disc-004",
+      "title": "二甲双胍跌落神坛？2026权威改口了",
+      "angle": "巴兹莱在国际衰老研究论坛公开修正过往观点，推翻二甲双胍「长寿神药」说法。从降糖药到被炒作成保健品，现在回归理性",
+      "category": "辟谣纠偏",
+      "platform": "dy,bili",
+      "duration": "30-45s",
+      "heat": "medium",
+      "heat_source": "头条出现「二甲双胍跌落神坛」文章，话题争议性强，易引发讨论",
+      "source_urls": [
+        "http://m.toutiao.com/group/7638797828130669075/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-28"
+    },
+    {
+      "id": "disc-005",
+      "title": "干细胞治愈糖尿病？别被骗了，真正到了哪一步",
+      "angle": "干细胞/再生胰岛话题爆火，大量「一针根治」虚假宣传。用已核实的事实（长征医院I期临床、邓宏魁I期）拆解骗局，教受众辨别真假",
+      "category": "避坑指南",
+      "platform": "dy,bili",
+      "duration": "45-60s",
+      "heat": "high",
+      "heat_source": "干细胞疗法2026集中爆发+海南博鳌乐城发行业警示，防骗需求强烈",
+      "source_urls": [
+        "http://m.toutiao.com/group/7655294646796435977/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-28"
+    },
+    {
+      "id": "disc-006",
+      "title": "35岁就要开始控糖了，别等40岁",
+      "angle": "中国2024版指南+ADA双重确认筛查提前至35岁，宁光院士研究多发现630万。年轻群体控糖意识觉醒",
+      "category": "症状预警",
+      "platform": "dy,xhs",
+      "duration": "15-20s",
+      "heat": "medium",
+      "heat_source": "多个来源高频引用「35岁筛查」「年轻化」，社会共识正在形成",
+      "source_urls": [
+        "http://m.toutiao.com/group/7654872058672726579/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-28"
+    },
+    {
+      "id": "disc-007",
+      "title": "血糖忽高忽低？80%的人忽略了这4件事",
+      "angle": "饮食不规律、运动不规律、药物使用不规范、情绪波动是血糖波动四大原因。结合头条「控糖万能公式」类内容热度",
+      "category": "实操方法",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "medium",
+      "heat_source": "血糖波动是糖友最普遍的痛点，头条「血糖稳不稳」类内容互动率高",
+      "source_urls": [
+        "http://m.toutiao.com/group/7655943803915829814/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-28"
+    },
+    {
+      "id": "disc-008",
+      "title": "动态血糖仪2026怎么选？百元级CGM测评",
+      "angle": "CGM市场高速增长，消费级产品密集发布。雅培/德康/三诺/硅基/微泰等产品横向对比，从医疗设备向消费品过渡",
+      "category": "工具测评",
+      "platform": "bili,xhs",
+      "duration": "45-60s",
+      "heat": "medium",
+      "heat_source": "头条出现多篇「2026动态血糖仪推荐」「CGM测评」内容，品类关注度上升",
+      "source_urls": [
+        "http://m.toutiao.com/group/7652172402025120271/",
+        "http://m.toutiao.com/group/7637029602241561142/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-28"
+    },
+    {
+      "id": "disc-009",
+      "title": "糖前期是糖尿病的最后窗口期，抓住就能逆转",
+      "angle": "空腹血糖6.1-6.9/糖化5.7-6.4 = 糖前期。2-3个月饮食运动干预可逆转。黄金干预期概念",
+      "category": "症状预警",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "medium",
+      "heat_source": "搜索热度稳定，糖前期逆转是长期科普选题，与筛查年轻化趋势协同",
+      "source_urls": [
+        "http://m.toutiao.com/group/7525640706983985715/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-28"
+    },
+    {
+      "id": "disc-010",
+      "title": "一家人得糖尿病是怎么回事？遗传还是传染",
+      "angle": "家族聚集≠传染。共同饮食习惯和生活方式才是主因。一人得病全家人都要调整饮食",
+      "category": "辟谣纠偏",
+      "platform": "dy,xhs",
+      "duration": "15-20s",
+      "heat": "low",
+      "heat_source": "网易/头条出现「一人糖尿病全家都易得」文章，话题有科普价值但非当前热点",
+      "source_urls": [
+        "https://m.163.com/dy/article/E0IG4V4G0514D84S.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-28"
+    }
+  ]
+}
