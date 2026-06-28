@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Node / Quartz
+node_modules/
+public/
+.quartz/
+.quartz-cache/
+tsconfig.tsbuildinfo
+
 # IDE
 .vscode/
 .idea/
