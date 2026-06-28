@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>血糖知识 Prompt 生成器</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#f7f5f0;--bg2:#fff;--bg3:#ede9e0;
+  --ink:#2c2520;--muted:#8a7f72;--rule:#d9d0c5;
+  --accent:#0d7c66;--accent2:#c44d3a;--accent3:#2563eb;
+  --warn:#e9a23b;--selected:#0d7c66;--selected-bg:#e8f5f0;
+}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans CJK SC","Microsoft YaHei",sans-serif;background:var(--bg);color:var(--ink);line-height:1.7;font-size:15px}
+.app{max-width:760px;margin:0 auto;padding:0 16px 60px}
+
+/* Hero */
+.hero{text-align:center;padding:48px 0 32px}
+.hero h1{font-size:1.6rem;font-weight:800;letter-spacing:-0.02em;margin-bottom:8px}
+.hero .sub{font-size:0.88rem;color:var(--muted);max-width:480px;margin:0 auto}
+.hero .flow{display:flex;flex-wrap:wrap;justify-content:center;gap:6px;margin-top:20px;font-size:0.76rem;color:var(--muted)}
+.hero .flow .s{background:var(--bg2);border:1px solid var(--rule);border-radius:6px;padding:3px 10px;font-weight:600;white-space:nowrap}
+.hero .flow .a{color:var(--accent);font-weight:700}
+
+/* Step */
+.step{margin:24px 0;background:var(--bg2);border-radius:14px;overflow:hidden;border:1px solid var(--rule)}
+.step-head{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--rule);background:var(--bg3)}
+.step-num{width:28px;height:28px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-size:0.8rem;font-weight:700;flex-shrink:0}
+.step-title{font-weight:700;font-size:1rem}
+.step-desc{font-size:0.78rem;color:var(--muted);margin-left:auto}
+.step-body{padding:16px 18px}
+
+/* Option grids */
+.opt-grid{display:grid;gap:8px}
+.opt-grid.cols-3{grid-template-columns:repeat(3,1fr)}
+.opt-grid.cols-4{grid-template-columns:repeat(4,1fr)}
+.opt-grid.cols-2{grid-template-columns:repeat(2,1fr)}
+
+.opt{
+  border:2px solid var(--rule);border-radius:10px;padding:12px 10px;cursor:pointer;
+  transition:all .15s;text-align:center;background:var(--bg2);position:relative;
+}
+.opt:hover{border-color:var(--accent);background:var(--selected-bg)}
+.opt.active{border-color:var(--accent);background:var(--selected-bg);box-shadow:0 0 0 1px var(--accent)}
+.opt .icon{font-size:1.4rem;margin-bottom:4px}
+.opt .label{font-size:0.82rem;font-weight:600;line-height:1.3}
+.opt .desc{font-size:0.7rem;color:var(--muted);margin-top:3px;line-height:1.4}
+.opt .tag{position:absolute;top:-7px;right:6px;background:var(--warn);color:#fff;font-size:0.6rem;padding:1px 6px;border-radius:4px;font-weight:700}
+
+.opt-mini{padding:8px 6px}
+.opt-mini .icon{font-size:1.1rem;margin-bottom:2px}
+.opt-mini .label{font-size:0.76rem}
+
+/* Food list */
+.food-list{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:8px}
+.food-item{
+  border:2px solid var(--rule);border-radius:10px;padding:10px;cursor:pointer;
+  transition:all .15s;background:var(--bg2);
+}
+.food-item:hover{border-color:var(--accent);background:var(--selected-bg)}
+.food-item.active{border-color:var(--accent);background:var(--selected-bg);box-shadow:0 0 0 1px var(--accent)}
+.food-item .gi-badge{display:inline-block;font-size:0.65rem;padding:1px 6px;border-radius:4px;font-weight:700;margin-bottom:4px}
+.gi-low{background:#e6f7f0;color:#0d7c66}
+.gi-mid{background:#fef5e7;color:#b7791f}
+.gi-high{background:#fdebe6;color:#c44d3a}
+.food-item .name{font-size:0.84rem;font-weight:600}
+.food-item .cat{font-size:0.68rem;color:var(--muted);margin-top:2px}
+.food-item .gi-val{font-size:0.72rem;color:var(--ink);margin-top:3px;font-weight:700}
+
+/* Output */
+.output{margin:28px 0;background:var(--bg2);border-radius:14px;overflow:hidden;border:1px solid var(--rule)}
+.output-head{display:flex;align-items:center;gap:10px;padding:14px 18px;border-bottom:1px solid var(--rule);background:var(--bg3)}
+.output-head .badge{font-size:0.7rem;font-family:monospace;background:var(--accent);color:#fff;padding:2px 8px;border-radius:4px;font-weight:700}
+.output-breadcrumb{font-size:0.78rem;color:var(--muted);margin-left:auto;font-weight:600}
+.output-body{padding:0}
+.output-tabs{display:flex;border-bottom:1px solid var(--rule)}
+.output-tab{padding:10px 18px;font-size:0.82rem;font-weight:600;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;transition:all .15s}
+.output-tab.active{color:var(--accent);border-bottom-color:var(--accent)}
+.output-content{padding:16px 18px}
+.output-content pre{
+  background:#1e293b;color:#e2e8f0;padding:16px;border-radius:8px;
+  overflow-x:auto;font-family:"JetBrains Mono","Cascadia Code",monospace;
+  font-size:0.76rem;line-height:1.65;white-space:pre-wrap;word-break:break-word;
+}
+.copy-btn{
+  margin:12px 18px;padding:10px 20px;background:var(--accent);color:#fff;
+  border:none;border-radius:8px;font-size:0.85rem;font-weight:700;cursor:pointer;
+  transition:all .15s;display:flex;align-items:center;gap:6px;
+}
+.copy-btn:hover{background:#0a5d4d}
+.copy-btn:active{transform:scale(0.97)}
+.copy-btn.copied{background:#0a5d4d}
+
+.empty{text-align:center;padding:40px 20px;color:var(--muted);font-size:0.88rem}
+
+/* Footer */
+.footer{text-align:center;padding:20px;font-size:0.72rem;color:var(--muted);border-top:1px solid var(--rule);margin-top:24px}
+
+/* Responsive */
+@media(max-width:600px){
+  .opt-grid.cols-3,.opt-grid.cols-4{grid-template-columns:repeat(2,1fr)}
+  .food-list{grid-template-columns:repeat(2,1fr)}
+  .hero h1{font-size:1.3rem}
+}
+</style>
+</head>
+<body>
+<div class="app">
+  <!-- Hero -->
+  <div class="hero">
+    <h1>🩸 血糖知识 Prompt 生成器</h1>
+    <p class="sub">选内容 → 选主题 → 选模式 → 选风格 → 生成完整提示词 → 发 Claude 联网查资料 → 发香蕉Pro/即梦出图</p>
+    <div class="flow">
+      <span class="s">选内容主线</span><span class="a">→</span>
+      <span class="s">选具体主题</span><span class="a">→</span>
+      <span class="s">选出图模式</span><span class="a">→</span>
+      <span class="s">选视觉风格</span><span class="a">→</span>
+      <span class="s">生成Prompt</span>
+    </div>
+  </div>
+
+  <!-- Step 1: 内容主线 -->
+  <div class="step">
+    <div class="step-head">
+      <div class="step-num">1</div>
+      <div class="step-title">选内容主线</div>
+      <div class="step-desc">决定整张图的核心目的</div>
+    </div>
+    <div class="step-body">
+      <div class="opt-grid cols-3" id="line-grid">
+        <div class="opt active" data-line="food">
+          <div class="icon">🍎</div>
+          <div class="label">食物线</div>
+          <div class="desc">GI速查/对比/排行榜</div>
+        </div>
+        <div class="opt" data-line="knowledge">
+          <div class="icon">📚</div>
+          <div class="label">知识线</div>
+          <div class="desc">GI概念/血糖范围/误区</div>
+        </div>
+        <div class="opt" data-line="action">
+          <div class="icon">⚡</div>
+          <div class="label">行动线</div>
+          <div class="desc">用餐顺序/控糖方案</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 2: 具体主题 -->
+  <div class="step">
+    <div class="step-head">
+      <div class="step-num">2</div>
+      <div class="step-title" id="step2-title">选具体食物</div>
+      <div class="step-desc" id="step2-desc">点击选择</div>
+    </div>
+    <div class="step-body" id="step2-body">
+      <!-- 动态填充 -->
+    </div>
+  </div>
+
+  <!-- Step 3: 出图模式 -->
+  <div class="step">
+    <div class="step-head">
+      <div class="step-num">3</div>
+      <div class="step-title">选出图模式</div>
+      <div class="step-desc">单张快速验证 / 系列完整覆盖</div>
+    </div>
+    <div class="step-body">
+      <div class="opt-grid cols-3" id="mode-grid">
+        <div class="opt active" data-mode="single">
+          <div class="icon">📄</div>
+          <div class="label">单张速查卡</div>
+          <div class="desc">1张·核心数据速查</div>
+          <div class="tag">推荐</div>
+        </div>
+        <div class="opt" data-mode="series3">
+          <div class="icon">📖</div>
+          <div class="label">系列3张</div>
+          <div class="desc">是什么→误区→怎么做</div>
+        </div>
+        <div class="opt" data-mode="series4">
+          <div class="icon">🗂️</div>
+          <div class="label">系列4张</div>
+          <div class="desc">速查→曲线→建议→冷知识</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Step 4: 风格 -->
+  <div class="step">
+    <div class="step-head">
+      <div class="step-num">4</div>
+      <div class="step-title">选视觉风格</div>
+      <div class="step-desc">风格匹配受众和内容类型</div>
+    </div>
+    <div class="step-body">
+      <div class="opt-grid cols-2" id="style-grid">
+        <div class="opt active" data-style="medical">
+          <div class="icon">🏥</div>
+          <div class="label">医学信息图风</div>
+          <div class="desc">深蓝+白底+几何线条，权威感强。适合知识科普、诊断标准、误区纠正</div>
+        </div>
+        <div class="opt" data-style="warm">
+          <div class="icon">🎨</div>
+          <div class="label">温暖科普插画风</div>
+          <div class="desc">暖橙+米白+手绘食物，亲切感强。适合食物卡片、饮食建议</div>
+        </div>
+        <div class="opt" data-style="dataviz">
+          <div class="icon">📊</div>
+          <div class="label">数据可视化风</div>
+          <div class="desc">白底+大色块+大数字，极简现代。适合排行榜、曲线对比</div>
+        </div>
+        <div class="opt" data-style="chinese">
+          <div class="icon">🏮</div>
+          <div class="label">新中式健康风</div>
+          <div class="desc">米黄底+国潮插画+茶棕色，中西结合。适合养生内容</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Output -->
+  <div class="output" id="output-section" style="display:none">
+    <div class="step-head">
+      <div class="step-num">✓</div>
+      <div class="step-title">生成结果</div>
+      <span class="badge">READY</span>
+      <div class="output-breadcrumb" id="breadcrumb"></div>
+    </div>
+    <div class="output-tabs">
+      <div class="output-tab active" data-tab="prompt">📋 图片框架提示词</div>
+      <div class="output-tab" data-tab="copy">📝 发布文案</div>
+      <div class="output-tab" data-tab="verify">🔍 数据验证</div>
+    </div>
+    <div class="output-content" id="output-prompt">
+      <pre id="prompt-text"></pre>
+    </div>
+    <div class="output-content" id="output-copy" style="display:none">
+      <pre id="copy-text"></pre>
+    </div>
+    <div class="output-content" id="output-verify" style="display:none">
+      <div id="verify-content" style="padding:16px 18px"></div>
+    </div>
+    <button class="copy-btn" id="copy-btn">📋 一键复制当前内容</button>
+  </div>
+
+  <div class="empty" id="empty-state">
+    👆 完成上方4步选择，自动生成完整 Prompt
+  </div>
+
+  <div class="footer">
+    血糖知识 Prompt 生成器 · 数据来源：悉尼大学GI数据库(4277条) / USDA FoodData Central / 中国食物成分表(第6版·259种)<br>
+    内容仅供参考，不构成医疗建议 · 生成后请发 Claude 联网核实数据再出图
+  </div>
+</div>
+
+<script>
+// ========== DATA ==========
+let FOODS = [];
+let KNOWLEDGE = [];
+
+function mapFood(f) {
+  return {
+    id: f.id,
+    name: f.name_zh,
+    en: f.name_en,
+    cat: f.category,
+    sub: f.subcategory,
+    gi: f.gi,
+    giLevel: f.gi_level,
+    gl: f.gl_per_serving,
+    glLevel: f.gl_level,
+    cal: f.calories_per_100g,
+    carbs: f.carbs_per_100g,
+    protein: f.protein_per_100g,
+    fat: f.fat_per_100g,
+    fiber: f.fiber_per_100g,
+    impact: f.blood_sugar_impact,
+    serving: f.serving_desc,
+    timing: f.best_timing,
+    suitable: f.suitable_for,
+    caution: f.caution_for,
+    tips: f.tips || [],
+    combos: f.recommended_combos || [],
+    src: f.data_sources || "",
+  };
+}
+
+function mapKnowledge(t, idx) {
+  return {
+    id: `k${String(idx + 1).padStart(2, "0")}`,
+    title: t.title_zh,
+    cat: t.category,
+    summary: t.summary,
+    points: t.key_points || [],
+    visType: t.visual_type || "信息图",
+  };
+}
+
+async function loadPromptData() {
+  const [foodsRes, topicsRes] = await Promise.all([
+    fetch("../data/foods/gi-database.json"),
+    fetch("../data/knowledge/topics.json"),
+  ]);
+  if (!foodsRes.ok || !topicsRes.ok) {
+    throw new Error("数据加载失败");
+  }
+  const foodsData = await foodsRes.json();
+  const topicsData = await topicsRes.json();
+  FOODS = (foodsData.foods || []).map(mapFood);
+  KNOWLEDGE = (topicsData.topics || []).map(mapKnowledge);
+}
+
+
+
+
+
+const ACTIONS=[
+{id:"a01",title:"用餐顺序法",cat:"饮食管理",summary:"先蔬菜→再蛋白质→最后主食，餐后血糖峰值降低20-40%",points:["纤维先形成物理屏障","蛋白质刺激GLP-1分泌","同样食物不同顺序效果差异显著"]},
+{id:"a02",title:"控糖一日时间表",cat:"生活方式",summary:"从早到晚6个时段的控糖行动方案",points:["早餐选低GI主食","午餐用顺序法","加餐选低GI组合","餐后运动15分钟"]},
+{id:"a03",title:"血糖友好加餐选择",cat:"饮食管理",summary:"5种低GI加餐组合，稳定血糖不暴食",points:["苹果+花生","无糖酸奶+蓝莓","黑巧克力≥70%","煮鸡蛋","黄瓜/小番茄"]}
+];
+
+const STYLES={
+medical:{name:"医学信息图风",desc:"深蓝+白底+几何线条，权威感强",prompt:"Professional medical infographic style, deep blue and white color palette, clean geometric lines, sans-serif Chinese typography, authoritative and trustworthy appearance, data-driven layout with clear hierarchy"},
+warm:{name:"温暖科普插画风",desc:"暖橙+米白+手绘食物，亲切感强",prompt:"Warm educational illustration style, warm orange and cream color palette, hand-drawn food illustrations, rounded card design, friendly and approachable, soft natural lighting, cozy wellness aesthetic"},
+dataviz:{name:"数据可视化风",desc:"白底+大色块+大数字，极简现代",prompt:"Modern data visualization style, white background, large color blocks, oversized numbers, minimal layout, clean typography, high contrast data presentation, Swiss design influence"},
+chinese:{name:"新中式健康风",desc:"米黄底+国潮插画+茶棕色，中西结合",prompt:"New Chinese health illustration style, warm beige background, modern Chinese trend illustration elements, tea brown and sage green palette, elegant fusion of traditional and modern aesthetics"}
+};
+
+const NEG="english text, brand logos, percentage symbols, arrow symbols, vitamin labels, blurry text, distorted food illustration, watermark, messy layout, photorealistic human faces";
+const DISCLAIMER="内容仅供参考，不构成医疗建议。糖尿病等疾病的诊断和治疗请咨询专业医生。";
+
+// ========== STATE ==========
+let state={line:"food",item:null,mode:"single",style:"medical"};
+let currentTab="prompt";
+
+// ========== RENDER ==========
+const giColor={低:"gi-low",中:"gi-mid",高:"gi-high"};
+const lineDesc={food:"选具体食物",knowledge:"选知识主题",action:"选行动方案"};
+
+function renderStep2(){
+  const body=document.getElementById("step2-body");
+  const title=document.getElementById("step2-title");
+  const desc=document.getElementById("step2-desc");
+  title.textContent=lineDesc[state.line];
+  state.item=null;
+  let html="";
+
+  if(state.line==="food"){
+    desc.textContent=FOODS.length+"种常见食物 · 点击选择";
+    // group by category
+    const cats={};
+    FOODS.forEach(f=>{if(!cats[f.cat])cats[f.cat]=[];cats[f.cat].push(f)});
+    for(const[cat,list] of Object.entries(cats)){
+      html+=`<div style="font-size:0.72rem;color:var(--muted);font-weight:700;margin:10px 0 6px;text-transform:uppercase;letter-spacing:0.05em">${cat}</div>`;
+      html+=`<div class="food-list">`;
+      list.forEach(f=>{
+        html+=`<div class="food-item" data-id="${f.id}"><span class="gi-badge ${giColor[f.giLevel]}">${f.giLevel}GI</span><div class="name">${f.name}</div><div class="cat">${f.en}</div><div class="gi-val">GI=${f.gi}</div></div>`;
+      });
+      html+=`</div>`;
+    }
+  }else if(state.line==="knowledge"){
+    desc.textContent="12个知识主题 · 点击选择";
+    html+=`<div class="opt-grid cols-2">`;
+    KNOWLEDGE.forEach(k=>{
+      html+=`<div class="opt opt-mini" data-id="${k.id}"><div class="icon">📋</div><div class="label">${k.title}</div><div class="desc">${k.cat} · ${k.visType}</div></div>`;
+    });
+    html+=`</div>`;
+  }else{
+    desc.textContent="3个行动方案 · 点击选择";
+    html+=`<div class="opt-grid cols-3">`;
+    ACTIONS.forEach(a=>{
+      html+=`<div class="opt opt-mini" data-id="${a.id}"><div class="icon">⚡</div><div class="label">${a.title}</div><div class="desc">${a.cat}</div></div>`;
+    });
+    html+=`</div>`;
+  }
+  body.innerHTML=html;
+  // bind
+  body.querySelectorAll("[data-id]").forEach(el=>{
+    el.addEventListener("click",()=>{
+      body.querySelectorAll("[data-id]").forEach(e=>e.classList.remove("active"));
+      el.classList.add("active");
+      state.item=el.dataset.id;
+      updateOutput();
+    });
+  });
+  updateOutput();
+}
+
+function getSelectedItem(){
+  if(!state.item)return null;
+  if(state.line==="food")return FOODS.find(f=>f.id===state.item);
+  if(state.line==="knowledge")return KNOWLEDGE.find(k=>k.id===state.item);
+  if(state.line==="action")return ACTIONS.find(a=>a.id===state.item);
+}
+
+function buildPrompt(){
+  const item=getSelectedItem();
+  if(!item)return null;
+  const styleName=STYLES[state.style].name;
+  const stylePrompt=STYLES[state.style].prompt;
+  let prompt="";
+
+  if(state.line==="food"){
+    prompt=buildFoodPrompt(item,styleName,stylePrompt);
+  }else if(state.line==="knowledge"){
+    prompt=buildKnowledgePrompt(item,styleName,stylePrompt);
+  }else{
+    prompt=buildActionPrompt(item,styleName,stylePrompt);
+  }
+  return prompt;
+}
+
+function buildFoodPrompt(f,styleName,stylePrompt){
+  const giColorText=f.giLevel==="高"?"红色标注":f.giLevel==="中"?"黄色标注":"绿色标注";
+  let p=`【数据查证指令】
+请联网搜索以下权威来源核实数据：
+
+1. GI值查证：
+   打开悉尼大学GI数据库 https://glycemicindex.com/gi-search/
+   搜索食物名称"${f.en}"，核对GI值是否为${f.gi}
+
+2. 营养数据查证：
+   打开USDA FoodData Central https://fdc.nal.usda.gov/
+   搜索"${f.en}"，核对热量(${f.cal}kcal/100g)、碳水(${f.carbs}g)、蛋白质(${f.protein||0}g)、脂肪(${f.fat||0}g)、纤维(${f.fiber||0}g)
+
+3. 中国数据交叉验证：
+   参考"中国好营养"公众号发布的259种食物GI数据
+   来源：中国食物成分表（第6版）附表
+
+核实后填充以下数据，每条标注出处。如发现数据不一致，以悉尼大学GI数据库为准。
+
+【内容定义】
+主题：${f.name}（${f.en}）
+内容类型：食物GI速查卡`;
+  if(state.mode==="series4"){
+    p+=`\n出图模式：系列4张（速查卡→升糖曲线→食用建议→冷知识）`;
+  }else{
+    p+=`\n出图模式：单张速查卡`;
+  }
+  p+=`
+风格：${styleName}
+
+【铁律约束】
+- 所有文字必须使用中文，不得替换为英文
+- GI数值${f.gi}必须精确显示，不得四舍五入
+- 食物名称必须显示为"${f.name}"，不得替换
+- 插画中不得出现英文文字、品牌标识
+- 图面不得出现百分比数字
+- 编号使用圆圈数字①②③，不使用箭头
+- 底部必须包含"${DISCLAIMER}"
+
+【出图内容·第1张·GI速查卡】
+食物名称：${f.name}（${f.en}）
+分类：${f.cat} · ${f.sub||""}
+GI值：${f.gi}（${f.giLevel}GI）${giColorText}
+GL值：${f.gl}（${f.glLevel}GL）
+热量：${f.cal}千卡/100g
+碳水：${f.carbs}g/100g
+蛋白质：${f.protein||0}g/100g
+脂肪：${f.fat||0}g/100g
+膳食纤维：${f.fiber||0}g/100g
+升糖影响：${f.impact}
+标准份量：${f.serving}
+最佳食用时段：${f.timing}
+适合人群：${f.suitable}
+注意事项：${f.caution}
+数据来源：${f.src||"CN+SYD"}
+
+食用建议：
+${f.tips.map((t,i)=>`①${t}`).join("\n")}
+
+推荐搭配（降低整体升糖）：
+${f.combos.join("、")}`;
+
+  if(state.mode==="series4"){
+    p+=`
+
+【出图内容·第2张·升糖曲线对比图】
+图表标题：同样吃一份${f.name}，血糖怎么变？
+Y轴：血糖浓度(mmol/L)
+X轴：0min / 30min / 60min / 90min / 120min
+绘制${f.name}（GI=${f.gi}）的血糖反应曲线
+对比同类高GI食物的曲线
+标注峰值和到达时间
+结论：${f.impact==="极高"?"升糖极快，峰值高":"升糖"+f.impact}
+
+【出图内容·第3张·食用建议+搭配方案卡】
+卡片标题：${f.name}怎么吃才控糖
+3-4条具体建议 + 推荐搭配方案
+每条建议附原理说明
+
+【出图内容·第4张·控糖冷知识卡】
+卡片标题：关于${f.name}你不知道的3件事
+3条反常识冷知识，每条带数据支撑
+传播钩子："发给那个总说${f.name}不能吃的人"`;
+  }
+
+  p+=`
+
+【风格指令】
+${stylePrompt}
+
+【负面提示词】
+--no ${NEG}
+
+--ar 1:1 --style raw`;
+  return p;
+}
+
+function buildKnowledgePrompt(k,styleName,stylePrompt){
+  let p=`【数据查证指令】
+请联网搜索以下来源核实知识内容：
+- 中国2型糖尿病防治指南(2024版)
+- 中华医学会糖尿病学分会科普资料
+- 相关权威医学来源
+核实后填充概念定义和关键点。
+
+【内容定义】
+主题：${k.title}
+内容类型：知识科普信息图`;
+  if(state.mode==="series3"){
+    p+=`\n出图模式：系列3张（是什么→误区纠正→怎么做）`;
+  }else{
+    p+=`\n出图模式：单张信息图`;
+  }
+  p+=`
+风格：${styleName}
+
+【铁律约束】
+- 所有文字必须使用中文
+- 概念定义必须准确，不得自行编造
+- 图面不得出现百分比
+- 编号使用圆圈数字①②③
+- 底部包含"${DISCLAIMER}"
+
+【出图内容·第1张·知识信息图】
+卡片标题：${k.title}
+概念定义：${k.summary}
+关键知识点：
+${k.points.map((pt,i)=>`①${pt}`).join("\n")}`;
+
+  if(state.mode==="series3"){
+    p+=`
+
+【出图内容·第2张·误区纠正图】
+卡片标题：关于${k.title}，90%的人都搞错了
+3组"你以为vs实际上"对比
+每组附数据支撑和来源
+
+【出图内容·第3张·行动步骤图】
+卡片标题：${k.title}·5步行动指南
+5个具体操作步骤
+每步附预期效果`;
+  }
+
+  p+=`
+
+【风格指令】
+${stylePrompt}
+
+【负面提示词】
+--no ${NEG}
+
+--ar 16:9 --style raw`;
+  return p;
+}
+
+function buildActionPrompt(a,styleName,stylePrompt){
+  let p=`【数据查证指令】
+请联网搜索以下来源核实建议：
+- 中国居民膳食指南(2022)
+- 中国2型糖尿病防治指南(2024版)
+核实后填充具体操作步骤。
+
+【内容定义】
+主题：${a.title}
+内容类型：操作步骤流程图
+风格：${styleName}
+
+【铁律约束】
+- 所有文字必须使用中文
+- 步骤编号使用圆圈数字①②③④⑤
+- 每步必须有具体操作描述
+- 图面不得出现百分比
+- 底部包含"${DISCLAIMER}"
+
+【出图内容】
+卡片标题：${a.title}
+核心原理：${a.summary}
+
+行动步骤：
+${a.points.map((pt,i)=>`①${pt}`).join("\n")}
+
+【风格指令】
+${stylePrompt}
+
+【负面提示词】
+--no ${NEG}
+
+--ar 3:4 --style raw`;
+  return p;
+}
+
+function buildCopy(){
+  const item=getSelectedItem();
+  if(!item)return"";
+  const styleName=STYLES[state.style].name;
+  let title="";
+  if(state.line==="food"){
+    title=`${item.name}GI=${item.gi}｜${item.giLevel}GI食物${item.impact==="极高"?"升糖极快":"升糖"+item.impact}`;
+  }else if(state.line==="knowledge"){
+    title=`${item.title}｜一张图搞懂血糖知识`;
+  }else{
+    title=`${item.title}｜${item.summary}`;
+  }
+  return `【标题】
+${title}
+
+【正文】
+${state.line==="food"?`${item.name}的GI值是${item.gi}，属于${item.giLevel}GI食物。${item.impact==="极高"?"升糖速度极快，需要严格控制份量。":item.impact==="极低"?"对血糖影响极小，可以放心食用。":"升糖影响中等，适量食用即可。"}
+
+标准份量：${item.serving}
+热量：${item.cal}千卡/100g
+
+食用建议：
+${item.tips.map((t,i)=>`${i+1}. ${t}`).join("\n")}
+
+#血糖 #GI指数 #${item.name} #控糖饮食 #糖尿病饮食 #低GI食物`:`${item.title}
+
+${item.summary}
+
+${item.points.map((p,i)=>`${i+1}. ${p}`).join("\n")}
+
+#血糖 #控糖 #${item.cat} #健康知识 #糖尿病`}
+
+【小红书文案】
+${title}
+
+${state.line==="food"?"你在吃"+item.name+"吗？知道它的GI值是多少吗？":"今天分享一个血糖知识点。"}
+
+${item.summary}
+
+收藏起来，发给需要的人 ❤️
+
+#血糖知识 #控糖 #健康饮食 #${state.line==="food"?item.name:item.title}`;
+}
+
+function updateOutput(){
+  const item=getSelectedItem();
+  const outputSection=document.getElementById("output-section");
+  const emptyState=document.getElementById("empty-state");
+  if(!item){
+    outputSection.style.display="none";
+    emptyState.style.display="block";
+    return;
+  }
+  outputSection.style.display="block";
+  emptyState.style.display="none";
+
+  // breadcrumb
+  const lineName={food:"食物线",knowledge:"知识线",action:"行动线"}[state.line];
+  const itemName=item.name||item.title;
+  const modeName={single:"单张速查卡",series3:"系列3张",series4:"系列4张"}[state.mode];
+  const bc=document.getElementById("breadcrumb");
+  bc.textContent=`${lineName} · ${itemName} · ${modeName} · ${STYLES[state.style].name}`;
+
+  // prompt
+  const prompt=buildPrompt();
+  document.getElementById("prompt-text").textContent=prompt||"";
+  const copy=buildCopy();
+  document.getElementById("copy-text").textContent=copy||"";
+  // 如果当前在验证tab，刷新验证内容
+  if(currentTab==="verify")renderVerify();
+}
+
+function renderVerify(){
+  const item=getSelectedItem();
+  const el=document.getElementById("verify-content");
+  if(!item){el.innerHTML="<p style='color:var(--muted);text-align:center'>请先选择一个食物</p>";return}
+
+  if(state.line!=="food"){
+    el.innerHTML=`<div style="background:var(--bg3);border-radius:10px;padding:20px;text-align:center">
+      <p style="font-weight:700;margin-bottom:8px">📚 知识线和行动线的数据验证</p>
+      <p style="font-size:0.85rem;color:var(--muted);margin:0">知识主题的数据来自中国2型糖尿病防治指南(2024版)和中华医学会糖尿病学分会科普资料。<br>请在生成Prompt后发给联网Claude自动查证。</p>
+    </div>`;
+    return;
+  }
+
+  const f=item;
+  const giSearchUrl="https://glycemicindex.com/gi-search/";
+  const usdaUrl="https://fdc.nal.usda.gov/fdc-app.html#/?query="+encodeURIComponent(f.en);
+
+  el.innerHTML=`
+    <div style="margin-bottom:16px">
+      <h4 style="font-size:1rem;font-weight:700;margin-bottom:4px">${f.name}（${f.en}）数据验证</h4>
+      <p style="font-size:0.8rem;color:var(--muted)">本数据库中该食物的GI值=${f.gi}（${f.giLevel}GI），数据来源标记：${f.src||"CN+SYD"}</p>
+    </div>
+
+    <div style="display:grid;gap:12px">
+      <div style="border:1px solid var(--rule);border-radius:10px;overflow:hidden">
+        <div style="background:var(--bg3);padding:10px 16px;font-weight:700;font-size:0.88rem;display:flex;align-items:center;gap:8px">
+          <span style="background:#0d7c66;color:#fff;padding:2px 8px;border-radius:4px;font-size:0.7rem">来源1</span>
+          悉尼大学GI数据库
+        </div>
+        <div style="padding:14px 16px">
+          <p style="font-size:0.82rem;margin-bottom:8px;color:var(--ink)"><strong>验证GI值：</strong>搜索 "${f.en}" 核对GI是否为 ${f.gi}</p>
+          <p style="font-size:0.78rem;color:var(--muted);margin-bottom:10px">该数据库收录4277条食物GI数据，是全球最权威的GI来源。数据来自实际人体测试（ISO 26642标准）。</p>
+          <a href="${giSearchUrl}" target="_blank" rel="noopener" style="display:inline-block;background:#0d7c66;color:#fff;padding:8px 16px;border-radius:8px;font-size:0.82rem;font-weight:700;text-decoration:none">🔍 前往查询 GI值 →</a>
+        </div>
+      </div>
+
+      <div style="border:1px solid var(--rule);border-radius:10px;overflow:hidden">
+        <div style="background:var(--bg3);padding:10px 16px;font-weight:700;font-size:0.88rem;display:flex;align-items:center;gap:8px">
+          <span style="background:#2563eb;color:#fff;padding:2px 8px;border-radius:4px;font-size:0.7rem">来源2</span>
+          USDA FoodData Central
+        </div>
+        <div style="padding:14px 16px">
+          <p style="font-size:0.82rem;margin-bottom:8px;color:var(--ink)"><strong>验证营养数据：</strong>搜索 "${f.en}" 核对以下数据</p>
+          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin:10px 0;font-size:0.78rem">
+            <div style="background:var(--bg);padding:6px 10px;border-radius:6px">热量：<strong>${f.cal} kcal/100g</strong></div>
+            <div style="background:var(--bg);padding:6px 10px;border-radius:6px">碳水：<strong>${f.carbs} g/100g</strong></div>
+            <div style="background:var(--bg);padding:6px 10px;border-radius:6px">蛋白质：<strong>${f.protein||0} g/100g</strong></div>
+            <div style="background:var(--bg);padding:6px 10px;border-radius:6px">脂肪：<strong>${f.fat||0} g/100g</strong></div>
+            <div style="background:var(--bg);padding:6px 10px;border-radius:6px">纤维：<strong>${f.fiber||0} g/100g</strong></div>
+            <div style="background:var(--bg);padding:6px 10px;border-radius:6px">GL值：<strong>${f.gl}（${f.glLevel}GL）</strong></div>
+          </div>
+          <a href="${usdaUrl}" target="_blank" rel="noopener" style="display:inline-block;background:#2563eb;color:#fff;padding:8px 16px;border-radius:8px;font-size:0.82rem;font-weight:700;text-decoration:none">🔍 前往查询 营养数据 →</a>
+        </div>
+      </div>
+
+      <div style="border:1px solid var(--rule);border-radius:10px;overflow:hidden">
+        <div style="background:var(--bg3);padding:10px 16px;font-weight:700;font-size:0.88rem;display:flex;align-items:center;gap:8px">
+          <span style="background:#e9a23b;color:#fff;padding:2px 8px;border-radius:4px;font-size:0.7rem">来源3</span>
+          中国食物成分表（第6版）
+        </div>
+        <div style="padding:14px 16px">
+          <p style="font-size:0.82rem;margin-bottom:8px;color:var(--ink)"><strong>交叉验证：</strong>核对259种食物GI数据中的 "${f.name}"</p>
+          <p style="font-size:0.78rem;color:var(--muted);margin-bottom:10px">由中国疾病预防控制中心营养与健康所发布，涵盖11大类259种中国常见食物。可通过"中国好营养"公众号查看完整列表。</p>
+          <div style="background:var(--bg);padding:10px 14px;border-radius:8px;font-size:0.76rem;color:var(--muted)">
+            <strong style="color:var(--ink)">验证步骤：</strong><br>
+            1. 微信搜索"中国好营养"公众号<br>
+            2. 搜索关键词"259种食物GI"<br>
+            3. 对照表中"${f.name}"的GI值<br>
+            4. 或购买《中国食物成分表标准版·第6版》书籍查阅
+          </div>
+        </div>
+      </div>
+
+      <div style="border:1px solid var(--accent2);border-radius:10px;overflow:hidden;background:#fef5f0">
+        <div style="padding:14px 16px">
+          <p style="font-size:0.82rem;font-weight:700;margin-bottom:6px;color:var(--accent2)">⚠️ 数据不一致怎么办？</p>
+          <p style="font-size:0.78rem;color:var(--ink);margin-bottom:8px">不同来源的GI值可能因测试方法、食物品种、烹饪方式而异。处理原则：</p>
+          <ul style="font-size:0.76rem;color:var(--ink);padding-left:18px;margin:0;line-height:1.8">
+            <li><strong>GI值优先级：</strong>悉尼大学数据库 > 中国食物成分表 > 其他来源</li>
+            <li><strong>营养数据优先级：</strong>USDA FoodData Central > 中国食物成分表</li>
+            <li><strong>烹饪方式影响：</strong>同种食物不同烹饪法GI不同（如蒸红薯GI=54，烤红薯GI=82）</li>
+            <li><strong>品种差异：</strong>不同品种的同类食物GI可能差异很大（如老玉米vs糯玉米）</li>
+            <li><strong>最终验证：</strong>将Prompt发给联网Claude，它会自动联网查证并标注数据出处</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+// ========== EVENTS ==========
+// Step 1
+document.getElementById("line-grid").querySelectorAll(".opt").forEach(el=>{
+  el.addEventListener("click",()=>{
+    document.getElementById("line-grid").querySelectorAll(".opt").forEach(e=>e.classList.remove("active"));
+    el.classList.add("active");
+    state.line=el.dataset.line;
+    renderStep2();
+  });
+});
+
+// Step 3
+document.getElementById("mode-grid").querySelectorAll(".opt").forEach(el=>{
+  el.addEventListener("click",()=>{
+    document.getElementById("mode-grid").querySelectorAll(".opt").forEach(e=>e.classList.remove("active"));
+    el.classList.add("active");
+    state.mode=el.dataset.mode;
+    updateOutput();
+  });
+});
+
+// Step 4
+document.getElementById("style-grid").querySelectorAll(".opt").forEach(el=>{
+  el.addEventListener("click",()=>{
+    document.getElementById("style-grid").querySelectorAll(".opt").forEach(e=>e.classList.remove("active"));
+    el.classList.add("active");
+    state.style=el.dataset.style;
+    updateOutput();
+  });
+});
+
+// Tabs
+document.querySelectorAll(".output-tab").forEach(tab=>{
+  tab.addEventListener("click",()=>{
+    document.querySelectorAll(".output-tab").forEach(t=>t.classList.remove("active"));
+    tab.classList.add("active");
+    currentTab=tab.dataset.tab;
+    document.getElementById("output-prompt").style.display=currentTab==="prompt"?"block":"none";
+    document.getElementById("output-copy").style.display=currentTab==="copy"?"block":"none";
+    document.getElementById("output-verify").style.display=currentTab==="verify"?"block":"none";
+    // 切换到验证tab时生成验证内容
+    if(currentTab==="verify")renderVerify();
+  });
+});
+
+// Copy
+document.getElementById("copy-btn").addEventListener("click",()=>{
+  let text="";
+  if(currentTab==="prompt")text=document.getElementById("prompt-text").textContent;
+  else if(currentTab==="copy")text=document.getElementById("copy-text").textContent;
+  else if(currentTab==="verify")text="数据验证链接已打开，请点击上方按钮前往各权威数据源查询";
+  if(!text)return;
+  navigator.clipboard.writeText(text).then(()=>{
+    const btn=document.getElementById("copy-btn");
+    const orig=btn.textContent;
+    btn.textContent="✅ 已复制到剪贴板";
+    btn.classList.add("copied");
+    setTimeout(()=>{btn.textContent=orig;btn.classList.remove("copied")},2000);
+  });
+});
+
+// INIT
+loadPromptData()
+  .then(() => renderStep2())
+  .catch(() => {
+    document.body.insertAdjacentHTML(
+      "afterbegin",
+      '<div style="background:#fef5f0;color:#c44d3a;padding:12px;text-align:center">数据加载失败，请通过本地服务器访问</div>'
+    );
+  });
+</script>
+</body>
+</html>

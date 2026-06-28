@@ -25,9 +25,9 @@ mkdir -p _site
 mv public _site/notes
 
 copy_file index.html _site/index.html
-copy_dir out _site/out
+copy_dir site _site/site
 copy_dir data _site/data
-copy_dir blood-glucose-prompt-framework _site/blood-glucose-prompt-framework
+copy_dir reports _site/reports
 copy_dir research-daily _site/research-daily
 
 echo "bg.purpleiris.cn" > _site/CNAME

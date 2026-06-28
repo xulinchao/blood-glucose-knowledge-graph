@@ -10,6 +10,10 @@ public/
 .quartz-cache/
 tsconfig.tsbuildinfo
 
+# Generated outputs
+out/prompts/
+out/
+
 # IDE
 .vscode/
 .idea/
@@ -26,12 +30,12 @@ Thumbs.db
 
 # TRAE workspace (personal)
 .workbuddy/
+.uploads/
 
 # Local scripts (personal use only)
 push.bat
 start-server.bat
 
 # Node/Build artifacts (if any)
-node_modules/
 dist/
 build/

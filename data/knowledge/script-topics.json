@@ -1,0 +1,2011 @@
+{
+  "version": "1.0",
+  "topics": [
+    {
+      "id": 1,
+      "title": "血糖高不能吃水果？这3种水果反而帮你稳血糖",
+      "cat": "myth",
+      "catName": "辟谣纠偏",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "500w+",
+          "likes": "25w+",
+          "saves": "8w+",
+          "comment": "1.2w"
+        },
+        "xhs": {
+          "views": "120w+",
+          "likes": "6.5w+",
+          "saves": "4.2w+",
+          "comment": "3200"
+        },
+        "bili": {
+          "views": "85w+",
+          "likes": "3.2w+",
+          "saves": "1.5w+",
+          "comment": "2800"
+        }
+      },
+      "tags": [
+        "水果",
+        "辟谣",
+        "饮食"
+      ],
+      "hook": "颠覆认知",
+      "dataRef": [
+        "西瓜GI72但GL低",
+        "苹果GI38富含果胶"
+      ],
+      "angle": "反常识+数字佐证",
+      "audience": "血糖偏高者/中老年",
+      "trend": "持续热门",
+      "note": "核心冲突：大家都以为水果甜=升糖快"
+    },
+    {
+      "id": 2,
+      "title": "糖尿病人不能吃米饭？营养师告诉你真相",
+      "cat": "myth",
+      "catName": "辟谣纠偏",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "380w+",
+          "likes": "18w+",
+          "saves": "6w+",
+          "comment": "8600"
+        },
+        "xhs": {
+          "views": "95w+",
+          "likes": "5.2w+",
+          "saves": "3.8w+",
+          "comment": "2600"
+        },
+        "bili": {
+          "views": "62w+",
+          "likes": "2.5w+",
+          "saves": "1.1w+",
+          "comment": "1800"
+        }
+      },
+      "tags": [
+        "主食",
+        "米饭",
+        "辟谣"
+      ],
+      "hook": "打破迷思",
+      "dataRef": [
+        "白米GI83可降低",
+        "糙米GI50替代方案"
+      ],
+      "angle": "权威纠正+实操替代",
+      "audience": "糖友/家属/中老年",
+      "trend": "常青选题",
+      "note": "情绪价值：消除恐惧感"
+    },
+    {
+      "id": 3,
+      "title": "0糖饮料真的不升血糖？代糖的3个隐藏风险",
+      "cat": "myth",
+      "catName": "辟谣纠偏",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "420w+",
+          "likes": "22w+",
+          "saves": "9w+",
+          "comment": "1.5w"
+        },
+        "xhs": {
+          "views": "180w+",
+          "likes": "8.8w+",
+          "saves": "5.6w+",
+          "comment": "4200"
+        },
+        "bili": {
+          "views": "95w+",
+          "likes": "4.1w+",
+          "saves": "2.2w+",
+          "comment": "3500"
+        }
+      },
+      "tags": [
+        "代糖",
+        "0糖",
+        "饮料"
+      ],
+      "hook": "行业揭秘",
+      "dataRef": [
+        "赤藓糖醇研究数据",
+        "阿斯巴甜WHO分类"
+      ],
+      "angle": "消费陷阱+健康预警",
+      "audience": "年轻人/控糖者",
+      "trend": "爆发期",
+      "note": "年轻人最关心的话题之一"
+    },
+    {
+      "id": 4,
+      "title": "空腹血糖正常就没事？餐后血糖才是隐形杀手",
+      "cat": "myth",
+      "catName": "辟谣纠偏",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "260w+",
+          "likes": "14w+",
+          "saves": "5w+",
+          "comment": "6800"
+        },
+        "xhs": {
+          "views": "72w+",
+          "likes": "3.8w+",
+          "saves": "2.8w+",
+          "comment": "1800"
+        },
+        "bili": {
+          "views": "55w+",
+          "likes": "2.1w+",
+          "saves": "980+",
+          "comment": "1500"
+        }
+      },
+      "tags": [
+        "空腹血糖",
+        "餐后血糖",
+        "监测"
+      ],
+      "hook": "认知盲区",
+      "dataRef": [
+        "餐后2h>7.8即异常",
+        "50%漏诊率"
+      ],
+      "angle": "信息差+健康警示",
+      "audience": "体检人群/35+",
+      "trend": "上升中",
+      "note": "很多人只查空腹不查餐后"
+    },
+    {
+      "id": 5,
+      "title": "南瓜能降血糖？这5个控糖偏方都是假的",
+      "cat": "myth",
+      "catName": "辟谣纠偏",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "320w+",
+          "likes": "16w+",
+          "saves": "7w+",
+          "comment": "9200"
+        },
+        "xhs": {
+          "views": "88w+",
+          "likes": "4.6w+",
+          "saves": "3.5w+",
+          "comment": "2400"
+        },
+        "bili": {
+          "views": "48w+",
+          "likes": "2w+",
+          "saves": "1.2w+",
+          "comment": "1600"
+        }
+      },
+      "tags": [
+        "偏方",
+        "南瓜",
+        "辟谣"
+      ],
+      "hook": "打假系列",
+      "dataRef": [
+        "南瓜GI75",
+        "苦瓜并无降糖证据"
+      ],
+      "angle": "长辈认知纠偏",
+      "audience": "中老年/糖友家属",
+      "trend": "常青",
+      "note": "中老年群体传播最广的偏方"
+    },
+    {
+      "id": 6,
+      "title": "控糖万能公式：记住这4样，80%的血糖难题迎刃而解",
+      "cat": "food",
+      "catName": "饮食指南",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "450w+",
+          "likes": "28w+",
+          "saves": "12w+",
+          "comment": "1.8w"
+        },
+        "xhs": {
+          "views": "150w+",
+          "likes": "7.2w+",
+          "saves": "5.8w+",
+          "comment": "3800"
+        },
+        "bili": {
+          "views": "78w+",
+          "likes": "3.5w+",
+          "saves": "2w+",
+          "comment": "2400"
+        }
+      },
+      "tags": [
+        "控糖",
+        "公式",
+        "饮食"
+      ],
+      "hook": "万能公式",
+      "dataRef": [
+        "先菜后饭+蛋白质+粗细搭配+餐后散步"
+      ],
+      "angle": "简化复杂认知",
+      "audience": "所有血糖关注者",
+      "trend": "爆款",
+      "note": "公式化内容收藏率极高"
+    },
+    {
+      "id": 7,
+      "title": "吃米饭的正确顺序：换一下吃饭顺序，血糖稳一半",
+      "cat": "food",
+      "catName": "饮食指南",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "580w+",
+          "likes": "32w+",
+          "saves": "15w+",
+          "comment": "2.1w"
+        },
+        "xhs": {
+          "views": "200w+",
+          "likes": "9.5w+",
+          "saves": "7.2w+",
+          "comment": "5200"
+        },
+        "bili": {
+          "views": "110w+",
+          "likes": "5w+",
+          "saves": "3w+",
+          "comment": "3800"
+        }
+      },
+      "tags": [
+        "吃饭顺序",
+        "进餐顺序",
+        "控糖"
+      ],
+      "hook": "简单有效",
+      "dataRef": [
+        "蔬菜→蛋白质→碳水",
+        "血糖波动降低40%"
+      ],
+      "angle": "零成本习惯改变",
+      "audience": "所有人群",
+      "trend": "超级爆款",
+      "note": "全网验证过的爆款选题"
+    },
+    {
+      "id": 8,
+      "title": "这6种主食GI值低还能饱腹，血糖高的放心吃",
+      "cat": "food",
+      "catName": "饮食指南",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "350w+",
+          "likes": "20w+",
+          "saves": "10w+",
+          "comment": "1.1w"
+        },
+        "xhs": {
+          "views": "130w+",
+          "likes": "6.8w+",
+          "saves": "5.5w+",
+          "comment": "3500"
+        },
+        "bili": {
+          "views": "72w+",
+          "likes": "3w+",
+          "saves": "1.8w+",
+          "comment": "2200"
+        }
+      },
+      "tags": [
+        "主食",
+        "低GI",
+        "替代方案"
+      ],
+      "hook": "解决方案",
+      "dataRef": [
+        "燕麦GI55/荞麦GI49/藜麦GI53"
+      ],
+      "angle": "替代清单+具体数据",
+      "audience": "控糖者/减脂人群",
+      "trend": "持续热门",
+      "note": "收藏属性强，反复参考"
+    },
+    {
+      "id": 9,
+      "title": "睡前饿了吃什么不升血糖？5种夜宵推荐",
+      "cat": "food",
+      "catName": "饮食指南",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "220w+",
+          "likes": "12w+",
+          "saves": "6w+",
+          "comment": "5600"
+        },
+        "xhs": {
+          "views": "85w+",
+          "likes": "4.2w+",
+          "saves": "3.8w+",
+          "comment": "2200"
+        },
+        "bili": {
+          "views": "42w+",
+          "likes": "1.8w+",
+          "saves": "1w+",
+          "comment": "1200"
+        }
+      },
+      "tags": [
+        "夜宵",
+        "控糖",
+        "加餐"
+      ],
+      "hook": "痛点解决",
+      "dataRef": [
+        "无糖酸奶GI15/坚果/黄瓜/鸡蛋"
+      ],
+      "angle": "场景化解决方案",
+      "audience": "糖友/夜猫子",
+      "trend": "稳定",
+      "note": "切中真实生活场景"
+    },
+    {
+      "id": 10,
+      "title": "外卖点餐攻略：血糖高的人怎么点外卖",
+      "cat": "food",
+      "catName": "饮食指南",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "180w+",
+          "likes": "10w+",
+          "saves": "5.5w+",
+          "comment": "4800"
+        },
+        "xhs": {
+          "views": "110w+",
+          "likes": "5.5w+",
+          "saves": "4.2w+",
+          "comment": "2800"
+        },
+        "bili": {
+          "views": "35w+",
+          "likes": "1.5w+",
+          "saves": "800+",
+          "comment": "900"
+        }
+      },
+      "tags": [
+        "外卖",
+        "点餐",
+        "实操"
+      ],
+      "hook": "生活刚需",
+      "dataRef": [
+        "少酱少油/粗粮替代/加菜减饭"
+      ],
+      "angle": "生活场景落地",
+      "audience": "上班族/年轻人",
+      "trend": "上升中",
+      "note": "年轻群体刚需"
+    },
+    {
+      "id": 11,
+      "title": "煮米饭加一物，GI值降一半，血糖稳了",
+      "cat": "food",
+      "catName": "饮食指南",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "400w+",
+          "likes": "24w+",
+          "saves": "11w+",
+          "comment": "1.3w"
+        },
+        "xhs": {
+          "views": "160w+",
+          "likes": "8w+",
+          "saves": "6.5w+",
+          "comment": "4000"
+        },
+        "bili": {
+          "views": "88w+",
+          "likes": "3.8w+",
+          "saves": "2.2w+",
+          "comment": "2600"
+        }
+      },
+      "tags": [
+        "米饭",
+        "GI值",
+        "烹饪技巧"
+      ],
+      "hook": "一招见效",
+      "dataRef": [
+        "加豆类/加醋/加椰子油"
+      ],
+      "angle": "简单技巧+科学原理解释",
+      "audience": "家庭烹饪者",
+      "trend": "持续热门",
+      "note": "实用性强，传播度高"
+    },
+    {
+      "id": 12,
+      "title": "血糖值多少算正常？一张表看懂你的血糖",
+      "cat": "number",
+      "catName": "数字科普",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "620w+",
+          "likes": "35w+",
+          "saves": "18w+",
+          "comment": "2.5w"
+        },
+        "xhs": {
+          "views": "250w+",
+          "likes": "12w+",
+          "saves": "9.5w+",
+          "comment": "6500"
+        },
+        "bili": {
+          "views": "130w+",
+          "likes": "6w+",
+          "saves": "4w+",
+          "comment": "4200"
+        }
+      },
+      "tags": [
+        "血糖标准",
+        "正常值",
+        "参考表"
+      ],
+      "hook": "人人都需要",
+      "dataRef": [
+        "空腹3.9-6.1/餐后<7.8/HbA1c<5.7%"
+      ],
+      "angle": "实用工具型内容",
+      "audience": "所有成年人",
+      "trend": "超级爆款",
+      "note": "基础刚需，每月都能发"
+    },
+    {
+      "id": 13,
+      "title": "35岁以后血糖警戒线：这个数值要注意了",
+      "cat": "number",
+      "catName": "数字科普",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "480w+",
+          "likes": "26w+",
+          "saves": "10w+",
+          "comment": "1.6w"
+        },
+        "xhs": {
+          "views": "140w+",
+          "likes": "7w+",
+          "saves": "5w+",
+          "comment": "3200"
+        },
+        "bili": {
+          "views": "65w+",
+          "likes": "2.8w+",
+          "saves": "1.5w+",
+          "comment": "2000"
+        }
+      },
+      "tags": [
+        "35岁",
+        "血糖警戒",
+        "年龄分层"
+      ],
+      "hook": "年龄焦虑",
+      "dataRef": [
+        "空腹5.6即糖前/餐后2h>7.8需干预"
+      ],
+      "angle": "年龄标签+预警数字",
+      "audience": "35+职场人群",
+      "trend": "爆款",
+      "note": "年龄标签增加点击率"
+    },
+    {
+      "id": 14,
+      "title": "糖化血红蛋白6.5%是什么意思？一文看懂",
+      "cat": "number",
+      "catName": "数字科普",
+      "heat": "steady",
+      "platforms": {
+        "dy": {
+          "views": "180w+",
+          "likes": "10w+",
+          "saves": "5w+",
+          "comment": "4200"
+        },
+        "xhs": {
+          "views": "65w+",
+          "likes": "3.5w+",
+          "saves": "2.8w+",
+          "comment": "1500"
+        },
+        "bili": {
+          "views": "45w+",
+          "likes": "2.2w+",
+          "saves": "1.3w+",
+          "comment": "1800"
+        }
+      },
+      "tags": [
+        "糖化血红蛋白",
+        "HbA1c",
+        "指标解读"
+      ],
+      "hook": "体检报告解读",
+      "dataRef": [
+        "<5.7%正常/5.7-6.4%糖前/>=6.5%糖尿病"
+      ],
+      "angle": "报告翻译",
+      "audience": "体检人群",
+      "trend": "常青",
+      "note": "体检季流量高峰"
+    },
+    {
+      "id": 15,
+      "title": "血糖从12降到6，他只做了这3件事",
+      "cat": "number",
+      "catName": "数字科普",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "350w+",
+          "likes": "19w+",
+          "saves": "8w+",
+          "comment": "1.2w"
+        },
+        "xhs": {
+          "views": "100w+",
+          "likes": "5w+",
+          "saves": "4w+",
+          "comment": "2600"
+        },
+        "bili": {
+          "views": "58w+",
+          "likes": "2.5w+",
+          "saves": "1.5w+",
+          "comment": "1900"
+        }
+      },
+      "tags": [
+        "降血糖",
+        "案例",
+        "数字对比"
+      ],
+      "hook": "前后对比",
+      "dataRef": [
+        "具体方法和时间线"
+      ],
+      "angle": "案例故事+数字冲击",
+      "audience": "糖友/控糖者",
+      "trend": "上升中",
+      "note": "数字对比极具传播力"
+    },
+    {
+      "id": 16,
+      "title": "饭后散步15分钟，血糖降30%？走路姿势有讲究",
+      "cat": "action",
+      "catName": "实操方法",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "380w+",
+          "likes": "22w+",
+          "saves": "9w+",
+          "comment": "1.1w"
+        },
+        "xhs": {
+          "views": "120w+",
+          "likes": "6w+",
+          "saves": "4.8w+",
+          "comment": "3000"
+        },
+        "bili": {
+          "views": "70w+",
+          "likes": "3.2w+",
+          "saves": "1.8w+",
+          "comment": "2200"
+        }
+      },
+      "tags": [
+        "运动",
+        "散步",
+        "餐后"
+      ],
+      "hook": "懒人控糖",
+      "dataRef": [
+        "餐后15-30分钟开始/快走优于慢走"
+      ],
+      "angle": "低门槛运动处方",
+      "audience": "所有血糖关注者",
+      "trend": "持续热门",
+      "note": "零成本，人人可执行"
+    },
+    {
+      "id": 17,
+      "title": "血糖飙升的3个时间点，学会了自己在家就能稳",
+      "cat": "action",
+      "catName": "实操方法",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "280w+",
+          "likes": "15w+",
+          "saves": "6w+",
+          "comment": "7800"
+        },
+        "xhs": {
+          "views": "90w+",
+          "likes": "4.5w+",
+          "saves": "3.5w+",
+          "comment": "2000"
+        },
+        "bili": {
+          "views": "52w+",
+          "likes": "2.3w+",
+          "saves": "1.2w+",
+          "comment": "1600"
+        }
+      },
+      "tags": [
+        "监测",
+        "时间点",
+        "自测"
+      ],
+      "hook": "时间规律",
+      "dataRef": [
+        "晨起/餐后2h/睡前/凌晨3点"
+      ],
+      "angle": "时间轴+实操指引",
+      "audience": "居家监测者",
+      "trend": "稳定",
+      "note": "可配血糖仪实操画面"
+    },
+    {
+      "id": 18,
+      "title": "控糖第一天怎么吃？一份新手保姆级食谱",
+      "cat": "action",
+      "catName": "实操方法",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "320w+",
+          "likes": "18w+",
+          "saves": "12w+",
+          "comment": "9500"
+        },
+        "xhs": {
+          "views": "170w+",
+          "likes": "8.5w+",
+          "saves": "7w+",
+          "comment": "4500"
+        },
+        "bili": {
+          "views": "60w+",
+          "likes": "2.8w+",
+          "saves": "2w+",
+          "comment": "2000"
+        }
+      },
+      "tags": [
+        "食谱",
+        "新手入门",
+        "一日三餐"
+      ],
+      "hook": "新手友好",
+      "dataRef": [
+        "早餐/午餐/晚餐/加餐具体方案"
+      ],
+      "angle": "保姆级教程",
+      "audience": "刚发现血糖偏高者",
+      "trend": "持续热门",
+      "note": "收藏率极高的教程型内容"
+    },
+    {
+      "id": 19,
+      "title": "运动降糖的黄金30分钟：什么时间运动最有效",
+      "cat": "action",
+      "catName": "实操方法",
+      "heat": "steady",
+      "platforms": {
+        "dy": {
+          "views": "200w+",
+          "likes": "11w+",
+          "saves": "5w+",
+          "comment": "5200"
+        },
+        "xhs": {
+          "views": "75w+",
+          "likes": "4w+",
+          "saves": "3w+",
+          "comment": "1800"
+        },
+        "bili": {
+          "views": "48w+",
+          "likes": "2.1w+",
+          "saves": "1.3w+",
+          "comment": "1500"
+        }
+      },
+      "tags": [
+        "运动时间",
+        "黄金时间",
+        "降糖"
+      ],
+      "hook": "科学验证",
+      "dataRef": [
+        "餐后30-60分钟/阻抗+有氧组合"
+      ],
+      "angle": "科学时间+运动处方",
+      "audience": "运动爱好者/糖友",
+      "trend": "常青",
+      "note": "运动类内容互动率高"
+    },
+    {
+      "id": 20,
+      "title": "7天血糖记录表：这样记血糖，医生都夸你专业",
+      "cat": "action",
+      "catName": "实操方法",
+      "heat": "steady",
+      "platforms": {
+        "dy": {
+          "views": "150w+",
+          "likes": "8w+",
+          "saves": "6w+",
+          "comment": "3800"
+        },
+        "xhs": {
+          "views": "95w+",
+          "likes": "5.2w+",
+          "saves": "4.8w+",
+          "comment": "2500"
+        },
+        "bili": {
+          "views": "38w+",
+          "likes": "1.8w+",
+          "saves": "1.5w+",
+          "comment": "1100"
+        }
+      },
+      "tags": [
+        "记录",
+        "血糖日记",
+        "监测方法"
+      ],
+      "hook": "专业工具",
+      "dataRef": [
+        "空腹/餐前/餐后/睡前四维记录"
+      ],
+      "angle": "可下载模板型",
+      "audience": "居家监测者/糖友",
+      "trend": "稳定",
+      "note": "工具型内容天然高收藏"
+    },
+    {
+      "id": 21,
+      "title": "皮肤发痒、视力模糊？身体发出的5个高血糖信号",
+      "cat": "symptom",
+      "catName": "症状预警",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "520w+",
+          "likes": "30w+",
+          "saves": "14w+",
+          "comment": "2.2w"
+        },
+        "xhs": {
+          "views": "190w+",
+          "likes": "9w+",
+          "saves": "7w+",
+          "comment": "5000"
+        },
+        "bili": {
+          "views": "105w+",
+          "likes": "5.2w+",
+          "saves": "3.5w+",
+          "comment": "4000"
+        }
+      },
+      "tags": [
+        "症状",
+        "预警",
+        "高血糖"
+      ],
+      "hook": "身体信号",
+      "dataRef": [
+        "皮肤瘙痒/口干多饮/视力变化/伤口愈合慢"
+      ],
+      "angle": "症状自查清单",
+      "audience": "35+人群/亚健康",
+      "trend": "超级爆款",
+      "note": "恐惧驱动型内容，传播力强"
+    },
+    {
+      "id": 22,
+      "title": "总是犯困不是因为懒！可能是餐后血糖在报警",
+      "cat": "symptom",
+      "catName": "症状预警",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "290w+",
+          "likes": "16w+",
+          "saves": "6.5w+",
+          "comment": "8800"
+        },
+        "xhs": {
+          "views": "82w+",
+          "likes": "4.2w+",
+          "saves": "3.2w+",
+          "comment": "2100"
+        },
+        "bili": {
+          "views": "45w+",
+          "likes": "2w+",
+          "saves": "1.1w+",
+          "comment": "1300"
+        }
+      },
+      "tags": [
+        "犯困",
+        "餐后嗜睡",
+        "症状"
+      ],
+      "hook": "日常现象重新解读",
+      "dataRef": [
+        "餐后血糖>10易嗜睡/胰岛素抵抗"
+      ],
+      "angle": "常见现象的科学解释",
+      "audience": "上班族/中年人",
+      "trend": "上升中",
+      "note": "人人都有的体验"
+    },
+    {
+      "id": 23,
+      "title": "手指发麻别只怪颈椎！高血糖的10个隐匿信号",
+      "cat": "symptom",
+      "catName": "症状预警",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "340w+",
+          "likes": "20w+",
+          "saves": "8.5w+",
+          "comment": "1.3w"
+        },
+        "xhs": {
+          "views": "115w+",
+          "likes": "5.8w+",
+          "saves": "4.5w+",
+          "comment": "3200"
+        },
+        "bili": {
+          "views": "72w+",
+          "likes": "3.2w+",
+          "saves": "2w+",
+          "comment": "2800"
+        }
+      },
+      "tags": [
+        "并发症",
+        "神经病变",
+        "信号"
+      ],
+      "hook": "误诊提醒",
+      "dataRef": [
+        "周围神经病变/自主神经病变"
+      ],
+      "angle": "误诊案例+正确认知",
+      "audience": "35+/体检人群",
+      "trend": "持续热门",
+      "note": "健康焦虑型内容"
+    },
+    {
+      "id": 24,
+      "title": "动态血糖仪真的有用吗？戴了30天后我的真实体验",
+      "cat": "tool",
+      "catName": "工具测评",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "300w+",
+          "likes": "18w+",
+          "saves": "8w+",
+          "comment": "1.1w"
+        },
+        "xhs": {
+          "views": "200w+",
+          "likes": "10w+",
+          "saves": "8w+",
+          "comment": "5800"
+        },
+        "bili": {
+          "views": "85w+",
+          "likes": "4.5w+",
+          "saves": "3w+",
+          "comment": "3500"
+        }
+      },
+      "tags": [
+        "动态血糖仪",
+        "CGM",
+        "测评"
+      ],
+      "hook": "真实测评",
+      "dataRef": [
+        "雅培/三诺/硅基/鱼跃对比"
+      ],
+      "angle": "亲身体验+数据对比",
+      "audience": "控糖者/健康管理爱好者",
+      "trend": "爆发期",
+      "note": "小红书控糖话题衍生品，热度暴涨"
+    },
+    {
+      "id": 25,
+      "title": "家用血糖仪怎么选？2025年6款热门机型对比",
+      "cat": "tool",
+      "catName": "工具测评",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "220w+",
+          "likes": "13w+",
+          "saves": "7w+",
+          "comment": "6500"
+        },
+        "xhs": {
+          "views": "130w+",
+          "likes": "6.5w+",
+          "saves": "5.2w+",
+          "comment": "3200"
+        },
+        "bili": {
+          "views": "92w+",
+          "likes": "4.8w+",
+          "saves": "3.5w+",
+          "comment": "4000"
+        }
+      },
+      "tags": [
+        "血糖仪",
+        "选购指南",
+        "测评"
+      ],
+      "hook": "选购指南",
+      "dataRef": [
+        "准确度/采血量/价格/试纸成本"
+      ],
+      "angle": "横向测评+购买建议",
+      "audience": "糖友/家属",
+      "trend": "稳定",
+      "note": "工具测评天然高收藏"
+    },
+    {
+      "id": 26,
+      "title": "控糖APP哪个好用？5款热门APP深度测评",
+      "cat": "tool",
+      "catName": "工具测评",
+      "heat": "steady",
+      "platforms": {
+        "dy": {
+          "views": "150w+",
+          "likes": "8w+",
+          "saves": "4w+",
+          "comment": "3200"
+        },
+        "xhs": {
+          "views": "85w+",
+          "likes": "4w+",
+          "saves": "3w+",
+          "comment": "1800"
+        },
+        "bili": {
+          "views": "55w+",
+          "likes": "2.5w+",
+          "saves": "1.8w+",
+          "comment": "2200"
+        }
+      },
+      "tags": [
+        "APP",
+        "测评",
+        "控糖工具"
+      ],
+      "hook": "效率工具",
+      "dataRef": [
+        "记录/分析/提醒/社区四大维度"
+      ],
+      "angle": "功能对比+推荐",
+      "audience": "数字化控糖者",
+      "trend": "稳定",
+      "note": "数字化健康管理趋势"
+    },
+    {
+      "id": 27,
+      "title": "32岁查出糖尿病前期：我是怎么用半年逆转的",
+      "cat": "story",
+      "catName": "案例故事",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "450w+",
+          "likes": "28w+",
+          "saves": "10w+",
+          "comment": "2w"
+        },
+        "xhs": {
+          "views": "180w+",
+          "likes": "9w+",
+          "saves": "6.5w+",
+          "comment": "4500"
+        },
+        "bili": {
+          "views": "120w+",
+          "likes": "5.5w+",
+          "saves": "3.2w+",
+          "comment": "5000"
+        }
+      },
+      "tags": [
+        "逆转",
+        "案例",
+        "年轻人"
+      ],
+      "hook": "真实经历",
+      "dataRef": [
+        "具体时间线/饮食/运动/血糖变化"
+      ],
+      "angle": "同龄人故事+可复制路径",
+      "audience": "年轻人/糖前人群",
+      "trend": "爆款",
+      "note": "年轻化叙事，共鸣感极强"
+    },
+    {
+      "id": 28,
+      "title": "我妈血糖从15降到6.5，全家饮食都变了",
+      "cat": "story",
+      "catName": "案例故事",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "380w+",
+          "likes": "22w+",
+          "saves": "9w+",
+          "comment": "1.5w"
+        },
+        "xhs": {
+          "views": "140w+",
+          "likes": "7w+",
+          "saves": "5.5w+",
+          "comment": "3500"
+        },
+        "bili": {
+          "views": "68w+",
+          "likes": "3w+",
+          "saves": "2w+",
+          "comment": "2800"
+        }
+      },
+      "tags": [
+        "家庭",
+        "案例",
+        "饮食改变"
+      ],
+      "hook": "家庭故事",
+      "dataRef": [
+        "全家饮食结构调整方案"
+      ],
+      "angle": "家庭视角+具体改变",
+      "audience": "糖友家属/中年人",
+      "trend": "持续热门",
+      "note": "家庭场景共鸣强"
+    },
+    {
+      "id": 29,
+      "title": "外卖小哥查出高血糖后的3个月：不花钱的控糖法",
+      "cat": "story",
+      "catName": "案例故事",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "260w+",
+          "likes": "15w+",
+          "saves": "6w+",
+          "comment": "9200"
+        },
+        "xhs": {
+          "views": "78w+",
+          "likes": "4w+",
+          "saves": "3w+",
+          "comment": "2200"
+        },
+        "bili": {
+          "views": "55w+",
+          "likes": "2.5w+",
+          "saves": "1.5w+",
+          "comment": "2000"
+        }
+      },
+      "tags": [
+        "外卖",
+        "案例",
+        "低成本"
+      ],
+      "hook": "职业群体",
+      "dataRef": [
+        "工作间歇控糖方法"
+      ],
+      "angle": "特殊职业+低成本方案",
+      "audience": "外卖/快递/司机",
+      "trend": "上升中",
+      "note": "职业标签增加传播力"
+    },
+    {
+      "id": 30,
+      "title": "从每天打胰岛素到停药：一个2型糖友的真实记录",
+      "cat": "story",
+      "catName": "案例故事",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "420w+",
+          "likes": "25w+",
+          "saves": "11w+",
+          "comment": "1.8w"
+        },
+        "xhs": {
+          "views": "110w+",
+          "likes": "5.5w+",
+          "saves": "4.2w+",
+          "comment": "3000"
+        },
+        "bili": {
+          "views": "95w+",
+          "likes": "4.5w+",
+          "saves": "2.8w+",
+          "comment": "3800"
+        }
+      },
+      "tags": [
+        "胰岛素",
+        "逆转",
+        "真实记录"
+      ],
+      "hook": "戏剧性转折",
+      "dataRef": [
+        "减重+饮食+运动综合干预"
+      ],
+      "angle": "前后对比+医学 disclaimer",
+      "audience": "糖友/家属",
+      "trend": "常青",
+      "note": "需注意不要承诺停药效果"
+    },
+    {
+      "id": 31,
+      "title": "控糖路上的8个坑，90%的人都踩过",
+      "cat": "mistake",
+      "catName": "避坑指南",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "480w+",
+          "likes": "27w+",
+          "saves": "13w+",
+          "comment": "2w"
+        },
+        "xhs": {
+          "views": "170w+",
+          "likes": "8.5w+",
+          "saves": "7w+",
+          "comment": "4200"
+        },
+        "bili": {
+          "views": "90w+",
+          "likes": "4.2w+",
+          "saves": "2.8w+",
+          "comment": "3500"
+        }
+      },
+      "tags": [
+        "避坑",
+        "常见错误",
+        "控糖"
+      ],
+      "hook": "避坑清单",
+      "dataRef": [
+        "不吃主食/只查空腹/过度节食等8个坑"
+      ],
+      "angle": "清单式+纠正方法",
+      "audience": "所有控糖者",
+      "trend": "爆款",
+      "note": "清单型内容天然高收藏"
+    },
+    {
+      "id": 32,
+      "title": "这3种早餐组合是升糖炸弹，很多人天天吃",
+      "cat": "mistake",
+      "catName": "避坑指南",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "400w+",
+          "likes": "23w+",
+          "saves": "10w+",
+          "comment": "1.4w"
+        },
+        "xhs": {
+          "views": "135w+",
+          "likes": "6.8w+",
+          "saves": "5.2w+",
+          "comment": "3500"
+        },
+        "bili": {
+          "views": "62w+",
+          "likes": "2.8w+",
+          "saves": "1.8w+",
+          "comment": "2200"
+        }
+      },
+      "tags": [
+        "早餐",
+        "升糖",
+        "避坑"
+      ],
+      "hook": "日常习惯",
+      "dataRef": [
+        "白粥+馒头/油条+豆浆/面包+果汁"
+      ],
+      "angle": "常见组合+替代方案",
+      "audience": "所有人群",
+      "trend": "持续热门",
+      "note": "打破日常习惯认知"
+    },
+    {
+      "id": 33,
+      "title": "打着控糖旗号在伤身：这5种做法比不吃还糟",
+      "cat": "mistake",
+      "catName": "避坑指南",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "280w+",
+          "likes": "16w+",
+          "saves": "7w+",
+          "comment": "8500"
+        },
+        "xhs": {
+          "views": "92w+",
+          "likes": "4.8w+",
+          "saves": "3.8w+",
+          "comment": "2500"
+        },
+        "bili": {
+          "views": "50w+",
+          "likes": "2.2w+",
+          "saves": "1.5w+",
+          "comment": "1800"
+        }
+      },
+      "tags": [
+        "控糖误区",
+        "过度控糖",
+        "伤害"
+      ],
+      "hook": "矫枉过正",
+      "dataRef": [
+        "完全断碳水/只吃蔬菜/过度运动等"
+      ],
+      "angle": "反向警示",
+      "audience": "极端控糖者",
+      "trend": "上升中",
+      "note": "反思型内容差异化竞争"
+    },
+    {
+      "id": 34,
+      "title": "降糖药不能乱吃！这3个时间吃错了白吃",
+      "cat": "mistake",
+      "catName": "避坑指南",
+      "heat": "steady",
+      "platforms": {
+        "dy": {
+          "views": "250w+",
+          "likes": "14w+",
+          "saves": "6.5w+",
+          "comment": "7200"
+        },
+        "xhs": {
+          "views": "70w+",
+          "likes": "3.5w+",
+          "saves": "2.8w+",
+          "comment": "1600"
+        },
+        "bili": {
+          "views": "42w+",
+          "likes": "2w+",
+          "saves": "1.2w+",
+          "comment": "1400"
+        }
+      },
+      "tags": [
+        "降糖药",
+        "用药时间",
+        "用药误区"
+      ],
+      "hook": "用药安全",
+      "dataRef": [
+        "二甲双胍/阿卡波糖/SGLT2i服药时间"
+      ],
+      "angle": "用药科普+时间对照表",
+      "audience": "服药糖友",
+      "trend": "常青",
+      "note": "专业医疗内容需 disclaimer"
+    },
+    {
+      "id": 35,
+      "title": "体检前一天的5个行为，会让血糖数据全错",
+      "cat": "mistake",
+      "catName": "避坑指南",
+      "heat": "steady",
+      "platforms": {
+        "dy": {
+          "views": "200w+",
+          "likes": "11w+",
+          "saves": "5w+",
+          "comment": "5800"
+        },
+        "xhs": {
+          "views": "68w+",
+          "likes": "3.5w+",
+          "saves": "2.8w+",
+          "comment": "1500"
+        },
+        "bili": {
+          "views": "35w+",
+          "likes": "1.6w+",
+          "saves": "1w+",
+          "comment": "1100"
+        }
+      },
+      "tags": [
+        "体检",
+        "血糖检测",
+        "注意事项"
+      ],
+      "hook": "体检必看",
+      "dataRef": [
+        "剧烈运动/饮酒/空腹过久/药物影响"
+      ],
+      "angle": "时间节点+行为清单",
+      "audience": "体检人群",
+      "trend": "体检季爆发",
+      "note": "季节性话题，体检季流量翻倍"
+    },
+    {
+      "id": 36,
+      "title": "65岁以后血糖标准不一样了，对照看看你达标没",
+      "cat": "number",
+      "catName": "数字科普",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "380w+",
+          "likes": "22w+",
+          "saves": "9w+",
+          "comment": "1.5w"
+        },
+        "xhs": {
+          "views": "105w+",
+          "likes": "5.2w+",
+          "saves": "4w+",
+          "comment": "2800"
+        },
+        "bili": {
+          "views": "58w+",
+          "likes": "2.6w+",
+          "saves": "1.5w+",
+          "comment": "2000"
+        }
+      },
+      "tags": [
+        "老年",
+        "血糖标准",
+        "年龄分层"
+      ],
+      "hook": "年龄差异",
+      "dataRef": [
+        "老年宽松标准7.8-10.0/个体化目标"
+      ],
+      "angle": "年龄标签+差异化标准",
+      "audience": "中老年/家属",
+      "trend": "爆款",
+      "note": "中老年群体最关注的数字"
+    },
+    {
+      "id": 37,
+      "title": "牛奶升不升血糖？营养师告诉你答案",
+      "cat": "myth",
+      "catName": "辟谣纠偏",
+      "heat": "steady",
+      "platforms": {
+        "dy": {
+          "views": "180w+",
+          "likes": "10w+",
+          "saves": "4.5w+",
+          "comment": "4200"
+        },
+        "xhs": {
+          "views": "72w+",
+          "likes": "3.8w+",
+          "saves": "2.8w+",
+          "comment": "1400"
+        },
+        "bili": {
+          "views": "30w+",
+          "likes": "1.4w+",
+          "saves": "800+",
+          "comment": "900"
+        }
+      },
+      "tags": [
+        "牛奶",
+        "辟谣",
+        "饮品"
+      ],
+      "hook": "认知澄清",
+      "dataRef": [
+        "纯牛奶GI27/含乳糖但蛋白质延缓吸收"
+      ],
+      "angle": "科学原理解释",
+      "audience": "糖友/牛奶爱好者",
+      "trend": "常青",
+      "note": "高频提问话题"
+    },
+    {
+      "id": 38,
+      "title": "3种廉价食材，是天然的血糖稳定剂",
+      "cat": "food",
+      "catName": "饮食指南",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "320w+",
+          "likes": "18w+",
+          "saves": "8w+",
+          "comment": "1.1w"
+        },
+        "xhs": {
+          "views": "110w+",
+          "likes": "5.5w+",
+          "saves": "4.5w+",
+          "comment": "3000"
+        },
+        "bili": {
+          "views": "55w+",
+          "likes": "2.5w+",
+          "saves": "1.5w+",
+          "comment": "1800"
+        }
+      },
+      "tags": [
+        "食材",
+        "便宜",
+        "天然"
+      ],
+      "hook": "低成本",
+      "dataRef": [
+        "苦瓜/肉桂/醋/奇亚籽"
+      ],
+      "angle": "经济实惠+科学佐证",
+      "audience": "家庭主妇/控糖者",
+      "trend": "上升中",
+      "note": "廉价标签降低传播门槛"
+    },
+    {
+      "id": 39,
+      "title": "你测血糖的方法可能是错的！正确姿势看这里",
+      "cat": "action",
+      "catName": "实操方法",
+      "heat": "steady",
+      "platforms": {
+        "dy": {
+          "views": "230w+",
+          "likes": "13w+",
+          "saves": "6w+",
+          "comment": "5800"
+        },
+        "xhs": {
+          "views": "80w+",
+          "likes": "4w+",
+          "saves": "3.2w+",
+          "comment": "2000"
+        },
+        "bili": {
+          "views": "45w+",
+          "likes": "2w+",
+          "saves": "1.3w+",
+          "comment": "1600"
+        }
+      },
+      "tags": [
+        "测血糖",
+        "姿势",
+        "方法"
+      ],
+      "hook": "你可能做错了",
+      "dataRef": [
+        "采血部位/消毒/第一滴血弃去/读数时间"
+      ],
+      "angle": "纠错教程",
+      "audience": "居家监测者",
+      "trend": "常青",
+      "note": "教学型内容完播率高"
+    },
+    {
+      "id": 40,
+      "title": "控糖人必学的6个超市购物技巧",
+      "cat": "action",
+      "catName": "实操方法",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "200w+",
+          "likes": "12w+",
+          "saves": "7w+",
+          "comment": "5200"
+        },
+        "xhs": {
+          "views": "130w+",
+          "likes": "6.5w+",
+          "saves": "5.5w+",
+          "comment": "3500"
+        },
+        "bili": {
+          "views": "38w+",
+          "likes": "1.8w+",
+          "saves": "1.3w+",
+          "comment": "1200"
+        }
+      },
+      "tags": [
+        "超市",
+        "购物",
+        "看配料表"
+      ],
+      "hook": "生活场景",
+      "dataRef": [
+        "配料表排序/GI值标识/隐藏糖识别"
+      ],
+      "angle": "场景化教学",
+      "audience": "家庭采购者",
+      "trend": "稳定",
+      "note": "小红书购物场景天然契合"
+    },
+    {
+      "id": 41,
+      "title": "压力大会让血糖升高？情绪和血糖的关系",
+      "cat": "symptom",
+      "catName": "症状预警",
+      "heat": "steady",
+      "platforms": {
+        "dy": {
+          "views": "170w+",
+          "likes": "9w+",
+          "saves": "4w+",
+          "comment": "4500"
+        },
+        "xhs": {
+          "views": "60w+",
+          "likes": "3.2w+",
+          "saves": "2.5w+",
+          "comment": "1300"
+        },
+        "bili": {
+          "views": "48w+",
+          "likes": "2.3w+",
+          "saves": "1.5w+",
+          "comment": "2200"
+        }
+      },
+      "tags": [
+        "压力",
+        "情绪",
+        "血糖"
+      ],
+      "hook": "冷知识",
+      "dataRef": [
+        "皮质醇升高血糖/压力性高血糖"
+      ],
+      "angle": "心理-生理关联科普",
+      "audience": "职场人/高压人群",
+      "trend": "稳定",
+      "note": "心理健康角度切入血糖，差异化"
+    },
+    {
+      "id": 42,
+      "title": "全谷物控糖到底有多重要？每天吃多少才有效",
+      "cat": "food",
+      "catName": "饮食指南",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "220w+",
+          "likes": "13w+",
+          "saves": "6w+",
+          "comment": "6500"
+        },
+        "xhs": {
+          "views": "85w+",
+          "likes": "4.5w+",
+          "saves": "3.8w+",
+          "comment": "2200"
+        },
+        "bili": {
+          "views": "50w+",
+          "likes": "2.3w+",
+          "saves": "1.5w+",
+          "comment": "1800"
+        }
+      },
+      "tags": [
+        "全谷物",
+        "粗粮",
+        "控糖"
+      ],
+      "hook": "权威推荐",
+      "dataRef": [
+        "每天50-150g全谷物/降低糖尿病风险30%"
+      ],
+      "angle": "权威数据+量级建议",
+      "audience": "所有人群",
+      "trend": "上升中",
+      "note": "营养学界共识话题"
+    },
+    {
+      "id": 43,
+      "title": "熬夜真的会得糖尿病吗？睡眠和血糖的真相",
+      "cat": "symptom",
+      "catName": "症状预警",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "350w+",
+          "likes": "20w+",
+          "saves": "8w+",
+          "comment": "1.1w"
+        },
+        "xhs": {
+          "views": "95w+",
+          "likes": "5w+",
+          "saves": "4w+",
+          "comment": "2800"
+        },
+        "bili": {
+          "views": "62w+",
+          "likes": "2.8w+",
+          "saves": "1.8w+",
+          "comment": "2500"
+        }
+      },
+      "tags": [
+        "熬夜",
+        "睡眠",
+        "糖尿病"
+      ],
+      "hook": "年轻人健康",
+      "dataRef": [
+        "<6h睡眠风险增加/胰岛素敏感性下降"
+      ],
+      "angle": "生活习惯+健康风险",
+      "audience": "年轻人/上班族",
+      "trend": "持续热门",
+      "note": "年轻群体高共鸣话题"
+    },
+    {
+      "id": 44,
+      "title": "一杯奶茶等于几碗米饭？热门奶茶含糖量实测",
+      "cat": "food",
+      "catName": "饮食指南",
+      "heat": "hot",
+      "platforms": {
+        "dy": {
+          "views": "550w+",
+          "likes": "32w+",
+          "saves": "16w+",
+          "comment": "2.3w"
+        },
+        "xhs": {
+          "views": "220w+",
+          "likes": "11w+",
+          "saves": "9w+",
+          "comment": "6000"
+        },
+        "bili": {
+          "views": "130w+",
+          "likes": "6w+",
+          "saves": "4.5w+",
+          "comment": "4500"
+        }
+      },
+      "tags": [
+        "奶茶",
+        "含糖量",
+        "实测"
+      ],
+      "hook": "数据震撼",
+      "dataRef": [
+        "一杯全糖奶茶≈3-4碗米饭/65g糖"
+      ],
+      "angle": "具象化对比+实测数据",
+      "audience": "年轻人/奶茶爱好者",
+      "trend": "超级爆款",
+      "note": "奶茶是小红书/抖音超级流量话题"
+    },
+    {
+      "id": 45,
+      "title": "吃红薯比吃米饭健康？升糖对比实测",
+      "cat": "food",
+      "catName": "饮食指南",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "260w+",
+          "likes": "14w+",
+          "saves": "6w+",
+          "comment": "7200"
+        },
+        "xhs": {
+          "views": "88w+",
+          "likes": "4.5w+",
+          "saves": "3.5w+",
+          "comment": "2100"
+        },
+        "bili": {
+          "views": "45w+",
+          "likes": "2w+",
+          "saves": "1.2w+",
+          "comment": "1500"
+        }
+      },
+      "tags": [
+        "红薯",
+        "米饭",
+        "对比"
+      ],
+      "hook": "常见认知",
+      "dataRef": [
+        "蒸红薯GI54 vs 白米饭GI83/烤红薯GI82"
+      ],
+      "angle": "烹饪方式对比",
+      "audience": "控糖者/减脂人群",
+      "trend": "稳定",
+      "note": "烹饪方式决定GI差异"
+    },
+    {
+      "id": 46,
+      "title": "这5种零食血糖高的人可以放心吃",
+      "cat": "food",
+      "catName": "饮食指南",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "300w+",
+          "likes": "17w+",
+          "saves": "8w+",
+          "comment": "8800"
+        },
+        "xhs": {
+          "views": "120w+",
+          "likes": "6w+",
+          "saves": "5w+",
+          "comment": "3200"
+        },
+        "bili": {
+          "views": "42w+",
+          "likes": "2w+",
+          "saves": "1.3w+",
+          "comment": "1500"
+        }
+      },
+      "tags": [
+        "零食",
+        "低GI",
+        "推荐"
+      ],
+      "hook": "放心吃",
+      "dataRef": [
+        "坚果/黑巧克力/无糖酸奶/芝士/毛豆"
+      ],
+      "angle": "正面清单+解馋方案",
+      "audience": "控糖者/零食爱好者",
+      "trend": "持续热门",
+      "note": "正面清单型内容收藏率高"
+    },
+    {
+      "id": 47,
+      "title": "便秘会让血糖升高？肠道和血糖的关系",
+      "cat": "symptom",
+      "catName": "症状预警",
+      "heat": "steady",
+      "platforms": {
+        "dy": {
+          "views": "140w+",
+          "likes": "8w+",
+          "saves": "3.5w+",
+          "comment": "3200"
+        },
+        "xhs": {
+          "views": "52w+",
+          "likes": "2.8w+",
+          "saves": "2.2w+",
+          "comment": "1100"
+        },
+        "bili": {
+          "views": "35w+",
+          "likes": "1.6w+",
+          "saves": "1w+",
+          "comment": "1200"
+        }
+      },
+      "tags": [
+        "便秘",
+        "肠道",
+        "血糖"
+      ],
+      "hook": "冷知识",
+      "dataRef": [
+        "肠道菌群影响胰岛素敏感性"
+      ],
+      "angle": "肠道-血糖轴科普",
+      "audience": "所有人群",
+      "trend": "稳定",
+      "note": "差异化科普选题"
+    },
+    {
+      "id": 48,
+      "title": "运动后血糖反而升高？3个原因和应对方法",
+      "cat": "action",
+      "catName": "实操方法",
+      "heat": "steady",
+      "platforms": {
+        "dy": {
+          "views": "190w+",
+          "likes": "11w+",
+          "saves": "5w+",
+          "comment": "4800"
+        },
+        "xhs": {
+          "views": "65w+",
+          "likes": "3.5w+",
+          "saves": "2.8w+",
+          "comment": "1600"
+        },
+        "bili": {
+          "views": "42w+",
+          "likes": "2w+",
+          "saves": "1.2w+",
+          "comment": "1500"
+        }
+      },
+      "tags": [
+        "运动",
+        "血糖升高",
+        "反常识"
+      ],
+      "hook": "反常识",
+      "dataRef": [
+        "高强度运动/肝糖释放/黎明现象"
+      ],
+      "angle": "异常现象解释",
+      "audience": "运动糖友",
+      "trend": "常青",
+      "note": "运动爱好者专属痛点"
+    },
+    {
+      "id": 49,
+      "title": "空腹血糖高和餐后血糖高，原因完全不同",
+      "cat": "number",
+      "catName": "数字科普",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "240w+",
+          "likes": "14w+",
+          "saves": "6.5w+",
+          "comment": "7500"
+        },
+        "xhs": {
+          "views": "78w+",
+          "likes": "4w+",
+          "saves": "3w+",
+          "comment": "2000"
+        },
+        "bili": {
+          "views": "50w+",
+          "likes": "2.3w+",
+          "saves": "1.4w+",
+          "comment": "1700"
+        }
+      },
+      "tags": [
+        "空腹",
+        "餐后",
+        "血糖高"
+      ],
+      "hook": "对比分析",
+      "dataRef": [
+        "空腹高：肝糖输出/餐后高：胰岛素分泌不足"
+      ],
+      "angle": "分型解读+针对性方案",
+      "audience": "糖友/关注血糖者",
+      "trend": "稳定",
+      "note": "科普深度内容，B站表现好"
+    },
+    {
+      "id": 50,
+      "title": "pregnancy血糖高的准妈妈，这5件事必须知道",
+      "cat": "action",
+      "catName": "实操方法",
+      "heat": "warm",
+      "platforms": {
+        "dy": {
+          "views": "280w+",
+          "likes": "16w+",
+          "saves": "7.5w+",
+          "comment": "9500"
+        },
+        "xhs": {
+          "views": "150w+",
+          "likes": "7.5w+",
+          "saves": "6w+",
+          "comment": "4500"
+        },
+        "bili": {
+          "views": "55w+",
+          "likes": "2.5w+",
+          "saves": "1.8w+",
+          "comment": "2500"
+        }
+      },
+      "tags": [
+        "妊娠糖尿病",
+        "孕期",
+        "控糖"
+      ],
+      "hook": "母婴健康",
+      "dataRef": [
+        "妊娠期血糖标准/饮食/运动/监测"
+      ],
+      "angle": "孕期专属科普",
+      "audience": "孕妇/备孕女性",
+      "trend": "上升中",
+      "note": "母婴垂类高关注度"
+    }
+  ]
+}

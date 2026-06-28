@@ -38,9 +38,28 @@ def load_json(path: Path) -> dict:
 
 
 def load_foods() -> list:
-    """加载食物数据"""
-    data = load_json(ROOT / "data" / "foods" / "common-foods.json")
-    return data.get("foods", [])
+    """加载食物数据（统一使用 gi-database.json）"""
+    data = load_json(ROOT / "data" / "foods" / "gi-database.json")
+    foods = []
+    for f in data.get("foods", []):
+        foods.append({
+            "id": f["id"],
+            "name_zh": f["name_zh"],
+            "name_en": f.get("name_en", f["name_zh"]),
+            "gi": f["gi"],
+            "gi_level": f.get("gi_level", ""),
+            "calories_per_100g": f.get("calories_per_100g", ""),
+            "blood_sugar_impact": f.get("blood_sugar_impact", ""),
+            "serving_size": {"description": f.get("serving_desc", "适量")},
+            "nutrition_per_100g": {
+                "carbs": f.get("carbs_per_100g", ""),
+                "protein": f.get("protein_per_100g", ""),
+                "fat": f.get("fat_per_100g", ""),
+                "fiber": f.get("fiber_per_100g", ""),
+            },
+            "tips": f.get("tips", []),
+        })
+    return foods
 
 
 def load_topics() -> list:
