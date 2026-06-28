@@ -16,3 +16,15 @@ Thumbs.db
 # Temporary
 *.tmp
 *.bak
+
+# TRAE workspace (personal)
+.workbuddy/
+
+# Local scripts (personal use only)
+push.bat
+start-server.bat
+
+# Node/Build artifacts (if any)
+node_modules/
+dist/
+build/
