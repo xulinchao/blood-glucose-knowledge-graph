@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Quartz builds notes under public/ (baseUrl path: /notes).
-# Copy the existing HTML toolbox into the same public/ output.
+# Quartz builds into public/ with baseUrl path /notes.
+# Move the notes site under public/notes/, then add toolbox assets at root.
 
 copy_dir() {
   local src="$1"
@@ -21,12 +21,18 @@ copy_file() {
   fi
 }
 
-copy_file index.html public/index.html
-copy_dir out public/out
-copy_dir data public/data
-copy_dir blood-glucose-prompt-framework public/blood-glucose-prompt-framework
-copy_dir research-daily public/research-daily
+mkdir -p _site
+mv public _site/notes
 
-echo "bg.purpleiris.cn" > public/CNAME
+copy_file index.html _site/index.html
+copy_dir out _site/out
+copy_dir data _site/data
+copy_dir blood-glucose-prompt-framework _site/blood-glucose-prompt-framework
+copy_dir research-daily _site/research-daily
 
-echo "Merged toolbox assets into public/"
+echo "bg.purpleiris.cn" > _site/CNAME
+
+rm -rf public
+mv _site public
+
+echo "Merged toolbox + Quartz notes into public/"
