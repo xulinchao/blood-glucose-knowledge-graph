@@ -562,10 +562,10 @@ body {
   </div>
 
   <div class="tab-nav">
-    <button class="tab-btn active" onclick="switchTab('topics')">选题中心</button>
-    <button class="tab-btn" onclick="switchTab('generator')">文案生成</button>
-    <button class="tab-btn" onclick="switchTab('research')">素材采集</button>
-    <button class="tab-btn" onclick="switchTab('dashboard')">数据看板</button>
+    <button class="tab-btn active" onclick="switchTab('topics', this)">选题中心</button>
+    <button class="tab-btn" onclick="switchTab('generator', this)">文案生成</button>
+    <button class="tab-btn" onclick="switchTab('research', this)">素材采集</button>
+    <button class="tab-btn" onclick="switchTab('dashboard', this)">数据看板</button>
   </div>
 
   <!-- ===== TAB: 选题中心 ===== -->
@@ -818,11 +818,17 @@ let generatorContext={meta:{},writeMode:"verify_before_script",topicId:null,veri
 const catSelect=document.getElementById("filter-cat");
 CATEGORIES.slice(1).forEach(c=>{const o=document.createElement("option");o.value=c;o.textContent=c;catSelect.appendChild(o)});
 
-function switchTab(tab){
+function switchTab(tab, clickedBtn){
   document.querySelectorAll(".tab-content").forEach(t=>t.classList.remove("active"));
   document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active"));
   document.getElementById("tab-"+tab).classList.add("active");
-  event.target.classList.add("active");
+  if(clickedBtn) clickedBtn.classList.add("active");
+  else {
+    // Fallback: find the matching tab button by text content
+    document.querySelectorAll(".tab-btn").forEach(b=>{
+      if(b.textContent.trim() === {topics:"选题中心",generator:"文案生成",research:"素材采集",dashboard:"数据看板"}[tab]) b.classList.add("active");
+    });
+  }
   if(tab==="topics") renderTopics();
   if(tab==="dashboard") renderDashboard();
   if(tab==="research") renderResearch();
@@ -841,14 +847,21 @@ async function initTopics() {
   });
   // Discovered topics
   DISCOVERED_TOPICS.forEach(t => {
-    const sourceType = t.source_urls && t.source_urls[0] && t.source_urls[0].includes('bilibili') ? 'bili' : 'discovered';
+    const pd = t.platform_data || {};
+    const srcUrl = t.source_urls && t.source_urls[0] ? t.source_urls[0] : '';
+    const sourceType = srcUrl.includes('bilibili') ? 'bili' : 'discovered';
+    const metrics = pd.metrics || {};
     ALL_TOPICS.push({
       id: t.id,
       title: t.title,
       cat: mapCategory(t.category),
       catName: t.category,
       heat: t.heat === 'high' ? 'hot' : t.heat === 'medium' ? 'warm' : 'steady',
-      platforms: {dy:{views:"--",likes:"--",saves:"--",comment:"--"},xhs:{views:"--",likes:"--",saves:"--",comment:"--"},bili:{views:t.platform_data?.bili_play ? formatNumber(t.platform_data.bili_play) : "--",likes:"--",saves:"--",comment:"--"}},
+      platforms: {
+        dy:{views:"--",likes:"--",saves:"--",comment:"--"},
+        xhs:{views:"--",likes:"--",saves:"--",comment:"--"},
+        bili:{views: metrics.play || pd.bili_play ? formatNumber(metrics.play || pd.bili_play) : "--",likes:"--",saves:"--",comment:"--"}
+      },
       tags: [t.category],
       hook: t.angle ? t.angle.slice(0, 30) : '发现引擎',
       dataRef: [],
@@ -903,7 +916,7 @@ function renderTopics(){
     // Source filter
     if(currentSourceFilter === 'fixed' && t._source !== 'fixed') return false;
     if(currentSourceFilter === 'discovered' && t._source === 'fixed') return false;
-    if(currentSourceFilter === 'bili' && t._source !== 'bili') return false;
+    if(currentSourceFilter === 'bili' && !(t._source === 'bili' || t.platform_data?.platform === 'bili')) return false;
     return true;
   });
 
@@ -922,10 +935,28 @@ function renderTopics(){
     const heatIcon=t.heat==="hot"?"🔥":t.heat==="warm"?"📈":"📌";
     const heatClass=t.heat==="hot"?"heat-hot":t.heat==="warm"?"heat-warm":"heat-steady";
     const plat=t.platforms[selectedPlat]||t.platforms.dy;
-    const sourceTag = t._source === 'fixed' ? '<span class="meta-tag source-manual">固定选题</span>' :
-                      t._source === 'bili' ? '<span class="meta-tag source-bili">📺 B站</span>' :
-                      '<span class="meta-tag">自动发现</span>';
-    const playCount = t.platform_data?.bili_play ? `▶ ${formatNumber(t.platform_data.bili_play)}` : '';
+
+    // Source tag with platform icon
+    const pd = t.platform_data || {};
+    const platformIcons = {bili:'📺',youtube:'🎬',twitter:'𝕏',reddit:'💬',xhs:'📕',zhihu:'📚',exa:'🔍',authority:'🏛️'};
+    let sourceTag;
+    if (t._source === 'fixed') {
+      sourceTag = '<span class="meta-tag source-manual">固定选题</span>';
+    } else if (pd.platform_label || pd.platform) {
+      const icon = platformIcons[pd.platform] || '';
+      sourceTag = `<span class="meta-tag" style="background:rgba(108,140,255,0.15);color:var(--accent4)">${icon} ${pd.platform_label || pd.platform}</span>`;
+    } else if (t._source === 'bili') {
+      sourceTag = '<span class="meta-tag source-bili">📺 B站</span>';
+    } else {
+      sourceTag = '<span class="meta-tag">自动发现</span>';
+    }
+
+    // Metrics display
+    let metricsHtml = '';
+    if (pd.metrics?.play) metricsHtml += `<span class="meta-tag" style="color:var(--accent)">▶ ${formatNumber(pd.metrics.play)}</span>`;
+    else if (pd.bili_play) metricsHtml += `<span class="meta-tag" style="color:var(--accent)">▶ ${formatNumber(pd.bili_play)}</span>`;
+    if (pd.topic_score) metricsHtml += `<span class="meta-tag">评分${pd.topic_score}</span>`;
+    if (pd.evidence_tier) metricsHtml += `<span class="meta-tag" style="opacity:0.7">层级${pd.evidence_tier}</span>`;
 
     return `<div class="topic-card ${isSelected?'selected':''} ${isAdopted?'adopted':''}" onclick="selectTopicById('${t.id}')">
       <div class="topic-header">
@@ -936,7 +967,7 @@ function renderTopics(){
       <div class="topic-meta">
         <span class="meta-tag">${t.catName}</span>
         ${sourceTag}
-        ${playCount ? `<span class="meta-tag" style="color:var(--accent)">${playCount}</span>` : ''}
+        ${metricsHtml}
       </div>
       <div class="topic-stats">
         <div class="stat">播放 <span>${plat.views}</span></div>
@@ -1039,6 +1070,34 @@ async function loadDiscoveredTopics(){
     console.log("Fetch discovered-topics.json failed:", e);
   }
 
+  // Also load harvest data (YouTube, X, Reddit, etc.)
+  let harvestItems = [];
+  try {
+    // Try to find today's or latest harvest export
+    const today = new Date().toISOString().slice(0, 10);
+    for (let attempt = 0; attempt < 3; attempt++) {
+      const date = new Date();
+      date.setDate(date.getDate() - attempt);
+      const dateStr = date.toISOString().slice(0, 10);
+      const res = await fetch(`../data/exports/daily-harvest-${dateStr}.json`);
+      if (res.ok) {
+        const data = await res.json();
+        harvestItems = data.items || [];
+        break;
+      }
+    }
+    // Fallback: try latest-harvest.json
+    if (!harvestItems.length) {
+      const res2 = await fetch("../data/exports/latest-harvest.json");
+      if (res2.ok) {
+        const data2 = await res2.json();
+        harvestItems = data2.items || [];
+      }
+    }
+  } catch(e) {
+    console.log("Fetch harvest data failed:", e);
+  }
+
   let adoptedIds = new Set();
   let manualTopics = [];
   const storedMeta = localStorage.getItem("bloodsugar_discovered_meta");
@@ -1051,12 +1110,91 @@ async function loadDiscoveredTopics(){
   }
 
   DISCOVERED_TOPICS = [...jsonTopics];
+
+  // Add harvest items that are not already in discovered-topics
+  const existingKeys = new Set(jsonTopics.map(t => dedupKey(t.title)));
+  harvestItems.forEach(item => {
+    const dk = dedupKey(item.title);
+    if (!existingKeys.has(dk) && item.topic_score >= 50) {
+      const platformIcons = {
+        youtube: "🎬", twitter: "𝕏", reddit: "💬", xhs: "📕",
+        zhihu: "📚", bili: "📺", exa: "🔍", authority: "🏛️"
+      };
+      const platform = item.platform || 'web';
+      DISCOVERED_TOPICS.push({
+        id: `harvest-${item.platform}-${hashCode(item.title)}`,
+        title: item.title,
+        angle: (item.snippet || item.raw?.snippet || '').slice(0, 80) || `${platformIcons[platform] || ''} ${item.platform_label || platform}`,
+        category: item.category || classifyFromTitle(item.title),
+        platform: platform === 'youtube' ? 'dy,yhs' : platform === 'twitter' ? 'dy' : platform,
+        duration: estimateFromCategory(item.category),
+        heat: item.topic_score >= 70 ? 'high' : item.topic_score >= 60 ? 'medium' : 'low',
+        heat_source: `${item.platform_label || platform} · 选题分${item.topic_score} · ${item.url || ''}`,
+        source_urls: item.url ? [item.url] : [],
+        status: 'discovered',
+        script_status: adoptedIds.has(item.title) ? 'done' : 'pending',
+        publish_status: 'pending',
+        discovered_date: new Date().toISOString().slice(0, 10),
+        platform_data: {
+          platform: item.platform,
+          platform_label: item.platform_label,
+          topic_score: item.topic_score,
+          evidence_tier: item.authenticity?.evidence_tier || 'D',
+          use_as: item.authenticity?.use_as || 'hook_only',
+          metrics: item.metrics || item.raw?.metrics || null,
+          author: item.author || item.raw?.author || null,
+        }
+      });
+      existingKeys.add(dk);
+    }
+  });
+
   DISCOVERED_TOPICS.forEach(t => {
     if (adoptedIds.has(t.id)) t.script_status = "done";
   });
   manualTopics.forEach(t => {
     if (!DISCOVERED_TOPICS.find(x => x.id === t.id)) DISCOVERED_TOPICS.push(t);
   });
+}
+
+// Helper functions for harvest data processing
+function hashCode(str) {
+  let hash = 0;
+  for (let i = 0; i < str.length; i++) {
+    const char = str.charCodeAt(i);
+    hash = ((hash << 5) - hash) + char;
+    hash |= 0;
+  }
+  return Math.abs(hash).toString(36).slice(0, 6);
+}
+
+function dedupKey(title) {
+  const words = title.match(/[\u4e00-\u9fa5]{2,}/g) || [];
+  return words.slice(0, 4).join('');
+}
+
+function classifyFromTitle(title) {
+  const rules = [
+    ['辟谣纠偏', ['误区', '谣言', '真相', '其实', '不是', '打假']],
+    ['饮食指南', ['吃', '食物', '水果', '主食', '零食', '饮食', '早餐']],
+    ['数字科普', ['数据', '研究', '%', '数值', '标准']],
+    ['实操方法', ['方法', '技巧', '步骤', '怎么做', '如何', '教你']],
+    ['症状预警', ['症状', '信号', '预警', '危险', '并发症']],
+    ['工具测评', ['测评', '测试', '对比', '推荐', '仪器', '血糖仪']],
+    ['案例故事', ['经历', '故事', '逆转', '改变']],
+    ['避坑指南', ['坑', '不要', '避免', '错误', '教训']],
+  ];
+  for (const [cat, keywords] of rules) {
+    if (keywords.some(k => title.includes(k))) return cat;
+  }
+  return '数字科普';
+}
+
+function estimateFromCategory(cat) {
+  if (!cat) return '15-30s';
+  if (['实操方法', '饮食指南'].includes(cat)) return '45-60s';
+  if (['数字科普', '症状预警'].includes(cat)) return '30-45s';
+  return '15-30s';
 }
 
 // ==================== QUICK TOPICS PANEL ====================
