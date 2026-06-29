@@ -1181,19 +1181,48 @@ let DISCOVERED_TOPICS=[];
 
 async function loadDiscoveredTopics(){
   const grid=document.getElementById("discovered-grid");
-  // Try localStorage first (for manual additions), then fallback to embedded data
-  const stored=localStorage.getItem("bloodsugar_discovered");
-  if(stored){
-    try{ DISCOVERED_TOPICS=JSON.parse(stored); }catch(e){ DISCOVERED_TOPICS=[]; }
-  } else {
-    try{
-      const res=await fetch("../data/discovered-topics.json");
-      if(res.ok){
-        const data=await res.json();
-        DISCOVERED_TOPICS=data.topics||[];
-      }
-    }catch(e){ DISCOVERED_TOPICS=[]; }
+
+  // 1. Always fetch the latest data from JSON (source of truth)
+  let jsonTopics = [];
+  try {
+    const res = await fetch("../data/discovered-topics.json");
+    if (res.ok) {
+      const data = await res.json();
+      jsonTopics = data.topics || [];
+    }
+  } catch(e) {
+    console.log("Fetch discovered-topics.json failed:", e);
   }
+
+  // 2. Load user metadata (adopted IDs + manual topics) from localStorage
+  let adoptedIds = new Set();
+  let manualTopics = [];
+  const storedMeta = localStorage.getItem("bloodsugar_discovered_meta");
+  if (storedMeta) {
+    try {
+      const meta = JSON.parse(storedMeta);
+      adoptedIds = new Set(meta.adopted || []);
+      manualTopics = meta.manual || [];
+    } catch(e) {}
+  }
+
+  // 3. Merge: JSON topics (latest) + manual topics (user-added)
+  DISCOVERED_TOPICS = [...jsonTopics];
+
+  // Mark adoption status from localStorage
+  DISCOVERED_TOPICS.forEach(t => {
+    if (adoptedIds.has(t.id)) {
+      t.script_status = "done";
+    }
+  });
+
+  // Append manual topics (avoid duplicates by ID)
+  manualTopics.forEach(t => {
+    if (!DISCOVERED_TOPICS.find(x => x.id === t.id)) {
+      DISCOVERED_TOPICS.push(t);
+    }
+  });
+
   // Sort: high > medium > low
   const heatOrder={high:0,medium:1,low:2};
   DISCOVERED_TOPICS.sort((a,b)=>(heatOrder[a.heat]||2)-(heatOrder[b.heat]||2));
@@ -1207,10 +1236,13 @@ async function loadDiscoveredTopics(){
     const heatColor=t.heat==="high"?"var(--accent2)":t.heat==="medium"?"var(--accent3)":"var(--muted)";
     const platformMap={dy:"抖音",xhs:"小红书",bili:"B站"};
     const platforms=t.platform.split(",").map(p=>platformMap[p]||p).join(" + ");
-    const statusBadge=t.script_status==="done"?'<span style="font-size:10px;padding:1px 6px;background:rgba(0,212,170,0.15);color:var(--accent);border-radius:4px;margin-left:6px">已写脚本</span>':
+    const statusBadge=t.script_status==="done"?'<span style="font-size:10px;padding:1px 6px;background:rgba(0,212,170,0.15);color:var(--accent);border-radius:4px;margin-left:6px">已采纳</span>':
       t.script_status==="writing"?'<span style="font-size:10px;padding:1px 6px;background:rgba(108,140,255,0.15);color:var(--accent4);border-radius:4px;margin-left:6px">脚本中</span>':'';
+    const sourceLabel = t.source_urls && t.source_urls.length
+      ? (t.source_urls[0].includes('bilibili') ? '📺 B站' : '🔗 来源')
+      : '';
     return `<div style="background:var(--bg2);border:1px solid var(--rule);border-radius:var(--radius);padding:14px 16px;display:flex;gap:12px;align-items:flex-start">
-      <input type="checkbox" data-disc-idx="${i}" style="margin-top:4px;accent-color:var(--accent)">
+      <input type="checkbox" data-disc-idx="${i}" style="margin-top:4px;accent-color:var(--accent)" ${t.script_status==="done"?'disabled':''}>
       <div style="flex:1;min-width:0">
         <div style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:4px">${t.title}${statusBadge}</div>
         <div style="font-size:12px;color:var(--muted);margin-bottom:6px">${t.angle}</div>
@@ -1220,9 +1252,10 @@ async function loadDiscoveredTopics(){
           <span style="padding:2px 6px;background:rgba(0,0,0,0.2);border-radius:4px;color:var(--muted)">${t.duration}</span>
           <span style="padding:2px 6px;border-radius:4px;color:${heatColor};font-weight:600">${heatIcon}</span>
           <span style="padding:2px 6px;background:rgba(0,0,0,0.2);border-radius:4px;color:var(--muted)">${t.discovered_date}</span>
+          ${t.platform_data && t.platform_data.bili_play ? `<span style="padding:2px 6px;background:rgba(0,212,170,0.1);border-radius:4px;color:var(--accent)">▶ ${Number(t.platform_data.bili_play).toLocaleString()}</span>` : ''}
         </div>
       </div>
-      ${t.source_urls&&t.source_urls.length?'<a href="'+t.source_urls[0]+'" target="_blank" style="color:var(--accent);font-size:11px;white-space:nowrap;text-decoration:none">来源 →</a>':''}
+      ${t.source_urls&&t.source_urls.length?'<a href="'+t.source_urls[0]+'" target="_blank" style="color:var(--accent);font-size:11px;white-space:nowrap;text-decoration:none">'+sourceLabel+' →</a>':''}
     </div>`;
   }).join("");
 
@@ -1241,6 +1274,7 @@ function adoptDiscoveredTopic(){
   const checked=document.querySelectorAll("[data-disc-idx]:checked");
   if(!checked.length){alert("请先勾选要采纳的选题");return;}
   const adopted=[];
+  const adoptedIds=[];
   checked.forEach(cb=>{
     const idx=parseInt(cb.dataset.discIdx);
     const t=DISCOVERED_TOPICS[idx];
@@ -1266,8 +1300,18 @@ function adoptDiscoveredTopic(){
     });
     t.script_status="done";
     adopted.push(t.title);
+    adoptedIds.push(t.id);
   });
-  localStorage.setItem("bloodsugar_discovered",JSON.stringify(DISCOVERED_TOPICS));
+
+  // Save only adoption status to localStorage (not full data)
+  const storedMeta = localStorage.getItem("bloodsugar_discovered_meta");
+  let meta = { adopted: [], manual: [] };
+  if (storedMeta) {
+    try { meta = JSON.parse(storedMeta); } catch(e) {}
+  }
+  meta.adopted = [...new Set([...(meta.adopted || []), ...adoptedIds])];
+  localStorage.setItem("bloodsugar_discovered_meta", JSON.stringify(meta));
+
   renderTopics();
   loadDiscoveredTopics();
   alert("已采纳 "+adopted.length+" 个选题到选题库：\n"+adopted.map(t=>"• "+t).join("\n"));
@@ -1283,8 +1327,18 @@ function addManualDiscovered(){
   if(!title||!angle){alert("请填写标题和切入角度");return;}
   const today=new Date().toISOString().slice(0,10);
   const maxId=DISCOVERED_TOPICS.reduce((max,t)=>{const n=parseInt(t.id.replace("disc-",""));return n>max?n:max;},0);
-  DISCOVERED_TOPICS.push({id:"disc-"+String(maxId+1).padStart(3,"0"),title,angle,category:cat,platform,duration,heat,heat_source:"手动添加",source_urls:[],status:"discovered",script_status:"pending",publish_status:"pending",discovered_date:today});
-  localStorage.setItem("bloodsugar_discovered",JSON.stringify(DISCOVERED_TOPICS));
+  const newTopic = {id:"disc-"+String(maxId+1).padStart(3,"0"),title,angle,category:cat,platform,duration,heat,heat_source:"手动添加",source_urls:[],status:"discovered",script_status:"pending",publish_status:"pending",discovered_date:today};
+
+  // Save manual topic to meta localStorage
+  const storedMeta = localStorage.getItem("bloodsugar_discovered_meta");
+  let meta = { adopted: [], manual: [] };
+  if (storedMeta) {
+    try { meta = JSON.parse(storedMeta); } catch(e) {}
+  }
+  meta.manual = meta.manual || [];
+  meta.manual.push(newTopic);
+  localStorage.setItem("bloodsugar_discovered_meta", JSON.stringify(meta));
+
   document.getElementById("disc-title").value="";
   document.getElementById("disc-angle").value="";
   loadDiscoveredTopics();
@@ -1292,22 +1346,36 @@ function addManualDiscovered(){
 
 // Init discovered count on page load
 (function(){
-  const stored=localStorage.getItem("bloodsugar_discovered");
-  if(stored){
+  const storedMeta=localStorage.getItem("bloodsugar_discovered_meta");
+  let pendingCount = 0;
+  if(storedMeta){
     try{
-      const d=JSON.parse(stored);
-      const pending=d.filter(t=>t.script_status==="pending").length;
-      if(pending>0){
-        const el=document.getElementById("discovered-count");
-        el.style.display="inline-block";
-        el.textContent=pending>99?"99+":pending;
-      }
+      const meta=JSON.parse(storedMeta);
+      pendingCount = (meta.manual || []).filter(t=>t.script_status==="pending").length;
     }catch(e){}
-  } else {
-    const el=document.getElementById("discovered-count");
-    el.style.display="inline-block";
-    el.textContent="10";
   }
+  // Also try to fetch JSON to get real pending count
+  fetch("../data/discovered-topics.json")
+    .then(r=>r.ok?r.json():null)
+    .then(data=>{
+      if(data && data.topics){
+        const jsonPending = data.topics.filter(t=>t.script_status==="pending").length;
+        pendingCount += jsonPending;
+        const el=document.getElementById("discovered-count");
+        if(pendingCount>0){
+          el.style.display="inline-block";
+          el.textContent=pendingCount>99?"99+":pendingCount;
+        }
+      }
+    })
+    .catch(()=>{
+      // If fetch fails, show at least manual count
+      const el=document.getElementById("discovered-count");
+      if(pendingCount>0){
+        el.style.display="inline-block";
+        el.textContent=pendingCount>99?"99+":pendingCount;
+      }
+    });
 })();
 </script>
 </body>

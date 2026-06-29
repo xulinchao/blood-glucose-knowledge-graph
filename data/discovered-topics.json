@@ -264,6 +264,336 @@
       "script_status": "pending",
       "publish_status": "pending",
       "discovered_date": "2026-06-29"
+    },
+    {
+      "id": "disc-016",
+      "title": "糖尿病：截肢失明透析 数亿国人体内的定时炸弹",
+      "angle": "B站热门视频，播放量 3803957，UP主 医学科普联盟。可提取核心知识点转化为口播选题。",
+      "category": "数字科普",
+      "platform": "bili,dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "B站搜索'糖尿病'，播放量 3803957，弹幕 5203",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1nb421H7BZ"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "platform_data": {
+        "bili_play": 3803957,
+        "bili_danmaku": 5203,
+        "bili_author": "医学科普联盟"
+      }
+    },
+    {
+      "id": "disc-017",
+      "title": "【医学博士】得了糖尿病才知道什么叫碳水炸弹｜糖尿病应该怎么治疗？",
+      "angle": "B站热门视频，播放量 2366301，UP主 兔叭咯。可提取核心知识点转化为口播选题。",
+      "category": "饮食指南",
+      "platform": "bili,dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "B站搜索'糖尿病'，播放量 2366301，弹幕 5953",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1AA41157Eb"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "platform_data": {
+        "bili_play": 2366301,
+        "bili_danmaku": 5953,
+        "bili_author": "兔叭咯"
+      }
+    },
+    {
+      "id": "disc-018",
+      "title": "血糖仪，普通人带的意义是什么？",
+      "angle": "B站热门视频，播放量 1083656，UP主 闫帅奇。可提取核心知识点转化为口播选题。",
+      "category": "数字科普",
+      "platform": "bili,dy,xhs",
+      "duration": "60-90s",
+      "heat": "hot",
+      "heat_source": "B站搜索'餐后血糖'，播放量 1083656，弹幕 118",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1y8ABemEf8"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "platform_data": {
+        "bili_play": 1083656,
+        "bili_danmaku": 118,
+        "bili_author": "闫帅奇"
+      }
+    },
+    {
+      "id": "disc-019",
+      "title": "人好好的，为啥会得糖尿病？糖尿病还要锯脚？【人体调查组】",
+      "angle": "B站热门视频，播放量 949296，UP主 丁香医生。可提取核心知识点转化为口播选题。",
+      "category": "数字科普",
+      "platform": "bili,dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "B站搜索'糖尿病'，播放量 949296，弹幕 1553",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV15U4y1V7sA"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "platform_data": {
+        "bili_play": 949296,
+        "bili_danmaku": 1553,
+        "bili_author": "丁香医生"
+      }
+    },
+    {
+      "id": "disc-020",
+      "title": "体验动态血糖仪！普通人有必要监测血糖吗？",
+      "angle": "B站热门视频，播放量 664832，UP主 大物是也。可提取核心知识点转化为口播选题。",
+      "category": "工具测评",
+      "platform": "bili,dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "B站搜索'血糖仪'，播放量 664832，弹幕 723",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1wf7S6ZEQS"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "platform_data": {
+        "bili_play": 664832,
+        "bili_danmaku": 723,
+        "bili_author": "大物是也"
+      }
+    },
+    {
+      "id": "disc-021",
+      "title": "10款血糖仪4款有误差？医生教你怎么选【老爸评测】",
+      "angle": "B站热门视频，播放量 476377，UP主 老爸评测。可提取核心知识点转化为口播选题。",
+      "category": "实操方法",
+      "platform": "bili,dy,xhs",
+      "duration": "45-60s",
+      "heat": "warm",
+      "heat_source": "B站搜索'血糖仪'，播放量 476377，弹幕 257",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV12v411n72t"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "platform_data": {
+        "bili_play": 476377,
+        "bili_danmaku": 257,
+        "bili_author": "老爸评测"
+      }
+    },
+    {
+      "id": "disc-022",
+      "title": "【健康】什么是胰岛素抵抗？碳水如何缔造/毁灭人类健康！",
+      "angle": "B站热门视频，播放量 433328，UP主 万物深蓝。可提取核心知识点转化为口播选题。",
+      "category": "饮食指南",
+      "platform": "bili,dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "B站搜索'胰岛素抵抗'，播放量 433328，弹幕 219",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1WvyoYHEpB"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "platform_data": {
+        "bili_play": 433328,
+        "bili_danmaku": 219,
+        "bili_author": "万物深蓝"
+      }
+    },
+    {
+      "id": "disc-023",
+      "title": "慢病之王-糖尿病，让人活着腐烂！！",
+      "angle": "B站热门视频，播放量 363143，UP主 江湖郎中尹博士。可提取核心知识点转化为口播选题。",
+      "category": "数字科普",
+      "platform": "bili,dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "B站搜索'糖尿病'，播放量 363143，弹幕 737",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1vZeczwEDG"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "platform_data": {
+        "bili_play": 363143,
+        "bili_danmaku": 737,
+        "bili_author": "江湖郎中尹博士"
+      }
+    },
+    {
+      "id": "disc-024",
+      "title": "11个身体信号提示糖尿病",
+      "angle": "B站热门视频，播放量 335653，UP主 鹏哥谈健康。可提取核心知识点转化为口播选题。",
+      "category": "症状预警",
+      "platform": "bili,dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "B站搜索'糖尿病'，播放量 335653，弹幕 333",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1yPu8zeERR"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "platform_data": {
+        "bili_play": 335653,
+        "bili_danmaku": 333,
+        "bili_author": "鹏哥谈健康"
+      }
+    },
+    {
+      "id": "disc-025",
+      "title": "逆转胰岛素抵抗最关键的一点，之前大多数人都误解了｜五个自然逆转方法",
+      "angle": "B站热门视频，播放量 305842，UP主 聊医点。可提取核心知识点转化为口播选题。",
+      "category": "实操方法",
+      "platform": "bili,dy,xhs",
+      "duration": "45-60s",
+      "heat": "warm",
+      "heat_source": "B站搜索'胰岛素抵抗'，播放量 305842，弹幕 532",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1wz4y1F77n"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "platform_data": {
+        "bili_play": 305842,
+        "bili_danmaku": 532,
+        "bili_author": "聊医点"
+      }
+    },
+    {
+      "id": "disc-026",
+      "title": "血糖超不超标，看双腿就知道了，腿部就是人体自带的血糖仪",
+      "angle": "B站热门视频，播放量 212029，UP主 中医周国民大夫。可提取核心知识点转化为口播选题。",
+      "category": "症状预警",
+      "platform": "bili,dy,xhs",
+      "duration": "15-30s",
+      "heat": "warm",
+      "heat_source": "B站搜索'血糖仪'，播放量 212029，弹幕 85",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1U3N3zGEdt"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "platform_data": {
+        "bili_play": 212029,
+        "bili_danmaku": 85,
+        "bili_author": "中医周国民大夫"
+      }
+    },
+    {
+      "id": "disc-027",
+      "title": "倪海厦:看懂这个视频，糖尿病人人都会治好！（糖尿病完整版）（收藏）",
+      "angle": "B站热门视频，播放量 207147，UP主 励文图书。可提取核心知识点转化为口播选题。",
+      "category": "症状预警",
+      "platform": "bili,dy,xhs",
+      "duration": "15-30s",
+      "heat": "warm",
+      "heat_source": "B站搜索'糖尿病'，播放量 207147，弹幕 389",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Xy411v7PS"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "platform_data": {
+        "bili_play": 207147,
+        "bili_danmaku": 389,
+        "bili_author": "励文图书"
+      }
+    },
+    {
+      "id": "disc-028",
+      "title": "家用血糖仪使用方法",
+      "angle": "B站热门视频，播放量 183574，UP主 时晴Shine。可提取核心知识点转化为口播选题。",
+      "category": "实操方法",
+      "platform": "bili,dy,xhs",
+      "duration": "45-60s",
+      "heat": "warm",
+      "heat_source": "B站搜索'血糖仪'，播放量 183574，弹幕 44",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Es4y1N7Ek"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "platform_data": {
+        "bili_play": 183574,
+        "bili_danmaku": 44,
+        "bili_author": "时晴Shine"
+      }
+    },
+    {
+      "id": "disc-029",
+      "title": "为什么我不建议轻易使用动态血糖仪（糖尿病患者或运动爱好者）",
+      "angle": "B站热门视频，播放量 163310，UP主 云健身-仰望尾迹云。可提取核心知识点转化为口播选题。",
+      "category": "工具测评",
+      "platform": "bili,dy,xhs",
+      "duration": "60-90s",
+      "heat": "warm",
+      "heat_source": "B站搜索'血糖仪'，播放量 163310，弹幕 281",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV13qHQziEM1"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "platform_data": {
+        "bili_play": 163310,
+        "bili_danmaku": 281,
+        "bili_author": "云健身-仰望尾迹云"
+      }
+    },
+    {
+      "id": "disc-030",
+      "title": "胰岛素抵抗的10种表现",
+      "angle": "B站热门视频，播放量 160153，UP主 听我说血糖。可提取核心知识点转化为口播选题。",
+      "category": "数字科普",
+      "platform": "bili,dy,xhs",
+      "duration": "15-30s",
+      "heat": "warm",
+      "heat_source": "B站搜索'胰岛素抵抗'，播放量 160153，弹幕 90",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1o5BXBTEkb"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "platform_data": {
+        "bili_play": 160153,
+        "bili_danmaku": 90,
+        "bili_author": "听我说血糖"
+      }
     }
   ]
 }
