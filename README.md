@@ -44,8 +44,8 @@ python -m http.server 8080
 
 ```bash
 npm ci
-npx quartz plugin install --from-config
-npx quartz build --serve
+npm run plugins:install
+npm run build:notes -- --serve
 ```
 
 笔记预览：http://localhost:8080/notes/

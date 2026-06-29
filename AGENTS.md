@@ -40,7 +40,7 @@ python src/generate_prompts.py
 python -m http.server 8080
 
 # Quartz notes preview
-npm ci && npx quartz plugin install --from-config && npx quartz build --serve
+npm ci && npm run plugins:install && npm run build:notes -- --serve
 ```
 
 Python: `C:\Users\xulinchao\.workbuddy\binaries\python\versions\3.13.12\python.exe`
