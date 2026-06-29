@@ -27,6 +27,15 @@ jobs:
         with:
           node-version: 22
 
+      - name: Debug environment
+        run: |
+          echo "Node version: $(node -v)"
+          echo "NPM version: $(npm -v)"
+          echo "NPX path: $(which npx || echo 'npx not found')"
+          echo "Bash path: $(which bash || echo 'bash not found')"
+          echo "Scripts dir:"
+          ls -la scripts/
+
       - name: Cache npm
         uses: actions/cache@v4
         with:
@@ -34,14 +43,6 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-
-      - name: Cache Quartz plugins
-        uses: actions/cache@v4
-        with:
-          path: .quartz/plugins
-          key: ${{ runner.os }}-plugins-${{ hashFiles('quartz.lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-plugins-
 
       - name: Install dependencies
         run: npm ci
@@ -54,6 +55,11 @@ jobs:
 
       - name: Merge toolbox static files
         run: bash scripts/merge-static.sh
+
+      - name: Verify output
+        run: |
+          echo "Output directory contents:"
+          ls -la public/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
