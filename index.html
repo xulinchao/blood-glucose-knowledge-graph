@@ -136,12 +136,20 @@ body {
   border: 1px solid var(--rule);
   border-radius: 8px;
   padding: 14px 18px;
-  text-decoration: none;
   color: inherit;
   transition: border-color 0.2s;
 }
 .report-item:hover {
   border-color: var(--accent);
+}
+.report-item .report-main {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  text-decoration: none;
+  color: inherit;
+  min-width: 0;
 }
 .report-item .date {
   font-size: 12px;
@@ -157,6 +165,23 @@ body {
   padding: 2px 8px;
   border-radius: 4px;
   font-weight: 600;
+}
+.report-item .extras {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-left: auto;
+}
+.report-item .extra-link {
+  font-size: 11px;
+  color: var(--accent4);
+  text-decoration: none;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: rgba(108,140,255,0.1);
+}
+.report-item .extra-link:hover {
+  background: rgba(108,140,255,0.2);
 }
 .fmt-html { background: rgba(0,212,170,0.12); color: var(--accent); }
 .fmt-md { background: rgba(255,217,61,0.12); color: var(--accent3); }
@@ -225,7 +250,7 @@ body {
   </div>
 
   <div class="section">
-    <h2>📰 监控日报</h2>
+    <h2>📰 控糖日报</h2>
     <div class="report-list" id="report-list">
       <div style="color:var(--muted);font-size:13px;padding:14px 18px">加载中...</div>
     </div>
@@ -260,29 +285,45 @@ fetch('./reports.json')
   .then(data => {
     const list = document.getElementById('report-list');
     const items = [];
-    const seen = new Set();
-    const add = (r, fmt, fmtLabel) => {
-      const key = r.date + r.url;
-      if (seen.has(key)) return;
-      seen.add(key);
-      items.push(`<a href="${r.url}" class="report-item"><span class="date">${r.date}</span><span class="title">${r.title}</span><span class="format ${fmt}">${fmtLabel}</span></a>`);
-    };
     const dates = [...new Set([
       ...(data.brief_reports || []).map(r => r.date),
       ...(data.html_reports || []).map(r => r.date),
       ...(data.harvest_reports || []).map(r => r.date),
-    ])].sort().reverse().slice(0, 5);
+    ])].sort().reverse().slice(0, 8);
     dates.forEach(date => {
       const brief = (data.brief_reports || []).find(r => r.date === date);
       const monitor = (data.html_reports || []).find(r => r.date === date);
       const harvest = (data.harvest_reports || []).find(r => r.date === date);
-      const q = (data.quartz_reports || []).find(x => x.date === date);
-      if (brief) add(brief, 'fmt-html', '精选');
-      if (monitor) add({...monitor, title: monitor.title + '（监控）'}, 'fmt-html', 'HTML');
-      if (harvest) add(harvest, 'fmt-html', '采集');
-      if (q) add(q, 'fmt-md', 'Quartz');
+      const primary = brief || monitor || harvest;
+      if (!primary) return;
+
+      const label = brief ? '精选' : monitor ? '监控' : '采集';
+      const fmt = brief || monitor ? 'fmt-html' : 'fmt-html';
+      const extras = [];
+      if (brief && monitor) {
+        extras.push(`<a class="extra-link" href="${monitor.url}">深度监控</a>`);
+      }
+      if (harvest && primary.url !== harvest.url) {
+        extras.push(`<a class="extra-link" href="${harvest.url}">全量采集</a>`);
+      }
+      const extrasHtml = extras.length
+        ? `<span class="extras">${extras.join('')}</span>`
+        : '';
+
+      items.push(
+        `<div class="report-item">` +
+        `<a href="${primary.url}" class="report-main">` +
+        `<span class="date">${date}</span>` +
+        `<span class="title">${primary.title}</span>` +
+        `<span class="format ${fmt}">${label}</span>` +
+        `</a>` +
+        extrasHtml +
+        `</div>`
+      );
     });
-    list.innerHTML = items.length ? items.join('') : '<div style="color:var(--muted);font-size:13px;padding:14px 18px">暂无日报</div>';
+    list.innerHTML = items.length
+      ? items.join('')
+      : '<div style="color:var(--muted);font-size:13px;padding:14px 18px">暂无日报</div>';
   })
   .catch(e => {
     document.getElementById('report-list').innerHTML = '<div style="color:var(--muted);font-size:13px;padding:14px 18px;line-height:1.7">日报索引未生成。本地请在仓库根目录运行：<code style="color:var(--accent)">python scripts/generate-reports-json.py</code><br>或直达 <a href="research-daily/" style="color:var(--accent4)">research-daily/</a> 文件夹</div>';

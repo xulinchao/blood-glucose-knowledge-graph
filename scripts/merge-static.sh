@@ -32,34 +32,11 @@ copy_dir research-daily _site/research-daily
 
 echo "bg.purpleiris.cn" > _site/CNAME
 
-# Generate reports.json for dynamic daily report listing
-node -e "
-const fs = require('fs');
-const path = require('path');
-
-const htmlDir = '_site/research-daily';
-const quartzDir = '_site/notes/research-daily';
-
-const scanDir = (dir, urlPrefix) => {
-  if (!fs.existsSync(dir)) return [];
-  return fs.readdirSync(dir)
-    .filter(f => f.endsWith('-日报.html'))
-    .map(f => {
-      const date = f.replace('-日报.html', '');
-      return { date, title: '血糖控糖热点监控日报', url: urlPrefix + f };
-    })
-    .sort((a, b) => b.date.localeCompare(a.date));
-};
-
-const htmlReports = scanDir(htmlDir, 'research-daily/');
-const quartzReports = scanDir(quartzDir, 'notes/research-daily/');
-
-fs.writeFileSync(
-  '_site/reports.json',
-  JSON.stringify({ html_reports: htmlReports, quartz_reports: quartzReports }, null, 2)
-);
-console.log('Generated reports.json with', htmlReports.length, 'HTML reports and', quartzReports.length, 'Quartz reports');
-"
+# Generate reports.json（与 scripts/generate-reports-json.py 同源，含精选/采集）
+python3 scripts/generate-reports-json.py \
+  --html-dir _site/research-daily \
+  --quartz-dir _site/notes/research-daily \
+  --out _site/reports.json
 
 rm -rf public
 mv _site public

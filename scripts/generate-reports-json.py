@@ -9,9 +9,9 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-HTML_DIR = ROOT / "research-daily"
-QUARTZ_DIR = ROOT / "public" / "notes" / "research-daily"
-OUT = ROOT / "reports.json"
+DEFAULT_HTML_DIR = ROOT / "research-daily"
+DEFAULT_QUARTZ_DIR = ROOT / "public" / "notes" / "research-daily"
+DEFAULT_OUT = ROOT / "reports.json"
 
 MONITOR_TITLE = "血糖控糖热点监控日报"
 BRIEF_TITLE = "血糖控糖精选日报"
@@ -58,15 +58,23 @@ def scan_quartz(directory: Path, url_prefix: str) -> list[dict]:
 
 
 def main() -> int:
-    scanned = scan_html_reports(HTML_DIR, "research-daily/")
+    import argparse
+
+    parser = argparse.ArgumentParser(description="生成首页 reports.json")
+    parser.add_argument("--html-dir", type=Path, default=DEFAULT_HTML_DIR)
+    parser.add_argument("--quartz-dir", type=Path, default=DEFAULT_QUARTZ_DIR)
+    parser.add_argument("--out", type=Path, default=DEFAULT_OUT)
+    args = parser.parse_args()
+
+    scanned = scan_html_reports(args.html_dir, "research-daily/")
     payload = {
         "html_reports": scanned["html_reports"],
         "brief_reports": scanned["brief_reports"],
         "harvest_reports": scanned["harvest_reports"],
-        "quartz_reports": scan_quartz(QUARTZ_DIR, "notes/research-daily/"),
+        "quartz_reports": scan_quartz(args.quartz_dir, "notes/research-daily/"),
     }
-    OUT.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"Wrote {OUT.relative_to(ROOT)}")
+    args.out.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+    print(f"Wrote {args.out}")
     print(
         f"  监控: {len(payload['html_reports'])} · 精选: {len(payload['brief_reports'])} · "
         f"采集: {len(payload['harvest_reports'])} · Quartz: {len(payload['quartz_reports'])}"
