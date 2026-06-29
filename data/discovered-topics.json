@@ -16,9 +16,10 @@
         "http://m.toutiao.com/group/7651424592842342921/"
       ],
       "status": "discovered",
-      "script_status": "pending",
+      "script_status": "writing",
       "publish_status": "pending",
-      "discovered_date": "2026-06-28"
+      "discovered_date": "2026-06-28",
+      "script_file": "data/scripts/script-20260629-001.json"
     },
     {
       "id": "disc-002",
@@ -593,6 +594,449 @@
         "bili_play": 160153,
         "bili_danmaku": 90,
         "bili_author": "听我说血糖"
+      }
+    },
+    {
+      "id": "disc-031",
+      "title": "你的血糖是如何失控的？",
+      "angle": "B站采集 · 真实性偏低(52) · 重要性高(87) · 医学边界",
+      "category": "实操方法",
+      "platform": "bili,dy",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "每日采集 B站 · 选题分 71 · 互动 533224",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1jvyUYJEMy"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 52,
+          "label": "偏低",
+          "reasons": [
+            "UGC 平台，需人工核对医学表述"
+          ]
+        },
+        "importance": {
+          "score": 87,
+          "label": "高",
+          "reasons": [
+            "互动量极高(533,224)",
+            "标题命中关键词「血糖」"
+          ]
+        },
+        "topic_score": 71,
+        "platform": "bili"
+      }
+    },
+    {
+      "id": "disc-032",
+      "title": "【Olivia Lawson】30分钟「降低血糖+血压+皮质醇水平」健步走训练｜2024.2.29更新",
+      "angle": "B站采集 · 真实性偏低(52) · 重要性高(80) · Totoro雪",
+      "category": "实操方法",
+      "platform": "bili,dy",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "每日采集 B站 · 选题分 67 · 互动 303875",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1cS421P7Ye"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 52,
+          "label": "偏低",
+          "reasons": [
+            "UGC 平台，需人工核对医学表述"
+          ]
+        },
+        "importance": {
+          "score": 80,
+          "label": "高",
+          "reasons": [
+            "互动量高(303,875)",
+            "标题命中关键词「血糖」"
+          ]
+        },
+        "topic_score": 67,
+        "platform": "bili"
+      }
+    },
+    {
+      "id": "disc-033",
+      "title": "空腹血糖“三部曲”：5.6/6.1/7.0，三个数字分别预示啥？",
+      "angle": "B站采集 · 真实性中等(64) · 重要性中(70) · 急诊喻医生",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 67 · 互动 15644",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV12XdKBiEXY"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 64,
+          "label": "中等",
+          "reasons": [
+            "作者/标题含可信标识「医生」",
+            "UGC 平台，需人工核对医学表述"
+          ]
+        },
+        "importance": {
+          "score": 70,
+          "label": "中",
+          "reasons": [
+            "互动量中等(15,644)",
+            "标题命中关键词「血糖」"
+          ]
+        },
+        "topic_score": 67,
+        "platform": "bili"
+      }
+    },
+    {
+      "id": "disc-034",
+      "title": "减肥底层逻辑｜失控的血糖｜胰岛素抵抗及作用机制｜稳定血糖方法及减肥食物｜血糖减肥法｜健康减脂饮食｜减脂营养师｜影响脂肪合成分解代谢｜血糖与肥胖的关系",
+      "angle": "B站采集 · 真实性中等(64) · 重要性中(70) · 桥安依婷",
+      "category": "饮食指南",
+      "platform": "bili,dy",
+      "duration": "45-60s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 67 · 互动 49780",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1V1cHe1Eo4"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 64,
+          "label": "中等",
+          "reasons": [
+            "作者/标题含可信标识「营养师」",
+            "UGC 平台，需人工核对医学表述"
+          ]
+        },
+        "importance": {
+          "score": 70,
+          "label": "中",
+          "reasons": [
+            "互动量中等(49,780)",
+            "标题命中关键词「血糖」"
+          ]
+        },
+        "topic_score": 67,
+        "platform": "bili"
+      }
+    },
+    {
+      "id": "disc-035",
+      "title": "成人糖尿病食养指南 （2023 年版）",
+      "angle": "全网搜索(Exa)采集 · 真实性较高(100) · 重要性低(40) · ",
+      "category": "数字科普",
+      "platform": "dy,bili",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 全网搜索(Exa) · 选题分 67 · 互动 -",
+      "source_urls": [
+        "https://www.nhc.gov.cn/cms-search/downFiles/4fcbecd2c18e46baaf291bf46c2b79cd.pdf"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 100,
+          "label": "较高",
+          "reasons": [
+            "作者/标题含可信标识「指南」",
+            "来源域名偏权威(.gov.cn)",
+            "标题含数据或医学术语"
+          ]
+        },
+        "importance": {
+          "score": 40,
+          "label": "低",
+          "reasons": []
+        },
+        "topic_score": 67,
+        "platform": "exa"
+      }
+    },
+    {
+      "id": "disc-036",
+      "title": "我在日本学到这个思路清奇的控糖指南",
+      "angle": "小红书采集 · 真实性中等(72) · 重要性中(62) · 沈暮云",
+      "category": "案例故事",
+      "platform": "xhs,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 小红书 · 选题分 66 · 互动 1529",
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6936d31a000000000d03f28c?xsec_token=AB3Y6XWqXYqjNnzJP_xGBFV-sYwkoVM7xse3xTdXaAx4U=&xsec_source="
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 72,
+          "label": "中等",
+          "reasons": [
+            "作者/标题含可信标识「指南」",
+            "标题含数据或医学术语",
+            "UGC 平台，需人工核对医学表述"
+          ]
+        },
+        "importance": {
+          "score": 62,
+          "label": "中",
+          "reasons": [
+            "有一定互动(1,529)",
+            "标题命中关键词「控糖」"
+          ]
+        },
+        "topic_score": 66,
+        "platform": "xhs"
+      }
+    },
+    {
+      "id": "disc-037",
+      "title": "控糖必存！常见主食+蔬菜+水果GI值大全",
+      "angle": "小红书采集 · 真实性中等(72) · 重要性中(62) · 打工喵的健康指南",
+      "category": "饮食指南",
+      "platform": "xhs,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 小红书 · 选题分 66 · 互动 2375",
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/696cb562000000000d00b1ee?xsec_token=AB1ZyEQVoffIsNHwEZUE8_hSg-K_uvT_sDKy4jUEnDXtM=&xsec_source="
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 72,
+          "label": "中等",
+          "reasons": [
+            "作者/标题含可信标识「指南」",
+            "标题含数据或医学术语",
+            "UGC 平台，需人工核对医学表述"
+          ]
+        },
+        "importance": {
+          "score": 62,
+          "label": "中",
+          "reasons": [
+            "有一定互动(2,375)",
+            "标题命中关键词「控糖」"
+          ]
+        },
+        "topic_score": 66,
+        "platform": "xhs"
+      }
+    },
+    {
+      "id": "disc-038",
+      "title": "卧槽！小勤表哥空腹血糖直飙24，医生看完都惊呆了！",
+      "angle": "B站采集 · 真实性偏低(46) · 重要性高(80) · 带带勇次郎",
+      "category": "症状预警",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "warm",
+      "heat_source": "每日采集 B站 · 选题分 65 · 互动 120906",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Tn7W6ZEjK"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 46,
+          "label": "偏低",
+          "reasons": [
+            "作者/标题含可信标识「医生」",
+            "标题含夸张词「惊呆」",
+            "UGC 平台，需人工核对医学表述"
+          ]
+        },
+        "importance": {
+          "score": 80,
+          "label": "高",
+          "reasons": [
+            "互动量高(120,906)",
+            "标题命中关键词「血糖」"
+          ]
+        },
+        "topic_score": 65,
+        "platform": "bili"
+      }
+    },
+    {
+      "id": "disc-039",
+      "title": "我把三甲医院高血糖的处理“偷”出来了（独立值班必备系列5-高血糖）",
+      "angle": "B站采集 · 真实性中等(64) · 重要性中(62) · 外科橙子",
+      "category": "案例故事",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 63 · 互动 8928",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1hac3eyE9g"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 64,
+          "label": "中等",
+          "reasons": [
+            "作者/标题含可信标识「医院」",
+            "UGC 平台，需人工核对医学表述"
+          ]
+        },
+        "importance": {
+          "score": 62,
+          "label": "中",
+          "reasons": [
+            "有一定互动(8,928)",
+            "标题命中关键词「血糖」"
+          ]
+        },
+        "topic_score": 63,
+        "platform": "bili"
+      }
+    },
+    {
+      "id": "disc-040",
+      "title": "【偏口鱼博士】全面解析糖尿病，不是不治之症！鱼博士视频分享稳住血糖的三大秘诀",
+      "angle": "B站采集 · 真实性偏低(52) · 重要性中(70) · 科普知识干货分享",
+      "category": "辟谣纠偏",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 62 · 互动 38737",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1pQGx62E1X"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 52,
+          "label": "偏低",
+          "reasons": [
+            "UGC 平台，需人工核对医学表述"
+          ]
+        },
+        "importance": {
+          "score": 70,
+          "label": "中",
+          "reasons": [
+            "互动量中等(38,737)",
+            "标题命中关键词「血糖」"
+          ]
+        },
+        "topic_score": 62,
+        "platform": "bili"
+      }
+    },
+    {
+      "id": "disc-041",
+      "title": "如果，非要，医生推荐一款血糖仪",
+      "angle": "B站采集 · 真实性中等(64) · 重要性高(80) · 内分泌科陈奇医生",
+      "category": "工具测评",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "warm",
+      "heat_source": "每日采集 B站 · 选题分 73 · 互动 116672",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Jq4y1g7LV"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 64,
+          "label": "中等",
+          "reasons": [
+            "作者/标题含可信标识「医生」",
+            "UGC 平台，需人工核对医学表述"
+          ]
+        },
+        "importance": {
+          "score": 80,
+          "label": "高",
+          "reasons": [
+            "互动量高(116,672)",
+            "标题命中关键词「血糖仪」"
+          ]
+        },
+        "topic_score": 73,
+        "platform": "bili"
+      }
+    },
+    {
+      "id": "disc-042",
+      "title": "【血糖仪】10款主流血糖仪横评推荐！动态CGM免扎针vs无创黑科技vs指尖采血vs多合一详解！血糖仪选购指南·三诺_鱼跃_雅培_微泰_硅基动感_可孚_博邦方舟",
+      "angle": "B站采集 · 真实性中等(72) · 重要性中(70) · robo鱼",
+      "category": "工具测评",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 71 · 互动 13493",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1XaoQBrEf3"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 72,
+          "label": "中等",
+          "reasons": [
+            "作者/标题含可信标识「指南」",
+            "标题含数据或医学术语",
+            "UGC 平台，需人工核对医学表述"
+          ]
+        },
+        "importance": {
+          "score": 70,
+          "label": "中",
+          "reasons": [
+            "互动量中等(13,493)",
+            "标题命中关键词「血糖仪」"
+          ]
+        },
+        "topic_score": 71,
+        "platform": "bili"
       }
     }
   ]

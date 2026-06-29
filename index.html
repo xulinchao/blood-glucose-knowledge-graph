@@ -276,7 +276,7 @@ fetch('./reports.json')
     list.innerHTML = items.length ? items.join('') : '<div style="color:var(--muted);font-size:13px;padding:14px 18px">暂无日报</div>';
   })
   .catch(e => {
-    document.getElementById('report-list').innerHTML = '<div style="color:var(--muted);font-size:13px;padding:14px 18px">日报加载失败</div>';
+    document.getElementById('report-list').innerHTML = '<div style="color:var(--muted);font-size:13px;padding:14px 18px;line-height:1.7">日报索引未生成。本地请在仓库根目录运行：<code style="color:var(--accent)">python scripts/generate-reports-json.py</code><br>或直达 <a href="research-daily/" style="color:var(--accent4)">research-daily/</a> 文件夹</div>';
   });
 </script>
 

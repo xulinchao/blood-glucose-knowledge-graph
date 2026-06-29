@@ -75,6 +75,10 @@ python src/generate_prompts.py
 - **口播选题库**：`data/knowledge/script-topics.json`
 - **选题发现**：`data/discovered-topics.json`
 
+## TraeWork
+
+TraeWork 与本仓库共用数据与真实性规则。每日采集跑 `scripts/run-daily-harvest.bat`；深度监控日报见 [docs/TraeWork.md](docs/TraeWork.md)。
+
 ## 更新笔记
 
 1. 在 `content/` 添加或编辑 Markdown

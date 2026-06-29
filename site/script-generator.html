@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>血糖口播稿 · 选题库 + 文案生成器</title>
+<title>血糖口播稿 · 选题中心 + 文案生成器</title>
 <style>
 :root {
   --bg: #0f1117;
@@ -27,7 +27,7 @@ body {
   line-height: 1.6;
   min-height: 100vh;
 }
-.container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+.container { max-width: 1400px; margin: 0 auto; padding: 20px; }
 
 /* Header */
 .header {
@@ -76,12 +76,51 @@ body {
 .tab-content { display: none; }
 .tab-content.active { display: block; }
 
+/* ===== 选题中心 ===== */
+.topic-center-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.topic-center-header h2 {
+  font-size: 18px;
+  color: var(--accent);
+}
+.topic-source-tabs {
+  display: flex;
+  gap: 6px;
+}
+.source-tab {
+  padding: 6px 14px;
+  border: 1px solid var(--rule);
+  background: var(--bg2);
+  color: var(--muted);
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+.source-tab:hover { border-color: var(--accent); color: var(--ink); }
+.source-tab.active {
+  background: var(--accent);
+  color: var(--bg);
+  border-color: var(--accent);
+  font-weight: 600;
+}
+
 /* Filters */
 .filters {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: var(--bg2);
+  border-radius: var(--radius);
+  border: 1px solid var(--rule);
 }
 .filter-group {
   display: flex;
@@ -90,48 +129,22 @@ body {
 }
 .filter-group label { color: var(--muted); font-size: 13px; white-space: nowrap; }
 .filter-group select, .filter-group input {
-  background: var(--bg2);
+  background: var(--bg3);
   border: 1px solid var(--rule);
   color: var(--ink);
-  padding: 7px 12px;
+  padding: 6px 10px;
   border-radius: 6px;
   font-size: 13px;
   outline: none;
 }
-.filter-group select:focus, .filter-group input:focus {
-  border-color: var(--accent);
-}
-.filter-group input[type="text"] { width: 200px; }
-
-/* Platform tabs inside topic section */
-.platform-tabs {
-  display: flex;
-  gap: 8px;
-  margin-bottom: 16px;
-}
-.plat-btn {
-  padding: 6px 16px;
-  border: 1px solid var(--rule);
-  background: var(--bg2);
-  color: var(--muted);
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 13px;
-  transition: all 0.2s;
-}
-.plat-btn:hover { border-color: var(--accent); color: var(--ink); }
-.plat-btn.active {
-  background: var(--accent);
-  color: var(--bg);
-  border-color: var(--accent);
-  font-weight: 600;
-}
+.filter-group select:focus, .filter-group input:focus { border-color: var(--accent); }
+.filter-group input[type="text"] { width: 180px; }
 
 /* Topic Grid */
 .topic-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 14px;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 12px;
 }
 .topic-card {
   background: var(--bg2);
@@ -140,6 +153,7 @@ body {
   padding: 16px;
   cursor: pointer;
   transition: all 0.2s;
+  position: relative;
 }
 .topic-card:hover {
   border-color: var(--accent);
@@ -149,11 +163,28 @@ body {
   border-color: var(--accent);
   box-shadow: 0 0 0 1px var(--accent), 0 4px 12px rgba(0,212,170,0.15);
 }
+.topic-card.adopted {
+  border-color: rgba(0,212,170,0.3);
+  opacity: 0.85;
+}
+.topic-card.adopted::after {
+  content: "已采纳";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  font-size: 10px;
+  padding: 2px 8px;
+  background: rgba(0,212,170,0.15);
+  color: var(--accent);
+  border-radius: 4px;
+  font-weight: 600;
+}
 .topic-header {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 8px;
+  padding-right: 50px;
 }
 .topic-title {
   font-size: 15px;
@@ -167,7 +198,6 @@ body {
   font-size: 11px;
   font-weight: 600;
   white-space: nowrap;
-  margin-left: 8px;
 }
 .heat-hot { background: rgba(255,107,107,0.2); color: var(--accent2); }
 .heat-warm { background: rgba(255,217,61,0.2); color: var(--accent3); }
@@ -175,8 +205,8 @@ body {
 .topic-meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-  margin-top: 10px;
+  gap: 6px;
+  margin-top: 8px;
 }
 .meta-tag {
   font-size: 11px;
@@ -185,6 +215,8 @@ body {
   padding: 2px 8px;
   border-radius: 4px;
 }
+.meta-tag.source-bili { background: rgba(0,161,214,0.15); color: #00a1d6; }
+.meta-tag.source-manual { background: rgba(0,212,170,0.15); color: var(--accent); }
 .topic-stats {
   display: flex;
   gap: 14px;
@@ -194,15 +226,96 @@ body {
 }
 .stat { font-size: 12px; color: var(--muted); }
 .stat span { color: var(--accent); font-weight: 600; }
+.topic-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+.topic-actions button {
+  flex: 1;
+  padding: 7px 12px;
+  border: 1px solid var(--rule);
+  background: var(--bg3);
+  color: var(--ink);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: all 0.2s;
+}
+.topic-actions button:hover { border-color: var(--accent); color: var(--accent); }
+.topic-actions button.primary {
+  background: linear-gradient(135deg, var(--accent), #00b894);
+  border: none;
+  color: var(--bg);
+  font-weight: 600;
+}
+.topic-actions button.primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,212,170,0.3);
+}
+.topic-actions button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
 
-/* Script Generator */
-.script-workspace {
+/* ===== 文案生成 ===== */
+.gen-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 16px;
+}
+@media (max-width: 900px) {
+  .gen-layout { grid-template-columns: 1fr; }
+}
+
+/* 左侧快捷面板 */
+.quick-panel {
+  background: var(--bg2);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 16px;
+  height: fit-content;
+  position: sticky;
+  top: 20px;
+}
+.quick-panel h3 {
+  font-size: 14px;
+  color: var(--accent);
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+}
+.quick-topic-item {
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1.5;
+  margin-bottom: 4px;
+  transition: all 0.15s;
+  border: 1px solid transparent;
+}
+.quick-topic-item:hover {
+  background: var(--bg3);
+  border-color: var(--accent);
+}
+.quick-topic-item .q-title { font-weight: 500; color: var(--ink); }
+.quick-topic-item .q-meta { font-size: 10px; color: var(--muted); margin-top: 2px; }
+.quick-topic-empty {
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+/* 右侧工作区 */
+.gen-workspace {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
 }
 @media (max-width: 768px) {
-  .script-workspace { grid-template-columns: 1fr; }
+  .gen-workspace { grid-template-columns: 1fr; }
 }
 .panel {
   background: var(--bg2);
@@ -233,9 +346,7 @@ body {
   outline: none;
   font-family: inherit;
 }
-.form-row select:focus, .form-row textarea:focus, .form-row input:focus {
-  border-color: var(--accent);
-}
+.form-row select:focus, .form-row textarea:focus, .form-row input:focus { border-color: var(--accent); }
 .form-row textarea { min-height: 60px; resize: vertical; }
 .form-row .hint { font-size: 11px; color: var(--muted); margin-top: 3px; }
 
@@ -291,7 +402,9 @@ body {
 .copy-btn:hover { border-color: var(--accent); color: var(--accent); }
 .copy-btn.copied { background: var(--accent); color: var(--bg); border-color: var(--accent); }
 
-/* Stats Dashboard */
+.word-count { text-align: right; font-size: 12px; color: var(--muted); margin-top: 6px; }
+
+/* ===== 数据看板 ===== */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -315,7 +428,6 @@ body {
   color: var(--muted);
   margin-top: 4px;
 }
-/* Category chart */
 .cat-bar-row {
   display: flex;
   align-items: center;
@@ -355,41 +467,119 @@ body {
 }
 .cat-section h3 { color: var(--accent); margin-bottom: 14px; font-size: 15px; }
 
-/* Empty state */
+/* ===== 素材采集 ===== */
+.research-table {
+  width: 100%;
+  font-size: 12px;
+  border-collapse: collapse;
+  overflow-x: auto;
+  display: block;
+}
+.research-table th, .research-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+}
+.research-table th { color: var(--muted); font-weight: 500; }
+.research-table input, .research-table select {
+  background: var(--bg3);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  width: 100%;
+}
+.research-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+  flex-wrap: wrap;
+}
+.research-actions button {
+  padding: 7px 14px;
+  background: var(--bg3);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.research-actions button:hover { border-color: var(--accent); }
+.research-actions button.primary {
+  background: linear-gradient(135deg, var(--accent), #00b894);
+  border: none;
+  color: var(--bg);
+  font-weight: 600;
+}
+
+/* ===== 通用 ===== */
 .empty-state {
   text-align: center;
   padding: 40px;
   color: var(--muted);
 }
 .empty-state .icon { font-size: 48px; margin-bottom: 12px; }
-
-/* Word count */
-.word-count { text-align: right; font-size: 12px; color: var(--muted); margin-top: 6px; }
+.loading-state {
+  text-align: center;
+  padding: 40px;
+  color: var(--muted);
+}
+.loading-state::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--rule);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-left: 8px;
+  vertical-align: middle;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg2); }
 ::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .header h1 { font-size: 22px; }
+  .topic-grid { grid-template-columns: 1fr; }
+  .filters { flex-direction: column; }
+  .filter-group input[type="text"] { width: 100%; }
+}
 </style>
 </head>
 <body>
 <div class="container">
   <div class="header">
-    <h1>血糖口播稿 · 选题库 + 文案生成器</h1>
-    <p>50+ 爆款选题 | 抖音/小红书/B站 多平台数据 | 一键生成口播文案</p>
+    <h1>血糖口播稿 · 选题中心 + 文案生成器</h1>
+    <p>50+ 爆款选题 | 多平台自动发现 | 一键生成口播文案</p>
   </div>
 
   <div class="tab-nav">
-    <button class="tab-btn active" onclick="switchTab('topics')">选题库</button>
+    <button class="tab-btn active" onclick="switchTab('topics')">选题中心</button>
     <button class="tab-btn" onclick="switchTab('generator')">文案生成</button>
-    <button class="tab-btn" onclick="switchTab('discovered')" style="position:relative">自动发现<span id="discovered-count" style="display:none;position:absolute;top:-4px;right:-6px;background:var(--accent2);color:#fff;font-size:9px;font-weight:700;min-width:16px;height:16px;border-radius:8px;line-height:16px;text-align:center;padding:0 3px"></span></button>
-    <button class="tab-btn" onclick="switchTab('dashboard')">热度看板</button>
-    <button class="tab-btn" onclick="switchTab('research')">每日调研</button>
+    <button class="tab-btn" onclick="switchTab('research')">素材采集</button>
+    <button class="tab-btn" onclick="switchTab('dashboard')">数据看板</button>
   </div>
 
-  <!-- ===== TAB: 选题库 ===== -->
+  <!-- ===== TAB: 选题中心 ===== -->
   <div class="tab-content active" id="tab-topics">
+    <div class="topic-center-header">
+      <h2>全部选题</h2>
+      <div class="topic-source-tabs">
+        <button class="source-tab active" onclick="filterSource('all')" data-source="all">全部</button>
+        <button class="source-tab" onclick="filterSource('fixed')" data-source="fixed">固定选题</button>
+        <button class="source-tab" onclick="filterSource('discovered')" data-source="discovered">自动发现</button>
+        <button class="source-tab" onclick="filterSource('bili')" data-source="bili">B站采集</button>
+      </div>
+    </div>
+
     <div class="filters">
       <div class="filter-group">
         <label>分类</label>
@@ -416,334 +606,523 @@ body {
         </select>
       </div>
       <div class="filter-group">
+        <label>状态</label>
+        <select id="filter-status" onchange="renderTopics()">
+          <option value="">全部</option>
+          <option value="pending">待处理</option>
+          <option value="done">已采纳</option>
+        </select>
+      </div>
+      <div class="filter-group">
         <label>搜索</label>
         <input type="text" id="filter-search" placeholder="搜索关键词..." oninput="renderTopics()">
       </div>
     </div>
-    <div class="platform-tabs" id="plat-tabs"></div>
-    <div class="topic-grid" id="topic-grid"></div>
+
+    <div class="topic-grid" id="topic-grid">
+      <div class="loading-state">正在加载选题数据...</div>
+    </div>
   </div>
 
   <!-- ===== TAB: 文案生成 ===== -->
   <div class="tab-content" id="tab-generator">
-    <div class="script-workspace">
-      <div class="panel">
-        <h3>配置参数</h3>
-        <div class="form-row">
-          <label>选题（点击选题库卡片自动填入，或手动输入）</label>
-          <textarea id="gen-topic" placeholder="例：血糖高不能吃水果？这3种水果反而帮你降血糖"></textarea>
+    <div class="gen-layout">
+      <!-- 左侧快捷面板 -->
+      <div class="quick-panel">
+        <h3>我的选题</h3>
+        <div id="quick-topics-list">
+          <div class="quick-topic-empty">暂无已采纳选题<br>在选题中心点击"生成文案"即可添加</div>
         </div>
-        <div class="form-row">
-          <label>目标平台</label>
-          <select id="gen-plat">
-            <option value="dy">抖音（短平快，15-45秒）</option>
-            <option value="xhs">小红书（种草风，30-60秒）</option>
-            <option value="bili">B站（知识深度，1-3分钟）</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <label>选题分类</label>
-          <select id="gen-cat">
-            <option value="myth">辟谣纠偏</option>
-            <option value="food">饮食指南</option>
-            <option value="number">数字科普</option>
-            <option value="action">实操方法</option>
-            <option value="symptom">症状预警</option>
-            <option value="tool">工具测评</option>
-            <option value="story">案例故事</option>
-            <option value="mistake">避坑指南</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <label>视频时长（秒）</label>
-          <select id="gen-duration">
-            <option value="15">15秒（超短）</option>
-            <option value="30" selected>30秒（标准）</option>
-            <option value="45">45秒（加长）</option>
-            <option value="60">60秒（小红书）</option>
-            <option value="120">2分钟（B站）</option>
-          </select>
-        </div>
-        <div class="form-row">
-          <label>核心数据/知识点（可选，填入后文案更精准）</label>
-          <textarea id="gen-data" placeholder="例：西瓜GI值72，但含水量高，GL值低；苹果GI值38，膳食纤维丰富"></textarea>
-        </div>
-        <div class="form-row">
-          <label>人设/语气</label>
-          <select id="gen-persona">
-            <option value="friendly">亲切科普（像朋友聊天）</option>
-            <option value="expert">专业医生（权威可信）</option>
-            <option value="personal">亲身经历（控糖者自述）</option>
-            <option value="surprise">反常识揭秘（制造意外感）</option>
-          </select>
-        </div>
-        <button class="generate-btn" onclick="generateScript()">生成口播文案</button>
       </div>
-      <div class="panel">
-        <h3>生成结果</h3>
-        <div class="output-area" id="script-output">
-          <div class="empty-state">
-            <div class="icon">📝</div>
-            <p>配置参数后点击"生成口播文案"</p>
-            <p style="font-size:12px;margin-top:8px">或在选题库中选择一个选题，自动填入</p>
+
+      <!-- 右侧工作区 -->
+      <div class="gen-workspace">
+        <div class="panel">
+          <h3>配置参数</h3>
+          <div class="form-row">
+            <label>选题</label>
+            <textarea id="gen-topic" placeholder="点击左侧选题快速填入，或手动输入"></textarea>
+          </div>
+          <div class="form-row">
+            <label>目标平台</label>
+            <select id="gen-plat">
+              <option value="dy">抖音（短平快，15-45秒）</option>
+              <option value="xhs">小红书（种草风，30-60秒）</option>
+              <option value="bili">B站（知识深度，1-3分钟）</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label>选题分类</label>
+            <select id="gen-cat">
+              <option value="myth">辟谣纠偏</option>
+              <option value="food">饮食指南</option>
+              <option value="number">数字科普</option>
+              <option value="action">实操方法</option>
+              <option value="symptom">症状预警</option>
+              <option value="tool">工具测评</option>
+              <option value="story">案例故事</option>
+              <option value="mistake">避坑指南</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label>视频时长（秒）</label>
+            <select id="gen-duration">
+              <option value="15">15秒（超短）</option>
+              <option value="30" selected>30秒（标准）</option>
+              <option value="45">45秒（加长）</option>
+              <option value="60">60秒（小红书）</option>
+              <option value="120">2分钟（B站）</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <label>核心数据/知识点</label>
+            <textarea id="gen-data" placeholder="填入后文案更精准。例：西瓜GI值72但GL值低；苹果GI值38..."></textarea>
+          </div>
+          <div class="form-row">
+            <label>人设/语气</label>
+            <select id="gen-persona">
+              <option value="friendly">亲切科普（像朋友聊天）</option>
+              <option value="expert">专业医生（权威可信）</option>
+              <option value="personal">亲身经历（控糖者自述）</option>
+              <option value="surprise">反常识揭秘（制造意外感）</option>
+            </select>
+          </div>
+          <button class="generate-btn" onclick="generateScript()">生成口播文案</button>
+          <div class="word-count" id="word-count"></div>
+        </div>
+
+        <div class="panel">
+          <h3>生成结果</h3>
+          <div class="output-area" id="script-output">
+<div class="note">点击"生成口播文案"按钮开始创作...</div>
+<div class="note" style="margin-top:12px">提示：先在左侧"我的选题"中选择一个选题，或手动填写配置参数。</div>
+          </div>
+          <div class="copy-btns">
+            <button class="copy-btn" onclick="copyOutput('text')">复制纯文本</button>
+            <button class="copy-btn" onclick="copyOutput('prompt')">复制为 AI Prompt</button>
+            <button class="copy-btn" onclick="copyOutput('split')">复制分镜版</button>
           </div>
         </div>
-        <div class="word-count" id="word-count"></div>
-        <div class="copy-btns">
-          <button class="copy-btn" onclick="copyOutput('text')">复制纯文本</button>
-          <button class="copy-btn" onclick="copyOutput('prompt')">复制为 AI Prompt</button>
-          <button class="copy-btn" onclick="copyOutput('split')">复制分镜版</button>
-        </div>
       </div>
     </div>
   </div>
 
-  <!-- ===== TAB: 热度看板 ===== -->
-  <div class="tab-content" id="tab-dashboard">
-    <div class="stats-grid" id="stats-grid"></div>
-    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px;">
-      <div class="cat-section" id="cat-chart"></div>
-      <div class="cat-section" id="heat-chart"></div>
-    </div>
-    <div class="cat-section" id="platform-chart"></div>
-  </div>
-
-  <!-- ===== TAB: 每日调研 ===== -->
+  <!-- ===== TAB: 素材采集 ===== -->
   <div class="tab-content" id="tab-research">
-    <div style="display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-bottom:20px">
-      <div class="cat-section">
-        <h3>蝉妈妈操作指南</h3>
-        <div style="font-size:13px; line-height:1.8; color:var(--ink)">
-          <p><strong style="color:var(--accent)">Step 1</strong>：打开蝉妈妈 → 选「抖音」或「小红书」</p>
-          <p><strong style="color:var(--accent)">Step 2</strong>：进入「视频库」/「笔记库」→ 搜索关键词</p>
-          <p><strong style="color:var(--accent)">Step 3</strong>：筛选「近7天」→ 按「点赞数」排序</p>
-          <p><strong style="color:var(--accent)">Step 4</strong>：记录前5-10条：标题、点赞、收藏、评论、达人</p>
-          <p style="color:var(--muted); font-size:12px; margin-top:8px">每天15-20分钟，覆盖10个关键词即可</p>
-        </div>
-      </div>
-      <div class="cat-section">
-        <h3>搜索关键词清单</h3>
-        <div id="keyword-list" style="font-size:13px"></div>
-        <button class="copy-btn" style="margin-top:10px; width:100%" onclick="copyKeywords()">复制全部关键词（粘贴到蝉妈妈搜索框）</button>
-      </div>
-    </div>
-    <div class="cat-section" style="margin-bottom:16px">
-      <h3>今日爆款录入</h3>
-      <p style="font-size:12px; color:var(--muted); margin-bottom:12px">在蝉妈妈看到的爆款视频，记录到这里。复制后粘贴到飞书「选题跟踪表」。</p>
+    <div class="panel">
+      <h3>蝉妈妈手动调研</h3>
+      <p style="font-size:13px;color:var(--muted);margin-bottom:12px">
+        将蝉妈妈搜索到的爆款视频数据填入下表，可导出 CSV 粘贴到飞书多维表格。
+        <button onclick="copyKeywords()" style="background:none;border:1px solid var(--accent);color:var(--accent);padding:3px 10px;border-radius:4px;cursor:pointer;font-size:12px;margin-left:8px">复制全部关键词</button>
+      </p>
+      <div id="keyword-list" style="margin-bottom:12px"></div>
       <div style="overflow-x:auto">
-        <table id="research-table" style="width:100%; font-size:12px; border-collapse:collapse">
+        <table class="research-table">
           <thead>
-            <tr style="border-bottom:2px solid var(--rule)">
-              <th style="padding:8px; color:var(--muted); text-align:left; width:6%">#</th>
-              <th style="padding:8px; color:var(--muted); text-align:left; width:30%">标题</th>
-              <th style="padding:8px; color:var(--muted); text-align:left; width:10%">平台</th>
-              <th style="padding:8px; color:var(--muted); text-align:left; width:10%">关键词</th>
-              <th style="padding:8px; color:var(--muted); text-align:left; width:8%">点赞</th>
-              <th style="padding:8px; color:var(--muted); text-align:left; width:8%">收藏</th>
-              <th style="padding:8px; color:var(--muted); text-align:left; width:8%">评论</th>
-              <th style="padding:8px; color:var(--muted); text-align:left; width:10%">达人</th>
-              <th style="padding:8px; color:var(--muted); text-align:left; width:5%">热度</th>
-              <th style="padding:8px; color:var(--muted); text-align:left; width:5%"></th>
+            <tr>
+              <th>#</th><th>视频标题</th><th>平台</th><th>关键词</th>
+              <th>点赞</th><th>收藏</th><th>评论</th>
+              <th>达人</th><th>热度</th><th></th>
             </tr>
           </thead>
           <tbody id="research-tbody"></tbody>
         </table>
       </div>
-      <div style="display:flex; gap:8px; margin-top:12px">
-        <button class="copy-btn" onclick="addResearchRow()">+ 添加一行</button>
-        <button class="copy-btn" onclick="copyResearchCSV()">复制为 CSV（粘贴到飞书）</button>
-        <button class="copy-btn" onclick="clearResearchRows()">清空全部</button>
-        <button class="copy-btn" onclick="exportResearchJSON()">导出 JSON（本地备份）</button>
-      </div>
-    </div>
-    <div class="cat-section">
-      <h3>数据回流说明</h3>
-      <div style="font-size:13px; line-height:1.8; color:var(--muted)">
-        <p><strong style="color:var(--accent3)">为什么不能全自动？</strong>蝉妈妈免费版没有开放 API，无法程序化抓取。企业版 API 需要额外付费（数万/年），对个人不划算。</p>
-        <p><strong style="color:var(--accent3)">半自动流程：</strong>每天花15分钟在蝉妈妈手动记录 → 填入上表 → 复制CSV粘贴到飞书「选题跟踪表」新增行 → 定期（每周）更新到本工具的选题库。</p>
-        <p><strong style="color:var(--accent3)">数据存储：</strong>录入数据自动保存在浏览器 localStorage，关闭页面不丢失。也可导出 JSON 文件备份。</p>
+      <div class="research-actions">
+        <button onclick="addResearchRow()">+ 新增行</button>
+        <button onclick="copyResearchCSV()" class="primary">复制 CSV</button>
+        <button onclick="exportResearchJSON()">导出 JSON</button>
+        <button onclick="clearResearchRows()" style="color:var(--accent2);border-color:var(--accent2)">清空</button>
       </div>
     </div>
   </div>
 
-  <!-- ===== TAB: 自动发现 ===== -->
-  <div class="tab-content" id="tab-discovered">
-    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:16px">
-      <div>
-        <h3 style="font-size:16px; color:var(--ink)">选题发现引擎</h3>
-        <p style="font-size:12px; color:var(--muted)">每日自动搜索各平台血糖控糖热门内容，挖掘新选题角度</p>
-      </div>
-      <div style="display:flex; gap:8px">
-        <button class="copy-btn" onclick="loadDiscoveredTopics()">🔄 刷新数据</button>
-        <button class="copy-btn" onclick="adoptDiscoveredTopic()">✅ 采纳到选题库</button>
-      </div>
-    </div>
-
-    <div id="discovered-grid" style="display:grid; gap:12px">
-      <div style="text-align:center; padding:40px; color:var(--muted); font-size:14px">
-        <p>点击「🔄 刷新数据」加载选题发现数据</p>
-        <p style="font-size:12px; margin-top:8px">数据来源：data/discovered-topics.json（由每日自动化任务生成）</p>
-      </div>
-    </div>
-
-    <div class="cat-section" style="margin-top:20px">
-      <h3>数据说明</h3>
-      <div style="font-size:13px; line-height:1.8; color:var(--muted)">
-        <p><strong style="color:var(--accent)">数据来源：</strong>选题发现引擎每天09:00自动搜索各平台血糖控糖相关热门内容，提取选题角度。</p>
-        <p><strong style="color:var(--accent)">热度标记：</strong>🔥 HOT = 多平台同时出现 · 📊 MED = 有媒体报道但未爆发 · 📝 INFO = 有科普价值可储备</p>
-        <p><strong style="color:var(--accent)">使用方式：</strong>勾选感兴趣的选题 → 点击「采纳到选题库」→ 在文案生成标签页生成脚本</p>
-        <p><strong style="color:var(--accent)">手动添加：</strong>你也可以手动在下方添加发现的新选题，数据保存在浏览器 localStorage。</p>
-      </div>
-    </div>
-
-    <div class="cat-section" style="margin-top:16px">
-      <h3>手动添加选题发现</h3>
-      <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-bottom:8px">
-        <input id="disc-title" placeholder="选题标题" style="padding:8px 10px; background:var(--bg3); border:1px solid var(--rule); border-radius:6px; color:var(--ink); font-size:13px">
-        <select id="disc-cat" style="padding:8px 10px; background:var(--bg3); border:1px solid var(--rule); border-radius:6px; color:var(--ink); font-size:13px">
-          <option value="辟谣纠偏">辟谣纠偏</option><option value="饮食指南">饮食指南</option><option value="数字科普">数字科普</option>
-          <option value="实操方法">实操方法</option><option value="症状预警">症状预警</option><option value="工具测评">工具测评</option>
-          <option value="案例故事">案例故事</option><option value="避坑指南">避坑指南</option>
-        </select>
-      </div>
-      <textarea id="disc-angle" placeholder="切入角度（一句话说明信息差）" rows="2" style="width:100%; padding:8px 10px; background:var(--bg3); border:1px solid var(--rule); border-radius:6px; color:var(--ink); font-size:13px; resize:vertical"></textarea>
-      <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-top:8px">
-        <select id="disc-platform" style="padding:8px 10px; background:var(--bg3); border:1px solid var(--rule); border-radius:6px; color:var(--ink); font-size:13px">
-          <option value="dy,xhs">抖音+小红书</option><option value="dy">抖音</option><option value="xhs">小红书</option>
-          <option value="bili">B站</option><option value="dy,bili">抖音+B站</option><option value="dy,xhs,bili">全平台</option>
-        </select>
-        <select id="disc-heat" style="padding:8px 10px; background:var(--bg3); border:1px solid var(--rule); border-radius:6px; color:var(--ink); font-size:13px">
-          <option value="high">🔥 HOT</option><option value="medium">📊 MED</option><option value="low">📝 INFO</option>
-        </select>
-        <select id="disc-duration" style="padding:8px 10px; background:var(--bg3); border:1px solid var(--rule); border-radius:6px; color:var(--ink); font-size:13px">
-          <option value="15-20s">15-20秒</option><option value="30-45s">30-45秒</option><option value="45-60s">45-60秒</option>
-        </select>
-      </div>
-      <button class="copy-btn" style="margin-top:8px; width:100%" onclick="addManualDiscovered()">+ 添加选题</button>
-    </div>
+  <!-- ===== TAB: 数据看板 ===== -->
+  <div class="tab-content" id="tab-dashboard">
+    <div class="stats-grid" id="stats-grid"></div>
+    <div class="cat-section" id="cat-chart"></div>
+    <div class="cat-section" id="heat-chart"></div>
+    <div class="cat-section" id="platform-chart"></div>
   </div>
+
 </div>
 
+<script src="script-bridge.js"></script>
 <script>
 // ==================== DATA ====================
-let TOPICS = [];
+const TOPICS=[
+  {id:1,title:"血糖高不能吃水果？这3种水果反而帮你降血糖",cat:"myth",catName:"辟谣纠偏",heat:"hot",platforms:{dy:{views:"12.5w",likes:"8.2k",saves:"3.1k",comment:"620"},xhs:{views:"45k",likes:"2.8k",saves:"5.5k",comment:"180"},bili:{views:"8.2k",likes:"520",saves:"180",comment:"45"}},tags:["水果","低GI","饮食"],hook:"水果恐惧",dataRef:["草莓GI=40,蓝莓GI=53,樱桃GI=22","高纤维水果可延缓糖分吸收","每天200g以内不影响血糖"],angle:"打破'血糖高不能吃水果'的误区",audience:"糖前期/控糖人群",trend:"稳定上升",note:"数据来源：悉尼大学GI数据库+中国食物成分表"},
+  {id:2,title:"白米饭 vs 糙米饭：餐后血糖差多少？实测数据说话",cat:"food",catName:"饮食指南",heat:"hot",platforms:{dy:{views:"28w",likes:"15k",saves:"6.2k",comment:"1.2k"},xhs:{views:"82k",likes:"5.1k",saves:"9.8k",comment:"340"},bili:{views:"15k",likes:"890",saves:"320",comment:"78"}},tags:["主食","对比","实测"],hook:"实测冲击",dataRef:["白米饭GI=83,糙米饭GI=68","糙米膳食纤维是白米的6倍","替换50%白米可降低餐后血糖峰值20%"],angle:"用实测数据打破主食选择困惑",audience:"所有控糖人群",trend:"持续热门",note:"可用动态血糖仪实测数据增强说服力"},
+  {id:3,title:"空腹血糖6.1，到底算不算糖尿病？",cat:"number",catName:"数字科普",heat:"hot",platforms:{dy:{views:"35w",likes:"18k",saves:"4.5k",comment:"2.1k"},xhs:{views:"120k",likes:"7.2k",saves:"11k",comment:"560"},bili:{views:"22k",likes:"1.2k",saves:"450",comment:"120"}},tags:["诊断","标准","数字"],hook:"临界焦虑",dataRef:["正常空腹<6.1,糖尿病≥7.0","6.1-6.9为空腹血糖受损","需结合糖化血红蛋白和餐后2h血糖判断"],angle:"讲清楚血糖诊断的三个关键数字",audience:"体检异常人群",trend:" evergreen",note:"结合最新指南数据"},
+  {id:4,title:"这5个信号说明你的血糖在悄悄升高",cat:"symptom",catName:"症状预警",heat:"warm",platforms:{dy:{views:"18w",likes:"9.5k",saves:"5.8k",comment:"890"},xhs:{views:"65k",likes:"4.1k",saves:"8.2k",comment:"280"},bili:{views:"12k",likes:"680",saves:"210",comment:"55"}},tags:["症状","预警","早期"],hook:"身体信号",dataRef:["频繁口渴、尿频","伤口愈合缓慢","视力模糊","疲劳乏力","皮肤瘙痒"],angle:"通过日常症状识别血糖异常",audience:"30+岁亚健康人群",trend:"上升",note:"注意：症状仅供参考，确诊需就医"},
+  {id:5,title:"二甲双胍：吃对了降血糖，吃错了伤胃",cat:"tool",catName:"工具测评",heat:"warm",platforms:{dy:{views:"15w",likes:"7.8k",saves:"3.2k",comment:"720"},xhs:{views:"38k",likes:"2.4k",saves:"4.5k",comment:"190"},bili:{views:"9.5k",likes:"540",saves:"160",comment:"38"}},tags:["药物","二甲双胍","用药"],hook:"用药误区",dataRef:["随餐服用可减少胃肠不适","普通片vs缓释片区别","维生素B12缺乏风险需监测"],angle:"正确用药方法和注意事项",audience:"已确诊糖尿病患者",trend:"稳定",note:"药物内容需标注'遵医嘱'"},
+  {id:6,title:"控糖早餐万能公式：蛋白质+低GI碳水+蔬菜",cat:"food",catName:"饮食指南",heat:"hot",platforms:{dy:{views:"42w",likes:"22k",saves:"12k",comment:"1.8k"},xhs:{views:"150k",likes:"9.1k",saves:"18k",comment:"720"},bili:{views:"28k",likes:"1.5k",saves:"580",comment:"140"}},tags:["早餐","食谱","公式"],hook:"万能公式",dataRef:["蛋白质占30%,低GI碳水40%,蔬菜30%","示例：鸡蛋+燕麦+西兰花","早餐决定全天血糖基线"],angle:"提供一个可复制执行的早餐模板",audience:"上班族/早餐不规律者",trend:"热门",note:"可结合具体食物GI数据"},
+  {id:7,title:"动态血糖仪 vs 指尖血糖仪：该买哪个？",cat:"tool",catName:"工具测评",heat:"warm",platforms:{dy:{views:"22w",likes:"11k",saves:"4.8k",comment:"950"},xhs:{views:"55k",likes:"3.2k",saves:"6.8k",comment:"240"},bili:{views:"18k",likes:"980",saves:"350",comment:"85"}},tags:["血糖仪","对比","选购"],hook:"选择困难",dataRef:["动态：连续监测,价格300-500/月","指尖：单次检测,试纸成本更低","新糖友建议先指尖,控制稳定后动态"],angle:"根据使用场景给出选购建议",audience:"新确诊/考虑升级设备者",trend:"上升",note:"价格数据需定期更新"},
+  {id:8,title:"我靠这3个习惯，把糖化血红蛋白从8.5降到6.2",cat:"story",catName:"案例故事",heat:"hot",platforms:{dy:{views:"55w",likes:"28k",saves:"15k",comment:"3.2k"},xhs:{views:"200k",likes:"12k",saves:"25k",comment:"1.1k"},bili:{views:"35k",likes:"2.1k",saves:"820",comment:"210"}},tags:["逆转","经验","习惯"],hook:"逆袭故事",dataRef:["规律饮食+餐后运动+充足睡眠","3个月糖化从8.5→6.2","个体差异大，仅供参考"],angle:"真实经历分享+可操作建议",audience:"已确诊寻求改变者",trend:" viral",note:"需强调个体差异，不承诺效果"},
+  {id:9,title:"GI值排行榜：这10种主食吃了血糖飙升最快",cat:"number",catName:"数字科普",heat:"hot",platforms:{dy:{views:"38w",likes:"19k",saves:"9.5k",comment:"1.5k"},xhs:{views:"95k",likes:"5.8k",saves:"14k",comment:"480"},bili:{views:"25k",likes:"1.3k",saves:"480",comment:"110"}},tags:["GI值","排行榜","主食"],hook:"排行榜冲击",dataRef:["糯米饭GI=87,白面包=75,馒头=85","荞麦面GI=54,燕麦=55","替换高GI主食可显著改善餐后血糖"],angle:"用排名形式呈现主食GI数据",audience:"主食依赖者",trend:"热门",note:"数据来源：悉尼大学GI数据库"},
+  {id:10,title:"饭后百步走能降糖？最新研究说：时机错了反而升",cat:"myth",catName:"辟谣纠偏",heat:"warm",platforms:{dy:{views:"25w",likes:"13k",saves:"5.5k",comment:"1.1k"},xhs:{views:"72k",likes:"4.5k",saves:"8.8k",comment:"310"},bili:{views:"16k",likes:"860",saves:"290",comment:"65"}},tags:["运动","饭后","时机"],hook:"反常识",dataRef:["饭后立即剧烈运动可能反升血糖","最佳运动时机：餐后30-60分钟","轻度散步 vs 中强度运动效果不同"],angle:"纠正'饭后百步走'的笼统说法",audience:"有运动习惯者",trend:"上升",note:"引用具体研究"},
+  {id:11,title:"糖化血红蛋白7.0，医生说我控制得还不错？",cat:"number",catName:"数字科普",heat:"warm",platforms:{dy:{views:"12w",likes:"6.2k",saves:"2.8k",comment:"520"},xhs:{views:"35k",likes:"2.1k",saves:"4.2k",comment:"150"},bili:{views:"7.5k",likes:"410",saves:"130",comment:"28"}},tags:["糖化","标准","目标"],hook:"标准困惑",dataRef:["一般控制目标<7.0%","年轻/新诊断可更严格<6.5%","老年/有并发症可放宽<8.0%"],angle:"讲清楚糖化控制目标的个体差异",audience:"已确诊患者",trend:"稳定",note:"结合年龄和并发症分层"},
+  {id:12,title:"无糖食品真的无糖吗？看完配料表我沉默了",cat:"myth",catName:"辟谣纠偏",heat:"hot",platforms:{dy:{views:"30w",likes:"16k",saves:"7.2k",comment:"1.4k"},xhs:{views:"88k",likes:"5.2k",saves:"11k",comment:"420"},bili:{views:"20k",likes:"1.1k",saves:"380",comment:"90"}},tags:["无糖","配料表","食品"],hook:"揭秘",dataRef:["无糖=无蔗糖，可能含麦芽糖/果葡糖浆","糖醇类代糖（木糖醇等）仍需计入碳水","看配料表前3位判断真实含糖量"],angle:"教用户看懂配料表和'无糖'陷阱",audience:"购买包装食品者",trend:"热门",note:"可拍配料表对比图"},
+  {id:13,title:"睡前一杯牛奶，对血糖到底有没有影响？",cat:"food",catName:"饮食指南",heat:"warm",platforms:{dy:{views:"15w",likes:"7.8k",saves:"3.5k",comment:"680"},xhs:{views:"42k",likes:"2.6k",saves:"5.1k",comment:"180"},bili:{views:"10k",likes:"550",saves:"170",comment:"35"}},tags:["牛奶","睡前","习惯"],hook:"日常习惯",dataRef:["250ml牛奶约含12g碳水","乳糖GI=46,对血糖影响温和","睡前1小时饮用不影响空腹血糖"],angle:"用数据回答常见饮食疑问",audience:"有睡前喝牛奶习惯者",trend:"稳定",note:"注意乳糖不耐受人群"},
+  {id:14,title:"胰岛素抵抗：为什么瘦子也会得？",cat:"number",catName:"数字科普",heat:"warm",platforms:{dy:{views:"18w",likes:"9.5k",saves:"4.2k",comment:"780"},xhs:{views:"52k",likes:"3.1k",saves:"6.5k",comment:"220"},bili:{views:"14k",likes:"760",saves:"260",comment:"58"}},tags:["胰岛素抵抗","瘦子","机制"],hook:"打破偏见",dataRef:["胰岛素抵抗与体重无绝对关系","遗传因素、久坐、压力均可导致","HOMA-IR指数>2.5提示抵抗"],angle:"纠正'只有胖人才会胰岛素抵抗'的偏见",audience:"体型偏瘦但血糖异常者",trend:"上升",note:"需解释HOMA-IR计算方式"},
+  {id:15,title:"控糖一个月，我总结了这7个踩过的坑",cat:"mistake",catName:"避坑指南",heat:"warm",platforms:{dy:{views:"20w",likes:"10k",saves:"5.8k",comment:"920"},xhs:{views:"58k",likes:"3.5k",saves:"7.2k",comment:"260"},bili:{views:"12k",likes:"650",saves:"220",comment:"48"}},tags:["经验","避坑","新手"],hook:"踩坑合集",dataRef:["过度节食导致低血糖反弹","只控糖不管蛋白质和脂肪","忽视隐形糖（酱料/加工食品）","运动强度不足","不监测餐后血糖","盲目跟风网红食谱","擅自停药/减药"],angle:"总结新手控糖常见错误",audience:"刚确诊/刚开始控糖者",trend:"热门",note:"可做成系列内容"},
+  {id:16,title:"糖尿病患者能不能喝酒？一次性讲清楚",cat:"myth",catName:"辟谣纠偏",heat:"warm",platforms:{dy:{views:"14w",likes:"7.2k",saves:"3.1k",comment:"580"},xhs:{views:"38k",likes:"2.3k",saves:"4.5k",comment:"150"},bili:{views:"8.5k",likes:"460",saves:"140",comment:"30"}},tags:["饮酒","禁忌","社交"],hook:"社交场景",dataRef:["酒精抑制肝糖输出，有低血糖风险","啤酒含碳水，白酒影响更大","空腹饮酒极其危险"],angle:"从医学机制解释饮酒对血糖的影响",audience:"有社交饮酒需求者",trend:"稳定",note:"强调遵医嘱，不鼓励饮酒"},
+  {id:17,title:"燕麦片怎么选？即食 vs 钢切 vs 传统rolled",cat:"tool",catName:"工具测评",heat:"warm",platforms:{dy:{views:"16w",likes:"8.5k",saves:"3.8k",comment:"650"},xhs:{views:"48k",likes:"2.9k",saves:"5.8k",comment:"200"},bili:{views:"11k",likes:"580",saves:"190",comment:"42"}},tags:["燕麦","选购","对比"],hook:"选择困难",dataRef:["钢切燕麦GI=42,传统rolled=55,即食=66","加工程度越深，升糖越快","选配料表只有'燕麦'的产品"],angle:"教用户看懂燕麦加工方式对血糖的影响",audience:"早餐吃燕麦者",trend:"上升",note:"可拍实物对比图"},
+  {id:18,title:"血糖波动大比高血糖更危险？波动系数怎么算",cat:"number",catName:"数字科普",heat:"warm",platforms:{dy:{views:"12w",likes:"6.5k",saves:"2.9k",comment:"480"},xhs:{views:"32k",likes:"1.9k",saves:"3.8k",comment:"130"},bili:{views:"7.8k",likes:"420",saves:"140",comment:"25"}},tags:["血糖波动","并发症","计算"],hook:"隐藏危险",dataRef:["血糖波动 coefficient = (最高-最低)/平均","波动大加速血管损伤","目标：波动<3.9 mmol/L"],angle:"讲清楚血糖波动的危害和计算方法",audience:"关注血糖稳定性者",trend:"上升",note:"需引用研究数据"},
+  {id:19,title:"我采访了10位控糖成功的人，发现他们都有这3个共同点",cat:"story",catName:"案例故事",heat:"hot",platforms:{dy:{views:"45w",likes:"23k",saves:"11k",comment:"2.5k"},xhs:{views:"165k",likes:"9.8k",saves:"20k",comment:"890"},bili:{views:"30k",likes:"1.8k",saves:"680",comment:"160"}},tags:["经验","共性","成功"],hook:"共性提炼",dataRef:["坚持监测并记录","找到可持续的饮食模式","重视睡眠和压力管理"],angle:"通过多人经验提炼成功要素",audience:"寻求控糖动力者",trend:" viral",note:"可做成系列采访内容"},
+  {id:20,title:"糖尿病并发症：不是'也许'，是'迟早'——除非你这样做",cat:"symptom",catName:"症状预警",heat:"hot",platforms:{dy:{views:"50w",likes:"26k",saves:"13k",comment:"3.5k"},xhs:{views:"180k",likes:"11k",saves:"22k",comment:"1.2k"},bili:{views:"38k",likes:"2.2k",saves:"850",comment:"200"}},tags:["并发症","预防","紧迫"],hook:"紧迫警示",dataRef:["糖化每降1%，并发症风险降30%","早期干预可逆转部分损伤","重点：眼底、肾脏、神经、心血管"],angle:"用数据强调早期控制的重要性",audience:"确诊后未重视者",trend:"热门",note:"注意措辞，不制造恐慌"},
+  {id:21,title:"代糖测评：赤藓糖醇、甜菊糖、罗汉果糖，哪个最稳？",cat:"tool",catName:"工具测评",heat:"warm",platforms:{dy:{views:"18w",likes:"9.2k",saves:"4.1k",comment:"720"},xhs:{views:"52k",likes:"3.1k",saves:"6.2k",comment:"210"},bili:{views:"13k",likes:"700",saves:"240",comment:"52"}},tags:["代糖","测评","甜味剂"],hook:"测评对比",dataRef:["赤藓糖醇GI=0,不升血糖","甜菊糖GI=0,但有后苦味","罗汉果糖GI=0,口感最接近蔗糖"],angle:"横向对比常见代糖对血糖的影响",audience:"想用代糖替代者",trend:"上升",note:"注意代糖对肠道菌群的影响"},
+  {id:22,title:"上班族控糖：外卖怎么点？我整理了这份清单",cat:"food",catName:"饮食指南",heat:"hot",platforms:{dy:{views:"35w",likes:"18k",saves:"9.5k",comment:"1.6k"},xhs:{views:"110k",likes:"6.5k",saves:"14k",comment:"520"},bili:{views:"22k",likes:"1.2k",saves:"420",comment:"95"}},tags:["外卖","上班族","实操"],hook:"场景痛点",dataRef:["选清蒸/白灼类菜品","米饭控制在1/3碗","避开红烧、糖醋、勾芡类"],angle:"针对上班族外卖场景的控糖指南",audience:"上班族/外卖依赖者",trend:"热门",note:"可做成图文对照清单"},
+  {id:23,title:"空腹血糖正常，但餐后2小时总是超标？原因找到了",cat:"symptom",catName:"症状预警",heat:"warm",platforms:{dy:{views:"22w",likes:"11k",saves:"5.2k",comment:"890"},xhs:{views:"65k",likes:"3.8k",saves:"7.8k",comment:"280"},bili:{views:"15k",likes:"820",saves:"280",comment:"62"}},tags:["餐后血糖","空腹","诊断"],hook:"矛盾现象",dataRef:["可能是胰岛素分泌延迟","常见于早期糖尿病/糖前期","需做OGTT或糖化确认"],angle:"解释'空腹正常但餐后高'的常见原因",audience:"体检空腹正常但怀疑血糖者",trend:"上升",note:"建议就医检查"},
+  {id:24,title:"控糖期可以吃的10种零食（附GI值和份量）",cat:"food",catName:"饮食指南",heat:"hot",platforms:{dy:{views:"40w",likes:"20k",saves:"11k",comment:"1.9k"},xhs:{views:"130k",likes:"7.8k",saves:"16k",comment:"650"},bili:{views:"25k",likes:"1.3k",saves:"480",comment:"110"}},tags:["零食","清单","低GI"],hook:"零食自由",dataRef:["坚果类（杏仁GI=0,核桃GI=15）","低糖酸奶（GI=48）","黑巧克力85%以上（GI=23）"],angle:"提供具体可执行的零食清单",audience:"嘴馋/需要加餐者",trend:"热门",note:"注意份量控制"},
+  {id:25,title:"得了糖尿病，寿命会缩短多少年？数据说话",cat:"number",catName:"数字科普",heat:"warm",platforms:{dy:{views:"28w",likes:"14k",saves:"5.8k",comment:"1.3k"},xhs:{views:"75k",likes:"4.5k",saves:"8.8k",comment:"310"},bili:{views:"18k",likes:"980",saves:"340",comment:"78"}},tags:["寿命","数据","预后"],hook:"生死话题",dataRef:["控制好：预期寿命接近正常人","控制差：平均缩短8-10年","关键：糖化、血压、血脂综合管理"],angle:"用数据客观回答敏感问题",audience:"确诊后焦虑者",trend:"稳定",note:"注意措辞，给予希望"},
+  {id:26,title:"动态血糖仪佩戴7天，我发现了自己血糖的3个秘密",cat:"story",catName:"案例故事",heat:"warm",platforms:{dy:{views:"20w",likes:"10k",saves:"4.8k",comment:"820"},xhs:{views:"58k",likes:"3.5k",saves:"6.8k",comment:"240"},bili:{views:"14k",likes:"750",saves:"260",comment:"58"}},tags:["动态血糖仪","佩戴","发现"],hook:"真实体验",dataRef:["发现夜间低血糖","发现某些食物反应超预期","运动降糖效果可视化"],angle:"用7天真实数据展示CGM的价值",audience:"考虑购买CGM者",trend:"上升",note:"可拍佩戴过程视频"},
+  {id:27,title:"这些'健康'食物，其实偷偷升血糖（你可能天天吃）",cat:"myth",catName:"辟谣纠偏",heat:"hot",platforms:{dy:{views:"32w",likes:"17k",saves:"8.2k",comment:"1.5k"},xhs:{views:"95k",likes:"5.6k",saves:"12k",comment:"480"},bili:{views:"20k",likes:"1.1k",saves:"380",comment:"85"}},tags:["健康食品","陷阱","隐藏糖"],hook:"反直觉",dataRef:["果汁（去除了纤维，升糖快）","全麦面包（很多只含少量全麦粉）","风味酸奶（添加糖超标）","即食麦片（深加工，GI高）"],angle:"揭露被市场包装成'健康'的高糖食物",audience:"购买健康食品者",trend:"热门",note:"可拍包装对比图"},
+  {id:28,title:"胰岛素抵抗可以逆转吗？这3个指标说了算",cat:"number",catName:"数字科普",heat:"warm",platforms:{dy:{views:"15w",likes:"7.8k",saves:"3.5k",comment:"620"},xhs:{views:"42k",likes:"2.5k",saves:"5.1k",comment:"170"},bili:{views:"10k",likes:"540",saves:"170",comment:"35"}},tags:["逆转","指标","胰岛素抵抗"],hook:"逆转希望",dataRef:["HOMA-IR下降","空腹胰岛素下降","餐后血糖曲线改善"],angle:"给出可衡量的逆转判断标准",audience:"胰岛素抵抗患者",trend:"上升",note:"强调'改善'而非'治愈'"},
+  {id:29,title:"运动后血糖反而升高？因为你忽略了这2个细节",cat:"action",catName:"实操方法",heat:"warm",platforms:{dy:{views:"14w",likes:"7.2k",saves:"3.2k",comment:"550"},xhs:{views:"38k",likes:"2.3k",saves:"4.5k",comment:"150"},bili:{views:"8.5k",likes:"460",saves:"140",comment:"30"}},tags:["运动","反升","细节"],hook:"反常识",dataRef:["高强度运动触发应激激素升糖","运动后未及时补充碳水导致反弹","中低强度有氧+适度力量最安全"],angle:"解释运动反升血糖的原因和正确做法",audience:"运动后血糖异常者",trend:"稳定",note:"结合运动生理学"},
+  {id:30,title:"糖尿病患者的' cheat day '：怎么吃不爆糖？",cat:"food",catName:"饮食指南",heat:"warm",platforms:{dy:{views:"16w",likes:"8.2k",saves:"3.8k",comment:"680"},xhs:{views:"45k",likes:"2.7k",saves:"5.2k",comment:"180"},bili:{views:"11k",likes:"580",saves:"190",comment:"42"}},tags:["欺骗餐","心理","灵活"],hook:"心理需求",dataRef:["选低GI的'欺骗'食物","控制总量，不在空腹时吃","次日恢复正常饮食+增加运动"],angle:"提供心理和身体兼顾的灵活方案",audience:"长期控糖感到压抑者",trend:"上升",note:"强调频率控制"},
+  {id:31,title:"为什么控糖后体重反而增加了？",cat:"myth",catName:"辟谣纠偏",heat:"warm",platforms:{dy:{views:"12w",likes:"6.2k",saves:"2.8k",comment:"480"},xhs:{views:"32k",likes:"1.9k",saves:"3.8k",comment:"130"},bili:{views:"7.5k",likes:"410",saves:"130",comment:"25"}},tags:["体重","误区","解释"],hook:"意外结果",dataRef:["胰岛素减少后身体储水减少","脂肪分解增加但肌肉也在变化","长期看体重会趋于健康水平"],angle:"解释控糖初期体重变化的生理机制",audience:"控糖后体重困惑者",trend:"稳定",note:"强调长期趋势"},
+  {id:32,title:"家人有糖尿病，我患病的概率有多大？",cat:"number",catName:"数字科普",heat:"warm",platforms:{dy:{views:"14w",likes:"7.2k",saves:"3.1k",comment:"520"},xhs:{views:"38k",likes:"2.3k",saves:"4.2k",comment:"140"},bili:{views:"8.5k",likes:"460",saves:"140",comment:"28"}},tags:["遗传","风险","概率"],hook:"家族焦虑",dataRef:["1型糖尿病遗传率<10%","2型糖尿病遗传率30-70%","生活方式可改变70%的风险"],angle:"用数据缓解焦虑+给出预防建议",audience:"有家族史者",trend:"稳定",note:"强调可控因素"},
+  {id:33,title:"测血糖的5个常见错误，第一个90%的人都犯过",cat:"mistake",catName:"避坑指南",heat:"hot",platforms:{dy:{views:"25w",likes:"13k",saves:"6.2k",comment:"1.1k"},xhs:{views:"72k",likes:"4.3k",saves:"8.5k",comment:"290"},bili:{views:"16k",likes:"860",saves:"290",comment:"62"}},tags:["测血糖","误差","操作"],hook:"高频错误",dataRef:["手没洗干净","试纸过期","采血量不足","第一滴血未擦","测前剧烈运动"],angle:"纠正血糖监测的操作误区",audience:"自行监测血糖者",trend:"热门",note:"可演示正确操作"},
+  {id:34,title:"我从糖前期恢复到正常的完整记录（6个月）",cat:"story",catName:"案例故事",heat:"hot",platforms:{dy:{views:"48w",likes:"25k",saves:"13k",comment:"2.8k"},xhs:{views:"175k",likes:"10k",saves:"22k",comment:"1k"},bili:{views:"32k",likes:"1.9k",saves:"720",comment:"170"}},tags:["逆转","记录","糖前期"],hook:"逆袭记录",dataRef:["空腹从6.8→5.4","糖化从6.2→5.6","关键：饮食+运动+减重5kg"],angle:"完整记录逆转过程和数据变化",audience:"糖前期寻求逆转者",trend:" viral",note:"强调个体差异性"},
+  {id:35,title:"糖尿病患者的运动处方：不同阶段的推荐",cat:"action",catName:"实操方法",heat:"warm",platforms:{dy:{views:"15w",likes:"7.8k",saves:"3.5k",comment:"620"},xhs:{views:"42k",likes:"2.5k",saves:"5.1k",comment:"170"},bili:{views:"10k",likes:"540",saves:"170",comment:"35"}},tags:["运动","处方","阶段"],hook:"个性化",dataRef:["新确诊：低强度有氧开始","控制稳定：加入抗阻训练","有并发症：需医生评估"],angle:"根据病情阶段给出运动建议",audience:"不同阶段的糖尿病患者",trend:"稳定",note:"强调遵医嘱"},
+  {id:36,title:"这碗面让血糖飙升到15？测试给你看",cat:"food",catName:"饮食指南",heat:"hot",platforms:{dy:{views:"30w",likes:"15k",saves:"7.2k",comment:"1.3k"},xhs:{views:"85k",likes:"5.1k",saves:"10k",comment:"420"},bili:{views:"20k",likes:"1.1k",saves:"380",comment:"85"}},tags:["实测","面条","冲击"],hook:"实测冲击",dataRef:["白面条GI=82","搭配蛋白质和纤维可降低","建议换成荞麦面或加大量蔬菜"],angle:"用实测数据展示常见食物的影响",audience:"面食爱好者",trend:"热门",note:"可配合动态血糖仪实拍"},
+  {id:37,title:"控糖早餐别只吃鸡蛋了，这5种搭配更稳血糖",cat:"food",catName:"饮食指南",heat:"warm",platforms:{dy:{views:"18w",likes:"9.2k",saves:"4.1k",comment:"720"},xhs:{views:"52k",likes:"3.1k",saves:"6.2k",comment:"210"},bili:{views:"13k",likes:"700",saves:"240",comment:"52"}},tags:["早餐","搭配","多样"],hook:"早餐单调",dataRef:["鸡蛋+牛油果+全麦面包","希腊酸奶+坚果+蓝莓","豆腐脑+蔬菜+少量杂粮"],angle:"提供多样化的早餐选择",audience:"早餐吃腻者",trend:"上升",note:"可拍早餐实物图"},
+  {id:38,title:"糖尿病足的早期症状：这3个变化最容易被忽略",cat:"symptom",catName:"症状预警",heat:"warm",platforms:{dy:{views:"16w",likes:"8.2k",saves:"3.8k",comment:"650"},xhs:{views:"45k",likes:"2.7k",saves:"5.2k",comment:"180"},bili:{views:"11k",likes:"580",saves:"190",comment:"42"}},tags:["糖尿病足","早期","症状"],hook:"忽略信号",dataRef:["足部感觉减退（袜子感知变弱）","趾甲变厚变形","皮肤干燥开裂"],angle:"强调容易被忽略的早期信号",audience:"确诊多年患者",trend:"稳定",note:"强调及时就医"},
+  {id:39,title:"为什么同样的食物，我的血糖比别人高？",cat:"number",catName:"数字科普",heat:"warm",platforms:{dy:{views:"14w",likes:"7.2k",saves:"3.2k",comment:"550"},xhs:{views:"38k",likes:"2.3k",saves:"4.5k",comment:"150"},bili:{views:"8.5k",likes:"460",saves:"140",comment:"30"}},tags:["个体差异","血糖反应","原因"],hook:"个体差异",dataRef:["肠道菌群差异","胰岛素敏感性不同","进食顺序和速度","压力和睡眠状态"],angle:"解释血糖反应的个体差异原因",audience:"困惑于个体差异者",trend:"稳定",note:"强调个性化调整"},
+  {id:40,title:"控糖路上最想放弃的3个时刻，我是怎么熬过来的",cat:"story",catName:"案例故事",heat:"warm",platforms:{dy:{views:"20w",likes:"10k",saves:"4.8k",comment:"820"},xhs:{views:"58k",likes:"3.5k",saves:"6.8k",comment:"240"},bili:{views:"14k",likes:"750",saves:"260",comment:"58"}},tags:["心理","坚持","低谷"],hook:"心理共鸣",dataRef:["看到美食不能吃","社交场合的尴尬","指标波动时的挫败"],angle:"关注控糖者的心理挑战",audience:"控糖路上感到孤独者",trend:"上升",note:"情感共鸣+实用建议"},
+  {id:41,title:"血糖仪选购避坑：这3个参数比价格更重要",cat:"tool",catName:"工具测评",heat:"warm",platforms:{dy:{views:"15w",likes:"7.8k",saves:"3.5k",comment:"620"},xhs:{views:"42k",likes:"2.5k",saves:"5.1k",comment:"170"},bili:{views:"10k",likes:"540",saves:"170",comment:"35"}},tags:["选购","参数","避坑"],hook:"选购指南",dataRef:["准确度（符合ISO标准）","采血量（微量采血更舒适）","记忆功能（方便追踪趋势）"],angle:"教用户看懂血糖仪的关键参数",audience:"准备购买血糖仪者",trend:"稳定",note:"可对比不同品牌"},
+  {id:42,title:"吃饭顺序错了，再好的控糖餐也白费",cat:"food",catName:"饮食指南",heat:"hot",platforms:{dy:{views:"28w",likes:"14k",saves:"6.8k",comment:"1.2k"},xhs:{views:"80k",likes:"4.8k",saves:"10k",comment:"380"},bili:{views:"18k",likes:"980",saves:"340",comment:"78"}},tags:["吃饭顺序","技巧","简单"],hook:"简单技巧",dataRef:["先吃蔬菜→再蛋白质→最后主食","可降低餐后血糖峰值30%","无需改变食物种类"],angle:"强调吃饭顺序的控糖效果",audience:"不想改变饮食内容者",trend:"热门",note:"可拍吃饭顺序对比测试"},
+  {id:43,title:"糖尿病真的会遗传给下一代吗？遗传概率全解析",cat:"number",catName:"数字科普",heat:"warm",platforms:{dy:{views:"16w",likes:"8.2k",saves:"3.8k",comment:"650"},xhs:{views:"45k",likes:"2.7k",saves:"5.2k",comment:"180"},bili:{views:"11k",likes:"580",saves:"190",comment:"42"}},tags:["遗传","下一代","概率"],hook:"生育焦虑",dataRef:["1型遗传率<10%","2型遗传率30-70%","生活方式干预可降低风险"],angle:"用数据回答生育相关的遗传焦虑",audience:"育龄糖尿病患者",trend:"稳定",note:"敏感话题，注意措辞"},
+  {id:44,title:"周末聚餐不升糖的5个技巧，我试了都有效",cat:"action",catName:"实操方法",heat:"warm",platforms:{dy:{views:"18w",likes:"9.2k",saves:"4.1k",comment:"720"},xhs:{views:"52k",likes:"3.1k",saves:"6.2k",comment:"210"},bili:{views:"13k",likes:"700",saves:"240",comment:"52"}},tags:["聚餐","社交","技巧"],hook:"社交场景",dataRef:["提前吃点蛋白质垫底","选择清蒸/白灼类","控制主食量，多吃蔬菜","避免含糖饮料","餐后散步20分钟"],angle:"针对社交聚餐场景的控糖技巧",audience:"有社交需求者",trend:"上升",note:"实用性强，易传播"},
+  {id:45,title:"糖化血红蛋白和空腹血糖，哪个更能反映真实控制？",cat:"number",catName:"数字科普",heat:"warm",platforms:{dy:{views:"12w",likes:"6.2k",saves:"2.8k",comment:"480"},xhs:{views:"32k",likes:"1.9k",saves:"3.8k",comment:"130"},bili:{views:"7.5k",likes:"410",saves:"130",comment:"25"}},tags:["糖化","空腹","对比"],hook:"指标对比",dataRef:["糖化反映2-3个月平均","空腹反映基础胰岛素","两者互补，不可互相替代"],angle:"解释两个核心指标的区别和互补性",audience:"关注指标者",trend:"稳定",note:"结合临床意义"},
+  {id:46,title:"我从每天喝奶茶到完全戒糖，身体发生了这些变化",cat:"story",catName:"案例故事",heat:"hot",platforms:{dy:{views:"35w",likes:"18k",saves:"9.5k",comment:"1.8k"},xhs:{views:"105k",likes:"6.2k",saves:"13k",comment:"520"},bili:{views:"22k",likes:"1.2k",saves:"420",comment:"95"}},tags:["戒糖","变化","记录"],hook:"蜕变记录",dataRef:["第1周：渴望感最强","第2周：味觉敏感度恢复","第1个月：皮肤改善","第3个月：血糖稳定"],angle:"用时间线记录戒糖的身体变化",audience:"想戒糖但犹豫者",trend:"热门",note:"真实感受+数据变化"},
+  {id:47,title:"这3种调味品，正在偷偷毁掉你的控糖成果",cat:"mistake",catName:"避坑指南",heat:"warm",platforms:{dy:{views:"15w",likes:"7.8k",saves:"3.5k",comment:"620"},xhs:{views:"42k",likes:"2.5k",saves:"5.1k",comment:"170"},bili:{views:"10k",likes:"540",saves:"170",comment:"35"}},tags:["调味品","隐藏糖","陷阱"],hook:"隐藏敌人",dataRef:["番茄酱（含糖高）","沙拉酱（脂肪含量+糖）","蚝油（隐形糖+钠）"],angle:"揭露日常调味品中的隐藏糖",audience:"做饭人群",trend:"上升",note:"可拍配料表对比"},
+  {id:48,title:"糖尿病患者的睡眠指南：睡不够，血糖控不住",cat:"action",catName:"实操方法",heat:"warm",platforms:{dy:{views:"14w",likes:"7.2k",saves:"3.2k",comment:"550"},xhs:{views:"38k",likes:"2.3k",saves:"4.5k",comment:"150"},bili:{views:"8.5k",likes:"460",saves:"140",comment:"30"}},tags:["睡眠","血糖","管理"],hook:"睡眠关联",dataRef:["睡眠不足降低胰岛素敏感性","目标：7-8小时","睡前3小时不进食"],angle:"强调睡眠对血糖控制的重要性",audience:"睡眠不足者",trend:"稳定",note:"结合睡眠医学"},
+  {id:49,title:"测血糖扎手指太疼？这4个方法可以减轻痛感",cat:"tool",catName:"工具测评",heat:"warm",platforms:{dy:{views:"12w",likes:"6.2k",saves:"2.8k",comment:"480"},xhs:{views:"32k",likes:"1.9k",saves:"3.8k",comment:"130"},bili:{views:"7.5k",likes:"410",saves:"130",comment:"25"}},tags:["疼痛","技巧","操作"],hook:"疼痛痛点",dataRef:["选择侧面而非指尖","室温回暖后再测","采血笔调浅一档","轮换手指位置"],angle:"解决测血糖疼痛的实操技巧",audience:"怕疼/抵触测血糖者",trend:"稳定",note:"可操作性强"},
+  {id:50,title:"医生说我的血糖'还可以'，但我觉得可以更好",cat:"story",catName:"案例故事",heat:"warm",platforms:{dy:{views:"16w",likes:"8.2k",saves:"3.8k",comment:"650"},xhs:{views:"45k",likes:"2.7k",saves:"5.2k",comment:"180"},bili:{views:"11k",likes:"580",saves:"190",comment:"42"}},tags:["标准","追求","主动"],hook:"主动管理",dataRef:["医生标准：控制并发症","个人标准：优化生活质量","更严格的目标：糖化<6.5%"],angle:"鼓励患者在医嘱基础上追求更好控制",audience:"血糖已达标但想更好者",trend:"上升",note:"强调与医生沟通"}
+];
 
-async function loadTopicsLibrary() {
-  const res = await fetch("../data/knowledge/script-topics.json");
-  if (!res.ok) throw new Error("topics load failed");
-  const data = await res.json();
-  TOPICS = data.topics || [];
-}
-
-
+// Categories
+const CATEGORIES=["全部","辟谣纠偏","饮食指南","数字科普","实操方法","症状预警","工具测评","案例故事","避坑指南"];
 
 // ==================== STATE ====================
 let selectedTopic=null;
-let currentTab="topics";
-let currentPlat="";
+let selectedPlat="dy";
+let DISCOVERED_TOPICS=[];
+let ALL_TOPICS=[]; // merged TOPICS + DISCOVERED_TOPICS
+let currentSourceFilter="all";
+let generatorContext={meta:{},writeMode:"verify_before_script",topicId:null,verifyChecked:new Set(["disclaimer"]),sourceBundle:null,lastResult:null};
 
 // ==================== INIT ====================
-(async function init(){
-  try{
-    await loadTopicsLibrary();
-    const cats=[...new Set(TOPICS.map(t=>t.catName))];
-    const sel=document.getElementById("filter-cat");
-    cats.forEach(c=>{const o=document.createElement("option");o.value=c;o.textContent=c;sel.appendChild(o)});
-    renderTopics();
-    renderDashboard();
-  }catch(e){
-    document.body.insertAdjacentHTML(
-      "afterbegin",
-      '<div style="background:#fef5f0;color:#c44d3a;padding:12px;text-align:center">选题数据加载失败，请通过本地服务器访问</div>'
-    );
-  }
-})();
+const catSelect=document.getElementById("filter-cat");
+CATEGORIES.slice(1).forEach(c=>{const o=document.createElement("option");o.value=c;o.textContent=c;catSelect.appendChild(o)});
 
-// ==================== TAB SWITCH ====================
 function switchTab(tab){
-  currentTab=tab;
-  const tabs=["topics","generator","discovered","dashboard","research"];
-  document.querySelectorAll(".tab-btn").forEach((b,i)=>{
-    b.classList.toggle("active",tabs[i]===tab);
-  });
-  document.querySelectorAll(".tab-content").forEach(c=>c.classList.remove("active"));
+  document.querySelectorAll(".tab-content").forEach(t=>t.classList.remove("active"));
+  document.querySelectorAll(".tab-btn").forEach(b=>b.classList.remove("active"));
   document.getElementById("tab-"+tab).classList.add("active");
+  event.target.classList.add("active");
+  if(tab==="topics") renderTopics();
   if(tab==="dashboard") renderDashboard();
   if(tab==="research") renderResearch();
-  if(tab==="discovered") loadDiscoveredTopics();
+  if(tab==="generator") renderQuickTopics();
 }
 
-// ==================== RENDER TOPICS ====================
+// ==================== TOPIC CENTER ====================
+async function initTopics() {
+  // Load discovered topics from JSON
+  await loadDiscoveredTopics();
+  // Merge fixed + discovered
+  ALL_TOPICS = [];
+  // Fixed topics (add source marker)
+  TOPICS.forEach(t => {
+    ALL_TOPICS.push({...t, _source: 'fixed', _type: 'topic'});
+  });
+  // Discovered topics
+  DISCOVERED_TOPICS.forEach(t => {
+    const sourceType = t.source_urls && t.source_urls[0] && t.source_urls[0].includes('bilibili') ? 'bili' : 'discovered';
+    ALL_TOPICS.push({
+      id: t.id,
+      title: t.title,
+      cat: mapCategory(t.category),
+      catName: t.category,
+      heat: t.heat === 'high' ? 'hot' : t.heat === 'medium' ? 'warm' : 'steady',
+      platforms: {dy:{views:"--",likes:"--",saves:"--",comment:"--"},xhs:{views:"--",likes:"--",saves:"--",comment:"--"},bili:{views:t.platform_data?.bili_play ? formatNumber(t.platform_data.bili_play) : "--",likes:"--",saves:"--",comment:"--"}},
+      tags: [t.category],
+      hook: t.angle ? t.angle.slice(0, 30) : '发现引擎',
+      dataRef: [],
+      angle: t.angle,
+      audience: "待定",
+      trend: "新发现",
+      note: `来源：${t.heat_source} · ${t.discovered_date}`,
+      script_status: t.script_status,
+      source_urls: t.source_urls,
+      platform_data: t.platform_data,
+      _source: sourceType,
+      _type: 'discovered'
+    });
+  });
+  renderTopics();
+  renderQuickTopics();
+}
+
+function mapCategory(cat) {
+  const map = {"辟谣纠偏":"myth","饮食指南":"food","数字科普":"number","实操方法":"action","症状预警":"symptom","工具测评":"tool","案例故事":"story","避坑指南":"mistake"};
+  return map[cat] || "myth";
+}
+
+function formatNumber(n) {
+  const num = Number(n);
+  if (num >= 10000) return (num / 10000).toFixed(1) + 'w';
+  if (num >= 1000) return (num / 1000).toFixed(1) + 'k';
+  return String(num);
+}
+
+function filterSource(source) {
+  currentSourceFilter = source;
+  document.querySelectorAll('.source-tab').forEach(t => t.classList.remove('active'));
+  document.querySelector(`.source-tab[data-source="${source}"]`).classList.add('active');
+  renderTopics();
+}
+
 function renderTopics(){
+  const grid=document.getElementById("topic-grid");
   const cat=document.getElementById("filter-cat").value;
   const heat=document.getElementById("filter-heat").value;
   const plat=document.getElementById("filter-plat").value;
-  const search=document.getElementById("filter-search").value.toLowerCase();
-  const grid=document.getElementById("topic-grid");
+  const status=document.getElementById("filter-status").value;
+  const search=document.getElementById("filter-search").value.trim().toLowerCase();
 
-  let filtered=TOPICS.filter(t=>{
-    if(cat&&t.catName!==cat) return false;
-    if(heat&&t.heat!==heat) return false;
-    if(search&&!t.title.toLowerCase().includes(search)&&!t.tags.some(tg=>tg.includes(search))) return false;
+  let filtered=ALL_TOPICS.filter(t=>{
+    if(cat && t.catName!==cat) return false;
+    if(heat && t.heat!==heat) return false;
+    if(plat && !Object.keys(t.platforms).includes(plat)) return false;
+    if(status && t.script_status!==status) return false;
+    if(search && !t.title.toLowerCase().includes(search)) return false;
+    // Source filter
+    if(currentSourceFilter === 'fixed' && t._source !== 'fixed') return false;
+    if(currentSourceFilter === 'discovered' && t._source === 'fixed') return false;
+    if(currentSourceFilter === 'bili' && t._source !== 'bili') return false;
     return true;
   });
 
-  // Sort: hot > warm > steady, then by relevance
+  // Sort: hot > warm > steady
   const heatOrder={hot:0,warm:1,steady:2};
-  filtered.sort((a,b)=>{
-    if(heatOrder[a.heat]!==heatOrder[b.heat]) return heatOrder[a.heat]-heatOrder[b.heat];
-    return 0;
-  });
+  filtered.sort((a,b)=>(heatOrder[a.heat]||2)-(heatOrder[b.heat]||2));
 
-  if(filtered.length===0){
-    grid.innerHTML='<div class="empty-state"><div class="icon">🔍</div><p>没有匹配的选题，试试其他筛选条件</p></div>';
+  if(!filtered.length){
+    grid.innerHTML='<div class="empty-state"><div class="icon">📭</div><p>没有匹配的选题</p><p style="font-size:12px;margin-top:8px">尝试调整筛选条件或搜索关键词</p></div>';
     return;
   }
 
-  grid.innerHTML=filtered.map(t=>{
-    const p=plat?{[plat]:t.platforms[plat]||{}}:t.platforms;
-    const mainPlat=plat||Object.keys(t.platforms)[0];
-    const stats=t.platforms[mainPlat];
-    const heatLabel=t.heat==="hot"?"🔥 爆款":t.heat==="warm"?"📈 上升":"📌 常青";
+  grid.innerHTML=filtered.map((t)=>{
+    const isSelected=selectedTopic && selectedTopic.id===t.id;
+    const isAdopted=t.script_status==="done";
+    const heatIcon=t.heat==="hot"?"🔥":t.heat==="warm"?"📈":"📌";
     const heatClass=t.heat==="hot"?"heat-hot":t.heat==="warm"?"heat-warm":"heat-steady";
-    const selected=selectedTopic&&selectedTopic.id===t.id?"selected":"";
+    const plat=t.platforms[selectedPlat]||t.platforms.dy;
+    const sourceTag = t._source === 'fixed' ? '<span class="meta-tag source-manual">固定选题</span>' :
+                      t._source === 'bili' ? '<span class="meta-tag source-bili">📺 B站</span>' :
+                      '<span class="meta-tag">自动发现</span>';
+    const playCount = t.platform_data?.bili_play ? `▶ ${formatNumber(t.platform_data.bili_play)}` : '';
 
-    return `<div class="topic-card ${selected}" onclick="selectTopic(${t.id})">
+    return `<div class="topic-card ${isSelected?'selected':''} ${isAdopted?'adopted':''}" onclick="selectTopicById('${t.id}')">
       <div class="topic-header">
-        <div class="topic-title">${t.title}</div>
-        <span class="heat-badge ${heatClass}">${heatLabel}</span>
+        <div class="topic-title">${heatIcon} ${t.title}</div>
+        <span class="heat-badge ${heatClass}">${t.heat.toUpperCase()}</span>
       </div>
-      <div style="font-size:12px;color:var(--muted);margin:6px 0">${t.catName} · ${t.hook} · ${t.audience}</div>
+      <div style="font-size:12px;color:var(--muted);margin:6px 0">${t.angle||t.note||''}</div>
       <div class="topic-meta">
-        ${t.tags.map(tg=>`<span class="meta-tag">#${tg}</span>`).join("")}
+        <span class="meta-tag">${t.catName}</span>
+        ${sourceTag}
+        ${playCount ? `<span class="meta-tag" style="color:var(--accent)">${playCount}</span>` : ''}
       </div>
-      ${plat?`<div class="topic-stats">
-        <div class="stat">播放 <span>${stats.views}</span></div>
-        <div class="stat">点赞 <span>${stats.likes}</span></div>
-        <div class="stat">收藏 <span>${stats.saves}</span></div>
-      </div>`:`<div class="topic-stats">
-        <div class="stat">🔥抖音 ${t.platforms.dy.likes}赞</div>
-        <div class="stat">📕小红书 ${t.platforms.xhs.likes}赞</div>
-        <div class="stat">📺B站 ${t.platforms.bili.likes}赞</div>
-      </div>`}
-      <div style="font-size:11px;color:var(--muted);margin-top:8px;opacity:0.7">💡 ${t.note}</div>
+      <div class="topic-stats">
+        <div class="stat">播放 <span>${plat.views}</span></div>
+        <div class="stat">点赞 <span>${plat.likes}</span></div>
+        <div class="stat">收藏 <span>${plat.saves}</span></div>
+      </div>
+      <div class="topic-actions">
+        <button class="primary" onclick="event.stopPropagation();quickGenerate('${t.id}')">生成文案</button>
+        ${t._type==='discovered' && !isAdopted ? `<button onclick="event.stopPropagation();quickAdopt('${t.id}')">采纳</button>` : ''}
+        ${t.source_urls && t.source_urls.length ? `<button onclick="event.stopPropagation();window.open('${t.source_urls[0]}','_blank')">来源</button>` : ''}
+      </div>
     </div>`;
   }).join("");
 }
 
-function selectTopic(id){
-  selectedTopic=TOPICS.find(t=>t.id===id);
+function selectTopicById(id) {
+  const t = ALL_TOPICS.find(x => String(x.id) === String(id));
+  if (!t) return;
+  selectedTopic = t;
   renderTopics();
-  // Auto-fill generator
-  document.getElementById("gen-topic").value=selectedTopic.title;
-  const catMap={myth:"myth",food:"food",number:"number",action:"action",symptom:"symptom",tool:"tool",story:"story",mistake:"mistake"};
-  document.getElementById("gen-cat").value=selectedTopic.cat||catMap[selectedTopic.catName]||"myth";
-  document.getElementById("gen-data").value=selectedTopic.dataRef.join("\n");
-  // Switch to generator tab
+}
+
+function quickGenerate(id) {
+  const t = ALL_TOPICS.find(x => String(x.id) === String(id));
+  if (!t) return;
+  selectedTopic = t;
+  renderTopics();
+
+  const catMap={"辟谣纠偏":"myth","饮食指南":"food","数字科普":"number","实操方法":"action","症状预警":"symptom","工具测评":"tool","案例故事":"story","避坑指南":"mistake"};
+  const meta = {
+    use_as: t._type === 'discovered' ? (t.source_urls?.length ? 'verify_before_script' : 'hook_only') : 'verify_before_script',
+    evidence_tier: t._type === 'discovered' ? 'D' : 'C',
+    creator_note: t.note || '',
+    source_urls: t.source_urls || []
+  };
+
+  fillGeneratorFromSource({
+    title: t.title,
+    angle: t.angle || t.note || '',
+    cat: t.cat || catMap[t.catName] || 'myth',
+    dataRef: t.dataRef || [],
+    meta: meta,
+    topicId: t.id,
+    platform: selectedPlat
+  });
+}
+
+function quickAdopt(id) {
+  const t = ALL_TOPICS.find(x => String(x.id) === String(id));
+  if (!t || t._type !== 'discovered') return;
+
+  // Update in DISCOVERED_TOPICS
+  const disc = DISCOVERED_TOPICS.find(x => x.id === id);
+  if (disc) disc.script_status = 'done';
+
+  // Save to localStorage meta
+  const storedMeta = localStorage.getItem("bloodsugar_discovered_meta");
+  let meta = { adopted: [], manual: [] };
+  if (storedMeta) {
+    try { meta = JSON.parse(storedMeta); } catch(e) {}
+  }
+  meta.adopted = [...new Set([...(meta.adopted || []), id])];
+  localStorage.setItem("bloodsugar_discovered_meta", JSON.stringify(meta));
+
+  // Also add to TOPICS if not already
+  if (!TOPICS.find(x => x.title === t.title)) {
+    const catMap={"辟谣纠偏":"myth","饮食指南":"food","数字科普":"number","实操方法":"action","症状预警":"symptom","工具测评":"tool","案例故事":"story","避坑指南":"mistake"};
+    TOPICS.push({
+      id: TOPICS.length + 1,
+      title: t.title,
+      cat: t.cat || catMap[t.catName] || 'myth',
+      catName: t.catName,
+      heat: t.heat,
+      platforms: t.platforms,
+      tags: t.tags,
+      hook: t.hook,
+      dataRef: t.dataRef || [],
+      angle: t.angle || t.note,
+      audience: t.audience,
+      trend: t.trend,
+      note: t.note
+    });
+  }
+
+  t.script_status = 'done';
+  renderTopics();
+  renderQuickTopics();
+}
+
+// ==================== DISCOVERED TOPICS ENGINE ====================
+async function loadDiscoveredTopics(){
+  let jsonTopics = [];
+  try {
+    const res = await fetch("../data/discovered-topics.json");
+    if (res.ok) {
+      const data = await res.json();
+      jsonTopics = data.topics || [];
+    }
+  } catch(e) {
+    console.log("Fetch discovered-topics.json failed:", e);
+  }
+
+  let adoptedIds = new Set();
+  let manualTopics = [];
+  const storedMeta = localStorage.getItem("bloodsugar_discovered_meta");
+  if (storedMeta) {
+    try {
+      const meta = JSON.parse(storedMeta);
+      adoptedIds = new Set(meta.adopted || []);
+      manualTopics = meta.manual || [];
+    } catch(e) {}
+  }
+
+  DISCOVERED_TOPICS = [...jsonTopics];
+  DISCOVERED_TOPICS.forEach(t => {
+    if (adoptedIds.has(t.id)) t.script_status = "done";
+  });
+  manualTopics.forEach(t => {
+    if (!DISCOVERED_TOPICS.find(x => x.id === t.id)) DISCOVERED_TOPICS.push(t);
+  });
+}
+
+// ==================== QUICK TOPICS PANEL ====================
+function renderQuickTopics() {
+  const list = document.getElementById("quick-topics-list");
+  const adopted = ALL_TOPICS.filter(t => t.script_status === 'done' || t._source === 'fixed');
+  if (!adopted.length) {
+    list.innerHTML = '<div class="quick-topic-empty">暂无已采纳选题<br>在选题中心点击"生成文案"即可添加</div>';
+    return;
+  }
+  list.innerHTML = adopted.slice(0, 10).map(t => `
+    <div class="quick-topic-item" onclick="quickGenerate('${t.id}')">
+      <div class="q-title">${t.title.slice(0, 30)}${t.title.length > 30 ? '...' : ''}</div>
+      <div class="q-meta">${t.catName} · ${t.heat === 'hot' ? '🔥' : t.heat === 'warm' ? '📈' : '📌'}</div>
+    </div>
+  `).join('');
+}
+
+// ==================== GENERATOR ====================
+async function fillGeneratorFromSource({title,angle,cat,dataRef,meta,topicId,platform,fetchSources=true}){
+  document.getElementById("gen-topic").value=title||"";
+  if(cat) document.getElementById("gen-cat").value=cat;
+  if(platform) document.getElementById("gen-plat").value=platform;
+  meta=meta||{};
+  generatorContext={
+    meta,
+    writeMode:ScriptBridge.resolveWriteMode(meta.use_as),
+    topicId:topicId||null,
+    verifyChecked:new Set(["disclaimer"]),
+    sourceBundle:null
+  };
+  ScriptBridge.renderAuthenticityPanel(meta,document.getElementById("gen-auth-panel"));
+  ScriptBridge.renderVerifyChecklist(
+    ScriptBridge.buildVerifyChecklist(meta),
+    document.getElementById("gen-verify-list"),
+    generatorContext.verifyChecked
+  );
+  document.getElementById("gen-verify-list").querySelectorAll("input[data-verify-id]").forEach(inp=>{
+    inp.addEventListener("change",()=>{
+      if(inp.checked) generatorContext.verifyChecked.add(inp.dataset.verifyId);
+      else generatorContext.verifyChecked.delete(inp.dataset.verifyId);
+    });
+  });
+  let merged=dataRef||[];
+  if(fetchSources && meta.source_urls && meta.source_urls.length){
+    try{
+      document.getElementById("gen-source-status").innerHTML='<p style="font-size:12px;color:var(--muted)">正在拉取来源资料...</p>';
+      const bundle=await ScriptBridge.fetchSourceBundle(meta.source_urls);
+      generatorContext.sourceBundle=bundle;
+      merged=ScriptBridge.mergeSourceKeyPoints(merged,bundle);
+      ScriptBridge.renderSourceFetchStatus(bundle,document.getElementById("gen-source-status"));
+    }catch(e){
+      document.getElementById("gen-source-status").innerHTML=`<p style="font-size:12px;color:var(--accent2)">${e.message}</p>`;
+    }
+  }else{
+    ScriptBridge.renderSourceFetchStatus(null,document.getElementById("gen-source-status"));
+  }
+  try{
+    const enriched=await ScriptBridge.enrichDataRef(title||"",angle||"","",merged);
+    document.getElementById("gen-data").value=enriched.dataRef.join("\n");
+  }catch(e){
+    document.getElementById("gen-data").value=merged.join("\n");
+  }
   switchTab("generator");
 }
 
-// ==================== GENERATE SCRIPT ====================
 function generateScript(){
   const topic=document.getElementById("gen-topic").value.trim();
   const plat=document.getElementById("gen-plat").value;
@@ -754,42 +1133,35 @@ function generateScript(){
 
   if(!topic){alert("请输入或选择一个选题");return}
 
-  const result=buildScript({topic,plat,cat,duration,data,persona});
+  const result=buildScript({topic,plat,cat,duration,data,persona,writeMode:generatorContext.writeMode||"verify_before_script",meta:generatorContext.meta});
   const output=document.getElementById("script-output");
   output.innerHTML=result.html;
-  document.getElementById("word-count").textContent=`约 ${result.charCount} 字 · 预计 ${result.estimatedTime}秒`;
+  document.getElementById("word-count").textContent=`约 ${result.charCount} 字 · 预计 ${result.estimatedTime}秒 · 模式 ${generatorContext.writeMode||"verify_before_script"}`;
+  generatorContext.lastResult=result;
 }
 
-function buildScript({topic,plat,cat,duration,data,persona}){
-  // Speed: Chinese ~4-5 chars/sec for spoken
+function buildScript({topic,plat,cat,duration,data,persona,writeMode="verify_before_script",meta={}}){
   const charTarget=duration*4;
   const platName={dy:"抖音",xhs:"小红书",bili:"B站"}[plat];
 
-  // Build hook based on persona
   const hooks={
-    friendly: buildFriendlyHook(topic,data,cat),
-    expert: buildExpertHook(topic,data,cat),
-    personal: buildPersonalHook(topic,data,cat),
-    surprise: buildSurpriseHook(topic,data,cat)
+    friendly: buildFriendlyHook(topic,data,cat,writeMode),
+    expert: buildExpertHook(topic,data,cat,writeMode),
+    personal: buildPersonalHook(topic,data,cat,writeMode),
+    surprise: buildSurpriseHook(topic,data,cat,writeMode)
   };
 
-  // Build body based on platform and category
-  const body=buildBody(topic,plat,cat,data,duration);
-
-  // Build CTA based on platform
+  const body=buildBody(topic,plat,cat,data,duration,writeMode);
   const cta=buildCTA(plat,cat);
-
-  // Build AI Prompt version
-  const prompt=buildAIPrompt({topic,plat,cat,duration,data,persona});
-
-  // Build split version
+  const prompt=buildAIPrompt({topic,plat,cat,duration,data,persona,writeMode,meta});
   const split=buildSplit({topic,plat,cat,duration,data,persona});
 
   const hookText=hooks[persona];
-  const fullText=hookText+"\n\n"+body+"\n\n"+cta;
+  const disclaimer=ScriptBridge.DISCLAIMER;
+  const fullText=hookText+"\n\n"+body+"\n\n"+cta+"\n\n"+disclaimer;
 
   return {
-    html: `<div class="hook">【钩子 / 开头】</div>\n${hookText}\n\n<div class="body-text">【正文 / 核心内容】</div>\n${body}\n\n<div class="cta">【引导互动 / CTA】</div>\n${cta}\n\n<div class="note">---\n📋 平台：${platName} | 时长目标：${duration}秒 | 人设：${persona}\n📊 约 ${fullText.length} 字，语速正常约 ${Math.ceil(fullText.length/4)} 秒\n💡 可根据实际语速调整内容长度</div>`,
+    html: `<div class="hook">【钩子 / 开头】</div>\n${hookText}\n\n<div class="body-text">【正文 / 核心内容】</div>\n${body}\n\n<div class="cta">【引导互动 / CTA】</div>\n${cta}\n\n<div class="note">【免责声明】</div>\n${disclaimer}\n\n<div class="note">---\n📋 平台：${platName} | 时长目标：${duration}秒 | 人设：${persona} | 写稿模式：${writeMode||"verify_before_script"}\n📊 约 ${fullText.length} 字，语速正常约 ${Math.ceil(fullText.length/4)} 秒\n💡 正文由资料点扩写，关键数字仍须核实；要更润色可点「复制为 AI Prompt」</div>`,
     text: fullText,
     prompt: prompt,
     split: split,
@@ -798,79 +1170,61 @@ function buildScript({topic,plat,cat,duration,data,persona}){
   };
 }
 
-function buildFriendlyHook(topic,data,cat){
+function buildFriendlyHook(topic,data,cat,writeMode){
+  const clean=topic.replace(/[？!！。]/g,"");
+  if(writeMode==="hook_only"){
+    return `最近网上很多人在聊「${clean}」——今天不判对错，只把讨论脉络讲清楚。`;
+  }
   const templates=[
-    `今天看到一个说法，"${topic.replace(/[？!！。]/g,"")}"，很多人深信不疑，但我得告诉你，事情没那么简单。`,
-    `你们有没有这种困惑——${topic.replace(/[？!！。]/g,"")}？别急，今天给你讲清楚。`,
-    `有粉丝问我：${topic.replace(/[？!！。]/g,"")}？这个问题太好了，必须单独讲一期。`
+    `关于「${clean}」，网上说法挺多——今天帮你捋一捋哪些能参考、哪些别当真。`,
+    `你们有没有这种困惑——${clean}？咱们慢慢聊，记得个体情况要问医生。`,
+    `有朋友说：${clean}？这个问题问得好，我查了公开资料来说几句。`
   ];
   return templates[Math.floor(Math.random()*templates.length)];
 }
 
-function buildExpertHook(topic,data,cat){
+function buildExpertHook(topic,data,cat,writeMode){
+  const clean=topic.replace(/[？!！。]/g,"");
+  if(writeMode==="hook_only"){
+    return `「${clean}」最近讨论很多——先说明：这是热点话题，不是给你下诊断。`;
+  }
   const templates=[
-    `在门诊工作中，我遇到过太多人因为一个认知误区，导致血糖长期控制不好——就是${topic.replace(/[？!！。]/g,"")}。今天我从专业角度给你讲清楚。`,
-    `很多糖友问我：${topic.replace(/[？!！。]/g,"")}？这个问题涉及血糖管理的核心原理，很重要。`,
-    `关于"${topic.replace(/[？!！。]/g,"")}",网上流传的说法很多，但大部分都是错的。作为内分泌科医生，我来说说循证医学怎么说。`
+    `关于「${clean}」，我查了公开资料和指南，今天用普通人能听懂的方式讲清楚。`,
+    `「${clean}」这个话题讨论很多，咱们对照可查的数据来说。`,
+    `网上关于"${clean}"的说法不少，今天对照来源和数字，帮你少踩坑。`
   ];
   return templates[Math.floor(Math.random()*templates.length)];
 }
 
-function buildPersonalHook(topic,data,cat){
+function buildPersonalHook(topic,data,cat,writeMode){
+  const clean=topic.replace(/[？!！。]/g,"");
+  if(writeMode==="hook_only"){
+    return `我也刷到过「${clean}」——今天只分享我看到的讨论，不构成医疗建议。`;
+  }
   const templates=[
-    `说实话，半年前如果有人跟我说${topic.replace(/[？!！。]/g,"")}，我第一个不信。直到我自己经历了。`,
-    `查出血糖偏高那天，我脑子里第一个念头就是：${topic.replace(/[？!！。]/g,"")}？然后我开始疯狂查资料。`,
-    `控糖这段时间，我最常被问的就是：${topic.replace(/[？!！。]/g,"")}？今天把我踩过的坑和经验全告诉你。`
+    `控糖路上我也纠结过：${clean}？今天把我查到的和踩过的坑摊开说。`,
+    `查出血糖偏高后，我第一个想到的就是：${clean}？后来对照资料才慢慢理清。`,
+    `控糖这段时间，我最常被问：${clean}？今天把经验摊开，仅供参考。`
   ];
   return templates[Math.floor(Math.random()*templates.length)];
 }
 
-function buildSurpriseHook(topic,data,cat){
+function buildSurpriseHook(topic,data,cat,writeMode){
+  const clean=topic.replace(/[？!！。]/g,"");
+  if(writeMode==="hook_only"){
+    return `关于${clean}，评论区吵翻了——今天只梳理大家在聊什么。`;
+  }
   const templates=[
-    `90%的人都不知道一个事实——${topic.replace(/[？!！。]/g,"")}。今天用数据说话。`,
-    `你可能一直做错了！${topic.replace(/[？!！。]/g,"")}。别急，这不是我说的，是有研究支撑的。`,
-    `准备颠覆你的认知：${topic.replace(/[？!！。]/g,"")}。看完这条，你会感谢我。`
+    `关于${clean}，常见说法和可查数据之间，可能差一截。`,
+    `你可能一直理解错了：${clean}。别急，咱们用可查的数据说话。`,
+    `准备颠覆你的认知：${clean}——但先说清楚，这只是科普讨论。`
   ];
   return templates[Math.floor(Math.random()*templates.length)];
 }
 
-function buildBody(topic,plat,cat,data,duration){
-  // Category-specific body builders
-  const bodies={
-    myth:()=>{
-      const points=data?data.split("\n").slice(0,3):["第一，很多人只看表象不看原理","第二，权威数据早就说清楚了","第三，正确做法其实很简单"];
-      return `先说结论：${points[0]||"这个说法需要纠正"}。\n\n为什么这么说呢？${points[1]||"从血糖管理的角度来看，核心不是不吃，而是怎么吃、什么时候吃、吃多少。"}\n\n正确的做法是：${points[2]||"掌握食物的GI值，合理搭配，该吃的吃，该避开的避开。"}`;
-    },
-    food:()=>{
-      const points=data?data.split("\n").slice(0,4):["选对主食很关键","搭配蛋白质和蔬菜能延缓升糖","烹饪方式影响GI值","养成习惯比短期节食有效"];
-      return `核心就四点：\n\n第一，${points[0]}。这是基础。\n\n第二，${points[1]}。原理很简单，蛋白质和纤维让消化变慢，血糖就不会一下子冲上去。\n\n第三，${points[2]}。同样是红薯，蒸的GI54，烤的GI82，差别就在这里。\n\n第四，${points[3]}。`;
-    },
-    number:()=>{
-      const points=data?data.split("\n").slice(0,3):["空腹血糖正常值3.9-6.1 mmol/L","餐后2小时血糖应低于7.8 mmol/L","糖化血红蛋白低于5.7%为正常"];
-      return `直接上干货，记住这几组数字：\n\n${points.join("\n\n")}\n\n这三个指标你都得关注，光看一个是不够的。很多人只查空腹，餐后血糖高了也不知道，白白错过了最佳干预窗口。`;
-    },
-    action:()=>{
-      const points=data?data.split("\n").slice(0,4):["第一步：建立基础认知","第二步：制定可执行的方案","第三步：坚持21天形成习惯","第四步：定期监测调整"];
-      return `具体怎么做？我给你拆成几步：\n\n${points.map((p,i)=>`第${i+1}步：${p}`).join("\n\n")}\n\n每一步都不难，难的是坚持。但只要你开始，血糖就会给你正反馈。`;
-    },
-    symptom:()=>{
-      const points=data?data.split("\n").slice(0,5):["频繁口干、多饮多尿","体重不明原因下降","视力时好时坏","皮肤瘙痒难愈","伤口愈合明显变慢"];
-      return `如果你的身体出现了这些信号，别不当回事：\n\n${points.map((p,i)=>`${i+1}. ${p}`).join("\n")}\n\n这些不一定是高血糖，但如果同时出现2-3个，建议尽快查一下空腹和餐后血糖。`;
-    },
-    tool:()=>{
-      const points=data?data.split("\n").slice(0,3):["准确度是第一考量","耗材成本要算长期账","数据记录和分析功能"];
-      return `重点关注这几个维度：\n\n${points.map((p,i)=>`${i+1}. ${p}`).join("\n\n")}\n\n建议先想清楚自己的核心需求再选，不要被营销话术带节奏。`;
-    },
-    story:()=>{
-      return `我当时的血糖数值是XX，属于XX范围。\n\n说实话，一开始我也很慌。但后来我发现，血糖管理不是什么不治之症，关键是找对方法。\n\n我做的第一件事是XX，第二件事是XX，第三件事是XX。\n\n坚持了XX时间后，血糖从XX降到了XX。这个过程中，最大的感悟就是：不是血糖控制不了，是很多人方法用错了。`;
-    },
-    mistake:()=>{
-      const points=data?data.split("\n").slice(0,4):["误区一：完全不吃主食","误区二：只看空腹血糖","误区三：用水果代替正餐","误区四：过度节食"];
-      return `这些坑，踩一个就够影响你的控糖效果了：\n\n${points.join("\n\n")}\n\n每一个误区都有对应的正确做法，关键是先意识到自己在犯错。`;
-    }
-  };
-
-  return (bodies[cat]||bodies.myth)();
+function buildBody(topic,plat,cat,data,duration,writeMode){
+  const points=data?data.split("\n").filter(Boolean):[];
+  return ScriptBridge.expandSpokenBody({topic,cat,points,duration,writeMode});
 }
 
 function buildCTA(plat,cat){
@@ -895,14 +1249,18 @@ function buildCTA(plat,cat){
   return pool[Math.floor(Math.random()*pool.length)];
 }
 
-function buildAIPrompt({topic,plat,cat,duration,data,persona}){
+function buildAIPrompt({topic,plat,cat,duration,data,persona,writeMode,meta}){
   const platName={dy:'抖音',xhs:'小红书',bili:'B站'}[plat];
-  const personaName={friendly:'亲切科普（像朋友聊天）',expert:'专业医生（权威可信）',personal:'亲身经历（控糖者自述）',surprise:'反常识揭秘（制造意外感）'}[persona];
+  const personaName={friendly:'亲切科普（像朋友聊天）',expert:'循证解读（资料说话，非医生身份）',personal:'亲身经历（控糖者自述）',surprise:'反常识揭秘（制造意外感）'}[persona];
   const catName={myth:'辟谣纠偏',food:'饮食指南',number:'数字科普',action:'实操方法',symptom:'症状预警',tool:'工具测评',story:'案例故事',mistake:'避坑指南'}[cat];
   const platTips={dy:'抖音：前3秒必须抓住注意力，语速偏快，句子短，信息密度高，避免长句。结尾引导点赞关注。',xhs:'小红书：语气亲切自然，适度使用emoji，内容有深度但易读，结尾引导收藏+评论+关注。',bili:'B站：可以更深入展开，允许专业术语但需解释，语速适中，结尾引导三连+弹幕互动。'};
-  const catTips={myth:'先抛出正确结论，再给出权威数据，最后给出正确做法',food:'用清单或步骤结构呈现，每个点配数据佐证',number:'直接上数字，用对比和具象化语言帮助理解',action:'分步骤讲解，每步可执行、可验证',symptom:'列出症状清单，给出自查建议和就医指导',tool:'从多维度横向对比，给出选购建议',story:'用时间线叙事，有冲突有转折，结尾给出可复制的方法',mistake:'列出误区+原因+纠正方法的结构'};
+  const catTips={myth:'先抛出可查信息，再给出来源，最后给出稳妥做法',food:'用清单或步骤结构呈现，每个点配数据佐证',number:'直接上数字，用对比和具象化语言帮助理解',action:'分步骤讲解，每步可执行、可验证',symptom:'列出症状清单，给出就医提醒',tool:'从多维度横向对比，给出选购建议',story:'用时间线叙事，结尾强调个体差异',mistake:'列出误区+原因+纠正方法的结构'};
+  meta=meta||{};
+  const modeNote={hook_only:'本条为 hook_only：只能写「大家在讨论」，禁止写成医学定论。',cite_directly:'可引用来源，但必须标注链接且加非医疗建议。',verify_before_script:'写稿前须核实关键数字；无 A/B 来源的数字标「待核实」。'}[writeMode||'verify_before_script'];
+  const sources=(meta.source_urls||[]).map(u=>'- '+u).join('\n')||'（请补充来源链接）';
+  const checklist=ScriptBridge.buildVerifyChecklist(meta).map(c=>'- '+c.text).join('\n');
 
-  return '【口播文案生成 Prompt】\n\n## 基本信息\n- 选题：' + topic + '\n- 目标平台：' + platName + '\n- 选题分类：' + catName + '\n- 视频时长：' + duration + '秒\n- 人设语气：' + personaName + '\n\n## 核心数据/知识点\n' + (data || '（请自行补充该选题相关的权威数据和知识点，如GI值、血糖标准值、研究数据等）') + '\n\n## 平台特性要求\n' + (platTips[plat] || platTips.dy) + '\n\n## 文案结构要求\n1. 钩子/开头（3-5秒）：用反常识、悬念、数字冲击、共鸣场景等手法，确保前3秒留住观众\n2. 正文/核心内容：' + (catTips[cat] || catTips.myth) + '\n3. CTA/结尾（3-5秒）：引导互动\n\n## 写作铁律\n- 所有健康数据必须可溯源（标注来源：WHO/中国糖尿病指南/悉尼大学GI库等）\n- 涉及药物内容必须加 disclaimer：用药请遵医嘱，本内容仅供科普参考\n- 不承诺逆转/治愈效果\n- 语言口语化，避免书面语\n- 每句话不超过20字为宜\n- 语气符合人设设定';
+  return '【口播文案生成 Prompt · 血糖科普 · 非医生创作者】\n\n## 基本信息\n- 选题：' + topic + '\n- 目标平台：' + platName + '\n- 选题分类：' + catName + '\n- 视频时长：' + duration + '秒\n- 人设语气：' + personaName + '\n- 写稿模式：' + (writeMode||'verify_before_script') + ' — ' + modeNote + '\n\n## 证据与用法\n- 证据层级：' + (meta.evidence_tier||'—') + '\n- use_as：' + (meta.use_as||'—') + '\n- 创作者提示：' + (meta.creator_note||'—') + '\n\n## 核心数据/知识点\n' + (data || '（请自行补充该选题相关的权威数据和知识点，如GI值、血糖标准值、研究数据等）') + '\n\n## 来源链接\n' + sources + '\n\n## 写稿前核实\n' + checklist + '\n\n## 平台特性要求\n' + (platTips[plat] || platTips.dy) + '\n\n## 文案结构要求\n1. 钩子/开头（3-5秒）：用反常识、悬念、数字冲击、共鸣场景等手法，确保前3秒留住观众\n2. 正文/核心内容：' + (catTips[cat] || catTips.myth) + '\n3. CTA/结尾（3-5秒）：引导互动\n4. 结尾必须含：' + ScriptBridge.DISCLAIMER + '\n\n## 写作铁律\n- 所有健康数据必须可溯源\n- 涉及药物内容必须加 disclaimer\n- 不承诺逆转/治愈效果\n- 语言口语化，避免书面语\n- 不得冒充医生身份';
 }
 
 function buildSplit({topic,plat,cat,duration,data,persona}){
@@ -947,7 +1305,6 @@ function copyOutput(type){
   let text="";
 
   if(type==="text"){
-    // Extract plain text from output
     text=el.innerText.replace(/【钩子 \/ 开头】|【正文 \/ 核心内容】|【引导互动 \/ CTA】|---|📋.*|📊.*|💡.*/g,"").trim();
   } else if(type==="prompt"){
     const topic=document.getElementById("gen-topic").value.trim();
@@ -956,7 +1313,7 @@ function copyOutput(type){
     const duration=document.getElementById("gen-duration").value;
     const data=document.getElementById("gen-data").value.trim();
     const persona=document.getElementById("gen-persona").value;
-    text=buildAIPrompt({topic,plat,cat,duration:parseInt(duration),data,persona});
+    text=buildAIPrompt({topic,plat,cat,duration:parseInt(duration),data,persona,writeMode:generatorContext.writeMode,meta:generatorContext.meta});
   } else if(type==="split"){
     const topic=document.getElementById("gen-topic").value.trim();
     const plat=document.getElementById("gen-plat").value;
@@ -978,13 +1335,11 @@ function copyOutput(type){
 
 // ==================== DASHBOARD ====================
 function renderDashboard(){
-  // Stats
   const totalTopics=TOPICS.length;
   const hotCount=TOPICS.filter(t=>t.heat==="hot").length;
   const warmCount=TOPICS.filter(t=>t.heat==="warm").length;
   const catCount=[...new Set(TOPICS.map(t=>t.catName))].length;
 
-  // Average engagement (using mid-range estimates)
   const avgLikes=(function(){
     const parseEst=s=>{
       const n=parseInt(s);
@@ -1002,7 +1357,6 @@ function renderDashboard(){
     <div class="stat-card"><div class="num">${catCount}</div><div class="label">选题分类</div></div>
   `;
 
-  // Category distribution
   const catCounts={};
   TOPICS.forEach(t=>{catCounts[t.catName]=(catCounts[t.catName]||0)+1});
   const maxCat=Math.max(...Object.values(catCounts));
@@ -1018,7 +1372,6 @@ function renderDashboard(){
     </div>
   `).join("");
 
-  // Heat distribution
   const heatCounts={hot:TOPICS.filter(t=>t.heat==="hot").length,warm:TOPICS.filter(t=>t.heat==="warm").length,steady:TOPICS.filter(t=>t.heat==="steady").length};
   const maxHeat=Math.max(...Object.values(heatCounts));
   document.getElementById("heat-chart").innerHTML=`<h3>热度分布</h3>`+Object.entries(heatCounts).map(([name,count],i)=>{
@@ -1033,7 +1386,6 @@ function renderDashboard(){
     </div>`;
   }).join("");
 
-  // Platform comparison - top 10 topics
   document.getElementById("platform-chart").innerHTML=`<h3>各平台点赞TOP10对比</h3>`+`
     <div style="overflow-x:auto">
       <table style="width:100%;font-size:12px;border-collapse:collapse">
@@ -1069,10 +1421,8 @@ const RESEARCH_KEYWORDS=[
 ];
 
 function renderResearch(){
-  // Render keywords
   const kl=document.getElementById("keyword-list");
   kl.innerHTML=RESEARCH_KEYWORDS.map(k=>`<span style="display:inline-block;background:var(--bg3);color:var(--accent);padding:3px 10px;border-radius:12px;margin:3px;font-size:12px">${k}</span>`).join("");
-  // Load saved data
   const saved=JSON.parse(localStorage.getItem("bloodsugar_research")||"[]");
   const tbody=document.getElementById("research-tbody");
   tbody.innerHTML="";
@@ -1176,207 +1526,8 @@ document.addEventListener("input",function(e){
   if(e.target.closest("#research-tbody")) autoSaveResearch();
 });
 
-// ==================== DISCOVERED TOPICS ENGINE ====================
-let DISCOVERED_TOPICS=[];
-
-async function loadDiscoveredTopics(){
-  const grid=document.getElementById("discovered-grid");
-
-  // 1. Always fetch the latest data from JSON (source of truth)
-  let jsonTopics = [];
-  try {
-    const res = await fetch("../data/discovered-topics.json");
-    if (res.ok) {
-      const data = await res.json();
-      jsonTopics = data.topics || [];
-    }
-  } catch(e) {
-    console.log("Fetch discovered-topics.json failed:", e);
-  }
-
-  // 2. Load user metadata (adopted IDs + manual topics) from localStorage
-  let adoptedIds = new Set();
-  let manualTopics = [];
-  const storedMeta = localStorage.getItem("bloodsugar_discovered_meta");
-  if (storedMeta) {
-    try {
-      const meta = JSON.parse(storedMeta);
-      adoptedIds = new Set(meta.adopted || []);
-      manualTopics = meta.manual || [];
-    } catch(e) {}
-  }
-
-  // 3. Merge: JSON topics (latest) + manual topics (user-added)
-  DISCOVERED_TOPICS = [...jsonTopics];
-
-  // Mark adoption status from localStorage
-  DISCOVERED_TOPICS.forEach(t => {
-    if (adoptedIds.has(t.id)) {
-      t.script_status = "done";
-    }
-  });
-
-  // Append manual topics (avoid duplicates by ID)
-  manualTopics.forEach(t => {
-    if (!DISCOVERED_TOPICS.find(x => x.id === t.id)) {
-      DISCOVERED_TOPICS.push(t);
-    }
-  });
-
-  // Sort: high > medium > low
-  const heatOrder={high:0,medium:1,low:2};
-  DISCOVERED_TOPICS.sort((a,b)=>(heatOrder[a.heat]||2)-(heatOrder[b.heat]||2));
-
-  if(!DISCOVERED_TOPICS.length){
-    grid.innerHTML='<div style="text-align:center;padding:40px;color:var(--muted)"><p>暂无选题发现数据</p><p style="font-size:12px;margin-top:8px">自动化任务每天09:00会自动搜索并生成新选题</p></div>';
-    return;
-  }
-  grid.innerHTML=DISCOVERED_TOPICS.map((t,i)=>{
-    const heatIcon=t.heat==="high"?"🔥 HOT":t.heat==="medium"?"📊 MED":"📝 INFO";
-    const heatColor=t.heat==="high"?"var(--accent2)":t.heat==="medium"?"var(--accent3)":"var(--muted)";
-    const platformMap={dy:"抖音",xhs:"小红书",bili:"B站"};
-    const platforms=t.platform.split(",").map(p=>platformMap[p]||p).join(" + ");
-    const statusBadge=t.script_status==="done"?'<span style="font-size:10px;padding:1px 6px;background:rgba(0,212,170,0.15);color:var(--accent);border-radius:4px;margin-left:6px">已采纳</span>':
-      t.script_status==="writing"?'<span style="font-size:10px;padding:1px 6px;background:rgba(108,140,255,0.15);color:var(--accent4);border-radius:4px;margin-left:6px">脚本中</span>':'';
-    const sourceLabel = t.source_urls && t.source_urls.length
-      ? (t.source_urls[0].includes('bilibili') ? '📺 B站' : '🔗 来源')
-      : '';
-    return `<div style="background:var(--bg2);border:1px solid var(--rule);border-radius:var(--radius);padding:14px 16px;display:flex;gap:12px;align-items:flex-start">
-      <input type="checkbox" data-disc-idx="${i}" style="margin-top:4px;accent-color:var(--accent)" ${t.script_status==="done"?'disabled':''}>
-      <div style="flex:1;min-width:0">
-        <div style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:4px">${t.title}${statusBadge}</div>
-        <div style="font-size:12px;color:var(--muted);margin-bottom:6px">${t.angle}</div>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;font-size:11px">
-          <span style="padding:2px 6px;background:rgba(0,0,0,0.2);border-radius:4px;color:var(--muted)">${t.category}</span>
-          <span style="padding:2px 6px;background:rgba(0,0,0,0.2);border-radius:4px;color:var(--muted)">${platforms}</span>
-          <span style="padding:2px 6px;background:rgba(0,0,0,0.2);border-radius:4px;color:var(--muted)">${t.duration}</span>
-          <span style="padding:2px 6px;border-radius:4px;color:${heatColor};font-weight:600">${heatIcon}</span>
-          <span style="padding:2px 6px;background:rgba(0,0,0,0.2);border-radius:4px;color:var(--muted)">${t.discovered_date}</span>
-          ${t.platform_data && t.platform_data.bili_play ? `<span style="padding:2px 6px;background:rgba(0,212,170,0.1);border-radius:4px;color:var(--accent)">▶ ${Number(t.platform_data.bili_play).toLocaleString()}</span>` : ''}
-        </div>
-      </div>
-      ${t.source_urls&&t.source_urls.length?'<a href="'+t.source_urls[0]+'" target="_blank" style="color:var(--accent);font-size:11px;white-space:nowrap;text-decoration:none">'+sourceLabel+' →</a>':''}
-    </div>`;
-  }).join("");
-
-  // Update count badge
-  const countEl=document.getElementById("discovered-count");
-  const pending=DISCOVERED_TOPICS.filter(t=>t.script_status==="pending").length;
-  if(pending>0){
-    countEl.style.display="inline-block";
-    countEl.textContent=pending>99?"99+":pending;
-  } else {
-    countEl.style.display="none";
-  }
-}
-
-function adoptDiscoveredTopic(){
-  const checked=document.querySelectorAll("[data-disc-idx]:checked");
-  if(!checked.length){alert("请先勾选要采纳的选题");return;}
-  const adopted=[];
-  const adoptedIds=[];
-  checked.forEach(cb=>{
-    const idx=parseInt(cb.dataset.discIdx);
-    const t=DISCOVERED_TOPICS[idx];
-    if(!t) return;
-    const catMap={"辟谣纠偏":"myth","饮食指南":"food","数字科普":"number","实操方法":"action","症状预警":"symptom","工具测评":"tool","案例故事":"story","避坑指南":"pitfall"};
-    const platMap={"dy":{views:"--",likes:"--",saves:"--",comment:"--"},"xhs":{views:"--",likes:"--",saves:"--",comment:"--"},"bili":{views:"--",likes:"--",saves:"--",comment:"--"}};
-    const platforms={};
-    t.platform.split(",").forEach(p=>{platforms[p]=platMap[p]||{views:"--",likes:"--",saves:"--",comment:"--"}});
-    TOPICS.push({
-      id:TOPICS.length+1,
-      title:t.title,
-      cat:catMap[t.category]||"other",
-      catName:t.category,
-      heat:t.heat==="high"?"hot":t.heat==="medium"?"warm":"steady",
-      platforms:platforms,
-      tags:[t.category],
-      hook:"发现引擎",
-      dataRef:[],
-      angle:t.angle,
-      audience:"待定",
-      trend:"新发现",
-      note:"来源：选题发现引擎 · "+t.discovered_date
-    });
-    t.script_status="done";
-    adopted.push(t.title);
-    adoptedIds.push(t.id);
-  });
-
-  // Save only adoption status to localStorage (not full data)
-  const storedMeta = localStorage.getItem("bloodsugar_discovered_meta");
-  let meta = { adopted: [], manual: [] };
-  if (storedMeta) {
-    try { meta = JSON.parse(storedMeta); } catch(e) {}
-  }
-  meta.adopted = [...new Set([...(meta.adopted || []), ...adoptedIds])];
-  localStorage.setItem("bloodsugar_discovered_meta", JSON.stringify(meta));
-
-  renderTopics();
-  loadDiscoveredTopics();
-  alert("已采纳 "+adopted.length+" 个选题到选题库：\n"+adopted.map(t=>"• "+t).join("\n"));
-}
-
-function addManualDiscovered(){
-  const title=document.getElementById("disc-title").value.trim();
-  const cat=document.getElementById("disc-cat").value;
-  const angle=document.getElementById("disc-angle").value.trim();
-  const platform=document.getElementById("disc-platform").value;
-  const heat=document.getElementById("disc-heat").value;
-  const duration=document.getElementById("disc-duration").value;
-  if(!title||!angle){alert("请填写标题和切入角度");return;}
-  const today=new Date().toISOString().slice(0,10);
-  const maxId=DISCOVERED_TOPICS.reduce((max,t)=>{const n=parseInt(t.id.replace("disc-",""));return n>max?n:max;},0);
-  const newTopic = {id:"disc-"+String(maxId+1).padStart(3,"0"),title,angle,category:cat,platform,duration,heat,heat_source:"手动添加",source_urls:[],status:"discovered",script_status:"pending",publish_status:"pending",discovered_date:today};
-
-  // Save manual topic to meta localStorage
-  const storedMeta = localStorage.getItem("bloodsugar_discovered_meta");
-  let meta = { adopted: [], manual: [] };
-  if (storedMeta) {
-    try { meta = JSON.parse(storedMeta); } catch(e) {}
-  }
-  meta.manual = meta.manual || [];
-  meta.manual.push(newTopic);
-  localStorage.setItem("bloodsugar_discovered_meta", JSON.stringify(meta));
-
-  document.getElementById("disc-title").value="";
-  document.getElementById("disc-angle").value="";
-  loadDiscoveredTopics();
-}
-
-// Init discovered count on page load
-(function(){
-  const storedMeta=localStorage.getItem("bloodsugar_discovered_meta");
-  let pendingCount = 0;
-  if(storedMeta){
-    try{
-      const meta=JSON.parse(storedMeta);
-      pendingCount = (meta.manual || []).filter(t=>t.script_status==="pending").length;
-    }catch(e){}
-  }
-  // Also try to fetch JSON to get real pending count
-  fetch("../data/discovered-topics.json")
-    .then(r=>r.ok?r.json():null)
-    .then(data=>{
-      if(data && data.topics){
-        const jsonPending = data.topics.filter(t=>t.script_status==="pending").length;
-        pendingCount += jsonPending;
-        const el=document.getElementById("discovered-count");
-        if(pendingCount>0){
-          el.style.display="inline-block";
-          el.textContent=pendingCount>99?"99+":pendingCount;
-        }
-      }
-    })
-    .catch(()=>{
-      // If fetch fails, show at least manual count
-      const el=document.getElementById("discovered-count");
-      if(pendingCount>0){
-        el.style.display="inline-block";
-        el.textContent=pendingCount>99?"99+":pendingCount;
-      }
-    });
-})();
+// ==================== INIT ====================
+initTopics();
 </script>
 </body>
 </html>

@@ -39,3 +39,11 @@ start-server.bat
 # Node/Build artifacts (if any)
 dist/
 build/
+
+# CI-generated
+reports.json
+
+# Local cache / generated content
+data/source-cache/
+data/scripts/
+.cursor/
