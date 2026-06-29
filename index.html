@@ -226,27 +226,8 @@ body {
 
   <div class="section">
     <h2>📰 监控日报</h2>
-    <div class="report-list">
-      <a href="notes/research-daily/2026-06-29-日报.html" class="report-item">
-        <span class="date">2026-06-29</span>
-        <span class="title">血糖控糖热点监控日报</span>
-        <span class="format fmt-md">Quartz</span>
-      </a>
-      <a href="research-daily/2026-06-29-日报.html" class="report-item">
-        <span class="date">2026-06-29</span>
-        <span class="title">血糖控糖热点监控日报（HTML 版）</span>
-        <span class="format fmt-html">HTML</span>
-      </a>
-      <a href="notes/research-daily/2026-06-28-日报.html" class="report-item">
-        <span class="date">2026-06-28</span>
-        <span class="title">血糖控糖热点监控日报</span>
-        <span class="format fmt-md">Quartz</span>
-      </a>
-      <a href="research-daily/2026-06-28-日报.html" class="report-item">
-        <span class="date">2026-06-28</span>
-        <span class="title">血糖控糖热点监控日报（HTML 版）</span>
-        <span class="format fmt-html">HTML</span>
-      </a>
+    <div class="report-list" id="report-list">
+      <div style="color:var(--muted);font-size:13px;padding:14px 18px">加载中...</div>
     </div>
   </div>
 
@@ -272,5 +253,32 @@ body {
   </div>
 
 </div>
+
+<script>
+fetch('./reports.json')
+  .then(r => r.json())
+  .then(data => {
+    const list = document.getElementById('report-list');
+    const items = [];
+    // Show up to 5 most recent days (HTML + Quartz pair)
+    const seen = new Set();
+    data.html_reports.slice(0, 5).forEach(r => {
+      if (!seen.has(r.date)) {
+        seen.add(r.date);
+        items.push(`<a href="${r.url}" class="report-item"><span class="date">${r.date}</span><span class="title">${r.title}（HTML 版）</span><span class="format fmt-html">HTML</span></a>`);
+        // Find matching Quartz report
+        const q = data.quartz_reports.find(x => x.date === r.date);
+        if (q) {
+          items.push(`<a href="${q.url}" class="report-item"><span class="date">${q.date}</span><span class="title">${q.title}</span><span class="format fmt-md">Quartz</span></a>`);
+        }
+      }
+    });
+    list.innerHTML = items.length ? items.join('') : '<div style="color:var(--muted);font-size:13px;padding:14px 18px">暂无日报</div>';
+  })
+  .catch(e => {
+    document.getElementById('report-list').innerHTML = '<div style="color:var(--muted);font-size:13px;padding:14px 18px">日报加载失败</div>';
+  });
+</script>
+
 </body>
 </html>
