@@ -117,10 +117,31 @@ body {
   font-size: 20px;
   font-weight: 700;
   color: var(--accent);
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   padding-bottom: 8px;
   border-bottom: 2px solid var(--rule);
 }
+.section .section-desc {
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+.report-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 11px;
+}
+.report-legend span {
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.legend-brief { background: rgba(0,212,170,0.15); color: var(--accent); }
+.legend-monitor { background: rgba(108,140,255,0.15); color: var(--accent4); }
+.legend-harvest { background: rgba(255,217,61,0.12); color: var(--accent3); }
 
 /* Report list */
 .report-list {
@@ -185,6 +206,9 @@ body {
 }
 .fmt-html { background: rgba(0,212,170,0.12); color: var(--accent); }
 .fmt-md { background: rgba(255,217,61,0.12); color: var(--accent3); }
+.fmt-brief { background: rgba(0,212,170,0.18); color: var(--accent); }
+.fmt-monitor { background: rgba(108,140,255,0.15); color: var(--accent4); }
+.fmt-harvest { background: rgba(255,217,61,0.15); color: var(--accent3); }
 
 /* Footer */
 .footer {
@@ -251,6 +275,12 @@ body {
 
   <div class="section">
     <h2>📰 控糖日报</h2>
+    <p class="section-desc">每日<strong>一行</strong>：默认打开「精选」；同一行右侧可进「深度监控」「全量采集」。不再重复列出 Quartz 笔记版。</p>
+    <div class="report-legend">
+      <span class="legend-brief">精选 · Agent 默认读</span>
+      <span class="legend-monitor">深度监控 · TraeWork 核实</span>
+      <span class="legend-harvest">全量采集 · 原始条目</span>
+    </div>
     <div class="report-list" id="report-list">
       <div style="color:var(--muted);font-size:13px;padding:14px 18px">加载中...</div>
     </div>
@@ -274,17 +304,18 @@ body {
 
   <div class="footer">
     <p>血糖知识图谱 · AIGC 内容创作工具箱</p>
-    <p style="margin-top:4px; opacity:0.6">Built with TRAE · 自动生成 + 人工验证 · 数据仅供参考</p>
+    <p style="margin-top:4px; opacity:0.6">Built with TRAE · 首页布局 v3 · Gate 分权 · 数据仅供参考</p>
   </div>
 
 </div>
 
 <script>
-fetch('./reports.json')
+fetch('./reports.json?v=3')
   .then(r => r.json())
   .then(data => {
     const list = document.getElementById('report-list');
     const items = [];
+    const fmtClass = { '精选': 'fmt-brief', '监控': 'fmt-monitor', '采集': 'fmt-harvest' };
     const dates = [...new Set([
       ...(data.brief_reports || []).map(r => r.date),
       ...(data.html_reports || []).map(r => r.date),
@@ -298,7 +329,7 @@ fetch('./reports.json')
       if (!primary) return;
 
       const label = brief ? '精选' : monitor ? '监控' : '采集';
-      const fmt = brief || monitor ? 'fmt-html' : 'fmt-html';
+      const fmt = fmtClass[label] || 'fmt-html';
       const extras = [];
       if (brief && monitor) {
         extras.push(`<a class="extra-link" href="${monitor.url}">深度监控</a>`);

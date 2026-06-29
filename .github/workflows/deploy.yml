@@ -61,6 +61,9 @@ jobs:
         run: |
           echo "Output directory contents:"
           ls -la public/
+          test -f public/reports.json
+          grep -q brief_reports public/reports.json
+          grep -q 控糖日报 public/index.html
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

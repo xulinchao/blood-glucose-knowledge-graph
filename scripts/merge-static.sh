@@ -36,7 +36,8 @@ echo "bg.purpleiris.cn" > _site/CNAME
 python3 scripts/generate-reports-json.py \
   --html-dir _site/research-daily \
   --quartz-dir _site/notes/research-daily \
-  --out _site/reports.json
+  --out _site/reports.json || copy_file reports.json _site/reports.json
+test -f _site/reports.json || copy_file reports.json _site/reports.json
 
 rm -rf public
 mv _site public

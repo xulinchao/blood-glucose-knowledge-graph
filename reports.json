@@ -1,0 +1,29 @@
+{
+  "html_reports": [
+    {
+      "date": "2026-06-29",
+      "url": "research-daily/2026-06-29-日报.html",
+      "title": "血糖控糖热点监控日报"
+    },
+    {
+      "date": "2026-06-28",
+      "url": "research-daily/2026-06-28-日报.html",
+      "title": "血糖控糖热点监控日报"
+    }
+  ],
+  "brief_reports": [
+    {
+      "date": "2026-06-29",
+      "url": "research-daily/2026-06-29-精选日报.html",
+      "title": "血糖控糖精选日报"
+    }
+  ],
+  "harvest_reports": [
+    {
+      "date": "2026-06-29",
+      "url": "research-daily/2026-06-29-采集日报.html",
+      "title": "选题采集日报"
+    }
+  ],
+  "quartz_reports": []
+}

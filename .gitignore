@@ -40,8 +40,8 @@ start-server.bat
 dist/
 build/
 
-# CI-generated
-reports.json
+# CI-generated (also committed as deploy fallback)
+# reports.json
 
 # Local cache / generated content
 data/source-cache/
