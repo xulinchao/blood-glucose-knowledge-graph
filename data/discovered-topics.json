@@ -1,6 +1,6 @@
 {
   "version": "1.0",
-  "updated": "2026-06-28",
+  "updated": "2026-06-29",
   "topics": [
     {
       "id": "disc-001",
@@ -175,6 +175,95 @@
       "script_status": "pending",
       "publish_status": "pending",
       "discovered_date": "2026-06-28"
+    },
+    {
+      "id": "disc-011",
+      "title": "热销控糖药成分含糖？起底控糖骗局",
+      "angle": "记者暗访：人参苦瓜荞麦桑叶片配料前三位是食用葡萄糖/麦芽糊精/玉米淀粉，冒充三甲医院医生进行一对一营销，诱导停用处方药。河南广播电视台大象新闻报道",
+      "category": "避坑指南",
+      "platform": "dy,bili",
+      "duration": "30-45s",
+      "heat": "high",
+      "heat_source": "河南广播电视台/网易新闻曝光，控糖产品骗局灰色链条引发广泛关注",
+      "source_urls": [
+        "https://3g.163.com/news/article/KJ52AG070550B6IS.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29"
+    },
+    {
+      "id": "disc-012",
+      "title": "低GI食品国标即将出台，别再被假低GI骗了",
+      "angle": "市场监管总局2026年1月暂停低GI商业自愿认证，2026下半年国家标准发布在即。行业乱象：检测费3-5万/样品，体外模拟测试误差大，品牌虚标GI值。上海科委立项GI值预测AI系统",
+      "category": "辟谣纠偏",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "high",
+      "heat_source": "国内低GI搜索热度同比增长56%，市场规模预计2026年突破2500亿元，标准红利窗口期引发产业洗牌",
+      "source_urls": [
+        "http://m.toutiao.com/group/7641840481755742774/",
+        "http://m.toutiao.com/group/7641823364609016383/",
+        "http://m.toutiao.com/group/7610797511766295080/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29"
+    },
+    {
+      "id": "disc-013",
+      "title": "中国有5亿人处于糖前期，10年研究告诉你逆转真相",
+      "angle": "《柳叶刀》子刊10年随访：坚持规范干预的糖前期人群中36.1%血糖回归正常，心梗/心衰风险降近一半。给出3个自检指标和量化干预方案",
+      "category": "数字科普",
+      "platform": "dy,xhs",
+      "duration": "45-60s",
+      "heat": "high",
+      "heat_source": "头条「5亿糖前期」「柳叶刀实证」文章热度持续走高，与筛查年轻化趋势叠加",
+      "source_urls": [
+        "http://m.toutiao.com/group/7654453507071787520/",
+        "http://m.toutiao.com/group/7655896648886813219/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29"
+    },
+    {
+      "id": "disc-014",
+      "title": "空腹血糖4.4的二糖患者，就靠这2个习惯",
+      "angle": "二糖患者把空腹血糖稳在4.4的两个核心习惯：晚餐定时定量（杂粮杂豆替代精制碳水）+ 餐后25分钟慢走。进餐顺序可压低餐后血糖峰值1.5-2.0mmol/L",
+      "category": "实操方法",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "high",
+      "heat_source": "头条爆款文章，多个二糖控糖经验类内容互动率高，实用性强易收藏",
+      "source_urls": [
+        "http://m.toutiao.com/group/7656653010105418280/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29"
+    },
+    {
+      "id": "disc-015",
+      "title": "只看空腹血糖就安全了？你可能漏掉了大半异常",
+      "angle": "多数并发症诱因是餐后血糖超标而非空腹异常。餐后2h血糖>9.0mmol/L微血管损伤风险翻倍。只盯空腹=看似达标实则持续损伤",
+      "category": "辟谣纠偏",
+      "platform": "dy,xhs",
+      "duration": "15-20s",
+      "heat": "medium",
+      "heat_source": "多个控糖经验文章反复强调空腹+餐后双维度监测，但大众认知仍停留在只看空腹",
+      "source_urls": [
+        "http://m.toutiao.com/group/7656653010105418280/",
+        "http://m.toutiao.com/group/7589849400781718026/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-29"
     }
   ]
 }
