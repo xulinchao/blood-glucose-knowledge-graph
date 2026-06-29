@@ -1457,10 +1457,51 @@ function buildFriendlyHook(topic,data,cat,writeMode){
   if(writeMode==="hook_only"){
     return `最近网上很多人在聊「${clean}」——今天不判对错，只把讨论脉络讲清楚。`;
   }
+  if(cat==="myth"){
+    const templates=[
+      `你确定你一直以来的认知是对的？${clean}——今天帮你把真相和误区拆开。`,
+      `刷到「${clean}」的时候，你信了几条？今天用可查数据帮你筛一遍。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="food"){
+    const templates=[
+      `以为在控糖，其实在踩雷？${clean}——你天天吃的可能就有问题。`,
+      `${clean}？很多人的第一反应和实际情况，差得挺远。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="number"){
+    const templates=[
+      `一个数字，可能改变你的控糖方向。${clean}——先别慌，看完再判断。`,
+      `体检报告上那个数字到底什么意思？${clean}，3分钟帮你建立判断框架。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="action"){
+    const templates=[
+      `别把简单的事想复杂了。${clean}——跟着做就行，复杂版本留给医生。`,
+      `做好这几步，比花大钱买保健品管用。${clean}。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="symptom"){
+    const templates=[
+      `这些信号你每天都在经历，但可能从来没当回事。${clean}——听完自己对照一下。`,
+      `身体一直在给你发消息，${clean}——问题是，你有没有在听？`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="tool"){
+    const templates=[
+      `测评了市面上主流的几款，结果有些出乎意料。${clean}——不吹不黑，只说数据。`,
+      `花冤枉钱之前，先花3分钟看完这条。${clean}。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
   const templates=[
-    `关于「${clean}」，网上说法挺多——今天帮你捋一捋哪些能参考、哪些别当真。`,
-    `你们有没有这种困惑——${clean}？咱们慢慢聊，记得个体情况要问医生。`,
-    `有朋友说：${clean}？这个问题问得好，我查了公开资料来说几句。`
+    `${clean}？这个问题值得认真聊，我用查到的公开资料帮你理一理。`,
+    `你有没有被「${clean}」困扰过？今天把能确认和不能确认的，一次性讲清楚。`
   ];
   return templates[Math.floor(Math.random()*templates.length)];
 }
@@ -1470,10 +1511,23 @@ function buildExpertHook(topic,data,cat,writeMode){
   if(writeMode==="hook_only"){
     return `「${clean}」最近讨论很多——先说明：这是热点话题，不是给你下诊断。`;
   }
+  if(cat==="myth"){
+    const templates=[
+      `我们先看数据。「${clean}」——可查资料和社交媒体传言之间，差距有多大？`,
+      `用证据说话。「${clean}」——我把来源层级和关键数据摊开，你自己判断。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="number"){
+    const templates=[
+      `数字不会骗人，但解读方式会。${clean}——我对照了最新指南和数据。`,
+      `「${clean}」这个数字背后，很多人只看了一半。今天补全另一半。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
   const templates=[
     `关于「${clean}」，我查了公开资料和指南，今天用普通人能听懂的方式讲清楚。`,
-    `「${clean}」这个话题讨论很多，咱们对照可查的数据来说。`,
-    `网上关于"${clean}"的说法不少，今天对照来源和数字，帮你少踩坑。`
+    `「${clean}」这个话题讨论很多，咱们对照可查的数据来说，不贩卖焦虑。`
   ];
   return templates[Math.floor(Math.random()*templates.length)];
 }
@@ -1483,10 +1537,23 @@ function buildPersonalHook(topic,data,cat,writeMode){
   if(writeMode==="hook_only"){
     return `我也刷到过「${clean}」——今天只分享我看到的讨论，不构成医疗建议。`;
   }
+  if(cat==="food"){
+    const templates=[
+      `控糖之后，我翻遍了家里冰箱，${clean}——有些东西真得换换了。`,
+      `以前我也觉得控糖就是少吃，后来才知道：${clean}——选错比吃错更坑。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="action"){
+    const templates=[
+      `刚开始控糖那会儿，我也是一头雾水。${clean}——后来发现，其实就那几件事，坚持了就有效果。`,
+      `这些方法不是我从书本上看的，${clean}——是这段时间自己摸索出来的。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
   const templates=[
-    `控糖路上我也纠结过：${clean}？今天把我查到的和踩过的坑摊开说。`,
-    `查出血糖偏高后，我第一个想到的就是：${clean}？后来对照资料才慢慢理清。`,
-    `控糖这段时间，我最常被问：${clean}？今天把经验摊开，仅供参考。`
+    `控糖路上我也纠结过：${clean}？后来对照资料才慢慢理清，今天摊开说。`,
+    `查出血糖偏高后，我第一个想到的就是${clean}？踩过坑之后，有些经验值得分享。`
   ];
   return templates[Math.floor(Math.random()*templates.length)];
 }
@@ -1496,10 +1563,23 @@ function buildSurpriseHook(topic,data,cat,writeMode){
   if(writeMode==="hook_only"){
     return `关于${clean}，评论区吵翻了——今天只梳理大家在聊什么。`;
   }
+  if(cat==="myth"){
+    const templates=[
+      `你信了好几年的事，可能从头到尾都是错的。${clean}——准备好颠覆认知了吗？`,
+      `90%的人都搞反了。${clean}——看完这条，你的控糖认知可能要重装一遍。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="number"){
+    const templates=[
+      `这个数字，可能比你想的小得多，也可能危险得多。${clean}——别跳过，逐条对照。`,
+      `一个你天天看到但从来没认真理解的数字。${clean}——3分钟后你会感谢自己看完。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
   const templates=[
-    `关于${clean}，常见说法和可查数据之间，可能差一截。`,
-    `你可能一直理解错了：${clean}。别急，咱们用可查的数据说话。`,
-    `准备颠覆你的认知：${clean}——但先说清楚，这只是科普讨论。`
+    `${clean}——你可能一直理解反了。别急着划走，看完再判断。`,
+    `关于${clean}，常见说法和可查数据之间，差的可能不止一截。`
   ];
   return templates[Math.floor(Math.random()*templates.length)];
 }
@@ -1512,19 +1592,19 @@ function buildBody(topic,plat,cat,data,duration,writeMode){
 function buildCTA(plat,cat){
   const ctas={
     dy:[
-      "觉得有用的话，点个赞收藏起来，转给你关心的人看看。评论区说说你还想知道哪些血糖知识？",
+      "觉得有用，点个赞收藏——下次复查前翻出来对照。评论区说说你还想知道哪些血糖知识？",
       "关注我，每天一个控糖小知识。有问题评论区留言，我逐一回复。",
-      "这条建议你转发给家人群，可能救了一个人的控糖方向。关注不迷路。"
+      "这条建议转发给家人群，可能帮到身边还在迷茫的人。关注不迷路。"
     ],
     xhs:[
-      "这篇建议先⭐收藏，随时拿出来对照。有什么问题评论区说，我会一一回复。跟帖分享你的控糖经验~",
-      "觉得有用记得❤️+⭐，分享给需要的朋友。关注我，持续更新控糖干货。评论区见~",
-      "整理了很久的内容，希望对你有帮助。⭐收藏不迷路，评论区聊聊你的血糖困扰~"
+      "这篇建议先收藏，复查前拿出来对照。有问题评论区说，我会一一回复。跟帖分享你的控糖经验~",
+      "觉得有用记得收藏+关注，分享给需要的朋友。评论区聊聊你的血糖困扰~",
+      "整理了很久的内容，希望对你有帮助。收藏不迷路，评论区聊聊你的控糖故事~"
     ],
     bili:[
-      "如果你觉得这条视频有帮助，请一键三连支持一下，这对我很重要。有什么想聊的血糖话题，弹幕或评论区告诉我，下期安排。",
-      "关注我的频道，每周更新血糖科普。弹幕打出来你还想知道什么，我会做专题解答。别忘了三连支持~",
-      "如果这条内容帮你纠正了一个误区，请给个三连。评论区分享你身边的控糖故事，说不定下期就是你。"
+      "如果这条视频帮你纠正了一个误区，请给个三连。有什么想聊的血糖话题，弹幕或评论区告诉我，下期安排。",
+      "关注频道，每周更新血糖科普。弹幕打出来你还想知道什么，我会做专题解答。",
+      "如果这条内容对你有启发，请一键三连支持。评论区分享你身边的控糖故事，说不定下期就是你。"
     ]
   };
   const pool=ctas[plat]||ctas.dy;

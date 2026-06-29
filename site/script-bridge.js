@@ -400,38 +400,41 @@
     if (cat === "number") {
       return `「${clean}」涉及的数字不少，我按「先概念、再数字、再怎么用」来说。`;
     }
+    if (cat === "food") {
+      return `说到「${clean}」，很多人的第一反应和实际情况可能差挺远。`;
+    }
+    if (cat === "action") {
+      return `「${clean}」其实没多复杂，关键就那几步，我一个个拆开。`;
+    }
+    if (cat === "symptom") {
+      return `「${clean}」——这些信号容易被忽略，也可能是身体在提醒你。`;
+    }
     return `围绕「${clean}」，我把资料里最关键、也相对好核对的几点，展开说人话版。`;
   }
 
   function expandPoint(point, index) {
-    const leads = ["先说第一点，", "第二点，", "第三点，", "还有一点，", "最后补充，"];
-    const lead = leads[index] || "另外，";
     let p = (point || "").trim();
     if (!p) return "";
 
     if (p.startsWith("【来源】")) {
       const body = p.replace(/^【来源】/, "").trim();
       const sent = /[。！？]$/.test(body) ? body : `${body}。`;
-      return `${lead}根据可查来源摘引：${sent}口播时请对照原链接核实，别当定论。`;
+      return `根据可查来源摘引：${sent}口播时请对照原链接核实，别当定论。`;
     }
     if (p.startsWith("来源摘要：")) {
-      return `${lead}有来源提到：${p.slice(5)}。回原文核对前，别当定论传播。`;
+      return `有来源提到：${p.slice(5)}。回原文核对前，别当定论传播。`;
     }
     if (/GI\s*\d|GL\s*\d|mmol|HbA1c|糖化|≤|≥/.test(p)) {
-      return `${lead}数字这块：${p.replace(/[。．]$/, "")}。这是讨论用的参考，你的目标值以复查和医嘱为准。`;
+      return `数字这块：${p.replace(/[。．]$/, "")}。这是讨论用的参考，你的目标值以复查和医嘱为准。`;
     }
     if (/=|「|比喻|像.*一样|钥匙|锁/.test(p)) {
       const body = /[。！？]$/.test(p) ? p : `${p}。`;
-      return `${lead}${body}这个比喻好懂，但别凭感觉就给自己贴标签。`;
-    }
-    if (/（[^）]+）/.test(p)) {
-      const body = /[。！？]$/.test(p) ? p : `${p}。`;
-      return `${lead}${body}`;
+      return `${body}这个比喻好懂，但别凭感觉就给自己贴标签。`;
     }
     if (p.length <= 18) {
-      return `${lead}很多人会提到：${p}。把它当成提问线索，不是结论。`;
+      return `${p}。很多人会提到这一点，把它当成提问线索就好。`;
     }
-    return `${lead}${/[。！？]$/.test(p) ? p : `${p}。`}`;
+    return `${/[。！？]$/.test(p) ? p : `${p}。`}`;
   }
 
   function bodyBridge(topic, cat, writeMode) {
@@ -442,15 +445,24 @@
       return "要是觉得对上了好几条，别自己诊断——空腹/餐后血糖、腰围、家族史，交给医生一起评估更靠谱。";
     }
     if (cat === "food") {
-      return "记住：不是「绝对不能吃」，而是份量、搭配和烹饪方式一起考虑。";
+      return "不是「绝对不能吃」，份量、搭配、烹饪方式一起考虑，比刻意忌口有效得多。";
     }
     if (cat === "number") {
-      return "这些数字帮你建立语感，异常与否以化验单和医生解读为准。";
+      return "这些数字帮你建立语感，异常与否以化验单和医生解读为准，别拿着短视频当诊断书。";
     }
     if (cat === "symptom") {
-      return "症状只是提醒，不是确诊；有担心就尽快做正规检查。";
+      return "症状只是提醒，不是确诊；有担心就尽快做正规检查，别拖。";
     }
-    return "以上内容来自公开讨论和可查资料，怎么落到你身上，还要结合体检结果。";
+    if (cat === "action") {
+      return "这几个动作不花钱、不费事，难的是坚持。从今天开始，比从明天开始强。";
+    }
+    if (cat === "tool") {
+      return "选工具看自身需求，没有「最好」，只有「最适合你」。";
+    }
+    if (cat === "myth") {
+      return "记住：常识不一定对，数据不一定全，有问题就问医生。";
+    }
+    return "以上来自公开讨论和可查资料，怎么落到你身上，还要结合体检结果。";
   }
 
   function expandSpokenBody({ topic, cat, points, duration, writeMode }) {
@@ -493,13 +505,46 @@
     const list = (urls || []).filter(Boolean);
     if (!list.length) return null;
     const qs = list.map((u) => `url=${encodeURIComponent(u)}`).join("&");
-    const res = await fetch(`/api/fetch-sources?${qs}`);
-    if (!res.ok) {
-      throw new Error(
-        `拉取失败 (${res.status})。请用 python scripts/dev_server.py 8080 启动（不要用 python -m http.server）`
-      );
+    try {
+      const res = await fetch(`/api/fetch-sources?${qs}`);
+      if (res.ok) return res.json();
+      if (res.status === 404) {
+        /* dev_server 未启动，尝试逐个加载本地 source-cache */
+        const items = [];
+        for (const url of list) {
+          const hash = await simpleHash(url);
+          try {
+            const cr = await fetch(`../data/source-cache/${hash}.json`);
+            if (cr.ok) {
+              items.push(await cr.json());
+              continue;
+            }
+          } catch (_) { /* ignore */ }
+          items.push({ ok: false, url, status: "no_server", type: "skip", key_points: [], note: "无 dev_server 且无本地缓存" });
+        }
+        const kp = items.flatMap((it) => it.key_points || []);
+        return { ok: kp.length > 0, items, key_points: kp, errors: [], note: "dev_server 未启动，已从本地缓存加载（可能不是最新）" };
+      }
+      throw new Error(`拉取失败 (${res.status})`);
+    } catch (e) {
+      if (e.message && e.message.includes("Failed to fetch")) {
+        /* file:// 协议或网络不可用，返回降级标记 */
+        return { ok: false, items: list.map((url) => ({ ok: false, url, status: "offline", type: "skip", key_points: [], note: "离线模式" })), key_points: [], errors: [], note: "离线模式：使用已有数据点生成文案" };
+      }
+      throw e;
     }
-    return res.json();
+  }
+
+  async function simpleHash(str) {
+    /* SHA-256 前16位，与 source_fetcher.url_cache_key 一致 */
+    if (crypto.subtle) {
+      const buf = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(str));
+      return Array.from(new Uint8Array(buf)).map((b) => b.toString(16).padStart(2, "0")).join("").slice(0, 16);
+    }
+    /* 极端降级：用简单 hash（不保证一致） */
+    let h = 0;
+    for (let i = 0; i < str.length; i++) { h = ((h << 5) - h + str.charCodeAt(i)) | 0; }
+    return Math.abs(h).toString(16).padStart(16, "0");
   }
 
   function renderSourceFetchStatus(bundle, container) {
@@ -509,14 +554,20 @@
         '<p style="font-size:12px;color:var(--muted)">有来源链接时可点「拉取来源字幕/正文」</p>';
       return;
     }
+    const noteHtml = bundle.note
+      ? `<div style="font-size:11px;color:var(--accent3);margin-bottom:4px">${bundle.note}</div>`
+      : "";
     const items = (bundle.items || [])
       .map((it) => {
         const st = it.status || (it.ok ? "ok" : "error");
         const n = (it.key_points || []).length;
-        return `<div style="font-size:11px;margin-bottom:4px">• ${it.type || "?"} · ${st} · ${n} 条要点 ${it.note ? `<span style="color:var(--accent3)">— ${it.note}</span>` : ""}</div>`;
+        const color = st === "ok" ? "var(--accent)" : st === "offline" || st === "no_server" ? "var(--muted)" : "var(--accent2)";
+        return `<div style="font-size:11px;margin-bottom:4px;color:${color}">• ${it.type || "?"} · ${st} · ${n} 条要点${it.note ? ` — ${it.note}` : ""}</div>`;
       })
       .join("");
-    container.innerHTML = `<div style="font-size:12px;color:var(--accent);margin-bottom:6px">已拉取 ${bundle.key_points?.length || 0} 条来源要点</div>${items}`;
+    const kpCount = bundle.key_points?.length || 0;
+    const kpColor = kpCount > 0 ? "var(--accent)" : "var(--muted)";
+    container.innerHTML = `<div style="font-size:12px;color:${kpColor};margin-bottom:6px">${kpCount > 0 ? `已加载 ${kpCount} 条来源要点` : "来源资料未拉取，文案将基于已有数据点生成"}</div>${noteHtml}${items}`;
   }
 
   global.ScriptBridge = {

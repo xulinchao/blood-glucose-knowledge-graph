@@ -1,6 +1,6 @@
 {
-  "version": "1.0",
-  "updated": "2026-06-29",
+  "version": "1.1",
+  "updated": "2026-06-30",
   "topics": [
     {
       "id": "disc-001",
@@ -19,7 +19,9 @@
       "script_status": "writing",
       "publish_status": "pending",
       "discovered_date": "2026-06-28",
-      "script_file": "data/scripts/script-20260629-001.json"
+      "script_file": "data/scripts/script-20260629-001.json",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
     },
     {
       "id": "disc-002",
@@ -37,7 +39,9 @@
       "status": "discovered",
       "script_status": "pending",
       "publish_status": "pending",
-      "discovered_date": "2026-06-28"
+      "discovered_date": "2026-06-28",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
     },
     {
       "id": "disc-003",
@@ -55,7 +59,9 @@
       "status": "discovered",
       "script_status": "pending",
       "publish_status": "pending",
-      "discovered_date": "2026-06-28"
+      "discovered_date": "2026-06-28",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
     },
     {
       "id": "disc-004",
@@ -72,7 +78,9 @@
       "status": "discovered",
       "script_status": "pending",
       "publish_status": "pending",
-      "discovered_date": "2026-06-28"
+      "discovered_date": "2026-06-28",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
     },
     {
       "id": "disc-005",
@@ -89,7 +97,9 @@
       "status": "discovered",
       "script_status": "pending",
       "publish_status": "pending",
-      "discovered_date": "2026-06-28"
+      "discovered_date": "2026-06-28",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
     },
     {
       "id": "disc-006",
@@ -106,7 +116,9 @@
       "status": "discovered",
       "script_status": "pending",
       "publish_status": "pending",
-      "discovered_date": "2026-06-28"
+      "discovered_date": "2026-06-28",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
     },
     {
       "id": "disc-007",
@@ -123,7 +135,9 @@
       "status": "discovered",
       "script_status": "pending",
       "publish_status": "pending",
-      "discovered_date": "2026-06-28"
+      "discovered_date": "2026-06-28",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
     },
     {
       "id": "disc-008",
@@ -141,7 +155,9 @@
       "status": "discovered",
       "script_status": "pending",
       "publish_status": "pending",
-      "discovered_date": "2026-06-28"
+      "discovered_date": "2026-06-28",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
     },
     {
       "id": "disc-009",
@@ -158,7 +174,9 @@
       "status": "discovered",
       "script_status": "pending",
       "publish_status": "pending",
-      "discovered_date": "2026-06-28"
+      "discovered_date": "2026-06-28",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
     },
     {
       "id": "disc-010",
@@ -175,7 +193,9 @@
       "status": "discovered",
       "script_status": "pending",
       "publish_status": "pending",
-      "discovered_date": "2026-06-28"
+      "discovered_date": "2026-06-28",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
     },
     {
       "id": "disc-011",
@@ -192,7 +212,9 @@
       "status": "discovered",
       "script_status": "pending",
       "publish_status": "pending",
-      "discovered_date": "2026-06-29"
+      "discovered_date": "2026-06-29",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
     },
     {
       "id": "disc-012",
@@ -211,7 +233,9 @@
       "status": "discovered",
       "script_status": "pending",
       "publish_status": "pending",
-      "discovered_date": "2026-06-29"
+      "discovered_date": "2026-06-29",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
     },
     {
       "id": "disc-013",
@@ -229,7 +253,9 @@
       "status": "discovered",
       "script_status": "pending",
       "publish_status": "pending",
-      "discovered_date": "2026-06-29"
+      "discovered_date": "2026-06-29",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
     },
     {
       "id": "disc-014",
@@ -246,7 +272,9 @@
       "status": "discovered",
       "script_status": "pending",
       "publish_status": "pending",
-      "discovered_date": "2026-06-29"
+      "discovered_date": "2026-06-29",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
     },
     {
       "id": "disc-015",
@@ -264,7 +292,9 @@
       "status": "discovered",
       "script_status": "pending",
       "publish_status": "pending",
-      "discovered_date": "2026-06-29"
+      "discovered_date": "2026-06-29",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
     },
     {
       "id": "disc-016",
