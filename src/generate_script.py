@@ -118,6 +118,7 @@ def main() -> None:
     parser.add_argument("--mark-publish", dest="mark_publish", choices=["pending", "published"])
     parser.add_argument("--output", choices=["text", "json", "prompt"], default="text")
     parser.add_argument("--fetch-sources", dest="fetch_sources", action=argparse.BooleanOptionalAction, default=True)
+    parser.add_argument("--force", action="store_true", help="安全 Lint 未通过时仍保存")
     parser.add_argument("--list-topics", action="store_true", help="列出 discovered-topics 可写稿条目")
     args = parser.parse_args()
 
@@ -153,10 +154,33 @@ def main() -> None:
         for item in doc["verify_checklist"]:
             mark = "必" if item.get("required") else "选"
             print(f"[{mark}] {item['text']}")
+        safety = doc.get("safety_report") or {}
+        if safety.get("violations"):
+            print("\n--- 安全 Lint ---")
+            for v in safety["violations"]:
+                print(f"[!] {v.get('label', v.get('type'))}")
+            for s in safety.get("suggestions") or []:
+                print(f"    建议: {s}")
 
     if args.save:
+        safety = doc.get("safety_report") or {}
+        if not safety.get("passed") and not args.force:
+            print("\n[拒绝保存] 口播安全 Lint 未通过，使用 --force 强制保存", file=sys.stderr)
+            raise SystemExit(2)
         saved = save_script_record(doc, topic_id=topic_id or None)
         print(f"\n已保存: {saved['path']}", file=sys.stderr)
+        if safety.get("passed"):
+            from claim_graph import record_published_script  # noqa: WPS433
+
+            meta = doc.get("meta") or {}
+            claim_ids = [c.get("claim_id") for c in meta.get("claims") or [] if c.get("claim_id")]
+            if claim_ids:
+                record_published_script(
+                    claim_ids,
+                    saved["id"],
+                    doc["title"],
+                    safe_template=(meta.get("gate") or {}).get("allowed_frame") or "",
+                )
         if topic_id:
             update_discovered_topic_status(
                 topic_id,

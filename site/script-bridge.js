@@ -205,16 +205,82 @@
 
   function harvestMetaFromItem(item) {
     const auth = item.authenticity || {};
+    const gate = item.gate || {};
     return {
-      use_as: auth.use_as,
+      use_as: gate.use_as || auth.use_as,
       evidence_tier: auth.evidence_tier,
-      creator_note: auth.creator_note,
+      creator_note: gate.creator_note || auth.creator_note,
       adversarial_flags: auth.adversarial_flags || [],
       source_urls: item.url ? [item.url] : [],
-      topic_score: item.topic_score,
+      topic_score: item.writability_score || item.topic_score,
+      writability_score: item.writability_score || item.topic_score,
+      heat_score: item.heat_score,
       platform: item.platform,
       snippet: item.snippet || "",
+      gate: gate,
+      allowed_frame: gate.allowed_frame,
+      forbidden_expressions: gate.forbidden_expressions || [],
+      required_hedges: gate.required_hedges || [],
+      claims: item.claims || [],
     };
+  }
+
+  const FORBIDDEN_PATTERNS = [
+    [/一定能(降|控制)?糖/gi, "绝对化疗效"],
+    [/可以降血糖/gi, "因果疗效断言"],
+    [/保证(逆转|治愈|根治)/gi, "治愈承诺"],
+    [/所有人都/gi, "绝对化人群"],
+    [/替医嘱|代替医生/gi, "替代就医"],
+    [/停药|不用吃药/gi, "用药建议"],
+    [/研究表明你一定/gi, "UGC 确定性断言"],
+    [/只要.{0,8}就能(降|治)/gi, "因果跳跃"],
+  ];
+
+  const CAUSAL_JUMP_PATTERNS = [
+    [/因为.{2,30}所以.{0,12}(降|控)糖/gi, "因果跳跃"],
+    [/吃了.{2,20}(血糖|降糖)/gi, "因果跳跃"],
+  ];
+
+  const DEFAULT_HEDGES = ["目前证据有限", "个体差异较大", "请以复查和医嘱为准"];
+
+  function lintScriptText(text, meta, writeMode) {
+    meta = meta || {};
+    writeMode = writeMode || "verify_before_script";
+    const violations = [];
+    const suggestions = [];
+    const blob = text || "";
+
+    FORBIDDEN_PATTERNS.forEach(([re, label]) => {
+      if (re.test(blob)) violations.push({ type: "forbidden_pattern", label });
+    });
+    CAUSAL_JUMP_PATTERNS.forEach(([re, label]) => {
+      if (re.test(blob)) violations.push({ type: "causal_jump", label });
+    });
+
+    const tier = meta.evidence_tier || "D";
+    const frame = meta.allowed_frame || (meta.gate && meta.gate.allowed_frame) || "";
+    const hedges = meta.required_hedges || (meta.gate && meta.gate.required_hedges) || DEFAULT_HEDGES;
+    const needsHedge =
+      writeMode === "hook_only" || tier === "D" || tier === "E" || frame === "discussion_only";
+    if (needsHedge && hedges.length && !hedges.some((h) => blob.includes(h))) {
+      violations.push({ type: "missing_hedge", label: "缺少非确定性降权表述" });
+      suggestions.push(`建议加入：「${hedges[0]}」`);
+    }
+
+    const forbidden =
+      meta.forbidden_expressions || (meta.gate && meta.gate.forbidden_expressions) || [];
+    forbidden.forEach((expr) => {
+      if (expr && blob.includes(expr)) {
+        violations.push({ type: "gate_forbidden", label: `含 Gate 禁止表达「${expr}」` });
+      }
+    });
+
+    const disclaimerMarkers = ["不构成医疗建议", "咨询医生", "非医疗建议", "遵医嘱"];
+    if (!disclaimerMarkers.some((m) => blob.includes(m))) {
+      violations.push({ type: "missing_disclaimer", label: "缺少医疗免责声明" });
+    }
+
+    return { passed: violations.length === 0, violations, suggestions };
   }
 
   function findHarvestItem(harvest, { url, title }) {
@@ -343,7 +409,7 @@
     let p = (point || "").trim();
     if (!p) return "";
 
-    if p.startswith("【来源】") || p.startsWith("【来源】")) {
+    if (p.startsWith("【来源】")) {
       const body = p.replace(/^【来源】/, "").trim();
       const sent = /[。！？]$/.test(body) ? body : `${body}。`;
       return `${lead}根据可查来源摘引：${sent}口播时请对照原链接核实，别当定论。`;
@@ -475,5 +541,6 @@
     fetchSourceBundle,
     mergeSourceKeyPoints,
     renderSourceFetchStatus,
+    lintScriptText,
   };
 })(window);

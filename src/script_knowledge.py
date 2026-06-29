@@ -437,7 +437,7 @@ def build_script_document(
     cta = _build_cta(platform)
     full_text = f"{hook}\n\n{body}\n\n{cta}\n\n{DISCLAIMER}"
 
-    return {
+    doc = {
         "title": title,
         "platform": platform,
         "platform_label": PLATFORM_LABELS.get(platform, platform),
@@ -459,6 +459,10 @@ def build_script_document(
         "sources": meta.get("source_urls") or [],
         "creator_note": meta.get("creator_note", ""),
     }
+    from script_safety import lint_script_document  # noqa: WPS433
+
+    lint_script_document(doc)
+    return doc
 
 
 def build_ai_prompt(doc: dict[str, Any]) -> str:
@@ -472,6 +476,11 @@ def build_ai_prompt(doc: dict[str, Any]) -> str:
         "cite_directly": "可引用来源，但必须标注链接且加非医疗建议。",
         "verify_before_script": "写稿前须核实关键数字；无 A/B 来源的数字标「待核实」。",
     }.get(doc.get("write_mode", "verify_before_script"), "")
+
+    forbidden = meta.get("forbidden_expressions") or (meta.get("gate") or {}).get("forbidden_expressions") or []
+    hedges = meta.get("required_hedges") or (meta.get("gate") or {}).get("required_hedges") or []
+    forbidden_block = "\n".join(f"- 禁止出现：{e}" for e in forbidden) if forbidden else "- （无 Gate 级禁止词）"
+    hedge_block = "\n".join(f"- 建议降权：{h}" for h in hedges) if hedges else "- 目前证据有限 / 个体差异较大"
 
     return f"""【口播文案生成 Prompt · 血糖科普 · 非医生创作者】
 
@@ -497,6 +506,10 @@ def build_ai_prompt(doc: dict[str, Any]) -> str:
 
 ## 写稿前核实清单
 {checklist}
+
+## Gate 语言约束（与 script_safety 同源）
+{forbidden_block}
+{hedge_block}
 
 ## 结构
 1. 钩子 3-5 秒
@@ -547,14 +560,22 @@ def find_harvest_item(harvest: dict, *, url: str = "", title: str = "") -> dict 
 
 def harvest_item_meta(item: dict) -> dict[str, Any]:
     auth = item.get("authenticity") or {}
+    gate = item.get("gate") or {}
     return {
-        "use_as": auth.get("use_as"),
+        "use_as": gate.get("use_as") or auth.get("use_as"),
         "evidence_tier": auth.get("evidence_tier"),
-        "creator_note": auth.get("creator_note"),
+        "creator_note": gate.get("creator_note") or auth.get("creator_note"),
         "adversarial_flags": auth.get("adversarial_flags") or [],
         "source_urls": [item["url"]] if item.get("url") else [],
-        "topic_score": item.get("topic_score"),
+        "topic_score": item.get("writability_score") or item.get("topic_score"),
+        "writability_score": item.get("writability_score") or item.get("topic_score"),
+        "heat_score": item.get("heat_score"),
         "platform": item.get("platform"),
+        "gate": gate,
+        "allowed_frame": gate.get("allowed_frame"),
+        "forbidden_expressions": gate.get("forbidden_expressions") or [],
+        "required_hedges": gate.get("required_hedges") or [],
+        "claims": item.get("claims") or [],
     }
 
 
@@ -602,6 +623,7 @@ def save_script_record(
         "script_status": script_status,
         "publish_status": publish_status,
         "verify_checklist": doc.get("verify_checklist"),
+        "safety_report": doc.get("safety_report"),
         "source_urls": doc.get("sources") or [],
         "data_ref": doc.get("data_ref") or [],
         "parts": doc.get("parts"),

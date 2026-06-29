@@ -1,0 +1,89 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "description": "主张记忆图谱：防重复谣言包装与误读升级",
+    "last_updated": "2026-06-30T00:30:46"
+  },
+  "claims": {
+    "40a2e10bd40d4026": {
+      "claim_text": "逆转",
+      "claim_type": "causal_claim",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "逆转胰岛素抵抗五个自然方法"
+      ],
+      "source_urls": [
+        "https://bilibili.com/video/BVtest"
+      ]
+    },
+    "56d377b6d17cc8ff": {
+      "claim_text": "胰岛素",
+      "claim_type": "drug_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "逆转胰岛素抵抗五个自然方法"
+      ],
+      "source_urls": [
+        "https://bilibili.com/video/BVtest"
+      ]
+    },
+    "167e0973a2290ade": {
+      "claim_text": "中国糖尿病防治指南（2024版）",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "中国糖尿病防治指南（2024版）"
+      ],
+      "source_urls": [
+        "https://drugs.dxy.cn/pc/clinicalGuidelines/test"
+      ]
+    },
+    "b2ac7d2b942bd3bc": {
+      "claim_text": "体验动态血糖仪普通人有必要吗",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "体验动态血糖仪普通人有必要吗"
+      ],
+      "source_urls": [
+        "https://bilibili.com/video/BVhook"
+      ]
+    },
+    "a0744f5bc2810ced": {
+      "claim_text": "控糖",
+      "claim_type": "causal_claim",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "2026控糖指南解读"
+      ],
+      "source_urls": [
+        "https://bilibili.com/video/BV1"
+      ]
+    }
+  }
+}

@@ -7,8 +7,12 @@ TraeWork / 计划任务入口:
 
 输出:
     data/exports/daily-harvest-YYYY-MM-DD.json
+    data/exports/daily-brief-YYYY-MM-DD.json
+    data/exports/latest-brief.json
     research-daily/YYYY-MM-DD-采集日报.md
     research-daily/YYYY-MM-DD-采集日报.html
+    research-daily/YYYY-MM-DD-精选日报.md
+    research-daily/YYYY-MM-DD-精选日报.html
     data/discovered-topics.json（高价值条目增量写入）
 """
 
@@ -44,6 +48,16 @@ from platform_scraper import (  # noqa: E402
     save_topics,
     search_bilibili,
 )
+from curate_daily_brief import save_curated_brief  # noqa: E402
+from claim_gate import (  # noqa: E402
+    adversarial_audit,
+    evaluate as claim_gate_evaluate,
+    extract_claims,
+    passes_health_relevance,
+    passes_twitter_filter,
+    score_authenticity,
+)
+from claim_graph import get_claim_graph_penalty, upsert_claim_from_evaluation  # noqa: E402
 from script_knowledge import enrich_data_ref  # noqa: E402
 
 EXPORTS_DIR = os.path.join(DATA_DIR, "exports")
@@ -84,30 +98,11 @@ DEFAULT_HARVEST_KEYWORDS = list(
     dict.fromkeys(YOUTH_KEYWORDS + list(SEARCH_KEYWORDS))
 )
 
-SENSATIONAL = [
-    "根治", "治愈保证", "神药", "被骗", "一夜", "百分百", "千万别",
-    "跌落神坛", "惊呆", "暴涨", "万病之源", "一招", "秘方", "包治",
-]
-ABSOLUTE_CLAIMS = ["所有人都", "一定治", "保证逆转", "永不复发", "替换药物"]
-CREDIBLE_AUTHOR = [
-    "医生", "医师", "营养师", "医院", "主任", "教授", "指南", "学会", "疾控", "大夫",
-]
 CREDIBLE_URL = [
     ".gov.cn", "who.int", "nih.gov", "nejm.org", "thelancet.com",
     "diabetesjournals.org", "cnki.net", "dxy.cn", "haodf.com", "medlive.cn",
 ]
 AUTHORITY_SITES = ["nhc.gov.cn", "dxy.cn", "who.int", "nih.gov"]
-
-HEALTH_SIGNAL = re.compile(
-    r"血糖|糖尿|控糖|胰岛素|糖化|HbA1c|GI\b|GL\b|glycemic|glucose|diabetes|"
-    r"insulin|prediabetes|metabolic|CGM|低血糖|餐后|碳水",
-    re.I,
-)
-TWITTER_NOISE = re.compile(
-    r"trader|trading|bitcoin|crypto|bitget|gate\.io|binance|forex|"
-    r"返\d+%|BP\d+|nft\b|airdrop",
-    re.I,
-)
 
 OPENCLI_CMD = "opencli.cmd" if os.name == "nt" else "opencli"
 MCPORTER_CMD = "mcporter.cmd" if os.name == "nt" else "mcporter"
@@ -156,119 +151,6 @@ def parse_date(s: str | None) -> datetime | None:
         except ValueError:
             continue
     return None
-
-
-def passes_health_relevance(*texts: str) -> bool:
-    blob = " ".join(t for t in texts if t)
-    return bool(HEALTH_SIGNAL.search(blob))
-
-
-def passes_twitter_filter(text: str, author: str = "", bio: str = "") -> bool:
-    blob = f"{text} {author} {bio}"
-    if TWITTER_NOISE.search(blob):
-        return False
-    return passes_health_relevance(text, bio)
-
-
-def adversarial_audit(
-    title: str,
-    author: str,
-    url: str,
-    platform: str,
-    snippet: str = "",
-) -> dict[str, Any]:
-    """
-    第一性原理：可验证性 + 证据层级 + 误导伤害 + 动机（带货/恐惧/绝对化）
-    对抗性审核：假设作者在最大化传播而非最大化真相，反向打标。
-    """
-    t, a, u, s = title or "", author or "", url or "", snippet or ""
-    blob = f"{t} {s} {a}"
-    flags: list[str] = []
-    reasons: list[str] = []
-    score = 50
-
-    # 证据层级（A 最高）
-    tier = "D"
-    if any(d in u for d in [".gov.cn", "who.int", "nih.gov", "nejm", "lancet", "指南", "consensus"]):
-        tier, score = "A", score + 35
-        reasons.append("一级来源：指南/政府/期刊域名")
-    elif "dxy.cn" in u or "haodf.com" in u or "medlive" in u:
-        tier, score = "B", score + 28
-        reasons.append("二级来源：医疗专业平台")
-    elif any(k in a for k in CREDIBLE_AUTHOR):
-        tier, score = "C", score + 18
-        reasons.append("作者具医疗相关身份标识（仍需核对资质）")
-    elif platform in ("xhs", "bili", "zhihu", "twitter", "reddit", "youtube"):
-        tier = "D"
-        reasons.append("UGC 平台：默认仅可作选题钩子，不可当医学结论")
-
-    for bad in SENSATIONAL:
-        if bad in blob:
-            flags.append("sensational")
-            score -= 20
-            reasons.append(f"对抗性标记：夸张词「{bad}」")
-            tier = "E"
-    for bad in ABSOLUTE_CLAIMS:
-        if bad in blob:
-            flags.append("absolute_claim")
-            score -= 15
-            tier = "E"
-            reasons.append(f"对抗性标记：绝对化表述「{bad}」")
-
-    if re.search(r"卖|链接|下单|代购|优惠券", blob) and tier in ("D", "E"):
-        flags.append("commercial_hook")
-        score -= 8
-        reasons.append("对抗性标记：疑似带货动机")
-
-    if re.search(r"\d+(\.\d+)?%|GI|HbA1c|糖化|mmol|研究|试验|指南", blob, re.I):
-        score += 6
-        reasons.append("含可核对的数据或术语（需回源核实）")
-
-    if platform == "twitter" and not passes_twitter_filter(t, a, s):
-        flags.append("off_topic_noise")
-        tier, score = "E", min(score, 25)
-
-    score = max(0, min(100, score))
-
-    # 创作者用法（非医生）
-    if tier == "A":
-        use_as = "cite_directly"
-        creator_note = "可引用来源观点，口播须加「非医疗建议」并附原链接"
-    elif tier == "B":
-        use_as = "verify_before_script"
-        creator_note = "写稿前对照原帖/指南核实；口播避免给个体诊断"
-    elif tier == "E" or "sensational" in flags or "absolute_claim" in flags:
-        use_as = "hook_only"
-        creator_note = "仅作「大家在讨论什么」的选题钩子，勿复述为事实"
-    elif tier == "C":
-        use_as = "verify_before_script"
-        creator_note = "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
-    else:
-        use_as = "hook_only"
-        creator_note = "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
-
-    if score >= 75:
-        label = "较高"
-    elif score >= 55:
-        label = "中等"
-    elif score >= 35:
-        label = "偏低"
-    else:
-        label = "需谨慎"
-
-    return {
-        "score": score,
-        "label": label,
-        "reasons": reasons[:5],
-        "evidence_tier": tier,
-        "adversarial_flags": flags,
-        "use_as": use_as,
-        "creator_note": creator_note,
-    }
-
-
-def score_authenticity(title: str, author: str, url: str, platform: str, snippet: str = "") -> dict[str, Any]:
-    return adversarial_audit(title, author, url, platform, snippet)
 
 
 def score_importance(
@@ -334,19 +216,25 @@ def make_item(
     raw: dict | None = None,
 ) -> dict[str, Any]:
     metrics = metrics or {}
-    auth = adversarial_audit(title, author, url, platform, snippet)
     imp = score_importance(title, keyword, metrics, published_at)
-    topic_score = round(auth["score"] * 0.5 + imp["score"] * 0.5)
-    blocked = (
-        auth["evidence_tier"] == "E"
-        or "off_topic_noise" in auth["adversarial_flags"]
-        or (auth["use_as"] == "hook_only" and auth["score"] < 60)
+    heat_score = imp["score"]
+    pre_auth = adversarial_audit(title, author, url, platform, snippet)
+    claim_ids = [c.get("claim_id", "") for c in extract_claims(title, snippet, pre_auth["evidence_tier"])]
+    penalty = get_claim_graph_penalty([x for x in claim_ids if x])
+    gate_result = claim_gate_evaluate(
+        title, author, url, platform, snippet, claim_graph_penalty=penalty,
     )
-    topic_pick = (
-        not blocked
-        and auth["use_as"] in ("cite_directly", "verify_before_script", "safe_to_discuss")
-        and topic_score >= 62
-        and auth["score"] >= 50
+    auth = gate_result["authenticity"]
+    gate = gate_result["gate"]
+    auth = {**auth, "use_as": gate["use_as"], "creator_note": gate.get("creator_note") or auth.get("creator_note")}
+    writability_score = gate["writability_score"]
+    topic_pick = gate["passed"] and writability_score >= 62
+    upsert_claim_from_evaluation(gate_result.get("claims") or [], url=url, title=title.strip())
+    engagement = max(
+        parse_count(metrics.get("play")),
+        parse_count(metrics.get("likes")),
+        parse_count(metrics.get("replies")),
+        parse_count(metrics.get("views")),
     )
     return {
         "platform": platform,
@@ -361,14 +249,22 @@ def make_item(
         "category": classify_topic(title),
         "authenticity": auth,
         "importance": imp,
-        "topic_score": topic_score,
+        "heat_score": heat_score,
+        "writability_score": writability_score,
+        "topic_score": writability_score,
         "topic_pick": topic_pick,
+        "claims": gate_result.get("claims") or [],
+        "gate": gate,
+        "claim_summary": gate_result.get("claim_summary", ""),
+        "controversy_hint": gate_result.get("controversy_hint", ""),
+        "editorial": gate_result.get("editorial") or {},
+        "engagement": engagement,
         "raw": raw,
     }
 
 
 def apply_cross_platform_boost(items: list[dict]) -> None:
-    """多平台同主题 → 重要性加分（年轻人热议信号）"""
+    """多平台同主题 → 热度加分（不影响 Gate 可写性裁决）"""
     buckets: dict[str, list[dict]] = {}
     for it in items:
         k = dedup_key(it["title"])
@@ -381,18 +277,7 @@ def apply_cross_platform_boost(items: list[dict]) -> None:
             imp = it["importance"]
             imp["score"] = min(100, imp["score"] + 10 + 2 * len(plats))
             imp["reasons"].append(f"多平台同热({'+'.join(plats)})")
-            auth = it["authenticity"]
-            it["topic_score"] = round(auth["score"] * 0.5 + imp["score"] * 0.5)
-            blocked = (
-                auth["evidence_tier"] == "E"
-                or "off_topic_noise" in auth.get("adversarial_flags", [])
-            )
-            it["topic_pick"] = (
-                not blocked
-                and auth["use_as"] in ("cite_directly", "verify_before_script", "safe_to_discuss")
-                and it["topic_score"] >= 62
-                and auth["score"] >= 50
-            )
+            it["heat_score"] = imp["score"]
 
 
 # ── 采集器 ─────────────────────────────────────────
@@ -1153,6 +1038,7 @@ def run_harvest(
         render_markdown(report_date, summary, all_items, added),
         render_html(report_date, summary, all_items, added),
     )
+    brief_paths = save_curated_brief(report_date, payload)
 
     print("\n" + "=" * 56)
     print("[完成] 采集统计")
@@ -1165,6 +1051,9 @@ def run_harvest(
         print(f"  异常: {len(summary['errors'])} 项（见日报）")
     print("\n[输出文件]")
     for k, v in paths.items():
+        print(f"  {k}: {v}")
+    print("\n[精选日报]")
+    for k, v in brief_paths.items():
         print(f"  {k}: {v}")
 
     return payload

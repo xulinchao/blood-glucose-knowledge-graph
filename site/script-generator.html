@@ -545,6 +545,74 @@ body {
 ::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
 
+/* Auth / verify panel */
+.auth-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: var(--bg3);
+  color: var(--muted);
+}
+.auth-badge.tier-A, .auth-badge.tier-B { color: var(--accent); background: rgba(0,212,170,0.12); }
+.auth-badge.tier-C { color: var(--accent4); background: rgba(108,140,255,0.12); }
+.auth-badge.tier-D, .auth-badge.tier-E { color: var(--accent3); background: rgba(255,217,61,0.12); }
+.auth-badge.mode-hook_only { color: var(--accent2); }
+.gen-auth-panel, .gen-verify-panel, .gen-source-panel {
+  background: var(--bg3);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+.gen-auth-panel h4, .gen-verify-panel h4, .gen-source-panel h4 {
+  font-size: 12px;
+  color: var(--accent);
+  margin-bottom: 8px;
+}
+.verify-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 12px;
+  color: var(--muted);
+  margin-bottom: 6px;
+  cursor: pointer;
+}
+.flow-hint {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  background: rgba(108,140,255,0.06);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+}
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(80px);
+  background: var(--bg2);
+  border: 1px solid var(--accent);
+  color: var(--ink);
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 13px;
+  z-index: 9999;
+  opacity: 0;
+  transition: transform 0.25s, opacity 0.25s;
+  pointer-events: none;
+  max-width: 90vw;
+  text-align: center;
+}
+.toast.show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
 /* Responsive */
 @media (max-width: 600px) {
   .header h1 { font-size: 22px; }
@@ -630,8 +698,13 @@ body {
       <!-- 左侧快捷面板 -->
       <div class="quick-panel">
         <h3>我的选题</h3>
+        <div class="flow-hint">
+          <strong style="color:var(--accent)">生成文案</strong> → 跳转本页并填表<br>
+          <strong style="color:var(--accent4)">采纳</strong> → 加入下方列表（存浏览器本地）<br>
+          填好后点「生成口播文案」出稿
+        </div>
         <div id="quick-topics-list">
-          <div class="quick-topic-empty">暂无已采纳选题<br>在选题中心点击"生成文案"即可添加</div>
+          <div class="quick-topic-empty">暂无已采纳选题<br>选题中心点「生成文案」或「采纳」</div>
         </div>
       </div>
 
@@ -642,6 +715,18 @@ body {
           <div class="form-row">
             <label>选题</label>
             <textarea id="gen-topic" placeholder="点击左侧选题快速填入，或手动输入"></textarea>
+          </div>
+          <div class="gen-auth-panel">
+            <h4>证据与用法</h4>
+            <div id="gen-auth-panel"></div>
+          </div>
+          <div class="gen-verify-panel">
+            <h4>写稿前核实</h4>
+            <div id="gen-verify-list"></div>
+          </div>
+          <div class="gen-source-panel">
+            <h4>来源资料</h4>
+            <div id="gen-source-status"></div>
           </div>
           <div class="form-row">
             <label>目标平台</label>
@@ -746,6 +831,7 @@ body {
   </div>
 
 </div>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
 
 <script src="script-bridge.js"></script>
 <script>
@@ -813,6 +899,32 @@ let DISCOVERED_TOPICS=[];
 let ALL_TOPICS=[]; // merged TOPICS + DISCOVERED_TOPICS
 let currentSourceFilter="all";
 let generatorContext={meta:{},writeMode:"verify_before_script",topicId:null,verifyChecked:new Set(["disclaimer"]),sourceBundle:null,lastResult:null};
+let toastTimer=null;
+
+function showToast(msg, ms=2800){
+  const el=document.getElementById("toast");
+  if(!el) return;
+  el.textContent=msg;
+  el.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer=setTimeout(()=>el.classList.remove("show"), ms);
+}
+
+function addRecentTopicId(id){
+  const key="bloodsugar_recent_topics";
+  let ids=[];
+  try{ ids=JSON.parse(localStorage.getItem(key)||"[]"); }catch(e){}
+  ids=[String(id), ...ids.filter(x=>String(x)!==String(id))].slice(0,15);
+  localStorage.setItem(key, JSON.stringify(ids));
+}
+
+function getRecentTopicIds(){
+  try{
+    return new Set(JSON.parse(localStorage.getItem("bloodsugar_recent_topics")||"[]").map(String));
+  }catch(e){
+    return new Set();
+  }
+}
 
 // ==================== INIT ====================
 const catSelect=document.getElementById("filter-cat");
@@ -892,6 +1004,18 @@ function formatNumber(n) {
   return String(num);
 }
 
+function escHtml(s) {
+  return String(s || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+function escAttr(s) {
+  return escHtml(s).replace(/'/g, "&#39;");
+}
+
 function filterSource(source) {
   currentSourceFilter = source;
   document.querySelectorAll('.source-tab').forEach(t => t.classList.remove('active'));
@@ -958,14 +1082,14 @@ function renderTopics(){
     if (pd.topic_score) metricsHtml += `<span class="meta-tag">评分${pd.topic_score}</span>`;
     if (pd.evidence_tier) metricsHtml += `<span class="meta-tag" style="opacity:0.7">层级${pd.evidence_tier}</span>`;
 
-    return `<div class="topic-card ${isSelected?'selected':''} ${isAdopted?'adopted':''}" onclick="selectTopicById('${t.id}')">
+    return `<div class="topic-card ${isSelected?'selected':''} ${isAdopted?'adopted':''}" data-topic-id="${escAttr(String(t.id))}">
       <div class="topic-header">
-        <div class="topic-title">${heatIcon} ${t.title}</div>
+        <div class="topic-title">${heatIcon} ${escHtml(t.title)}</div>
         <span class="heat-badge ${heatClass}">${t.heat.toUpperCase()}</span>
       </div>
-      <div style="font-size:12px;color:var(--muted);margin:6px 0">${t.angle||t.note||''}</div>
+      <div style="font-size:12px;color:var(--muted);margin:6px 0">${escHtml(t.angle||t.note||'')}</div>
       <div class="topic-meta">
-        <span class="meta-tag">${t.catName}</span>
+        <span class="meta-tag">${escHtml(t.catName)}</span>
         ${sourceTag}
         ${metricsHtml}
       </div>
@@ -975,9 +1099,9 @@ function renderTopics(){
         <div class="stat">收藏 <span>${plat.saves}</span></div>
       </div>
       <div class="topic-actions">
-        <button class="primary" onclick="event.stopPropagation();quickGenerate('${t.id}')">生成文案</button>
-        ${t._type==='discovered' && !isAdopted ? `<button onclick="event.stopPropagation();quickAdopt('${t.id}')">采纳</button>` : ''}
-        ${t.source_urls && t.source_urls.length ? `<button onclick="event.stopPropagation();window.open('${t.source_urls[0]}','_blank')">来源</button>` : ''}
+        <button type="button" class="primary" data-action="generate">生成文案</button>
+        ${t._type==='discovered' && !isAdopted ? `<button type="button" data-action="adopt">采纳</button>` : ''}
+        ${t.source_urls && t.source_urls.length ? `<button type="button" data-action="source">来源</button>` : ''}
       </div>
     </div>`;
   }).join("");
@@ -991,18 +1115,30 @@ function selectTopicById(id) {
 }
 
 function quickGenerate(id) {
+  if(typeof ScriptBridge==="undefined"){
+    showToast("ScriptBridge 未加载，请刷新页面");
+    return;
+  }
   const t = ALL_TOPICS.find(x => String(x.id) === String(id));
   if (!t) return;
   selectedTopic = t;
+  addRecentTopicId(t.id);
   renderTopics();
+  renderQuickTopics();
 
   const catMap={"辟谣纠偏":"myth","饮食指南":"food","数字科普":"number","实操方法":"action","症状预警":"symptom","工具测评":"tool","案例故事":"story","避坑指南":"mistake"};
-  const meta = {
-    use_as: t._type === 'discovered' ? (t.source_urls?.length ? 'verify_before_script' : 'hook_only') : 'verify_before_script',
-    evidence_tier: t._type === 'discovered' ? 'D' : 'C',
-    creator_note: t.note || '',
-    source_urls: t.source_urls || []
-  };
+  const pd = t.platform_data || {};
+  const meta = t._type === 'discovered'
+    ? ScriptBridge.harvestMetaFromTopic({
+        harvest_meta: { authenticity: { use_as: pd.use_as, evidence_tier: pd.evidence_tier }, use_as: pd.use_as, evidence_tier: pd.evidence_tier },
+        source_urls: t.source_urls || []
+      })
+    : {
+        use_as: 'verify_before_script',
+        evidence_tier: 'C',
+        creator_note: t.note || '',
+        source_urls: t.source_urls || []
+      };
 
   fillGeneratorFromSource({
     title: t.title,
@@ -1012,6 +1148,11 @@ function quickGenerate(id) {
     meta: meta,
     topicId: t.id,
     platform: selectedPlat
+  }).then(()=>{
+    showToast("已填入选题 · 点击「生成口播文案」出稿");
+  }).catch(e=>{
+    console.error(e);
+    showToast("填表失败：" + (e.message || e));
   });
 }
 
@@ -1019,42 +1160,22 @@ function quickAdopt(id) {
   const t = ALL_TOPICS.find(x => String(x.id) === String(id));
   if (!t || t._type !== 'discovered') return;
 
-  // Update in DISCOVERED_TOPICS
-  const disc = DISCOVERED_TOPICS.find(x => x.id === id);
+  const disc = DISCOVERED_TOPICS.find(x => String(x.id) === String(id));
   if (disc) disc.script_status = 'done';
 
-  // Save to localStorage meta
   const storedMeta = localStorage.getItem("bloodsugar_discovered_meta");
   let meta = { adopted: [], manual: [] };
   if (storedMeta) {
     try { meta = JSON.parse(storedMeta); } catch(e) {}
   }
-  meta.adopted = [...new Set([...(meta.adopted || []), id])];
+  meta.adopted = [...new Set([...(meta.adopted || []), String(id)])];
   localStorage.setItem("bloodsugar_discovered_meta", JSON.stringify(meta));
 
-  // Also add to TOPICS if not already
-  if (!TOPICS.find(x => x.title === t.title)) {
-    const catMap={"辟谣纠偏":"myth","饮食指南":"food","数字科普":"number","实操方法":"action","症状预警":"symptom","工具测评":"tool","案例故事":"story","避坑指南":"mistake"};
-    TOPICS.push({
-      id: TOPICS.length + 1,
-      title: t.title,
-      cat: t.cat || catMap[t.catName] || 'myth',
-      catName: t.catName,
-      heat: t.heat,
-      platforms: t.platforms,
-      tags: t.tags,
-      hook: t.hook,
-      dataRef: t.dataRef || [],
-      angle: t.angle || t.note,
-      audience: t.audience,
-      trend: t.trend,
-      note: t.note
-    });
-  }
-
   t.script_status = 'done';
+  addRecentTopicId(t.id);
   renderTopics();
   renderQuickTopics();
+  showToast("已采纳 · 在「文案生成」左侧「我的选题」可见");
 }
 
 // ==================== DISCOVERED TOPICS ENGINE ====================
@@ -1200,24 +1321,34 @@ function estimateFromCategory(cat) {
 // ==================== QUICK TOPICS PANEL ====================
 function renderQuickTopics() {
   const list = document.getElementById("quick-topics-list");
-  const adopted = ALL_TOPICS.filter(t => t.script_status === 'done' || t._source === 'fixed');
+  const recentIds = getRecentTopicIds();
+  const adopted = ALL_TOPICS.filter(t => t.script_status === 'done' || recentIds.has(String(t.id)));
   if (!adopted.length) {
-    list.innerHTML = '<div class="quick-topic-empty">暂无已采纳选题<br>在选题中心点击"生成文案"即可添加</div>';
+    list.innerHTML = '<div class="quick-topic-empty">暂无已采纳选题<br>选题中心点「生成文案」或「采纳」</div>';
     return;
   }
-  list.innerHTML = adopted.slice(0, 10).map(t => `
-    <div class="quick-topic-item" onclick="quickGenerate('${t.id}')">
+  const ordered = [...adopted].sort((a,b)=>{
+    const ar = recentIds.has(String(a.id)) ? 0 : 1;
+    const br = recentIds.has(String(b.id)) ? 0 : 1;
+    return ar - br;
+  });
+  list.innerHTML = ordered.slice(0, 12).map(t => `
+    <div class="quick-topic-item" onclick="quickGenerate('${String(t.id).replace(/'/g, "\\'")}')">
       <div class="q-title">${t.title.slice(0, 30)}${t.title.length > 30 ? '...' : ''}</div>
-      <div class="q-meta">${t.catName} · ${t.heat === 'hot' ? '🔥' : t.heat === 'warm' ? '📈' : '📌'}</div>
+      <div class="q-meta">${t.catName} · ${t.script_status === 'done' ? '已采纳' : '最近使用'} · ${t.heat === 'hot' ? '🔥' : t.heat === 'warm' ? '📈' : '📌'}</div>
     </div>
   `).join('');
 }
 
 // ==================== GENERATOR ====================
 async function fillGeneratorFromSource({title,angle,cat,dataRef,meta,topicId,platform,fetchSources=true}){
+  if(typeof ScriptBridge==="undefined"){
+    throw new Error("script-bridge.js 未正确加载");
+  }
   document.getElementById("gen-topic").value=title||"";
   if(cat) document.getElementById("gen-cat").value=cat;
   if(platform) document.getElementById("gen-plat").value=platform;
+  switchTab("generator");
   meta=meta||{};
   generatorContext={
     meta,
@@ -1232,25 +1363,29 @@ async function fillGeneratorFromSource({title,angle,cat,dataRef,meta,topicId,pla
     document.getElementById("gen-verify-list"),
     generatorContext.verifyChecked
   );
-  document.getElementById("gen-verify-list").querySelectorAll("input[data-verify-id]").forEach(inp=>{
-    inp.addEventListener("change",()=>{
-      if(inp.checked) generatorContext.verifyChecked.add(inp.dataset.verifyId);
-      else generatorContext.verifyChecked.delete(inp.dataset.verifyId);
+  const verifyList=document.getElementById("gen-verify-list");
+  if(verifyList){
+    verifyList.querySelectorAll("input[data-verify-id]").forEach(inp=>{
+      inp.addEventListener("change",()=>{
+        if(inp.checked) generatorContext.verifyChecked.add(inp.dataset.verifyId);
+        else generatorContext.verifyChecked.delete(inp.dataset.verifyId);
+      });
     });
-  });
+  }
   let merged=dataRef||[];
+  const sourceStatusEl=document.getElementById("gen-source-status");
   if(fetchSources && meta.source_urls && meta.source_urls.length){
     try{
-      document.getElementById("gen-source-status").innerHTML='<p style="font-size:12px;color:var(--muted)">正在拉取来源资料...</p>';
+      if(sourceStatusEl) sourceStatusEl.innerHTML='<p style="font-size:12px;color:var(--muted)">正在拉取来源资料...</p>';
       const bundle=await ScriptBridge.fetchSourceBundle(meta.source_urls);
       generatorContext.sourceBundle=bundle;
       merged=ScriptBridge.mergeSourceKeyPoints(merged,bundle);
-      ScriptBridge.renderSourceFetchStatus(bundle,document.getElementById("gen-source-status"));
+      ScriptBridge.renderSourceFetchStatus(bundle, sourceStatusEl);
     }catch(e){
-      document.getElementById("gen-source-status").innerHTML=`<p style="font-size:12px;color:var(--accent2)">${e.message}</p>`;
+      if(sourceStatusEl) sourceStatusEl.innerHTML=`<p style="font-size:12px;color:var(--accent2)">${e.message}</p>`;
     }
   }else{
-    ScriptBridge.renderSourceFetchStatus(null,document.getElementById("gen-source-status"));
+    ScriptBridge.renderSourceFetchStatus(null, sourceStatusEl);
   }
   try{
     const enriched=await ScriptBridge.enrichDataRef(title||"",angle||"","",merged);
@@ -1258,10 +1393,13 @@ async function fillGeneratorFromSource({title,angle,cat,dataRef,meta,topicId,pla
   }catch(e){
     document.getElementById("gen-data").value=merged.join("\n");
   }
-  switchTab("generator");
 }
 
 function generateScript(){
+  if(typeof ScriptBridge==="undefined"){
+    showToast("ScriptBridge 未加载，请刷新页面");
+    return;
+  }
   const topic=document.getElementById("gen-topic").value.trim();
   const plat=document.getElementById("gen-plat").value;
   const cat=document.getElementById("gen-cat").value;
@@ -1271,11 +1409,17 @@ function generateScript(){
 
   if(!topic){alert("请输入或选择一个选题");return}
 
-  const result=buildScript({topic,plat,cat,duration,data,persona,writeMode:generatorContext.writeMode||"verify_before_script",meta:generatorContext.meta});
-  const output=document.getElementById("script-output");
-  output.innerHTML=result.html;
-  document.getElementById("word-count").textContent=`约 ${result.charCount} 字 · 预计 ${result.estimatedTime}秒 · 模式 ${generatorContext.writeMode||"verify_before_script"}`;
-  generatorContext.lastResult=result;
+  try{
+    const result=buildScript({topic,plat,cat,duration,data,persona,writeMode:generatorContext.writeMode||"verify_before_script",meta:generatorContext.meta});
+    const output=document.getElementById("script-output");
+    output.innerHTML=result.html;
+    document.getElementById("word-count").textContent=`约 ${result.charCount} 字 · 预计 ${result.estimatedTime}秒 · 模式 ${generatorContext.writeMode||"verify_before_script"}`;
+    generatorContext.lastResult=result;
+    showToast("口播文案已生成");
+  }catch(e){
+    console.error(e);
+    showToast("生成失败：" + (e.message || e));
+  }
 }
 
 function buildScript({topic,plat,cat,duration,data,persona,writeMode="verify_before_script",meta={}}){
@@ -1662,6 +1806,24 @@ function exportResearchJSON(){
 // Auto-save on input change
 document.addEventListener("input",function(e){
   if(e.target.closest("#research-tbody")) autoSaveResearch();
+});
+
+// Topic card actions (event delegation — avoids broken onclick from special chars in URLs)
+document.getElementById("topic-grid").addEventListener("click", function(e) {
+  const card = e.target.closest(".topic-card[data-topic-id]");
+  if (!card) return;
+  const id = card.dataset.topicId;
+  const btn = e.target.closest("button[data-action]");
+  if (btn) {
+    e.stopPropagation();
+    const action = btn.dataset.action;
+    const t = ALL_TOPICS.find(x => String(x.id) === String(id));
+    if (action === "generate") quickGenerate(id);
+    else if (action === "adopt") quickAdopt(id);
+    else if (action === "source" && t?.source_urls?.[0]) window.open(t.source_urls[0], "_blank", "noopener");
+    return;
+  }
+  if (!e.target.closest(".topic-actions")) selectTopicById(id);
 });
 
 // ==================== INIT ====================

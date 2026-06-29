@@ -260,18 +260,27 @@ fetch('./reports.json')
   .then(data => {
     const list = document.getElementById('report-list');
     const items = [];
-    // Show up to 5 most recent days (HTML + Quartz pair)
     const seen = new Set();
-    data.html_reports.slice(0, 5).forEach(r => {
-      if (!seen.has(r.date)) {
-        seen.add(r.date);
-        items.push(`<a href="${r.url}" class="report-item"><span class="date">${r.date}</span><span class="title">${r.title}（HTML 版）</span><span class="format fmt-html">HTML</span></a>`);
-        // Find matching Quartz report
-        const q = data.quartz_reports.find(x => x.date === r.date);
-        if (q) {
-          items.push(`<a href="${q.url}" class="report-item"><span class="date">${q.date}</span><span class="title">${q.title}</span><span class="format fmt-md">Quartz</span></a>`);
-        }
-      }
+    const add = (r, fmt, fmtLabel) => {
+      const key = r.date + r.url;
+      if (seen.has(key)) return;
+      seen.add(key);
+      items.push(`<a href="${r.url}" class="report-item"><span class="date">${r.date}</span><span class="title">${r.title}</span><span class="format ${fmt}">${fmtLabel}</span></a>`);
+    };
+    const dates = [...new Set([
+      ...(data.brief_reports || []).map(r => r.date),
+      ...(data.html_reports || []).map(r => r.date),
+      ...(data.harvest_reports || []).map(r => r.date),
+    ])].sort().reverse().slice(0, 5);
+    dates.forEach(date => {
+      const brief = (data.brief_reports || []).find(r => r.date === date);
+      const monitor = (data.html_reports || []).find(r => r.date === date);
+      const harvest = (data.harvest_reports || []).find(r => r.date === date);
+      const q = (data.quartz_reports || []).find(x => x.date === date);
+      if (brief) add(brief, 'fmt-html', '精选');
+      if (monitor) add({...monitor, title: monitor.title + '（监控）'}, 'fmt-html', 'HTML');
+      if (harvest) add(harvest, 'fmt-html', '采集');
+      if (q) add(q, 'fmt-md', 'Quartz');
     });
     list.innerHTML = items.length ? items.join('') : '<div style="color:var(--muted);font-size:13px;padding:14px 18px">暂无日报</div>';
   })

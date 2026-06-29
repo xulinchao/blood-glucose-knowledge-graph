@@ -77,7 +77,7 @@ python src/generate_prompts.py
 
 ## TraeWork
 
-TraeWork 与本仓库共用数据与真实性规则。每日采集跑 `scripts/run-daily-harvest.bat`；深度监控日报见 [docs/TraeWork.md](docs/TraeWork.md)。
+TraeWork 与本仓库共用数据与真实性规则。每日采集跑 `scripts/run-daily-harvest.bat`（含**精选日报**）；Agent 查热点见 `.cursor/skills/blood-glucose-daily-brief/SKILL.md`；深度监控见 [docs/TraeWork.md](docs/TraeWork.md)。
 
 ## 更新笔记
 

@@ -1,0 +1,1425 @@
+{
+  "schema_version": "2.0",
+  "version": "2.0",
+  "report_date": "2026-06-29",
+  "source_harvest": "daily-harvest-2026-06-29.json",
+  "curated_at": "2026-06-30T00:26:34",
+  "summary": {
+    "total_raw": 135,
+    "after_filter": 129,
+    "featured_count": 12,
+    "writable_count": 8,
+    "hook_only_count": 6,
+    "cross_platform_themes": 2,
+    "new_topics_added": 0,
+    "platforms_ok": [
+      "bili",
+      "exa",
+      "reddit",
+      "twitter",
+      "xhs",
+      "youtube",
+      "zhihu"
+    ],
+    "gate_note": "timeline 按 gate.passed → writability_score 排序；heat_score 仅传播展示"
+  },
+  "timeline": [
+    {
+      "title": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+      "url": "https://www.youtube.com/watch?v=rDDfzPM4WQU",
+      "platform": "youtube",
+      "platform_label": "YouTube",
+      "author": "张之瀛大夫",
+      "topic_score": 78,
+      "writability_score": 78,
+      "heat_score": 87,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 87,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "大家好，我是张之瀛  ，一名温暖可靠的心血管医生，在这里分享一些大众的健康问题，    《欢迎订阅，欢迎分享，每天更新》 ...",
+      "propagation": {
+        "heat_score": 87,
+        "engagement": 783586,
+        "platform": "youtube",
+        "platform_label": "YouTube"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 78,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "出现这五个症状 你可能胰岛素抵抗了",
+      "url": "https://www.bilibili.com/video/BV1Bij7zzE8n",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "薄世宁医生",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 80,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 80,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "症状预警",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 80,
+        "engagement": 159638,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 74,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "血糖超不超标，看双腿就知道了，腿部就是人体自带的血糖仪",
+      "url": "https://www.bilibili.com/video/BV1U3N3zGEdt",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "中医周国民大夫",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 80,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 80,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "症状预警",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 80,
+        "engagement": 212189,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 74,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "怎么判断自己有没有胰岛素抵抗？",
+      "url": "https://www.bilibili.com/video/BV1WZVi6jEk5",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "薄世宁医生",
+      "topic_score": 69,
+      "writability_score": 69,
+      "heat_score": 70,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 70,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 70,
+        "engagement": 58010,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 69,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "做好三件事，逆转胰岛素抵抗",
+      "url": "https://www.bilibili.com/video/BV14ZMazGE7L",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "薄世宁医生",
+      "topic_score": 69,
+      "writability_score": 69,
+      "heat_score": 70,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 70,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "案例故事",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 70,
+        "engagement": 89796,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 69,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "空腹血糖“三部曲”：5.6/6.1/7.0，三个数字分别预示啥？",
+      "url": "https://www.bilibili.com/video/BV12XdKBiEXY",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "急诊喻医生",
+      "topic_score": 69,
+      "writability_score": 69,
+      "heat_score": 70,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 70,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 70,
+        "engagement": 15647,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 69,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "中国糖尿病防治指南（2024版）",
+      "url": "https://drugs.dxy.cn/pc/clinicalGuidelines/pC7RJoNHj1YANrh50uWaVA==?ky=%E4%B8%AD%E5%9B%BD%E7%B3%96%E5%B0%BF%E7%97%85%E9%98%B2%E6%B2%BB%E6%8C%87%E5%8D%97%EF%BC%882024%E7%89%88%EF%BC%89",
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "author": "",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 52,
+      "topic_pick": true,
+      "evidence_tier": "B",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 84,
+      "importance_score": 52,
+      "importance_label": "低",
+      "adversarial_flags": [],
+      "creator_note": "写稿前对照原帖/指南核实；口播避免给个体诊断",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 52,
+        "engagement": 0,
+        "platform": "exa",
+        "platform_label": "全网网页(Exa)"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "7招改善胰岛素抵抗，减肚子效率翻倍！",
+      "url": "https://www.bilibili.com/video/BV16V7p6CEpP",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "营养师李俊峰",
+      "topic_score": 65,
+      "writability_score": 65,
+      "heat_score": 62,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 62,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 62,
+        "engagement": 3174,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 65,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "胰岛素抵抗，真的要好好做",
+      "url": "https://www.xiaohongshu.com/search_result/6800590b000000001201ce57?xsec_token=ABp2BjPn8qxXCWgVzmo2AyHG3faycxiOOsCEXeR7TLexg=&xsec_source=",
+      "platform": "xhs",
+      "platform_label": "小红书",
+      "author": "大基数减重主任盛宏光",
+      "topic_score": 65,
+      "writability_score": 65,
+      "heat_score": 62,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 62,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 62,
+        "engagement": 2662,
+        "platform": "xhs",
+        "platform_label": "小红书"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 65,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "胰岛素抵抗",
+      "url": "https://drugs.dxy.cn/pc/clinicalDecision/ytHarEBDknGwD7b9THIZ-PQ?ky=t7Gc0.html",
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "author": "",
+      "topic_score": 65,
+      "writability_score": 65,
+      "heat_score": 52,
+      "topic_pick": true,
+      "evidence_tier": "B",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 78,
+      "importance_score": 52,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "写稿前对照原帖/指南核实；口播避免给个体诊断",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 52,
+        "engagement": 0,
+        "platform": "exa",
+        "platform_label": "全网网页(Exa)"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 65,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "糖尿病前期，能不能逆转？还能好吗？医生说：3种人还有希望！",
+      "url": "https://www.youtube.com/watch?v=rzTvJtKCuRU",
+      "platform": "youtube",
+      "platform_label": "YouTube",
+      "author": "张之瀛大夫",
+      "topic_score": 63,
+      "writability_score": 63,
+      "heat_score": 58,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 58,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "案例故事",
+      "snippet": "大家好，我是张之瀛  ，一名温暖可靠的心血管医生，在这里分享一些大众的健康问题，    《欢迎订阅，欢迎分享，每天更新》 ...",
+      "propagation": {
+        "heat_score": 58,
+        "engagement": 22089,
+        "platform": "youtube",
+        "platform_label": "YouTube"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 63,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "降糖60秒第54期：空腹血糖5.4，胰岛功能有损伤？",
+      "url": "https://www.bilibili.com/video/BV1NnKS6eEGT",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "内分泌科陈奇医生",
+      "topic_score": 60,
+      "writability_score": 60,
+      "heat_score": 52,
+      "topic_pick": false,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 52,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 52,
+        "engagement": 949,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 60,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    }
+  ],
+  "writable_picks": [
+    {
+      "title": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+      "url": "https://www.youtube.com/watch?v=rDDfzPM4WQU",
+      "platform": "youtube",
+      "platform_label": "YouTube",
+      "author": "张之瀛大夫",
+      "topic_score": 78,
+      "writability_score": 78,
+      "heat_score": 87,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 87,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "大家好，我是张之瀛  ，一名温暖可靠的心血管医生，在这里分享一些大众的健康问题，    《欢迎订阅，欢迎分享，每天更新》 ...",
+      "propagation": {
+        "heat_score": 87,
+        "engagement": 783586,
+        "platform": "youtube",
+        "platform_label": "YouTube"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 78,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "出现这五个症状 你可能胰岛素抵抗了",
+      "url": "https://www.bilibili.com/video/BV1Bij7zzE8n",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "薄世宁医生",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 80,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 80,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "症状预警",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 80,
+        "engagement": 159638,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 74,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "血糖超不超标，看双腿就知道了，腿部就是人体自带的血糖仪",
+      "url": "https://www.bilibili.com/video/BV1U3N3zGEdt",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "中医周国民大夫",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 80,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 80,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "症状预警",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 80,
+        "engagement": 212189,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 74,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "怎么判断自己有没有胰岛素抵抗？",
+      "url": "https://www.bilibili.com/video/BV1WZVi6jEk5",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "薄世宁医生",
+      "topic_score": 69,
+      "writability_score": 69,
+      "heat_score": 70,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 70,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 70,
+        "engagement": 58010,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 69,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "做好三件事，逆转胰岛素抵抗",
+      "url": "https://www.bilibili.com/video/BV14ZMazGE7L",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "薄世宁医生",
+      "topic_score": 69,
+      "writability_score": 69,
+      "heat_score": 70,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 70,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "案例故事",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 70,
+        "engagement": 89796,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 69,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "空腹血糖“三部曲”：5.6/6.1/7.0，三个数字分别预示啥？",
+      "url": "https://www.bilibili.com/video/BV12XdKBiEXY",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "急诊喻医生",
+      "topic_score": 69,
+      "writability_score": 69,
+      "heat_score": 70,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 70,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 70,
+        "engagement": 15647,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 69,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "中国糖尿病防治指南（2024版）",
+      "url": "https://drugs.dxy.cn/pc/clinicalGuidelines/pC7RJoNHj1YANrh50uWaVA==?ky=%E4%B8%AD%E5%9B%BD%E7%B3%96%E5%B0%BF%E7%97%85%E9%98%B2%E6%B2%BB%E6%8C%87%E5%8D%97%EF%BC%882024%E7%89%88%EF%BC%89",
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "author": "",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 52,
+      "topic_pick": true,
+      "evidence_tier": "B",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 84,
+      "importance_score": 52,
+      "importance_label": "低",
+      "adversarial_flags": [],
+      "creator_note": "写稿前对照原帖/指南核实；口播避免给个体诊断",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 52,
+        "engagement": 0,
+        "platform": "exa",
+        "platform_label": "全网网页(Exa)"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "7招改善胰岛素抵抗，减肚子效率翻倍！",
+      "url": "https://www.bilibili.com/video/BV16V7p6CEpP",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "营养师李俊峰",
+      "topic_score": 65,
+      "writability_score": 65,
+      "heat_score": 62,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 62,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 62,
+        "engagement": 3174,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 65,
+        "use_as": "verify_before_script",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    }
+  ],
+  "hook_only": [
+    {
+      "title": "你有胰岛素抵抗的迹象（& 你没意识到）：    1. 小便时起泡沫。",
+      "url": "https://x.com/i/status/2064851908527788173",
+      "platform": "twitter",
+      "platform_label": "X/Twitter",
+      "author": "430Yang",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 99,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 99,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "案例故事",
+      "snippet": "你有胰岛素抵抗的迹象（& 你没意识到）：    1. 小便时起泡沫。",
+      "propagation": {
+        "heat_score": 99,
+        "engagement": 2695476,
+        "platform": "twitter",
+        "platform_label": "X/Twitter"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 74,
+        "use_as": "hook_only",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "你的血糖是如何失控的？",
+      "url": "https://www.bilibili.com/video/BV1jvyUYJEMy",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "医学边界",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 87,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 87,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "实操方法",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 87,
+        "engagement": 533230,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 68,
+        "use_as": "hook_only",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "体验动态血糖仪！普通人有必要监测血糖吗？",
+      "url": "https://www.bilibili.com/video/BV1wf7S6ZEQS",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "大物是也",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 87,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 87,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "工具测评",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 87,
+        "engagement": 664966,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 68,
+        "use_as": "hook_only",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "深度科普：什么是胰岛素抵抗？",
+      "url": "https://www.bilibili.com/video/BV1B9q5BAE4U",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "鸡侠的野兽生活",
+      "topic_score": 65,
+      "writability_score": 65,
+      "heat_score": 80,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 80,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 80,
+        "engagement": 136194,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 65,
+        "use_as": "hook_only",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "逆转胰岛素抵抗最关键的一点，之前大多数人都误解了｜五个自然逆转方法",
+      "url": "https://www.bilibili.com/video/BV1wz4y1F77n",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "聊医点",
+      "topic_score": 65,
+      "writability_score": 65,
+      "heat_score": 80,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 80,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "实操方法",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 80,
+        "engagement": 305851,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 65,
+        "use_as": "hook_only",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    },
+    {
+      "title": "胰岛素抵抗的10种表现",
+      "url": "https://www.bilibili.com/video/BV1o5BXBTEkb",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "听我说血糖",
+      "topic_score": 65,
+      "writability_score": 65,
+      "heat_score": 80,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 80,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 80,
+        "engagement": 160183,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 65,
+        "use_as": "hook_only",
+        "allowed_frame": "",
+        "forbidden_expressions": [],
+        "required_hedges": [],
+        "veto_reasons": []
+      },
+      "claims": [],
+      "editorial": {}
+    }
+  ],
+  "cross_platform": [
+    {
+      "title": "Retatrutide trial results are straight-up insane:  •86% liver fat reduction •...",
+      "platforms": [
+        "reddit",
+        "twitter",
+        "youtube"
+      ],
+      "platform_labels": [
+        "Reddit",
+        "X/Twitter",
+        "YouTube"
+      ],
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 91,
+      "urls": [
+        "https://x.com/i/status/2067596957250629847",
+        "https://x.com/i/status/2071272693874172181",
+        "https://x.com/i/status/2071436585976189414",
+        "https://x.com/i/status/2048871249007513718"
+      ],
+      "use_as": "hook_only",
+      "platforms_in_cluster": [
+        "reddit",
+        "twitter",
+        "youtube"
+      ]
+    },
+    {
+      "title": "什么是胰岛素抵抗？",
+      "platforms": [
+        "bili",
+        "zhihu"
+      ],
+      "platform_labels": [
+        "B站",
+        "知乎"
+      ],
+      "topic_score": 63,
+      "writability_score": 63,
+      "heat_score": 76,
+      "urls": [
+        "https://www.bilibili.com/video/BV1Ai421y7Cd",
+        "https://www.zhihu.com/question/336594653/answer/2043055469661508900"
+      ],
+      "use_as": "hook_only",
+      "platforms_in_cluster": [
+        "bili",
+        "zhihu"
+      ]
+    }
+  ],
+  "agent_hints": {
+    "query_commands": [
+      "今日精选热点有哪些？",
+      "哪些选题可以写口播？",
+      "待核实清单是什么？",
+      "哪些是 hook_only 不能当医学结论？",
+      "Gate 否决了哪些高热度条目？"
+    ],
+    "top_script_angles": [
+      {
+        "title": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+        "platforms_suggest": "dy,bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "url": "https://www.youtube.com/watch?v=rDDfzPM4WQU",
+        "why_selected": "",
+        "misleading_risk": "",
+        "safe_rewrite": "",
+        "forbidden_expressions": [],
+        "required_hedges": []
+      },
+      {
+        "title": "出现这五个症状 你可能胰岛素抵抗了",
+        "platforms_suggest": "dy,bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "url": "https://www.bilibili.com/video/BV1Bij7zzE8n",
+        "why_selected": "",
+        "misleading_risk": "",
+        "safe_rewrite": "",
+        "forbidden_expressions": [],
+        "required_hedges": []
+      },
+      {
+        "title": "血糖超不超标，看双腿就知道了，腿部就是人体自带的血糖仪",
+        "platforms_suggest": "dy,bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "url": "https://www.bilibili.com/video/BV1U3N3zGEdt",
+        "why_selected": "",
+        "misleading_risk": "",
+        "safe_rewrite": "",
+        "forbidden_expressions": [],
+        "required_hedges": []
+      }
+    ],
+    "verify_list": [
+      "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "出现这五个症状 你可能胰岛素抵抗了 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "血糖超不超标，看双腿就知道了，腿部就是人体自带的血糖仪 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "怎么判断自己有没有胰岛素抵抗？ — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "做好三件事，逆转胰岛素抵抗 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "空腹血糖“三部曲”：5.6/6.1/7.0，三个数字分别预示啥？ — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "中国糖尿病防治指南（2024版） — 写稿前对照原帖/指南核实；口播避免给个体诊断",
+      "7招改善胰岛素抵抗，减肚子效率翻倍！ — 可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+    ],
+    "do_not_cite_as_fact": [
+      "你有胰岛素抵抗的迹象（& 你没意识到）：    1. 小便时起泡沫。（仅钩子）",
+      "你的血糖是如何失控的？（仅钩子）",
+      "体验动态血糖仪！普通人有必要监测血糖吗？（仅钩子）",
+      "深度科普：什么是胰岛素抵抗？（仅钩子）",
+      "逆转胰岛素抵抗最关键的一点，之前大多数人都误解了｜五个自然逆转方法（仅钩子）",
+      "胰岛素抵抗的10种表现（仅钩子）"
+    ],
+    "disclaimer": "个体情况请咨询医生，不构成医疗建议。维护者非执业医生。"
+  }
+}

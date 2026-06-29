@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DailyBrief",
+  "description": "血糖控糖精选日报 Schema 2.0 — 见 curate_daily_brief.SCHEMA_VERSION",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "report_date",
+    "timeline",
+    "writable_picks",
+    "agent_hints"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "2.0"
+    },
+    "timeline": {
+      "type": "array"
+    },
+    "writable_picks": {
+      "type": "array"
+    },
+    "hook_only": {
+      "type": "array"
+    },
+    "agent_hints": {
+      "type": "object"
+    }
+  }
+}
