@@ -465,6 +465,92 @@
     return "以上来自公开讨论和可查资料，怎么落到你身上，还要结合体检结果。";
   }
 
+  /* ── STEPPS: 诱因锚定（Triggers） ── */
+  function triggerAnchor(cat) {
+    const anchors = {
+      food: [
+        "你打开外卖App的时候注意过吗？",
+        "超市货架第二排，那些看着健康的，你仔细看过配料表吗？",
+        "你上次吃完饭困得不行，有没有想过其实跟这有关？",
+        "打开冰箱看看，你家常备的那几样，可能就有雷。"
+      ],
+      number: [
+        "体检报告上那几个数字，你真的看懂了吗？",
+        "你天天测的那个数字，到底多少算正常？",
+        "上次复查拿到的单子，你是扫了一眼就塞抽屉了吗？",
+        "你手机里的健康App，上面那个数字你信吗？"
+      ],
+      myth: [
+        "你转发到家人群的那条，可能就是错的。",
+        "上次有人跟你说「这个能降糖」，你信了吗？",
+        "朋友圈那个「控糖秘诀」，转发之前先想想。",
+        "你妈发给你的那条养生链接，先别急着信。"
+      ],
+      action: [
+        "吃完饭你一般做什么？躺下刷手机？",
+        "你每天那几个习惯，可能正在悄悄帮你——也可能在害你。",
+        "其实不用花大钱，几个小动作就能改变不少。",
+        "你有没有觉得，坚持什么最难？"
+      ],
+      symptom: [
+        "你最近有没有觉得——说不上哪里不对，就是不太对劲？",
+        "有些信号你每天都在经历，但从来没当回事。",
+        "你有没有吃完饭就犯困、口干、怎么喝水都不解渴？",
+        "你身边有没有人，明明不胖但体检指标不好？"
+      ],
+      tool: [
+        "你手机里装了几个健康App？有几个是认真在用的？",
+        "你花在控糖上的冤枉钱，可能够买一台好血糖仪了。",
+        "测评了好几款，有些好评如潮的，实际也就那样。",
+        "选工具这件事，贵的和好用的是两回事。"
+      ],
+      story: [
+        "你身边有没有这样的人——看起来挺健康，结果突然查出来？",
+        "我认识一个人，跟你我差不多，后来发生的事让他彻底改变了。",
+        "有些事情，不发生在自己身上，你永远不会当回事。"
+      ],
+      mistake: [
+        "你踩过的坑，可能很多人都踩过——但没人告诉你原因。",
+        "你是不是也觉得控糖就是不吃主食？那你可能从起点就走偏了。",
+        "有些「常识」，做了反而更糟。"
+      ]
+    };
+    const pool = anchors[cat] || anchors.food;
+    return pool[Math.floor(Math.random() * pool.length)];
+  }
+
+  /* ── STEPPS: 微叙事包装（Story） ── */
+  function microNarrative(cat, topic) {
+    const narratives = {
+      food: [
+        (t) => `说实话，以前我也不信${t.replace(/[？?。.]/g, "")}这事。直到有一次我自己测了一下餐后血糖，数字吓了我一跳——从那以后我开始认真查每样东西的GI值。`,
+        (t) => `我身边一个朋友，控糖半年了，自认为吃得挺健康。结果有一天我们聊起来，发现他一直在踩雷——今天就把他踩过的几个坑摊开讲。`
+      ],
+      number: [
+        (t) => `拿到体检报告那天，我看到那个数字，第一反应是「不可能吧」。后来才知道，大部分人第一次看到这个数字，反应都一样——但你越早搞明白它，越好办。`,
+        (t) => `你有没有这种经历：医生说了个数字，你点头说知道了，回家一查发现完全不是自己理解的意思。今天就把这几个最容易搞混的数字讲清楚。`
+      ],
+      myth: [
+        (t) => `我妈前阵子转发给我一篇文章，标题写得特别吓人。我一看内容，好几条都是误导。这种情况太常见了——今天我就把最典型的几个拆开。`,
+        (t) => `之前我也信过${t.replace(/[？?。.]/g, "")}。后来自己查了资料才发现，真相和网上传的差太远了。今天帮你省去这个弯路。`
+      ],
+      action: [
+        (t) => `刚开始控糖那会儿，我觉得特别难——什么都要记、什么都要算。后来发现，其实就那几件事最关键。做对了，其他自然跟着变。`,
+        (t) => `有个粉丝私信我说，控糖三个月瘦了10斤，但方法特别简单。我让他把每天做的事情列了一下，发现就那几步。今天拆开讲。`
+      ],
+      symptom: [
+        (t) => `我之前也不知道这些是信号。直到身边有人因为这些「小毛病」去检查，才发现问题没那么简单。今天就把这几个容易被忽略的信号列出来。`,
+        (t) => `有些人天天觉得累、口干、吃完就困，但从来没想过这些可能有关联。不是说一定有问题，但知道了至少能多留个心眼。`
+      ],
+      tool: [
+        (t) => `我自己买过不下五款控糖相关的东西，有些是真有用，有些纯粹智商税。今天把买过的、测过的摊开讲。`,
+        (t) => `你有没有这种体验——看了测评买的，到手发现根本不是那么回事？测评太多了反而不知道该信谁。今天我自己测过的几款拿出来对比。`
+      ]
+    };
+    const pool = narratives[cat] || narratives.food;
+    return pool[Math.floor(Math.random() * pool.length)](topic);
+  }
+
   function expandSpokenBody({ topic, cat, points, duration, writeMode }) {
     points = (points || []).filter(Boolean);
     if (writeMode === "hook_only") {
@@ -487,9 +573,10 @@
     }
 
     const intro = topicIntro(topic, cat, writeMode);
+    const narrative = microNarrative(cat, topic);
     const expanded = pts.map((p, i) => expandPoint(p, i));
     const bridge = bodyBridge(topic, cat, writeMode);
-    return [intro, ...expanded, bridge].filter(Boolean).join("\n\n");
+    return [intro, narrative, ...expanded, bridge].filter(Boolean).join("\n\n");
   }
 
   function mergeSourceKeyPoints(dataRef, bundle) {
@@ -593,5 +680,7 @@
     mergeSourceKeyPoints,
     renderSourceFetchStatus,
     lintScriptText,
+    triggerAnchor,
+    microNarrative,
   };
 })(window);

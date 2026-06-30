@@ -1454,132 +1454,199 @@ function buildScript({topic,plat,cat,duration,data,persona,writeMode="verify_bef
 
 function buildFriendlyHook(topic,data,cat,writeMode){
   const clean=topic.replace(/[？!！。]/g,"");
+  const trigger=ScriptBridge.triggerAnchor(cat);
   if(writeMode==="hook_only"){
-    return `最近网上很多人在聊「${clean}」——今天不判对错，只把讨论脉络讲清楚。`;
+    return `${trigger}最近很多人在聊「${clean}」——今天不判对错，只把讨论脉络讲清楚。`;
   }
   if(cat==="myth"){
     const templates=[
-      `你确定你一直以来的认知是对的？${clean}——今天帮你把真相和误区拆开。`,
-      `刷到「${clean}」的时候，你信了几条？今天用可查数据帮你筛一遍。`
+      `${trigger}你确定你一直以来的认知是对的？${clean}——今天帮你把真相和误区拆开。`,
+      `${trigger}刷到「${clean}」的时候，你信了几条？今天用可查数据帮你筛一遍。`
     ];
     return templates[Math.floor(Math.random()*templates.length)];
   }
   if(cat==="food"){
     const templates=[
-      `以为在控糖，其实在踩雷？${clean}——你天天吃的可能就有问题。`,
-      `${clean}？很多人的第一反应和实际情况，差得挺远。`
+      `${trigger}以为在控糖，其实在踩雷？${clean}——你天天吃的可能就有问题。`,
+      `${trigger}${clean}？很多人的第一反应和实际情况，差得挺远。`
     ];
     return templates[Math.floor(Math.random()*templates.length)];
   }
   if(cat==="number"){
     const templates=[
-      `一个数字，可能改变你的控糖方向。${clean}——先别慌，看完再判断。`,
-      `体检报告上那个数字到底什么意思？${clean}，3分钟帮你建立判断框架。`
+      `${trigger}一个数字，可能改变你的控糖方向。${clean}——先别慌，看完再判断。`,
+      `${trigger}体检报告上那个数字到底什么意思？${clean}，3分钟帮你建立判断框架。`
     ];
     return templates[Math.floor(Math.random()*templates.length)];
   }
   if(cat==="action"){
     const templates=[
-      `别把简单的事想复杂了。${clean}——跟着做就行，复杂版本留给医生。`,
-      `做好这几步，比花大钱买保健品管用。${clean}。`
+      `${trigger}别把简单的事想复杂了。${clean}——跟着做就行，复杂版本留给医生。`,
+      `${trigger}做好这几步，比花大钱买保健品管用。${clean}。`
     ];
     return templates[Math.floor(Math.random()*templates.length)];
   }
   if(cat==="symptom"){
     const templates=[
-      `这些信号你每天都在经历，但可能从来没当回事。${clean}——听完自己对照一下。`,
-      `身体一直在给你发消息，${clean}——问题是，你有没有在听？`
+      `${trigger}这些信号你每天都在经历，但可能从来没当回事。${clean}——听完自己对照一下。`,
+      `${trigger}身体一直在给你发消息，${clean}——问题是，你有没有在听？`
     ];
     return templates[Math.floor(Math.random()*templates.length)];
   }
   if(cat==="tool"){
     const templates=[
-      `测评了市面上主流的几款，结果有些出乎意料。${clean}——不吹不黑，只说数据。`,
-      `花冤枉钱之前，先花3分钟看完这条。${clean}。`
+      `${trigger}测评了市面上主流的几款，结果有些出乎意料。${clean}——不吹不黑，只说数据。`,
+      `${trigger}花冤枉钱之前，先花3分钟看完这条。${clean}。`
     ];
     return templates[Math.floor(Math.random()*templates.length)];
   }
   const templates=[
-    `${clean}？这个问题值得认真聊，我用查到的公开资料帮你理一理。`,
-    `你有没有被「${clean}」困扰过？今天把能确认和不能确认的，一次性讲清楚。`
+    `${trigger}${clean}？这个问题值得认真聊，我用查到的公开资料帮你理一理。`,
+    `${trigger}你有没有被「${clean}」困扰过？今天把能确认和不能确认的，一次性讲清楚。`
   ];
   return templates[Math.floor(Math.random()*templates.length)];
 }
 
 function buildExpertHook(topic,data,cat,writeMode){
   const clean=topic.replace(/[？!！。]/g,"");
+  const trigger=ScriptBridge.triggerAnchor(cat);
   if(writeMode==="hook_only"){
-    return `「${clean}」最近讨论很多——先说明：这是热点话题，不是给你下诊断。`;
+    return `${trigger}「${clean}」最近讨论很多——先说明：这是热点话题，不是给你下诊断。`;
   }
   if(cat==="myth"){
     const templates=[
-      `我们先看数据。「${clean}」——可查资料和社交媒体传言之间，差距有多大？`,
-      `用证据说话。「${clean}」——我把来源层级和关键数据摊开，你自己判断。`
+      `${trigger}我们先看数据。「${clean}」——可查资料和社交媒体传言之间，差距有多大？`,
+      `${trigger}用证据说话。「${clean}」——我把来源层级和关键数据摊开，你自己判断。`
     ];
     return templates[Math.floor(Math.random()*templates.length)];
   }
   if(cat==="number"){
     const templates=[
-      `数字不会骗人，但解读方式会。${clean}——我对照了最新指南和数据。`,
-      `「${clean}」这个数字背后，很多人只看了一半。今天补全另一半。`
+      `${trigger}数字不会骗人，但解读方式会。${clean}——我对照了最新指南和数据。`,
+      `${trigger}「${clean}」这个数字背后，很多人只看了一半。今天补全另一半。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="food"){
+    const templates=[
+      `${trigger}很多人以为「健康食品」就安全，其实GI值才是关键。${clean}——我们看数据。`,
+      `${trigger}你餐桌上的「控糖选择」，可能从头到尾就没选对。${clean}。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="action"){
+    const templates=[
+      `${trigger}指南怎么说、实际怎么做，中间差了一步。${clean}——今天帮你迈出去。`,
+      `${trigger}最有效的干预，往往是最简单的那几个。${clean}。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="symptom"){
+    const templates=[
+      `${trigger}这些信号单独看不起眼，但组合在一起值得警惕。${clean}——对照一下。`,
+      `${trigger}很多人忽略这些信号，直到体检才发现。${clean}。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="tool"){
+    const templates=[
+      `${trigger}工具本身没有错，错的是选错和依赖。${clean}——帮你理清思路。`,
+      `${trigger}我测了5款，结果和好评率不完全正相关。${clean}。`
     ];
     return templates[Math.floor(Math.random()*templates.length)];
   }
   const templates=[
-    `关于「${clean}」，我查了公开资料和指南，今天用普通人能听懂的方式讲清楚。`,
-    `「${clean}」这个话题讨论很多，咱们对照可查的数据来说，不贩卖焦虑。`
+    `${trigger}关于「${clean}」，我查了公开资料和指南，今天用普通人能听懂的方式讲清楚。`,
+    `${trigger}「${clean}」这个话题讨论很多，咱们对照可查的数据来说，不贩卖焦虑。`
   ];
   return templates[Math.floor(Math.random()*templates.length)];
 }
 
 function buildPersonalHook(topic,data,cat,writeMode){
   const clean=topic.replace(/[？!！。]/g,"");
+  const trigger=ScriptBridge.triggerAnchor(cat);
   if(writeMode==="hook_only"){
-    return `我也刷到过「${clean}」——今天只分享我看到的讨论，不构成医疗建议。`;
+    return `${trigger}我也刷到过「${clean}」——今天只分享我看到的讨论，不构成医疗建议。`;
   }
   if(cat==="food"){
     const templates=[
-      `控糖之后，我翻遍了家里冰箱，${clean}——有些东西真得换换了。`,
-      `以前我也觉得控糖就是少吃，后来才知道：${clean}——选错比吃错更坑。`
+      `${trigger}控糖之后，我翻遍了家里冰箱，${clean}——有些东西真得换换了。`,
+      `${trigger}以前我也觉得控糖就是少吃，后来才知道：${clean}——选错比吃错更坑。`
     ];
     return templates[Math.floor(Math.random()*templates.length)];
   }
   if(cat==="action"){
     const templates=[
-      `刚开始控糖那会儿，我也是一头雾水。${clean}——后来发现，其实就那几件事，坚持了就有效果。`,
-      `这些方法不是我从书本上看的，${clean}——是这段时间自己摸索出来的。`
+      `${trigger}刚开始控糖那会儿，我也是一头雾水。${clean}——后来发现，其实就那几件事，坚持了就有效果。`,
+      `${trigger}这些方法不是我从书本上看的，${clean}——是这段时间自己摸索出来的。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="number"){
+    const templates=[
+      `${trigger}拿到体检报告那天，那个数字我盯了半天。${clean}——后来才搞明白它到底什么意思。`,
+      `${trigger}医生跟我说了个数字，我当时没当回事。${clean}——现在想想，早知道就好了。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="symptom"){
+    const templates=[
+      `${trigger}我之前也没当回事，直到身边有人因为这些「小毛病」去检查。${clean}——听完你至少会多留个心眼。`,
+      `${trigger}控糖之后我才注意到，原来这些信号一直都在。${clean}。`
     ];
     return templates[Math.floor(Math.random()*templates.length)];
   }
   const templates=[
-    `控糖路上我也纠结过：${clean}？后来对照资料才慢慢理清，今天摊开说。`,
-    `查出血糖偏高后，我第一个想到的就是${clean}？踩过坑之后，有些经验值得分享。`
+    `${trigger}控糖路上我也纠结过：${clean}？后来对照资料才慢慢理清，今天摊开说。`,
+    `${trigger}查出血糖偏高后，我第一个想到的就是${clean}？踩过坑之后，有些经验值得分享。`
   ];
   return templates[Math.floor(Math.random()*templates.length)];
 }
 
 function buildSurpriseHook(topic,data,cat,writeMode){
   const clean=topic.replace(/[？!！。]/g,"");
+  const trigger=ScriptBridge.triggerAnchor(cat);
   if(writeMode==="hook_only"){
-    return `关于${clean}，评论区吵翻了——今天只梳理大家在聊什么。`;
+    return `${trigger}关于${clean}，评论区吵翻了——今天只梳理大家在聊什么。`;
   }
   if(cat==="myth"){
     const templates=[
-      `你信了好几年的事，可能从头到尾都是错的。${clean}——准备好颠覆认知了吗？`,
-      `90%的人都搞反了。${clean}——看完这条，你的控糖认知可能要重装一遍。`
+      `${trigger}你信了好几年的事，可能从头到尾都是错的。${clean}——准备好颠覆认知了吗？`,
+      `${trigger}90%的人都搞反了。${clean}——看完这条，你的控糖认知可能要重装一遍。`
     ];
     return templates[Math.floor(Math.random()*templates.length)];
   }
   if(cat==="number"){
     const templates=[
-      `这个数字，可能比你想的小得多，也可能危险得多。${clean}——别跳过，逐条对照。`,
-      `一个你天天看到但从来没认真理解的数字。${clean}——3分钟后你会感谢自己看完。`
+      `${trigger}这个数字，可能比你想的小得多，也可能危险得多。${clean}——别跳过，逐条对照。`,
+      `${trigger}一个你天天看到但从来没认真理解的数字。${clean}——3分钟后你会感谢自己看完。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="food"){
+    const templates=[
+      `${trigger}你每天都在吃的东西，可能正是问题所在。${clean}——看完你会重新审视冰箱。`,
+      `${trigger}你以为的「健康选择」，在数据面前可能根本站不住。${clean}。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="action"){
+    const templates=[
+      `${trigger}你一直以为很难的事，可能简单到你不敢相信。${clean}——但先说清楚，这不等于不用看医生。`,
+      `${trigger}很多人花大钱做的事，免费的版本可能更有效。${clean}。`
+    ];
+    return templates[Math.floor(Math.random()*templates.length)];
+  }
+  if(cat==="symptom"){
+    const templates=[
+      `${trigger}你的身体每天都在给你发信号——可惜你没在听。${clean}——今天帮你把频道调到对的位置。`,
+      `${trigger}有些「小毛病」单独看不重要，但三个以上同时出现的时候——${clean}。`
     ];
     return templates[Math.floor(Math.random()*templates.length)];
   }
   const templates=[
-    `${clean}——你可能一直理解反了。别急着划走，看完再判断。`,
-    `关于${clean}，常见说法和可查数据之间，差的可能不止一截。`
+    `${trigger}${clean}——你可能一直理解反了。别急着划走，看完再判断。`,
+    `${trigger}关于${clean}，常见说法和可查数据之间，差的可能不止一截。`
   ];
   return templates[Math.floor(Math.random()*templates.length)];
 }
@@ -1590,25 +1657,68 @@ function buildBody(topic,plat,cat,data,duration,writeMode){
 }
 
 function buildCTA(plat,cat){
-  const ctas={
+  /* STEPPS CTA分层：收藏=实用价值，评论=情绪诱因，转发=社交货币+公共性 */
+  const saveCTA={
     dy:[
-      "觉得有用，点个赞收藏——下次复查前翻出来对照。评论区说说你还想知道哪些血糖知识？",
-      "关注我，每天一个控糖小知识。有问题评论区留言，我逐一回复。",
-      "这条建议转发给家人群，可能帮到身边还在迷茫的人。关注不迷路。"
+      "这条建议收藏——下次复查前翻出来对照，比临时搜强多了。",
+      "怕忘了就点个收藏，体检前拿出来一条条看。",
+      "内容有点多，建议收藏慢慢看。复查的时候你会感谢自己。"
     ],
     xhs:[
-      "这篇建议先收藏，复查前拿出来对照。有问题评论区说，我会一一回复。跟帖分享你的控糖经验~",
-      "觉得有用记得收藏+关注，分享给需要的朋友。评论区聊聊你的血糖困扰~",
-      "整理了很久的内容，希望对你有帮助。收藏不迷路，评论区聊聊你的控糖故事~"
+      "建议收藏这篇，下次去医院前对照一下，心里有底。",
+      "内容整理了很久，收藏起来慢慢消化。复查前必看。",
+      "先收藏再看。有些数字你现在用不上，但迟早会用到。"
     ],
     bili:[
-      "如果这条视频帮你纠正了一个误区，请给个三连。有什么想聊的血糖话题，弹幕或评论区告诉我，下期安排。",
-      "关注频道，每周更新血糖科普。弹幕打出来你还想知道什么，我会做专题解答。",
-      "如果这条内容对你有启发，请一键三连支持。评论区分享你身边的控糖故事，说不定下期就是你。"
+      "如果觉得有用，先收藏再看——下次复查前翻出来对照特别方便。",
+      "三连支持一下，也建议收藏。这些数字早搞明白早受益。",
+      "收藏这条视频，送给未来的自己——下次看到体检报告时你会打开它。"
     ]
   };
-  const pool=ctas[plat]||ctas.dy;
-  return pool[Math.floor(Math.random()*pool.length)];
+  const commentCTA={
+    dy:[
+      "你身边有没有这样的人？评论区说说——让更多人看到。",
+      "你测过自己的那个数字吗？评论区打出来，看看大家都是多少。",
+      "你最想知道哪个控糖问题的答案？评论告诉我，下期安排。"
+    ],
+    xhs:[
+      "你踩过哪些控糖坑？评论区聊聊——说出来就是帮别人避雷。",
+      "你身边有没有血糖偏高的家人？你是怎么发现的？评论区分享。",
+      "这篇哪个点最让你意外？评论区告诉我——评论区经常有更精彩的讨论。"
+    ],
+    bili:[
+      "弹幕打个数字，看看有多少人跟你一样。评论区聊聊你的经历。",
+      "你有没有被哪个「常识」误导过？弹幕打出来，可能很多人跟你一样。",
+      "评论区说说你还想知道什么血糖话题——点赞最多的下期安排。"
+    ]
+  };
+  const shareCTA={
+    dy:[
+      "转发给家人群，可能帮到还在迷茫的人。",
+      "转发给你觉得需要的人——有时候一条视频真的能改变方向。",
+      "转给身边那个还在瞎控糖的朋友——比你说一百句管用。"
+    ],
+    xhs:[
+      "分享给家人或朋友——特别是那些还不知道这些信息的人。",
+      "转发给你关心的人。早一天知道，少走很多弯路。",
+      "建议转发到家庭群——你爸妈可能比你还需要看这条。"
+    ],
+    bili:[
+      "分享给需要的朋友。这些信息不是每个人都碰得到。",
+      "一键转发给还在迷茫的人——或者发到你的动态里。"
+    ]
+  };
+
+  /* 按平台选一组，随机选收藏+评论+转发各一条，拼成三段式CTA */
+  const sPool=saveCTA[plat]||saveCTA.dy;
+  const cPool=commentCTA[plat]||commentCTA.dy;
+  const rPool=shareCTA[plat]||shareCTA.dy;
+
+  const save=sPool[Math.floor(Math.random()*sPool.length)];
+  const comment=cPool[Math.floor(Math.random()*cPool.length)];
+  const share=rPool[Math.floor(Math.random()*rPool.length)];
+
+  return `${save}\n\n${comment}\n\n${share}`;
 }
 
 function buildAIPrompt({topic,plat,cat,duration,data,persona,writeMode,meta}){
