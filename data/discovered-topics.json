@@ -1068,6 +1068,74 @@
         "topic_score": 71,
         "platform": "bili"
       }
+    },
+    {
+      "id": "disc-043",
+      "title": "减肥警惕4种伪控糖粗粮，升糖比白米饭还快",
+      "angle": "央视网2026年5月科普+河北疾控中心数据：大黄米GI111、糯小米GI108、黑糯玉米GI106、血糯米GI92。4类伪粗粮：糯系粘牙粗粮、预糊化即食杂粮代餐、高温烤制薯类、精加工粗粮制品。教受众看配料表辨别真粗粮",
+      "category": "辟谣纠偏",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "high",
+      "heat_source": "头条爆款文章，央视网/疾控中心背书，伪粗粮是减脂人群最大认知盲区",
+      "source_urls": [
+        "http://m.toutiao.com/group/7656306430110253604/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-30"
+    },
+    {
+      "id": "disc-044",
+      "title": "喝的二甲双胍来了！首仿口服溶液正式获批",
+      "angle": "2026年5月29日NMPA批准安徽新世纪药业盐酸二甲双胍口服溶液（国药准字H20264524/25）。国内首款仿制药，主攻儿童/老年人/吞咽障碍患者。原研Riomet 2003年FDA获批后因污染退市",
+      "category": "数字科普",
+      "platform": "dy,bili",
+      "duration": "30-45s",
+      "heat": "high",
+      "heat_source": "NMPA官方批准信息，糖尿病领域一线药物剂型革新，特殊人群用药痛点解决",
+      "source_urls": [
+        "http://m.toutiao.com/group/7650027557303190068/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-30"
+    },
+    {
+      "id": "disc-045",
+      "title": "2026年新上市4款降糖新药，怎么选才不踩坑",
+      "angle": "替尔泊肽（双靶点GLP-1/GIP）、达格列艾复方（SGLT-2+GLP-1）、伊格列净（国产SGLT-2）、西格列汀缓释片。分别适合肥胖/心肾风险/初诊/老年人群。新药不等于更好，关键是量体裁药",
+      "category": "数字科普",
+      "platform": "dy,bili",
+      "duration": "45-60s",
+      "heat": "high",
+      "heat_source": "头条2026新降糖药文章热度高，但具体获批信息需逐一核实",
+      "source_urls": [
+        "http://m.toutiao.com/group/7591800465664098867/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-30"
+    },
+    {
+      "id": "disc-046",
+      "title": "控糖减脂喝咖啡别踩坑，3款爆款实测",
+      "angle": "瑞幸橙C美式（122kcal，0脂）、生椰拿铁（179kcal，无乳糖）、小黄油美式（173kcal，乳脂稳血糖）。官方数据实测，附隐藏点单公式。控糖人群咖啡避坑指南",
+      "category": "饮食指南",
+      "platform": "xhs,dy",
+      "duration": "30-45s",
+      "heat": "medium",
+      "heat_source": "控糖+咖啡是年轻群体高频场景，实测类内容在小红书易获收藏",
+      "source_urls": [
+        "http://m.toutiao.com/group/7655228344544051746/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-06-30"
     }
   ]
 }
