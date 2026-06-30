@@ -1658,6 +1658,21 @@ function buildBody(topic,plat,cat,data,duration,writeMode){
 
 function buildCTA(plat,cat){
   /* STEPPS CTA分层：收藏=实用价值，评论=情绪诱因，转发=社交货币+公共性 */
+  /* 意图驱动：根据选题分类决定主驱动互动目标，主导动作排第一且话术更强 */
+
+  /* ── 主驱动映射：分类→主导互动 ── */
+  const primaryAction={
+    myth:  "share",   /* 辟谣→转发（社交货币：帮别人纠错） */
+    food:  "save",    /* 饮食→收藏（实用价值：查GI值工具） */
+    number:"save",    /* 数字→收藏（实用价值：复查对照） */
+    action:"save",    /* 实操→收藏（实用价值：步骤清单） */
+    symptom:"comment",/* 症状→评论（情绪诱因：引发共鸣） */
+    tool:  "save",    /* 测评→收藏（实用价值：选购参考） */
+    story: "comment", /* 故事→评论（情绪诱因：分享经历） */
+    mistake:"comment"  /* 避坑→评论（情绪诱因：踩坑共鸣） */
+  };
+  const primary=primaryAction[cat]||"save";
+
   const saveCTA={
     dy:[
       "这条建议收藏——下次复查前翻出来对照，比临时搜强多了。",
@@ -1709,7 +1724,25 @@ function buildCTA(plat,cat){
     ]
   };
 
-  /* 按平台选一组，随机选收藏+评论+转发各一条，拼成三段式CTA */
+  /* 主导动作的强化句（排第一段时追加） */
+  const boosters={
+    save:{
+      dy:"觉得有用的，现在就存——别等需要的时候找不到。",
+      xhs:"收藏=下次用的时候不用翻。建议现在就存。",
+      bili:"收藏这条。信我，你早晚会回来找它。"
+    },
+    comment:{
+      dy:"评论区是最有价值的部分——先看评论再走。",
+      xhs:"评论区经常有比正文更精彩的分享，别错过。",
+      bili:"弹幕区和评论区才是精华。先看看别人怎么说。"
+    },
+    share:{
+      dy:"转发出去，你的一次分享可能改变一个人的控糖方向。",
+      xhs:"分享=帮别人少走弯路。动动手指就能做的事。",
+      bili:"转给需要的人。有些信息，早一天知道就早一天受益。"
+    }
+  };
+
   const sPool=saveCTA[plat]||saveCTA.dy;
   const cPool=commentCTA[plat]||commentCTA.dy;
   const rPool=shareCTA[plat]||shareCTA.dy;
@@ -1718,7 +1751,14 @@ function buildCTA(plat,cat){
   const comment=cPool[Math.floor(Math.random()*cPool.length)];
   const share=rPool[Math.floor(Math.random()*rPool.length)];
 
-  return `${save}\n\n${comment}\n\n${share}`;
+  const booster=(boosters[primary]||boosters.save)[plat]||boosters[primary].dy;
+
+  /* 按主驱动排序：主导动作排第一，追加强化句；其余按 save→comment→share 补位 */
+  const order={save:[save,comment,share],comment:[comment,save,share],share:[share,save,comment]};
+  const parts=order[primary]||order.save;
+  const primaryText=parts[0]+"\n"+booster;
+
+  return [primaryText,parts[1],parts[2]].filter(Boolean).join("\n\n");
 }
 
 function buildAIPrompt({topic,plat,cat,duration,data,persona,writeMode,meta}){
