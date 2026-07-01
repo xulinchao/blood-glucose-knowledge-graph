@@ -1249,6 +1249,1256 @@
       "discovered_date": "2026-06-29",
       "data_source": "ai_reference",
       "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
+    },
+    {
+      "id": "disc-052",
+      "title": "血糖高不能吃水果？这3种水果反而帮你稳血糖",
+      "category": "myth",
+      "heat": "hot",
+      "hook_type": "颠覆认知",
+      "target_audience": "血糖偏高者/中老年",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "25w+",
+        "xhs_likes": "6.5w+",
+        "bili_plays": "3.2w+"
+      },
+      "notes": "核心冲突：大家都以为水果甜=升糖快",
+      "from_csv": true
+    },
+    {
+      "id": "disc-053",
+      "title": "糖尿病人不能吃米饭？营养师告诉你真相",
+      "category": "myth",
+      "heat": "hot",
+      "hook_type": "打破迷思",
+      "target_audience": "糖友/家属/中老年",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "18w+",
+        "xhs_likes": "5.2w+",
+        "bili_plays": "2.5w+"
+      },
+      "notes": "情绪价值：消除恐惧感",
+      "from_csv": true
+    },
+    {
+      "id": "disc-054",
+      "title": "0糖饮料真的不升血糖？代糖的3个隐藏风险",
+      "category": "myth",
+      "heat": "hot",
+      "hook_type": "行业揭秘",
+      "target_audience": "年轻人/控糖者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "22w+",
+        "xhs_likes": "8.8w+",
+        "bili_plays": "4.1w+"
+      },
+      "notes": "年轻人最关心的话题之一",
+      "from_csv": true
+    },
+    {
+      "id": "disc-055",
+      "title": "空腹血糖正常就没事？餐后血糖才是隐形杀手",
+      "category": "myth",
+      "heat": "warm",
+      "hook_type": "认知盲区",
+      "target_audience": "体检人群/35+",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "14w+",
+        "xhs_likes": "3.8w+",
+        "bili_plays": "2.1w+"
+      },
+      "notes": "很多人只查空腹不查餐后",
+      "from_csv": true
+    },
+    {
+      "id": "disc-056",
+      "title": "南瓜能降血糖？这5个控糖偏方都是假的",
+      "category": "myth",
+      "heat": "warm",
+      "hook_type": "打假系列",
+      "target_audience": "中老年/糖友家属",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "16w+",
+        "xhs_likes": "4.6w+",
+        "bili_plays": "2w+"
+      },
+      "notes": "中老年群体传播最广的偏方",
+      "from_csv": true
+    },
+    {
+      "id": "disc-057",
+      "title": "控糖万能公式：记住这4样，80%的血糖难题迎刃而解",
+      "category": "food",
+      "heat": "hot",
+      "hook_type": "万能公式",
+      "target_audience": "所有血糖关注者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "28w+",
+        "xhs_likes": "7.2w+",
+        "bili_plays": "3.5w+"
+      },
+      "notes": "公式化内容收藏率极高",
+      "from_csv": true
+    },
+    {
+      "id": "disc-058",
+      "title": "吃米饭的正确顺序：换一下吃饭顺序，血糖稳一半",
+      "category": "food",
+      "heat": "hot",
+      "hook_type": "简单有效",
+      "target_audience": "所有人群",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "32w+",
+        "xhs_likes": "9.5w+",
+        "bili_plays": "5w+"
+      },
+      "notes": "全网验证过的爆款选题",
+      "from_csv": true
+    },
+    {
+      "id": "disc-059",
+      "title": "这6种主食GI值低还能饱腹，血糖高的放心吃",
+      "category": "food",
+      "heat": "hot",
+      "hook_type": "解决方案",
+      "target_audience": "控糖者/减脂人群",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "20w+",
+        "xhs_likes": "6.8w+",
+        "bili_plays": "3w+"
+      },
+      "notes": "收藏属性强，反复参考",
+      "from_csv": true
+    },
+    {
+      "id": "disc-060",
+      "title": "睡前饿了吃什么不升血糖？5种夜宵推荐",
+      "category": "food",
+      "heat": "warm",
+      "hook_type": "痛点解决",
+      "target_audience": "糖友/夜猫子",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "12w+",
+        "xhs_likes": "4.2w+",
+        "bili_plays": "1.8w+"
+      },
+      "notes": "切中真实生活场景",
+      "from_csv": true
+    },
+    {
+      "id": "disc-061",
+      "title": "外卖点餐攻略：血糖高的人怎么点外卖",
+      "category": "food",
+      "heat": "warm",
+      "hook_type": "生活刚需",
+      "target_audience": "上班族/年轻人",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "10w+",
+        "xhs_likes": "5.5w+",
+        "bili_plays": "1.5w+"
+      },
+      "notes": "年轻群体刚需",
+      "from_csv": true
+    },
+    {
+      "id": "disc-062",
+      "title": "煮米饭加一物，GI值降一半，血糖稳了",
+      "category": "food",
+      "heat": "hot",
+      "hook_type": "一招见效",
+      "target_audience": "家庭烹饪者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "24w+",
+        "xhs_likes": "8w+",
+        "bili_plays": "3.8w+"
+      },
+      "notes": "实用性强，传播度高",
+      "from_csv": true
+    },
+    {
+      "id": "disc-063",
+      "title": "血糖值多少算正常？一张表看懂你的血糖",
+      "category": "number",
+      "heat": "hot",
+      "hook_type": "人人都需要",
+      "target_audience": "所有成年人",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "35w+",
+        "xhs_likes": "12w+",
+        "bili_plays": "6w+"
+      },
+      "notes": "基础刚需，每月都能发",
+      "from_csv": true
+    },
+    {
+      "id": "disc-064",
+      "title": "35岁以后血糖警戒线：这个数值要注意了",
+      "category": "number",
+      "heat": "hot",
+      "hook_type": "年龄焦虑",
+      "target_audience": "35+职场人群",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "26w+",
+        "xhs_likes": "7w+",
+        "bili_plays": "2.8w+"
+      },
+      "notes": "年龄标签增加点击率",
+      "from_csv": true
+    },
+    {
+      "id": "disc-065",
+      "title": "糖化血红蛋白6.5%是什么意思？一文看懂",
+      "category": "number",
+      "heat": "steady",
+      "hook_type": "体检报告解读",
+      "target_audience": "体检人群",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "10w+",
+        "xhs_likes": "3.5w+",
+        "bili_plays": "2.2w+"
+      },
+      "notes": "体检季流量高峰",
+      "from_csv": true
+    },
+    {
+      "id": "disc-066",
+      "title": "血糖从12降到6，他只做了这3件事",
+      "category": "number",
+      "heat": "warm",
+      "hook_type": "前后对比",
+      "target_audience": "糖友/控糖者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "19w+",
+        "xhs_likes": "5w+",
+        "bili_plays": "2.5w+"
+      },
+      "notes": "数字对比极具传播力",
+      "from_csv": true
+    },
+    {
+      "id": "disc-067",
+      "title": "饭后散步15分钟，血糖降30%？走路姿势有讲究",
+      "category": "action",
+      "heat": "hot",
+      "hook_type": "懒人控糖",
+      "target_audience": "所有血糖关注者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "22w+",
+        "xhs_likes": "6w+",
+        "bili_plays": "3.2w+"
+      },
+      "notes": "零成本，人人可执行",
+      "from_csv": true
+    },
+    {
+      "id": "disc-068",
+      "title": "血糖飙升的3个时间点，学会了自己在家就能稳",
+      "category": "action",
+      "heat": "warm",
+      "hook_type": "时间规律",
+      "target_audience": "居家监测者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "15w+",
+        "xhs_likes": "4.5w+",
+        "bili_plays": "2.3w+"
+      },
+      "notes": "可配血糖仪实操画面",
+      "from_csv": true
+    },
+    {
+      "id": "disc-069",
+      "title": "控糖第一天怎么吃？一份新手保姆级食谱",
+      "category": "action",
+      "heat": "hot",
+      "hook_type": "新手友好",
+      "target_audience": "刚发现血糖偏高者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "18w+",
+        "xhs_likes": "8.5w+",
+        "bili_plays": "2.8w+"
+      },
+      "notes": "收藏率极高的教程型内容",
+      "from_csv": true
+    },
+    {
+      "id": "disc-070",
+      "title": "运动降糖的黄金30分钟：什么时间运动最有效",
+      "category": "action",
+      "heat": "steady",
+      "hook_type": "科学验证",
+      "target_audience": "运动爱好者/糖友",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "11w+",
+        "xhs_likes": "4w+",
+        "bili_plays": "2.1w+"
+      },
+      "notes": "运动类内容互动率高",
+      "from_csv": true
+    },
+    {
+      "id": "disc-071",
+      "title": "7天血糖记录表：这样记血糖，医生都夸你专业",
+      "category": "action",
+      "heat": "steady",
+      "hook_type": "专业工具",
+      "target_audience": "居家监测者/糖友",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "8w+",
+        "xhs_likes": "5.2w+",
+        "bili_plays": "1.8w+"
+      },
+      "notes": "工具型内容天然高收藏",
+      "from_csv": true
+    },
+    {
+      "id": "disc-072",
+      "title": "皮肤发痒、视力模糊？身体发出的5个高血糖信号",
+      "category": "symptom",
+      "heat": "hot",
+      "hook_type": "身体信号",
+      "target_audience": "35+人群/亚健康",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "30w+",
+        "xhs_likes": "9w+",
+        "bili_plays": "5.2w+"
+      },
+      "notes": "恐惧驱动型内容，传播力强",
+      "from_csv": true
+    },
+    {
+      "id": "disc-073",
+      "title": "总是犯困不是因为懒！可能是餐后血糖在报警",
+      "category": "symptom",
+      "heat": "warm",
+      "hook_type": "日常现象重新解读",
+      "target_audience": "上班族/中年人",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "16w+",
+        "xhs_likes": "4.2w+",
+        "bili_plays": "2w+"
+      },
+      "notes": "人人都有的体验",
+      "from_csv": true
+    },
+    {
+      "id": "disc-074",
+      "title": "手指发麻别只怪颈椎！高血糖的10个隐匿信号",
+      "category": "symptom",
+      "heat": "warm",
+      "hook_type": "误诊提醒",
+      "target_audience": "35+/体检人群",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "20w+",
+        "xhs_likes": "5.8w+",
+        "bili_plays": "3.2w+"
+      },
+      "notes": "健康焦虑型内容",
+      "from_csv": true
+    },
+    {
+      "id": "disc-075",
+      "title": "动态血糖仪真的有用吗？戴了30天后我的真实体验",
+      "category": "tool",
+      "heat": "hot",
+      "hook_type": "真实测评",
+      "target_audience": "控糖者/健康管理爱好者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "18w+",
+        "xhs_likes": "10w+",
+        "bili_plays": "4.5w+"
+      },
+      "notes": "小红书控糖话题衍生品，热度暴涨",
+      "from_csv": true
+    },
+    {
+      "id": "disc-076",
+      "title": "家用血糖仪怎么选？2025年6款热门机型对比",
+      "category": "tool",
+      "heat": "warm",
+      "hook_type": "选购指南",
+      "target_audience": "糖友/家属",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "13w+",
+        "xhs_likes": "6.5w+",
+        "bili_plays": "4.8w+"
+      },
+      "notes": "工具测评天然高收藏",
+      "from_csv": true
+    },
+    {
+      "id": "disc-077",
+      "title": "控糖APP哪个好用？5款热门APP深度测评",
+      "category": "tool",
+      "heat": "steady",
+      "hook_type": "效率工具",
+      "target_audience": "数字化控糖者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "8w+",
+        "xhs_likes": "4w+",
+        "bili_plays": "2.5w+"
+      },
+      "notes": "数字化健康管理趋势",
+      "from_csv": true
+    },
+    {
+      "id": "disc-078",
+      "title": "32岁查出糖尿病前期：我是怎么用半年逆转的",
+      "category": "story",
+      "heat": "hot",
+      "hook_type": "真实经历",
+      "target_audience": "年轻人/糖前人群",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "28w+",
+        "xhs_likes": "9w+",
+        "bili_plays": "5.5w+"
+      },
+      "notes": "年轻化叙事，共鸣感极强",
+      "from_csv": true
+    },
+    {
+      "id": "disc-079",
+      "title": "我妈血糖从15降到6.5，全家饮食都变了",
+      "category": "story",
+      "heat": "hot",
+      "hook_type": "家庭故事",
+      "target_audience": "糖友家属/中年人",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "22w+",
+        "xhs_likes": "7w+",
+        "bili_plays": "3w+"
+      },
+      "notes": "家庭场景共鸣强",
+      "from_csv": true
+    },
+    {
+      "id": "disc-080",
+      "title": "外卖小哥查出高血糖后的3个月：不花钱的控糖法",
+      "category": "story",
+      "heat": "warm",
+      "hook_type": "职业群体",
+      "target_audience": "外卖/快递/司机",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "15w+",
+        "xhs_likes": "4w+",
+        "bili_plays": "2.5w+"
+      },
+      "notes": "职业标签增加传播力",
+      "from_csv": true
+    },
+    {
+      "id": "disc-081",
+      "title": "从每天打胰岛素到停药：一个2型糖友的真实记录",
+      "category": "story",
+      "heat": "warm",
+      "hook_type": "戏剧性转折",
+      "target_audience": "糖友/家属",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "25w+",
+        "xhs_likes": "5.5w+",
+        "bili_plays": "4.5w+"
+      },
+      "notes": "需注意不要承诺停药效果",
+      "from_csv": true
+    },
+    {
+      "id": "disc-082",
+      "title": "控糖路上的8个坑，90%的人都踩过",
+      "category": "mistake",
+      "heat": "hot",
+      "hook_type": "避坑清单",
+      "target_audience": "所有控糖者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "27w+",
+        "xhs_likes": "8.5w+",
+        "bili_plays": "4.2w+"
+      },
+      "notes": "清单型内容天然高收藏",
+      "from_csv": true
+    },
+    {
+      "id": "disc-083",
+      "title": "这3种早餐组合是升糖炸弹，很多人天天吃",
+      "category": "mistake",
+      "heat": "hot",
+      "hook_type": "日常习惯",
+      "target_audience": "所有人群",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "23w+",
+        "xhs_likes": "6.8w+",
+        "bili_plays": "2.8w+"
+      },
+      "notes": "打破日常习惯认知",
+      "from_csv": true
+    },
+    {
+      "id": "disc-084",
+      "title": "打着控糖旗号在伤身：这5种做法比不吃还糟",
+      "category": "mistake",
+      "heat": "warm",
+      "hook_type": "矫枉过正",
+      "target_audience": "极端控糖者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "16w+",
+        "xhs_likes": "4.8w+",
+        "bili_plays": "2.2w+"
+      },
+      "notes": "反思型内容差异化竞争",
+      "from_csv": true
+    },
+    {
+      "id": "disc-085",
+      "title": "降糖药不能乱吃！这3个时间吃错了白吃",
+      "category": "mistake",
+      "heat": "steady",
+      "hook_type": "用药安全",
+      "target_audience": "服药糖友",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "14w+",
+        "xhs_likes": "3.5w+",
+        "bili_plays": "2w+"
+      },
+      "notes": "专业医疗内容需 disclaimer",
+      "from_csv": true
+    },
+    {
+      "id": "disc-086",
+      "title": "体检前一天的5个行为，会让血糖数据全错",
+      "category": "mistake",
+      "heat": "steady",
+      "hook_type": "体检必看",
+      "target_audience": "体检人群",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "11w+",
+        "xhs_likes": "3.5w+",
+        "bili_plays": "1.6w+"
+      },
+      "notes": "季节性话题，体检季流量翻倍",
+      "from_csv": true
+    },
+    {
+      "id": "disc-087",
+      "title": "65岁以后血糖标准不一样了，对照看看你达标没",
+      "category": "number",
+      "heat": "hot",
+      "hook_type": "年龄差异",
+      "target_audience": "中老年/家属",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "22w+",
+        "xhs_likes": "5.2w+",
+        "bili_plays": "2.6w+"
+      },
+      "notes": "中老年群体最关注的数字",
+      "from_csv": true
+    },
+    {
+      "id": "disc-088",
+      "title": "牛奶升不升血糖？营养师告诉你答案",
+      "category": "myth",
+      "heat": "steady",
+      "hook_type": "认知澄清",
+      "target_audience": "糖友/牛奶爱好者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "10w+",
+        "xhs_likes": "3.8w+",
+        "bili_plays": "1.4w+"
+      },
+      "notes": "高频提问话题",
+      "from_csv": true
+    },
+    {
+      "id": "disc-089",
+      "title": "3种廉价食材，是天然的血糖稳定剂",
+      "category": "food",
+      "heat": "warm",
+      "hook_type": "低成本",
+      "target_audience": "家庭主妇/控糖者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "18w+",
+        "xhs_likes": "5.5w+",
+        "bili_plays": "2.5w+"
+      },
+      "notes": "廉价标签降低传播门槛",
+      "from_csv": true
+    },
+    {
+      "id": "disc-090",
+      "title": "你测血糖的方法可能是错的！正确姿势看这里",
+      "category": "action",
+      "heat": "steady",
+      "hook_type": "你可能做错了",
+      "target_audience": "居家监测者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "13w+",
+        "xhs_likes": "4w+",
+        "bili_plays": "2w+"
+      },
+      "notes": "教学型内容完播率高",
+      "from_csv": true
+    },
+    {
+      "id": "disc-091",
+      "title": "控糖人必学的6个超市购物技巧",
+      "category": "action",
+      "heat": "warm",
+      "hook_type": "生活场景",
+      "target_audience": "家庭采购者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "12w+",
+        "xhs_likes": "6.5w+",
+        "bili_plays": "1.8w+"
+      },
+      "notes": "小红书购物场景天然契合",
+      "from_csv": true
+    },
+    {
+      "id": "disc-092",
+      "title": "压力大会让血糖升高？情绪和血糖的关系",
+      "category": "symptom",
+      "heat": "steady",
+      "hook_type": "冷知识",
+      "target_audience": "职场人/高压人群",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "9w+",
+        "xhs_likes": "3.2w+",
+        "bili_plays": "2.3w+"
+      },
+      "notes": "心理健康角度切入血糖，差异化",
+      "from_csv": true
+    },
+    {
+      "id": "disc-093",
+      "title": "全谷物控糖到底有多重要？每天吃多少才有效",
+      "category": "food",
+      "heat": "warm",
+      "hook_type": "权威推荐",
+      "target_audience": "所有人群",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "13w+",
+        "xhs_likes": "4.5w+",
+        "bili_plays": "2.3w+"
+      },
+      "notes": "营养学界共识话题",
+      "from_csv": true
+    },
+    {
+      "id": "disc-094",
+      "title": "熬夜真的会得糖尿病吗？睡眠和血糖的真相",
+      "category": "symptom",
+      "heat": "warm",
+      "hook_type": "年轻人健康",
+      "target_audience": "年轻人/上班族",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "20w+",
+        "xhs_likes": "5w+",
+        "bili_plays": "2.8w+"
+      },
+      "notes": "年轻群体高共鸣话题",
+      "from_csv": true
+    },
+    {
+      "id": "disc-095",
+      "title": "一杯奶茶等于几碗米饭？热门奶茶含糖量实测",
+      "category": "food",
+      "heat": "hot",
+      "hook_type": "数据震撼",
+      "target_audience": "年轻人/奶茶爱好者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "32w+",
+        "xhs_likes": "11w+",
+        "bili_plays": "6w+"
+      },
+      "notes": "奶茶是小红书/抖音超级流量话题",
+      "from_csv": true
+    },
+    {
+      "id": "disc-096",
+      "title": "吃红薯比吃米饭健康？升糖对比实测",
+      "category": "food",
+      "heat": "warm",
+      "hook_type": "常见认知",
+      "target_audience": "控糖者/减脂人群",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "14w+",
+        "xhs_likes": "4.5w+",
+        "bili_plays": "2w+"
+      },
+      "notes": "烹饪方式决定GI差异",
+      "from_csv": true
+    },
+    {
+      "id": "disc-097",
+      "title": "这5种零食血糖高的人可以放心吃",
+      "category": "food",
+      "heat": "warm",
+      "hook_type": "放心吃",
+      "target_audience": "控糖者/零食爱好者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "17w+",
+        "xhs_likes": "6w+",
+        "bili_plays": "2w+"
+      },
+      "notes": "正面清单型内容收藏率高",
+      "from_csv": true
+    },
+    {
+      "id": "disc-098",
+      "title": "便秘会让血糖升高？肠道和血糖的关系",
+      "category": "symptom",
+      "heat": "steady",
+      "hook_type": "冷知识",
+      "target_audience": "所有人群",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "8w+",
+        "xhs_likes": "2.8w+",
+        "bili_plays": "1.6w+"
+      },
+      "notes": "差异化科普选题",
+      "from_csv": true
+    },
+    {
+      "id": "disc-099",
+      "title": "运动后血糖反而升高？3个原因和应对方法",
+      "category": "action",
+      "heat": "steady",
+      "hook_type": "反常识",
+      "target_audience": "运动糖友",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "11w+",
+        "xhs_likes": "3.5w+",
+        "bili_plays": "2w+"
+      },
+      "notes": "运动爱好者专属痛点",
+      "from_csv": true
+    },
+    {
+      "id": "disc-100",
+      "title": "空腹血糖高和餐后血糖高，原因完全不同",
+      "category": "number",
+      "heat": "warm",
+      "hook_type": "对比分析",
+      "target_audience": "糖友/关注血糖者",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "14w+",
+        "xhs_likes": "4w+",
+        "bili_plays": "2.3w+"
+      },
+      "notes": "科普深度内容，B站表现好",
+      "from_csv": true
+    },
+    {
+      "id": "disc-101",
+      "title": "pregnancy血糖高的准妈妈，这5件事必须知道",
+      "category": "action",
+      "heat": "warm",
+      "hook_type": "母婴健康",
+      "target_audience": "孕妇/备孕女性",
+      "script_status": "待做",
+      "publish_date": "",
+      "source_urls": [],
+      "platforms": [
+        "dy",
+        "xhs",
+        "bili"
+      ],
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）",
+      "ai_estimates": {
+        "dy_likes": "16w+",
+        "xhs_likes": "7.5w+",
+        "bili_plays": "2.5w+"
+      },
+      "notes": "母婴垂类高关注度",
+      "from_csv": true
     }
   ]
 }
