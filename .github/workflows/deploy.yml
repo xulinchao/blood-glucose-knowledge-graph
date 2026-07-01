@@ -63,7 +63,9 @@ jobs:
           ls -la public/
           test -f public/reports.json
           grep -q brief_reports public/reports.json
-          grep -q 控糖日报 public/index.html
+          grep -q 口播创作台 public/index.html
+          grep -q 日报归档 public/index.html
+          test ! -d public/site/local
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
