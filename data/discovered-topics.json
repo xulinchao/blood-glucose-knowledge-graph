@@ -790,7 +790,25 @@
       "status": "discovered",
       "script_status": "pending",
       "publish_status": "pending",
-      "discovered_date": "2026-06-30"
+      "discovered_date": "2026-06-30",
+      "deep_analysis": {
+        "credibility": "已核实 — 央视网2026年5月科普文章+河北疾控中心数据双重背书，GI数值与悉尼大学数据库范围一致。",
+        "verification_steps": [
+          "验证GI数值：前往悉尼大学GI数据库 glycemicindex.com 搜索 'millet' 'waxy corn' 'black glutinous rice' 核对具体数值",
+          "验证央视网原文：在央视网搜索 '粗粮 GI' 或 '伪粗粮' 找到2026年5月科普文章",
+          "验证河北疾控中心：搜索河北省疾控中心官网相关科普发布"
+        ],
+        "script_angles": {
+          "hook": "你天天吃的'健康粗粮'，可能升糖比白米饭还快。",
+          "key_points": [
+            "大黄米GI 111、糯小米GI 108、黑糯玉米GI 106、血糯米GI 92 — 全是高GI",
+            "4类伪粗粮：糯系粘牙粗粮、预糊化即食杂粮代餐、高温烤制薯类、精加工粗粮制品",
+            "教观众看配料表：第一位是'小麦粉'的'全麦面包'不是真全麦"
+          ],
+          "caution": "必须标注GI数据来源（悉尼大学GI数据库），不同品牌/烹饪方式GI差异大，避免绝对化表述。"
+        },
+        "trend_context": "低GI食品赛道2026年爆发，但市场鱼龙混杂。伪粗粮话题切中减脂+控糖双重人群的最大认知盲区，辟谣类内容自带社交货币属性（转发=帮别人纠错）。"
+      }
     },
     {
       "id": "disc-044",

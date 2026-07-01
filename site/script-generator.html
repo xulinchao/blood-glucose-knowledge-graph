@@ -1008,59 +1008,113 @@ async function initTopics() {
   loadDailyBrief();
 }
 
-/* 加载当日精选日报前3条，渲染到文案生成左侧面板 */
+/* 加载「今日精选」：从 discovered-topics.json 读取最近3天入库的选题 */
 async function loadDailyBrief() {
   const panel = document.getElementById("daily-brief-panel");
   if (!panel) return;
-  const today = new Date().toISOString().slice(0, 10);
-  /* 尝试当天、昨天、前天的精选日报 */
-  for (let attempt = 0; attempt < 3; attempt++) {
-    const d = new Date(); d.setDate(d.getDate() - attempt);
-    const ds = d.toISOString().slice(0, 10);
-    try {
-      const res = await fetch(`../data/exports/daily-brief-${ds}.json`);
-      if (!res.ok) continue;
-      const data = await res.json();
-      const items = (data.timeline || []).slice(0, 3);
-      if (!items.length) { panel.innerHTML = '<div class="quick-topic-empty">今日暂无精选数据</div>'; return; }
-      panel.innerHTML = items.map((item, i) => {
-        const tier = item.evidence_tier || '?';
-        const useLabel = item.use_as_label || '';
-        const score = item.writability_score || item.topic_score || '--';
-        const cat = mapCategory(item.category || '');
-        const catName = item.category || '';
-        return `<div class="quick-topic-item" style="cursor:pointer;padding:6px 8px;border-bottom:1px solid var(--border);font-size:12px" onclick="fillFromBrief(${i})" data-brief-idx="${i}">
-          <div style="font-weight:600;font-size:12px;margin-bottom:2px">${i+1}. ${item.title.slice(0,40)}${item.title.length>40?'...':''}</div>
-          <div style="font-size:10px;color:var(--muted)">${catName} · 证据${tier} · ${useLabel} · 选题分${score}</div>
-        </div>`;
-      }).join('');
-      /* 缓存数据供 fillFromBrief 使用 */
-      window._briefItems = items;
+  try {
+    const res = await fetch("../data/discovered-topics.json");
+    if (!res.ok) throw new Error("无法加载选题库");
+    const data = await res.json();
+    const allTopics = (data.topics || []).concat(data.archive || []);
+    /* 筛选最近3天入库的选题，按可写性分排序 */
+    const cutoff = new Date(); cutoff.setDate(cutoff.getDate() - 3);
+    const recent = allTopics.filter(t => {
+      const dd = t.discovered_date;
+      if (!dd) return false;
+      return new Date(dd) >= cutoff;
+    }).sort((a, b) => {
+      const sa = a.writability_score || a.topic_score || 0;
+      const sb = b.writability_score || b.topic_score || 0;
+      return sb - sa;
+    }).slice(0, 5);
+
+    if (!recent.length) {
+      panel.innerHTML = '<div class="quick-topic-empty">最近3天暂无新入库选题<br><span style="font-size:10px">请先运行采集任务</span></div>';
       return;
-    } catch (e) { continue; }
+    }
+
+    panel.innerHTML = recent.map((t, i) => {
+      const tier = t.evidence_tier || t.data_source === 'ai_reference' ? 'AI' : '?';
+      const useLabel = t.use_as_label || (t.data_source === 'ai_reference' ? 'AI参考' : '');
+      const score = t.writability_score || t.topic_score || '--';
+      const catName = t.category || '';
+      const dateLabel = t.discovered_date ? t.discovered_date.slice(5) : '';
+      const hasDeep = t.deep_analysis ? '<span style="color:var(--accent3)">●</span>' : '';
+      return `<div class="quick-topic-item" style="cursor:pointer;padding:6px 8px;border-bottom:1px solid var(--border);font-size:12px" data-topic-id="${t.id}">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start" onclick="fillFromTopic('${t.id}')">
+          <div style="flex:1">
+            <div style="font-weight:600;font-size:12px;margin-bottom:2px">${i+1}. ${(t.title || '').slice(0,36)}${(t.title||'').length>36?'...':''} ${hasDeep}</div>
+            <div style="font-size:10px;color:var(--muted)">${catName} · ${dateLabel} · 选题分${score}</div>
+          </div>
+          ${t.deep_analysis ? `<button onclick="event.stopPropagation();showDeepAnalysis('${t.id}')" style="font-size:10px;padding:2px 6px;border-radius:4px;border:1px solid var(--accent3);background:transparent;color:var(--accent3);cursor:pointer;margin-left:4px;white-space:nowrap">深度分析</button>` : ''}
+        </div>
+      </div>`;
+    }).join('');
+    window._recentTopics = recent;
+  } catch (e) {
+    panel.innerHTML = '<div class="quick-topic-empty">加载失败<br><span style="font-size:10px">' + e.message + '</span></div>';
   }
-  panel.innerHTML = '<div class="quick-topic-empty">暂无精选日报<br><span style="font-size:10px">请先运行采集任务</span></div>';
 }
 
-/* 点击精选条目 → 填入文案生成表单 */
-function fillFromBrief(idx) {
-  const items = window._briefItems || [];
-  const item = items[idx];
-  if (!item) return;
-  document.getElementById('gen-topic').value = item.title || '';
+/* 点击今日精选条目 → 填入文案生成表单 */
+function fillFromTopic(topicId) {
+  const topics = window._recentTopics || [];
+  const t = topics.find(x => x.id === topicId);
+  if (!t) return;
+  document.getElementById('gen-topic').value = t.title || '';
   const catMap = {"辟谣纠偏":"myth","饮食指南":"food","数字科普":"number","实操方法":"action","症状预警":"symptom","工具测评":"tool","案例故事":"story","避坑指南":"mistake"};
-  const cat = catMap[item.category] || 'myth';
-  document.getElementById('gen-cat').value = cat;
-  /* 填入 snippet 作为核心数据 */
-  const snippet = (item.snippet || '').slice(0, 200);
-  if (snippet) document.getElementById('gen-data').value = snippet;
+  document.getElementById('gen-cat').value = catMap[t.category] || mapCategory(t.category) || 'myth';
+  /* 填入 angle 或 heat_source 作为核心数据 */
+  const dataText = (t.angle || t.heat_source || '').slice(0, 300);
+  if (dataText) document.getElementById('gen-data').value = dataText;
   /* 填入证据面板 */
-  if (item.evidence_tier) {
-    const authPanel = document.getElementById('gen-auth-panel');
-    if (authPanel) authPanel.innerHTML = `<span class="auth-badge tier-${item.evidence_tier}">证据 ${item.evidence_tier}</span><span class="auth-badge">${item.use_as_label || ''}</span>`;
+  const authPanel = document.getElementById('gen-auth-panel');
+  if (authPanel) {
+    const tier = t.evidence_tier || (t.data_source === 'ai_reference' ? 'AI' : '?');
+    const useLabel = t.use_as_label || (t.data_source === 'ai_reference' ? 'AI参考' : '');
+    authPanel.innerHTML = `<span class="auth-badge tier-${tier}">证据 ${tier}</span><span class="auth-badge">${useLabel}</span>`;
   }
+  /* 保存当前选题ID，供深度分析用 */
+  window._selectedTopicId = t.id;
   /* 切换到文案生成 Tab */
   switchTab('generator', document.querySelectorAll('.tab-btn')[1]);
+}
+
+/* 展示深度分析面板 */
+function showDeepAnalysis(topicId) {
+  const topics = window._recentTopics || [];
+  const t = topics.find(x => x.id === topicId);
+  if (!t || !t.deep_analysis) return;
+  const da = t.deep_analysis;
+  const html = `
+    <div style="position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.6);z-index:999;display:flex;align-items:center;justify-content:center" onclick="if(event.target===this)closeDeepAnalysis()">
+      <div style="background:var(--bg);border:1px solid var(--rule);border-radius:12px;max-width:560px;width:92%;max-height:80vh;overflow:auto;padding:20px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <h3 style="font-size:15px;margin:0">${t.title}</h3>
+          <button onclick="closeDeepAnalysis()" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:18px">×</button>
+        </div>
+        ${da.credibility ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:var(--muted)">可信度</span><div style="font-size:13px;margin-top:4px">${da.credibility}</div></div>` : ''}
+        ${da.verification_steps && da.verification_steps.length ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:var(--muted)">自行检索建议</span><ul style="font-size:12px;margin:4px 0 0 16px">${da.verification_steps.map(s=>`<li>${s}</li>`).join('')}</ul></div>` : ''}
+        ${da.script_angles ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:var(--muted)">脚本建议</span>
+          ${da.script_angles.hook ? `<div style="font-size:12px;margin-top:4px"><strong>Hook:</strong> ${da.script_angles.hook}</div>` : ''}
+          ${da.script_angles.key_points && da.script_angles.key_points.length ? `<div style="font-size:12px;margin-top:4px"><strong>要点:</strong> ${da.script_angles.key_points.join('；')}</div>` : ''}
+          ${da.script_angles.caution ? `<div style="font-size:12px;margin-top:4px;color:var(--accent2)"><strong>注意:</strong> ${da.script_angles.caution}</div>` : ''}
+        </div>` : ''}
+        ${da.trend_context ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:var(--muted)">趋势背景</span><div style="font-size:12px;margin-top:4px">${da.trend_context}</div></div>` : ''}
+        <div style="text-align:right;margin-top:12px">
+          <button onclick="fillFromTopic('${t.id}');closeDeepAnalysis();" style="padding:6px 14px;border-radius:6px;border:none;background:var(--accent);color:var(--bg);cursor:pointer;font-size:12px">填入生成器</button>
+        </div>
+      </div>
+    </div>`;
+  const div = document.createElement('div');
+  div.id = 'deep-analysis-overlay';
+  div.innerHTML = html;
+  document.body.appendChild(div);
+}
+function closeDeepAnalysis() {
+  const el = document.getElementById('deep-analysis-overlay');
+  if (el) el.remove();
 }
 
 function mapCategory(cat) {
