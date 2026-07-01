@@ -18,6 +18,180 @@
   let knowledgeCache = null;
   let harvestCache = null;
   let briefCache = null;
+  let discoveredCache = null;
+
+  async function loadDiscoveredTopics() {
+    if (discoveredCache) return discoveredCache;
+    try {
+      const res = await fetch("../data/discovered-topics.json");
+      if (!res.ok) return { topics: [], archive: [] };
+      const data = await res.json();
+      discoveredCache = {
+        topics: data.topics || [],
+        archive: data.archive || [],
+      };
+    } catch (e) {
+      discoveredCache = { topics: [], archive: [] };
+    }
+    return discoveredCache;
+  }
+
+  function findStoredDeepAnalysis(url, title) {
+    if (!discoveredCache) return null;
+    const all = [...(discoveredCache.topics || []), ...(discoveredCache.archive || [])];
+    const norm = (s) => (s || "").trim();
+    if (url) {
+      const hit = all.find((t) => t.deep_analysis && (t.source_urls || []).some((u) => norm(u) === norm(url)));
+      if (hit) return hit.deep_analysis;
+    }
+    if (title) {
+      const hit = all.find((t) => t.deep_analysis && norm(t.title) === norm(title));
+      if (hit) return hit.deep_analysis;
+    }
+    return null;
+  }
+
+  function buildDeepAnalysisFromBriefItem(item) {
+    const gate = item.gate || item.writing_safety || {};
+    const editorial = item.editorial || {};
+    const cc = item.cognitive_conflict || {};
+    const tier = item.evidence_tier || "?";
+    const useAs = gate.use_as || item.use_as || "";
+    const useLabels = {
+      cite_directly: "可引用",
+      verify_before_script: "写稿前核实",
+      hook_only: "仅钩子",
+      safe_to_discuss: "可讨论",
+    };
+    const tierReason =
+      editorial.why_selected ||
+      {
+        A: "一级权威来源",
+        B: "专业平台来源，须回源核实",
+        C: "作者有医疗相关标识，仍须核对资质",
+      }[tier] ||
+      "UGC 讨论热点，默认不可当医学结论";
+    const passed = gate.passed || gate.gate_passed;
+    const credibility = `${tier}级 · ${useLabels[useAs] || useAs || "—"} · ${
+      passed ? "Gate 可写" : "不可当医学结论"
+    } — ${tierReason}`;
+
+    const steps = [];
+    if (item.url) steps.push(`打开原贴核对标题与摘要主张：${item.url}`);
+    if (item.author) steps.push(`核实作者/机构资质：${item.author}`);
+    const corpus = [item.title, item.category, item.snippet].filter(Boolean).join(" ");
+    if (/GI|粗粮|主食|食物|饮食|水果|零食/i.test(corpus)) {
+      steps.push("若涉及 GI/食物数据：前往 https://www.glycemicindex.com/ 核对具体品类");
+    }
+    if (useAs === "verify_before_script" || useAs === "cite_directly" || tier === "A" || tier === "B") {
+      steps.push("关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源");
+    }
+    const forbidden = gate.forbidden_expressions || [];
+    if (forbidden.length) steps.push("写稿避免：" + forbidden.slice(0, 4).join("、"));
+    if (item.creator_note) steps.push(item.creator_note);
+    steps.push("口播结尾须含非医疗建议声明（个体情况请咨询医生）");
+
+    const keyPoints = [];
+    (item.claims || []).slice(0, 4).forEach((c) => {
+      if (c && c.claim) keyPoints.push(c.claim);
+    });
+    if (!keyPoints.length && cc.claim_summary) keyPoints.push(cc.claim_summary);
+    if (editorial.misleading_risk) keyPoints.push("误导风险：" + editorial.misleading_risk);
+
+    let hook = editorial.safe_rewrite || cc.controversy_hint || "";
+    if (!hook) hook = `网上有人在聊「${(item.title || "").slice(0, 36)}…」`;
+
+    let caution = editorial.misleading_risk || "";
+    const hedges = gate.required_hedges || [];
+    if (hedges.length) caution = (caution ? caution + "；" : "") + "须加缓冲：" + hedges.join("、");
+    if (!caution) caution = "个体情况差异大，不构成医疗建议；涉及用药须遵医嘱。";
+
+    const prop = item.propagation || {};
+    const heat = item.heat_score ?? prop.heat_score;
+    let trend = item.platform_label || item.platform || "";
+    if (heat != null) trend = (trend ? trend + " · " : "") + `热度 ${heat}`;
+    if (prop.engagement) trend += `，互动约 ${prop.engagement}`;
+
+    return {
+      credibility,
+      verification_steps: steps,
+      script_angles: { hook, key_points: keyPoints, caution },
+      trend_context: trend,
+      _source: "rule_engine",
+      _ai: false,
+    };
+  }
+
+  async function resolveDeepAnalysis(item) {
+    await loadDiscoveredTopics();
+    const stored = findStoredDeepAnalysis(item.url, item.title);
+    if (stored && stored._source !== "rule_engine") {
+      return { ...stored, _source: stored._source || "agent_or_manual", _ai: stored._ai !== false };
+    }
+    const rule = buildDeepAnalysisFromBriefItem(item);
+    if (stored && stored._source === "rule_engine") return rule;
+    if (stored) {
+      return {
+        ...rule,
+        ...stored,
+        script_angles: { ...rule.script_angles, ...(stored.script_angles || {}) },
+        verification_steps: [
+          ...(stored.verification_steps || []),
+          ...(rule.verification_steps || []),
+        ].filter((v, i, a) => a.indexOf(v) === i),
+        _source: "agent_or_manual",
+        _ai: false,
+      };
+    }
+    return rule;
+  }
+
+  function escModal(s) {
+    return String(s || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
+
+  function renderDeepAnalysisModalHtml(title, analysis) {
+    const da = analysis || {};
+    const sa = da.script_angles || {};
+    const isRule = da._source === "rule_engine";
+    const badge = isRule
+      ? '<span style="font-size:10px;padding:2px 8px;border-radius:4px;background:rgba(255,217,61,0.15);color:var(--accent3)">规则解读 · 无 AI</span>'
+      : '<span style="font-size:10px;padding:2px 8px;border-radius:4px;background:rgba(0,212,170,0.15);color:var(--accent)">Agent/人工增强</span>';
+    const steps = (da.verification_steps || [])
+      .map((s) => `<li>${escModal(s)}</li>`)
+      .join("");
+    const points = (sa.key_points || [])
+      .map((p) => `<li>${escModal(p)}</li>`)
+      .join("");
+    return `
+      <div style="position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.6);z-index:999;display:flex;align-items:center;justify-content:center" id="deep-analysis-overlay">
+        <div style="background:var(--bg);border:1px solid var(--rule);border-radius:12px;max-width:560px;width:92%;max-height:80vh;overflow:auto;padding:20px">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:12px">
+            <div>
+              <h3 style="font-size:15px;margin:0 0 6px">${escModal(title)}</h3>
+              ${badge}
+            </div>
+            <button type="button" id="deep-analysis-close-btn" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:18px">×</button>
+          </div>
+          ${da.credibility ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:var(--muted)">可信度</span><div style="font-size:13px;margin-top:4px;line-height:1.6">${escModal(da.credibility)}</div></div>` : ""}
+          ${steps ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:var(--muted)">自行检索建议</span><ul style="font-size:12px;margin:4px 0 0 16px;line-height:1.6">${steps}</ul></div>` : ""}
+          ${sa.hook || points || sa.caution ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:var(--muted)">脚本建议</span>
+            ${sa.hook ? `<div style="font-size:12px;margin-top:4px"><strong>Hook:</strong> ${escModal(sa.hook)}</div>` : ""}
+            ${points ? `<div style="font-size:12px;margin-top:4px"><strong>要点:</strong><ul style="margin:4px 0 0 16px">${points}</ul></div>` : ""}
+            ${sa.caution ? `<div style="font-size:12px;margin-top:4px;color:var(--accent2)"><strong>注意:</strong> ${escModal(sa.caution)}</div>` : ""}
+          </div>` : ""}
+          ${da.trend_context ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:var(--muted)">趋势背景</span><div style="font-size:12px;margin-top:4px">${escModal(da.trend_context)}</div></div>` : ""}
+          <div style="text-align:right;margin-top:12px">
+            <button type="button" id="deep-analysis-fill-btn" style="padding:6px 14px;border-radius:6px;border:none;background:var(--accent);color:var(--bg);cursor:pointer;font-size:12px">填入写稿</button>
+          </div>
+        </div>
+      </div>`;
+  }
+
 
   function norm(text) {
     return (text || "").replace(/\s+/g, "");
@@ -683,6 +857,10 @@
     loadKnowledgeTopics,
     loadLatestHarvest,
     loadLatestBrief,
+    loadDiscoveredTopics,
+    buildDeepAnalysisFromBriefItem,
+    resolveDeepAnalysis,
+    renderDeepAnalysisModalHtml,
     enrichDataRef,
     resolveWriteMode,
     buildVerifyChecklist,

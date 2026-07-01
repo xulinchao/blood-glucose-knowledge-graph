@@ -91,9 +91,7 @@ USE_AS_LABEL = {
 
 
 def _ensure_gate_fields(item: dict) -> dict:
-    """旧 harvest 无 gate 时回填裁决（不重跑采集）。"""
-    if item.get("gate") and "writability_score" in item:
-        return item
+    """旧 harvest 无 gate 时回填裁决；已有 gate 时补全 editorial/claims（不重跑采集）。"""
     title = item.get("title", "")
     auth = item.get("authenticity") or adversarial_audit(
         title,
@@ -115,6 +113,20 @@ def _ensure_gate_fields(item: dict) -> dict:
         item.get("snippet", ""),
         claim_graph_penalty=penalty,
     )
+
+    if item.get("gate") and "writability_score" in item:
+        out = dict(item)
+        editorial = out.get("editorial") or {}
+        if not editorial.get("why_selected"):
+            out["editorial"] = result.get("editorial") or editorial
+        if not out.get("claims"):
+            out["claims"] = result.get("claims") or []
+        if not out.get("claim_summary"):
+            out["claim_summary"] = result.get("claim_summary", "")
+        if not out.get("controversy_hint"):
+            out["controversy_hint"] = result.get("controversy_hint", "")
+        return out
+
     gate = result["gate"]
     auth_merged = {**auth, "use_as": gate["use_as"], "creator_note": gate.get("creator_note") or auth.get("creator_note")}
     writability = gate["writability_score"]
@@ -261,6 +273,92 @@ def _timeline_sort_key(item: dict) -> tuple:
     return (passed, _writability_score(item), _heat_score(item))
 
 
+def build_rule_deep_analysis(item: dict) -> dict[str, Any]:
+    """规则层深度解读（无 AI），schema 对齐 discovered-topics.deep_analysis。"""
+    gate = item.get("gate") or {}
+    editorial = item.get("editorial") or {}
+    cc = item.get("cognitive_conflict") or {}
+    if not cc and (item.get("claim_summary") or item.get("controversy_hint")):
+        cc = {
+            "claim_summary": item.get("claim_summary") or "",
+            "controversy_hint": item.get("controversy_hint") or "",
+        }
+    tier = item.get("evidence_tier") or (item.get("authenticity") or {}).get("evidence_tier", "?")
+    use_as = gate.get("use_as") or item.get("use_as", "")
+    use_label = item.get("use_as_label") or USE_AS_LABEL.get(use_as, use_as)
+    tier_reason = editorial.get("why_selected") or {
+        "A": "一级权威来源",
+        "B": "专业平台来源，须回源核实",
+        "C": "作者有医疗相关标识，仍须核对资质",
+    }.get(tier, "UGC 讨论热点，默认不可当医学结论")
+
+    passed = bool(gate.get("passed")) if gate else bool(item.get("writing_safety", {}).get("gate_passed"))
+    gate_note = "Gate 可写" if passed else "不可当医学结论"
+    credibility = f"{tier}级 · {use_label} · {gate_note} — {tier_reason}"
+
+    steps: list[str] = []
+    url = item.get("url", "")
+    if url:
+        steps.append(f"打开原贴核对标题与摘要主张：{url}")
+    author = item.get("author", "")
+    if author:
+        steps.append(f"核实作者/机构资质：{author}")
+    corpus = f"{item.get('title', '')} {item.get('category', '')} {item.get('snippet', '')}"
+    if any(k in corpus for k in ("GI", "gi", "粗粮", "主食", "食物", "饮食", "水果", "零食")):
+        steps.append("若涉及 GI/食物数据：前往 https://www.glycemicindex.com/ 核对具体品类")
+    if use_as in ("verify_before_script", "cite_directly") or tier in ("A", "B"):
+        steps.append("关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源")
+    forbidden = gate.get("forbidden_expressions") or []
+    if forbidden:
+        steps.append("写稿避免：" + "、".join(forbidden[:4]))
+    note = item.get("creator_note") or gate.get("creator_note")
+    if note:
+        steps.append(note)
+    steps.append("口播结尾须含非医疗建议声明（个体情况请咨询医生）")
+
+    claims = item.get("claims") or []
+    key_points: list[str] = []
+    for c in claims[:4]:
+        if isinstance(c, dict) and c.get("claim"):
+            key_points.append(str(c["claim"]))
+    if not key_points and cc.get("claim_summary"):
+        key_points.append(cc["claim_summary"])
+    if editorial.get("misleading_risk"):
+        key_points.append(f"误导风险：{editorial['misleading_risk']}")
+
+    hook = editorial.get("safe_rewrite") or cc.get("controversy_hint") or ""
+    if not hook:
+        hook = f"网上有人在聊「{(item.get('title') or '')[:36]}…」"
+
+    caution = editorial.get("misleading_risk") or ""
+    hedges = gate.get("required_hedges") or []
+    if hedges:
+        caution = (caution + "；" if caution else "") + "须加缓冲：" + "、".join(hedges)
+    if not caution:
+        caution = "个体情况差异大，不构成医疗建议；涉及用药须遵医嘱。"
+
+    prop = item.get("propagation") or {}
+    heat = item.get("heat_score") or prop.get("heat_score")
+    plat = item.get("platform_label") or item.get("platform") or ""
+    eng = prop.get("engagement")
+    trend = f"{plat} 热度 {heat}" if heat is not None else plat
+    if eng:
+        trend += f"，互动约 {eng}"
+
+    return {
+        "credibility": credibility,
+        "verification_steps": steps,
+        "script_angles": {
+            "hook": hook,
+            "key_points": key_points,
+            "caution": caution,
+        },
+        "trend_context": trend,
+        "_source": "rule_engine",
+        "_ai": False,
+    }
+
+
 
 
 
@@ -373,6 +471,13 @@ def _item_brief(item: dict) -> dict[str, Any]:
         "claims": item.get("claims") or [],
 
         "editorial": editorial,
+
+        "deep_analysis": item.get("deep_analysis") or build_rule_deep_analysis(
+            {**item, "editorial": editorial, "cognitive_conflict": item.get("cognitive_conflict") or {
+                "claim_summary": item.get("claim_summary") or "",
+                "controversy_hint": item.get("controversy_hint") or "",
+            }}
+        ),
 
     }
 

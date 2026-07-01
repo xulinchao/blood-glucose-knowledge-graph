@@ -457,6 +457,10 @@ body {
   color: var(--bg);
   font-weight: 600;
 }
+.brief-card-actions button.accent-outline {
+  border-color: var(--accent3);
+  color: var(--accent3);
+}
 .brief-hook-wrap { margin-top: 12px; font-size: 12px; color: var(--muted); }
 .brief-hook-wrap summary { cursor: pointer; padding: 6px 0; }
 .library-section { margin-top: 8px; }
@@ -880,6 +884,7 @@ async function initTopics() {
       script_status: t.script_status,
       source_urls: t.source_urls,
       platform_data: t.platform_data,
+      deep_analysis: t.deep_analysis,
       _source: sourceType,
       _type: 'discovered'
     });
@@ -972,6 +977,7 @@ function renderBriefCard(item, key, writable) {
     </div>
     <div class="brief-card-actions">
       <button type="button" class="primary" onclick="quickGenerateFromBrief('${escAttr(key)}')">写稿</button>
+      <button type="button" class="accent-outline" onclick="showDeepAnalysisBrief('${escAttr(key)}')">深度分析</button>
       ${srcBtn}
     </div>
   </div>`;
@@ -1006,6 +1012,69 @@ function updateCurrentTopicPanel(title) {
   panel.innerHTML = t
     ? `<div style="font-weight:600;color:var(--accent)">${escHtml(t.slice(0, 48))}${t.length > 48 ? "…" : ""}</div>`
     : '在「今日选题」点写稿填入';
+}
+
+async function showDeepAnalysisBrief(key) {
+  const item = (window._briefByKey || {})[key];
+  if (!item || typeof ScriptBridge === "undefined") return;
+  let analysis;
+  if (item.deep_analysis && item.deep_analysis._source && item.deep_analysis._source !== "rule_engine") {
+    analysis = item.deep_analysis;
+  } else {
+    analysis = await ScriptBridge.resolveDeepAnalysis(item);
+  }
+  openDeepAnalysisModal(item.title, analysis, () => quickGenerateFromBrief(key));
+}
+
+async function showDeepAnalysisForTopic(id) {
+  const t = ALL_TOPICS.find((x) => String(x.id) === String(id));
+  if (!t || typeof ScriptBridge === "undefined") return;
+  let analysis;
+  if (t.deep_analysis && t.deep_analysis._source && t.deep_analysis._source !== "rule_engine") {
+    analysis = t.deep_analysis;
+  } else {
+    const item = {
+      title: t.title,
+      url: (t.source_urls && t.source_urls[0]) || "",
+      author: t.platform_data?.author || "",
+      category: t.catName,
+      snippet: t.angle || t.note || "",
+      evidence_tier: t.platform_data?.evidence_tier,
+      use_as: t.platform_data?.use_as,
+      editorial: {},
+      gate: {
+        use_as: t.platform_data?.use_as || "verify_before_script",
+        passed: t.script_status !== "blocked",
+      },
+    };
+    analysis = await ScriptBridge.resolveDeepAnalysis(item);
+  }
+  openDeepAnalysisModal(t.title, analysis, () => quickGenerate(id));
+}
+
+function openDeepAnalysisModal(title, analysis, onFill) {
+  closeDeepAnalysis();
+  const wrap = document.createElement("div");
+  wrap.innerHTML = ScriptBridge.renderDeepAnalysisModalHtml(title, analysis);
+  const overlay = wrap.firstElementChild;
+  if (!overlay) return;
+  document.body.appendChild(overlay);
+  overlay.addEventListener("click", (e) => {
+    if (e.target === overlay) closeDeepAnalysis();
+  });
+  document.getElementById("deep-analysis-close-btn")?.addEventListener("click", closeDeepAnalysis);
+  const fillBtn = document.getElementById("deep-analysis-fill-btn");
+  if (fillBtn && onFill) {
+    fillBtn.addEventListener("click", () => {
+      onFill();
+      closeDeepAnalysis();
+    });
+  }
+}
+
+function closeDeepAnalysis() {
+  const el = document.getElementById("deep-analysis-overlay");
+  if (el) el.remove();
 }
 
 function mapCategory(cat) {
@@ -1121,6 +1190,7 @@ function renderTopics(){
         <button type="button" class="primary" data-action="generate">生成文案</button>
         ${t._type==='discovered' && !isAdopted ? `<button type="button" data-action="adopt">采纳</button>` : ''}
         ${t.source_urls && t.source_urls.length ? `<button type="button" data-action="source">来源</button>` : ''}
+        ${t._type === 'discovered' || t.deep_analysis ? `<button type="button" data-action="deep">深度分析</button>` : ''}
       </div>
     </div>`;
   }).join("");
@@ -1893,6 +1963,7 @@ document.getElementById("topic-grid").addEventListener("click", function(e) {
     const t = ALL_TOPICS.find(x => String(x.id) === String(id));
     if (action === "generate") quickGenerate(id);
     else if (action === "adopt") quickAdopt(id);
+    else if (action === "deep") showDeepAnalysisForTopic(id);
     else if (action === "source" && t?.source_urls?.[0]) window.open(t.source_urls[0], "_blank", "noopener");
     return;
   }

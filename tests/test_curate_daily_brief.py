@@ -9,6 +9,8 @@ from curate_daily_brief import (  # noqa: E402
     curate_from_harvest_payload,
     find_cross_platform_themes,
     _timeline_sort_key,
+    _ensure_gate_fields,
+    build_rule_deep_analysis,
 )
 
 
@@ -100,6 +102,20 @@ class TestCurateDailyBrief(unittest.TestCase):
         themes = find_cross_platform_themes(items)
         self.assertEqual(len(themes), 1)
         self.assertEqual(len(themes[0]["platforms"]), 2)
+
+    def test_ensure_gate_backfills_editorial(self):
+        item = _item("空腹血糖6.1算不算糖尿病", "bili")
+        item["editorial"] = {}
+        fixed = _ensure_gate_fields(item)
+        self.assertTrue((fixed.get("editorial") or {}).get("why_selected"))
+
+    def test_rule_deep_analysis_no_verified_label(self):
+        item = _item("西瓜GI很高吗", "xhs", tier="C")
+        da = build_rule_deep_analysis(item)
+        self.assertEqual(da.get("_source"), "rule_engine")
+        self.assertFalse(da.get("_ai"))
+        self.assertIn("verification_steps", da)
+        self.assertNotIn("已核实", da.get("credibility", ""))
 
 
 if __name__ == "__main__":
