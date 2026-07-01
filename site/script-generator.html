@@ -690,6 +690,10 @@ body {
     <div class="topic-grid" id="topic-grid">
       <div class="loading-state">正在加载选题数据...</div>
     </div>
+    <details style="margin-top:16px;padding:8px 12px;background:var(--bg-alt);border-radius:8px;font-size:12px">
+      <summary style="cursor:pointer;color:var(--muted)">归档选题（AI参考，热度为推算值，15条）</summary>
+      <div id="archive-topic-grid" style="margin-top:8px"></div>
+    </details>
   </div>
 
   <!-- ===== TAB: 文案生成 ===== -->
@@ -697,6 +701,11 @@ body {
     <div class="gen-layout">
       <!-- 左侧快捷面板 -->
       <div class="quick-panel">
+        <h3>今日精选</h3>
+        <div id="daily-brief-panel">
+          <div class="quick-topic-empty">正在加载今日精选...</div>
+        </div>
+        <hr style="border:none;border-top:1px solid var(--border);margin:12px 0">
         <h3>我的选题</h3>
         <div class="flow-hint">
           <strong style="color:var(--accent)">生成文案</strong> → 跳转本页并填表<br>
@@ -766,11 +775,17 @@ body {
           <div class="form-row">
             <label>人设/语气</label>
             <select id="gen-persona">
-              <option value="friendly">亲切科普（像朋友聊天）</option>
-              <option value="expert">专业医生（权威可信）</option>
-              <option value="personal">亲身经历（控糖者自述）</option>
-              <option value="surprise">反常识揭秘（制造意外感）</option>
+              <option value="personal" selected>亲身经历（控糖者自述）</option>
             </select>
+            <details style="font-size:11px;color:var(--muted);margin-top:2px">
+              <summary>其他风格（高级）</summary>
+              <select id="gen-persona-alt" style="margin-top:4px;font-size:12px">
+                <option value="friendly">亲切科普（像朋友聊天）</option>
+                <option value="expert">循证解读（资料说话，非医生身份）</option>
+                <option value="surprise">反常识揭秘（制造意外感）</option>
+              </select>
+              <button style="font-size:11px;margin-top:4px;padding:2px 8px;cursor:pointer" onclick="document.getElementById('gen-persona').value=document.getElementById('gen-persona-alt').value">切换</button>
+            </details>
           </div>
           <button class="generate-btn" onclick="generateScript()">生成口播文案</button>
           <div class="word-count" id="word-count"></div>
@@ -990,6 +1005,62 @@ async function initTopics() {
   });
   renderTopics();
   renderQuickTopics();
+  loadDailyBrief();
+}
+
+/* 加载当日精选日报前3条，渲染到文案生成左侧面板 */
+async function loadDailyBrief() {
+  const panel = document.getElementById("daily-brief-panel");
+  if (!panel) return;
+  const today = new Date().toISOString().slice(0, 10);
+  /* 尝试当天、昨天、前天的精选日报 */
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const d = new Date(); d.setDate(d.getDate() - attempt);
+    const ds = d.toISOString().slice(0, 10);
+    try {
+      const res = await fetch(`../data/exports/daily-brief-${ds}.json`);
+      if (!res.ok) continue;
+      const data = await res.json();
+      const items = (data.timeline || []).slice(0, 3);
+      if (!items.length) { panel.innerHTML = '<div class="quick-topic-empty">今日暂无精选数据</div>'; return; }
+      panel.innerHTML = items.map((item, i) => {
+        const tier = item.evidence_tier || '?';
+        const useLabel = item.use_as_label || '';
+        const score = item.writability_score || item.topic_score || '--';
+        const cat = mapCategory(item.category || '');
+        const catName = item.category || '';
+        return `<div class="quick-topic-item" style="cursor:pointer;padding:6px 8px;border-bottom:1px solid var(--border);font-size:12px" onclick="fillFromBrief(${i})" data-brief-idx="${i}">
+          <div style="font-weight:600;font-size:12px;margin-bottom:2px">${i+1}. ${item.title.slice(0,40)}${item.title.length>40?'...':''}</div>
+          <div style="font-size:10px;color:var(--muted)">${catName} · 证据${tier} · ${useLabel} · 选题分${score}</div>
+        </div>`;
+      }).join('');
+      /* 缓存数据供 fillFromBrief 使用 */
+      window._briefItems = items;
+      return;
+    } catch (e) { continue; }
+  }
+  panel.innerHTML = '<div class="quick-topic-empty">暂无精选日报<br><span style="font-size:10px">请先运行采集任务</span></div>';
+}
+
+/* 点击精选条目 → 填入文案生成表单 */
+function fillFromBrief(idx) {
+  const items = window._briefItems || [];
+  const item = items[idx];
+  if (!item) return;
+  document.getElementById('gen-topic').value = item.title || '';
+  const catMap = {"辟谣纠偏":"myth","饮食指南":"food","数字科普":"number","实操方法":"action","症状预警":"symptom","工具测评":"tool","案例故事":"story","避坑指南":"mistake"};
+  const cat = catMap[item.category] || 'myth';
+  document.getElementById('gen-cat').value = cat;
+  /* 填入 snippet 作为核心数据 */
+  const snippet = (item.snippet || '').slice(0, 200);
+  if (snippet) document.getElementById('gen-data').value = snippet;
+  /* 填入证据面板 */
+  if (item.evidence_tier) {
+    const authPanel = document.getElementById('gen-auth-panel');
+    if (authPanel) authPanel.innerHTML = `<span class="auth-badge tier-${item.evidence_tier}">证据 ${item.evidence_tier}</span><span class="auth-badge">${item.use_as_label || ''}</span>`;
+  }
+  /* 切换到文案生成 Tab */
+  switchTab('generator', document.querySelectorAll('.tab-btn')[1]);
 }
 
 function mapCategory(cat) {
@@ -1181,11 +1252,13 @@ function quickAdopt(id) {
 // ==================== DISCOVERED TOPICS ENGINE ====================
 async function loadDiscoveredTopics(){
   let jsonTopics = [];
+  let archiveTopics = [];
   try {
     const res = await fetch("../data/discovered-topics.json");
     if (res.ok) {
       const data = await res.json();
       jsonTopics = data.topics || [];
+      archiveTopics = data.archive || [];
     }
   } catch(e) {
     console.log("Fetch discovered-topics.json failed:", e);
@@ -1276,6 +1349,19 @@ async function loadDiscoveredTopics(){
   manualTopics.forEach(t => {
     if (!DISCOVERED_TOPICS.find(x => x.id === t.id)) DISCOVERED_TOPICS.push(t);
   });
+
+  // Render archived topics
+  const archiveGrid = document.getElementById("archive-topic-grid");
+  if (archiveGrid && archiveTopics.length) {
+    archiveGrid.innerHTML = archiveTopics.map(t => {
+      const cat = (t.category || "").replace(/[？?。.]/g, "");
+      const label = t.data_source_label || "AI参考";
+      return `<div style="padding:6px 8px;border-bottom:1px solid var(--border);font-size:11px">
+        <span style="color:var(--accent4)">[${cat}]</span> ${t.title}
+        <span style="color:var(--muted);font-size:10px;margin-left:4px">${label}</span>
+      </div>`;
+    }).join("");
+  }
 }
 
 // Helper functions for harvest data processing

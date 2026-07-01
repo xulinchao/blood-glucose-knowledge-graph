@@ -159,13 +159,22 @@ Agent 生成口播稿、选题角度、日报摘要时，对 D/E 级与 `hook_on
 
 TraeWork 与本仓库 Cursor/Agent **共用同一套数据与规则**（`AGENTS.md` + `.cursor/skills/blood-glucose-topic-authenticity/SKILL.md` + `.cursor/skills/blood-glucose-daily-brief/SKILL.md`）。
 
-### 三类日报（勿混淆）
+### 两类日报 + 可选监控日报
+
+**日常自动产出（每天 09:00 定时任务）：**
 
 | 类型 | 生成方式 | 输出 | 用途 |
 |------|----------|------|------|
-| **采集日报** | 定时跑 `scripts/run-daily-harvest.bat` | `research-daily/YYYY-MM-DD-采集日报.html` | 多平台原贴全量 + 证据层级 |
+| **采集日报** | `run-daily-harvest.bat` | `research-daily/YYYY-MM-DD-采集日报.html` + `data/exports/daily-harvest-*.json` | 多平台原贴全量 + 证据层级 |
 | **精选日报** | 采集后自动 `curate_daily_brief.py` | `research-daily/YYYY-MM-DD-精选日报.html` + `data/exports/daily-brief-*.json` | **Agent 默认读**；时间线 ~12 条 |
-| **监控日报** | TraeWork 任务（深度解读，可选） | HTML：`research-daily/YYYY-MM-DD-日报.html` · MD：`content/research-daily/YYYY-MM-DD-日报.md` | 政策核实、口播建议；**页面只展示 HTML，MD 进笔记** |
+
+**可选（仅在有重大政策/指南更新时手动触发）：**
+
+| 类型 | 生成方式 | 输出 | 用途 |
+|------|----------|------|------|
+| **监控日报** | TraeWork 手动触发 | HTML：`research-daily/YYYY-MM-DD-日报.html` · MD：`content/research-daily/YYYY-MM-DD-日报.md` | 政策核实、口播建议 |
+
+> **精简原则（2026-07-01）**：当前阶段目标是日更短视频，飞轮核心是"选题→文案→发布→数据反馈"。日报系统只保留自动产出的采集日报和精选日报，监控日报**不在飞轮关键路径上**，仅在需要时手动触发。Agent 不得自动生成监控日报。
 
 TraeWork 写监控日报时：
 
