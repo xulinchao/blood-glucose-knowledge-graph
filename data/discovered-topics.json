@@ -1,6 +1,6 @@
 {
   "version": "1.1",
-  "updated": "2026-06-30",
+  "updated": "2026-07-01",
   "topics": [
     {
       "id": "disc-001",
@@ -1136,6 +1136,117 @@
       "script_status": "pending",
       "publish_status": "pending",
       "discovered_date": "2026-06-30"
+    },
+    {
+      "id": "disc-047",
+      "title": "杭州控糖社区食堂火了，2个月瘦18斤的社区健康管理新模式",
+      "angle": "杭州首家控糖社区食堂，男子吃2个月瘦近18斤，每天卖出百余份控糖餐。营养师称连续14天吃足三餐能减5斤以上。社区健康管理+饮食干预模式值得跟踪",
+      "category": "案例故事",
+      "platform": "dy,bili,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "B站大象新闻34万播放，控糖+社区+减重三重热点叠加",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1ZiKS6pECk"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-01",
+      "platform_data": {
+        "bili_play": 340495,
+        "bili_author": "大象新闻"
+      },
+      "data_source": "platform_harvest",
+      "data_source_label": "B站真实平台数据"
+    },
+    {
+      "id": "disc-048",
+      "title": "替尔泊肽纳入医保！降糖药王降价70%，但别急着打",
+      "angle": "2026年1月1日起替尔泊肽正式纳入国家医保目录，双靶点GLP-1/GIP受体激动剂，原研药降幅达70%。REDEFINE 4研究显示CagriSema未达非劣效目标。适合人群、医保条件、副作用需科普",
+      "category": "数字科普",
+      "platform": "dy,bili",
+      "duration": "45-60s",
+      "heat": "high",
+      "heat_source": "头条多篇10万+阅读，降糖新药+医保政策双重热度",
+      "source_urls": [
+        "http://m.toutiao.com/group/7595870576883843599/",
+        "http://m.toutiao.com/group/7621411413282406963/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-01",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
+    },
+    {
+      "id": "disc-049",
+      "title": "血糖波动大比持续高血糖更伤血管？5招减少波动",
+      "angle": "血糖忽高忽低不稳定，危害不亚于持续高血糖。饮食不规律、运动不足、药物不当、应激反应、胰岛素抵抗是五大原因。给出可操作5招：定时定量、低GI主食、餐后运动、规律监测、情绪管理",
+      "category": "实操方法",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "medium",
+      "heat_source": "血糖波动是糖友普遍痛点，B站相关视频互动稳定",
+      "source_urls": [
+        "https://m.bohe.cn/article/toutiao/xwibtx2f0kvt012.html",
+        "https://www.bilibili.com/video/BV1QS411c7uq"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-01",
+      "data_source": "ai_reference",
+      "data_source_label": "AI参考选题（热度为AI推算，未经平台数据验证）"
+    },
+    {
+      "id": "disc-050",
+      "title": "为什么现在患糖尿病的年轻人越来越多",
+      "angle": "B站67万播放《柴知道》+19万播放《凌楚眠》：糖尿病年轻化趋势明显。20岁大学生、17岁二型糖尿病案例增多。35岁筛查警戒线+年轻人生活方式双重因素",
+      "category": "数字科普",
+      "platform": "bili,dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "B站多视频高播放，年轻化话题共鸣强",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Xg411G7kE",
+        "https://www.bilibili.com/video/BV1M142167ZZ"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-01",
+      "platform_data": {
+        "bili_play": 671981,
+        "bili_author": "柴知道"
+      },
+      "data_source": "platform_harvest",
+      "data_source_label": "B站真实平台数据"
+    },
+    {
+      "id": "disc-051",
+      "title": "《控糖革命》10个技巧：不节食、不放弃甜食也能控糖",
+      "angle": "《控糖革命》书籍热度持续，B站4万+播放精读视频。10个控糖技巧：餐前喝醋、先吃蔬菜、加纤维、饭后走动等。轻量科普类选题，适合入门级受众",
+      "category": "饮食指南",
+      "platform": "bili,xhs,dy",
+      "duration": "30-45s",
+      "heat": "medium",
+      "heat_source": "B站书籍精读视频4万播放，控糖+轻量生活方式结合",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV12z5e6yEwF",
+        "https://www.bilibili.com/video/BV1fxDzBvEt7"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-01",
+      "platform_data": {
+        "bili_play": 41302,
+        "bili_author": "灯页书屋"
+      },
+      "data_source": "platform_harvest",
+      "data_source_label": "B站真实平台数据"
     }
   ]
 }
