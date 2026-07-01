@@ -1,0 +1,203 @@
+<!-- 仅本地使用，不随 GitHub Pages 部署 -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>蝉妈妈手动补录 · 本地表单</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --bg2: #1a1d27;
+  --bg3: #232735;
+  --ink: #e8eaed;
+  --muted: #8b8fa3;
+  --accent: #00d4aa;
+  --accent2: #ff6b6b;
+  --rule: #2a2d3a;
+  --radius: 10px;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: -apple-system, 'Segoe UI', 'Noto Sans CJK SC', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+.container { max-width: 1100px; margin: 0 auto; padding: 24px 20px; }
+.header { margin-bottom: 20px; padding-bottom: 16px; border-bottom: 1px solid var(--rule); }
+.header h1 { font-size: 22px; color: var(--accent); margin-bottom: 6px; }
+.header p { font-size: 13px; color: var(--muted); }
+.local-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 12px;
+  background: rgba(255,107,107,0.15);
+  color: var(--accent2);
+  margin-bottom: 10px;
+}
+.panel {
+  background: var(--bg2);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.panel h3 { font-size: 16px; margin-bottom: 10px; }
+.research-table { width: 100%; font-size: 12px; border-collapse: collapse; }
+.research-table th, .research-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid var(--rule);
+}
+.research-table th { color: var(--muted); font-weight: 500; }
+.research-table input, .research-table select {
+  background: var(--bg3);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  width: 100%;
+}
+.research-actions { display: flex; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.research-actions button {
+  padding: 7px 14px;
+  background: var(--bg3);
+  border: 1px solid var(--rule);
+  color: var(--ink);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+.research-actions button:hover { border-color: var(--accent); }
+.research-actions button.primary {
+  background: linear-gradient(135deg, var(--accent), #00b894);
+  border: none;
+  color: var(--bg);
+  font-weight: 600;
+}
+.back-link { font-size: 12px; margin-top: 16px; }
+.back-link a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="local-badge">仅本地 · 不发布线上</div>
+    <h1>蝉妈妈手动补录</h1>
+    <p>数据保存在浏览器 localStorage。可导出 CSV 粘贴到飞书多维表格。日常选题请用自动采集 → 精选日报 → <a href="../script-generator.html" style="color:var(--accent)">口播创作台</a>。</p>
+  </div>
+  <div class="panel">
+    <h3>调研记录表</h3>
+    <p style="font-size:13px;color:var(--muted);margin-bottom:12px">
+      将蝉妈妈搜索到的爆款视频数据填入下表。
+      <button onclick="copyKeywords()" style="background:none;border:1px solid var(--accent);color:var(--accent);padding:3px 10px;border-radius:4px;cursor:pointer;font-size:12px;margin-left:8px">复制全部关键词</button>
+    </p>
+    <div id="keyword-list" style="margin-bottom:12px"></div>
+    <div style="overflow-x:auto">
+      <table class="research-table">
+        <thead>
+          <tr>
+            <th>#</th><th>视频标题</th><th>平台</th><th>关键词</th>
+            <th>点赞</th><th>收藏</th><th>评论</th>
+            <th>达人</th><th>热度</th><th></th>
+          </tr>
+        </thead>
+        <tbody id="research-tbody"></tbody>
+      </table>
+    </div>
+    <div class="research-actions">
+      <button onclick="addResearchRow()">+ 新增行</button>
+      <button onclick="copyResearchCSV()" class="primary">复制 CSV</button>
+      <button onclick="exportResearchJSON()">导出 JSON</button>
+      <button onclick="clearResearchRows()" style="color:var(--accent2);border-color:var(--accent2)">清空</button>
+    </div>
+  </div>
+  <p class="back-link"><a href="../script-generator.html">← 返回口播创作台</a> · <a href="../../index.html">工具箱首页</a></p>
+</div>
+<script>
+const RESEARCH_KEYWORDS=[
+  "血糖","控糖","糖尿病","降血糖","血糖仪","糖化血红蛋白",
+  "低血糖","胰岛素抵抗","GI值","控糖饮食","空腹血糖","餐后血糖",
+  "血糖高","血糖正常值","糖前期","二甲双胍","动态血糖仪",
+  "控糖零食","升糖","血糖波动"
+];
+
+function renderResearch(){
+  const kl=document.getElementById("keyword-list");
+  kl.innerHTML=RESEARCH_KEYWORDS.map(k=>`<span style="display:inline-block;background:var(--bg3);color:var(--accent);padding:3px 10px;border-radius:12px;margin:3px;font-size:12px">${k}</span>`).join("");
+  const saved=JSON.parse(localStorage.getItem("bloodsugar_research")||"[]");
+  const tbody=document.getElementById("research-tbody");
+  tbody.innerHTML="";
+  saved.forEach((row,i)=>appendResearchRow(row,i+1,false));
+  if(saved.length===0) addResearchRow();
+}
+
+function appendResearchRow(data,idx,save){
+  const tbody=document.getElementById("research-tbody");
+  const tr=document.createElement("tr");
+  tr.innerHTML=`
+    <td style="padding:6px;color:var(--muted)">${idx||tbody.children.length+1}</td>
+    <td style="padding:6px"><input type="text" value="${data.title||""}" placeholder="视频标题"></td>
+    <td style="padding:6px"><select><option ${data.platform==="dy"?"selected":""} value="dy">抖音</option><option ${data.platform==="xhs"?"selected":""} value="xhs">小红书</option><option ${data.platform==="bili"?"selected":""} value="bili">B站</option></select></td>
+    <td style="padding:6px"><input type="text" value="${data.keyword||""}" placeholder="关键词"></td>
+    <td style="padding:6px"><input type="text" value="${data.likes||""}" placeholder="点赞" style="width:60px"></td>
+    <td style="padding:6px"><input type="text" value="${data.saves||""}" placeholder="收藏" style="width:60px"></td>
+    <td style="padding:6px"><input type="text" value="${data.comments||""}" placeholder="评论" style="width:60px"></td>
+    <td style="padding:6px"><input type="text" value="${data.author||""}" placeholder="达人"></td>
+    <td style="padding:6px"><select><option value="">-</option><option ${data.heat==="hot"?"selected":""} value="hot">爆款</option><option ${data.heat==="warm"?"selected":""} value="warm">上升</option><option ${data.heat==="steady"?"selected":""} value="steady">常青</option></select></td>
+    <td style="padding:6px"><button onclick="removeResearchRow(this)" style="background:none;border:1px solid var(--accent2);color:var(--accent2);border-radius:4px;padding:2px 6px;font-size:11px;cursor:pointer">删</button></td>
+  `;
+  tbody.appendChild(tr);
+}
+
+function addResearchRow(){ appendResearchRow({},null,true); autoSaveResearch(); }
+function removeResearchRow(btn){ btn.closest("tr").remove(); renumberResearch(); autoSaveResearch(); }
+function renumberResearch(){
+  document.querySelectorAll("#research-tbody tr").forEach((r,i)=>{ r.cells[0].textContent=i+1; });
+}
+function getResearchData(){
+  return Array.from(document.querySelectorAll("#research-tbody tr")).map(r=>{
+    const inputs=r.querySelectorAll("input,select");
+    return { title:inputs[0].value, platform:inputs[1].value, keyword:inputs[2].value, likes:inputs[3].value, saves:inputs[4].value, comments:inputs[5].value, author:inputs[6].value, heat:inputs[7].value };
+  });
+}
+function autoSaveResearch(){ localStorage.setItem("bloodsugar_research",JSON.stringify(getResearchData())); }
+function copyKeywords(){
+  navigator.clipboard.writeText(RESEARCH_KEYWORDS.join("\n")).then(()=>{
+    const btn=event.target; btn.textContent="已复制";
+    setTimeout(()=>btn.textContent="复制全部关键词",1500);
+  });
+}
+function copyResearchCSV(){
+  const data=getResearchData().filter(r=>r.title);
+  if(!data.length){ alert("没有数据可复制"); return; }
+  const header="序号,标题,平台,关键词,点赞,收藏,评论,达人,热度";
+  const csv=[header,...data.map((r,i)=>[i+1,r.title,r.platform,r.keyword,r.likes,r.saves,r.comments,r.author,r.heat].join(","))].join("\n");
+  navigator.clipboard.writeText(csv);
+  alert("CSV 已复制，可直接粘贴到飞书「选题跟踪表」");
+}
+function clearResearchRows(){
+  if(!confirm("确定清空全部录入数据？")) return;
+  document.getElementById("research-tbody").innerHTML="";
+  localStorage.removeItem("bloodsugar_research");
+  addResearchRow();
+}
+function exportResearchJSON(){
+  const data=getResearchData().filter(r=>r.title);
+  if(!data.length){ alert("没有数据可导出"); return; }
+  const json=JSON.stringify({date:new Date().toISOString().slice(0,10),items:data},null,2);
+  const blob=new Blob([json],{type:"application/json"});
+  const a=document.createElement("a");
+  a.href=URL.createObjectURL(blob);
+  a.download="research-"+new Date().toISOString().slice(0,10)+".json";
+  a.click();
+}
+document.addEventListener("input",e=>{ if(e.target.closest("#research-tbody")) autoSaveResearch(); });
+renderResearch();
+</script>
+</body>
+</html>

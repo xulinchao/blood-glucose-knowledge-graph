@@ -17,6 +17,7 @@
   let foodsCache = null;
   let knowledgeCache = null;
   let harvestCache = null;
+  let briefCache = null;
 
   function norm(text) {
     return (text || "").replace(/\s+/g, "");
@@ -56,6 +57,24 @@
     if (!res.ok) return null;
     harvestCache = await res.json();
     return harvestCache;
+  }
+
+  async function loadLatestBrief() {
+    if (briefCache) return briefCache;
+    let pointer = null;
+    try {
+      const res = await fetch("../data/exports/latest-brief.json");
+      if (res.ok) pointer = await res.json();
+    } catch (e) {
+      /* ignore */
+    }
+    const path = pointer?.path
+      ? `../data/exports/${pointer.path}`
+      : `../data/exports/daily-brief-${new Date().toISOString().slice(0, 10)}.json`;
+    const res = await fetch(path);
+    if (!res.ok) return null;
+    briefCache = await res.json();
+    return briefCache;
   }
 
   function foodVariants(name) {
@@ -663,6 +682,7 @@
     loadFoods,
     loadKnowledgeTopics,
     loadLatestHarvest,
+    loadLatestBrief,
     enrichDataRef,
     resolveWriteMode,
     buildVerifyChecklist,

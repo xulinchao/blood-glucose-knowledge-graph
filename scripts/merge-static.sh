@@ -25,7 +25,18 @@ mkdir -p _site
 mv public _site/notes
 
 copy_file index.html _site/index.html
-copy_dir site _site/site
+mkdir -p _site/site
+for entry in site/*; do
+  base="$(basename "$entry")"
+  if [ "$base" = "local" ]; then
+    continue
+  fi
+  if [ -d "$entry" ]; then
+    copy_dir "$entry" "_site/site/$base"
+  else
+    copy_file "$entry" "_site/site/$base"
+  fi
+done
 copy_dir data _site/data
 copy_dir reports _site/reports
 copy_dir research-daily _site/research-daily

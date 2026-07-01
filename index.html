@@ -143,6 +143,37 @@ body {
 .legend-monitor { background: rgba(108,140,255,0.15); color: var(--accent4); }
 .legend-harvest { background: rgba(255,217,61,0.12); color: var(--accent3); }
 
+/* Today strip */
+.today-strip {
+  background: linear-gradient(135deg, rgba(0,212,170,0.08), rgba(108,140,255,0.08));
+  border: 1px solid var(--rule);
+  border-radius: var(--radius);
+  padding: 18px 22px;
+  margin-bottom: 8px;
+}
+.today-strip-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.today-strip-label { font-size: 12px; color: var(--accent); font-weight: 700; margin-bottom: 4px; }
+.today-strip-meta { font-size: 14px; color: var(--ink); }
+.today-strip-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.today-cta {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 0.2s;
+}
+.today-cta.primary { background: var(--accent); color: var(--bg); }
+.today-cta.secondary { border: 1px solid var(--rule); color: var(--muted); }
+.today-cta:hover { opacity: 0.9; }
+
 /* Report list */
 .report-list {
   display: flex;
@@ -233,15 +264,28 @@ body {
   <div class="hero">
     <div class="badge">AIGC CONTENT TOOLBOX</div>
     <h1>血糖知识图谱</h1>
-    <p>面向血糖/控糖领域的 AIGC 内容创作工具箱 — 选题发现 · 脚本生成 · Prompt 设计 · 日报监控</p>
+    <p>面向血糖/控糖领域的 AIGC 内容创作工具箱 — 精选日报 · 口播写稿 · Prompt 配图</p>
+  </div>
+
+  <div id="today-strip" class="today-strip" style="display:none">
+    <div class="today-strip-inner">
+      <div>
+        <div class="today-strip-label">今日创作</div>
+        <div class="today-strip-meta" id="today-meta">加载中…</div>
+      </div>
+      <div class="today-strip-actions">
+        <a href="site/script-generator.html" class="today-cta primary">打开口播创作台</a>
+        <a href="#" id="today-brief-link" class="today-cta secondary">精选日报全文</a>
+      </div>
+    </div>
   </div>
 
   <div class="cards">
-    <a href="notes/" class="card">
-      <div class="card-icon">📝</div>
-      <h3>知识笔记</h3>
-      <p>Obsidian / Markdown 笔记 · 双链 · 全文搜索 · 关系图谱 · 项目文档与监控日报</p>
-      <span class="card-tag tag-report">Quartz 笔记站</span>
+    <a href="site/script-generator.html" class="card">
+      <div class="card-icon">🎬</div>
+      <h3>口播创作台</h3>
+      <p>今日精选日报驱动选题 · 种子库补充 · Gate 分权 · 一键生成抖音/小红书/B站口播文案</p>
+      <span class="card-tag tag-tool">主工作流</span>
     </a>
 
     <a href="site/prompt-generator.html" class="card">
@@ -251,11 +295,11 @@ body {
       <span class="card-tag tag-tool">图像生成工具</span>
     </a>
 
-    <a href="site/script-generator.html" class="card">
-      <div class="card-icon">🎬</div>
-      <h3>口播稿生成器</h3>
-      <p>50+ 爆款选题库 · 选题发现引擎 · 多平台数据参考 · 一键生成抖音/小红书/B站口播文案</p>
-      <span class="card-tag tag-tool">短视频脚本</span>
+    <a href="notes/" class="card">
+      <div class="card-icon">📝</div>
+      <h3>知识笔记</h3>
+      <p>Obsidian / Markdown 笔记 · 双链 · 全文搜索 · 关系图谱 · 项目文档</p>
+      <span class="card-tag tag-report">Quartz 笔记站</span>
     </a>
 
     <a href="reports/methodology/" class="card">
@@ -274,8 +318,8 @@ body {
   </div>
 
   <div class="section">
-    <h2>📰 控糖日报</h2>
-    <p class="section-desc">每日<strong>一行</strong>：默认打开「精选」；同一行右侧可进「深度监控」「全量采集」。不再重复列出 Quartz 笔记版。</p>
+    <h2>📰 日报归档</h2>
+    <p class="section-desc">历史精选/采集/监控。日常写稿请用上方「口播创作台」，默认读当日精选 JSON。</p>
     <div class="report-legend">
       <span class="legend-brief">精选 · Agent 默认读</span>
       <span class="legend-monitor">深度监控 · TraeWork 核实</span>
@@ -304,13 +348,37 @@ body {
 
   <div class="footer">
     <p>血糖知识图谱 · AIGC 内容创作工具箱</p>
-    <p style="margin-top:4px; opacity:0.6">Built with TRAE · 首页布局 v3 · Gate 分权 · 数据仅供参考</p>
+    <p style="margin-top:4px; opacity:0.6">Built with TRAE · 首页布局 v4 · 精选驱动写稿</p>
   </div>
 
 </div>
 
 <script>
-fetch('./reports.json?v=3')
+fetch('./data/exports/latest-brief.json')
+  .then(r => r.ok ? r.json() : null)
+  .then(pointer => {
+    if (!pointer?.path) return null;
+    return fetch('./data/exports/' + pointer.path).then(r => r.ok ? r.json() : null);
+  })
+  .then(brief => {
+    if (!brief) return;
+    const strip = document.getElementById('today-strip');
+    const meta = document.getElementById('today-meta');
+    const link = document.getElementById('today-brief-link');
+    if (!strip || !meta) return;
+    const s = brief.summary || {};
+    const writable = (brief.writable_picks || []).length;
+    const hooks = (brief.hook_only || []).length;
+    meta.textContent = `${brief.report_date || '—'} · 可写 ${writable} 条` + (hooks ? ` · 钩子 ${hooks} 条` : '');
+    if (link && brief.report_date) {
+      link.href = `research-daily/${brief.report_date}-精选日报.html`;
+      link.style.display = '';
+    }
+    strip.style.display = '';
+  })
+  .catch(() => {});
+
+fetch('./reports.json?v=4')
   .then(r => r.json())
   .then(data => {
     const list = document.getElementById('report-list');
