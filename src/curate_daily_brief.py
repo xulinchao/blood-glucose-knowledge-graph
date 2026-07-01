@@ -273,6 +273,86 @@ def _timeline_sort_key(item: dict) -> tuple:
     return (passed, _writability_score(item), _heat_score(item))
 
 
+def build_claim_checks(item: dict) -> list[dict[str, Any]]:
+    """从标题/摘要拆主张并打 L2 标签（规则层禁止「已核实」）。"""
+    tier = item.get("evidence_tier") or (item.get("authenticity") or {}).get("evidence_tier", "?")
+    title = item.get("title", "")
+    snippet = item.get("snippet", "")
+    raw_claims = list(item.get("claims") or [])
+    if not raw_claims:
+        raw_claims = extract_claims(title, snippet, tier if tier != "?" else "D")
+    if snippet and len(snippet.strip()) > 24:
+        sn = snippet.strip()[:160]
+        if not any(c.get("claim") == sn for c in raw_claims if isinstance(c, dict)):
+            raw_claims.append(
+                {
+                    "claim": sn,
+                    "claim_type": "topic_discussion",
+                    "harm_risk": "low",
+                    "evidence_strength": "low",
+                }
+            )
+
+    status_labels = {
+        "pending_verify": "待核实",
+        "disputed": "存疑",
+        "exaggerated": "夸大",
+        "oversimplified": "过度简化",
+        "opinion": "观点",
+    }
+
+    def infer_hint(claim_text: str, claim_type: str) -> str:
+        if re.search(r"CGM|连续血糖|传感器|市场规模", claim_text, re.I):
+            return "查原始市场报告全文（如 Business Research Insights）或 PubMed，核对口径与年份"
+        if re.search(r"CE|FDA|NMPA|获批|认证", claim_text, re.I):
+            return "可查欧盟 NANDO 数据库或 FDA/NMPA 公示，确认是否为上市批准而非临床试验"
+        if re.search(r"\d+%|\d+亿|\d+[\d.]*万|CAGR", claim_text):
+            return "须找到原始出处（DOI/报告页），核对统计范围与时间"
+        if claim_type in ("medication_claim", "drug_discussion"):
+            return "对照药品说明书；口播不得给出个体剂量"
+        if re.search(r"GI|升糖|粗粮|主食", claim_text, re.I):
+            return "前往 https://www.glycemicindex.com/ 核对具体品类"
+        if tier in ("A", "B"):
+            return "对照指南或原链接二次查证"
+        return "打开原贴核对，避免把讨论当医学结论"
+
+    def rule_status(c: dict) -> tuple[str, str]:
+        ct = c.get("claim_type", "")
+        claim_text = c.get("claim", "")
+        if ct == "food_cure_claim":
+            return "exaggerated", "食物疗效类断言，默认不可当事实"
+        if ct == "causal_claim" and tier in ("D", "E", "?"):
+            return "disputed", "因果断言来自低证据来源，宜改为「有人在讨论…」"
+        if ct == "medication_claim":
+            return "pending_verify", "用药内容须遵医嘱"
+        if re.search(r"百分百|所有|一定|根治|治愈|永不", claim_text):
+            return "exaggerated", "含绝对化表述"
+        if re.search(r"\d+%|\d+亿|\d+[\d.]*万", claim_text):
+            return "pending_verify", "含具体数字，写稿前须回源"
+        if tier in ("D", "E", "?"):
+            return "opinion", "UGC 讨论，宜作话题钩子"
+        return "pending_verify", "写稿前建议核对原贴与权威来源"
+
+    checks: list[dict[str, Any]] = []
+    for c in raw_claims[:6]:
+        if not isinstance(c, dict):
+            continue
+        text = (c.get("claim") or "").strip()
+        if not text:
+            continue
+        status, note = rule_status(c)
+        checks.append(
+            {
+                "text": text,
+                "status": status,
+                "status_label": status_labels[status],
+                "note": note,
+                "verify_hint": infer_hint(text, c.get("claim_type", "")),
+            }
+        )
+    return checks
+
+
 def build_rule_deep_analysis(item: dict) -> dict[str, Any]:
     """规则层深度解读（无 AI），schema 对齐 discovered-topics.deep_analysis。"""
     gate = item.get("gate") or {}
@@ -347,6 +427,7 @@ def build_rule_deep_analysis(item: dict) -> dict[str, Any]:
 
     return {
         "credibility": credibility,
+        "claim_checks": build_claim_checks(item),
         "verification_steps": steps,
         "script_angles": {
             "hook": hook,

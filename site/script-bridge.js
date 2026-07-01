@@ -51,6 +51,83 @@
     return null;
   }
 
+  function buildClaimChecks(item) {
+    const tier = item.evidence_tier || "?";
+    const statusLabels = {
+      pending_verify: "待核实",
+      disputed: "存疑",
+      exaggerated: "夸大",
+      oversimplified: "过度简化",
+      opinion: "观点",
+    };
+    const badgeStyle = {
+      pending_verify: "background:rgba(255,217,61,0.15);color:#ffd93d",
+      disputed: "background:rgba(255,107,107,0.12);color:#ff6b6b",
+      exaggerated: "background:rgba(255,107,107,0.12);color:#ff6b6b",
+      oversimplified: "background:rgba(255,107,107,0.12);color:#ff6b6b",
+      opinion: "background:rgba(108,140,255,0.15);color:#6c8cff",
+      verified: "background:rgba(0,212,170,0.15);color:#00d4aa",
+    };
+
+    function inferHint(text, claimType) {
+      if (/CGM|连续血糖|传感器|市场规模/i.test(text)) {
+        return "查原始市场报告全文或 PubMed，核对口径与年份";
+      }
+      if (/CE|FDA|NMPA|获批|认证/i.test(text)) {
+        return "可查欧盟 NANDO 或 FDA/NMPA 公示，区分临床试验与上市批准";
+      }
+      if (/\d+%|\d+亿|\d+[\d.]*万|CAGR/i.test(text)) {
+        return "须找到原始出处（DOI/报告页），核对统计范围与时间";
+      }
+      if (claimType === "medication_claim" || claimType === "drug_discussion") {
+        return "对照药品说明书；口播不得给出个体剂量";
+      }
+      if (/GI|升糖|粗粮|主食/i.test(text)) {
+        return "前往 https://www.glycemicindex.com/ 核对具体品类";
+      }
+      if (tier === "A" || tier === "B") {
+        return "对照指南或原链接二次查证";
+      }
+      return "打开原贴核对，避免把讨论当医学结论";
+    }
+
+    function ruleStatus(c) {
+      const ct = c.claim_type || "";
+      const text = c.claim || "";
+      if (ct === "food_cure_claim") return ["exaggerated", "食物疗效类断言，默认不可当事实"];
+      if (ct === "causal_claim" && (tier === "D" || tier === "E" || tier === "?")) {
+        return ["disputed", "因果断言来自低证据来源，宜改为「有人在讨论…」"];
+      }
+      if (ct === "medication_claim") return ["pending_verify", "用药内容须遵医嘱"];
+      if (/百分百|所有|一定|根治|治愈|永不/.test(text)) return ["exaggerated", "含绝对化表述"];
+      if (/\d+%|\d+亿|\d+[\d.]*万/.test(text)) return ["pending_verify", "含具体数字，写稿前须回源"];
+      if (tier === "D" || tier === "E" || tier === "?") return ["opinion", "UGC 讨论，宜作话题钩子"];
+      return ["pending_verify", "写稿前建议核对原贴与权威来源"];
+    }
+
+    let raw = (item.claims || []).slice();
+    if (!raw.length && item.title) {
+      raw = [{ claim: item.title, claim_type: "topic_discussion", harm_risk: "low" }];
+    }
+    const sn = (item.snippet || "").trim();
+    if (sn.length > 24 && !raw.some((c) => c && c.claim === sn)) {
+      raw.push({ claim: sn.slice(0, 160), claim_type: "topic_discussion", harm_risk: "low" });
+    }
+
+    return raw.slice(0, 6).map((c) => {
+      if (!c || !c.claim) return null;
+      const [status, note] = ruleStatus(c);
+      return {
+        text: c.claim,
+        status,
+        status_label: statusLabels[status] || status,
+        note,
+        verify_hint: inferHint(c.claim, c.claim_type || ""),
+        _badgeStyle: badgeStyle[status] || badgeStyle.pending_verify,
+      };
+    }).filter(Boolean);
+  }
+
   function buildDeepAnalysisFromBriefItem(item) {
     const gate = item.gate || item.writing_safety || {};
     const editorial = item.editorial || {};
@@ -114,6 +191,7 @@
 
     return {
       credibility,
+      claim_checks: buildClaimChecks(item),
       verification_steps: steps,
       script_angles: { hook, key_points: keyPoints, caution },
       trend_context: trend,
@@ -122,23 +200,40 @@
     };
   }
 
+  function mergeClaimChecks(ruleChecks, storedChecks) {
+    if (!storedChecks || !storedChecks.length) return ruleChecks || [];
+    if (!ruleChecks || !ruleChecks.length) return storedChecks;
+    const out = [];
+    const used = new Set();
+    storedChecks.forEach((sc) => {
+      out.push(sc);
+      used.add((sc.text || "").slice(0, 40));
+    });
+    ruleChecks.forEach((rc) => {
+      const key = (rc.text || "").slice(0, 40);
+      if (!used.has(key)) out.push(rc);
+    });
+    return out.slice(0, 8);
+  }
+
   async function resolveDeepAnalysis(item) {
     await loadDiscoveredTopics();
     const stored = findStoredDeepAnalysis(item.url, item.title);
-    if (stored && stored._source !== "rule_engine") {
-      return { ...stored, _source: stored._source || "agent_or_manual", _ai: stored._ai !== false };
-    }
     const rule = buildDeepAnalysisFromBriefItem(item);
-    if (stored && stored._source === "rule_engine") return rule;
-    if (stored) {
+    if (stored && stored._source !== "rule_engine") {
       return {
         ...rule,
         ...stored,
+        claim_checks: mergeClaimChecks(rule.claim_checks, stored.claim_checks),
         script_angles: { ...rule.script_angles, ...(stored.script_angles || {}) },
-        verification_steps: [
-          ...(stored.verification_steps || []),
-          ...(rule.verification_steps || []),
-        ].filter((v, i, a) => a.indexOf(v) === i),
+        _source: stored._source || "agent_or_manual",
+        _ai: stored._ai !== false,
+      };
+    }
+    if (stored && stored.claim_checks && stored.claim_checks.length) {
+      return {
+        ...rule,
+        claim_checks: mergeClaimChecks(rule.claim_checks, stored.claim_checks),
         _source: "agent_or_manual",
         _ai: false,
       };
@@ -154,13 +249,36 @@
       .replace(/"/g, "&quot;");
   }
 
+  function claimBadgeStyle(status) {
+    const map = {
+      pending_verify: "background:rgba(255,217,61,0.15);color:#ffd93d",
+      disputed: "background:rgba(255,107,107,0.12);color:#ff6b6b",
+      exaggerated: "background:rgba(255,107,107,0.12);color:#ff6b6b",
+      oversimplified: "background:rgba(255,107,107,0.12);color:#ff6b6b",
+      opinion: "background:rgba(108,140,255,0.15);color:#6c8cff",
+      verified: "background:rgba(0,212,170,0.15);color:#00d4aa",
+    };
+    return map[status] || map.pending_verify;
+  }
+
   function renderDeepAnalysisModalHtml(title, analysis) {
     const da = analysis || {};
     const sa = da.script_angles || {};
     const isRule = da._source === "rule_engine";
     const badge = isRule
-      ? '<span style="font-size:10px;padding:2px 8px;border-radius:4px;background:rgba(255,217,61,0.15);color:var(--accent3)">规则解读 · 无 AI</span>'
+      ? '<span style="font-size:10px;padding:2px 8px;border-radius:4px;background:rgba(255,217,61,0.15);color:var(--accent3)">规则解读 · 无 AI · 不标「已核实」</span>'
       : '<span style="font-size:10px;padding:2px 8px;border-radius:4px;background:rgba(0,212,170,0.15);color:var(--accent)">Agent/人工增强</span>';
+    const claimHtml = (da.claim_checks || [])
+      .map((c) => {
+        const st = claimBadgeStyle(c.status);
+        return `<li style="margin-bottom:10px;line-height:1.55">
+          <span>${escModal(c.text)}</span>
+          <span style="font-size:10px;font-weight:700;padding:1px 7px;border-radius:4px;margin-left:6px;${st}">${escModal(c.status_label || c.status)}</span>
+          ${c.note ? `<div style="font-size:11px;color:var(--muted);margin-top:4px">${escModal(c.note)}</div>` : ""}
+          ${c.verify_hint ? `<div style="font-size:11px;color:var(--accent4);margin-top:3px">🔍 ${escModal(c.verify_hint)}</div>` : ""}
+        </li>`;
+      })
+      .join("");
     const steps = (da.verification_steps || [])
       .map((s) => `<li>${escModal(s)}</li>`)
       .join("");
@@ -169,16 +287,17 @@
       .join("");
     return `
       <div style="position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.6);z-index:999;display:flex;align-items:center;justify-content:center" id="deep-analysis-overlay">
-        <div style="background:var(--bg);border:1px solid var(--rule);border-radius:12px;max-width:560px;width:92%;max-height:80vh;overflow:auto;padding:20px">
+        <div style="background:var(--bg);border:1px solid var(--rule);border-radius:12px;max-width:600px;width:92%;max-height:85vh;overflow:auto;padding:20px">
           <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;margin-bottom:12px">
             <div>
-              <h3 style="font-size:15px;margin:0 0 6px">${escModal(title)}</h3>
+              <h3 style="font-size:15px;margin:0 0 6px;line-height:1.45">${escModal(title)}</h3>
               ${badge}
             </div>
             <button type="button" id="deep-analysis-close-btn" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:18px">×</button>
           </div>
-          ${da.credibility ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:var(--muted)">可信度</span><div style="font-size:13px;margin-top:4px;line-height:1.6">${escModal(da.credibility)}</div></div>` : ""}
-          ${steps ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:var(--muted)">自行检索建议</span><ul style="font-size:12px;margin:4px 0 0 16px;line-height:1.6">${steps}</ul></div>` : ""}
+          ${da.credibility ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:var(--muted)">整体可信度</span><div style="font-size:13px;margin-top:4px;line-height:1.6">${escModal(da.credibility)}</div></div>` : ""}
+          ${claimHtml ? `<div style="margin-bottom:14px;padding:12px;background:var(--bg2);border:1px solid var(--rule);border-radius:8px"><span style="font-size:11px;color:var(--muted)">原贴主张核验</span><ul style="font-size:12px;margin:8px 0 0;padding-left:18px;list-style:disc">${claimHtml}</ul></div>` : ""}
+          ${steps ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:var(--muted)">自行检索建议（通用）</span><ul style="font-size:12px;margin:4px 0 0 16px;line-height:1.6">${steps}</ul></div>` : ""}
           ${sa.hook || points || sa.caution ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:var(--muted)">脚本建议</span>
             ${sa.hook ? `<div style="font-size:12px;margin-top:4px"><strong>Hook:</strong> ${escModal(sa.hook)}</div>` : ""}
             ${points ? `<div style="font-size:12px;margin-top:4px"><strong>要点:</strong><ul style="margin:4px 0 0 16px">${points}</ul></div>` : ""}
@@ -859,6 +978,7 @@
     loadLatestBrief,
     loadDiscoveredTopics,
     buildDeepAnalysisFromBriefItem,
+    buildClaimChecks,
     resolveDeepAnalysis,
     renderDeepAnalysisModalHtml,
     enrichDataRef,

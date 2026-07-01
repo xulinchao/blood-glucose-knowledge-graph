@@ -11,6 +11,7 @@ from curate_daily_brief import (  # noqa: E402
     _timeline_sort_key,
     _ensure_gate_fields,
     build_rule_deep_analysis,
+    build_claim_checks,
 )
 
 
@@ -116,6 +117,17 @@ class TestCurateDailyBrief(unittest.TestCase):
         self.assertFalse(da.get("_ai"))
         self.assertIn("verification_steps", da)
         self.assertNotIn("已核实", da.get("credibility", ""))
+        checks = da.get("claim_checks") or []
+        self.assertTrue(checks)
+        self.assertNotIn("verified", [c.get("status") for c in checks])
+
+    def test_claim_checks_flags_numbers(self):
+        item = _item("2026年全球CGM传感器市场规模达82亿美元", "exa", tier="C")
+        checks = build_claim_checks(item)
+        self.assertTrue(any(c.get("status") == "pending_verify" for c in checks))
+        self.assertTrue(
+            any("PubMed" in (c.get("verify_hint") or "") or "原始" in (c.get("verify_hint") or "") for c in checks)
+        )
 
 
 if __name__ == "__main__":

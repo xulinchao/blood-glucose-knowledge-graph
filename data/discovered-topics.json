@@ -793,6 +793,24 @@
       "discovered_date": "2026-06-30",
       "deep_analysis": {
         "credibility": "已核实 — 央视网2026年5月科普文章+河北疾控中心数据双重背书，GI数值与悉尼大学数据库范围一致。",
+        "_source": "agent_or_manual",
+        "_ai": false,
+        "claim_checks": [
+          {
+            "text": "大黄米GI 111、糯小米GI 108、黑糯玉米GI 106、血糯米GI 92",
+            "status": "verified",
+            "status_label": "已核实",
+            "note": "GI数值与悉尼大学数据库范围一致",
+            "verify_hint": "前往 glycemicindex.com 搜索 millet / waxy corn / black glutinous rice"
+          },
+          {
+            "text": "预糊化即食杂粮代餐升糖可能快于白米饭",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "加工方式影响GI，不同品牌差异大",
+            "verify_hint": "核对具体品牌配料表与GI测定条件"
+          }
+        ],
         "verification_steps": [
           "验证GI数值：前往悉尼大学GI数据库 glycemicindex.com 搜索 'millet' 'waxy corn' 'black glutinous rice' 核对具体数值",
           "验证央视网原文：在央视网搜索 '粗粮 GI' 或 '伪粗粮' 找到2026年5月科普文章",

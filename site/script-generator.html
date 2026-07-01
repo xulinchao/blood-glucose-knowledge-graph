@@ -1017,38 +1017,30 @@ function updateCurrentTopicPanel(title) {
 async function showDeepAnalysisBrief(key) {
   const item = (window._briefByKey || {})[key];
   if (!item || typeof ScriptBridge === "undefined") return;
-  let analysis;
-  if (item.deep_analysis && item.deep_analysis._source && item.deep_analysis._source !== "rule_engine") {
-    analysis = item.deep_analysis;
-  } else {
-    analysis = await ScriptBridge.resolveDeepAnalysis(item);
-  }
+  const analysis = await ScriptBridge.resolveDeepAnalysis(item);
   openDeepAnalysisModal(item.title, analysis, () => quickGenerateFromBrief(key));
 }
 
 async function showDeepAnalysisForTopic(id) {
   const t = ALL_TOPICS.find((x) => String(x.id) === String(id));
   if (!t || typeof ScriptBridge === "undefined") return;
-  let analysis;
-  if (t.deep_analysis && t.deep_analysis._source && t.deep_analysis._source !== "rule_engine") {
-    analysis = t.deep_analysis;
-  } else {
-    const item = {
-      title: t.title,
-      url: (t.source_urls && t.source_urls[0]) || "",
-      author: t.platform_data?.author || "",
-      category: t.catName,
-      snippet: t.angle || t.note || "",
-      evidence_tier: t.platform_data?.evidence_tier,
-      use_as: t.platform_data?.use_as,
-      editorial: {},
-      gate: {
-        use_as: t.platform_data?.use_as || "verify_before_script",
-        passed: t.script_status !== "blocked",
-      },
-    };
-    analysis = await ScriptBridge.resolveDeepAnalysis(item);
-  }
+  const item = {
+    title: t.title,
+    url: (t.source_urls && t.source_urls[0]) || "",
+    author: t.platform_data?.author || "",
+    category: t.catName,
+    snippet: t.angle || t.note || "",
+    evidence_tier: t.platform_data?.evidence_tier,
+    use_as: t.platform_data?.use_as,
+    claims: t.claims || [],
+    editorial: t.editorial || {},
+    deep_analysis: t.deep_analysis,
+    gate: t.platform_data?.gate || {
+      use_as: t.platform_data?.use_as || "verify_before_script",
+      passed: t.script_status !== "blocked",
+    },
+  };
+  const analysis = await ScriptBridge.resolveDeepAnalysis(item);
   openDeepAnalysisModal(t.title, analysis, () => quickGenerate(id));
 }
 
