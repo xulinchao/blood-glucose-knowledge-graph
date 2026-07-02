@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>血糖控糖精选日报 · 2026-07-02</title>
+
+<style>
+
+:root { --bg:#0f1117; --bg2:#1a1d27; --ink:#e8eaed; --muted:#8b8fa3; --accent:#00d4aa; --accent2:#ff6b6b; --accent3:#ffd93d; --accent4:#6c8cff; --rule:#2a2d3a; }
+
+* { box-sizing:border-box; margin:0; padding:0; }
+
+body { font-family:-apple-system,'Segoe UI','Noto Sans CJK SC',sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; }
+
+.wrap { max-width:920px; margin:0 auto; padding:28px 18px 48px; }
+
+.hero { text-align:center; padding-bottom:24px; border-bottom:1px solid var(--rule); margin-bottom:24px; }
+
+.hero .tag { display:inline-block; background:linear-gradient(135deg,var(--accent),var(--accent4)); color:var(--bg); font-size:11px; font-weight:700; padding:4px 12px; border-radius:20px; margin-bottom:10px; }
+
+.hero h1 { font-size:24px; margin-bottom:6px; }
+
+.hero p { color:var(--muted); font-size:13px; }
+
+.stats { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:28px; }
+
+.stat { background:var(--bg2); border:1px solid var(--rule); border-radius:10px; padding:10px 14px; min-width:88px; }
+
+.stat b { display:block; font-size:20px; color:var(--accent); }
+
+.stat span { font-size:11px; color:var(--muted); }
+
+h2 { font-size:16px; color:var(--accent); margin:24px 0 14px; }
+
+.tl-item { display:flex; gap:14px; margin-bottom:16px; padding-bottom:16px; border-bottom:1px solid var(--rule); }
+
+.tl-rank { flex:0 0 28px; height:28px; border-radius:50%; background:var(--bg2); border:1px solid var(--rule); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; color:var(--accent); }
+
+.tl-body h3 { font-size:15px; margin-bottom:8px; font-weight:600; }
+
+.tl-meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:6px; font-size:11px; }
+
+.plat { background:rgba(0,212,170,.12); color:var(--accent); padding:2px 8px; border-radius:6px; }
+
+.score { color:var(--accent3); font-weight:600; }
+
+.heat { color:var(--muted); }
+
+.gate-ok { color:var(--accent); font-weight:700; }
+
+.gate-no { color:var(--accent2); font-weight:700; }
+
+.use { color:var(--muted); }
+
+.badge { padding:2px 7px; border-radius:4px; font-weight:700; }
+
+.tier-a,.tier-b { background:rgba(0,212,170,.15); color:var(--accent); }
+
+.tier-c { background:rgba(108,140,255,.15); color:var(--accent4); }
+
+.tier-d,.tier-e { background:rgba(255,217,61,.12); color:var(--accent3); }
+
+.flag { background:rgba(255,107,107,.12); color:var(--accent2); padding:1px 6px; border-radius:4px; }
+
+.note { font-size:12px; color:var(--muted); margin:6px 0; }
+
+.claim-checks { font-size:12px; margin:8px 0 0; padding-left:18px; list-style:disc; }
+
+.claim-checks li { margin-bottom:6px; line-height:1.5; }
+
+.claim-tag { font-size:10px; font-weight:700; padding:1px 7px; border-radius:4px; margin-left:6px; }
+
+.claim-pending_verify { background:rgba(255,217,61,.15); color:var(--accent3); }
+
+.claim-disputed,.claim-exaggerated { background:rgba(255,107,107,.12); color:var(--accent2); }
+
+.claim-opinion { background:rgba(108,140,255,.15); color:var(--accent4); }
+
+.claim-verified { background:rgba(0,212,170,.15); color:var(--accent); }
+
+.source-preview { font-size:12px; margin:10px 0; padding:10px 12px; background:rgba(108,140,255,.06); border:1px solid rgba(108,140,255,.2); border-radius:8px; }
+
+.source-preview-title { font-weight:600; margin-bottom:6px; color:var(--accent4); }
+
+.source-kp { margin:6px 0 0 18px; padding:0; line-height:1.55; }
+
+.source-excerpt { font-size:11px; white-space:pre-wrap; margin:8px 0 0; color:var(--muted); max-height:140px; overflow:auto; }
+
+.source-note { font-size:11px; color:var(--accent3); margin:6px 0 0; }
+
+.tl-foot a { color:var(--accent4); font-size:12px; text-decoration:none; }
+
+.panel { background:var(--bg2); border:1px solid var(--rule); border-radius:10px; padding:16px; margin-bottom:14px; }
+
+.panel ul { padding-left:18px; font-size:13px; }
+
+.panel li { margin-bottom:6px; }
+
+.muted { color:var(--muted); font-size:12px; }
+
+.warn { color:var(--accent2); font-size:11px; }
+
+.agent-box { font-size:12px; color:var(--muted); }
+
+.agent-box code { color:var(--accent); font-size:11px; }
+
+.footer { text-align:center; color:var(--muted); font-size:11px; margin-top:32px; padding-top:16px; border-top:1px solid var(--rule); }
+
+</style></head><body><div class="wrap">
+
+<div class="hero">
+
+  <div class="tag">CURATED · Schema 2.0</div>
+
+  <h1>血糖 / 控糖精选日报</h1>
+
+  <p>2026-07-02 · 从 20 条采集中精选 12 条 · Gate 分权排序</p>
+
+</div>
+
+<div class="stats">
+
+  <div class="stat"><b>12</b><span>时间线</span></div>
+
+  <div class="stat"><b>2</b><span>可写稿</span></div>
+
+  <div class="stat"><b>6</b><span>仅钩子</span></div>
+
+  <div class="stat"><b>0</b><span>跨平台</span></div>
+
+  <div class="stat"><b>0</b><span>新入库</span></div>
+
+</div>
+
+<section>
+
+  <h2>时间线</h2>
+
+  <article class="tl-item">
+
+  <div class="tl-rank">1</div>
+
+  <div class="tl-body">
+
+    <h3>血糖界的四大天王：空腹血糖、餐后血糖、糖化血红蛋白、糖耐量</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">全网网页(Exa)</span>
+
+      <span class="badge tier-a">A</span>
+
+      <span class="score">可写91</span>
+
+      <span class="heat">热40</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">可引用</span>
+
+      
+
+    </div>
+
+    <p class="note">可引用来源观点，口播须加「非医疗建议」并附原链接</p>
+
+    <p class="source-preview muted">原贴内容未拉取：&lt;urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。&gt;</p>
+
+    <ul class="claim-checks"><li><span>血糖界的四大天王：空腹血糖、餐后血糖、糖化血红蛋白、糖耐量</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.nhsa.gov.cn/art/2024/9/15/art_14_13876.html" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">2</div>
+
+  <div class="tl-body">
+
+    <h3>中国糖尿病防治指南（2024版）</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">全网网页(Exa)</span>
+
+      <span class="badge tier-b">B</span>
+
+      <span class="score">可写84</span>
+
+      <span class="heat">热52</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">写稿前对照原帖/指南核实；口播避免给个体诊断</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>关于中国糖尿病防治指南(2024版)妊娠期高血糖内容的解读 中华医学会系列精选指南 2025-07-20·4154 阅读</li><li>中华医学会糖尿病学分会组织专家对原有指南进行修订，形成了《中国糖尿病防治指南（2024版）》，旨在及时传递重要进展，指导临床实践</li><li>国家基层糖尿病防治管理指南（2025） 国家基本公共卫生服务项目基层糖尿病防治管理办公室 2025-12-01·10万+ 阅读</li><li>护理视角下《中国糖尿病防治指南（2024版）》的实践解读 重庆医科大学学报 2025-07-11·3457 阅读</li><li>中国2型糖尿病防治指南（2020年版） 中华医学会糖尿病学分会（CDS） 2021-04-27·10万+ 阅读</li></ul>
+<pre class="source-excerpt">下载
+
+App
+
+
+
+专属顾问
+
+
+
+返回
+
+顶部
+
+[](https://drugs.dxy.cn/pc)
+
+首页诊疗方案临床指南药品
+
+搜索
+
+下载 App
+
+登录
+
+首页搜索结果
+
+指南摘要
+
+# 中国糖尿病防治指南（2024版）
+
+发布日期：2024-12-31
+
+制定者：中华医学会糖尿病学分会（CDS）、中华医学会系列精选指南
+
+来源：中华糖尿病杂志.2025.17(1)
+
+## 概述
+
+随着国内外糖尿病的研究取得了重要进展，诊疗新方法和新技术不断问世，相关临床研究证据持续丰富。中华医学会糖尿病学分会组织专家对原有指南进行修订，形成了《中国糖尿病防治指南（2024版）》，旨在及时传递重要进展，指导临床实践。本指南共20章，内容涵盖中国糖尿病的流行病学、诊断与分型、三级预防、筛查和评估、教育和管理、2型糖尿病综合控制目标和高血糖的治疗路径、医学营养治疗、运动治疗、高血糖的药物治疗、2型糖尿病患者的体重管理、糖尿病相关技术、急性并发症、心血管疾病及危险因素管理、糖尿病慢性并发症、儿童和青少年糖尿病、1型糖尿病、低血糖、糖尿病的特殊情况、代谢综合征和中医药防治糖尿病。本指南的发布将有助于指导和帮助临床医师对糖尿病患者进行规范化综合管理，促进行业水平提高和进步，改善患者生活质量与临床结局。
+
+登录后会员可查看
+
+## 相关版本
+
+*   中国2型糖尿病防治指南（2020年版） 中…</pre>
+<p class="muted">来源：网页正文(Jina)</p>
+</div>
+
+    <ul class="claim-checks"><li><span>中国糖尿病防治指南（2024版）</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">对照指南或原链接二次查证</small></li></ul>
+
+    <div class="tl-foot"><a href="https://drugs.dxy.cn/pc/clinicalGuidelines/pC7RJoNHj1YANrh50uWaVA==?ky=%E4%B8%AD%E5%9B%BD%E7%B3%96%E5%B0%BF%E7%97%85%E9%98%B2%E6%B2%BB%E6%8C%87%E5%8D%97%EF%BC%882024%E7%89%88%EF%BC%89" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">3</div>
+
+  <div class="tl-body">
+
+    <h3>胰岛素抵抗</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">全网网页(Exa)</span>
+
+      <span class="badge tier-b">B</span>
+
+      <span class="score">可写53</span>
+
+      <span class="heat">热52</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">写稿前对照原帖/指南核实；口播避免给个体诊断</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>这份报告特别值得关注，因为它发现主要参与脂质或碳水化合物代谢的分子的基因缺陷可以共同作用，形成一种极端的胰岛素抵抗表型，从而模拟可能导致常见胰岛素抵抗/2 型糖尿病的代谢相互作用类型</li><li>②严重胰岛素抵抗的一般特征：糖代谢异常，症状性低血糖先于高血糖出现，致出现餐后低血糖；严重病例婴幼儿期发病（AR遗传导致，Donohue综合征/RMS类型）生长障碍：线性生长障碍或加速、假性肢端肥大症、青春期前线性生长加速、软组织过度生长；</li><li>胰岛素抵抗，特别是由冠状动脉疾病 78、2 型糖尿病 79、多囊卵巢综合征 80 和脂肪肝引起的胰岛素抵抗的全人群发病率和死亡率极高，而且还在不断增长</li><li>如果胰岛能够产生足够的胰岛素代偿胰岛素抵抗，血糖可以维持正常水平；反之，如果胰岛功能不足以弥补胰岛素抵抗的缺陷，血糖就会增高并逐渐发展为糖尿病</li><li>老年人活动减少并常见中心性肥胖，很多老年人还长期服用包括噻嗪类利尿剂在内的各种药物，这些因素都会导致胰岛素抵抗，并促进 2 型糖尿病的发生 3</li></ul>
+<pre class="source-excerpt">## 基础知识
+
+## 定义
+
+### 胰岛素抵抗
+
+胰岛素抵抗（insulin resistance，IR）是胰岛素敏感性降低和（或）胰岛素反应性下降的状态 1，在临床上极为常见，胰岛素抵抗不仅是 2 型糖尿病（type 2 diabetes mellitus，T2DM）、非酒精性脂肪性肝病（nonalcoholic fatty liver disease，NAFLD）、多囊卵巢综合征（polycystic ovarian syndrome，PCOS）、动脉粥样硬化性心血管疾病（atherosclerotic cardiovascular disease，ASCVD）等慢性代谢相关性疾病的“共同土壤”，还是一些少见病和罕见病的病理生理学基础。胰岛素有多种生理作用，包括抑制肝糖异生、促进糖原和脂质合成、增加肌肉和脂肪组织摄取葡萄糖、刺激细胞增生等，胰岛素抵抗一般特指其降糖作用下降 1。
+
+### 严重胰岛素抵抗
+
+严重胰岛素抵抗普遍存在于单基因缺陷患者，大致可以分为原发性胰岛素受体异常、胰岛素信号传导异常以及脂肪组织发育缺陷或功能缺陷（脂肪营养不良）这两大类。这两种类型出现的严重胰岛素抵抗会使患者面临并发症加剧的风险，也给临床治疗带来了严峻的挑战。
+
+### 胰岛素抵抗综合征
+
+胰岛素抵抗引起的临床综合征称为胰岛素抵抗综合征 1。胰岛素抵抗综合征具有高度异质性，包含两个临床类别：一…</pre>
+<p class="muted">来源：网页正文(Jina)</p>
+</div>
+
+    <ul class="claim-checks"><li><span>胰岛素</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">对照药品说明书；口播不得给出个体剂量</small></li></ul>
+
+    <div class="tl-foot"><a href="https://drugs.dxy.cn/pc/clinicalDecision/ytHarEBDknGwD7b9THIZ-PQ?ky=t7Gc0.html" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">4</div>
+
+  <div class="tl-body">
+
+    <h3>T/CACM 1463-2023-糖尿病前期治未病干预指南-国家标准馆·国家数字标准馆</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">全网网页(Exa)</span>
+
+      <span class="badge tier-d">D</span>
+
+      <span class="score">可写48</span>
+
+      <span class="heat">热40</span>
+
+      <span class="gate-no">Gate✗</span>
+
+      <span class="use">仅钩子</span>
+
+      
+
+    </div>
+
+    <p class="note">适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」</p>
+
+    <p class="source-preview muted">原贴内容未拉取：&lt;urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。&gt;</p>
+
+    <ul class="claim-checks"><li><span>T/CACM 1463-2023-糖尿病前期治未病干预指南-国家标准馆·国家数字标准馆</span> <span class="claim-tag claim-opinion">观点</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="https://ndls.cnis.ac.cn/standard/detail/f043f488a9b0ac9ddd3d6dfa3f123bd2" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">5</div>
+
+  <div class="tl-body">
+
+    <h3>AACE糖尿病前期患者的综合治疗指南指南与共识-《中国糖尿病杂志》官方网站</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">全网网页(Exa)</span>
+
+      <span class="badge tier-d">D</span>
+
+      <span class="score">可写48</span>
+
+      <span class="heat">热40</span>
+
+      <span class="gate-no">Gate✗</span>
+
+      <span class="use">仅钩子</span>
+
+      
+
+    </div>
+
+    <p class="note">适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」</p>
+
+    <p class="source-preview muted">原贴内容未拉取：&lt;urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。&gt;</p>
+
+    <ul class="claim-checks"><li><span>AACE糖尿病前期患者的综合治疗指南指南与共识-《中国糖尿病杂志》官方网站</span> <span class="claim-tag claim-opinion">观点</span><br><small class="muted">可查欧盟 NANDO 数据库或 FDA/NMPA 公示，确认是否为上市批准而非临床试验</small></li></ul>
+
+    <div class="tl-foot"><a href="http://www.cds.org.cn/znygs/117.html" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">6</div>
+
+  <div class="tl-body">
+
+    <h3>2型糖尿病实用目标和治疗（第四版）指南与共识-《中国糖尿病杂志》官方网站</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">全网网页(Exa)</span>
+
+      <span class="badge tier-d">D</span>
+
+      <span class="score">可写48</span>
+
+      <span class="heat">热40</span>
+
+      <span class="gate-no">Gate✗</span>
+
+      <span class="use">仅钩子</span>
+
+      
+
+    </div>
+
+    <p class="note">适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」</p>
+
+    <p class="source-preview muted">原贴内容未拉取：&lt;urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。&gt;</p>
+
+    <ul class="claim-checks"><li><span>2型糖尿病实用目标和治疗（第四版）指南与共识-《中国糖尿病杂志》官方网站</span> <span class="claim-tag claim-opinion">观点</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="http://www.cds.org.cn/znygs/126.html" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">7</div>
+
+  <div class="tl-body">
+
+    <h3>中国2型糖尿病基层医疗卫生指南（2025 年版）-指南&amp;解读指南-MedSci.cn</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">全网网页(Exa)</span>
+
+      <span class="badge tier-d">D</span>
+
+      <span class="score">可写48</span>
+
+      <span class="heat">热40</span>
+
+      <span class="gate-no">Gate✗</span>
+
+      <span class="use">仅钩子</span>
+
+      
+
+    </div>
+
+    <p class="note">适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」</p>
+
+    <p class="source-preview muted">原贴内容未拉取：&lt;urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。&gt;</p>
+
+    <ul class="claim-checks"><li><span>中国2型糖尿病基层医疗卫生指南（2025 年版）-指南&amp;解读指南-MedSci.cn</span> <span class="claim-tag claim-opinion">观点</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.medsci.cn/guideline/show_article.do?id=54e5c1c00a820214" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">8</div>
+
+  <div class="tl-body">
+
+    <h3>空腹血糖正常，餐后血糖却超标，是咋回事？ - 江苏大学附属医院</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">全网网页(Exa)</span>
+
+      <span class="badge tier-d">D</span>
+
+      <span class="score">可写42</span>
+
+      <span class="heat">热52</span>
+
+      <span class="gate-no">Gate✗</span>
+
+      <span class="use">仅钩子</span>
+
+      
+
+    </div>
+
+    <p class="note">适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」</p>
+
+    <p class="source-preview muted">原贴内容未拉取：&lt;urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。&gt;</p>
+
+    <ul class="claim-checks"><li><span>空腹血糖正常，餐后血糖却超标，是咋回事？ - 江苏大学附属医院</span> <span class="claim-tag claim-opinion">观点</span><br><small class="muted">对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.jdfy.cn/changjianbingyufangyubaojian/12957.html" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">9</div>
+
+  <div class="tl-body">
+
+    <h3>糖尿病前期- 诊断与治疗- 妙佑医疗国际 - Mayo Clinic</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">全网网页(Exa)</span>
+
+      <span class="badge tier-d">D</span>
+
+      <span class="score">可写42</span>
+
+      <span class="heat">热40</span>
+
+      <span class="gate-no">Gate✗</span>
+
+      <span class="use">仅钩子</span>
+
+      
+
+    </div>
+
+    <p class="note">适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」</p>
+
+    <p class="source-preview muted">原贴内容未拉取：&lt;urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。&gt;</p>
+
+    <ul class="claim-checks"><li><span>糖尿病前期- 诊断与治疗- 妙佑医疗国际 - Mayo Clinic</span> <span class="claim-tag claim-opinion">观点</span><br><small class="muted">对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.mayoclinic.org/zh-hans/diseases-conditions/prediabetes/diagnosis-treatment/drc-20355284" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">10</div>
+
+  <div class="tl-body">
+
+    <h3>中国成人糖尿病前期干预的专家共识（2023版）</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">全网网页(Exa)</span>
+
+      <span class="badge tier-d">D</span>
+
+      <span class="score">可写42</span>
+
+      <span class="heat">热40</span>
+
+      <span class="gate-no">Gate✗</span>
+
+      <span class="use">仅钩子</span>
+
+      
+
+    </div>
+
+    <p class="note">适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」</p>
+
+    <p class="source-preview muted">原贴内容未拉取：&lt;urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。&gt;</p>
+
+    <ul class="claim-checks"><li><span>中国成人糖尿病前期干预的专家共识（2023版）</span> <span class="claim-tag claim-opinion">观点</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="https://bjrmyylib.yuntsg.com/ueditor/jsp/upload/file/20230919/1695130784021063093.pdf" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">11</div>
+
+  <div class="tl-body">
+
+    <h3>2型糖尿病 - 内分泌及代谢紊乱 - MSD诊疗手册专业版</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">全网网页(Exa)</span>
+
+      <span class="badge tier-d">D</span>
+
+      <span class="score">可写42</span>
+
+      <span class="heat">热40</span>
+
+      <span class="gate-no">Gate✗</span>
+
+      <span class="use">仅钩子</span>
+
+      
+
+    </div>
+
+    <p class="note">适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」</p>
+
+    <p class="source-preview muted">原贴内容未拉取：&lt;urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。&gt;</p>
+
+    <ul class="claim-checks"><li><span>2型糖尿病 - 内分泌及代谢紊乱 - MSD诊疗手册专业版</span> <span class="claim-tag claim-opinion">观点</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.msdmanuals.cn/professional/endocrine-and-metabolic-disorders/diabetes-mellitus-and-hypoglycemia/type-2-diabetes-mellitus" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">12</div>
+
+  <div class="tl-body">
+
+    <h3>《中国2型糖尿病患者餐后高血糖管理专家共识》解读_中华医学网</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">全网网页(Exa)</span>
+
+      <span class="badge tier-d">D</span>
+
+      <span class="score">可写42</span>
+
+      <span class="heat">热40</span>
+
+      <span class="gate-no">Gate✗</span>
+
+      <span class="use">仅钩子</span>
+
+      
+
+    </div>
+
+    <p class="note">适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」</p>
+
+    <p class="source-preview muted">原贴内容未拉取：&lt;urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。&gt;</p>
+
+    <ul class="claim-checks"><li><span>《中国2型糖尿病患者餐后高血糖管理专家共识》解读_中华医学网</span> <span class="claim-tag claim-opinion">观点</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="http://www.medtranslation.cn/changjianjibing/20260316/256534.html" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article>
+
+</section>
+
+<div class="panel"><h2 style="margin-top:0">可写稿选题</h2><ul><li><strong>血糖界的四大天王：空腹血糖、餐后血糖、糖化血红蛋白、糖耐量</strong> <span class='muted'>A/可引用</span></li><li><strong>中国糖尿病防治指南（2024版）</strong> <span class='muted'>B/写稿前核实</span></li></ul></div>
+
+<div class="panel"><h2 style="margin-top:0">跨平台同题</h2><ul><li class="muted">暂无多平台共振</li></ul></div>
+
+<div class="panel"><h2 style="margin-top:0">仅钩子</h2><ul><li>中国糖尿病防治指南（2024版） <span class='warn'>hook · 热52</span></li><li>空腹血糖正常，餐后血糖却超标，是咋回事？ - 江苏大学附属医院 <span class='warn'>hook · 热52</span></li><li>【规范与指南】胰岛素抵抗相关临床问题专家共识（2022版） <span class='warn'>hook · 热52</span></li><li>胰岛素抵抗的定义及临床表现 - UpToDate <span class='warn'>hook · 热52</span></li><li>胰岛素抵抗：糖尿病前期的一个不容忽视的警告信号。 | Phyathai Hospital <span class='warn'>hook · 热52</span></li><li>什么是胰岛素抵抗？妙佑医疗国际专家为您解答 <span class='warn'>hook · 热52</span></li></ul></div>
+
+<div class="panel"><h2 style="margin-top:0">Agent 待核实</h2><ul><li>中国糖尿病防治指南（2024版） — 写稿前对照原帖/指南核实；口播避免给个体诊断</li><li>中国糖尿病防治指南（2024版） — 写稿前对照原帖/指南核实；口播避免给个体诊断</li><li>胰岛素抵抗 — 写稿前对照原帖/指南核实；口播避免给个体诊断</li></ul>
+
+<div class="agent-box" style="margin-top:10px">JSON: <code>data/exports/daily-brief-2026-07-02.json</code> · Markdown: <code>research-daily/2026-07-02-精选日报.md</code></div></div>
+
+<div class="footer">个体情况请咨询医生，不构成医疗建议 · 维护者非执业医生</div>
+
+</div></body></html>

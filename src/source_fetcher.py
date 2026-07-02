@@ -152,10 +152,155 @@ def _subtitle_json_to_text(sub_json: dict) -> str:
     return "\n".join(merged)
 
 
+def _find_cli(name: str, version_args: list[str] | None = None) -> list[str] | None:
+    version_args = version_args or ["--version"]
+    for cmd in ([name], [f"{name}.exe"]):
+        try:
+            subprocess.run(
+                cmd + version_args,
+                capture_output=True,
+                timeout=15,
+                check=True,
+            )
+            return cmd
+        except (subprocess.CalledProcessError, FileNotFoundError, subprocess.TimeoutExpired):
+            continue
+    return None
+
+
+def _is_page_noise_point(point: str) -> bool:
+    p = (point or "").strip()
+    if not p or p.startswith("来源视频标题："):
+        return True
+    if re.search(r"BV[0-9A-Za-z]{10}|spm_id_from|router-related|recommend_more", p):
+        return True
+    if re.search(r"^(首页|登录|收藏|历史|投稿|关注)$", p):
+        return True
+    return False
+
+
+def assess_content_status(result: dict[str, Any]) -> str:
+    """ready=可写稿 / partial=有片段须核对 / title_only=仅标题 / error=拉取失败"""
+    if not result.get("ok"):
+        return "error"
+    transcript = (result.get("transcript") or "").strip()
+    desc = (result.get("description") or "").strip()
+    if desc in ("-", "—"):
+        desc = ""
+    raw = (result.get("raw_text") or "").strip()
+    kps = result.get("key_points") or []
+    real_kps = [
+        p for p in kps
+        if p and not _is_page_noise_point(str(p)) and len(str(p).strip()) >= 10
+    ]
+    src = result.get("sources_used") or []
+    has_transcript = len(transcript) >= 120
+    has_real_desc = len(desc) >= 40
+    jina_only = "页面正文(Jina)" in src and not has_transcript and not has_real_desc
+
+    if has_transcript or (has_real_desc and len(real_kps) >= 2):
+        return "ready"
+    if has_transcript or len(real_kps) >= 3 or len(transcript) >= 60:
+        return "ready"
+    if transcript or len(real_kps) >= 1 or has_real_desc or (not jina_only and len(raw) >= 200):
+        return "partial"
+    return "title_only"
+
+
+def fetch_bilibili_bili_cli(bvid: str, url: str) -> dict[str, Any] | None:
+    """Agent Reach 推荐：bili-cli 读字幕/评论/AI 摘要（优先于裸 API）。"""
+    cmd = _find_cli("bili")
+    if not cmd:
+        return None
+    try:
+        proc = subprocess.run(
+            cmd + ["video", bvid, "--json", "--subtitle", "--comments", "--ai"],
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            errors="replace",
+            timeout=50,
+        )
+        if proc.returncode != 0 or not (proc.stdout or "").strip():
+            return None
+        payload = json.loads(proc.stdout)
+        data = payload.get("data") or payload
+        video = data.get("video") or {}
+        subtitle = data.get("subtitle") or {}
+        transcript = (subtitle.get("text") or "").strip()
+        if not transcript and subtitle.get("items"):
+            transcript = _subtitle_json_to_text({"body": subtitle.get("items")})
+        desc = (video.get("description") or "").strip()
+        if desc in ("-", "—", ""):
+            desc = ""
+        ai_summary = (data.get("ai_summary") or "").strip()
+        comments = data.get("comments") or []
+        comment_lines = [
+            (c.get("content") or c.get("message") or "").strip()
+            for c in comments[:8]
+            if (c.get("content") or c.get("message") or "").strip()
+        ]
+        chunks: list[str] = []
+        sources_used: list[str] = []
+        if transcript:
+            chunks.append(transcript)
+            sources_used.append("bili-cli字幕")
+        if ai_summary:
+            chunks.append(ai_summary)
+            sources_used.append("bili-cli AI摘要")
+        if desc:
+            chunks.append(desc)
+            sources_used.append("视频简介")
+        if comment_lines:
+            chunks.append("热门评论摘录：\n" + "\n".join(comment_lines[:5]))
+            sources_used.append("bili-cli评论")
+        raw_text = "\n\n".join(chunks)
+        key_points = extract_key_points(raw_text)
+        title = video.get("title") or ""
+        if not key_points and title:
+            key_points = [f"来源视频标题：{title}"]
+        status = assess_content_status(
+            {"ok": True, "transcript": transcript, "description": desc, "raw_text": raw_text, "key_points": key_points}
+        )
+        note = ""
+        if status == "title_only":
+            note = (
+                "该视频无 CC 字幕/简介/AI 摘要。可本地运行 "
+                "`bili audio {bvid}` + `agent-reach transcribe` 转写，或人工看视频写稿。"
+            ).format(bvid=bvid)
+        elif status == "partial" and not transcript:
+            note = "无逐字字幕，以下为简介/AI摘要/评论摘录；写稿前须点开原视频核对。"
+        return {
+            "ok": True,
+            "url": url,
+            "type": "bilibili",
+            "status": status,
+            "content_status": status,
+            "title": title,
+            "author": (video.get("owner") or {}).get("name", ""),
+            "bvid": bvid,
+            "transcript": transcript,
+            "description": desc,
+            "tags": [],
+            "raw_text": raw_text,
+            "key_points": key_points[:12],
+            "sources_used": sources_used or ["bili-cli"],
+            "note": note,
+            "fetched_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
+            "fetch_backend": "bili-cli",
+        }
+    except Exception:
+        return None
+
+
 def fetch_bilibili(url: str) -> dict[str, Any]:
     bvid = parse_bvid(url)
     if not bvid:
         return {"ok": False, "error": "无法解析 BVID", "url": url, "type": "bilibili"}
+
+    cli_result = fetch_bilibili_bili_cli(bvid, url)
+    if cli_result and cli_result.get("content_status") in ("ready", "partial"):
+        return cli_result
 
     referer = f"https://www.bilibili.com/video/{bvid}"
     view = _http_json(f"https://api.bilibili.com/x/web-interface/view?bvid={bvid}", referer)
@@ -215,13 +360,45 @@ def fetch_bilibili(url: str) -> dict[str, Any]:
     status = "ok" if transcript else ("partial" if (desc or tags) else "title_only")
     note = ""
     if not transcript:
-        note = "该视频未返回 CC/AI 字幕（仅简介/标题可用）；口播关键句须回看视频或对照指南核实。"
+        note = "该视频未返回 CC/AI 字幕；已尝试从页面抓取简介/相关推荐文案，关键句仍须回看视频核实。"
+
+    # B 站无字幕时不走 Jina（页面多为相关推荐噪音）；须 bili audio + transcribe
+    if not transcript and len(desc) < 20:
+        pass
+
+    if cli_result and cli_result.get("raw_text") and len((cli_result.get("transcript") or "")) > len(transcript):
+        transcript = cli_result.get("transcript") or transcript
+        for p in cli_result.get("key_points") or []:
+            if p not in key_points:
+                key_points.append(p)
+        for s in cli_result.get("sources_used") or []:
+            if s not in sources_used:
+                sources_used.append(s)
+
+    content_status = assess_content_status(
+        {
+            "ok": True,
+            "transcript": transcript,
+            "description": desc,
+            "raw_text": raw_text,
+            "key_points": key_points,
+        }
+    )
+    has_ai = any("AI" in s for s in sources_used)
+    if not transcript and not has_ai and len(desc) < 40:
+        key_points = [p for p in key_points if str(p).startswith("来源视频标题")]
+        content_status = "title_only"
+        note = (
+            f"该视频无 CC 字幕/简介（{bvid}）。请用 "
+            f"`bili audio {bvid}` + `agent-reach transcribe` 转写，或 opencli bilibili subtitle / 人工看视频。"
+        )
 
     return {
         "ok": True,
         "url": url,
         "type": "bilibili",
-        "status": status,
+        "status": "ok" if transcript else ("partial" if (desc or tags or key_points) else "title_only"),
+        "content_status": content_status,
         "title": title,
         "author": (data.get("owner") or {}).get("name", ""),
         "bvid": bvid,
@@ -229,7 +406,7 @@ def fetch_bilibili(url: str) -> dict[str, Any]:
         "description": desc,
         "tags": tags,
         "raw_text": raw_text,
-        "key_points": key_points,
+        "key_points": key_points[:12],
         "sources_used": sources_used,
         "note": note,
         "fetched_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
@@ -263,6 +440,9 @@ def fetch_web(url: str) -> dict[str, Any]:
         "url": url,
         "type": "web",
         "status": "ok" if key_points else "partial",
+        "content_status": assess_content_status(
+            {"ok": True, "raw_text": body, "key_points": key_points}
+        ),
         "title": title,
         "raw_text": body[:12000],
         "key_points": key_points,
@@ -350,6 +530,9 @@ def fetch_youtube(url: str) -> dict[str, Any]:
             "url": url,
             "type": "youtube",
             "status": "ok" if key_points else "partial",
+            "content_status": assess_content_status(
+                {"ok": True, "transcript": transcript[:8000], "key_points": key_points}
+            ),
             "title": title,
             "transcript": transcript[:8000],
             "description": desc,
@@ -434,6 +617,55 @@ def fetch_sources(urls: list[str], **kwargs: Any) -> dict[str, Any]:
         "errors": errors,
         "fetched_at": time.strftime("%Y-%m-%dT%H:%M:%S"),
     }
+
+
+def to_source_preview(result: dict[str, Any]) -> dict[str, Any]:
+    """精选日报 / 创作台用的轻量预览（不含全文缓存）。"""
+    if not result.get("ok"):
+        return {
+            "status": "error",
+            "url": result.get("url", ""),
+            "error": result.get("error", "拉取失败"),
+        }
+    excerpt_parts: list[str] = []
+    if result.get("transcript"):
+        excerpt_parts.append(str(result["transcript"])[:1200])
+    elif result.get("description"):
+        excerpt_parts.append(str(result["description"])[:800])
+    elif result.get("raw_text"):
+        excerpt_parts.append(str(result["raw_text"])[:1200])
+    return {
+        "status": result.get("content_status") or result.get("status", "ok"),
+        "content_status": result.get("content_status") or assess_content_status(result),
+        "type": result.get("type", ""),
+        "url": result.get("url", ""),
+        "title": result.get("title", ""),
+        "author": result.get("author", ""),
+        "excerpt": "\n\n".join(excerpt_parts)[:1500],
+        "key_points": (result.get("key_points") or [])[:8],
+        "sources_used": result.get("sources_used") or [],
+        "note": result.get("note", ""),
+        "fetched_at": result.get("fetched_at", ""),
+        "from_cache": bool(result.get("from_cache")),
+    }
+
+
+def enrich_items_with_source_preview(items: list[dict], *, fetch: bool = True) -> None:
+    """为精选条目附加 source_preview（原地修改）。"""
+    for item in items:
+        url = (item.get("url") or "").strip()
+        if not url:
+            continue
+        if item.get("source_preview") and item["source_preview"].get("excerpt"):
+            continue
+        try:
+            if fetch:
+                result = fetch_source(url)
+            else:
+                result = load_cached_source(url) or {"ok": False, "url": url, "error": "无缓存"}
+            item["source_preview"] = to_source_preview(result)
+        except Exception as e:
+            item["source_preview"] = {"status": "error", "url": url, "error": str(e)}
 
 
 def load_cached_source(url: str) -> dict[str, Any] | None:

@@ -431,6 +431,12 @@ body {
 .brief-card-main { flex: 1; min-width: 200px; }
 .brief-card-title { font-size: 14px; font-weight: 600; line-height: 1.45; margin-bottom: 6px; }
 .brief-card-meta { font-size: 11px; color: var(--muted); display: flex; flex-wrap: wrap; gap: 6px; }
+.brief-card.writable.no-content { border-color: rgba(255,107,107,0.35); }
+.brief-content-excerpt { margin-top: 8px; font-size: 12px; line-height: 1.55; color: var(--text); }
+.brief-no-content { margin-top: 8px; font-size: 11px; color: #ff6b6b; line-height: 1.45; }
+.badge-content-ok { background: rgba(0,212,170,.15); color: #00d4aa; }
+.badge-content-no { background: rgba(255,107,107,.12); color: #ff6b6b; }
+.brief-card-actions button:disabled { opacity: 0.45; cursor: not-allowed; }
 .brief-badge {
   display: inline-block;
   font-size: 10px;
@@ -916,10 +922,14 @@ async function loadBriefSection() {
     const summary = brief.summary || {};
     const writable = brief.writable_picks || (brief.timeline || []).filter(i => i.gate?.passed || i.writing_safety?.gate_passed);
     const hooks = brief.hook_only || [];
+    const readyN = [...writable, ...hooks].filter((i) => {
+      const sp = i.source_preview || {};
+      return sp.content_status === "ready" || sp.content_status === "partial" || ((sp.key_points || []).length > 0);
+    }).length;
     const htmlPath = brief.report_date ? `../research-daily/${brief.report_date}-精选日报.html` : "#";
 
     if (metaEl) {
-      metaEl.innerHTML = `${date} · 可写 <strong style="color:var(--accent)">${writable.length}</strong> 条`
+      metaEl.innerHTML = `${date} · 有正文 <strong style="color:var(--accent)">${readyN}</strong> / 可写 ${writable.length} 条`
         + (hooks.length ? ` · 钩子 ${hooks.length} 条` : "")
         + ` · <a href="${htmlPath}" target="_blank" rel="noopener">全文</a>`;
     }
@@ -947,45 +957,92 @@ async function loadBriefSection() {
   }
 }
 
+function contentStatusLabel(st) {
+  return { ready: "有正文", partial: "片段", title_only: "仅标题", error: "拉取失败" }[st] || st || "—";
+}
+
 function renderBriefCard(item, key, writable) {
   const gate = item.gate || item.writing_safety || {};
   const passed = gate.passed || gate.gate_passed;
-  const score = item.writability_score || item.topic_score || "—";
   const tier = item.evidence_tier || "?";
-  const useLabel = item.use_as_label || item.use_as || "";
   const plat = item.platform_label || item.platform || "";
   const heat = item.heat_score || item.propagation?.heat_score;
   const title = escHtml((item.title || "").slice(0, 80));
-  const cls = writable ? "writable" : "hook-only";
-  const gateBadge = passed
-    ? '<span class="brief-badge badge-gate-pass">可写</span>'
-    : '<span class="brief-badge badge-gate-fail">仅钩子</span>';
+  const sp = item.source_preview || {};
+  const cst = sp.content_status || sp.status || "title_only";
+  const kps = (sp.key_points || []).filter((p) => p && !String(p).startsWith("来源视频标题："));
+  const excerpt = kps.slice(0, 3).map((p) => escHtml(String(p).slice(0, 100))).join("<br>");
+  const canWrite = cst === "ready" || cst === "partial" || kps.length > 0 || (sp.excerpt || "").length > 80;
+  const cls = writable ? (canWrite ? "writable" : "writable no-content") : "hook-only";
+  const contentBlock = canWrite
+    ? `<div class="brief-content-excerpt">${excerpt || escHtml((sp.excerpt || item.snippet || "").slice(0, 160))}</div>`
+    : `<div class="brief-no-content">⚠ 无原贴正文（无 CC 字幕/简介）— 须先拉取或转写后才能写稿</div>`;
+  const statusBadge = `<span class="brief-badge ${canWrite ? "badge-content-ok" : "badge-content-no"}">${contentStatusLabel(cst)}</span>`;
   const srcBtn = item.url
-    ? `<button type="button" onclick="window.open('${escAttr(item.url)}','_blank','noopener')">来源</button>`
+    ? `<button type="button" onclick="window.open('${escAttr(item.url)}','_blank','noopener')">原贴</button>`
+    : "";
+  const writeBtn = canWrite
+    ? `<button type="button" class="primary" onclick="quickGenerateFromBrief('${escAttr(key)}')">写稿</button>`
+    : `<button type="button" class="primary" disabled title="请先拉取正文">写稿</button>`;
+  const fetchBtn = item.url
+    ? `<button type="button" class="accent-outline" onclick="fetchBriefContent('${escAttr(key)}')">拉取正文</button>`
     : "";
   return `<div class="brief-card ${cls}">
     <div class="brief-card-main">
       <div class="brief-card-title">${title}</div>
       <div class="brief-card-meta">
-        ${gateBadge}
+        ${statusBadge}
         <span class="brief-badge badge-tier">${tier}级</span>
-        ${useLabel ? `<span>${escHtml(useLabel)}</span>` : ""}
         ${plat ? `<span>${escHtml(plat)}</span>` : ""}
-        <span>可写分 ${score}</span>
         ${heat != null ? `<span>热度 ${heat}</span>` : ""}
+        ${passed ? '<span class="brief-badge badge-gate-pass">Gate✓</span>' : ""}
       </div>
+      ${contentBlock}
     </div>
     <div class="brief-card-actions">
-      <button type="button" class="primary" onclick="quickGenerateFromBrief('${escAttr(key)}')">写稿</button>
-      <button type="button" class="accent-outline" onclick="showDeepAnalysisBrief('${escAttr(key)}')">深度分析</button>
+      ${writeBtn}
+      ${fetchBtn}
+      <button type="button" onclick="showDeepAnalysisBrief('${escAttr(key)}')">核实</button>
       ${srcBtn}
     </div>
   </div>`;
 }
 
+async function fetchBriefContent(key) {
+  const item = (window._briefByKey || {})[key];
+  if (!item?.url || typeof ScriptBridge === "undefined") return;
+  showToast("正在拉取原贴正文…");
+  try {
+    const bundle = await ScriptBridge.fetchSourceBundle([item.url]);
+    const fetched = bundle?.items?.[0];
+    if (fetched?.ok) {
+      item.source_preview = ScriptBridge.toSourcePreview(fetched);
+      const idx = parseInt(String(key).split("-").pop(), 10);
+      const isW = String(key).startsWith("brief-w-");
+      const host = document.getElementById(isW ? "brief-writable-list" : "brief-hook-list");
+      const card = host?.querySelectorAll(".brief-card")?.[idx];
+      if (card) {
+        card.outerHTML = renderBriefCard(item, key, isW);
+      }
+      showToast(`已拉取 ${(item.source_preview.key_points || []).length} 条要点 · ${contentStatusLabel(item.source_preview.content_status)}`);
+    } else {
+      showToast("拉取失败：" + (fetched?.error || bundle?.note || "请运行 python scripts/dev_server.py 8080"));
+    }
+  } catch (e) {
+    showToast("拉取失败：" + (e.message || e));
+  }
+}
+
 function quickGenerateFromBrief(key) {
   const item = (window._briefByKey || {})[key];
   if (!item || typeof ScriptBridge === "undefined") return;
+  const sp = item.source_preview || {};
+  const kps = (sp.key_points || []).filter((p) => p && !String(p).startsWith("来源视频标题："));
+  const canWrite = sp.content_status === "ready" || sp.content_status === "partial" || kps.length > 0;
+  if (!canWrite && item.url) {
+    showToast("请先点「拉取正文」— 本条目前只有标题");
+    return;
+  }
   const meta = ScriptBridge.harvestMetaFromItem(item);
   const catMap = ScriptBridge.CAT_MAP || {};
   const cat = catMap[item.category] || mapCategory(item.category) || "myth";
@@ -1018,7 +1075,7 @@ async function showDeepAnalysisBrief(key) {
   const item = (window._briefByKey || {})[key];
   if (!item || typeof ScriptBridge === "undefined") return;
   const analysis = await ScriptBridge.resolveDeepAnalysis(item);
-  openDeepAnalysisModal(item.title, analysis, () => quickGenerateFromBrief(key));
+  await openDeepAnalysisModal(item.title, analysis, () => quickGenerateFromBrief(key), item);
 }
 
 async function showDeepAnalysisForTopic(id) {
@@ -1041,13 +1098,15 @@ async function showDeepAnalysisForTopic(id) {
     },
   };
   const analysis = await ScriptBridge.resolveDeepAnalysis(item);
-  openDeepAnalysisModal(t.title, analysis, () => quickGenerate(id));
+  await openDeepAnalysisModal(t.title, analysis, () => quickGenerate(id), item);
 }
 
-function openDeepAnalysisModal(title, analysis, onFill) {
+async function openDeepAnalysisModal(title, analysis, onFill, item) {
   closeDeepAnalysis();
+  const url = item?.url || (item?.source_urls && item.source_urls[0]) || "";
+  const preview = item?.source_preview;
   const wrap = document.createElement("div");
-  wrap.innerHTML = ScriptBridge.renderDeepAnalysisModalHtml(title, analysis);
+  wrap.innerHTML = ScriptBridge.renderDeepAnalysisModalHtml(title, analysis, preview, url);
   const overlay = wrap.firstElementChild;
   if (!overlay) return;
   document.body.appendChild(overlay);
@@ -1061,6 +1120,26 @@ function openDeepAnalysisModal(title, analysis, onFill) {
       onFill();
       closeDeepAnalysis();
     });
+  }
+  const needsFetch =
+    url &&
+    (!preview || preview.status === "error" || (!preview.key_points?.length && !(preview.excerpt || "").trim()));
+  if (needsFetch && ScriptBridge.fetchSourceBundle) {
+    try {
+      const bundle = await ScriptBridge.fetchSourceBundle([url]);
+      const fetched = bundle?.items?.[0];
+      const host = document.getElementById("source-preview-host");
+      if (host && fetched?.ok) {
+        host.outerHTML = ScriptBridge.renderSourcePreviewHtml(ScriptBridge.toSourcePreview(fetched), url);
+      } else if (host && fetched) {
+        host.outerHTML = ScriptBridge.renderSourcePreviewHtml(
+          { status: "error", error: fetched.error || bundle?.note || "拉取失败", url },
+          url
+        );
+      }
+    } catch (_) {
+      /* 线上无 API 时保留 embedded preview 或占位 */
+    }
   }
 }
 
@@ -1182,7 +1261,7 @@ function renderTopics(){
         <button type="button" class="primary" data-action="generate">生成文案</button>
         ${t._type==='discovered' && !isAdopted ? `<button type="button" data-action="adopt">采纳</button>` : ''}
         ${t.source_urls && t.source_urls.length ? `<button type="button" data-action="source">来源</button>` : ''}
-        ${t._type === 'discovered' || t.deep_analysis ? `<button type="button" data-action="deep">深度分析</button>` : ''}
+        ${t._type === 'discovered' || t.deep_analysis ? `<button type="button" data-action="deep">内容核实</button>` : ''}
       </div>
     </div>`;
   }).join("");

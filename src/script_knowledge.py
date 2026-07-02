@@ -367,11 +367,18 @@ def expand_spoken_body(
     limit = _max_points_for_duration(duration)
     pts = points[:limit]
     if not pts:
-        pts = [
-            "先搞清自己的体检指标，而不是只看短视频标题",
-            "生活方式调整通常比极端做法更可坚持",
-            "有用药或指标异常，及时咨询医生",
-        ]
+        return (
+            "⚠️ 本条暂无原贴正文（采集未拿到字幕/简介/网页摘要）。\n\n"
+            "请先拉取来源再写稿：本地运行 `python scripts/dev_server.py 8080` 后点「拉取原贴」；"
+            "B 站无 CC 时可 `bili audio BVxxx` + `agent-reach transcribe` 转写。\n\n"
+            "缺少正文时请勿直接发布——应复制 AI Prompt 或人工看完视频再写。"
+        )
+    if not has_substantive_source_lines(points):
+        return (
+            "⚠️ 目前只有标题/标签，没有视频字幕或正文摘要。\n\n"
+            + "\n\n".join(_expand_point(p, i) for i, p in enumerate(pts[:2]))
+            + "\n\n（以上为资料库自动匹配，非原贴逐字稿；写稿前须拉取原贴或转写视频。）"
+        )
 
     intro = _topic_intro(title, cat, write_mode)
     expanded = [_expand_point(p, i) for i, p in enumerate(pts)]
@@ -413,6 +420,26 @@ def merge_source_key_points(data_ref: list[str], source_bundle: dict[str, Any] |
         if line not in lines:
             lines.append(line)
     return lines
+
+
+def has_substantive_source_lines(data_lines: list[str]) -> bool:
+    for line in data_lines or []:
+        t = (line or "").strip()
+        if not t or t.startswith("来源视频标题："):
+            continue
+        if t.startswith("【来源】"):
+            body = t.replace("【来源】", "", 1).strip()
+            if body.startswith("来源视频标题："):
+                continue
+            if len(body) >= 12:
+                return True
+        if t.startswith("来源摘要：") and len(t) > 18:
+            return True
+        if re.search(r"GI\s*\d|GL\s*\d|mmol|HbA1c|糖化", t):
+            return True
+        if len(t) >= 20:
+            return True
+    return False
 
 
 def build_script_document(

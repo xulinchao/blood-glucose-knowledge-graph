@@ -1,0 +1,1691 @@
+{
+  "version": "1.0",
+  "report_date": "2026-07-02",
+  "started_at": "2026-07-02T09:08:45",
+  "finished_at": "2026-07-02T09:10:00",
+  "keywords": [
+    "胰岛素抵抗",
+    "糖前期",
+    "糖耐量异常",
+    "空腹血糖正常 餐后高",
+    "体检 血糖偏高",
+    "糖化血红蛋白",
+    "饭后犯困 血糖",
+    "奶茶 控糖",
+    "减肥平台期 胰岛素",
+    "代谢综合征",
+    "35岁 血糖",
+    "动态血糖仪",
+    "糖友 年轻人",
+    "控糖",
+    "血糖",
+    "糖尿病",
+    "低GI",
+    "餐后血糖",
+    "控糖饮食",
+    "血糖仪"
+  ],
+  "summary": {
+    "total_raw": 20,
+    "by_platform": {
+      "exa": 20
+    },
+    "topic_candidates": 2,
+    "new_topics_added": 0,
+    "errors": [
+      {
+        "platform": "jina",
+        "keyword": "国家卫健委 成人糖尿病食养指南",
+        "error": ""
+      },
+      {
+        "platform": "jina",
+        "keyword": "丁香医生 胰岛素抵抗 科普",
+        "error": ""
+      },
+      {
+        "platform": "jina",
+        "keyword": "中华医学会 糖前期 筛查",
+        "error": ""
+      },
+      {
+        "platform": "jina",
+        "keyword": "WHO diabetes diet guideline",
+        "error": ""
+      },
+      {
+        "platform": "v2ex",
+        "error": "<urlopen error [WinError 10061] 由于目标计算机积极拒绝，无法连接。>"
+      }
+    ],
+    "platforms_ok": [
+      "exa"
+    ],
+    "platforms_failed": [
+      "jina",
+      "v2ex"
+    ]
+  },
+  "items": [
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "【规范与指南】胰岛素抵抗相关临床问题专家共识（2022版）",
+      "url": "https://www.doctorpda.cn/news/747351",
+      "author": "",
+      "keyword": "胰岛素抵抗",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 56,
+        "label": "中等",
+        "reasons": [
+          "含可核对的数据或术语（需回源核实）"
+        ],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 52,
+        "label": "中",
+        "reasons": [
+          "命中关键词「胰岛素抵抗」"
+        ]
+      },
+      "heat_score": 52,
+      "writability_score": 31,
+      "topic_score": 31,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "56d377b6d17cc8ff",
+          "claim": "胰岛素",
+          "claim_type": "drug_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "high",
+          "misinterpretation_risk": "high",
+          "allowed_frame": "verify_with_clinician",
+          "forbidden_expressions": [
+            "自行调整剂量",
+            "停药"
+          ],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 31,
+        "veto_reasons": [
+          "high_harm_claim_D_tier",
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "verify_with_clinician",
+        "forbidden_expressions": [
+          "自行调整剂量",
+          "停药"
+        ],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "胰岛素",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题/摘要含「胰岛素」，易被理解为个体疗效承诺",
+        "safe_rewrite": "强调「用药/调整方案须遵医嘱」，不给出个体剂量建议"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "【规范与指南】胰岛素抵抗相关临床问题专家共识（2022版）",
+        "url": "https://www.doctorpda.cn/news/747351",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "胰岛素抵抗的定义及临床表现 - UpToDate",
+      "url": "https://www.uptodate.com/contents/zh-Hans/insulin-resistance-definition-and-clinical-spectrum/print",
+      "author": "",
+      "keyword": "胰岛素抵抗",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 50,
+        "label": "偏低",
+        "reasons": [],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 52,
+        "label": "中",
+        "reasons": [
+          "命中关键词「胰岛素抵抗」"
+        ]
+      },
+      "heat_score": 52,
+      "writability_score": 25,
+      "topic_score": 25,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "56d377b6d17cc8ff",
+          "claim": "胰岛素",
+          "claim_type": "drug_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "high",
+          "misinterpretation_risk": "high",
+          "allowed_frame": "verify_with_clinician",
+          "forbidden_expressions": [
+            "自行调整剂量",
+            "停药"
+          ],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 25,
+        "veto_reasons": [
+          "high_harm_claim_D_tier",
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "verify_with_clinician",
+        "forbidden_expressions": [
+          "自行调整剂量",
+          "停药"
+        ],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "胰岛素",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题/摘要含「胰岛素」，易被理解为个体疗效承诺",
+        "safe_rewrite": "强调「用药/调整方案须遵医嘱」，不给出个体剂量建议"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "胰岛素抵抗的定义及临床表现 - UpToDate",
+        "url": "https://www.uptodate.com/contents/zh-Hans/insulin-resistance-definition-and-clinical-spectrum/print",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "胰岛素抵抗",
+      "url": "https://drugs.dxy.cn/pc/clinicalDecision/ytHarEBDknGwD7b9THIZ-PQ?ky=t7Gc0.html",
+      "author": "",
+      "keyword": "胰岛素抵抗",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 78,
+        "label": "较高",
+        "reasons": [
+          "二级来源：医疗专业平台"
+        ],
+        "evidence_tier": "B",
+        "adversarial_flags": [],
+        "use_as": "verify_before_script",
+        "creator_note": "写稿前对照原帖/指南核实；口播避免给个体诊断"
+      },
+      "importance": {
+        "score": 52,
+        "label": "中",
+        "reasons": [
+          "命中关键词「胰岛素抵抗」"
+        ]
+      },
+      "heat_score": 52,
+      "writability_score": 53,
+      "topic_score": 53,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "56d377b6d17cc8ff",
+          "claim": "胰岛素",
+          "claim_type": "drug_discussion",
+          "evidence_strength": "medium",
+          "harm_risk": "high",
+          "misinterpretation_risk": "high",
+          "allowed_frame": "verify_with_clinician",
+          "forbidden_expressions": [
+            "自行调整剂量",
+            "停药"
+          ],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": true,
+        "writability_score": 53,
+        "veto_reasons": [],
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_with_clinician",
+        "forbidden_expressions": [
+          "自行调整剂量",
+          "停药"
+        ],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "写稿前对照原帖/指南核实；口播避免给个体诊断"
+      },
+      "claim_summary": "胰岛素",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "专业平台来源，须回源核实",
+        "misleading_risk": "标题/摘要含「胰岛素」，易被理解为个体疗效承诺",
+        "safe_rewrite": "强调「用药/调整方案须遵医嘱」，不给出个体剂量建议"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "胰岛素抵抗",
+        "url": "https://drugs.dxy.cn/pc/clinicalDecision/ytHarEBDknGwD7b9THIZ-PQ?ky=t7Gc0.html",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "胰岛素抵抗：糖尿病前期的一个不容忽视的警告信号。 | Phyathai Hospital",
+      "url": "https://www.phyathai.com/zh/pyt2/article/insulin-resistance-early-warning-before-diabetes-pt2",
+      "author": "",
+      "keyword": "胰岛素抵抗",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "症状预警",
+      "authenticity": {
+        "score": 50,
+        "label": "偏低",
+        "reasons": [],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 52,
+        "label": "中",
+        "reasons": [
+          "命中关键词「胰岛素抵抗」"
+        ]
+      },
+      "heat_score": 52,
+      "writability_score": 25,
+      "topic_score": 25,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "56d377b6d17cc8ff",
+          "claim": "胰岛素",
+          "claim_type": "drug_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "high",
+          "misinterpretation_risk": "high",
+          "allowed_frame": "verify_with_clinician",
+          "forbidden_expressions": [
+            "自行调整剂量",
+            "停药"
+          ],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 25,
+        "veto_reasons": [
+          "high_harm_claim_D_tier",
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "verify_with_clinician",
+        "forbidden_expressions": [
+          "自行调整剂量",
+          "停药"
+        ],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "胰岛素",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题/摘要含「胰岛素」，易被理解为个体疗效承诺",
+        "safe_rewrite": "强调「用药/调整方案须遵医嘱」，不给出个体剂量建议"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "胰岛素抵抗：糖尿病前期的一个不容忽视的警告信号。 | Phyathai Hospital",
+        "url": "https://www.phyathai.com/zh/pyt2/article/insulin-resistance-early-warning-before-diabetes-pt2",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "什么是胰岛素抵抗？妙佑医疗国际专家为您解答",
+      "url": "https://www.mayoclinic.org/zh-hans/diseases-conditions/obesity/multimedia/vid-20536756",
+      "author": "",
+      "keyword": "胰岛素抵抗",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 50,
+        "label": "偏低",
+        "reasons": [],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 52,
+        "label": "中",
+        "reasons": [
+          "命中关键词「胰岛素抵抗」"
+        ]
+      },
+      "heat_score": 52,
+      "writability_score": 25,
+      "topic_score": 25,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "56d377b6d17cc8ff",
+          "claim": "胰岛素",
+          "claim_type": "drug_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "high",
+          "misinterpretation_risk": "high",
+          "allowed_frame": "verify_with_clinician",
+          "forbidden_expressions": [
+            "自行调整剂量",
+            "停药"
+          ],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 25,
+        "veto_reasons": [
+          "high_harm_claim_D_tier",
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "verify_with_clinician",
+        "forbidden_expressions": [
+          "自行调整剂量",
+          "停药"
+        ],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "胰岛素",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题/摘要含「胰岛素」，易被理解为个体疗效承诺",
+        "safe_rewrite": "强调「用药/调整方案须遵医嘱」，不给出个体剂量建议"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "什么是胰岛素抵抗？妙佑医疗国际专家为您解答",
+        "url": "https://www.mayoclinic.org/zh-hans/diseases-conditions/obesity/multimedia/vid-20536756",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "糖尿病前期- 诊断与治疗- 妙佑医疗国际 - Mayo Clinic",
+      "url": "https://www.mayoclinic.org/zh-hans/diseases-conditions/prediabetes/diagnosis-treatment/drc-20355284",
+      "author": "",
+      "keyword": "糖前期",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 50,
+        "label": "偏低",
+        "reasons": [],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 40,
+        "label": "低",
+        "reasons": []
+      },
+      "heat_score": 40,
+      "writability_score": 42,
+      "topic_score": 42,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "388f07c245691283",
+          "claim": "糖尿病前期- 诊断与治疗- 妙佑医疗国际 - Mayo Clinic",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 42,
+        "veto_reasons": [
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "糖尿病前期- 诊断与治疗- 妙佑医疗国际 - Mayo Clinic",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 糖尿病前期- 诊断与治疗- 妙佑医疗国际 - Mayo Cl…」而非「糖尿病前期- 诊断与治疗- 妙佑医疗国际 是对的」"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "糖尿病前期- 诊断与治疗- 妙佑医疗国际 - Mayo Clinic",
+        "url": "https://www.mayoclinic.org/zh-hans/diseases-conditions/prediabetes/diagnosis-treatment/drc-20355284",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "中国成人糖尿病前期干预的专家共识（2023版）",
+      "url": "https://bjrmyylib.yuntsg.com/ueditor/jsp/upload/file/20230919/1695130784021063093.pdf",
+      "author": "",
+      "keyword": "糖前期",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 50,
+        "label": "偏低",
+        "reasons": [],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 40,
+        "label": "低",
+        "reasons": []
+      },
+      "heat_score": 40,
+      "writability_score": 42,
+      "topic_score": 42,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "3720025e8e94433a",
+          "claim": "中国成人糖尿病前期干预的专家共识（2023版）",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 42,
+        "veto_reasons": [
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "中国成人糖尿病前期干预的专家共识（2023版）",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 中国成人糖尿病前期干预的专家共识（2023版）…」而非「中国成人糖尿病前期干预的专家共识（202 是对的」"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "中国成人糖尿病前期干预的专家共识（2023版）",
+        "url": "https://bjrmyylib.yuntsg.com/ueditor/jsp/upload/file/20230919/1695130784021063093.pdf",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "糖尿病前期控糖：3步稳血糖，延缓发病 - 防患于未然 - 家医大健康",
+      "url": "https://www.familydoctor.cn/hlthsci/tangniaobingqianqi-kong-tang-3bu-wen-xuetang-yanhuan-fabing-692219.html",
+      "author": "",
+      "keyword": "糖前期",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 50,
+        "label": "偏低",
+        "reasons": [],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 40,
+        "label": "低",
+        "reasons": []
+      },
+      "heat_score": 40,
+      "writability_score": 32,
+      "topic_score": 32,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "a0744f5bc2810ced",
+          "claim": "控糖",
+          "claim_type": "causal_claim",
+          "evidence_strength": "low",
+          "harm_risk": "medium",
+          "misinterpretation_risk": "high",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [
+            "可以降血糖",
+            "一定能降糖",
+            "保证逆转",
+            "根治"
+          ],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 32,
+        "veto_reasons": [
+          "causal_claim_low_evidence_D_tier",
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [
+          "可以降血糖",
+          "一定能降糖",
+          "保证逆转",
+          "根治"
+        ],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "控糖",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题/摘要含「控糖」，易被理解为个体疗效承诺",
+        "safe_rewrite": "用「网上很多人在讨论 糖尿病前期控糖：3步稳血糖，延缓发病 - 防患于未然 - 家…」而非「糖尿病前期控糖：3步稳血糖，延缓发病 - 是对的」"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "糖尿病前期控糖：3步稳血糖，延缓发病 - 防患于未然 - 家医大健康",
+        "url": "https://www.familydoctor.cn/hlthsci/tangniaobingqianqi-kong-tang-3bu-wen-xuetang-yanhuan-fabing-692219.html",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "T/CACM 1463-2023-糖尿病前期治未病干预指南-国家标准馆·国家数字标准馆",
+      "url": "https://ndls.cnis.ac.cn/standard/detail/f043f488a9b0ac9ddd3d6dfa3f123bd2",
+      "author": "",
+      "keyword": "糖前期",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 56,
+        "label": "中等",
+        "reasons": [
+          "含可核对的数据或术语（需回源核实）"
+        ],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 40,
+        "label": "低",
+        "reasons": []
+      },
+      "heat_score": 40,
+      "writability_score": 48,
+      "topic_score": 48,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "1e09aa0f0f26cece",
+          "claim": "T/CACM 1463-2023-糖尿病前期治未病干预指南-国家标准馆·国家数字标准馆",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 48,
+        "veto_reasons": [
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "T/CACM 1463-2023-糖尿病前期治未病干预指南-国家标准馆·国家数字标准馆",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 T/CACM 1463-2023-糖尿病前期治未病干预指南-…」而非「T/CACM 1463-2023-糖尿病 是对的」"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "T/CACM 1463-2023-糖尿病前期治未病干预指南-国家标准馆·国家数字标准馆",
+        "url": "https://ndls.cnis.ac.cn/standard/detail/f043f488a9b0ac9ddd3d6dfa3f123bd2",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "AACE糖尿病前期患者的综合治疗指南指南与共识-《中国糖尿病杂志》官方网站",
+      "url": "http://www.cds.org.cn/znygs/117.html",
+      "author": "",
+      "keyword": "糖前期",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 56,
+        "label": "中等",
+        "reasons": [
+          "含可核对的数据或术语（需回源核实）"
+        ],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 40,
+        "label": "低",
+        "reasons": []
+      },
+      "heat_score": 40,
+      "writability_score": 48,
+      "topic_score": 48,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "890f20a9ad6792bf",
+          "claim": "AACE糖尿病前期患者的综合治疗指南指南与共识-《中国糖尿病杂志》官方网站",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 48,
+        "veto_reasons": [
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "AACE糖尿病前期患者的综合治疗指南指南与共识-《中国糖尿病杂志》官方网站",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 AACE糖尿病前期患者的综合治疗指南指南与共识-《中国糖尿病…」而非「AACE糖尿病前期患者的综合治疗指南指南 是对的」"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "AACE糖尿病前期患者的综合治疗指南指南与共识-《中国糖尿病杂志》官方网站",
+        "url": "http://www.cds.org.cn/znygs/117.html",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "中国糖尿病防治指南（2024版）",
+      "url": "https://files.sciconf.cn/master/50/33230/202501/20250120111901_47273.pdf",
+      "author": "",
+      "keyword": "糖耐量异常",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 56,
+        "label": "中等",
+        "reasons": [
+          "含可核对的数据或术语（需回源核实）"
+        ],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 52,
+        "label": "低",
+        "reasons": [
+          "多平台同热(exa)"
+        ]
+      },
+      "heat_score": 52,
+      "writability_score": 48,
+      "topic_score": 48,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "167e0973a2290ade",
+          "claim": "中国糖尿病防治指南（2024版）",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 48,
+        "veto_reasons": [
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "中国糖尿病防治指南（2024版）",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 中国糖尿病防治指南（2024版）…」而非「中国糖尿病防治指南（2024版） 是对的」"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "中国糖尿病防治指南（2024版）",
+        "url": "https://files.sciconf.cn/master/50/33230/202501/20250120111901_47273.pdf",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "中国糖尿病防治指南（2024版）",
+      "url": "https://drugs.dxy.cn/pc/clinicalGuidelines/pC7RJoNHj1YANrh50uWaVA==?ky=%E4%B8%AD%E5%9B%BD%E7%B3%96%E5%B0%BF%E7%97%85%E9%98%B2%E6%B2%BB%E6%8C%87%E5%8D%97%EF%BC%882024%E7%89%88%EF%BC%89",
+      "author": "",
+      "keyword": "糖耐量异常",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 84,
+        "label": "较高",
+        "reasons": [
+          "二级来源：医疗专业平台",
+          "含可核对的数据或术语（需回源核实）"
+        ],
+        "evidence_tier": "B",
+        "adversarial_flags": [],
+        "use_as": "verify_before_script",
+        "creator_note": "写稿前对照原帖/指南核实；口播避免给个体诊断"
+      },
+      "importance": {
+        "score": 52,
+        "label": "低",
+        "reasons": [
+          "多平台同热(exa)"
+        ]
+      },
+      "heat_score": 52,
+      "writability_score": 84,
+      "topic_score": 84,
+      "topic_pick": true,
+      "claims": [
+        {
+          "claim_id": "167e0973a2290ade",
+          "claim": "中国糖尿病防治指南（2024版）",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "medium",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": true,
+        "writability_score": 84,
+        "veto_reasons": [],
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "写稿前对照原帖/指南核实；口播避免给个体诊断"
+      },
+      "claim_summary": "中国糖尿病防治指南（2024版）",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "专业平台来源，须回源核实",
+        "misleading_risk": "写稿前对照原帖/指南核实；口播避免给个体诊断",
+        "safe_rewrite": "用「指南/来源提到…」并附链接，避免「你应该…」"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "中国糖尿病防治指南（2024版）",
+        "url": "https://drugs.dxy.cn/pc/clinicalGuidelines/pC7RJoNHj1YANrh50uWaVA==?ky=%E4%B8%AD%E5%9B%BD%E7%B3%96%E5%B0%BF%E7%97%85%E9%98%B2%E6%B2%BB%E6%8C%87%E5%8D%97%EF%BC%882024%E7%89%88%EF%BC%89",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "2型糖尿病实用目标和治疗（第四版）指南与共识-《中国糖尿病杂志》官方网站",
+      "url": "http://www.cds.org.cn/znygs/126.html",
+      "author": "",
+      "keyword": "糖耐量异常",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 56,
+        "label": "中等",
+        "reasons": [
+          "含可核对的数据或术语（需回源核实）"
+        ],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 40,
+        "label": "低",
+        "reasons": []
+      },
+      "heat_score": 40,
+      "writability_score": 48,
+      "topic_score": 48,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "c67c67ca5d4fc65f",
+          "claim": "2型糖尿病实用目标和治疗（第四版）指南与共识-《中国糖尿病杂志》官方网站",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 48,
+        "veto_reasons": [
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "2型糖尿病实用目标和治疗（第四版）指南与共识-《中国糖尿病杂志》官方网站",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 2型糖尿病实用目标和治疗（第四版）指南与共识-《中国糖尿病杂…」而非「2型糖尿病实用目标和治疗（第四版）指南与 是对的」"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "2型糖尿病实用目标和治疗（第四版）指南与共识-《中国糖尿病杂志》官方网站",
+        "url": "http://www.cds.org.cn/znygs/126.html",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "2型糖尿病 - 内分泌及代谢紊乱 - MSD诊疗手册专业版",
+      "url": "https://www.msdmanuals.cn/professional/endocrine-and-metabolic-disorders/diabetes-mellitus-and-hypoglycemia/type-2-diabetes-mellitus",
+      "author": "",
+      "keyword": "糖耐量异常",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 50,
+        "label": "偏低",
+        "reasons": [],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 40,
+        "label": "低",
+        "reasons": []
+      },
+      "heat_score": 40,
+      "writability_score": 42,
+      "topic_score": 42,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "a8b22fb7a86ceef4",
+          "claim": "2型糖尿病 - 内分泌及代谢紊乱 - MSD诊疗手册专业版",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 42,
+        "veto_reasons": [
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "2型糖尿病 - 内分泌及代谢紊乱 - MSD诊疗手册专业版",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 2型糖尿病 - 内分泌及代谢紊乱 - MSD诊疗手册专业版…」而非「2型糖尿病 - 内分泌及代谢紊乱 - M 是对的」"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "2型糖尿病 - 内分泌及代谢紊乱 - MSD诊疗手册专业版",
+        "url": "https://www.msdmanuals.cn/professional/endocrine-and-metabolic-disorders/diabetes-mellitus-and-hypoglycemia/type-2-diabetes-mellitus",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "中国2型糖尿病基层医疗卫生指南（2025 年版）-指南&解读指南-MedSci.cn",
+      "url": "https://www.medsci.cn/guideline/show_article.do?id=54e5c1c00a820214",
+      "author": "",
+      "keyword": "糖耐量异常",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 56,
+        "label": "中等",
+        "reasons": [
+          "含可核对的数据或术语（需回源核实）"
+        ],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 40,
+        "label": "低",
+        "reasons": []
+      },
+      "heat_score": 40,
+      "writability_score": 48,
+      "topic_score": 48,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "0a13dd046fbbef9d",
+          "claim": "中国2型糖尿病基层医疗卫生指南（2025 年版）-指南&解读指南-MedSci.cn",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 48,
+        "veto_reasons": [
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "中国2型糖尿病基层医疗卫生指南（2025 年版）-指南&解读指南-MedSci.cn",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 中国2型糖尿病基层医疗卫生指南（2025 年版）-指南&解读…」而非「中国2型糖尿病基层医疗卫生指南（2025 是对的」"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "中国2型糖尿病基层医疗卫生指南（2025 年版）-指南&解读指南-MedSci.cn",
+        "url": "https://www.medsci.cn/guideline/show_article.do?id=54e5c1c00a820214",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "空腹血糖正常，餐后血糖却超标，是咋回事？ - 江苏大学附属医院",
+      "url": "https://www.jdfy.cn/changjianbingyufangyubaojian/12957.html",
+      "author": "",
+      "keyword": "空腹血糖正常 餐后高",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 50,
+        "label": "偏低",
+        "reasons": [],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 52,
+        "label": "中",
+        "reasons": [
+          "命中关键词「空腹血糖正常 餐后高」"
+        ]
+      },
+      "heat_score": 52,
+      "writability_score": 42,
+      "topic_score": 42,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "9f22b1cde3a8cb1c",
+          "claim": "空腹血糖正常，餐后血糖却超标，是咋回事？ - 江苏大学附属医院",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 42,
+        "veto_reasons": [
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "空腹血糖正常，餐后血糖却超标，是咋回事？ - 江苏大学附属医院",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 空腹血糖正常，餐后血糖却超标，是咋回事？ - 江苏大学附属医…」而非「空腹血糖正常，餐后血糖却超标，是咋回事？ 是对的」"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "空腹血糖正常，餐后血糖却超标，是咋回事？ - 江苏大学附属医院",
+        "url": "https://www.jdfy.cn/changjianbingyufangyubaojian/12957.html",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "《中国2型糖尿病患者餐后高血糖管理专家共识》解读_中华医学网",
+      "url": "http://www.medtranslation.cn/changjianjibing/20260316/256534.html",
+      "author": "",
+      "keyword": "空腹血糖正常 餐后高",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 50,
+        "label": "偏低",
+        "reasons": [],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 40,
+        "label": "低",
+        "reasons": []
+      },
+      "heat_score": 40,
+      "writability_score": 42,
+      "topic_score": 42,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "99fd6bf564efec76",
+          "claim": "《中国2型糖尿病患者餐后高血糖管理专家共识》解读_中华医学网",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 42,
+        "veto_reasons": [
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "《中国2型糖尿病患者餐后高血糖管理专家共识》解读_中华医学网",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 《中国2型糖尿病患者餐后高血糖管理专家共识》解读_中华医学网…」而非「《中国2型糖尿病患者餐后高血糖管理专家共 是对的」"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "《中国2型糖尿病患者餐后高血糖管理专家共识》解读_中华医学网",
+        "url": "http://www.medtranslation.cn/changjianjibing/20260316/256534.html",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "空腹与餐后血糖：控糖缺一不可 - 治疗与康复 - 家医大健康",
+      "url": "https://www.familydoctor.cn/hlthsci/kongfu-canhouxuetang-kong-tang-queyibuke-421812.html",
+      "author": "",
+      "keyword": "空腹血糖正常 餐后高",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "案例故事",
+      "authenticity": {
+        "score": 50,
+        "label": "偏低",
+        "reasons": [],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 40,
+        "label": "低",
+        "reasons": []
+      },
+      "heat_score": 40,
+      "writability_score": 32,
+      "topic_score": 32,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "a0744f5bc2810ced",
+          "claim": "控糖",
+          "claim_type": "causal_claim",
+          "evidence_strength": "low",
+          "harm_risk": "medium",
+          "misinterpretation_risk": "high",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [
+            "可以降血糖",
+            "一定能降糖",
+            "保证逆转",
+            "根治"
+          ],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 32,
+        "veto_reasons": [
+          "causal_claim_low_evidence_D_tier",
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [
+          "可以降血糖",
+          "一定能降糖",
+          "保证逆转",
+          "根治"
+        ],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "控糖",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题/摘要含「控糖」，易被理解为个体疗效承诺",
+        "safe_rewrite": "用「网上很多人在讨论 空腹与餐后血糖：控糖缺一不可 - 治疗与康复 - 家医大健康…」而非「空腹与餐后血糖：控糖缺一不可 - 治疗与 是对的」"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "空腹与餐后血糖：控糖缺一不可 - 治疗与康复 - 家医大健康",
+        "url": "https://www.familydoctor.cn/hlthsci/kongfu-canhouxuetang-kong-tang-queyibuke-421812.html",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "血糖界的四大天王：空腹血糖、餐后血糖、糖化血红蛋白、糖耐量",
+      "url": "https://www.nhsa.gov.cn/art/2024/9/15/art_14_13876.html",
+      "author": "",
+      "keyword": "空腹血糖正常 餐后高",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "数字科普",
+      "authenticity": {
+        "score": 91,
+        "label": "较高",
+        "reasons": [
+          "一级来源：指南/政府/期刊域名",
+          "含可核对的数据或术语（需回源核实）"
+        ],
+        "evidence_tier": "A",
+        "adversarial_flags": [],
+        "use_as": "cite_directly",
+        "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+      },
+      "importance": {
+        "score": 40,
+        "label": "低",
+        "reasons": []
+      },
+      "heat_score": 40,
+      "writability_score": 91,
+      "topic_score": 91,
+      "topic_pick": true,
+      "claims": [
+        {
+          "claim_id": "75318ce39a3bbd82",
+          "claim": "血糖界的四大天王：空腹血糖、餐后血糖、糖化血红蛋白、糖耐量",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "high",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": true,
+        "writability_score": 91,
+        "veto_reasons": [],
+        "use_as": "cite_directly",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+      },
+      "claim_summary": "血糖界的四大天王：空腹血糖、餐后血糖、糖化血红蛋白、糖耐量",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "一级权威来源，非热度驱动",
+        "misleading_risk": "可引用来源观点，口播须加「非医疗建议」并附原链接",
+        "safe_rewrite": "用「指南/来源提到…」并附链接，避免「你应该…」"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "血糖界的四大天王：空腹血糖、餐后血糖、糖化血红蛋白、糖耐量",
+        "url": "https://www.nhsa.gov.cn/art/2024/9/15/art_14_13876.html",
+        "snippet": ""
+      }
+    },
+    {
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "title": "空腹血糖全解析：正常值与控糖指南 - 治疗与康复 - 家医大健康",
+      "url": "https://www.familydoctor.cn/hlthsci/kongfuxuetang-quan-jiexi-zhengchangzhi-kong-tang-zhinan-632991.html",
+      "author": "",
+      "keyword": "空腹血糖正常 餐后高",
+      "snippet": "",
+      "metrics": {},
+      "published_at": null,
+      "category": "案例故事",
+      "authenticity": {
+        "score": 56,
+        "label": "中等",
+        "reasons": [
+          "含可核对的数据或术语（需回源核实）"
+        ],
+        "evidence_tier": "D",
+        "adversarial_flags": [],
+        "use_as": "hook_only",
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "importance": {
+        "score": 40,
+        "label": "低",
+        "reasons": []
+      },
+      "heat_score": 40,
+      "writability_score": 38,
+      "topic_score": 38,
+      "topic_pick": false,
+      "claims": [
+        {
+          "claim_id": "a0744f5bc2810ced",
+          "claim": "控糖",
+          "claim_type": "causal_claim",
+          "evidence_strength": "low",
+          "harm_risk": "medium",
+          "misinterpretation_risk": "high",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [
+            "可以降血糖",
+            "一定能降糖",
+            "保证逆转",
+            "根治"
+          ],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "gate": {
+        "passed": false,
+        "writability_score": 38,
+        "veto_reasons": [
+          "causal_claim_low_evidence_D_tier",
+          "writability_below_threshold"
+        ],
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [
+          "可以降血糖",
+          "一定能降糖",
+          "保证逆转",
+          "根治"
+        ],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」"
+      },
+      "claim_summary": "控糖",
+      "controversy_hint": "",
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题/摘要含「控糖」，易被理解为个体疗效承诺",
+        "safe_rewrite": "用「网上很多人在讨论 空腹血糖全解析：正常值与控糖指南 - 治疗与康复 - 家医大…」而非「空腹血糖全解析：正常值与控糖指南 - 治 是对的」"
+      },
+      "engagement": 0,
+      "raw": {
+        "title": "空腹血糖全解析：正常值与控糖指南 - 治疗与康复 - 家医大健康",
+        "url": "https://www.familydoctor.cn/hlthsci/kongfuxuetang-quan-jiexi-zhengchangzhi-kong-tang-zhinan-632991.html",
+        "snippet": ""
+      }
+    }
+  ],
+  "added_topics": []
+}

@@ -52,6 +52,8 @@ from claim_gate import evaluate as claim_gate_evaluate, extract_claims, adversar
 
 from claim_graph import get_claim_graph_penalty  # noqa: E402
 
+from source_fetcher import enrich_items_with_source_preview  # noqa: E402
+
 
 
 EXPORTS_DIR = os.path.join(PROJECT_ROOT, "data", "exports")
@@ -278,20 +280,46 @@ def build_claim_checks(item: dict) -> list[dict[str, Any]]:
     tier = item.get("evidence_tier") or (item.get("authenticity") or {}).get("evidence_tier", "?")
     title = item.get("title", "")
     snippet = item.get("snippet", "")
-    raw_claims = list(item.get("claims") or [])
+    blob = f"{title} {snippet}"
+
+    raw_claims: list[dict[str, Any]] = list(item.get("claims") or [])
+    seen_text: set[str] = set()
+
+    def add_claim(text: str, claim_type: str = "topic_discussion") -> None:
+        t = (text or "").strip()
+        if len(t) < 6:
+            return
+        key = t[:48]
+        if key in seen_text:
+            return
+        seen_text.add(key)
+        raw_claims.append({"claim": t, "claim_type": claim_type, "harm_risk": "low"})
+
     if not raw_claims:
-        raw_claims = extract_claims(title, snippet, tier if tier != "?" else "D")
-    if snippet and len(snippet.strip()) > 24:
-        sn = snippet.strip()[:160]
-        if not any(c.get("claim") == sn for c in raw_claims if isinstance(c, dict)):
-            raw_claims.append(
-                {
-                    "claim": sn,
-                    "claim_type": "topic_discussion",
-                    "harm_risk": "low",
-                    "evidence_strength": "low",
-                }
-            )
+        for part in re.split(r"[？?；;，,]", title):
+            add_claim(part.strip())
+        for m in re.finditer(r"\d+(?:\.\d+)?%|\d+(?:\.\d+)?(?:亿|万)|GI\s*\d+|空腹\s*\d+(?:\.\d+)?|HbA1c\s*\d+(?:\.\d+)?", blob, re.I):
+            add_claim(m.group(0), "numeric_claim")
+        for rule in [
+            (r"(降血糖|降糖|控糖|逆转|治愈|根治)", "causal_claim"),
+            (r"(二甲双胍|胰岛素|司美格鲁肽|格列|降糖药)", "drug_discussion"),
+            (r"(正常|多少|算不算|标准|诊断)", "diagnostic_claim"),
+        ]:
+            if re.search(rule[0], blob, re.I):
+                add_claim(re.search(rule[0], blob, re.I).group(0), rule[1])
+        extracted = extract_claims(title, snippet, tier if tier != "?" else "D")
+        for c in extracted:
+            add_claim(c.get("claim", ""), c.get("claim_type", "topic_discussion"))
+        if not seen_text:
+            add_claim(title or snippet[:80])
+
+    sn = snippet.strip()
+    if len(sn) > 20:
+        for sent in re.split(r"[。！!；;]", sn):
+            s = sent.strip()
+            if len(s) >= 12:
+                add_claim(s[:120], "snippet_claim")
+                break
 
     status_labels = {
         "pending_verify": "待核实",
@@ -312,6 +340,8 @@ def build_claim_checks(item: dict) -> list[dict[str, Any]]:
             return "对照药品说明书；口播不得给出个体剂量"
         if re.search(r"GI|升糖|粗粮|主食", claim_text, re.I):
             return "前往 https://www.glycemicindex.com/ 核对具体品类"
+        if re.search(r"正常|算不算|诊断|空腹|糖化", claim_text, re.I):
+            return "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
         if tier in ("A", "B"):
             return "对照指南或原链接二次查证"
         return "打开原贴核对，避免把讨论当医学结论"
@@ -322,13 +352,17 @@ def build_claim_checks(item: dict) -> list[dict[str, Any]]:
         if ct == "food_cure_claim":
             return "exaggerated", "食物疗效类断言，默认不可当事实"
         if ct == "causal_claim" and tier in ("D", "E", "?"):
-            return "disputed", "因果断言来自低证据来源，宜改为「有人在讨论…」"
-        if ct == "medication_claim":
+            return "disputed", "因果/疗效断言来自低证据来源，宜改为「有人在讨论…」"
+        if ct in ("medication_claim", "drug_discussion"):
             return "pending_verify", "用药内容须遵医嘱"
+        if ct == "diagnostic_claim":
+            return "pending_verify", "诊断/标准类须对照最新指南"
+        if ct in ("numeric_claim",) or re.search(r"\d+(?:\.\d+)?%|\d+(?:\.\d+)?(?:亿|万)", claim_text):
+            return "pending_verify", "含具体数字，写稿前须回源"
+        if ct == "snippet_claim":
+            return "pending_verify", "摘要片段须与原视频/正文核对"
         if re.search(r"百分百|所有|一定|根治|治愈|永不", claim_text):
             return "exaggerated", "含绝对化表述"
-        if re.search(r"\d+%|\d+亿|\d+[\d.]*万", claim_text):
-            return "pending_verify", "含具体数字，写稿前须回源"
         if tier in ("D", "E", "?"):
             return "opinion", "UGC 讨论，宜作话题钩子"
         return "pending_verify", "写稿前建议核对原贴与权威来源"
@@ -984,6 +1018,34 @@ def _tier_badge(tier: str) -> str:
 
 
 
+def _render_source_preview_html(preview: dict) -> str:
+    if not preview or preview.get("status") == "error":
+        err = (preview or {}).get("error", "")
+        if err:
+            return f'<p class="source-preview muted">原贴内容未拉取：{html.escape(err[:120])}</p>'
+        return ""
+    kps = preview.get("key_points") or []
+    excerpt = (preview.get("excerpt") or "").strip()
+    note = preview.get("note") or ""
+    parts: list[str] = ['<div class="source-preview">', '<div class="source-preview-title">📄 原贴内容摘要</div>']
+    if kps:
+        li = "".join(f"<li>{html.escape(str(p)[:120])}</li>" for p in kps[:5])
+        parts.append(f'<ul class="source-kp">{li}</ul>')
+    if excerpt and len(excerpt) > 40:
+        parts.append(
+            f'<pre class="source-excerpt">{html.escape(excerpt[:600])}{"…" if len(excerpt) > 600 else ""}</pre>'
+        )
+    if note:
+        parts.append(f'<p class="source-note">{html.escape(note)}</p>')
+    src = preview.get("sources_used") or []
+    if src:
+        parts.append(f'<p class="muted">来源：{html.escape("、".join(src))}</p>')
+    parts.append("</div>")
+    if len(parts) <= 3 and not kps:
+        return ""
+    return "\n".join(parts)
+
+
 def render_html(brief: dict) -> str:
 
     d = brief["report_date"]
@@ -1024,6 +1086,23 @@ def render_html(brief: dict) -> str:
 
         gate_badge = '<span class="gate-ok">Gate✓</span>' if gate_ok else '<span class="gate-no">Gate✗</span>'
 
+        da = it.get("deep_analysis") or {}
+        claim_rows = da.get("claim_checks") or []
+        claim_html = ""
+        if claim_rows:
+            claim_parts: list[str] = []
+            for c in claim_rows[:4]:
+                hint = c.get("verify_hint") or ""
+                hint_html = (
+                    f'<br><small class="muted">{html.escape(hint)}</small>' if hint else ""
+                )
+                claim_parts.append(
+                    f'<li><span>{html.escape(c.get("text", "")[:80])}</span> '
+                    f'<span class="claim-tag claim-{html.escape(c.get("status", "pending_verify"))}">'
+                    f'{html.escape(c.get("status_label", ""))}</span>{hint_html}</li>'
+                )
+            claim_html = f'<ul class="claim-checks">{"".join(claim_parts)}</ul>'
+
         timeline_rows.append(
 
             f"""<article class="tl-item">
@@ -1053,6 +1132,10 @@ def render_html(brief: dict) -> str:
     </div>
 
     <p class="note">{html.escape(it.get('creator_note') or it.get('snippet') or '')}</p>
+
+    {_render_source_preview_html(it.get('source_preview') or {})}
+
+    {claim_html}
 
     <div class="tl-foot">{link}</div>
 
@@ -1167,6 +1250,30 @@ h2 {{ font-size:16px; color:var(--accent); margin:24px 0 14px; }}
 .flag {{ background:rgba(255,107,107,.12); color:var(--accent2); padding:1px 6px; border-radius:4px; }}
 
 .note {{ font-size:12px; color:var(--muted); margin:6px 0; }}
+
+.claim-checks {{ font-size:12px; margin:8px 0 0; padding-left:18px; list-style:disc; }}
+
+.claim-checks li {{ margin-bottom:6px; line-height:1.5; }}
+
+.claim-tag {{ font-size:10px; font-weight:700; padding:1px 7px; border-radius:4px; margin-left:6px; }}
+
+.claim-pending_verify {{ background:rgba(255,217,61,.15); color:var(--accent3); }}
+
+.claim-disputed,.claim-exaggerated {{ background:rgba(255,107,107,.12); color:var(--accent2); }}
+
+.claim-opinion {{ background:rgba(108,140,255,.15); color:var(--accent4); }}
+
+.claim-verified {{ background:rgba(0,212,170,.15); color:var(--accent); }}
+
+.source-preview {{ font-size:12px; margin:10px 0; padding:10px 12px; background:rgba(108,140,255,.06); border:1px solid rgba(108,140,255,.2); border-radius:8px; }}
+
+.source-preview-title {{ font-weight:600; margin-bottom:6px; color:var(--accent4); }}
+
+.source-kp {{ margin:6px 0 0 18px; padding:0; line-height:1.55; }}
+
+.source-excerpt {{ font-size:11px; white-space:pre-wrap; margin:8px 0 0; color:var(--muted); max-height:140px; overflow:auto; }}
+
+.source-note {{ font-size:11px; color:var(--accent3); margin:6px 0 0; }}
 
 .tl-foot a {{ color:var(--accent4); font-size:12px; text-decoration:none; }}
 
@@ -1286,11 +1393,14 @@ def write_schema_stub() -> None:
 
 
 
-def save_curated_brief(report_date: str, harvest_payload: dict) -> dict[str, str]:
+def save_curated_brief(report_date: str, harvest_payload: dict, *, fetch_sources: bool = True) -> dict[str, str]:
 
     write_schema_stub()
 
     brief = curate_from_harvest_payload(harvest_payload)
+
+    all_items = (brief.get("timeline") or []) + (brief.get("writable_picks") or []) + (brief.get("hook_only") or [])
+    enrich_items_with_source_preview(all_items, fetch=fetch_sources)
 
     os.makedirs(EXPORTS_DIR, exist_ok=True)
 
@@ -1412,6 +1522,8 @@ def main() -> int:
 
     parser.add_argument("--date", help="YYYY-MM-DD，默认读 latest-harvest")
 
+    parser.add_argument("--no-fetch-sources", action="store_true", help="不拉取原贴字幕/正文（仅用缓存）")
+
     args = parser.parse_args()
 
     try:
@@ -1428,7 +1540,7 @@ def main() -> int:
 
     report_date = payload.get("report_date") or args.date or datetime.now().strftime("%Y-%m-%d")
 
-    paths = save_curated_brief(report_date, payload)
+    paths = save_curated_brief(report_date, payload, fetch_sources=not args.no_fetch_sources)
 
     print(f"[精选日报] {report_date}")
 

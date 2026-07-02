@@ -2,7 +2,7 @@
   "_meta": {
     "version": "1.0.0",
     "description": "主张记忆图谱：防重复谣言包装与误读升级",
-    "last_updated": "2026-06-30T00:30:46"
+    "last_updated": "2026-07-02T09:10:00"
   },
   "claims": {
     "40a2e10bd40d4026": {
@@ -31,10 +31,20 @@
       "published_versions": [],
       "related_topics": [],
       "titles_seen": [
-        "逆转胰岛素抵抗五个自然方法"
+        "逆转胰岛素抵抗五个自然方法",
+        "【规范与指南】胰岛素抵抗相关临床问题专家共识（2022版）",
+        "胰岛素抵抗的定义及临床表现 - UpToDate",
+        "胰岛素抵抗",
+        "胰岛素抵抗：糖尿病前期的一个不容忽视的警告信号。 | Phyathai Hospital",
+        "什么是胰岛素抵抗？妙佑医疗国际专家为您解答"
       ],
       "source_urls": [
-        "https://bilibili.com/video/BVtest"
+        "https://bilibili.com/video/BVtest",
+        "https://www.doctorpda.cn/news/747351",
+        "https://www.uptodate.com/contents/zh-Hans/insulin-resistance-definition-and-clinical-spectrum/print",
+        "https://drugs.dxy.cn/pc/clinicalDecision/ytHarEBDknGwD7b9THIZ-PQ?ky=t7Gc0.html",
+        "https://www.phyathai.com/zh/pyt2/article/insulin-resistance-early-warning-before-diabetes-pt2",
+        "https://www.mayoclinic.org/zh-hans/diseases-conditions/obesity/multimedia/vid-20536756"
       ]
     },
     "167e0973a2290ade": {
@@ -50,7 +60,9 @@
         "中国糖尿病防治指南（2024版）"
       ],
       "source_urls": [
-        "https://drugs.dxy.cn/pc/clinicalGuidelines/test"
+        "https://drugs.dxy.cn/pc/clinicalGuidelines/test",
+        "https://files.sciconf.cn/master/50/33230/202501/20250120111901_47273.pdf",
+        "https://drugs.dxy.cn/pc/clinicalGuidelines/pC7RJoNHj1YANrh50uWaVA==?ky=%E4%B8%AD%E5%9B%BD%E7%B3%96%E5%B0%BF%E7%97%85%E9%98%B2%E6%B2%BB%E6%8C%87%E5%8D%97%EF%BC%882024%E7%89%88%EF%BC%89"
       ]
     },
     "b2ac7d2b942bd3bc": {
@@ -79,10 +91,176 @@
       "published_versions": [],
       "related_topics": [],
       "titles_seen": [
-        "2026控糖指南解读"
+        "2026控糖指南解读",
+        "糖尿病前期控糖：3步稳血糖，延缓发病 - 防患于未然 - 家医大健康",
+        "空腹与餐后血糖：控糖缺一不可 - 治疗与康复 - 家医大健康",
+        "空腹血糖全解析：正常值与控糖指南 - 治疗与康复 - 家医大健康"
       ],
       "source_urls": [
-        "https://bilibili.com/video/BV1"
+        "https://bilibili.com/video/BV1",
+        "https://www.familydoctor.cn/hlthsci/tangniaobingqianqi-kong-tang-3bu-wen-xuetang-yanhuan-fabing-692219.html",
+        "https://www.familydoctor.cn/hlthsci/kongfu-canhouxuetang-kong-tang-queyibuke-421812.html",
+        "https://www.familydoctor.cn/hlthsci/kongfuxuetang-quan-jiexi-zhengchangzhi-kong-tang-zhinan-632991.html"
+      ]
+    },
+    "388f07c245691283": {
+      "claim_text": "糖尿病前期- 诊断与治疗- 妙佑医疗国际 - Mayo Clinic",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病前期- 诊断与治疗- 妙佑医疗国际 - Mayo Clinic"
+      ],
+      "source_urls": [
+        "https://www.mayoclinic.org/zh-hans/diseases-conditions/prediabetes/diagnosis-treatment/drc-20355284"
+      ]
+    },
+    "3720025e8e94433a": {
+      "claim_text": "中国成人糖尿病前期干预的专家共识（2023版）",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "中国成人糖尿病前期干预的专家共识（2023版）"
+      ],
+      "source_urls": [
+        "https://bjrmyylib.yuntsg.com/ueditor/jsp/upload/file/20230919/1695130784021063093.pdf"
+      ]
+    },
+    "1e09aa0f0f26cece": {
+      "claim_text": "T/CACM 1463-2023-糖尿病前期治未病干预指南-国家标准馆·国家数字标准馆",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "T/CACM 1463-2023-糖尿病前期治未病干预指南-国家标准馆·国家数字标准馆"
+      ],
+      "source_urls": [
+        "https://ndls.cnis.ac.cn/standard/detail/f043f488a9b0ac9ddd3d6dfa3f123bd2"
+      ]
+    },
+    "890f20a9ad6792bf": {
+      "claim_text": "AACE糖尿病前期患者的综合治疗指南指南与共识-《中国糖尿病杂志》官方网站",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "AACE糖尿病前期患者的综合治疗指南指南与共识-《中国糖尿病杂志》官方网站"
+      ],
+      "source_urls": [
+        "http://www.cds.org.cn/znygs/117.html"
+      ]
+    },
+    "c67c67ca5d4fc65f": {
+      "claim_text": "2型糖尿病实用目标和治疗（第四版）指南与共识-《中国糖尿病杂志》官方网站",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "2型糖尿病实用目标和治疗（第四版）指南与共识-《中国糖尿病杂志》官方网站"
+      ],
+      "source_urls": [
+        "http://www.cds.org.cn/znygs/126.html"
+      ]
+    },
+    "a8b22fb7a86ceef4": {
+      "claim_text": "2型糖尿病 - 内分泌及代谢紊乱 - MSD诊疗手册专业版",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "2型糖尿病 - 内分泌及代谢紊乱 - MSD诊疗手册专业版"
+      ],
+      "source_urls": [
+        "https://www.msdmanuals.cn/professional/endocrine-and-metabolic-disorders/diabetes-mellitus-and-hypoglycemia/type-2-diabetes-mellitus"
+      ]
+    },
+    "0a13dd046fbbef9d": {
+      "claim_text": "中国2型糖尿病基层医疗卫生指南（2025 年版）-指南&解读指南-MedSci.cn",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "中国2型糖尿病基层医疗卫生指南（2025 年版）-指南&解读指南-MedSci.cn"
+      ],
+      "source_urls": [
+        "https://www.medsci.cn/guideline/show_article.do?id=54e5c1c00a820214"
+      ]
+    },
+    "9f22b1cde3a8cb1c": {
+      "claim_text": "空腹血糖正常，餐后血糖却超标，是咋回事？ - 江苏大学附属医院",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹血糖正常，餐后血糖却超标，是咋回事？ - 江苏大学附属医院"
+      ],
+      "source_urls": [
+        "https://www.jdfy.cn/changjianbingyufangyubaojian/12957.html"
+      ]
+    },
+    "99fd6bf564efec76": {
+      "claim_text": "《中国2型糖尿病患者餐后高血糖管理专家共识》解读_中华医学网",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "《中国2型糖尿病患者餐后高血糖管理专家共识》解读_中华医学网"
+      ],
+      "source_urls": [
+        "http://www.medtranslation.cn/changjianjibing/20260316/256534.html"
+      ]
+    },
+    "75318ce39a3bbd82": {
+      "claim_text": "血糖界的四大天王：空腹血糖、餐后血糖、糖化血红蛋白、糖耐量",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "血糖界的四大天王：空腹血糖、餐后血糖、糖化血红蛋白、糖耐量"
+      ],
+      "source_urls": [
+        "https://www.nhsa.gov.cn/art/2024/9/15/art_14_13876.html"
       ]
     }
   }

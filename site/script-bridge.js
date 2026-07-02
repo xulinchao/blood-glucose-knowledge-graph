@@ -85,6 +85,9 @@
       if (/GI|升糖|粗粮|主食/i.test(text)) {
         return "前往 https://www.glycemicindex.com/ 核对具体品类";
       }
+      if (/正常|算不算|诊断|空腹|糖化/i.test(text)) {
+        return "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值";
+      }
       if (tier === "A" || tier === "B") {
         return "对照指南或原链接二次查证";
       }
@@ -96,25 +99,66 @@
       const text = c.claim || "";
       if (ct === "food_cure_claim") return ["exaggerated", "食物疗效类断言，默认不可当事实"];
       if (ct === "causal_claim" && (tier === "D" || tier === "E" || tier === "?")) {
-        return ["disputed", "因果断言来自低证据来源，宜改为「有人在讨论…」"];
+        return ["disputed", "因果/疗效断言来自低证据来源，宜改为「有人在讨论…」"];
       }
-      if (ct === "medication_claim") return ["pending_verify", "用药内容须遵医嘱"];
+      if (ct === "medication_claim" || ct === "drug_discussion") {
+        return ["pending_verify", "用药内容须遵医嘱"];
+      }
+      if (ct === "diagnostic_claim") return ["pending_verify", "诊断/标准类须对照最新指南"];
+      if (ct === "numeric_claim" || /\d+(?:\.\d+)?%|\d+(?:\.\d+)?(?:亿|万)/.test(text)) {
+        return ["pending_verify", "含具体数字，写稿前须回源"];
+      }
+      if (ct === "snippet_claim") return ["pending_verify", "摘要片段须与原视频/正文核对"];
       if (/百分百|所有|一定|根治|治愈|永不/.test(text)) return ["exaggerated", "含绝对化表述"];
-      if (/\d+%|\d+亿|\d+[\d.]*万/.test(text)) return ["pending_verify", "含具体数字，写稿前须回源"];
       if (tier === "D" || tier === "E" || tier === "?") return ["opinion", "UGC 讨论，宜作话题钩子"];
       return ["pending_verify", "写稿前建议核对原贴与权威来源"];
     }
 
-    let raw = (item.claims || []).slice();
-    if (!raw.length && item.title) {
-      raw = [{ claim: item.title, claim_type: "topic_discussion", harm_risk: "low" }];
-    }
-    const sn = (item.snippet || "").trim();
-    if (sn.length > 24 && !raw.some((c) => c && c.claim === sn)) {
-      raw.push({ claim: sn.slice(0, 160), claim_type: "topic_discussion", harm_risk: "low" });
+    const title = item.title || "";
+    const snippet = item.snippet || "";
+    const blob = `${title} ${snippet}`;
+    let rawClaims = (item.claims || []).slice();
+    const seenText = new Set();
+
+    function addClaim(text, claimType) {
+      const t = (text || "").trim();
+      if (t.length < 6) return;
+      const key = t.slice(0, 48);
+      if (seenText.has(key)) return;
+      seenText.add(key);
+      rawClaims.push({ claim: t, claim_type: claimType || "topic_discussion", harm_risk: "low" });
     }
 
-    return raw.slice(0, 6).map((c) => {
+    if (!rawClaims.length) {
+      title.split(/[？?；;，,]/).forEach((part) => addClaim(part.trim()));
+      const numRe = /\d+(?:\.\d+)?%|\d+(?:\.\d+)?(?:亿|万)|GI\s*\d+|空腹\s*\d+(?:\.\d+)?|HbA1c\s*\d+(?:\.\d+)?/gi;
+      let nm;
+      while ((nm = numRe.exec(blob)) !== null) addClaim(nm[0], "numeric_claim");
+      [
+        [/(降血糖|降糖|控糖|逆转|治愈|根治)/i, "causal_claim"],
+        [/(代替药物|停药|不用吃药|替换药物)/i, "medication_claim"],
+        [/(二甲双胍|胰岛素|司美格鲁肽|格列|降糖药)/i, "drug_discussion"],
+        [/(苹果醋|苦瓜|偏方|秘方)/i, "food_cure_claim"],
+        [/(正常|多少|算不算|标准|诊断)/i, "diagnostic_claim"],
+      ].forEach(([re, ct]) => {
+        const m = blob.match(re);
+        if (m) addClaim(m[0], ct);
+      });
+      if (!seenText.size) addClaim(title || snippet.slice(0, 80));
+    }
+
+    const sn = snippet.trim();
+    if (sn.length > 20) {
+      for (const sent of sn.split(/[。！!；;]/)) {
+        const s = sent.trim();
+        if (s.length >= 12) {
+          addClaim(s.slice(0, 120), "snippet_claim");
+          break;
+        }
+      }
+    }
+
+    return rawClaims.slice(0, 6).map((c) => {
       if (!c || !c.claim) return null;
       const [status, note] = ruleStatus(c);
       return {
@@ -261,13 +305,84 @@
     return map[status] || map.pending_verify;
   }
 
-  function renderDeepAnalysisModalHtml(title, analysis) {
+  function toSourcePreview(result) {
+    if (!result || !result.ok) {
+      return {
+        status: "error",
+        url: (result && result.url) || "",
+        error: (result && result.error) || "拉取失败",
+      };
+    }
+    const excerptParts = [];
+    if (result.transcript) excerptParts.push(String(result.transcript).slice(0, 1200));
+    else if (result.description) excerptParts.push(String(result.description).slice(0, 800));
+    else if (result.raw_text) excerptParts.push(String(result.raw_text).slice(0, 1200));
+    return {
+      content_status: result.content_status || result.status || "ok",
+      type: result.type || "",
+      url: result.url || "",
+      title: result.title || "",
+      author: result.author || "",
+      excerpt: excerptParts.join("\n\n").slice(0, 1500),
+      key_points: (result.key_points || []).slice(0, 8),
+      sources_used: result.sources_used || [],
+      note: result.note || "",
+      fetched_at: result.fetched_at || "",
+    };
+  }
+
+  function renderSourcePreviewHtml(preview, url) {
+    if (!preview) {
+      return url
+        ? '<div id="source-preview-host" style="font-size:12px;color:#8b919a">正在拉取原贴字幕/正文…</div>'
+        : "";
+    }
+    if (preview.status === "error") {
+      return `<div style="margin-bottom:14px;padding:12px;background:#1a1d24;border:1px solid #2a2f3a;border-radius:8px">
+        <div style="font-size:12px;font-weight:600;color:#ff6b6b;margin-bottom:6px">📄 原贴内容未拉取</div>
+        <div style="font-size:11px;color:#8b919a">${escModal(preview.error || "请用 dev_server 或重新跑采集")}</div>
+        ${url ? `<div style="margin-top:8px"><a href="${escModal(url)}" target="_blank" rel="noopener" style="color:#6c8cff;font-size:11px">打开原贴 →</a></div>` : ""}
+      </div>`;
+    }
+    const kps = preview.key_points || [];
+    const excerpt = (preview.excerpt || "").trim();
+    const note = preview.note || "";
+    const src = (preview.sources_used || []).join("、");
+    const kpHtml = kps.length
+      ? `<ul style="margin:8px 0 0 18px;padding:0;line-height:1.55;color:#c9cdd4">${kps
+          .map((p) => `<li>${escModal(String(p).slice(0, 140))}</li>`)
+          .join("")}</ul>`
+      : "";
+    const exHtml =
+      excerpt.length > 40
+        ? `<pre style="font-size:11px;white-space:pre-wrap;margin:8px 0 0;color:#8b919a;max-height:160px;overflow:auto">${escModal(excerpt.slice(0, 800))}${excerpt.length > 800 ? "…" : ""}</pre>`
+        : "";
+    if (!kpHtml && !exHtml) {
+      return `<div id="source-preview-host" style="margin-bottom:14px;padding:12px;background:#1a1d24;border:1px solid #2a2f3a;border-radius:8px">
+        <div style="font-size:12px;font-weight:600;color:#ffd93d">📄 原贴暂无字幕/正文</div>
+        <div style="font-size:11px;color:#8b919a;margin-top:6px">仅有标题可用；B站无 CC 时须点开视频核对，或本地用 dev_server 重新拉取。</div>
+        ${url ? `<a href="${escModal(url)}" target="_blank" rel="noopener" style="color:#6c8cff;font-size:11px;margin-top:8px;display:inline-block">打开原贴 →</a>` : ""}
+      </div>`;
+    }
+    return `<div id="source-preview-host" style="margin-bottom:14px;padding:12px;background:#1a1d24;border:1px solid rgba(108,140,255,.25);border-radius:8px">
+      <div style="font-size:12px;font-weight:600;color:#6c8cff;margin-bottom:4px">📄 原贴内容摘要</div>
+      ${preview.author ? `<div style="font-size:11px;color:#8b919a">作者：${escModal(preview.author)} · ${escModal(preview.type || "")} · ${escModal(preview.status || "")}</div>` : ""}
+      ${kpHtml}
+      ${exHtml}
+      ${note ? `<div style="font-size:11px;color:#ffd93d;margin-top:8px">${escModal(note)}</div>` : ""}
+      ${src ? `<div style="font-size:10px;color:#8b919a;margin-top:4px">抓取：${escModal(src)}</div>` : ""}
+      ${url ? `<a href="${escModal(url)}" target="_blank" rel="noopener" style="color:#6c8cff;font-size:11px;margin-top:8px;display:inline-block">打开原贴核对 →</a>` : ""}
+    </div>`;
+  }
+
+  function renderDeepAnalysisModalHtml(title, analysis, sourcePreview, url) {
     const da = analysis || {};
     const sa = da.script_angles || {};
     const isRule = da._source === "rule_engine";
     const badge = isRule
-      ? '<span style="font-size:10px;padding:2px 8px;border-radius:4px;background:rgba(255,217,61,0.15);color:var(--accent3)">规则解读 · 无 AI · 不标「已核实」</span>'
-      : '<span style="font-size:10px;padding:2px 8px;border-radius:4px;background:rgba(0,212,170,0.15);color:var(--accent)">Agent/人工增强</span>';
+      ? '<span style="font-size:10px;padding:2px 8px;border-radius:4px;background:rgba(255,217,61,0.15);color:#ffd93d">规则解读 · 无 AI · 不标「已核实」</span>'
+      : '<span style="font-size:10px;padding:2px 8px;border-radius:4px;background:rgba(0,212,170,0.15);color:#00d4aa">Agent/人工增强</span>';
+    const sourceHtml = renderSourcePreviewHtml(sourcePreview, url);
     const claimHtml = (da.claim_checks || [])
       .map((c) => {
         const st = claimBadgeStyle(c.status);
@@ -293,11 +408,12 @@
               <h3 style="font-size:15px;margin:0 0 6px;line-height:1.45">${escModal(title)}</h3>
               ${badge}
             </div>
-            <button type="button" id="deep-analysis-close-btn" style="background:none;border:none;color:var(--muted);cursor:pointer;font-size:18px">×</button>
+            <button type="button" id="deep-analysis-close-btn" style="background:none;border:none;color:#8b919a;cursor:pointer;font-size:18px">×</button>
           </div>
-          ${da.credibility ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:var(--muted)">整体可信度</span><div style="font-size:13px;margin-top:4px;line-height:1.6">${escModal(da.credibility)}</div></div>` : ""}
-          ${claimHtml ? `<div style="margin-bottom:14px;padding:12px;background:var(--bg2);border:1px solid var(--rule);border-radius:8px"><span style="font-size:11px;color:var(--muted)">原贴主张核验</span><ul style="font-size:12px;margin:8px 0 0;padding-left:18px;list-style:disc">${claimHtml}</ul></div>` : ""}
-          ${steps ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:var(--muted)">自行检索建议（通用）</span><ul style="font-size:12px;margin:4px 0 0 16px;line-height:1.6">${steps}</ul></div>` : ""}
+          ${sourceHtml}
+          ${da.credibility ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:#8b919a">整体可信度</span><div style="font-size:13px;margin-top:4px;line-height:1.6;color:#c9cdd4">${escModal(da.credibility)}</div></div>` : ""}
+          ${claimHtml ? `<div style="margin-bottom:14px;padding:12px;background:#1a1d24;border:1px solid #2a2f3a;border-radius:8px"><span style="font-size:12px;font-weight:600;color:#e8eaed">📋 原贴内容主张核验</span><ul style="font-size:12px;margin:8px 0 0;padding-left:18px;list-style:disc;color:#c9cdd4">${claimHtml}</ul></div>` : ""}
+          ${steps ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:#8b919a">自行检索建议（通用）</span><ul style="font-size:12px;margin:4px 0 0 16px;line-height:1.6;color:#c9cdd4">${steps}</ul></div>` : ""}
           ${sa.hook || points || sa.caution ? `<div style="margin-bottom:12px"><span style="font-size:11px;color:var(--muted)">脚本建议</span>
             ${sa.hook ? `<div style="font-size:12px;margin-top:4px"><strong>Hook:</strong> ${escModal(sa.hook)}</div>` : ""}
             ${points ? `<div style="font-size:12px;margin-top:4px"><strong>要点:</strong><ul style="margin:4px 0 0 16px">${points}</ul></div>` : ""}
@@ -863,6 +979,21 @@
     return pool[Math.floor(Math.random() * pool.length)](topic);
   }
 
+  function hasSubstantiveSourceLines(lines) {
+    return (lines || []).some((line) => {
+      const t = String(line || "").trim();
+      if (!t || t.startsWith("来源视频标题：")) return false;
+      if (t.startsWith("【来源】")) {
+        const body = t.replace(/^【来源】/, "").trim();
+        if (body.startsWith("来源视频标题：")) return false;
+        return body.length >= 12;
+      }
+      if (t.startsWith("来源摘要：") && t.length > 18) return true;
+      if (/GI\s*\d|GL\s*\d|mmol|HbA1c|糖化/.test(t)) return true;
+      return t.length >= 20;
+    });
+  }
+
   function expandSpokenBody({ topic, cat, points, duration, writeMode }) {
     points = (points || []).filter(Boolean);
     if (writeMode === "hook_only") {
@@ -877,10 +1008,16 @@
     const limit = maxPointsForDuration(duration);
     const pts = points.slice(0, limit);
     if (!pts.length) {
-      pts.push(
-        "先搞清自己的体检指标，而不是只看短视频标题",
-        "生活方式调整通常比极端做法更可坚持",
-        "有用药或指标异常，及时咨询医生"
+      return (
+        "⚠️ 本条暂无原贴正文。请先点「拉取原贴」（需 dev_server）或 B 站无字幕时用 bili audio + agent-reach transcribe。\n\n" +
+        "缺少正文请勿直接发布——复制 AI Prompt 人工写稿更稳妥。"
+      );
+    }
+    if (!hasSubstantiveSourceLines(points)) {
+      return (
+        "⚠️ 目前只有标题/标签，没有视频字幕或正文摘要。\n\n" +
+        pts.slice(0, 2).map((p, i) => expandPoint(p, i)).join("\n\n") +
+        "\n\n（以上为资料库自动匹配，非原贴逐字稿；写稿前须拉取原贴或转写视频。）"
       );
     }
 
@@ -979,6 +1116,8 @@
     loadDiscoveredTopics,
     buildDeepAnalysisFromBriefItem,
     buildClaimChecks,
+    toSourcePreview,
+    renderSourcePreviewHtml,
     resolveDeepAnalysis,
     renderDeepAnalysisModalHtml,
     enrichDataRef,

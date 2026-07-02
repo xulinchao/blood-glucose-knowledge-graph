@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-07-01",
+  "updated": "2026-07-02",
   "topics": [
     {
       "id": "disc-016",
@@ -989,6 +989,105 @@
       },
       "data_source": "platform_harvest",
       "data_source_label": "B站真实平台数据"
+    },
+    {
+      "id": "disc-052",
+      "title": "血糖界的四大天王：空腹血糖、餐后血糖、糖化血红蛋白、糖耐量",
+      "angle": "全网网页(Exa) · 证据层级A · cite_directly · 可引用来源观点，口播须加「非医疗建议」并附原链接",
+      "category": "数字科普",
+      "platform": "dy,bili",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 全网网页(Exa) · 选题分 91 · 互动 -",
+      "source_urls": [
+        "https://www.nhsa.gov.cn/art/2024/9/15/art_14_13876.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-02",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 91,
+          "label": "较高",
+          "reasons": [
+            "一级来源：指南/政府/期刊域名",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+        },
+        "importance": {
+          "score": 40,
+          "label": "低",
+          "reasons": []
+        },
+        "topic_score": 91,
+        "platform": "exa",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "纤维先形成物理屏障，延缓碳水吸收",
+        "蛋白质刺激GLP-1分泌，延缓胃排空",
+        "可将餐后血糖峰值降低20-40%",
+        "同样食物，不同顺序，血糖反应差异显著",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-053",
+      "title": "中国糖尿病防治指南（2024版）",
+      "angle": "全网网页(Exa) · 证据层级B · verify_before_script · 写稿前对照原帖/指南核实；口播避免给个体诊断",
+      "category": "数字科普",
+      "platform": "dy,bili",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 全网网页(Exa) · 选题分 84 · 互动 -",
+      "source_urls": [
+        "https://drugs.dxy.cn/pc/clinicalGuidelines/pC7RJoNHj1YANrh50uWaVA==?ky=%E4%B8%AD%E5%9B%BD%E7%B3%96%E5%B0%BF%E7%97%85%E9%98%B2%E6%B2%BB%E6%8C%87%E5%8D%97%EF%BC%882024%E7%89%88%EF%BC%89"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-02",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 84,
+          "label": "较高",
+          "reasons": [
+            "二级来源：医疗专业平台",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "写稿前对照原帖/指南核实；口播避免给个体诊断"
+        },
+        "importance": {
+          "score": 52,
+          "label": "低",
+          "reasons": [
+            "多平台同热(exa)"
+          ]
+        },
+        "topic_score": 84,
+        "platform": "exa",
+        "evidence_tier": "B",
+        "use_as": "verify_before_script",
+        "creator_note": "写稿前对照原帖/指南核实；口播避免给个体诊断"
+      },
+      "data_ref": []
     }
   ],
   "archive": [
@@ -2535,6 +2634,79 @@
       },
       "notes": "母婴垂类高关注度",
       "from_csv": true
+    },
+    {
+      "id": "disc-102",
+      "title": "2026年2型糖尿病缓解专家共识八大更新解读",
+      "angle": "2026年6月新共识发布，68位专家参与，距离上一版整整5年。部分2型糖友确实有机会实现糖尿病缓解/停药。",
+      "category": "数字科普",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "2026年6月《2型糖尿病缓解专家共识》正式发布，中国医师协会内分泌代谢科医师分会组织68位专家编写",
+      "source_urls": [
+        "http://m.toutiao.com/group/7656648560331342378/",
+        "http://m.toutiao.com/group/7655886363933278720/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-02",
+      "harvest_meta": {
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "一级权威来源更新，可引用但须加「非医疗建议」",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-103",
+      "title": "35岁血糖管理警戒线：糖尿病年轻化趋势",
+      "angle": "西安交大附属医院内分泌科副主任强薇接受华商报采访：40岁以下群体糖尿病发病率激增3倍，35岁为关键转折点。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "15-30s",
+      "heat": "warm",
+      "heat_source": "新浪财经2026-07-01报道，西安交大第一附属医院内分泌代谢科副主任强薇采访",
+      "source_urls": [
+        "https://cj.sina.cn/article/norm_detail?froms=ttmp&url=https%3A%2F%2Ffinance.sina.com.cn%2Fjjxw%2F2026-07-01%2Fdoc-iniffytk3128999.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-02",
+      "harvest_meta": {
+        "evidence_tier": "B",
+        "use_as": "verify_before_script",
+        "creator_note": "有医院来源，但写稿前建议核对原报道与数据",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-104",
+      "title": "二甲双胍抗衰老「跌落神坛」：健康人千万别乱吃",
+      "angle": "原研究负责人自己推翻结论：过去长寿效果是统计偏差，严格双盲试验证实健康人吃二甲双胍几乎没有抗衰老收益。",
+      "category": "辟谣",
+      "platform": "dy,xhs",
+      "duration": "15-30s",
+      "heat": "warm",
+      "heat_source": "全球长寿研究权威公开改口，头条热议",
+      "source_urls": [
+        "http://m.toutiao.com/group/7638797828130669075/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-02",
+      "harvest_meta": {
+        "evidence_tier": "B",
+        "use_as": "cite_directly",
+        "creator_note": "争议性强，适合辟谣类口播，须加对冲语",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
     }
   ]
 }
