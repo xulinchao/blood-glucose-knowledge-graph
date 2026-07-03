@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-07-02",
+  "updated": "2026-07-03",
   "topics": [
     {
       "id": "disc-016",
@@ -1088,6 +1088,647 @@
         "creator_note": "写稿前对照原帖/指南核实；口播避免给个体诊断"
       },
       "data_ref": []
+    },
+    {
+      "id": "disc-054",
+      "title": "如何判断自己有没有糖尿病｜糖尿病的诊断",
+      "angle": "B站热门视频，播放量 261129，UP主 账号已注销。可提取核心知识点转化为口播选题。",
+      "category": "实操方法",
+      "platform": "bili,dy,xhs",
+      "duration": "15-30s",
+      "heat": "warm",
+      "heat_source": "B站搜索'糖尿病'，播放量 261129，弹幕 115",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Na4y1D7pF"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-03",
+      "platform_data": {
+        "bili_play": 261129,
+        "bili_danmaku": 115,
+        "bili_author": "账号已注销"
+      }
+    },
+    {
+      "id": "disc-055",
+      "title": "糖尿病足的手术治疗方案。",
+      "angle": "B站热门视频，播放量 91366，UP主 成都创面修复Dr魏。可提取核心知识点转化为口播选题。",
+      "category": "数字科普",
+      "platform": "bili,dy,xhs",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "B站搜索'糖尿病'，播放量 91366，弹幕 83",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1aueBz8ErS"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-03",
+      "platform_data": {
+        "bili_play": 91366,
+        "bili_danmaku": 83,
+        "bili_author": "成都创面修复Dr魏"
+      }
+    },
+    {
+      "id": "disc-056",
+      "title": "实操--《血糖监测》",
+      "angle": "B站热门视频，播放量 90223，UP主 飞不见飞。可提取核心知识点转化为口播选题。",
+      "category": "数字科普",
+      "platform": "bili,dy,xhs",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "B站搜索'血糖'，播放量 90223，弹幕 91",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Vb4y1v7hR"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-03",
+      "platform_data": {
+        "bili_play": 90223,
+        "bili_danmaku": 91,
+        "bili_author": "飞不见飞"
+      }
+    },
+    {
+      "id": "disc-057",
+      "title": "怎样才能 加速脂肪和糖分代谢",
+      "angle": "B站热门视频，播放量 77285，UP主 雪片糖糕。可提取核心知识点转化为口播选题。",
+      "category": "数字科普",
+      "platform": "bili,dy,xhs",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "B站搜索'低GI'，播放量 77285，弹幕 6",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Wp4y1h7Bm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-03",
+      "platform_data": {
+        "bili_play": 77285,
+        "bili_danmaku": 6,
+        "bili_author": "雪片糖糕"
+      }
+    },
+    {
+      "id": "disc-058",
+      "title": "糖尿病足好恐怖，全都坏死了",
+      "angle": "B站热门视频，播放量 60416，UP主 肌肉超绝马嘉祺。可提取核心知识点转化为口播选题。",
+      "category": "数字科普",
+      "platform": "bili,dy,xhs",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "B站搜索'糖尿病'，播放量 60416，弹幕 42",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1JZ421u7Qx"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-03",
+      "platform_data": {
+        "bili_play": 60416,
+        "bili_danmaku": 42,
+        "bili_author": "肌肉超绝马嘉祺"
+      }
+    },
+    {
+      "id": "disc-059",
+      "title": "国家医疗保障局 医保动态 血糖界的四大天王：空腹血糖、餐后血糖、糖化血红蛋白、糖耐量",
+      "angle": "全网网页(Exa) · 证据层级A · cite_directly · 可引用来源观点，口播须加「非医疗建议」并附原链接",
+      "category": "工具测评",
+      "platform": "dy,bili",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 全网网页(Exa) · 选题分 91 · 互动 -",
+      "source_urls": [
+        "https://www.nhsa.gov.cn/art/2024/9/15/art_14_13876.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-03",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 91,
+          "label": "较高",
+          "reasons": [
+            "一级来源：指南/政府/期刊域名",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+        },
+        "importance": {
+          "score": 40,
+          "label": "低",
+          "reasons": []
+        },
+        "topic_score": 91,
+        "platform": "exa",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "纤维先形成物理屏障，延缓碳水吸收",
+        "蛋白质刺激GLP-1分泌，延缓胃排空",
+        "可将餐后血糖峰值降低20-40%",
+        "同样食物，不同顺序，血糖反应差异显著",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-060",
+      "title": "公务员体检血糖超过多少就需复检",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 899",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1KmPeeCEPT"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-03",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 52,
+          "label": "中",
+          "reasons": [
+            "命中关键词「体检 血糖偏高」"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-061",
+      "title": "10种意想不到的低GI主食，减肥可以放心吃！",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "饮食指南",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 5370",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV16ZLc6jExU"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-03",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 62,
+          "label": "中",
+          "reasons": [
+            "有一定互动(5,370)",
+            "命中关键词「低GI」"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "高GI+低GL（如西瓜）：少量吃影响不大",
+        "低GI+高GL（如大量全麦面包）：仍需注意份量",
+        "高GI+高GL（如白米饭）：最危险组合",
+        "低GI+低GL（如蔬菜）：安全区",
+        "优先选全谷物、豆类、非淀粉蔬菜",
+        "每餐必有蛋白质（肉/鱼/蛋/豆）",
+        "先吃蔬菜→蛋白质→最后吃主食",
+        "避免液态糖（含糖饮料、果汁）",
+        "苹果+一小把花生",
+        "无糖酸奶+蓝莓",
+        "小份黑巧克力（≥70%）",
+        "煮鸡蛋"
+      ]
+    },
+    {
+      "id": "disc-062",
+      "title": "餐后血糖 8.7 算不算糖尿病？新旧指南标准不一样了",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 3098",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1z5TszvEiW"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-03",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 62,
+          "label": "中",
+          "reasons": [
+            "有一定互动(3,098)",
+            "命中关键词「餐后血糖」"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "纤维先形成物理屏障，延缓碳水吸收",
+        "蛋白质刺激GLP-1分泌，延缓胃排空",
+        "可将餐后血糖峰值降低20-40%",
+        "同样食物，不同顺序，血糖反应差异显著",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-063",
+      "title": "糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 36126",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1f84y1q7aA"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-03",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 70,
+          "label": "中",
+          "reasons": [
+            "互动量中等(36,126)",
+            "命中关键词「糖耐量异常」"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-064",
+      "title": "出现糖耐量异常，这样做可摆脱困扰，恢复正常",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 2656",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Tt4y137Ff"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-03",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 62,
+          "label": "中",
+          "reasons": [
+            "有一定互动(2,656)",
+            "命中关键词「糖耐量异常」"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-065",
+      "title": "糖尿病专科郭医生153.体检发现自己处于糖耐量受损怎么办？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 9066",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1bv41177nk"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-03",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 50,
+          "label": "中",
+          "reasons": [
+            "有一定互动(9,066)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-066",
+      "title": "早期胃癌两个异常，对照自查一下",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 78958",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1L4VwzSEee"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-03",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 58,
+          "label": "中",
+          "reasons": [
+            "互动量中等(78,958)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-067",
+      "title": "空腹血糖高，试试这2招（01）",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 4490",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1jT4y1m7RM"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-03",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 50,
+          "label": "中",
+          "reasons": [
+            "有一定互动(4,490)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-068",
+      "title": "血糖没超过6.0，为啥入职体检不合格？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 7085",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV17w4m1176V"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-03",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 62,
+          "label": "中",
+          "reasons": [
+            "有一定互动(7,085)",
+            "命中关键词「体检 血糖偏高」"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-069",
+      "title": "血液检验报告解读之葡萄糖",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 8364",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Xa41157fd"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-03",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 50,
+          "label": "中",
+          "reasons": [
+            "有一定互动(8,364)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "葡萄糖 GI100 · 高GI",
+        "葡萄 GI43 · GL5 · 低GI"
+      ]
     }
   ],
   "archive": [
