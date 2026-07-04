@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-07-03",
+  "updated": "2026-07-04",
   "topics": [
     {
       "id": "disc-016",
@@ -1729,6 +1729,430 @@
         "葡萄糖 GI100 · 高GI",
         "葡萄 GI43 · GL5 · 低GI"
       ]
+    },
+    {
+      "id": "disc-070",
+      "title": "糖化血红蛋白可以作为糖尿病的诊断标准吗？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 30752",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1d34y1j7fR"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-04",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 70,
+          "label": "中",
+          "reasons": [
+            "互动量中等(30,752)",
+            "命中关键词「糖化血红蛋白」"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%"
+      ]
+    },
+    {
+      "id": "disc-071",
+      "title": "5分钟带你了解糖化血红蛋白检查的基本原理、检查方法和读懂报告 3D科普动画（nucleus医学科普视频系列）中文翻译",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "实操方法",
+      "platform": "bili,dy",
+      "duration": "45-60s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 3757",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1WV4HeZEAH"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-04",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 62,
+          "label": "中",
+          "reasons": [
+            "有一定互动(3,757)",
+            "命中关键词「糖化血红蛋白」"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-072",
+      "title": "一人一标准？糖化血红蛋白多少算达标？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 21644",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1c24y1d7Lc"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-04",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 70,
+          "label": "中",
+          "reasons": [
+            "互动量中等(21,644)",
+            "命中关键词「糖化血红蛋白」"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-073",
+      "title": "糖尿病的“金标准”，糖化血红蛋白",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 3140",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1yCZ3YxEW1"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-04",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 62,
+          "label": "中",
+          "reasons": [
+            "有一定互动(3,140)",
+            "命中关键词「糖化血红蛋白」"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-074",
+      "title": "空腹血糖5.7糖化血红蛋白6.3%，能排除糖尿病吗？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 3774",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1cM411r7F6"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-04",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 62,
+          "label": "中",
+          "reasons": [
+            "有一定互动(3,774)",
+            "命中关键词「糖化血红蛋白」"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-075",
+      "title": "糖尿病前期一定会进展为糖尿病吗？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 5480",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1sg411371N"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-04",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 50,
+          "label": "中",
+          "reasons": [
+            "有一定互动(5,480)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-076",
+      "title": "高血糖就在你身边 赶紧自测一下！",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 67853",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1WY4y1B7aJ"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-04",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 58,
+          "label": "中",
+          "reasons": [
+            "互动量中等(67,853)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-077",
+      "title": "餐后血糖比空腹血糖的还低？怎回事？该怎么办？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 2621",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1pM4y1Q7Ln"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-04",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 50,
+          "label": "中",
+          "reasons": [
+            "有一定互动(2,621)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "纤维先形成物理屏障，延缓碳水吸收",
+        "蛋白质刺激GLP-1分泌，延缓胃排空",
+        "可将餐后血糖峰值降低20-40%",
+        "同样食物，不同顺序，血糖反应差异显著",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-078",
+      "title": "【聊健康的崔主任】为啥人一吃饱就会犯困？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "饮食指南",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 1777",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV15t4y1Z7yK"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-04",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 50,
+          "label": "中",
+          "reasons": [
+            "有一定互动(1,777)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
     }
   ],
   "archive": [
@@ -3345,6 +3769,130 @@
         "evidence_tier": "B",
         "use_as": "cite_directly",
         "creator_note": "争议性强，适合辟谣类口播，须加对冲语",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-105",
+      "title": "7月1日起糖尿病跨省看病不用备案，直接刷卡报销",
+      "angle": "国家医保局新政：高血压、糖尿病跨省慢特病直接结算全面升级，取消专项备案，全国约1.5亿慢病患者受益。尤其影响随子女异地养老的老人。",
+      "category": "数字科普",
+      "platform": "dy,xhs",
+      "duration": "15-30s",
+      "heat": "hot",
+      "heat_source": "2026年7月1日全国统一执行，头条/搜狐多平台报道，糖友切身利益",
+      "source_urls": [
+        "http://m.toutiao.com/group/7658144910889779748/",
+        "http://m.toutiao.com/group/7657769854509859343/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-04",
+      "harvest_meta": {
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "国家医保局政策，A级权威来源，可引用须附来源",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-106",
+      "title": "胰岛干细胞突破供体短缺，糖尿病迎治愈曙光",
+      "angle": "中科院曾艺团队鉴定出成体干细胞通用标记Procr，体外构建人工胰岛，获2025年度上海市科学技术奖一等奖。临床移植研究已启动。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "2026年7月2日揭晓上海市科学技术奖，头条/搜狐报道",
+      "source_urls": [
+        "http://m.toutiao.com/group/7657740682328670758/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-04",
+      "harvest_meta": {
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "顶级科研突破，但\"治愈\"须谨慎表述，目前仍在临床试验阶段",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-107",
+      "title": "8种药7月起退出医保报销，糖友赶紧核对药单",
+      "angle": "2026年7月1日起8款药品因企业未参与续约谈判退出统筹报销范围。糖友受直接影响，可刷个人账户但不能走统筹报销。",
+      "category": "数字科普",
+      "platform": "dy,xhs",
+      "duration": "15-20s",
+      "heat": "warm",
+      "heat_source": "医保发〔2025〕33号文件，头条多篇文章讨论",
+      "source_urls": [
+        "http://m.toutiao.com/group/7657274971521942022/",
+        "http://m.toutiao.com/group/7657210535749992975/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-04",
+      "harvest_meta": {
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "政策类内容，可引用，但须注意不帮带货/替代医生意见",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-108",
+      "title": "糖化血红蛋白6.3%算不算糖尿病？只查空腹会漏诊三分之二",
+      "angle": "B站李梅医生指出：糖化6.3%虽未达糖尿病诊断标准(≥6.5%)但已不正常，应查OGTT确认。只查空腹血糖漏诊率高。",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "B站 李梅医生说糖尿病 3774互动；崔松主任30752互动；陈奇医生21644互动",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1cM411r7F6",
+        "https://www.bilibili.com/video/BV1d34y1j7fR",
+        "https://www.bilibili.com/video/BV1c24y1d7Lc"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-04",
+      "harvest_meta": {
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "B站医生账号，关键数字须对照指南二次查证",
+        "gate_passed": true,
+        "source_type": "harvest"
+      }
+    },
+    {
+      "id": "disc-109",
+      "title": "2026糖尿病慢特病报销六大新变化：取消起付线、长处方3个月",
+      "angle": "《全国统一门诊慢特病管理规范（2026版）》7月落地，取消起付线、分层报销最高95%、3个月长处方、异地直接结算。",
+      "category": "数字科普",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "国家医保局+卫健委联合出台，7月全面执行",
+      "source_urls": [
+        "http://m.toutiao.com/group/7657769854509859343/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-04",
+      "harvest_meta": {
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "国家政策类内容，可引用，注意各地细则有差异须提示",
         "gate_passed": true,
         "source_type": "web_search"
       }
