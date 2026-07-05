@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-07-04",
+  "updated": "2026-07-05",
   "topics": [
     {
       "id": "disc-016",
@@ -2153,6 +2153,280 @@
         "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
       },
       "data_ref": []
+    },
+    {
+      "id": "disc-110",
+      "title": "低GI零食的\"脂肪陷阱\"——你被低GI标签骗了吗？",
+      "angle": "揭露低GI食品市场三大虚假宣传套路（只标概念不标数值、认证文件模糊、混淆eGI与真实GI），科普低GI≠低热量，结合消保委调查数据。教观众看配料表前三成分+净碳水计算法。",
+      "category": "辟谣",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "上海市消保委发布低GI食品消费提示；国家认监委暂停低GI认证备案引发行业震荡；央视等多家媒体跟进报道",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/ae6mqmkm/",
+        "http://m.toutiao.com/group/7658178712294146600/",
+        "http://www.redsh.com/pinpai/20260703/052956.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-05",
+      "harvest_meta": {
+        "evidence_tier": "B",
+        "use_as": "cite_directly",
+        "creator_note": "消保委+官方媒体来源，证据层级较好，适合辟谣类口播",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-111",
+      "title": "二甲双胍\"伤肾\"背了70年黑锅——2026新指南下它过时了吗？",
+      "angle": "澄清三大误区：①\"伤肾\"真相（是肾脏排泄不是肾损伤，eGFR<30才禁用）②前两周拉肚子是正常适应期不是\"不适合\"③长期吃需每年查B12。同时指出2026新指南对合并心肾问题者推荐新药优先，但单纯血糖高者二甲双胍仍是性价比最高选择。",
+      "category": "医学",
+      "platform": "dy,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "今日头条该话题多篇文章高互动；2026新指南发布引发\"是否被淘汰\"讨论",
+      "source_urls": [
+        "http://m.toutiao.com/group/7657834497320174089/",
+        "http://m.toutiao.com/group/7595768727216456234/",
+        "https://m.sohu.com/a/1045671264_122745654/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-05",
+      "harvest_meta": {
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "话题性强但涉及用药细节，写稿前需核实最新指南表述",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-112",
+      "title": "35岁血糖急转弯——每6人中就有1个糖尿病？",
+      "angle": "以CDC数据（2.33亿患者，40岁以下发病率飙升3倍）为钩子，解读为什么35岁是血糖管理警戒线。科普糖尿病前期6大信号，强调《中国糖尿病防治指南（2024版）》已将筛查起始年龄从40岁提前至35岁。",
+      "category": "生活方式",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "人民日报健康客户端报道；腾讯新闻12条评论高互动；\"糖尿病年轻化\"话题全网持续发酵",
+      "source_urls": [
+        "https://view.inews.qq.com/k/20260125A03HZ300",
+        "https://m.99.com.cn/a/2489061/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-05",
+      "harvest_meta": {
+        "evidence_tier": "B",
+        "use_as": "cite_directly",
+        "creator_note": "CDC数据+2024版指南，证据层级好，属讨论话题不替代就医",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-113",
+      "title": "CGM动态血糖仪怎么选？2026主流品牌一句话对比",
+      "angle": "面向想尝试CGM但不知从何下手的用户，快速对比雅培瞬感2代、硅基动感GS3、三诺爱看i6、鱼跃安耐糖的核心差异，附关键指标解释（MARD、免校准vs需校准、佩戴周期）。",
+      "category": "工具",
+      "platform": "xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "2026年7月最新选购指南发布；欧态CGM获\"人民优选\"认证；多平台密集发布CGM横评",
+      "source_urls": [
+        "https://www.sohu.com/a/982975319_122471764",
+        "http://m.toutiao.com/group/7652172402025120271/",
+        "http://m.toutiao.com/group/7628872784369762851/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-05",
+      "harvest_meta": {
+        "evidence_tier": "C",
+        "use_as": "hook_only",
+        "creator_note": "产品参数变化快，需核实最新型号，非医疗建议",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-114",
+      "title": "血糖忽高忽低——波动比高血糖更危险？",
+      "angle": "切入血糖波动（血糖变异性）概念，说明为什么\"忽高忽低\"可能比持续偏高对血管损伤更大。列举常见原因（进餐不规律、情绪应激、黎明现象、药物timing不对），给出实操建议。",
+      "category": "医学",
+      "platform": "dy,xhs",
+      "duration": "15-20s",
+      "heat": "warm",
+      "heat_source": "今日头条健康频道该话题长期存在；血糖波动管理是糖尿病患者高频搜索词",
+      "source_urls": [
+        "http://m.toutiao.com/group/6989879294725980705/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-05",
+      "harvest_meta": {
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "医学概念类选题，关键机制描述需核对指南/教材",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-115",
+      "title": "糖前期真的能逆转吗？减5%体重就够了",
+      "angle": "引用上海六院贾伟平教授观点\"糖尿病前期是逆转黄金窗口期\"，结合JAMA子刊研究（45782人队列），给出可操作逆转路径：低GI饮食+每周150-300分钟中强度运动+减重5%-7%+严格戒烟。",
+      "category": "生活方式",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "多位专家在头条/健康平台发声；JAMA子刊研究提供学术背书；\"逆转\"关键词自带传播力",
+      "source_urls": [
+        "http://m.toutiao.com/group/7657218351667757583/",
+        "http://m.toutiao.com/group/7216741654110306874/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-05",
+      "harvest_meta": {
+        "evidence_tier": "B",
+        "use_as": "cite_directly",
+        "creator_note": "专家观点+JAMA子刊，证据层级好，属讨论话题不替代就医",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-116",
+      "title": "胰岛素抵抗=胖才有？瘦子也可能中招",
+      "angle": "打破\"只有胖人才有胰岛素抵抗\"的认知偏差，说明瘦型胰岛素抵抗的成因（遗传、内脏脂肪偏高但BMI正常、长期高压皮质醇升高）、自查信号（餐后犯困、腰围增粗、皮肤标签/黑棘皮病）。",
+      "category": "生活方式",
+      "platform": "dy,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "胰岛素抵抗与减肥话题在健康平台持续高搜索；瘦型IR是近年科普新角度，差异化明显",
+      "source_urls": [
+        "https://m.xiaohe.cn/medical/qa/70000132373621",
+        "https://m.120v.com.cn/medical/zfinal/1e33de947.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-05",
+      "harvest_meta": {
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "差异化科普角度，但具体机制需核对内分泌学教材",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-117",
+      "title": "2026老年控糖新标准：3个高频误区中老年糖友别再瞎控",
+      "angle": "依据2026新版《中国老年2型糖尿病防治临床指南》，拆解三大常见误区：①\"年纪大血糖可放宽\"——硬朗老人HbA1c仍需<7% ②\"只测空腹血糖\"——60岁以上只测空腹会漏掉80%餐后隐匿高血糖 ③\"降糖药配养生茶\"——甘草可削弱降糖药效。",
+      "category": "数字科普",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "2026版《中国老年2型糖尿病防治临床指南》发布，中华内科杂志2026年第65卷第3期",
+      "source_urls": [
+        "http://m.toutiao.com/group/7654303692270731814/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-05",
+      "harvest_meta": {
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "A级来源（中华内科杂志），GRADE证据等级高，可引用加非医疗建议",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-118",
+      "title": "低GI食品国家标准即将出台，你的零食可能\"伪低GI\"",
+      "angle": "国家市监总局2026年1月暂停低GI商业自愿认证；上海市科委设\"GI值预测技术与低GI食品\"专项；博鳌健康食品科学大会陈君石指出当前低GI食品\"良莠不齐\"。科普如何辨别伪低GI产品。",
+      "category": "辟谣",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "京东低GI搜索热度同比增56%；全球市场2033年预计329亿美元；国家市监总局暂停认证+标准即将出台",
+      "source_urls": [
+        "http://m.toutiao.com/group/7641840481755742774/",
+        "http://m.toutiao.com/group/7657060209059250723/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-05",
+      "harvest_meta": {
+        "evidence_tier": "B",
+        "use_as": "cite_directly",
+        "creator_note": "政策+行业数据，证据层级好，适合辟谣/消费者教育类口播",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-119",
+      "title": "AI管理糖尿病：北京社区试点血糖稳定了一半",
+      "angle": "北京市2026年启动健康医疗AI应用试点，聚焦糖尿病等慢病。智能血糖仪+用药提醒+AI分析饮食运动数据，案例显示糖化血红蛋白从9.2%降至7.1%。但属个案讨论，不构成医疗建议。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "15-20s",
+      "heat": "warm",
+      "heat_source": "北京市健康医疗AI应用试点2026年启动；全球医疗AI市场2030年预计2080亿美元",
+      "source_urls": [
+        "http://m.toutiao.com/group/7657717774361379368/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-05",
+      "harvest_meta": {
+        "evidence_tier": "D",
+        "use_as": "hook_only",
+        "creator_note": "UGC叙事，案例数据不可复述为结论，仅反映\"大家在讨论什么\"",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-120",
+      "title": "替尔泊肽进医保了！月费直降2000+糖友圈沸腾",
+      "angle": "2型糖尿病GLP-1药物替尔泊肽（司美格鲁肽类）正式纳入医保，月费降幅超2000元。B站糖友圈引发较高讨论度。提醒用药遵医嘱，不同适应症报销有差异。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "15-20s",
+      "heat": "warm",
+      "heat_source": "B站用户动态/评论区引发讨论；GLP-1药物医保话题2026年持续发酵",
+      "source_urls": [
+        "https://www.bilibili.com/opus/1153704971078729731"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-05",
+      "harvest_meta": {
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "涉及用药和医保政策，写稿前需核实各省报销细则",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
     }
   ],
   "archive": [
