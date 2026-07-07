@@ -4170,6 +4170,203 @@
         "gate_passed": true,
         "source_type": "web_search"
       }
+    },
+    {
+      "id": "disc-110",
+      "title": "北大糖尿病论坛2026：疾病修正治疗(DMT)五大支柱",
+      "angle": "纪立农教授提出'疾病修正治疗'新理念，从单纯降糖转向代谢综合管理。五大支柱：体重管理、血糖管理、血压管理、血脂管理、抗血小板治疗。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "2026年5月第二十二届北大糖尿病论坛，全球首次以疾病修正为核心议题",
+      "source_urls": [
+        "http://m.toutiao.com/group/7658438003756483124/",
+        "http://m.toutiao.com/group/7654488898646589995/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-07",
+      "harvest_meta": {
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "学术会议内容，A级权威来源，可引用须加非医疗建议",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-111",
+      "title": "控糖10吃10不吃清单，三餐直接照抄版",
+      "angle": "结构化饮食清单：推荐黑木耳、猕猴桃、全麦意面、紫甘蓝、银耳、冬瓜、口蘑、芦笋、豆腐、三文鱼；需避免精制糖、含糖饮料等。",
+      "category": "饮食指南",
+      "platform": "dy,xhs",
+      "duration": "15-30s",
+      "heat": "warm",
+      "heat_source": "头条热门控糖饮食结构化内容",
+      "source_urls": [
+        "http://m.toutiao.com/group/7659252903470793231/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-07",
+      "harvest_meta": {
+        "evidence_tier": "C",
+        "use_as": "hook_only",
+        "creator_note": "饮食清单为网络整理内容，非医疗建议，个体差异请咨询医生",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-112",
+      "title": "血糖忽高忽低？9个意想不到的隐藏原因",
+      "angle": "喝水少、情绪波动、睡眠不足、药物服用时间、饮食顺序、压力、饮酒、女性生理期、黎明现象等9个可能导致血糖波动的原因。",
+      "category": "数字科普",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "头条'你的血糖为啥忽高忽低'热门内容，收藏率高",
+      "source_urls": [
+        "http://m.toutiao.com/group/7525638468123329058/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-07",
+      "harvest_meta": {
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "网络科普内容，关键医学数字须对照指南二次查证",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-113",
+      "title": "2026年家用CGM选购：百元级四款横评避坑指南",
+      "angle": "微泰AiDEXX(1分钟1测)、三诺爱看i6(第三代传感技术)、雅培瞬感(14天连续监测)等对比，选购看MARD值、采样频率、适老化设计。",
+      "category": "工具测评",
+      "platform": "dy,xhs,bili",
+      "duration": "60-90s",
+      "heat": "hot",
+      "heat_source": "2026年CGM市场高速增长，多款百元级产品上市，测评内容热度高",
+      "source_urls": [
+        "https://m.99.com.cn/a/2522081/",
+        "http://m.toutiao.com/group/7637029602241561142/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-07",
+      "harvest_meta": {
+        "evidence_tier": "B",
+        "use_as": "verify_before_script",
+        "creator_note": "产品测评类内容，数据须核对官方参数，避免带货倾向",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-114",
+      "title": "二甲双胍能减肥？健康人乱吃的风险与真相",
+      "angle": "二甲双胍是降糖药不是减肥药，主要副作用为胃肠道反应、B12缺乏、低血糖风险。非糖尿病患者不建议使用，50岁以上人群尤需谨慎。",
+      "category": "辟谣",
+      "platform": "dy,xhs",
+      "duration": "15-30s",
+      "heat": "warm",
+      "heat_source": "有来医生/博禾医生等专业平台内容，头条热议'二甲双胍减肥'",
+      "source_urls": [
+        "https://m.youlai.cn/b/audio/382E67YqkuS.html",
+        "http://m.toutiao.com/group/7639632648188559924/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-07",
+      "harvest_meta": {
+        "evidence_tier": "B",
+        "use_as": "cite_directly",
+        "creator_note": "药物类内容须加'个体情况请咨询医生，不构成医疗建议'",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-115",
+      "title": "糖前期逆转最佳方案：生活方式干预",
+      "angle": "饮食控制(拳头法则)+每周150分钟有氧运动+体重管理+睡眠调节+压力管理。糖前期是逆转黄金窗口期。",
+      "category": "饮食指南",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "博禾医生/看病网等医疗平台内容，糖前期话题关注度高",
+      "source_urls": [
+        "https://m.bohe.cn/article/toutiao/81y4f0nck59jbx0.html",
+        "https://www.kanbing.net/medical/zfinal/251sg33yf.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-07",
+      "harvest_meta": {
+        "evidence_tier": "B",
+        "use_as": "cite_directly",
+        "creator_note": "生活方式建议可引用，涉及药物须提示就医",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-116",
+      "title": "胰岛素抵抗改善：先调睡眠再运动的逻辑",
+      "angle": "多囊/胰岛素抵抗人群常见睡眠问题。建议：先养身体→调睡眠→温和运动→减压。而非一开始就拼命练。",
+      "category": "饮食指南",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "头条'多囊合并胰岛素抵抗'热门内容，年轻女性关注度高",
+      "source_urls": [
+        "http://m.toutiao.com/group/7644759566332461608/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-07",
+      "harvest_meta": {
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "网络健康建议，具体方案须个体化咨询医生",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-117",
+      "title": "2026糖尿病功能性治愈进展：再生胰岛移植突破",
+      "angle": "中科院曾艺团队Procr干细胞标记研究，体外构建人工胰岛获上海市科学技术奖一等奖。全球首例青少年再生胰岛移植脱离胰岛素超26个月，但仍处临床试验阶段。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "2026年7月上海市科学技术奖揭晓，头条/搜狐报道",
+      "source_urls": [
+        "http://m.toutiao.com/group/7657740682328670758/",
+        "https://news.ifeng.com/c/8uJ3QXXOzMb"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-07",
+      "harvest_meta": {
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "顶级科研进展，'治愈'须谨慎表述，强调临床试验阶段",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
     }
   ]
 }
