@@ -54,6 +54,13 @@ def resolve_topic(args: argparse.Namespace) -> tuple[dict, dict, str, str, list[
         angle = angle or topic.get("angle", "")
         cat = args.cat or CAT_MAP.get(topic.get("category", ""), "myth")
         meta = harvest_meta_from_topic(topic)
+        manual_urls = [u.strip() for u in (args.source_url or "").split(",") if u.strip()]
+        if manual_urls and meta.get("ai_reference"):
+            # 人工补充真实来源 = 为 AI 参考选题"转正"，交回默认核实模式
+            meta["source_urls"] = manual_urls
+            meta["use_as"] = args.use_as or "verify_before_script"
+            meta["evidence_tier"] = args.evidence_tier or "D"
+            meta["creator_note"] = "AI参考选题已由人工补充真实来源，仍须核对热度与数据"
         topic_id = topic["id"]
     elif args.from_harvest:
         harvest = load_latest_harvest()
@@ -163,6 +170,14 @@ def main() -> None:
                 print(f"    建议: {s}")
 
     if args.save:
+        meta_check = doc.get("meta") or {}
+        if meta_check.get("ai_reference") and not meta_check.get("source_urls") and not args.force:
+            print(
+                "\n[拒绝保存] 该选题为 AI 推算参考（未经平台数据验证），"
+                "请用 --source-url 补充真实来源后再写稿，或用 --force 强制保存",
+                file=sys.stderr,
+            )
+            raise SystemExit(2)
         safety = doc.get("safety_report") or {}
         if not safety.get("passed") and not args.force:
             print("\n[拒绝保存] 口播安全 Lint 未通过，使用 --force 强制保存", file=sys.stderr)

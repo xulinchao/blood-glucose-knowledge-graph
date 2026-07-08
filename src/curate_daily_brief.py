@@ -74,6 +74,10 @@ CROSS_PLATFORM_LIMIT = 5
 
 SCHEMA_VERSION = "2.0"
 
+BACKLOG_WARN_THRESHOLD = 20
+
+DISCOVERED_TOPICS_FILE = os.path.join(PROJECT_ROOT, "data", "discovered-topics.json")
+
 
 
 USE_AS_LABEL = {
@@ -630,6 +634,20 @@ def _dedupe_ranked(items: list[dict], limit: int, sort_key=_timeline_sort_key) -
 
 
 
+def compute_topic_backlog() -> dict[str, Any]:
+    """统计 discovered-topics.json 中待写稿选题积压量，供精选日报提醒。"""
+    if not os.path.isfile(DISCOVERED_TOPICS_FILE):
+        return {"pending_count": 0, "over_threshold": False, "threshold": BACKLOG_WARN_THRESHOLD}
+    with open(DISCOVERED_TOPICS_FILE, encoding="utf-8") as f:
+        data = json.load(f)
+    pending = [t for t in data.get("topics", []) if t.get("script_status", "pending") == "pending"]
+    return {
+        "pending_count": len(pending),
+        "over_threshold": len(pending) >= BACKLOG_WARN_THRESHOLD,
+        "threshold": BACKLOG_WARN_THRESHOLD,
+    }
+
+
 def find_cross_platform_themes(items: list[dict]) -> list[dict]:
 
     buckets: dict[str, list[dict]] = {}
@@ -840,7 +858,7 @@ def curate_from_harvest_payload(payload: dict) -> dict[str, Any]:
 
     cross_platform = find_cross_platform_themes(clean)
 
-
+    backlog = compute_topic_backlog()
 
     brief = {
 
@@ -873,6 +891,8 @@ def curate_from_harvest_payload(payload: dict) -> dict[str, Any]:
             "platforms_ok": summary_in.get("platforms_ok", []),
 
             "gate_note": "timeline 按 gate.passed → writability_score 排序；heat_score 仅传播展示",
+
+            "topic_backlog": backlog,
 
         },
 
@@ -912,11 +932,23 @@ def render_markdown(brief: dict) -> str:
 
         "",
 
+    ]
+
+    backlog = s.get("topic_backlog") or {}
+    if backlog.get("over_threshold"):
+        lines.append(
+            f"> ⚠️ 选题积压 {backlog.get('pending_count')} 条（阈值 {backlog.get('threshold')}），"
+            "建议优先清理已有选题，本期暂缓新增"
+        )
+        lines.append("")
+
+    lines.extend([
+
         "## Agent 速查",
 
         "",
 
-    ]
+    ])
 
     hints = brief.get("agent_hints") or {}
 
@@ -1051,6 +1083,16 @@ def render_html(brief: dict) -> str:
     d = brief["report_date"]
 
     s = brief["summary"]
+
+    backlog = s.get("topic_backlog") or {}
+
+    backlog_banner = ""
+    if backlog.get("over_threshold"):
+        backlog_banner = (
+            f'<div class="panel" style="border-color:var(--accent2)">'
+            f'⚠️ 选题积压 {backlog.get("pending_count")} 条（阈值 {backlog.get("threshold")}），'
+            f'建议优先清理已有选题，本期暂缓新增</div>'
+        )
 
     timeline_rows = []
 
@@ -1318,6 +1360,8 @@ h2 {{ font-size:16px; color:var(--accent); margin:24px 0 14px; }}
   <div class="stat"><b>{s.get('new_topics_added',0)}</b><span>新入库</span></div>
 
 </div>
+
+{backlog_banner}
 
 <section>
 

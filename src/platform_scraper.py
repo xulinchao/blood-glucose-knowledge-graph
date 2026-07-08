@@ -195,7 +195,7 @@ def run_discovery():
 
     # 加载现有数据
     data = load_existing_topics()
-    existing_ids = {t['id'] for t in data['topics']}
+    existing_ids = {t['id'] for t in data['topics']} | {t['id'] for t in data.get('archive', [])}
     existing_keys = {dedup_key(t['title']) for t in data['topics']}
     new_topics = []
 

@@ -34,6 +34,7 @@
 - `src/script_safety.py` — 口播生成后 Lint（与 Gate 禁止词同源）
 - `data/knowledge/claim-graph.json` — 主张记忆图谱（误读升级 / 已发版本）
 - `site/script-bridge.js` — 浏览器端选题资料桥接（与 `script_knowledge.py` 规则一致）
+- `content/learning-notes/` — 学习笔记（AI 初稿，人工审阅），模板见 `content/learning-notes/_模板.md`；对应选题在 `discovered-topics.json` 中通过 `learning_note` 字段关联（`{file, summary, review_status}`）
 
 ## Build & Development
 

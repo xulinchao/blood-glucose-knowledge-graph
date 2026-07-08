@@ -713,7 +713,7 @@ def promote_to_topics(items: list[dict], existing: dict) -> list[dict]:
     picks.sort(key=lambda x: x["topic_score"], reverse=True)
     picks = picks[:12]
 
-    existing_ids = {t["id"] for t in existing["topics"]}
+    existing_ids = {t["id"] for t in existing["topics"]} | {t["id"] for t in existing.get("archive", [])}
     existing_keys = {dedup_key(t["title"]) for t in existing["topics"]}
     added: list[dict] = []
 

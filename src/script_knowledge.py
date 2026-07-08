@@ -200,6 +200,16 @@ def build_verify_checklist(meta: dict[str, Any]) -> list[dict[str, Any]]:
                 "auto": False,
             },
         )
+    if meta.get("ai_reference"):
+        checklist.insert(
+            0,
+            {
+                "id": "ai_reference_verify",
+                "text": "本选题为 AI 推算（无真实平台数据），发布前须补充真实 source_urls 并核实热度",
+                "required": True,
+                "auto": False,
+            },
+        )
     if tier in ("C", "D", "E") or use_as == "verify_before_script":
         checklist.append(
             {
@@ -561,13 +571,30 @@ def find_discovered_topic(topic_id: str) -> dict | None:
 def harvest_meta_from_topic(topic: dict) -> dict[str, Any]:
     hm = topic.get("harvest_meta") or {}
     auth = hm.get("authenticity") or {}
+    source_urls = topic.get("source_urls") or []
+    is_ai_reference = topic.get("data_source") == "ai_reference"
+    if is_ai_reference and not source_urls:
+        # AI 推算选题，热度/数据均未经平台验证，无真实来源前强制降级为仅钩子
+        return {
+            "use_as": "hook_only",
+            "evidence_tier": "E",
+            "creator_note": (
+                "AI参考选题（热度为AI推算，未经平台数据验证）——写稿前须补充真实 source_urls "
+                "并人工核实，否则只能作为「大家在聊什么」的话题钩子，不得当事实写"
+            ),
+            "adversarial_flags": ["ai_reference_unverified"],
+            "source_urls": [],
+            "topic_score": hm.get("topic_score"),
+            "ai_reference": True,
+        }
     return {
         "use_as": hm.get("use_as") or auth.get("use_as"),
         "evidence_tier": hm.get("evidence_tier") or auth.get("evidence_tier"),
         "creator_note": hm.get("creator_note") or auth.get("creator_note"),
         "adversarial_flags": auth.get("adversarial_flags") or [],
-        "source_urls": topic.get("source_urls") or [],
+        "source_urls": source_urls,
         "topic_score": hm.get("topic_score"),
+        "ai_reference": is_ai_reference,
     }
 
 
@@ -691,6 +718,8 @@ def update_discovered_topic_status(
     script_status: str | None = None,
     publish_status: str | None = None,
     script_file: str | None = None,
+    learning_note_file: str | None = None,
+    learning_note_summary: str | None = None,
 ) -> bool:
     if not TOPICS_FILE.exists():
         return False
@@ -705,6 +734,12 @@ def update_discovered_topic_status(
             topic["publish_status"] = publish_status
         if script_file:
             topic["script_file"] = script_file
+        if learning_note_file:
+            topic["learning_note"] = {
+                "file": learning_note_file,
+                "summary": learning_note_summary or "",
+                "review_status": "pending",
+            }
         updated = True
         break
     if updated:
@@ -712,3 +747,4 @@ def update_discovered_topic_status(
         with open(TOPICS_FILE, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
     return updated
+

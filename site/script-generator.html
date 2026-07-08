@@ -891,6 +891,8 @@ async function initTopics() {
       source_urls: t.source_urls,
       platform_data: t.platform_data,
       deep_analysis: t.deep_analysis,
+      data_source: t.data_source,
+      data_source_label: t.data_source_label,
       _source: sourceType,
       _type: 'discovered'
     });
@@ -1230,6 +1232,9 @@ function renderTopics(){
     } else {
       sourceTag = '<span class="meta-tag">自动发现</span>';
     }
+    const aiRefTag = t.data_source === 'ai_reference'
+      ? `<span class="meta-tag" style="background:rgba(255,107,107,0.15);color:#ff6b6b" title="${escAttr(t.data_source_label || 'AI参考选题（热度为AI推算，未经平台数据验证）')}">⚠ ${escHtml(t.data_source_label || 'AI参考')}</span>`
+      : '';
 
     // Metrics display
     let metricsHtml = '';
@@ -1254,6 +1259,7 @@ function renderTopics(){
       <div class="topic-meta">
         <span class="meta-tag">${escHtml(t.catName)}</span>
         ${sourceTag}
+        ${aiRefTag}
         ${metricsHtml}
       </div>
       ${statsHtml}
@@ -1291,7 +1297,8 @@ function quickGenerate(id) {
   const meta = t._type === 'discovered'
     ? ScriptBridge.harvestMetaFromTopic({
         harvest_meta: { authenticity: { use_as: pd.use_as, evidence_tier: pd.evidence_tier }, use_as: pd.use_as, evidence_tier: pd.evidence_tier },
-        source_urls: t.source_urls || []
+        source_urls: t.source_urls || [],
+        data_source: t.data_source
       })
     : {
         use_as: 'verify_before_script',

@@ -588,6 +588,14 @@
         auto: false,
       });
     }
+    if (meta.ai_reference) {
+      list.unshift({
+        id: "ai_reference_verify",
+        text: "本选题为 AI 推算（无真实平台数据），发布前须补充真实 source_urls 并核实热度",
+        required: true,
+        auto: false,
+      });
+    }
     if (tier === "C" || tier === "D" || tier === "E" || useAs === "verify_before_script") {
       list.push({
         id: "verify_numbers",
@@ -621,13 +629,30 @@
   function harvestMetaFromTopic(topic) {
     const hm = topic.harvest_meta || {};
     const auth = hm.authenticity || {};
+    const sourceUrls = topic.source_urls || [];
+    const isAiReference = topic.data_source === "ai_reference";
+    if (isAiReference && !sourceUrls.length) {
+      // AI 推算选题，热度/数据均未经平台验证，无真实来源前强制降级为仅钩子
+      return {
+        use_as: "hook_only",
+        evidence_tier: "E",
+        creator_note:
+          "AI参考选题（热度为AI推算，未经平台数据验证）——写稿前须补充真实 source_urls " +
+          "并人工核实，否则只能作为「大家在聊什么」的话题钩子，不得当事实写",
+        adversarial_flags: ["ai_reference_unverified"],
+        source_urls: [],
+        topic_score: hm.topic_score,
+        ai_reference: true,
+      };
+    }
     return {
       use_as: hm.use_as || auth.use_as,
       evidence_tier: hm.evidence_tier || auth.evidence_tier,
       creator_note: hm.creator_note || auth.creator_note,
       adversarial_flags: auth.adversarial_flags || [],
-      source_urls: topic.source_urls || [],
+      source_urls: sourceUrls,
       topic_score: hm.topic_score,
+      ai_reference: isAiReference,
     };
   }
 
