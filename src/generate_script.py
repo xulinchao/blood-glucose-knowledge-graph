@@ -39,12 +39,13 @@ from script_knowledge import (  # noqa: E402
 from source_fetcher import fetch_sources  # noqa: E402
 
 
-def resolve_topic(args: argparse.Namespace) -> tuple[dict, dict, str, str, list[str]]:
+def resolve_topic(args: argparse.Namespace) -> tuple[dict, dict, str, str, list[str], dict | None]:
     title = (args.title or "").strip()
     angle = (args.angle or "").strip()
     meta: dict = {}
     cat = args.cat or "myth"
     topic_id = args.topic_id
+    deep_analysis: dict | None = None
 
     if args.topic_id:
         topic = find_discovered_topic(args.topic_id)
@@ -54,6 +55,15 @@ def resolve_topic(args: argparse.Namespace) -> tuple[dict, dict, str, str, list[
         angle = angle or topic.get("angle", "")
         cat = args.cat or CAT_MAP.get(topic.get("category", ""), "myth")
         meta = harvest_meta_from_topic(topic)
+        deep_analysis = topic.get("deep_analysis")
+        if deep_analysis:
+            sa = deep_analysis.get("script_angles") or {}
+            if sa.get("hook"):
+                print(f"[深度分析] 已加载 script_angles.hook: {sa['hook'][:40]}...", file=sys.stderr)
+            if sa.get("key_points"):
+                print(f"[深度分析] 已加载 key_points x{len(sa['key_points'])}", file=sys.stderr)
+        else:
+            print("[警告] 该选题无 deep_analysis 数据，生成质量可能下降。建议先在 script-generator.html 中补充深度分析。", file=sys.stderr)
         manual_urls = [u.strip() for u in (args.source_url or "").split(",") if u.strip()]
         if manual_urls and meta.get("ai_reference"):
             # 人工补充真实来源 = 为 AI 参考选题"转正"，交回默认核实模式
@@ -88,6 +98,19 @@ def resolve_topic(args: argparse.Namespace) -> tuple[dict, dict, str, str, list[
         topic_id = args.topic_id
 
     extra = [ln.strip() for ln in (args.data or "").split("\n") if ln.strip()]
+    # 深度分析数据优先注入 extra lines（hook 通过 deep_analysis 参数单独传递，不混入 body）
+    if deep_analysis:
+        sa = deep_analysis.get("script_angles") or {}
+        da_lines: list[str] = []
+        for kp in sa.get("key_points") or []:
+            da_lines.append(f"【深度分析·要点】{kp}")
+        if sa.get("caution"):
+            da_lines.append(f"【深度分析·注意】{sa['caution']}")
+        if deep_analysis.get("credibility"):
+            da_lines.append(f"【可信度】{deep_analysis['credibility']}")
+        # 深度分析行插在最前面，确保优先级最高
+        extra = da_lines + extra
+
     enriched = enrich_data_ref(title, angle=angle, snippet=angle, extra_lines=extra)
     data_ref = enriched["data_ref"]
     source_bundle = None
@@ -101,6 +124,7 @@ def resolve_topic(args: argparse.Namespace) -> tuple[dict, dict, str, str, list[
         topic_id or "",
         data_ref,
         source_bundle,
+        deep_analysis,
     )
 
 
@@ -139,7 +163,7 @@ def main() -> None:
             print(f"{t.get('id')}\t{t.get('script_status')}\t{use_as}\t{t.get('title', '')[:50]}")
         return
 
-    topic_info, meta, cat, topic_id, data_ref, _source_bundle = resolve_topic(args)
+    topic_info, meta, cat, topic_id, data_ref, _source_bundle, deep_analysis = resolve_topic(args)
     doc = build_script_document(
         title=topic_info["title"],
         platform=args.platform,
@@ -149,6 +173,7 @@ def main() -> None:
         data_ref=data_ref,
         meta=meta,
         angle=topic_info.get("angle", ""),
+        deep_analysis=deep_analysis,
     )
 
     if args.output == "json":

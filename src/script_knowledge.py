@@ -313,6 +313,18 @@ def _expand_point(point: str, index: int) -> str:
     if not p:
         return ""
 
+    # 深度分析注入行：去前缀后直接输出，不再模板化包装
+    if p.startswith("【深度分析·"):
+        body = p.split("】", 1)[1] if "】" in p else p
+        sent = body if re.search(r"[。！？]$", body) else f"{body}。"
+        return f"{lead}{sent}"
+
+    # 可信度标记
+    if p.startswith("【可信度】"):
+        body = p.replace("【可信度】", "", 1).strip()
+        sent = body if re.search(r"[。！？]$", body) else f"{body}。"
+        return f"{lead}来源可信度：{sent}"
+
     if p.startswith("【来源】"):
         body = p.replace("【来源】", "", 1).strip()
         sent = body if re.search(r"[。！？]$", body) else f"{body}。"
@@ -462,6 +474,7 @@ def build_script_document(
     data_ref: list[str] | None = None,
     meta: dict[str, Any] | None = None,
     angle: str = "",
+    deep_analysis: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     meta = meta or {}
     write_mode = resolve_write_mode(meta.get("use_as"))
@@ -469,7 +482,15 @@ def build_script_document(
     if not data_ref and (title or angle):
         data_ref = enrich_data_ref(title, angle=angle).get("data_ref", [])
 
-    hook = _pick_hook(title, persona, write_mode)
+    # 优先使用深度分析中的 hook，否则回退到模板
+    hook = ""
+    if deep_analysis:
+        sa = deep_analysis.get("script_angles") or {}
+        if sa.get("hook"):
+            hook = sa["hook"]
+    if not hook:
+        hook = _pick_hook(title, persona, write_mode)
+
     body = _build_body(cat, data_ref, write_mode, duration, title=title)
     cta = _build_cta(platform)
     full_text = f"{hook}\n\n{body}\n\n{cta}\n\n{DISCLAIMER}"
@@ -495,6 +516,7 @@ def build_script_document(
         "full_text": full_text,
         "sources": meta.get("source_urls") or [],
         "creator_note": meta.get("creator_note", ""),
+        "deep_analysis": deep_analysis,
     }
     from script_safety import lint_script_document  # noqa: WPS433
 
