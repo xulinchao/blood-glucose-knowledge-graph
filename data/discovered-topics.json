@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-07-08",
+  "updated": "2026-07-11",
   "topics": [
     {
       "id": "disc-016",
@@ -2426,6 +2426,134 @@
         "evidence_tier": "C",
         "use_as": "verify_before_script",
         "creator_note": "涉及用药和医保政策，写稿前需核实各省报销细则",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-121",
+      "title": "口服GLP-1新药大爆发：礼来/恒瑞/辉瑞2026最新进展",
+      "angle": "礼来口服GLP-1 Foundayo（奥格列龙）III期临床成功；恒瑞HRS-7535在中国超重肥胖人群III期积极结果；辉瑞埃诺格鲁肽头对头击败司美格鲁肽。口服GLP-1赛道进入爆发期。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "2026年7月ADA大会+恒瑞7月7日公布临床数据，多平台热议",
+      "source_urls": [
+        "http://m.toutiao.com/group/7660424948078412307/",
+        "http://m.toutiao.com/group/7646335621669192207/",
+        "http://m.toutiao.com/group/7660086806393651750/",
+        "http://m.toutiao.com/group/7649693563541930534/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-11",
+      "harvest_meta": {
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "药企临床数据为A级来源，但'治愈'等表述须谨慎，强调临床试验/申请阶段",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-122",
+      "title": "低GI零食的脂肪陷阱：别只看GI值",
+      "angle": "什么值得买四维拆解：低GI≠低卡，碳水含量与脂肪陷阱才是控糖关键。低GI饼干可能高脂肪，蛋白棒可能高添加糖。教看成分表选真低GI零食。",
+      "category": "饮食指南",
+      "platform": "dy,xhs",
+      "duration": "15-30s",
+      "heat": "warm",
+      "heat_source": "什么值得买/搜狐低GI零食测评，低GI概念泛滥引发质疑",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/ae6mqmkm/",
+        "https://post.m.smzdm.com/p/a65x9x60/",
+        "https://m.sohu.com/a/981397408_122578427/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-11",
+      "harvest_meta": {
+        "evidence_tier": "C",
+        "use_as": "hook_only",
+        "creator_note": "消费测评内容，可作选题钩子，具体营养数据需核对包装/官方",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-123",
+      "title": "血糖波动的正常范围是多少？空腹3.9-6.1真的安全吗",
+      "angle": "小荷健康/博禾医生数据：空腹3.9-6.1 mmol/L，餐后2h<7.8为正常。但'正常'不等于'理想'，血糖波动大比持续高血糖更伤血管。教看懂血糖仪数据。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "小荷健康/博禾医生血糖科普内容，血糖仪用户刚需",
+      "source_urls": [
+        "https://m.xiaohe-jiankang.com/medical/qa/70000000583164",
+        "https://m.bohe.cn/article/view/rpeesn3fskq7u6g.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-11",
+      "harvest_meta": {
+        "evidence_tier": "B",
+        "use_as": "verify_before_script",
+        "creator_note": "医学数值须对照最新指南二次查证，口播加非医疗建议声明",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-124",
+      "title": "糖前期逆转真实记录：不到2年从糖前+多囊恢复健康",
+      "angle": "头条真实分享：控制碳水+长期运动+情绪管理，不到2年从糖前期+多囊逆转为健康人。强调'逆转'是生活方式干预结果，非治愈承诺。",
+      "category": "经验分享",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "头条真实经历分享，糖前期人群高共鸣内容",
+      "source_urls": [
+        "http://m.toutiao.com/group/7660070464487768591/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-11",
+      "harvest_meta": {
+        "evidence_tier": "D",
+        "use_as": "hook_only",
+        "creator_note": "个人经历为D级来源，仅反映'大家在聊什么'，不可当医学结论",
+        "gate_passed": true,
+        "source_type": "web_search"
+      }
+    },
+    {
+      "id": "disc-125",
+      "title": "2026控糖产品矩阵全梳理：从低GI食品到CGM怎么选",
+      "angle": "控糖已进入精准化时代：低GI食品、CGM动态血糖仪、营养补充剂、控糖APP各有什么作用边界？一张图看懂产品矩阵，不花冤枉钱。",
+      "category": "工具测评",
+      "platform": "dy,xhs,bili",
+      "duration": "60-90s",
+      "heat": "hot",
+      "heat_source": "2026年控糖产品市场爆发，CGM百元级产品增多，低GI食品泛滥",
+      "source_urls": [
+        "https://www.sohu.com/a/983476063_122579091",
+        "https://m.99.com.cn/a/2522081/",
+        "http://m.toutiao.com/group/7660082703777268224/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-11",
+      "harvest_meta": {
+        "evidence_tier": "C",
+        "use_as": "hook_only",
+        "creator_note": "产品综述类内容，具体参数须核对官方，避免带货倾向",
         "gate_passed": true,
         "source_type": "web_search"
       }
