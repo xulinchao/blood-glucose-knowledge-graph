@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-07-11",
+  "updated": "2026-07-13",
   "topics": [
     {
       "id": "disc-016",
@@ -2557,6 +2557,290 @@
         "gate_passed": true,
         "source_type": "web_search"
       }
+    },
+    {
+      "id": "disc-156",
+      "title": "拿到化验单，怎么判断自己血糖是否正常？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "案例故事",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 2379",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1hq4y1a76u"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-13",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 50,
+          "label": "中",
+          "reasons": [
+            "有一定互动(2,379)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-157",
+      "title": "平台期不掉称，说明你真的瘦了，8招教你快速突破！",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "实操方法",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 57983",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1P9NEzoEyj"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-13",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 58,
+          "label": "中",
+          "reasons": [
+            "互动量中等(57,983)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "title": "2026 ADA大会三大突破：糖尿病\"治愈\"倒计时？",
+      "angle": "2026年美国糖尿病协会(ADA)大会三大重磅进展：干细胞疗法、再生胰岛、CGM智能化。CGM正从\"报警器\"升级为\"健康管理教练\"。适合做科普解读口播，需标注\"功能性治愈\"与\"完全治愈\"的区别，避免夸大。",
+      "category": "政策/研究",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "头条/多平台热议，ADA大会年度重磅",
+      "source_urls": [
+        "http://m.toutiao.com/group/7660424948078412307/",
+        "http://m.toutiao.com/group/7661080627365626408/"
+      ],
+      "id": "disc-158",
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-13",
+      "data_source": "manual_web_search",
+      "platform_data": {}
+    },
+    {
+      "title": "《2型糖尿病缓解专家共识》2026版发布：逆转\"黄金时间\"到了？",
+      "angle": "2026年5月20日，中国医师协会内分泌代谢科医师分会68位专家发布新版共识。距离上一版整整5年。可解读\"缓解\"与\"治愈\"的区别、黄金窗口期、生活方式干预优先级。注意：共识为B级证据，非个体治疗建议。",
+      "category": "政策/研究",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "头条热议，医学专业共识更新",
+      "source_urls": [
+        "http://m.toutiao.com/group/7661091136085246479/"
+      ],
+      "id": "disc-159",
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-13",
+      "data_source": "manual_web_search",
+      "platform_data": {}
+    },
+    {
+      "title": "中国血糖监测临床应用指南(2026年版)发布",
+      "angle": "2026年版指南更新，血糖监测成为糖尿病综合管理不可或缺的环节。可解读CGM、指尖血糖、糖化血红蛋白的适用场景与人群。权威A级证据来源。",
+      "category": "工具/指南",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "道客巴巴/专业文献，指南更新",
+      "source_urls": [
+        "https://www.doc88.com/p-05220955332075.html"
+      ],
+      "id": "disc-160",
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-13",
+      "data_source": "manual_web_search",
+      "platform_data": {}
+    },
+    {
+      "title": "GLP-1药物到家用CGM：代谢科技进入家庭时代",
+      "angle": "2026年国际趋势：肥胖、糖尿病管理从偶尔医院检查，转向药物+连续传感器+智能手机+数字随访的系统化长期管理。CGM+GLP-1联合管理成为新范式。",
+      "category": "健康趋势",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "头条/行业分析，国际趋势报道",
+      "source_urls": [
+        "http://m.toutiao.com/group/7660828990671700532/"
+      ],
+      "id": "disc-161",
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-13",
+      "data_source": "manual_web_search",
+      "platform_data": {}
+    },
+    {
+      "title": "糖尿病筛查年龄下调至35岁：你过了警戒线吗？",
+      "angle": "国内糖尿病防治指南将血糖筛查起始年龄从40岁下调至35岁。糖尿病年轻化趋势明显，甚至有20来岁确诊。可做数字冲击型口播，引发年轻受众焦虑→行动。",
+      "category": "数字科普",
+      "platform": "dy,xhs",
+      "duration": "15-20s",
+      "heat": "hot",
+      "heat_source": "搜狐/头条，多平台医生解读",
+      "source_urls": [
+        "https://m.sohu.com/a/1048003409_122812153/",
+        "http://m.toutiao.com/group/7654902656225313320/"
+      ],
+      "id": "disc-162",
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-13",
+      "data_source": "manual_web_search",
+      "platform_data": {}
+    },
+    {
+      "title": "低GI零食测评：\"健康\"标签背后的真相",
+      "angle": "2026年低GI零食市场爆发（轻食兽4万+销量、DGI蛋白棒、盼盼低GI饼干等）。但\"低GI\"不等于\"低糖\"或\"低热量\"，部分产品存在营销误导。可做测评/打假类口播，教看配料表。",
+      "category": "饮食指南",
+      "platform": "xhs,dy",
+      "duration": "15-20s",
+      "heat": "warm",
+      "heat_source": "淘宝/爱美日记销量排行，低GI搜索热度高",
+      "source_urls": [
+        "https://www.am10.com/IbulzbppDJppP6ukn2ZO2L5/xl",
+        "http://m.toutiao.com/group/7654598426943947274/"
+      ],
+      "id": "disc-163",
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-13",
+      "data_source": "manual_web_search",
+      "platform_data": {}
+    },
+    {
+      "title": "糖前期逆转4步法：不吃药也能拉回安全线？",
+      "angle": "糖前期逆转的4个维度：饮食（慢碳水+进食顺序）、运动（肌肉消耗血糖）、睡眠（熬夜3天处理能力降25%）、压力管理（皮质醇与血糖）。注意：3个月不达标需就医，不能替代医疗建议。",
+      "category": "生活方式",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "鲁网/博禾医生/头条个人经验帖",
+      "source_urls": [
+        "https://ws.sdnews.com.cn/ft/202607/t20260709_4704818.htm",
+        "https://m.bohe.cn/news/view/32620.html"
+      ],
+      "id": "disc-164",
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-13",
+      "data_source": "manual_web_search",
+      "platform_data": {}
+    },
+    {
+      "title": "2026家用CGM选购指南：三诺/鱼跃/雅培/硅基怎么选？",
+      "angle": "动态血糖仪(CGM)市场年均增长超20%。三诺i6（第三代传感）、鱼跃Anytime 5Pro、雅培瞬感（14天连续监测）等主流产品对比。MAR值、佩戴时长、抗干扰性是核心指标。",
+      "category": "工具/指南",
+      "platform": "xhs,dy",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "99健康网/头条评测，CGM市场增长数据",
+      "source_urls": [
+        "https://m.99.com.cn/a/2522081/",
+        "http://m.toutiao.com/group/7652172402025120271/",
+        "http://m.toutiao.com/group/7660082703777268224/"
+      ],
+      "id": "disc-165",
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-13",
+      "data_source": "manual_web_search",
+      "platform_data": {}
+    },
+    {
+      "title": "二甲双胍\"长寿神话\"被推翻：健康人别乱吃！",
+      "angle": "全球长寿研究权威公开改口：健康人吃二甲双胍几乎没有抗衰老收益，普通人长期乱吃副作用明确（胃肠道不适、乳酸酸中毒死亡率50%、B12缺乏）。只有胰岛素抵抗/肥胖/糖前期/二型糖尿病人能获益。可做辟谣口播。",
+      "category": "辟谣",
+      "platform": "dy,xhs",
+      "duration": "15-20s",
+      "heat": "hot",
+      "heat_source": "头条/健康平台热议，原研究负责人推翻结论",
+      "source_urls": [
+        "http://m.toutiao.com/group/7638797828130669075/",
+        "http://m.toutiao.com/group/7660411746930213419/"
+      ],
+      "id": "disc-166",
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-13",
+      "data_source": "manual_web_search",
+      "platform_data": {}
+    },
+    {
+      "title": "胰岛素抵抗减肥：6个让燃脂效率翻倍的习惯",
+      "angle": "改善胰岛素抵抗的6个 actionable 习惯：戒掉精制碳水、吃对早餐、避免频繁进食（减少胰岛素脉冲）、调整进食顺序（菜→肉→主食）、增肌训练、降低皮质醇（压力/熬夜）。适合年轻受众。",
+      "category": "生活方式",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "头条/健康平台，胰岛素抵抗+减肥搜索热度高",
+      "source_urls": [
+        "http://m.toutiao.com/group/7576898480455565824/",
+        "http://m.toutiao.com/group/7594299325509829170/"
+      ],
+      "id": "disc-167",
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-13",
+      "data_source": "manual_web_search",
+      "platform_data": {}
     }
   ],
   "archive": [

@@ -2,7 +2,7 @@
   "_meta": {
     "version": "1.0.0",
     "description": "主张记忆图谱：防重复谣言包装与误读升级",
-    "last_updated": "2026-07-04T23:54:20"
+    "last_updated": "2026-07-13T09:12:17"
   },
   "claims": {
     "40a2e10bd40d4026": {
@@ -30,7 +30,25 @@
         "医生挑战一年轻断食，5.6空腹血糖下降到3.7，糖前期逆转？",
         "糖人杰单方面宣布，个人糖尿病逆转成功了，但这有意义吗？",
         "2型糖尿病确诊3个月后成功逆转！糖化蛋白值正常了！恢复正常指日可待！！",
-        "胖糖好说 糖尿病还能逆转 瘦糖比较难"
+        "胖糖好说 糖尿病还能逆转 瘦糖比较难",
+        "连肌肉都没有拿什么来逆转你的代谢和血糖？",
+        "郭医生讲糖—教你逆转糖尿病通识课",
+        "胰岛素抵抗怎么办？5个低成本逆转方法！",
+        "别让你的胰腺“过劳死”！三招逆转胰岛素抵抗",
+        "糖尿病前期详解🔥1分钟搞懂➕详细逆转指南✅",
+        "糖尿病前期能逆转！抓住黄金期，做好5件事",
+        "逆转糖前期，我只花了一个月",
+        "胰岛素抵抗能逆转吗？",
+        "糖尿病前期有多大可能可以逆转？",
+        "请问有糖尿病前期逆转成为正常血糖的大佬吗？",
+        "空腹血糖6.8，糖耐量异常，糖尿病早期该怎么办，能不能逆转？",
+        "糖前期逆转了，为什么餐后血糖还是高？",
+        "空腹血糖4.82，糖化5.4，餐一12.34，餐二11.41，还能逆转吗？",
+        "一个月前糖化血红蛋白6.59%，通过减重和自律作息及饮食，糖化6.1%，以后还有可能逆转吗？",
+        "如何判断自己或者自己的孩子是否已经胰岛素抵抗了？Dr. Boz提及了四种胰岛素抵抗迹象：   1） 带小“颈”的皮肤赘生物（腋窝、腹股沟、颈部）。 2） ...",
+        "糖尿病前期，能不能逆转？还能好吗？医生说：3种人还有希望！",
+        "一旦进入“糖前期”，尽早逆转，至少50%概率",
+        "如何逆转糖尿病前期"
       ],
       "source_urls": [
         "https://bilibili.com/video/BVtest",
@@ -48,7 +66,24 @@
         "https://www.bilibili.com/video/BV1Ji4y1f79S",
         "https://www.bilibili.com/video/BV1ud4y1p7ac",
         "https://www.bilibili.com/video/BV1dL411V7c2",
-        "https://www.bilibili.com/video/BV1xsTDz9Ejq"
+        "https://www.bilibili.com/video/BV1xsTDz9Ejq",
+        "https://www.bilibili.com/video/BV1YGNw66EhJ",
+        "https://www.xiaohongshu.com/search_result/6a13b25300000000360195f9?xsec_token=ABIehSSFBjTGEloK9DTFp0isfd9jpTHjkMjFbdvxRfcvA=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a537446000000001101bd8f?xsec_token=AB1hlqNOgw9WzcA-oYao5lKgYpi7Xd77Cv0hLRmT4TuVE=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6987e8b2000000002801eddc?xsec_token=ABgEXop4J2ur6rYRNFCtHbzXkEhH4fD9QLk03mh8pji14=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/68ccf74b000000001003e04e?xsec_token=ABE36porujdg-uTLQH73_kK7ev4KaGx2gqEHOxNTViXqQ=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a0a9e32000000003803743d?xsec_token=ABQ5ULvRn8WsjkiL5I0MM1XZEd-OzhROTEJyB1TmgqTxU=&xsec_source=",
+        "https://www.zhihu.com/question/1891991649502078064/answer/2056396542613919438",
+        "https://www.zhihu.com/question/2561538980/answer/1928822195787891442",
+        "https://www.zhihu.com/question/399153290/answer/3130794040",
+        "https://zhuanlan.zhihu.com/p/666241575",
+        "https://zhuanlan.zhihu.com/p/2041572623105124143",
+        "https://www.zhihu.com/question/1947041697579111633/answer/1987206052832371375",
+        "https://www.zhihu.com/question/2036052461568382259/answer/2047354687544939348",
+        "https://x.com/i/status/2038828632915718376",
+        "https://www.youtube.com/watch?v=rzTvJtKCuRU",
+        "https://www.bilibili.com/video/BV1WmT16WEWk",
+        "https://www.bilibili.com/video/BV1kjNj6PE9Y"
       ]
     },
     "56d377b6d17cc8ff": {
@@ -105,7 +140,38 @@
         "值班时患者血糖高怎么给胰岛素量？【答疑解惑】",
         "什么是胰岛素抵抗？妙佑医疗国际专家为您解答 - 妙佑医疗国际",
         "糖化血红蛋白5.3％，为什么我身体还是出现了胰岛素抵抗？",
-        "餐后血糖接近20，医生不打胰岛素的底气在哪里？效果好不好"
+        "餐后血糖接近20，医生不打胰岛素的底气在哪里？效果好不好",
+        "为什么很多健美运动员冒死也要用胰岛素？",
+        "减肥底层逻辑｜失控的血糖｜胰岛素抵抗及作用机制｜稳定血糖方法及减肥食物｜血糖减肥法｜健康减脂饮食｜减脂营养师｜影响脂肪合成分解代谢｜血糖与肥胖的关系",
+        "胰岛素抵抗，减肥攻略！",
+        "消除胰岛素抵抗胰岛素分泌正常血糖正常",
+        "胰岛素【医学生必学系列】",
+        "希望有胰岛素抵抗的人都能看到",
+        "胰岛素抵抗的8个原因，你中招了吗？",
+        "胰岛素抵抗的5大典型症状",
+        "什么叫胰岛素抵抗？",
+        "胰岛素高出正常值多少才能算胰岛素抵抗？",
+        "胰岛素抵抗怎么办？5个低成本逆转方法！",
+        "别让你的胰腺“过劳死”！三招逆转胰岛素抵抗",
+        "胰岛素抵抗/糖耐量受损/糖尿病怎么区分？",
+        "胰岛素抵抗能逆转吗？",
+        "为什么说胰岛素抵抗是“万病之源”？",
+        "怎么改善胰岛素抵抗？",
+        "很多人很久之前就出现了胰岛素抵抗，只是他们一直不知道",
+        "一文说清胰岛素抵抗：为什么你吃得不多却越来越胖？",
+        "你有胰岛素抵抗的迹象（& 你没意识到）：    1. 小便时起泡沫。",
+        "高血压不是从盐和衰老开始的...  而是从炎症、胰岛素抵抗和一氧化氮低开始。  这里有10种科学支持的自然降血压方法(收藏本贴)：🧵  1. 多吃大蒜 h...",
+        "如何判断自己或者自己的孩子是否已经胰岛素抵抗了？Dr. Boz提及了四种胰岛素抵抗迹象：   1） 带小“颈”的皮肤赘生物（腋窝、腹股沟、颈部）。 2） ...",
+        "你有胰岛素抵抗的迹象（&amp; 你没意识到）：  1. 小便时起泡沫。 https://t.co/avnNkNXJm0",
+        "胰岛素抵抗的饮食指南 - Pantai Hospitals",
+        "缓解胰岛素抵抗，最有效的4条措施！",
+        "胰岛素泵怎么选，美敦力丹纳微泰移宇omnipod对比",
+        "胰岛素抵抗 怎么治疗",
+        "胰岛素笔操作演示",
+        "多囊胰岛素抵抗升敏训练3 既不痛苦也不无聊",
+        "脖子黑，腋窝黑，洗不干净怎么回事？ #肥胖 #胰岛素抵抗 #皮肤黑 #减重",
+        "[双语]胰岛素抵抗大师课  | Ralph DeFronzo",
+        "皮肤出现这些变化，可能是胰岛素抵抗！别以为只是“老毛病”了"
       ],
       "source_urls": [
         "https://bilibili.com/video/BVtest",
@@ -151,7 +217,39 @@
         "https://www.bilibili.com/video/BV1zwTj6hEeF",
         "https://www.bilibili.com/video/BV1RX4y117oJ",
         "https://www.bilibili.com/video/BV1E5BCBjEV3",
-        "https://www.bilibili.com/video/BV1x34y1E7wF"
+        "https://www.bilibili.com/video/BV1x34y1E7wF",
+        "https://www.bilibili.com/video/BV17e4y1D7Av",
+        "https://www.bilibili.com/video/BV1V1cHe1Eo4",
+        "https://www.bilibili.com/video/BV15L411P7Tq",
+        "https://www.bilibili.com/video/BV1qAaTzjERm",
+        "https://www.bilibili.com/video/BV1dnPTejEz3",
+        "https://www.xiaohongshu.com/search_result/6a535ac7000000001702a20b?xsec_token=AB1hlqNOgw9WzcA-oYao5lKu5t_kEvLDG1Y7EKGyXYHhc=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a522a5700000000160255a3?xsec_token=ABpObrIVaSkkDNdSuBJjpM5LHpiJmQFg_mT7qDv8Ljzqk=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a2670f9000000001503de68?xsec_token=ABQYkyYxB_9jOqUMWCx8w24ddzDDoefbMC8FzfusiI39g=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a02268300000000080276b1?xsec_token=ABq66ORuhuhISqQSZA7pT8XflnAWmA5VoXuUrUTX-4C6k=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a054eb20000000037035a3b?xsec_token=ABtm4UjywrNIPsM9GchCFLXtJCVVhfdkkdDY6ugVE3opI=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a13b25300000000360195f9?xsec_token=ABIehSSFBjTGEloK9DTFp0isfd9jpTHjkMjFbdvxRfcvA=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a537446000000001101bd8f?xsec_token=AB1hlqNOgw9WzcA-oYao5lKgYpi7Xd77Cv0hLRmT4TuVE=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a4651f0000000001702bc37?xsec_token=ABX0hX20aO7W3WqDUfcTo3Zi57_RsxrS1SAH0kmO-s_JE=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6926a804000000001e02e170?xsec_token=ABxemxxP0f-CYkh1zIkp9bBUu92pSvWSiZz8DazMWs1BA=&xsec_source=",
+        "https://www.zhihu.com/question/1891991649502078064/answer/2056396542613919438",
+        "https://zhuanlan.zhihu.com/p/1966941209474897179",
+        "https://www.zhihu.com/question/1967275532380016767/answer/2035774597971301090",
+        "https://zhuanlan.zhihu.com/p/2043022993387952040",
+        "https://zhuanlan.zhihu.com/p/2045175111397937448",
+        "https://x.com/i/status/2064851908527788173",
+        "https://x.com/i/status/2042771533333172404",
+        "https://x.com/i/status/2038828632915718376",
+        "https://x.com/i/status/2062646961212215709",
+        "https://www.pantai.com.my/zh-cn/health-pulse/insulin-resistance-dietary-guidelines",
+        "https://www.bilibili.com/video/BV1N9MG6PELp",
+        "https://www.bilibili.com/video/BV12Z421x7ji",
+        "https://www.bilibili.com/video/BV1m4Tj65E25",
+        "https://www.bilibili.com/video/BV1sa41197we",
+        "https://www.bilibili.com/video/BV13WN76EE1x",
+        "https://www.bilibili.com/video/BV1LdN764Eq6",
+        "https://www.bilibili.com/video/BV1FSQSY5E3M",
+        "https://www.bilibili.com/video/BV13r95BFEo2"
       ]
     },
     "167e0973a2290ade": {
@@ -247,7 +345,32 @@
         "饮品控糖报告，欢迎补充指正",
         "10道控糖蒸菜，好吃又升糖慢，建议收藏",
         "天才发明牛奶控糖法",
-        "糖尿病前期控糖：3步稳血糖，延缓发病 - 防患于未然 - 家医大健康移动端"
+        "糖尿病前期控糖：3步稳血糖，延缓发病 - 防患于未然 - 家医大健康移动端",
+        "倪海厦：血糖从14降到6？只需饭后10分钟，这套‘懒人控糖法’太神了”！不只降血糖，连高血压、体脂都一起改善了！",
+        "二甲双胍到底伤肝肾还是护血管？很多糖尿病人都被误导了！#二甲双胍 #糖尿病 #2型糖尿病 #控糖 #降糖药 #糖尿病肾病 #高血糖 #肝肾功能 #医学辟谣",
+        "控糖福音，山姆低GI隐藏美食清单来了",
+        "升糖指数低也没用！20种低GI却不低碳的食物，控糖请收藏避雷",
+        "硅基3代GS3动态血糖仪AI智能控糖助手 #硅基动感 #硅基动态血糖仪 #血糖监测 #硅基GS3",
+        "糖耐量报告别瞎猜！控糖党这份解读快收好！",
+        "事业编体检控糖攻略，3天降空腹血糖有效",
+        "体检血糖偏高🔥6个致命控糖误区！白控糖",
+        "控糖重点看空腹还是餐后？看糖化搞明白",
+        "体检，糖化5.86，医生建议开始控糖，了解糖",
+        "糖耐已过这些控糖的习惯真的有用",
+        "血糖与饮水量有关？医生劝告：血糖过高的人，喝水时多注意这8点！【安澜谈健康】#糖尿病喝水 #高血糖饮食 #控糖技巧 #糖尿病并发症 #血糖稳健 #内分泌科普 #健康小常识 #安澜医生 #降糖药怎么吃",
+        "糖尿病前期穩控糖保護恆長久　研究：死亡率可降17% | 生活 | 中央社 CNA",
+        "控糖控的好，就要蔬菜吃的好！",
+        "控糖1年，皮肤居然变化这么大！戒糖吃什么以及如何坚持分享！",
+        "20251223尹烨讲《控糖革命》",
+        "走路控糖，关键饭后，十分钟先做起",
+        "营养师教你控糖！控什么？控多少？怎么吃？一次说清",
+        "血糖高早餐吃什么？孕妇亲测：10分钟做好控糖餐，简单美味不升糖！",
+        "抗糖≠不吃糖❗️女生必知的正确控糖干货❗️",
+        "哪些食物控糖和升糖？17种控糖和升糖的食物",
+        "简单六点，孕期轻松控糖，孕期营养师教你正确控糖",
+        "过年就更要使劲吃了，又担心糖量过高，有了perdays明星同款的益生菌，现在一点也不担心只涨体重啦，还能有效控糖！小孕妇们，你们体重都涨多少了啊！？#perda",
+        "控糖1年，我身体的变化是？",
+        "关于控糖，你真的做对了吗？"
       ],
       "source_urls": [
         "https://bilibili.com/video/BV1",
@@ -299,7 +422,32 @@
         "https://www.bilibili.com/video/BV1xciRYtEmj",
         "https://www.bilibili.com/video/BV12F46eJE6v",
         "https://www.bilibili.com/video/BV12DT762EMH",
-        "https://m.familydoctor.cn/hlthsci/tangniaobingqianqi-kong-tang-3bu-wen-xuetang-yanhuan-fabing-692219.html"
+        "https://m.familydoctor.cn/hlthsci/tangniaobingqianqi-kong-tang-3bu-wen-xuetang-yanhuan-fabing-692219.html",
+        "https://www.bilibili.com/video/BV19ofvBTEeb",
+        "https://www.bilibili.com/video/BV1RTNs6GEhp",
+        "https://www.bilibili.com/video/BV14tVH66EAj",
+        "https://www.bilibili.com/video/BV1QX4y14794",
+        "https://www.bilibili.com/video/BV1sT7V6oEWX",
+        "https://www.bilibili.com/video/BV1QMjf6fERf",
+        "https://www.xiaohongshu.com/search_result/6969fffc000000000e00db51?xsec_token=ABYiGuu0pzh-FPODlvc7Yr7YsOdpkx0_ncDsD6fZJlS2w=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a43a7af0000000016024201?xsec_token=ABEdXBnaL3dLYkppnH9V98o7Sa_Ir8QDXpk6-ftoOtHoY=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a2e5cbf0000000022024652?xsec_token=ABtNRH4Kj7NcP3P6ROHQoQnf2RdDo6ivFvTjzq3bcw0kw=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a4df7fa0000000006035219?xsec_token=ABnocfCLIcfTU-8WC09uq5ZSmkGsCRNwwLjNLL79icLLA=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a4d0787000000000f03391c?xsec_token=ABnocfCLIcfTU-8WC09uq5ZX1poycFwtawbXtb3jPmqc8=&xsec_source=",
+        "https://zhuanlan.zhihu.com/p/2037486583717294546",
+        "https://www.youtube.com/watch?v=WoU6ofy5syI",
+        "https://www.cna.com.tw/news/ahel/202605310072.aspx",
+        "https://www.bilibili.com/video/BV1UEN36tEm7",
+        "https://www.bilibili.com/video/BV1J7411c7X1",
+        "https://www.bilibili.com/video/BV1LqQPBNEmv",
+        "https://www.bilibili.com/video/BV1VaMg66EgB",
+        "https://www.bilibili.com/video/BV1it4y1S7zo",
+        "https://www.bilibili.com/video/BV1yo4y1C7Rd",
+        "https://www.bilibili.com/video/BV1XP4y1A7n8",
+        "https://www.bilibili.com/video/BV1AHNE6zEFd",
+        "https://www.bilibili.com/video/BV18F411Q7gA",
+        "https://www.bilibili.com/video/BV1dXNK6fEqN",
+        "https://www.bilibili.com/video/BV11bCUY8EcA"
       ]
     },
     "388f07c245691283": {
@@ -1354,11 +1502,13 @@
       "related_topics": [],
       "titles_seen": [
         "喝酒以后血糖为什么会降低？能用喝酒来降血糖吗？",
-        "低GI食物降血糖？听听营养师怎么说"
+        "低GI食物降血糖？听听营养师怎么说",
+        "IMPT_10分钟餐后居家有氧走步操｜快速降血糖、消肚腩｜抑制血糖飙升!餐后10分钟站立运动,比走路更燃脂"
       ],
       "source_urls": [
         "https://www.bilibili.com/video/BV1Sn4y1X7G3",
-        "https://www.bilibili.com/video/BV11EKf6dEhN"
+        "https://www.bilibili.com/video/BV11EKf6dEhN",
+        "https://www.bilibili.com/video/BV1aKTg6eExg"
       ]
     },
     "bd73255eab788758": {
@@ -1870,13 +2020,15 @@
         "减肥神药二甲双胍真的可以减肥吗？没糖尿病可以吃吗？孙医生解答",
         "二甲双胍真的能减肥吗？使用一周的感受。",
         "循证药学视角下二甲双胍在糖尿病前期的临床实践及合理用药",
-        "孕期糖耐量异常+低血糖，不要盲目吃二甲双胍"
+        "孕期糖耐量异常+低血糖，不要盲目吃二甲双胍",
+        "二甲双胍到底伤肝肾还是护血管？很多糖尿病人都被误导了！#二甲双胍 #糖尿病 #2型糖尿病 #控糖 #降糖药 #糖尿病肾病 #高血糖 #肝肾功能 #医学辟谣"
       ],
       "source_urls": [
         "https://www.bilibili.com/video/BV1gS4y167eW",
         "https://www.bilibili.com/video/BV1g54y1N77Z",
         "https://www.chinagp.net/CN/10.12114/j.issn.1007-9572.2024.0579",
-        "https://www.bilibili.com/video/BV1fETs6QEgM"
+        "https://www.bilibili.com/video/BV1fETs6QEgM",
+        "https://www.bilibili.com/video/BV1RTNs6GEhp"
       ]
     },
     "510716d0a90e4e48": {
@@ -5239,6 +5391,2950 @@
       ],
       "source_urls": [
         "http://www.cds.org.cn/znygs/51.html"
+      ]
+    },
+    "1b0d0c6b5c599c1f": {
+      "claim_text": "看罗汉果水对血糖的影响有多大！糖人测试一下",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "看罗汉果水对血糖的影响有多大！糖人测试一下"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Xu4zeWEmD"
+      ]
+    },
+    "1b259542cd8741a0": {
+      "claim_text": "血常规里面有很多个指标，但重点看这5个就够了。帮助老百姓，一直在行动~",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "血常规里面有很多个指标，但重点看这5个就够了。帮助老百姓，一直在行动~"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Em4y1U78i"
+      ]
+    },
+    "608dd0a156aa1cfa": {
+      "claim_text": "入职体检血糖不合格怎么办？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "入职体检血糖不合格怎么办？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1MBQJYgETp"
+      ]
+    },
+    "6e70017d2da487be": {
+      "claim_text": "《教师体检血糖偏高复查能过吗？》",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "《教师体检血糖偏高复查能过吗？》"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1P4UpYeEHy"
+      ]
+    },
+    "79f595017de760e5": {
+      "claim_text": "纯豆浆对血糖真的没有影响吗？我喝三碗，看血糖波动有多大！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "纯豆浆对血糖真的没有影响吗？我喝三碗，看血糖波动有多大！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1DY411J7dp"
+      ]
+    },
+    "8a8723fd959df114": {
+      "claim_text": "公务员体检红线之血糖篇：糖尿病直接会被刷！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "公务员体检红线之血糖篇：糖尿病直接会被刷！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Wx2TBrEuE"
+      ]
+    },
+    "65853514d23239f0": {
+      "claim_text": "拿到化验单，怎么判断自己血糖是否正常？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "拿到化验单，怎么判断自己血糖是否正常？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1hq4y1a76u"
+      ]
+    },
+    "ece9586719a98c3f": {
+      "claim_text": "糖化血红蛋白测定-HPLC",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖化血红蛋白测定-HPLC"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1ex4y1U718"
+      ]
+    },
+    "23aee9b6f0e46ad4": {
+      "claim_text": "12周徒手运动，糖化从9.6%降到6.5%",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "12周徒手运动，糖化从9.6%降到6.5%"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1ijTR6vEkR"
+      ]
+    },
+    "e3d1c2bf7315ae3e": {
+      "claim_text": "为什么医生更相信糖化血红蛋白，而不是你当天的血糖",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "为什么医生更相信糖化血红蛋白，而不是你当天的血糖"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV13aSSBJEc9"
+      ]
+    },
+    "c3a183fac53879d7": {
+      "claim_text": "医学生扯淡：高血糖、高尿酸、高血脂、高血压的代谢综合征人群如何进行备餐？如何科学饮食，远离慢病？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "医学生扯淡：高血糖、高尿酸、高血脂、高血压的代谢综合征人群如何进行备餐？如何科学饮食，远离慢病？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1jsNx6SESH"
+      ]
+    },
+    "83e6a9c80bd2d1e3": {
+      "claim_text": "看清代谢类疾病的源头",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "看清代谢类疾病的源头"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1vQ4y1w7cT"
+      ]
+    },
+    "f29676ed908c243d": {
+      "claim_text": "我的世界：这是我的世界肥胖综合征",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "我的世界：这是我的世界肥胖综合征"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1fYNu6uEXu"
+      ]
+    },
+    "9208ed070101d403": {
+      "claim_text": "把人列入强制绝育计划名单，什么是21三体综合征？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "把人列入强制绝育计划名单，什么是21三体综合征？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Es4y1h7b9"
+      ]
+    },
+    "bfb16322d9562fbc": {
+      "claim_text": "【重返未来1999】无声综合征肉鸽攻略",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "【重返未来1999】无声综合征肉鸽攻略"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1FA1DBWEWz"
+      ]
+    },
+    "aca8b77c8c0f6760": {
+      "claim_text": "子军讲堂-代谢综合征-2",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "子军讲堂-代谢综合征-2"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Kg411H7UL"
+      ]
+    },
+    "ef6332f9c20d61f7": {
+      "claim_text": "35岁以后，最好的生活状态到底是什么？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "35岁以后，最好的生活状态到底是什么？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1USNT6SEz7"
+      ]
+    },
+    "9136bc990a822a4a": {
+      "claim_text": "空腹血糖在8-10，餐后血糖在13-15，糖尿病严重了吗？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹血糖在8-10，餐后血糖在13-15，糖尿病严重了吗？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1k4421c7ep"
+      ]
+    },
+    "65c263096d8a52ca": {
+      "claim_text": "8种适合糖友吃的零食，既能解馋，还不会让血糖飙升",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "8种适合糖友吃的零食，既能解馋，还不会让血糖飙升"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Mv8czVEPY"
+      ]
+    },
+    "eb19b08265eb6d0b": {
+      "claim_text": "血糖新标准已经公布，不再是3.9-6.1了，看看是多少？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "血糖新标准已经公布，不再是3.9-6.1了，看看是多少？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1bF411p7Lh"
+      ]
+    },
+    "4f15574cbdcb26b5": {
+      "claim_text": "小伙测个血糖当场飙血，网友：别管血糖了 先看血压吧！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "小伙测个血糖当场飙血，网友：别管血糖了 先看血压吧！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1pCNM6CELo"
+      ]
+    },
+    "eb571ba9a9eeeaed": {
+      "claim_text": "65岁以上糖友，血糖控制到多少才合理？看看2024版指南",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "65岁以上糖友，血糖控制到多少才合理？看看2024版指南"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1bj421U7Rg"
+      ]
+    },
+    "54cb59e303317515": {
+      "claim_text": "医生提醒：双脚上的细微变化，往往是高血糖的早期信号，很多人却当成小毛病",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "医生提醒：双脚上的细微变化，往往是高血糖的早期信号，很多人却当成小毛病"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1PQTL6uE9T"
+      ]
+    },
+    "b7c13fc4b6f57200": {
+      "claim_text": "三诺动态血糖仪调码方便，采血量更少，1151383059",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "三诺动态血糖仪调码方便，采血量更少，1151383059"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1pGNA68Evm"
+      ]
+    },
+    "4f5744c182858708": {
+      "claim_text": "血糖监测大变革！动态血糖仪开启新篇章",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "血糖监测大变革！动态血糖仪开启新篇章"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV16qFUzHEn9"
+      ]
+    },
+    "1c06375e214b36e4": {
+      "claim_text": "三诺爱看动态血糖仪免扎针免采血",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "三诺爱看动态血糖仪免扎针免采血"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1RtCcBNEoe"
+      ]
+    },
+    "37ce960b07110805": {
+      "claim_text": "摆脱痛苦！欧态动态血糖仪让你轻松告别扎手指头",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "摆脱痛苦！欧态动态血糖仪让你轻松告别扎手指头"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1JyNP64EMr"
+      ]
+    },
+    "f84ac392ae883ca3": {
+      "claim_text": "三诺动态血糖仪：采血量少，调码便捷的仪器",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "三诺动态血糖仪：采血量少，调码便捷的仪器"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV15ZNK6xE6b"
+      ]
+    },
+    "30c8bc9ead6cb1f3": {
+      "claim_text": "动态血糖仪测评来啦~",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "动态血糖仪测评来啦~"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1G9LF6cET6"
+      ]
+    },
+    "269339d28cea8fda": {
+      "claim_text": "以身犯贱 1天就失败的动态血糖仪开箱体验",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "以身犯贱 1天就失败的动态血糖仪开箱体验"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1dMyhBWESz"
+      ]
+    },
+    "114da8d1781a9bc9": {
+      "claim_text": "038. 用动态血糖仪2周，这是我的发现 | 糖尿病前期 | 血糖管理 | CGM",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "038. 用动态血糖仪2周，这是我的发现 | 糖尿病前期 | 血糖管理 | CGM"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1xhMs6qE6Z"
+      ]
+    },
+    "65b19b3d3064a350": {
+      "claim_text": "全天实时监测的动态血糖仪到底怎么用？这条视频一次性讲明白！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "全天实时监测的动态血糖仪到底怎么用？这条视频一次性讲明白！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1YqEv6zEZc"
+      ]
+    },
+    "73b8db8a7700cc88": {
+      "claim_text": "动态血糖仪",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "动态血糖仪"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1S34y1L7PM"
+      ]
+    },
+    "d8c7f6b3ef7f2ea2": {
+      "claim_text": "16天院内血糖管理训练营（自用）",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "16天院内血糖管理训练营（自用）"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1MrkQBvE6F"
+      ]
+    },
+    "4391ae00afdd6c68": {
+      "claim_text": "老年照护技术9： 血糖测定",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "老年照护技术9： 血糖测定"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1DM4y1Y7VQ"
+      ]
+    },
+    "03753d0a9a72bdf5": {
+      "claim_text": "高氏三绝针-血糖居高不下，不要不重视，这几个穴位特效！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "高氏三绝针-血糖居高不下，不要不重视，这几个穴位特效！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1iGfZBiEH7"
+      ]
+    },
+    "200ff60e02d00524": {
+      "claim_text": "血糖与出汗大有关联！医生解答：高血糖患者，高温这8事千万别碰！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "血糖与出汗大有关联！医生解答：高血糖患者，高温这8事千万别碰！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1V8Ts6LE1d"
+      ]
+    },
+    "66fdcaf49d9d1996": {
+      "claim_text": "【全价位血糖仪推荐】无广！家用血糖仪测评帮你避坑，指尖血糖仪|动态血糖仪哪个牌子好，100-2000元家用血糖仪推荐【精选10款家用血糖仪】",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "【全价位血糖仪推荐】无广！家用血糖仪测评帮你避坑，指尖血糖仪|动态血糖仪哪个牌子好，100-2000元家用血糖仪推荐【精选10款家用血糖仪】"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1X7MV62Ex9"
+      ]
+    },
+    "528161718457aa4e": {
+      "claim_text": "糖尿病无小事，警惕并发症！偏口鱼博士聊聊【糖尿病】切莫轻视血糖高带来的健康风险！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病无小事，警惕并发症！偏口鱼博士聊聊【糖尿病】切莫轻视血糖高带来的健康风险！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1GcNT6WEvJ"
+      ]
+    },
+    "969cde8e6afa0dce": {
+      "claim_text": "低血糖的尴尬瞬间，低血糖虽不致死，但是会社死！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "低血糖的尴尬瞬间，低血糖虽不致死，但是会社死！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV12rMJ6sE3j"
+      ]
+    },
+    "1f087e817af031e4": {
+      "claim_text": "实战糖尿病：解析诊疗及用药（共50讲）",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "实战糖尿病：解析诊疗及用药（共50讲）"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1upMV65E1s"
+      ]
+    },
+    "1c59dd03cea3190f": {
+      "claim_text": "倪海厦：【糖尿病根源】脾阳不升才是祸首，养好脾阳，血糖自己会稳！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "倪海厦：【糖尿病根源】脾阳不升才是祸首，养好脾阳，血糖自己会稳！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1TTMW6NEpr"
+      ]
+    },
+    "02a16aaf8a57ccf7": {
+      "claim_text": "倪海厦：西医骗了你多久？糖尿病根本不是「糖」太多！兩味中藥煮水喝，保住你的腎和腿，別等截肢！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "倪海厦：西医骗了你多久？糖尿病根本不是「糖」太多！兩味中藥煮水喝，保住你的腎和腿，別等截肢！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1cnTQ6KESV"
+      ]
+    },
+    "3cae2b5ec977199c": {
+      "claim_text": "警惕！你再这么吃，早晚得糖尿病！偏口鱼博士健康知识科普，一定要看！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "警惕！你再这么吃，早晚得糖尿病！偏口鱼博士健康知识科普，一定要看！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1zqNw6WEXs"
+      ]
+    },
+    "54d42ff8cd424bb1": {
+      "claim_text": "没感觉就是没病？糖尿病并发症一旦发生，任何治疗都将无能为力，3D演示。。",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "没感觉就是没病？糖尿病并发症一旦发生，任何治疗都将无能为力，3D演示。。"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1rQx9zqEhf"
+      ]
+    },
+    "bc4404631f92bb8d": {
+      "claim_text": "倪海厦｜如何治疗糖尿病？学会终身受益",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "倪海厦｜如何治疗糖尿病？学会终身受益"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1oPdABkEeK"
+      ]
+    },
+    "7cc9387694b2e25b": {
+      "claim_text": "咋想的啊？都烂成这样了，找到专家还不肯接受治疗？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "咋想的啊？都烂成这样了，找到专家还不肯接受治疗？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1q4qhYjEg3"
+      ]
+    },
+    "a8d1f27ddb89fae6": {
+      "claim_text": "穗格氏（SHEGURZ）高纤黑麦片2000g 健身代餐无糖精钠即食营养早餐燕麦片谷物 【爆款推荐】低GI黑麦片 1000g*2罐",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "穗格氏（SHEGURZ）高纤黑麦片2000g 健身代餐无糖精钠即食营养早餐燕麦片谷物 【爆款推荐】低GI黑麦片 1000g*2罐"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1n8Q7B7ER5"
+      ]
+    },
+    "4372b82d65b53ed0": {
+      "claim_text": "五谷磨房食养礼低GI黑芝麻糊山药薏米粉五黑粉送长辈礼盒1092g",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "五谷磨房食养礼低GI黑芝麻糊山药薏米粉五黑粉送长辈礼盒1092g"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1rBNP6hE6z"
+      ]
+    },
+    "5e0302a65e58ec9e": {
+      "claim_text": "五谷磨房低GI黑芝麻营养粉，即食便捷早餐",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "五谷磨房低GI黑芝麻营养粉，即食便捷早餐"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Dny9BCEKw"
+      ]
+    },
+    "5354622ecbfc6c5a": {
+      "claim_text": "五谷磨房黑芝麻糊核桃芝麻黑豆粉低GI五黑五红粉礼品送长辈1092g",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "五谷磨房黑芝麻糊核桃芝麻黑豆粉低GI五黑五红粉礼品送长辈1092g"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1HBNP6hEso"
+      ]
+    },
+    "3882fcba2a76016b": {
+      "claim_text": "低GI挂面升糖测评 有点神奇~",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "低GI挂面升糖测评 有点神奇~"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1XqNj6SEJL"
+      ]
+    },
+    "70ff79ed4b8dbef0": {
+      "claim_text": "“低GI”食品乱象调查 不是所有的品类都能标低GI",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "“低GI”食品乱象调查 不是所有的品类都能标低GI"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1LUNP69EUs"
+      ]
+    },
+    "f37e959c4ffd9689": {
+      "claim_text": "低GI饮食从“小众”走向“全民”",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "低GI饮食从“小众”走向“全民”"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1QETE6tEym"
+      ]
+    },
+    "764862f1e436651a": {
+      "claim_text": "女大学生真实测评——豪士～低GI全麦面包🍞真实、原相机、无广、无滤镜‼️",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "女大学生真实测评——豪士～低GI全麦面包🍞真实、原相机、无广、无滤镜‼️"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1KyRjBfEVZ"
+      ]
+    },
+    "8a27019059b153c6": {
+      "claim_text": "家用血糖仪使用方法",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "家用血糖仪使用方法"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Es4y1N7Ek"
+      ]
+    },
+    "6de6ef3d20669be0": {
+      "claim_text": "【血糖仪推荐】家用血糖仪测评，指尖血糖仪|动态血糖仪哪个牌子好，100-2000元家用血糖仪推荐【精选11款家用血糖仪】",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "【血糖仪推荐】家用血糖仪测评，指尖血糖仪|动态血糖仪哪个牌子好，100-2000元家用血糖仪推荐【精选11款家用血糖仪】"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV14jE56YE3B"
+      ]
+    },
+    "71848524ba40e400": {
+      "claim_text": "同样一滴血，四款不同血糖仪看数值相差多少？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "同样一滴血，四款不同血糖仪看数值相差多少？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV16Z421N71y"
+      ]
+    },
+    "63f41e1135ba1464": {
+      "claim_text": "血糖仪哪个最准，行业人内都这样说",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "血糖仪哪个最准，行业人内都这样说"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1zu411F7sQ"
+      ]
+    },
+    "7b5dfcb50b9ab33b": {
+      "claim_text": "实测家用血糖仪与医院静脉血糖对比",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "实测家用血糖仪与医院静脉血糖对比"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Tr421A7fg"
+      ]
+    },
+    "f553122021f69d79": {
+      "claim_text": "如果，非要，医生推荐一款血糖仪",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "如果，非要，医生推荐一款血糖仪"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Jq4y1g7LV"
+      ]
+    },
+    "084fe42c59a63daa": {
+      "claim_text": "孕26周，检查出妊娠糖尿病，每天扎手指。分享血糖仪的使用方法。",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "孕26周，检查出妊娠糖尿病，每天扎手指。分享血糖仪的使用方法。"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1SZ4y1w7RQ"
+      ]
+    },
+    "ad68105ba1a6ff6e": {
+      "claim_text": "糖尿病、糖尿病前期专家共识2026年📚",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病、糖尿病前期专家共识2026年📚"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/69c113b9000000001a025876?xsec_token=ABA7zVESg1XoYrtg5CHKvCBO6K_oPluvrfWtGnt3tFVE8=&xsec_source="
+      ]
+    },
+    "9e4b16eb6ba8cac6": {
+      "claim_text": "糖前期离糖尿病只有一步之遥，别走出这一步",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖前期离糖尿病只有一步之遥，别走出这一步"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6a4b57dc000000001c0259db?xsec_token=AB5jZy6kR6tsTAd9aEvBldZ1Y0d7ZM8BDBamPw9JV1qZA=&xsec_source="
+      ]
+    },
+    "981dd78307b5102d": {
+      "claim_text": "血糖升高了一点点，已经进入了糖尿病前期。",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "血糖升高了一点点，已经进入了糖尿病前期。"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/68ac598e000000001d018ac1?xsec_token=ABOakJnUn2RW943JPOvhJ-XfUKBYfDjInbgzDgJefx_ng=&xsec_source="
+      ]
+    },
+    "6b26fa93dd4aa27f": {
+      "claim_text": "我是如何发现自己是糖前期的",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "我是如何发现自己是糖前期的"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/698974e4000000001d01138a?xsec_token=AB5EzptAOsAmczk98Q10hRTN66avBTwUfStZiL14hlikQ=&xsec_source="
+      ]
+    },
+    "6b83d8c341e4a283": {
+      "claim_text": "糖尿病早期的信号，千万别忽视！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病早期的信号，千万别忽视！"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/69fb3b4b0000000023014aef?xsec_token=ABwZ5fOyyOOWizk6u3etsdzKGOm-8j-dFirwhZ16CIPtM=&xsec_source="
+      ]
+    },
+    "42f5daf8da5943f0": {
+      "claim_text": "糖耐量异常，怎么才能恢复正常",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖耐量异常，怎么才能恢复正常"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6908603e000000000303bd6c?xsec_token=ABXpmlJgFuRZ_gn2vYZ2FQstPFqYexUl4J0HtlNJ50zAM=&xsec_source="
+      ]
+    },
+    "deeef5e81ce2a649": {
+      "claim_text": "饭后两小时血糖高≠没事？可能是糖耐量受损",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "饭后两小时血糖高≠没事？可能是糖耐量受损"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/690efc7a000000000700ddea?xsec_token=AB1WMscBprn04JukHOtdCv46T-TrCK8FTHqusJJRWr9gc=&xsec_source="
+      ]
+    },
+    "ece237e6c509ab01": {
+      "claim_text": "糖耐量异常早期干预完全可以逆袭！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖耐量异常早期干预完全可以逆袭！"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/69b3a5760000000023014e07?xsec_token=AB-udobcQq-5YYLI6veqiAaiM0beVXMNfldRbcN2mhsq0=&xsec_source="
+      ]
+    },
+    "98b5ffc1ebfd25f4": {
+      "claim_text": "糖前期自救指南：6落地措施",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖前期自救指南：6落地措施"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/69d52653000000001a0318c5?xsec_token=AB_W3jNTws2QZuXNwAYFfH68uf4kh-vWWs2MonVup1eVk=&xsec_source="
+      ]
+    },
+    "ece7f320ea254b28": {
+      "claim_text": "1图看懂：糖耐检查全攻略‼️",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "1图看懂：糖耐检查全攻略‼️"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/69c10edb00000000230131b2?xsec_token=ABA7zVESg1XoYrtg5CHKvCBMj6wahewKNaZu-dwOTSE6E=&xsec_source="
+      ]
+    },
+    "c5cf26379c0eef95": {
+      "claim_text": "糖耐异常你别慌，先排除“应激高血糖”",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖耐异常你别慌，先排除“应激高血糖”"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/68612907000000000d018715?xsec_token=ABZtnwhv-xKpaEXaeKNxL7moyEQmvsqmprxruqbsNLdrI=&xsec_source="
+      ]
+    },
+    "bd849cd5df6da103": {
+      "claim_text": "空腹血糖正常,餐后血糖却高,应该怎么做?",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹血糖正常,餐后血糖却高,应该怎么做?"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6a4630be000000001003d99d?xsec_token=ABX0hX20aO7W3WqDUfcTo3Zj1jIFiBqwBzPlO2w1sWUS8=&xsec_source="
+      ]
+    },
+    "bc97868e81964afa": {
+      "claim_text": "空腹挺好，餐后血糖高咋办？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹挺好，餐后血糖高咋办？"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6a47e218000000001003e306?xsec_token=AB1WHmDDkILO27G3A2ALXq6trIsry1xGsHL1deDiIk7-M=&xsec_source="
+      ]
+    },
+    "cfd09e0fdf51facb": {
+      "claim_text": "空腹血糖正常，餐后血糖爆表，这种最坑人",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹血糖正常，餐后血糖爆表，这种最坑人"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/69f5475b000000003502a511?xsec_token=ABSkXc6u7d6jOcNENtsl-cs56i-1eJCJEalmCGEwLXPe0=&xsec_source="
+      ]
+    },
+    "fde3f279a97c917b": {
+      "claim_text": "空腹血糖正常，餐后血糖高怎么办？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹血糖正常，餐后血糖高怎么办？"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/68ba4cf2000000001b021473?xsec_token=ABPuDMX61oEv5TkURPlzg_JCi5Ndu-O1fYXqCDWTQWChI=&xsec_source="
+      ]
+    },
+    "a77201b5b8ef7d3c": {
+      "claim_text": "空腹血糖正常餐后血糖高这样调就对了！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹血糖正常餐后血糖高这样调就对了！"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/694e1f6a000000001e004bc9?xsec_token=ABrQdj6T-bxHIDUqakUpQwNTJfEdkm5of4Mn9Kt5cLIs0=&xsec_source="
+      ]
+    },
+    "89d869cdcea8f1ef": {
+      "claim_text": "空腹血糖正常 餐后却飙升？ 教你一招稳下来",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹血糖正常 餐后却飙升？ 教你一招稳下来"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6a0ec033000000003601f18f?xsec_token=AB1C9PuVsNK4gQ-qwdAtxQoXY4PRBmpTC5E-Gm6JT6W-o=&xsec_source="
+      ]
+    },
+    "8bec8bca1020fd3f": {
+      "claim_text": "空腹血糖高和餐后血糖高，完全不是一回事！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹血糖高和餐后血糖高，完全不是一回事！"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/69b54b290000000021010843?xsec_token=ABOZnwTbyVAMcwoQ9dFqS8mYlhLxe9dM5vShL4HB7BlWY=&xsec_source="
+      ]
+    },
+    "deabe23ae7854bc0": {
+      "claim_text": "🔥不同年龄血糖标准对照表，看你达标了吗⁉️",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "🔥不同年龄血糖标准对照表，看你达标了吗⁉️"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/69259ddb000000001e034081?xsec_token=ABv8Ctr2MvuaJYbT0GasEs0R60E0VC49p9LVu-L-CP-jI=&xsec_source="
+      ]
+    },
+    "892dfa61c085efc5": {
+      "claim_text": "体检发现空腹血糖高，一定要去做的四个检查",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "体检发现空腹血糖高，一定要去做的四个检查"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6a32406c000000002003aedf?xsec_token=ABIrc4KkYgneDMEsKX3BFGiBAg1aur_Luz-Kpo_nDY4A4=&xsec_source="
+      ]
+    },
+    "549a507eebd66f19": {
+      "claim_text": "体检空腹血糖高？4点全面评估",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "体检空腹血糖高？4点全面评估"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/67cc201e0000000007037d94?xsec_token=ABZVdRFqZUlpTJArBdaBYnhmBkE6XoMre9fICUT6YnmD0=&xsec_source="
+      ]
+    },
+    "f476220b4edea8a3": {
+      "claim_text": "体检空腹血糖偏高❌别慌！不是糖尿病！考公",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "体检空腹血糖偏高❌别慌！不是糖尿病！考公"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/69e56156000000002003989f?xsec_token=ABNYkC6mMx9mWeRwW7lakm1GvQes1iEYIqnH9CS9QuCCA=&xsec_source="
+      ]
+    },
+    "671458a9b82934db": {
+      "claim_text": "体检后血糖有问题，自己去医院复查的结果",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "体检后血糖有问题，自己去医院复查的结果"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/679c903e0000000018007b3a?xsec_token=ABq7GUygFgUDQYIf4jrnz1xJv-bMuUr1o7aqvYmG60mjw=&xsec_source="
+      ]
+    },
+    "643ec7ac791cc406": {
+      "claim_text": "空腹血糖5.8，我是不是要得糖尿病了？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹血糖5.8，我是不是要得糖尿病了？"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/69b01f2e000000000800ffac?xsec_token=ABgLQ8nDnQbZX-YovdPTZTnDc0Xb1Rdt7hQEq4CHoG0TE=&xsec_source="
+      ]
+    },
+    "767a020e8fa34e55": {
+      "claim_text": "公务员体检血糖超5.6 一定会被要 求复查吗?",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "公务员体检血糖超5.6 一定会被要 求复查吗?"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/69aa27e1000000001a022168?xsec_token=ABULqzx5ObdSq2JYdmJB1tRei8nK-Sl_SGJILPnbp1KbU=&xsec_source="
+      ]
+    },
+    "35b066e0c15a4c26": {
+      "claim_text": "糖化血红蛋白是金标准？这一类人不用看糖化",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖化血红蛋白是金标准？这一类人不用看糖化"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6a02c6ee0000000007013264?xsec_token=ABq66ORuhuhISqQSZA7pT8XZ7OaSpkdSI6IfCrNDX8MWk=&xsec_source="
+      ]
+    },
+    "581a96dbdede9207": {
+      "claim_text": "📝 糖化血红蛋白科普 | 空腹血糖正常≠血糖",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "📝 糖化血红蛋白科普 | 空腹血糖正常≠血糖"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6a4af1ff000000001c024c97?xsec_token=ABs-j7sd6gFlZCDfvLkruVACRPP_r5ilIkHguxFGhLySQ=&xsec_source="
+      ]
+    },
+    "16a5302110e5ee9a": {
+      "claim_text": "糖化血红蛋自 (HbA1C) 到底是什么？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖化血红蛋自 (HbA1C) 到底是什么？"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6a4e2bc0000000000e038400?xsec_token=ABon05OAdtpgBy4ttKo-fFvlkCacTq1EUp15NyaNexo4M=&xsec_source="
+      ]
+    },
+    "863c753f04eb719a": {
+      "claim_text": "⚠️2026血糖新标准！快看看你达标了吗？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "⚠️2026血糖新标准！快看看你达标了吗？"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6a44e098000000000702eb49?xsec_token=ABhsM4qDRfQfxe-vjtIww7R2D3l8q-jPWmvR5p-6BhqMc=&xsec_source="
+      ]
+    },
+    "b299dd4bbdfb254c": {
+      "claim_text": "糖化血红蛋白 不同数值背后的意义",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖化血红蛋白 不同数值背后的意义"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6a4dfb85000000000702807f?xsec_token=ABnocfCLIcfTU-8WC09uq5ZUXee23fM8BRBsVi8VpgboM=&xsec_source="
+      ]
+    },
+    "69c789c25a182016": {
+      "claim_text": "一张对照表｜看懂糖化血红蛋白和平均血糖",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "一张对照表｜看懂糖化血红蛋白和平均血糖"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6a4be3c5000000001700a08a?xsec_token=AB5jZy6kR6tsTAd9aEvBldZw8QIjC6MznO61A6iKbZeig=&xsec_source="
+      ]
+    },
+    "eb9090037818f233": {
+      "claim_text": "一般来讲，糖尿病前期多长时间转化为糖尿病？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "一般来讲，糖尿病前期多长时间转化为糖尿病？"
+      ],
+      "source_urls": [
+        "https://www.zhihu.com/question/63931754/answer/1996273636164798184"
+      ]
+    },
+    "de46fac8effa10aa": {
+      "claim_text": "糖尿病初期是什么征兆？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病初期是什么征兆？"
+      ],
+      "source_urls": [
+        "https://www.zhihu.com/question/20250820/answer/3606839596"
+      ]
+    },
+    "74283044086a34b0": {
+      "claim_text": "为什么大多数人空腹血糖与糖化都合格甚至优秀，一到糖耐测试就不合格，这是否意味着糖耐测试根本就是错的？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "为什么大多数人空腹血糖与糖化都合格甚至优秀，一到糖耐测试就不合格，这是否意味着糖耐测试根本就是错的？"
+      ],
+      "source_urls": [
+        "https://www.zhihu.com/question/653265363/answer/94608951958"
+      ]
+    },
+    "c13d397da7d48ae6": {
+      "claim_text": "单纯空腹血糖受损和单纯糖耐量受损哪个严重？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "单纯空腹血糖受损和单纯糖耐量受损哪个严重？"
+      ],
+      "source_urls": [
+        "https://www.zhihu.com/question/507269869/answer/2286947252"
+      ]
+    },
+    "0284b9513e73592a": {
+      "claim_text": "即使你的血糖没问题，我劝你吃饭时也尽量采用正确的顺序",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "即使你的血糖没问题，我劝你吃饭时也尽量采用正确的顺序"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/1919272129687454527"
+      ]
+    },
+    "6d98b7d37ca369ec": {
+      "claim_text": "连续几天空腹血糖6.7上下，餐后血糖都正常，咋回事？要治疗吗？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "连续几天空腹血糖6.7上下，餐后血糖都正常，咋回事？要治疗吗？"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/625781221"
+      ]
+    },
+    "acc66118824510c4": {
+      "claim_text": "空腹血糖正常，但餐后血糖高是怎么回事？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹血糖正常，但餐后血糖高是怎么回事？"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/1954102620412187489"
+      ]
+    },
+    "31faa5f64d6a8782": {
+      "claim_text": "空腹血糖5.5餐后2小时血糖17.5是什么原因？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹血糖5.5餐后2小时血糖17.5是什么原因？"
+      ],
+      "source_urls": [
+        "https://www.zhihu.com/question/648196369/answer/1943604332856574082"
+      ]
+    },
+    "77346f92e55d32d8": {
+      "claim_text": "血糖过高会怎么样？血糖仪什么牌子的好？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "血糖过高会怎么样？血糖仪什么牌子的好？"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/2037470471248204741"
+      ]
+    },
+    "6900fe904bcf9db3": {
+      "claim_text": "体检时血糖高怎么办?别慌!过来人教你快速降的方法",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "体检时血糖高怎么办?别慌!过来人教你快速降的方法"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/687638177"
+      ]
+    },
+    "acabb3cac898a339": {
+      "claim_text": "体检发现血糖超标后，你应该立刻做的三件事",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "体检发现血糖超标后，你应该立刻做的三件事"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/1974158000013992832"
+      ]
+    },
+    "bc4dd2190ecc6e10": {
+      "claim_text": "仅半年，血糖从16.1降到4.5！医生：常做3件事，血糖或慢慢降",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "仅半年，血糖从16.1降到4.5！医生：常做3件事，血糖或慢慢降"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/413122263"
+      ]
+    },
+    "aa8923eb3eaaebd6": {
+      "claim_text": "体检查出血糖偏高，该咋办？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "体检查出血糖偏高，该咋办？"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/26351461"
+      ]
+    },
+    "f345a9b6afdf56a1": {
+      "claim_text": "空腹血糖5.6，体检为啥不合格？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹血糖5.6，体检为啥不合格？"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/694524032"
+      ]
+    },
+    "63bfac885dc9a496": {
+      "claim_text": "糖化血红蛋白6.1是糖尿病吗？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖化血红蛋白6.1是糖尿病吗？"
+      ],
+      "source_urls": [
+        "https://www.zhihu.com/question/653693582/answer/3534723235"
+      ]
+    },
+    "f0b496bc7382886e": {
+      "claim_text": "糖化血红蛋白十几年来一直在5.5%左右，为何餐二会超过11.1？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖化血红蛋白十几年来一直在5.5%左右，为何餐二会超过11.1？"
+      ],
+      "source_urls": [
+        "https://www.zhihu.com/question/1937531765892813593/answer/2054403734105485480"
+      ]
+    },
+    "7d413a091a32750c": {
+      "claim_text": "经常听医生说糖化血红蛋白，那你知道糖化血红蛋白的6个分级吗？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "经常听医生说糖化血红蛋白，那你知道糖化血红蛋白的6个分级吗？"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/2046312493476323784"
+      ]
+    },
+    "b32c11f1d8a49c3d": {
+      "claim_text": "糖化血红蛋白和空腹血糖有什么区别，体检怎么看？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖化血红蛋白和空腹血糖有什么区别，体检怎么看？"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/2058210772153636327"
+      ]
+    },
+    "6605c9e44335c708": {
+      "claim_text": "多少文化人被空腹血糖与糖化血红蛋白骗了，赶紧到医院检测这项指标",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "多少文化人被空腹血糖与糖化血红蛋白骗了，赶紧到医院检测这项指标"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/1935810807410688534"
+      ]
+    },
+    "084c1561dd697f1f": {
+      "claim_text": "血糖到底要控制在什么水平？一文带你理清糖尿病患者的血糖控制目标！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "血糖到底要控制在什么水平？一文带你理清糖尿病患者的血糖控制目标！"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/2049796432899658573"
+      ]
+    },
+    "798c53d9399bd262": {
+      "claim_text": "糖尿病的早期症状有哪些?",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病的早期症状有哪些?"
+      ],
+      "source_urls": [
+        "https://www.zhihu.com/question/455636128/answer/2815352146"
+      ]
+    },
+    "caef159ab3c0ea17": {
+      "claim_text": "吃完饭之后很快就出现强烈的困意，是血糖出了问题吗?",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "吃完饭之后很快就出现强烈的困意，是血糖出了问题吗?"
+      ],
+      "source_urls": [
+        "https://www.zhihu.com/question/1989871945613862494/answer/1990475065624634374"
+      ]
+    },
+    "1ce471ada5c8ca98": {
+      "claim_text": "饭后犯困不是因为累——三种进食方式的血糖逻辑对比",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "饭后犯困不是因为累——三种进食方式的血糖逻辑对比"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/2032572360893657876"
+      ]
+    },
+    "eb1a71493383039d": {
+      "claim_text": "饭后常做这3件事，血糖偷偷超标！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "饭后常做这3件事，血糖偷偷超标！"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/2053578518420891563"
+      ]
+    },
+    "37db2a37e10dcc38": {
+      "claim_text": "Big Pharma doesn't want you to know about Dr. Jason Fung.  While Type 2 Diabe...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Big Pharma doesn't want you to know about Dr. Jason Fung.  While Type 2 Diabe..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2067596957250629847"
+      ]
+    },
+    "b167570e44a8a3a3": {
+      "claim_text": "Big Pharma doesn't want you to know about this supplement.  It lowers insulin...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Big Pharma doesn't want you to know about this supplement.  It lowers insulin..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2075927376694063379"
+      ]
+    },
+    "51d3e49ea709c2c9": {
+      "claim_text": "Heart disease doesn't start with age.  It starts with inflammation, insulin r...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Heart disease doesn't start with age.  It starts with inflammation, insulin r..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2075565542304538669"
+      ]
+    },
+    "0d5a27e42d6dd8a7": {
+      "claim_text": "90% kasus kencing manis itu sebenernya udah mulai dari 10-15 tahun lebih awal...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "90% kasus kencing manis itu sebenernya udah mulai dari 10-15 tahun lebih awal..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2068855693969662121"
+      ]
+    },
+    "189b62ba3b35feb3": {
+      "claim_text": "A normal fasting glucose gets read as an all-clear for metabolic health. It's...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "A normal fasting glucose gets read as an all-clear for metabolic health. It's..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2075909184327999813"
+      ]
+    },
+    "fb29ecea55d54c86": {
+      "claim_text": "Type 2 diabetes is reversible in case you have it and didn’t know you could a...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Type 2 diabetes is reversible in case you have it and didn’t know you could a..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/1884008102313484752"
+      ]
+    },
+    "3907738ffe93049d": {
+      "claim_text": "If you can’t say something nice when I’m excited that I reversed prediabetes ...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "If you can’t say something nice when I’m excited that I reversed prediabetes ..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/1440761687963959303"
+      ]
+    },
+    "82d55c0cfbb18853": {
+      "claim_text": "my psychiatrist put “takes metformin for her diabetes” in their notes and lik...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "my psychiatrist put “takes metformin for her diabetes” in their notes and lik..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/1612274152433483776"
+      ]
+    },
+    "d5f10bc5fb1938ed": {
+      "claim_text": "Metformin is an old diabetes drug that's become the darling of the longevity ...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Metformin is an old diabetes drug that's become the darling of the longevity ..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2066898533312081944"
+      ]
+    },
+    "4f57c818975eb297": {
+      "claim_text": "Retatrutide trial results are straight-up insane:  •86% liver fat reduction •...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Retatrutide trial results are straight-up insane:  •86% liver fat reduction •..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2048871249007513718"
+      ]
+    },
+    "cb3aec3550a28cc9": {
+      "claim_text": "If you are a non-diabetic, please STOP wearing a continuous glucose monitor (...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "If you are a non-diabetic, please STOP wearing a continuous glucose monitor (..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/1705350373580714133"
+      ]
+    },
+    "037020eac691e999": {
+      "claim_text": "【成人1型DMへのCGM導入で死亡リスク低下(Diabetes Care)】  米国VHAデータを用いたターゲットエミュレーション（後向きコホート） 成人...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "【成人1型DMへのCGM導入で死亡リスク低下(Diabetes Care)】  米国VHAデータを用いたターゲットエミュレーション（後向きコホート） 成人..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2076086642562212010"
+      ]
+    },
+    "7fbb684d19d50a65": {
+      "claim_text": "PATIENT IN CLINIC:  21 DAYS on real-food, very low carb, unrestricted protein...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "PATIENT IN CLINIC:  21 DAYS on real-food, very low carb, unrestricted protein..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/1912181988074623162"
+      ]
+    },
+    "78e4712728f23aa6": {
+      "claim_text": "a1c is a ~90 day avg because red cells live ~120 days. its an *average* so th...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "a1c is a ~90 day avg because red cells live ~120 days. its an *average* so th..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2068627349902672077"
+      ]
+    },
+    "a4b58755a84878a0": {
+      "claim_text": "Adults with diabetes who initiated continuous glucose monitoring (CGM) in a p...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Adults with diabetes who initiated continuous glucose monitoring (CGM) in a p..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2075324178069119236"
+      ]
+    },
+    "2a6cdc00da864978": {
+      "claim_text": "A 10-minute habit that blunts your post-meal blood sugar spike by up to 30%? ...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "A 10-minute habit that blunts your post-meal blood sugar spike by up to 30%? ..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2075850328088383930"
+      ]
+    },
+    "78a7424a84cc5f73": {
+      "claim_text": "The 15 minutes after your meal may matter more than the 45 minutes you spend ...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "The 15 minutes after your meal may matter more than the 45 minutes you spend ..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2072513519329976417"
+      ]
+    },
+    "c0b6a6ffde68c337": {
+      "claim_text": "Prediabetes is reversible- But Here's Why Most People Miss Their Chances",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Prediabetes is reversible- But Here's Why Most People Miss Their Chances"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/prediabetes/comments/1lxqnnb/prediabetes_is_reversible_but_heres_why_most/"
+      ]
+    },
+    "bfdcb43315c1d125": {
+      "claim_text": "Eliminated Prediabetes in 3 months: Here's How I Did It",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Eliminated Prediabetes in 3 months: Here's How I Did It"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/prediabetes/comments/1f5p0g5/eliminated_prediabetes_in_3_months_heres_how_i/"
+      ]
+    },
+    "36a658698ba26bcb": {
+      "claim_text": "The thing about prediabetes no one talks about",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "The thing about prediabetes no one talks about"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/prediabetes/comments/1psaa81/the_thing_about_prediabetes_no_one_talks_about/"
+      ]
+    },
+    "70ce297e2e45b768": {
+      "claim_text": "The CGM is the WORST Thing That Has Ever Happened To Me.",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "The CGM is the WORST Thing That Has Ever Happened To Me."
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/diabetes/comments/1eg663k/the_cgm_is_the_worst_thing_that_has_ever_happened/"
+      ]
+    },
+    "b440a1bc0d39ba34": {
+      "claim_text": "Sinner was seen wearing a CGM: It is a device that does not measure blood sugar but measures the level of glucose present in the interstitial fluid under the skin, it is used by some athletes and diabetics",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Sinner was seen wearing a CGM: It is a device that does not measure blood sugar but measures the level of glucose presen"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/tennis/comments/1u9azcl/sinner_was_seen_wearing_a_cgm_it_is_a_device_that/"
+      ]
+    },
+    "b1ce0095eb622302": {
+      "claim_text": "What do non diabetics think a cgm is?",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "What do non diabetics think a cgm is?"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/diabetes_t1/comments/1sb556y/what_do_non_diabetics_think_a_cgm_is/"
+      ]
+    },
+    "62be5d304e44914d": {
+      "claim_text": "What helped you fix insulin resistance?",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "What helped you fix insulin resistance?"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/InsulinResistance/comments/1pq8vdt/what_helped_you_fix_insulin_resistance/"
+      ]
+    },
+    "428e1f05f08981c6": {
+      "claim_text": "Ladies who reversed their insulin resistance what did you do?",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Ladies who reversed their insulin resistance what did you do?"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/PCOS/comments/1h22v51/ladies_who_reversed_their_insulin_resistance_what/"
+      ]
+    },
+    "ba6d25b6dfd476f2": {
+      "claim_text": "Totally reversed insulin resistance (update)",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Totally reversed insulin resistance (update)"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/InsulinResistance/comments/1sjixs7/totally_reversed_insulin_resistance_update/"
+      ]
+    },
+    "07a1f6bea9d2cd8f": {
+      "claim_text": "Might be silly but what are signs of insulin resistance?",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Might be silly but what are signs of insulin resistance?"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/PCOS/comments/yqkwka/might_be_silly_but_what_are_signs_of_insulin/"
+      ]
+    },
+    "f3b201e5ef0a9047": {
+      "claim_text": "PCOS, insulin resistance, and finally understanding why I couldn’t lose weight",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "PCOS, insulin resistance, and finally understanding why I couldn’t lose weight"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/PetiteFitness/comments/1umgigg/pcos_insulin_resistance_and_finally_understanding/"
+      ]
+    },
+    "1697030305ee5e12": {
+      "claim_text": "有這幾個症狀，說明你已經患有胰島素抵抗！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "有這幾個症狀，說明你已經患有胰島素抵抗！"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=Rc8waewlKAc"
+      ]
+    },
+    "1147bb7b61c3ff8e": {
+      "claim_text": "怎麼用 3 招降低胰島素阻抗？宋晏仁 及 李唐越醫師聊給你聽！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "怎麼用 3 招降低胰島素阻抗？宋晏仁 及 李唐越醫師聊給你聽！"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=KDnJ-jbpw04"
+      ]
+    },
+    "a5a44acf0ebe0b21": {
+      "claim_text": "胰島素阻抗可能是在保護你？🧐宋晏仁醫師帶你翻轉既有的糖尿病治療思維！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "胰島素阻抗可能是在保護你？🧐宋晏仁醫師帶你翻轉既有的糖尿病治療思維！"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=96OCKxqeKhQ"
+      ]
+    },
+    "af24270f2522e5a9": {
+      "claim_text": "Insulin resistance, obesity, type 2 diabetes - what exercise is most suitable?",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Insulin resistance, obesity, type 2 diabetes - what exercise is most suitable?"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=vP4VFDN-K9I"
+      ]
+    },
+    "d105ce969a4d81ae": {
+      "claim_text": "逆轉「糖尿病前期」，如何守住抵禦糖尿病的最後一道防線？︱ 游能俊醫師 【早安健康】",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "逆轉「糖尿病前期」，如何守住抵禦糖尿病的最後一道防線？︱ 游能俊醫師 【早安健康】"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=zNNpLYqcrZE"
+      ]
+    },
+    "0cd59eba874f372f": {
+      "claim_text": "侯昌明糖尿病前期 戒宵夜.改飲食.運動終逆轉  健康2.0",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "侯昌明糖尿病前期 戒宵夜.改飲食.運動終逆轉  健康2.0"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=vdVXnBNxW6g"
+      ]
+    },
+    "413266c2cff8138f": {
+      "claim_text": "糖尿病前期逆轉-要如何守住糖尿病的最後防線？女性到更年期成高風險族群？沒症狀能用糖尿病風險自我檢測表！教你用低醣飲食來逆轉！超商如何也能減糖飲食法？｜黃瑽寧（feat. 游能俊）",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病前期逆轉-要如何守住糖尿病的最後防線？女性到更年期成高風險族群？沒症狀能用糖尿病風險自我檢測表！教你用低醣飲食來逆轉！超商如何也能減糖飲食法？｜黃瑽寧（feat. 游能俊）"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=hg_hM7hjODE"
+      ]
+    },
+    "2695b05ced23bb5b": {
+      "claim_text": "什么是糖耐量异常 张美英 南昌大学第二附属医院",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "什么是糖耐量异常 张美英 南昌大学第二附属医院"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=bYDGNF0r-Uc"
+      ]
+    },
+    "50ee0f10efef22ce": {
+      "claim_text": "什么是糖耐量受损 张春芳 首都医科大学附属北京天坛医院",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "什么是糖耐量受损 张春芳 首都医科大学附属北京天坛医院"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=kqbhWvqWOsg"
+      ]
+    },
+    "cb94e6853cb92399": {
+      "claim_text": "要怎么知道你是不是得了糖尿病？|【糖尿病】花生健康医药 EP70",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "要怎么知道你是不是得了糖尿病？|【糖尿病】花生健康医药 EP70"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=ybTysaU3w-o"
+      ]
+    },
+    "9f8ddd45de0dce03": {
+      "claim_text": "降糖药",
+      "claim_type": "drug_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "血糖与饮水量有关？医生劝告：血糖过高的人，喝水时多注意这8点！【安澜谈健康】#糖尿病喝水 #高血糖饮食 #控糖技巧 #糖尿病并发症 #血糖稳健 #内分泌科普 #健康小常识 #安澜医生 #降糖药怎么吃"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=WoU6ofy5syI"
+      ]
+    },
+    "77af4ed4672be759": {
+      "claim_text": "【糖尿病】糖尿病患者空腹血糖正常，餐后血糖高怎么办",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "【糖尿病】糖尿病患者空腹血糖正常，餐后血糖高怎么办"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=EdMaGcEA9Os"
+      ]
+    },
+    "aa13a1ec757270a2": {
+      "claim_text": "【暖醫在線】餐前血糖、餐後血糖、糖化血色素該怎麼看？胰島素是「血糖達標」好幫手",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "【暖醫在線】餐前血糖、餐後血糖、糖化血色素該怎麼看？胰島素是「血糖達標」好幫手"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=kona0jJQ0ZE"
+      ]
+    },
+    "da1c81112613f115": {
+      "claim_text": "别再只看空腹血糖了！90%的人都被体检单骗了，早期糖尿病全是因为它才漏诊！【安澜谈健康】#空腹血糖 #糖尿病前期 #糖尿病症状 #餐后高血糖 #糖耐量受损 #黎明现象 #苏木杰现象 #夜间低血糖",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "别再只看空腹血糖了！90%的人都被体检单骗了，早期糖尿病全是因为它才漏诊！【安澜谈健康】#空腹血糖 #糖尿病前期 #糖尿病症状 #餐后高血糖 #糖耐量受损 #黎明现象 #苏木杰现象 #夜间低血糖"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=6wMNLCKLWyw"
+      ]
+    },
+    "47d469e48bd9130b": {
+      "claim_text": "空腹血糖高的原因，饭前血糖高改善的方法有哪些呢? 餐前或是空腹血糖高的原因有哪些呢? #饭前血糖高",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹血糖高的原因，饭前血糖高改善的方法有哪些呢? 餐前或是空腹血糖高的原因有哪些呢? #饭前血糖高"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=K-jsZhGJXPQ"
+      ]
+    },
+    "a3a979e6cd733ab1": {
+      "claim_text": "体检发现空腹血糖升高怎么办 张秀娟 北京朝阳医院京西院区",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "体检发现空腹血糖升高怎么办 张秀娟 北京朝阳医院京西院区"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=QXGx6siObt8"
+      ]
+    },
+    "d52116f1d6d13f7a": {
+      "claim_text": "体检血糖偏高，是糖尿病前期还是糖尿病？口服糖耐量试验告诉你",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "体检血糖偏高，是糖尿病前期还是糖尿病？口服糖耐量试验告诉你"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=xxH0RkFS-b8"
+      ]
+    },
+    "223bc69c3d386eb6": {
+      "claim_text": "医生透露：糖尿病人这5项指标都正常，未来10年基本不担心并发症！【安澜谈健康】#糖尿病 #血糖 #体检报告 #糖化血红蛋白 #并发症 #高血压 #低密度脂蛋白 #腹型肥胖 #糖尿病肾病 #尿微量白蛋白",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "医生透露：糖尿病人这5项指标都正常，未来10年基本不担心并发症！【安澜谈健康】#糖尿病 #血糖 #体检报告 #糖化血红蛋白 #并发症 #高血压 #低密度脂蛋白 #腹型肥胖 #糖尿病肾病 #尿微量白蛋白"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=tGD-4Tw616g"
+      ]
+    },
+    "6c67d9ff8ef1f730": {
+      "claim_text": "糖尿病前期- 诊断与治疗- 妙佑医疗国际",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病前期- 诊断与治疗- 妙佑医疗国际"
+      ],
+      "source_urls": [
+        "https://www.mayoclinic.org/zh-hans/diseases-conditions/prediabetes/diagnosis-treatment/drc-20355284"
+      ]
+    },
+    "07b119dd31fc8eee": {
+      "claim_text": "糖尿病前期治未病干预指南",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病前期治未病干预指南"
+      ],
+      "source_urls": [
+        "https://bookcafe.yuntsg.com/ueditor/jsp/upload/file/20250329/1743227442033064414.pdf"
+      ]
+    },
+    "4dbbedef539feb6a": {
+      "claim_text": "糖尿病前期- 症状与病因- 妙佑医疗国际",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病前期- 症状与病因- 妙佑医疗国际"
+      ],
+      "source_urls": [
+        "https://www.mayoclinic.org/zh-hans/diseases-conditions/prediabetes/symptoms-causes/syc-20355278"
+      ]
+    },
+    "8ec19d5e57b60684": {
+      "claim_text": "糖尿病- 诊断与治疗- 妙佑医疗国际 - Mayo Clinic",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病- 诊断与治疗- 妙佑医疗国际 - Mayo Clinic"
+      ],
+      "source_urls": [
+        "https://www.mayoclinic.org/zh-hans/diseases-conditions/diabetes/diagnosis-treatment/drc-20371451"
+      ]
+    },
+    "c466d7fcd340ca4e": {
+      "claim_text": "很多人都不知道自己已经进入糖尿病前期了。早点知道，早点改善。不至于发展成真的糖尿病。",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "很多人都不知道自己已经进入糖尿病前期了。早点知道，早点改善。不至于发展成真的糖尿病。"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1mRijBjEcR"
+      ]
+    },
+    "0c72ff446a895b2e": {
+      "claim_text": "糖尿病前期是可逆的，以下是具体方法",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病前期是可逆的，以下是具体方法"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1foT16jEfi"
+      ]
+    },
+    "bfb392f37e253a88": {
+      "claim_text": "你以为0糖就不升糖吗？看看这个就明白了。。",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "你以为0糖就不升糖吗？看看这个就明白了。。"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1hNMx65Ehj"
+      ]
+    },
+    "d75e397bf82951f5": {
+      "claim_text": "只狼前期1分钟狂刷3357经验和夜叉戮糖",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "只狼前期1分钟狂刷3357经验和夜叉戮糖"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1PQ4y1L7PV"
+      ]
+    },
+    "bd058ec7a7e07ec4": {
+      "claim_text": "还在吹低升糖主食的都是骗子！不信就戴上血糖仪，用数据来说话",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "还在吹低升糖主食的都是骗子！不信就戴上血糖仪，用数据来说话"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1ZD421L7yt"
+      ]
+    },
+    "700bf7e8e1fc68fc": {
+      "claim_text": "饥饿是可以恢复胰岛功能的，那些没有死透的胰岛细胞恢复一部分",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "饥饿是可以恢复胰岛功能的，那些没有死透的胰岛细胞恢复一部分"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV19N41167aZ"
+      ]
+    },
+    "e99df40ff8d08d03": {
+      "claim_text": "小树糖耐没过，患妊娠糖尿病，被医生指责乱吃东西，怀个孕真难",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "小树糖耐没过，患妊娠糖尿病，被医生指责乱吃东西，怀个孕真难"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV12b4y1u7JL"
+      ]
+    },
+    "f872e554a0dd44d7": {
+      "claim_text": "慢病之王-糖尿病，让人活着腐烂！！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "慢病之王-糖尿病，让人活着腐烂！！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1vZeczwEDG"
+      ]
+    },
+    "b219e60211d9d351": {
+      "claim_text": "老婆怀孕糖耐没有过，每天扎手指",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "老婆怀孕糖耐没有过，每天扎手指"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1KT411N7Le"
+      ]
+    },
+    "9009d2a69718ab77": {
+      "claim_text": "4种食物，饱腹不升糖~",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "4种食物，饱腹不升糖~"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1p5411z7u5"
+      ]
+    },
+    "3f84a7d5a86a609a": {
+      "claim_text": "妊娠期糖尿病，空腹高和餐后高哪种危害更大？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "妊娠期糖尿病，空腹高和餐后高哪种危害更大？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1uu41167r2"
+      ]
+    },
+    "8e86d6b2f055c986": {
+      "claim_text": "糖人实测饭后散步30分钟，对血糖的影响有多大？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖人实测饭后散步30分钟，对血糖的影响有多大？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV18y4y1R7vg"
+      ]
+    },
+    "207db89ece8a1a99": {
+      "claim_text": "超重的正常人空腹血糖能达标吗？肥胖会让血糖超标吗？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "超重的正常人空腹血糖能达标吗？肥胖会让血糖超标吗？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1t84y1n7s1"
+      ]
+    },
+    "1e8bf2e8d5e60b34": {
+      "claim_text": "为什么餐后超级困",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "为什么餐后超级困"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1tr421H7CZ"
+      ]
+    },
+    "f4c0e1b5580d9729": {
+      "claim_text": "一吃碳水就犯困，根本不是血糖，是身体在慢性发炎",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "一吃碳水就犯困，根本不是血糖，是身体在慢性发炎"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1DuE56MEgi"
+      ]
+    },
+    "5b24db1d8bef3bcf": {
+      "claim_text": "空腹血糖大于7，餐后血糖大于10，这种情况怎么办？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹血糖大于7，餐后血糖大于10，这种情况怎么办？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Vu4y1t7ef"
+      ]
+    },
+    "e513f97f00ff9fe9": {
+      "claim_text": "每天一杯奶茶，你的血糖正在经历什么?",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "每天一杯奶茶，你的血糖正在经历什么?"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/1961063600077665101"
       ]
     }
   }
