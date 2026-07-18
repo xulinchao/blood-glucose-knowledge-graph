@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-07-13",
+  "updated": "2026-07-18",
   "topics": [
     {
       "id": "disc-016",
@@ -2841,6 +2841,231 @@
       "discovered_date": "2026-07-13",
       "data_source": "manual_web_search",
       "platform_data": {}
+    },
+    {
+      "id": "disc-168",
+      "title": "2026年7月慢特病全国统一新规：糖尿病报销一增一减要分清",
+      "angle": "7月1日起国家医保局联合印发《全国统一门诊慢特病管理规范(2026版)》，糖尿病等6类慢病实行'免申即享'，基层机构可开3个月长处方，5类疾病跨省直接结算免备案。8款国谈药品过渡期结束调出统筹报销引发'所有降糖药退出医保'谣言。辟谣+科普双角度。",
+      "category": "政策解读",
+      "platform": "toutiao,xhs,dy",
+      "duration": "45-60s",
+      "heat": "hot",
+      "heat_source": "今日头条7月17日热文，医保新政涉及1.4亿糖尿病参保患者",
+      "source_urls": [
+        "http://m.toutiao.com/group/7663504806532219444/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-18",
+      "platform_data": {
+        "source": "今日头条",
+        "evidence_level": "A",
+        "use_as": "cite_directly"
+      }
+    },
+    {
+      "id": "disc-169",
+      "title": "收割中产的低GI食物，实则高油高糖？低GI标签智商税揭秘",
+      "angle": "低GI食品市场规模1762亿元但认证处于自愿性阶段，蜂蜜/红糖等高糖品类蹭低GI热度，部分商家靠添加脂肪压低GI数值。中国疾控中心已发布GI测定标示规范征求意见稿。打假/辟谣角度，教消费者看配料表。",
+      "category": "打假辟谣",
+      "platform": "xhs,dy,toutiao",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "首席商业洞察今日头条热文，低GI智商税话题高讨论度",
+      "source_urls": [
+        "http://m.toutiao.com/group/7662319488351748659/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-18",
+      "platform_data": {
+        "source": "今日头条/首席商业洞察",
+        "evidence_level": "C",
+        "use_as": "hook_only"
+      }
+    },
+    {
+      "id": "disc-170",
+      "title": "2026版ADA指南：CGM成为控糖新刚需，血糖管理进入新时代",
+      "angle": "2026版ADA指南正式将CGM列为糖尿病管理关键技术，不再局限于胰岛素治疗患者。TIR（目标范围内时间）成为新评估指标。国产CGM如三诺爱看、欧态获'人民优选'认证。科普+趋势角度。",
+      "category": "工具测评",
+      "platform": "toutiao,xhs,bili",
+      "duration": "45-60s",
+      "heat": "warm",
+      "heat_source": "2026 ADA指南发布，CGM市场规模预计突破150亿美元",
+      "source_urls": [
+        "http://m.toutiao.com/group/7626301743076327979/",
+        "http://m.toutiao.com/group/7628872784369762851/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-18",
+      "platform_data": {
+        "source": "今日头条",
+        "evidence_level": "A",
+        "use_as": "cite_directly"
+      }
+    },
+    {
+      "id": "disc-171",
+      "title": "1型糖尿病迈向「功能性治愈」：全球首个免疫细胞工程疗法亮相ISSCR 2026",
+      "angle": "2026年7月11日ISSCR年会上，西达赛奈医疗中心展示免疫细胞工程疗法；福泰制药Zimislecel临床试验让30例患者停用胰岛素。中国团队也有世界级成果。前沿研究科普角度。",
+      "category": "前沿研究",
+      "platform": "toutiao,dy,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "ISSCR 2026年会热点，干细胞治疗糖尿病话题高关注度",
+      "source_urls": [
+        "http://m.toutiao.com/group/7663210072708858418/",
+        "http://m.toutiao.com/group/7613002404455350822/",
+        "http://m.toutiao.com/group/7663630765397148211/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-18",
+      "platform_data": {
+        "source": "今日头条/ISSCR 2026",
+        "evidence_level": "B",
+        "use_as": "verify_before_script"
+      }
+    },
+    {
+      "id": "disc-172",
+      "title": "2026新版肥胖指南：不挨饿、不猛练、减重不反弹，四维科学减脂",
+      "angle": "2026年3月《中国肥胖行为与生活方式干预指南》确立饮食+运动+睡眠+心理四维一体减脂体系。推翻'少吃多动'粗暴逻辑，每周0.5-1kg为黄金区间。与胰岛素抵抗/血糖管理强关联。科普+实操角度。",
+      "category": "科学减脂",
+      "platform": "toutiao,xhs,dy",
+      "duration": "45-60s",
+      "heat": "warm",
+      "heat_source": "今日头条7月热文，2026新版肥胖指南解读",
+      "source_urls": [
+        "http://m.toutiao.com/group/7662463906622849579/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-18",
+      "platform_data": {
+        "source": "今日头条/惠州中心医院",
+        "evidence_level": "A",
+        "use_as": "cite_directly"
+      }
+    },
+    {
+      "id": "disc-173",
+      "title": "二甲双胍当减肥药？医生紧急叫停：6种症状必须停药",
+      "angle": "二甲双胍减肥效果实为食欲受抑和腹泻脱水而非真正减脂，停药后迅速反弹。长期使用可致维生素B12缺乏、乳酸酸中毒。以减肥为目的滥用处方药的辟谣角度。",
+      "category": "辟谣",
+      "platform": "toutiao,dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "今日头条7月热文，二甲双胍减肥话题持续高讨论度",
+      "source_urls": [
+        "http://m.toutiao.com/group/7663385756118811190/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-18",
+      "platform_data": {
+        "source": "今日头条",
+        "evidence_level": "B",
+        "use_as": "hook_only"
+      }
+    },
+    {
+      "id": "disc-174",
+      "title": "夏天血糖波动大？答案藏在膳食纤维里",
+      "angle": "高温天胰岛'加工作量'，空腹莫名升高、餐后峰值飙快、低血糖风险增加。膳食纤维在控稳夏季血糖中的关键作用。应季科普角度，7月当前实用性强。",
+      "category": "应季科普",
+      "platform": "toutiao,xhs,dy",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "今日头条7月17日热文，夏季血糖波动话题",
+      "source_urls": [
+        "http://m.toutiao.com/group/7663386748155642368/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-18",
+      "platform_data": {
+        "source": "今日头条",
+        "evidence_level": "C",
+        "use_as": "hook_only"
+      }
+    },
+    {
+      "id": "disc-175",
+      "title": "不到2年，糖前期+多囊卵巢逆转成健康人：真实案例分享",
+      "angle": "糖前期+多囊卵巢综合征患者通过控制碳水+长期运动成功逆转。压力与坏情绪导致血糖崩盘。个人经历角度，情感共鸣强，适合口播真人分享形式。",
+      "category": "真实案例",
+      "platform": "toutiao,xhs,dy",
+      "duration": "45-60s",
+      "heat": "warm",
+      "heat_source": "今日头条7月热文，糖前期逆转话题高互动",
+      "source_urls": [
+        "http://m.toutiao.com/group/7660070464487768591/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-18",
+      "platform_data": {
+        "source": "今日头条",
+        "evidence_level": "D",
+        "use_as": "hook_only"
+      }
+    },
+    {
+      "id": "disc-176",
+      "title": "糖尿病年轻化：35岁成控糖警戒线，筛查起始年龄已下调",
+      "angle": "40岁以下糖尿病发病率飙升3倍，国内防治指南将血糖筛查起始年龄从40岁下调至35岁。西安交大一附院、云南大学附属医院专家解读。年轻群体警醒角度。",
+      "category": "数字科普",
+      "platform": "toutiao,xhs,dy,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "搜狐/腾讯新闻持续热度，糖尿病年轻化话题年度级关注",
+      "source_urls": [
+        "https://m.sohu.com/a/1048003409_122812153/",
+        "http://m.toutiao.com/group/7592176273146036746/",
+        "https://view.inews.qq.com/a/20260125A03HZ300"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-18",
+      "platform_data": {
+        "source": "搜狐/腾讯新闻",
+        "evidence_level": "B",
+        "use_as": "cite_directly"
+      }
+    },
+    {
+      "id": "disc-177",
+      "title": "华为血糖健康研究加速突破：可穿戴动态血糖仪要来了？",
+      "angle": "华为HDC 2026发布血糖健康监测研究进展，与北京协和医院合作高血糖风险评估，与Dubai Health合作糖尿病风险评估。可穿戴血糖监测趋势。科技+健康角度。",
+      "category": "科技健康",
+      "platform": "toutiao,bili,dy",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "今日头条6月热文持续讨论，华为血糖监测话题科技圈高关注",
+      "source_urls": [
+        "http://m.toutiao.com/group/7651872334252392996/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-18",
+      "platform_data": {
+        "source": "今日头条",
+        "evidence_level": "B",
+        "use_as": "verify_before_script"
+      }
     }
   ],
   "archive": [
