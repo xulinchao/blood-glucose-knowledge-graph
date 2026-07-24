@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-07-18",
+  "updated": "2026-07-24",
   "topics": [
     {
       "id": "disc-016",
@@ -3065,6 +3065,275 @@
         "source": "今日头条",
         "evidence_level": "B",
         "use_as": "verify_before_script"
+      }
+    },
+    {
+      "id": "disc-178",
+      "title": "N/A",
+      "angle": "全网网页(Exa) · 证据层级A · cite_directly · 可引用来源观点，口播须加「非医疗建议」并附原链接",
+      "category": "数字科普",
+      "platform": "dy,bili",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 全网网页(Exa) · 选题分 85 · 互动 -",
+      "source_urls": [
+        "https://www.nhc.gov.cn/cms-search/downFiles/4fcbecd2c18e46baaf291bf46c2b79cd.pdf"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-24",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 85,
+          "label": "较高",
+          "reasons": [
+            "一级来源：指南/政府/期刊域名"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+        },
+        "importance": {
+          "score": 52,
+          "label": "低",
+          "reasons": [
+            "多平台同热(exa)"
+          ]
+        },
+        "topic_score": 85,
+        "platform": "exa",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-179",
+      "title": "中国糖尿病前期筛查防治专家共识（2023版）_糖尿病_糖尿病如何预防 - 好大夫在线",
+      "angle": "全网网页(Exa) · 证据层级B · verify_before_script · 写稿前对照原帖/指南核实；口播避免给个体诊断",
+      "category": "实操方法",
+      "platform": "dy,bili",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 全网网页(Exa) · 选题分 78 · 互动 -",
+      "source_urls": [
+        "https://www.haodf.com/neirong/wenzhang/9392899190.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-24",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 78,
+          "label": "较高",
+          "reasons": [
+            "二级来源：医疗专业平台"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "写稿前对照原帖/指南核实；口播避免给个体诊断"
+        },
+        "importance": {
+          "score": 40,
+          "label": "低",
+          "reasons": []
+        },
+        "topic_score": 78,
+        "platform": "exa",
+        "evidence_tier": "B",
+        "use_as": "verify_before_script",
+        "creator_note": "写稿前对照原帖/指南核实；口播避免给个体诊断"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-180",
+      "title": "只需三招，改善代谢综合征",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 24410",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1UNZJYWErP"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-24",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 70,
+          "label": "中",
+          "reasons": [
+            "互动量中等(24,410)",
+            "命中关键词「代谢综合征」"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "胰岛素是「钥匙」，细胞是「锁」，抵抗=锁生锈了",
+        "早期血糖可能正常（高胰岛素代偿期）",
+        "腹部肥胖是最常见诱因",
+        "运动可显著改善胰岛素敏感性"
+      ]
+    },
+    {
+      "id": "disc-181",
+      "title": "低GI食品乱象调查——上海市消保委教你识别真假低GI",
+      "angle": "2026年6月上海市消保委发文提示，真正的低GI食品应有明确GI值、人体测试方法(WS/T 652—2019)、权威机构标示logo、检测报告编号和认证有效期。结合博鳌健康食品科学大会(FHE2026)讨论，低GI产业良莠不齐。辟谣/打假角度口播，教观众识别智商税。",
+      "category": "辟谣纠偏",
+      "platform": "toutiao,dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "上海市消保委官方发文，食业头条低GI热度报告，行业级话题",
+      "source_urls": [
+        "http://m.toutiao.com/group/7665665140058145314/",
+        "http://m.toutiao.com/group/7662319488351748659/",
+        "http://m.toutiao.com/group/7641823364609016383/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-24",
+      "platform_data": {
+        "source": "上海市消保委/今日头条",
+        "evidence_level": "A",
+        "use_as": "cite_directly"
+      }
+    },
+    {
+      "id": "disc-182",
+      "title": "国产CGM崛起——欧态MARD 8.106%能挑战进口品牌吗？",
+      "angle": "2026年多篇CGM横评显示，国产动态血糖仪技术成长迅速。欧态CGM的MARD值为8.106%，三诺i6领衔主流机型横评。国产vs进口品牌性能对比，工具测评角度，适合科技+健康口播。",
+      "category": "工具测评",
+      "platform": "toutiao,dy,xhs",
+      "duration": "45-60s",
+      "heat": "warm",
+      "heat_source": "2026年CGM横评文章持续热度，动态血糖仪市场爆发",
+      "source_urls": [
+        "http://m.toutiao.com/group/7648837436566454803/",
+        "http://m.toutiao.com/group/7652171963888861736/",
+        "http://m.toutiao.com/group/7663400986995655194/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-24",
+      "platform_data": {
+        "source": "今日头条测评",
+        "evidence_level": "C",
+        "use_as": "verify_before_script"
+      }
+    },
+    {
+      "id": "disc-183",
+      "title": "控糖产品骗局揭秘——热销'控糖药'成分里竟然含糖",
+      "angle": "163新闻报道控糖产品灰色营销链：冒用知名医院医生身份，刻意贬损处方降糖药，鼓吹服用高价产品就能'治愈糖尿病'。部分'控糖药'成分里竟含糖。打假/辟谣角度，警示消费者。",
+      "category": "辟谣纠偏",
+      "platform": "toutiao,dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "163新闻报道，打假高热度，社会关注度极高",
+      "source_urls": [
+        "https://3g.163.com/news/article/KJ52AG070550B6IS.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-24",
+      "platform_data": {
+        "source": "163新闻",
+        "evidence_level": "B",
+        "use_as": "cite_directly"
+      }
+    },
+    {
+      "id": "disc-184",
+      "title": "2026低糖零食品牌TOP5——从GI值到适配性教你避坑",
+      "angle": "2026低糖零食品牌TOP5榜单：糖友厨房(9.8分)、思朗(8.3分)、盼盼食品(8.0分)、勿糖(7.8分)。测评角度分析各品牌适配人群和避坑红线：勿轻信标注'无糖'的加工食品，配料表前3位出现麦芽糊精、果葡糖浆等隐形糖需警惕。",
+      "category": "测评种草",
+      "platform": "xhs,dy",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "搜狐测评文章，小红书零食话题持续热度",
+      "source_urls": [
+        "https://m.sohu.com/a/981391071_122601927/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-24",
+      "platform_data": {
+        "source": "搜狐测评",
+        "evidence_level": "D",
+        "use_as": "hook_only"
+      }
+    },
+    {
+      "id": "disc-185",
+      "title": "老年控糖新规——别只盯空腹血糖，TIR才是防并发症核心",
+      "angle": "2026老年控糖核心原则：优先规避致命低血糖，轻度高血糖可个体化宽松管控，宁稳勿低、适度放宽。TIR（目标范围内时间）取代单纯空腹血糖成为评估核心。适合中老年受众口播。",
+      "category": "政策解读",
+      "platform": "toutiao,dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "今日头条老年健康高关注文章",
+      "source_urls": [
+        "http://m.toutiao.com/group/7664712694792061478/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-24",
+      "platform_data": {
+        "source": "今日头条",
+        "evidence_level": "B",
+        "use_as": "verify_before_script"
+      }
+    },
+    {
+      "id": "disc-186",
+      "title": "二甲双胍致命副作用——82%竟因饮食搭配不当？",
+      "angle": "某权威药学数据库2026年更新用药监测数据显示，二甲双胍相关致命不良反应中82%并非药物过量，而是饮食搭配不当引发的急性并发症。用药安全角度，但必须强调：涉及用药必须提示就医，不可当医学建议。",
+      "category": "用药安全",
+      "platform": "toutiao,dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "今日头条用药安全高关注文章",
+      "source_urls": [
+        "http://m.toutiao.com/group/7665652034040791567/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-24",
+      "platform_data": {
+        "source": "今日头条",
+        "evidence_level": "D",
+        "use_as": "hook_only"
       }
     }
   ],
