@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-07-24",
+  "updated": "2026-07-27",
   "topics": [
     {
       "id": "disc-016",
@@ -3334,6 +3334,201 @@
         "source": "今日头条",
         "evidence_level": "D",
         "use_as": "hook_only"
+      }
+    },
+    {
+      "id": "disc-187",
+      "title": "2026版中国糖尿病防治指南更新：空腹血糖≥5.5即纳入筛查",
+      "angle": "2026版指南首次将糖尿病前期分层干预纳入一级预防核心，筛查阈值调整为空腹血糖≥5.5mmol/L。权威指南更新角度，可引用，须加「非医疗建议」并附原链接。",
+      "category": "政策指南",
+      "platform": "toutiao,dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "2026版中国糖尿病防治指南发布，多家权威媒体跟进报道",
+      "source_urls": [
+        "https://m.book118.com/html/2026/0726/5043242114013300.shtm",
+        "http://m.toutiao.com/group/7664712694792061478/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-27",
+      "platform_data": {
+        "source": "原创力文档/今日头条",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "required_hedges": ["请以复查和医嘱为准", "个体差异较大"],
+        "forbidden_expressions": ["保证逆转", "永不复发"]
+      }
+    },
+    {
+      "id": "disc-188",
+      "title": "达格列净联合饮食控制：近半数早期2型糖尿病可「缓解」",
+      "angle": "2026年国内多中心研究显示，达格列净+饮食干预可使近半数早期2型糖尿病患者实现停药后血糖平稳的「缓解」状态。缓解≠治愈，须强调药物调整须遵医嘱。来源含《中华糖尿病杂志》临床路径建议。",
+      "category": "数字科普",
+      "platform": "toutiao,dy,xhs,bili",
+      "duration": "45-60s",
+      "heat": "hot",
+      "heat_source": "今日头条糖尿病逆转研究高关注文章，多平台转载",
+      "source_urls": [
+        "http://m.toutiao.com/group/7666300277561098815/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-27",
+      "platform_data": {
+        "source": "今日头条",
+        "evidence_tier": "B",
+        "use_as": "verify_before_script",
+        "required_hedges": ["缓解≠治愈", "药物调整须遵医嘱", "个体差异较大"],
+        "forbidden_expressions": ["根治", "永不复发", "保证逆转"]
+      }
+    },
+    {
+      "id": "disc-189",
+      "title": "低GI食品标签乱象：蜂蜜、肉干也「认证」？新京报调查60款样品",
+      "angle": "新京报消费研究院抽查60款标称「低GI」产品：超八成未标注GI测试值，近五成无测定方法，超三成无第三方认证。蜂蜜、牛肉脆等不含碳水或公认升糖快的产品也拿到低GI认证。打假角度，可引用调查数据。",
+      "category": "辟谣纠偏",
+      "platform": "toutiao,dy,xhs,bili",
+      "duration": "45-60s",
+      "heat": "hot",
+      "heat_source": "新京报深度调查，上海市消保委同期发文，多平台热议",
+      "source_urls": [
+        "http://m.toutiao.com/group/7665606335752372736/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-27",
+      "platform_data": {
+        "source": "新京报/今日头条",
+        "evidence_tier": "B",
+        "use_as": "cite_directly",
+        "required_hedges": ["个体差异较大"],
+        "forbidden_expressions": ["所有低GI食品都是骗局"]
+      }
+    },
+    {
+      "id": "disc-190",
+      "title": "偏瘦糖友不用终身吃药？2026共识：关键看「肌肉量」不是体重",
+      "angle": "2026年新共识提醒：BMI偏低的糖友核心目标应从「降体重」转向「稳体重、长肌肉」。肌肉是天然「储糖罐」，肌肉流失比脂肪堆积更危险。增肌+控糖角度，来源为头条科普文引用共识观点。",
+      "category": "数字科普",
+      "platform": "toutiao,dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "今日头条糖尿病共识解读高关注文章",
+      "source_urls": [
+        "http://m.toutiao.com/group/7665992826194346548/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-27",
+      "platform_data": {
+        "source": "今日头条",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "required_hedges": ["请以复查和医嘱为准", "个体差异较大"],
+        "forbidden_expressions": ["偏瘦糖友都能停药"]
+      }
+    },
+    {
+      "id": "disc-191",
+      "title": "老年控糖新规：TIR才是防并发症核心，不是空腹血糖",
+      "angle": "《中国老年2型糖尿病防治临床指南(2026年版)》提出TIR（血糖达标时长占比）为核心指标。超70%老年糖友空腹正常但餐后超标。三档分层TIR标准（60-79岁≥70%、合并基础病≥60%、80+≥50%）。权威指南角度。",
+      "category": "政策指南",
+      "platform": "toutiao,dy,xhs,bili",
+      "duration": "45-60s",
+      "heat": "hot",
+      "heat_source": "2026年版老年糖尿病指南发布，今日头条高关注科普文",
+      "source_urls": [
+        "http://m.toutiao.com/group/7664712694792061478/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-27",
+      "platform_data": {
+        "source": "今日头条",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "required_hedges": ["请以复查和医嘱为准", "个体差异较大", "分层标准须遵医嘱"],
+        "forbidden_expressions": ["所有老人都能停药", "血糖越低越好"]
+      }
+    },
+    {
+      "id": "disc-192",
+      "title": "二甲双胍「跌落神坛」？长寿研究负责人自己推翻结论",
+      "angle": "原长寿研究负责人公开改口：健康人吃二甲双胍几乎没有抗衰老收益，过去长寿效果是统计偏差。只有胰岛素抵抗、肥胖、糖尿病前期、2型糖尿病人能获益。普通人乱吃副作用明确。辟谣角度，须强调遵医嘱。",
+      "category": "辟谣纠偏",
+      "platform": "toutiao,dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "今日头条二甲双胍争议高关注文章，多平台讨论",
+      "source_urls": [
+        "http://m.toutiao.com/group/7638797828130669075/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-27",
+      "platform_data": {
+        "source": "今日头条",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "required_hedges": ["用药须遵医嘱", "个体差异较大"],
+        "forbidden_expressions": ["二甲双胍有毒", "所有降糖药都不能吃"]
+      }
+    },
+    {
+      "id": "disc-193",
+      "title": "AI慢病管理落地：北京三区试点，糖友从跑医院变看手机",
+      "angle": "北京市卫健委在海淀、通州、顺义三区试点AI辅助慢病管理，聚焦糖尿病等慢病，为居民生成个性化健康计划。平安好医生联合20城卫健委推出AI慢病管理系统。趋势话题，非医疗建议。",
+      "category": "健康趋势",
+      "platform": "toutiao,dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "北京市卫健委政策+今日头条科技健康报道",
+      "source_urls": [
+        "http://m.toutiao.com/group/7666109348166287923/",
+        "http://m.toutiao.com/group/7589780679936721442/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-27",
+      "platform_data": {
+        "source": "今日头条",
+        "evidence_tier": "B",
+        "use_as": "cite_directly",
+        "required_hedges": ["个体差异较大"],
+        "forbidden_expressions": ["AI能替代医生"]
+      }
+    },
+    {
+      "id": "disc-194",
+      "title": "糖尿病前期逆转4种方法：不吃药的路径真的存在吗？",
+      "angle": "科普文总结糖尿病前期逆转4个方向：主食换「慢动作版本」、肌肉是天然降糖工厂、睡眠是血糖调节器、压力管理。2026版共识减重目标：肥胖患者至少减10公斤。实操方法角度，须标注「前期≠确诊」。",
+      "category": "实操方法",
+      "platform": "toutiao,dy,xhs,bili",
+      "duration": "45-60s",
+      "heat": "warm",
+      "heat_source": "今日头条/薄荷医生糖尿病前期逆转高关注内容",
+      "source_urls": [
+        "https://m.bohe.cn/news/view/32620.html",
+        "http://m.toutiao.com/group/7666628198859375150/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-27",
+      "platform_data": {
+        "source": "薄荷医生/今日头条",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "required_hedges": ["请以复查和医嘱为准", "个体差异较大", "前期≠确诊"],
+        "forbidden_expressions": ["保证逆转", "永不复发"]
       }
     }
   ],
