@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-07-27",
+  "updated": "2026-07-29",
   "topics": [
     {
       "id": "disc-016",
@@ -3357,8 +3357,14 @@
         "source": "原创力文档/今日头条",
         "evidence_tier": "A",
         "use_as": "cite_directly",
-        "required_hedges": ["请以复查和医嘱为准", "个体差异较大"],
-        "forbidden_expressions": ["保证逆转", "永不复发"]
+        "required_hedges": [
+          "请以复查和医嘱为准",
+          "个体差异较大"
+        ],
+        "forbidden_expressions": [
+          "保证逆转",
+          "永不复发"
+        ]
       }
     },
     {
@@ -3381,8 +3387,16 @@
         "source": "今日头条",
         "evidence_tier": "B",
         "use_as": "verify_before_script",
-        "required_hedges": ["缓解≠治愈", "药物调整须遵医嘱", "个体差异较大"],
-        "forbidden_expressions": ["根治", "永不复发", "保证逆转"]
+        "required_hedges": [
+          "缓解≠治愈",
+          "药物调整须遵医嘱",
+          "个体差异较大"
+        ],
+        "forbidden_expressions": [
+          "根治",
+          "永不复发",
+          "保证逆转"
+        ]
       }
     },
     {
@@ -3405,8 +3419,12 @@
         "source": "新京报/今日头条",
         "evidence_tier": "B",
         "use_as": "cite_directly",
-        "required_hedges": ["个体差异较大"],
-        "forbidden_expressions": ["所有低GI食品都是骗局"]
+        "required_hedges": [
+          "个体差异较大"
+        ],
+        "forbidden_expressions": [
+          "所有低GI食品都是骗局"
+        ]
       }
     },
     {
@@ -3429,8 +3447,13 @@
         "source": "今日头条",
         "evidence_tier": "C",
         "use_as": "verify_before_script",
-        "required_hedges": ["请以复查和医嘱为准", "个体差异较大"],
-        "forbidden_expressions": ["偏瘦糖友都能停药"]
+        "required_hedges": [
+          "请以复查和医嘱为准",
+          "个体差异较大"
+        ],
+        "forbidden_expressions": [
+          "偏瘦糖友都能停药"
+        ]
       }
     },
     {
@@ -3453,8 +3476,15 @@
         "source": "今日头条",
         "evidence_tier": "A",
         "use_as": "cite_directly",
-        "required_hedges": ["请以复查和医嘱为准", "个体差异较大", "分层标准须遵医嘱"],
-        "forbidden_expressions": ["所有老人都能停药", "血糖越低越好"]
+        "required_hedges": [
+          "请以复查和医嘱为准",
+          "个体差异较大",
+          "分层标准须遵医嘱"
+        ],
+        "forbidden_expressions": [
+          "所有老人都能停药",
+          "血糖越低越好"
+        ]
       }
     },
     {
@@ -3477,8 +3507,14 @@
         "source": "今日头条",
         "evidence_tier": "C",
         "use_as": "verify_before_script",
-        "required_hedges": ["用药须遵医嘱", "个体差异较大"],
-        "forbidden_expressions": ["二甲双胍有毒", "所有降糖药都不能吃"]
+        "required_hedges": [
+          "用药须遵医嘱",
+          "个体差异较大"
+        ],
+        "forbidden_expressions": [
+          "二甲双胍有毒",
+          "所有降糖药都不能吃"
+        ]
       }
     },
     {
@@ -3502,8 +3538,12 @@
         "source": "今日头条",
         "evidence_tier": "B",
         "use_as": "cite_directly",
-        "required_hedges": ["个体差异较大"],
-        "forbidden_expressions": ["AI能替代医生"]
+        "required_hedges": [
+          "个体差异较大"
+        ],
+        "forbidden_expressions": [
+          "AI能替代医生"
+        ]
       }
     },
     {
@@ -3527,8 +3567,288 @@
         "source": "薄荷医生/今日头条",
         "evidence_tier": "C",
         "use_as": "verify_before_script",
-        "required_hedges": ["请以复查和医嘱为准", "个体差异较大", "前期≠确诊"],
-        "forbidden_expressions": ["保证逆转", "永不复发"]
+        "required_hedges": [
+          "请以复查和医嘱为准",
+          "个体差异较大",
+          "前期≠确诊"
+        ],
+        "forbidden_expressions": [
+          "保证逆转",
+          "永不复发"
+        ]
+      }
+    },
+    {
+      "id": "disc-195",
+      "title": "低GI食品国标即将落地：89.5%的人听过，只有13.8%真懂",
+      "angle": "上海消保委专项调查曝光低GI标签乱象，首部GI国标2026年3月已启动。可做科普辟谣+选购指南选题。",
+      "category": "行业辟谣",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "上海消保委7月专项调查；中新经纬、界面新闻连续报道；头条多篇10万+",
+      "source_urls": [
+        "http://m.toutiao.com/group/7665665140058145314/",
+        "http://m.toutiao.com/group/7665606308199940646/",
+        "http://m.toutiao.com/group/7667116853835203115/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-29",
+      "platform_data": {
+        "survey_source": "上海市消保委",
+        "awareness_rate": "89.5%",
+        "understanding_rate": "13.8%",
+        "national_standard": "GB 食物血糖生成指数测定与评价方法（2026年3月启动）"
+      }
+    },
+    {
+      "id": "disc-196",
+      "title": "42g脂肪的锅巴也贴\"低GI\"——千亿认证生意终于要被叫停",
+      "angle": "中新经纬调查曝光：高脂高钠食品花钱买\"低GI\"认证，消费者被误导。辟谣+打假角度，高传播潜力。",
+      "category": "行业辟谣",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "中新经纬、界面新闻7月调查报道；上海消保委专项调查数据",
+      "source_urls": [
+        "http://m.toutiao.com/group/7667116853835203115/",
+        "http://m.toutiao.com/group/7667230233061474818/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-29",
+      "platform_data": {
+        "investigation_source": "中新经纬+界面新闻",
+        "key_finding": "42g脂肪锅巴贴低GI标签",
+        "new_standard_requirement": "GI≤55且需满足脂肪/饱和脂肪/钠上限+膳食纤维下限"
+      }
+    },
+    {
+      "id": "disc-197",
+      "title": "杭州社区食堂\"控糖减脂\"模式走红：是噱头还是可持续新模型？",
+      "angle": "杭州首家标准化控糖社区食堂日均售出百余份控糖营养餐，全网刷屏。可从社区健康模式+控糖饮食落地角度切入。",
+      "category": "社会趋势",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "头条10万+阅读；多家媒体跟进报道",
+      "source_urls": [
+        "http://m.toutiao.com/group/7661493882563936810/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-29",
+      "platform_data": {
+        "location": "杭州萧山区北干街道",
+        "daily_sales": "百余份控糖营养餐",
+        "positioning": "杭州首家标准化控糖社区食堂"
+      }
+    },
+    {
+      "id": "disc-198",
+      "title": "MIT活体微型胰腺突破：自动感应血糖释放胰岛素，1型糖尿病未来",
+      "angle": "MIT科学家创造活体微型胰腺，在糖尿病小鼠中维持血糖稳定数周。前沿科技科普角度，适合知识型口播。",
+      "category": "前沿研究",
+      "platform": "dy,xhs,bili,twitter",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "Twitter @scitechgirl 7月28日发布；MIT News 2026年报道",
+      "source_urls": [
+        "https://x.com/i/status/2082148419468918994",
+        "https://news.mit.edu"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-29",
+      "platform_data": {
+        "source": "MIT + Cell Press 2026",
+        "stage": "动物实验阶段，人体试验仍需等待",
+        "twitter_views": "610",
+        "twitter_likes": "36"
+      }
+    },
+    {
+      "id": "disc-199",
+      "title": "血糖忽高忽低比持续高血糖更伤身！糖友如何稳住波动",
+      "angle": "血糖波动危害大于持续高血糖，日常细节是主因。可做实用稳糖技巧科普，贴近糖友日常痛点。",
+      "category": "实操方法",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "头条多篇10万+；搜索热度高",
+      "source_urls": [
+        "http://m.toutiao.com/group/7667296637202563636/",
+        "http://m.toutiao.com/group/7525638468123329058/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-29",
+      "platform_data": {
+        "content_type": "科普+实用技巧",
+        "key_point": "血糖波动比持续高血糖更伤身",
+        "common_causes": "喝水少、饮食不规律、睡眠不足等9个原因"
+      }
+    },
+    {
+      "id": "disc-200",
+      "title": "根管治疗改善血糖控制？口腔健康与糖尿病的隐藏关联",
+      "angle": "King's College London两年追踪研究：成功根管治疗直接关联更健康血糖控制。冷知识角度，认知反差大。",
+      "category": "前沿研究",
+      "platform": "dy,xhs,bili,twitter",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "Twitter @ShiningScience 7月28日发布；Journal of Translational Medicine 2025",
+      "source_urls": [
+        "https://x.com/i/status/2081717881700802904"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-29",
+      "platform_data": {
+        "source": "King's College London, Journal of Translational Medicine",
+        "study_duration": "2年追踪",
+        "key_finding": "成功根管治疗与更健康血糖控制直接关联"
+      }
+    },
+    {
+      "id": "disc-201",
+      "title": "血糖正常但胰岛素抵抗在悄悄恶化？6个日常习惯是元凶",
+      "angle": "血糖看似正常，胰腺却在超负荷工作掩盖胰岛素抵抗。可做预警+自查角度，引发关注。",
+      "category": "症状预警",
+      "platform": "dy,xhs,bili,twitter",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "Twitter @DocPriyamMD 7月28日发布，11.6万观看",
+      "source_urls": [
+        "https://x.com/i/status/2082021251388952963"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-29",
+      "platform_data": {
+        "twitter_views": "116035",
+        "twitter_likes": "497",
+        "key_point": "血糖正常≠胰岛素敏感，胰腺可能超负荷掩盖抵抗"
+      }
+    },
+    {
+      "id": "disc-202",
+      "title": "湖南糖尿病慢特病新政落地：4项便民政策糖友别错过",
+      "angle": "2026年7月1日湖南糖尿病慢特病便民政策实施，简化手续减少跑腿。政策解读+实用信息角度。",
+      "category": "政策解读",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "头条报道；地方政策落地",
+      "source_urls": [
+        "http://m.toutiao.com/group/7666378707493421612/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-29",
+      "platform_data": {
+        "effective_date": "2026-07-01",
+        "region": "湖南省",
+        "policy_type": "糖尿病慢特病便民政策"
+      }
+    },
+    {
+      "id": "disc-203",
+      "title": "37岁确诊二型糖尿病：年轻化趋势下的真实个人经历",
+      "angle": "头条真实案例，37岁体检确诊糖尿病。可做年轻人血糖管理警醒角度，代入感强。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "头条真实经历贴，高互动；35岁控糖警戒线话题持续热度",
+      "source_urls": [
+        "http://m.toutiao.com/group/7662958608313647654/",
+        "https://view.inews.qq.com/k/20260125A03HZ300?no-redirect=1"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-29",
+      "platform_data": {
+        "age": "37岁",
+        "key_context": "40岁以下糖尿病发病率飙升3倍，35岁成控糖拐点",
+        "guideline_update": "中国糖尿病防治指南2024版将筛查起始年龄从40岁下调"
+      }
+    },
+    {
+      "id": "disc-204",
+      "title": "十月稻田低GI水果甜玉米粒入选热度榜单——低GI主食赛道升温",
+      "angle": "2026中国低GI食品热度报告发布，杂粮米/玉米成低GI主食新趋势。行业趋势+产品科普角度。",
+      "category": "行业趋势",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "食业头条《2026中国低GI食品热度报告》",
+      "source_urls": [
+        "http://m.toutiao.com/group/7663113135145894443/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-29",
+      "platform_data": {
+        "report_source": "食业头条《2026中国低GI食品热度报告》",
+        "trend": "杂粮米、玉米成为低GI主食新趋势"
+      }
+    },
+    {
+      "id": "disc-205",
+      "title": "2026低糖零食品牌TOP5：从GI值到适配性，教你避开控糖坑",
+      "angle": "低糖零食品牌横评榜单（糖友厨房/思朗/盼盼/勿糖），结合GI值+适配人群。实用选购指南角度。",
+      "category": "工具测评",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "搜狐汇总榜单；2026年7月低GI零食销量排行榜",
+      "source_urls": [
+        "https://m.sohu.com/a/981391071_122601927/",
+        "https://www.am10.com/85opb7mpn2ZO2L5/xl"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-29",
+      "platform_data": {
+        "top_brands": "糖友厨房(9.8/10)、思朗(8.3/10)、盼盼(8.0/10)、勿糖(7.8/10)",
+        "ranking_source": "搜狐+爱美日记2026年7月榜单"
+      }
+    },
+    {
+      "id": "disc-206",
+      "title": "2026动态血糖仪CGM横评：雅培瞬感vs硅基动感vs德康G7怎么选",
+      "angle": "2026年主流CGM全面对比，MARD值、佩戴周期、AI功能等维度横评。工具测评+选购指南角度。",
+      "category": "工具测评",
+      "platform": "dy,xhs,bili",
+      "duration": "45-60s",
+      "heat": "warm",
+      "heat_source": "什么值得买7年老糖人评测；头条多篇推荐文章",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/a3m6xw6d/",
+        "http://m.toutiao.com/group/7638476706450063907/",
+        "http://m.toutiao.com/group/7644080874069983759/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-07-29",
+      "platform_data": {
+        "brands_compared": "雅培瞬感、硅基动感GS1/GS3、德康G7、美敦力Guardian 4",
+        "key_metric": "MARD值（平均相对误差），越低越准",
+        "review_source": "什么值得买+头条评测"
       }
     }
   ],
