@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-07-29",
+  "updated": "2026-08-03",
   "topics": [
     {
       "id": "disc-016",
@@ -3849,6 +3849,200 @@
         "brands_compared": "雅培瞬感、硅基动感GS1/GS3、德康G7、美敦力Guardian 4",
         "key_metric": "MARD值（平均相对误差），越低越准",
         "review_source": "什么值得买+头条评测"
+      }
+    },
+    {
+      "id": "disc-207",
+      "title": "8月起全国医保慢特病报销升级：高血压糖尿病取消起付线",
+      "angle": "2026年8月起全国门诊慢特病医保升级，高血压、糖尿病患者取消起付线（原300-700元年度门槛），报销待遇提高。政策解读+实用信息角度，与控糖人群直接相关。",
+      "category": "政策解读",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "今日头条8月热文，政策时效性强",
+      "source_urls": [
+        "http://m.toutiao.com/group/7668982129052680748/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-03",
+      "platform_data": {
+        "evidence_level": "A",
+        "use_as": "verify_before_script",
+        "policy_date": "2026-08",
+        "key_change": "取消起付线，报销待遇提高",
+        "creator_note": "须回源国家医保局官方文件核实政策细节"
+      }
+    },
+    {
+      "id": "disc-208",
+      "title": "2026 ADA指南大更新：控糖不只是降糖，护心肾才是关键",
+      "angle": "2026年ADA（美国糖尿病协会）指南更新，糖尿病管理从「只降糖」转向「护心肾、防并发症」。改变控糖逻辑认知的指南级选题。",
+      "category": "指南解读",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "今日头条指南解读热文；2026年初持续讨论",
+      "source_urls": [
+        "http://m.toutiao.com/group/7612489282363621940/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-03",
+      "platform_data": {
+        "evidence_level": "A",
+        "use_as": "verify_before_script",
+        "source": "ADA 2026指南",
+        "creator_note": "二手解读，须回源ADA官网核实原文实际变更范围"
+      }
+    },
+    {
+      "id": "disc-209",
+      "title": "控糖产品打假：含糖的「控糖药」与冒牌专家骗局",
+      "angle": "记者暗访揭露控糖产品灰色营销链——「专家」冒用知名医院医生身份，贬损处方降糖药，鼓吹高价产品能「治愈糖尿病」。辟谣/反诈角度，天然传播力强。",
+      "category": "打假辟谣",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "今日头条媒体调查报道，反诈语境高传播",
+      "source_urls": [
+        "http://m.toutiao.com/group/7594633851960312354/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-03",
+      "platform_data": {
+        "evidence_level": "B",
+        "use_as": "cite_directly",
+        "content_type": "媒体调查/暗访",
+        "risk_flags": "commercial_hook(被揭露对象), sensational(反诈语境)",
+        "creator_note": "以揭露骗局角度呈现，不复述治愈承诺；加「非医疗建议」"
+      }
+    },
+    {
+      "id": "disc-210",
+      "title": "糖前期真能逆转吗？医生说「难以逆转至正常」",
+      "angle": "糖前期内容普遍用「逆转」做钩子，但医生明确指出糖尿病为慢性疾病，难以逆转至正常，仅可通过药物+生活方式延缓发展。用B级对照观点平衡「逆转」叙事，制造认知冲突。",
+      "category": "认知冲突",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "健康一线/小荷健康医生问答；与「逆转」宣传形成认知冲突",
+      "source_urls": [
+        "https://m.vodjk.com/ask/toutiao/askcontent/107785.html",
+        "https://m.xiaohe.cn/medical/qa/70000000421006"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-03",
+      "platform_data": {
+        "evidence_level": "B",
+        "use_as": "cite_directly",
+        "sources": "健康一线医生问答+小荷健康医疗平台",
+        "creator_note": "用于平衡「逆转」叙事，避免绝对化断言；加「非医疗建议」"
+      }
+    },
+    {
+      "id": "disc-211",
+      "title": "长期吃二甲双胍，这2个营养指标要定期查",
+      "angle": "聚焦B12缺乏与肝肾功能监测，把「副作用」转化为「可操作的定期检查清单」，弱化恐惧。B级来源多平台一致提及B12缺乏为高频关切。",
+      "category": "用药科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "博禾医生/小荷健康多篇B级来源一致提及B12缺乏",
+      "source_urls": [
+        "https://m.bohe.cn/article/view/eb52zpimokzuynp.html",
+        "https://m.bohe.cn/article/toutiao/q20awgr64kvgdj2.html",
+        "https://www.xiaohe.cn/medical/qa/70000000079370"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-03",
+      "platform_data": {
+        "evidence_level": "B",
+        "use_as": "cite_directly",
+        "involves_medication": true,
+        "creator_note": "涉及用药，须提示就医；个体用药请咨询医生，不构成医疗建议"
+      }
+    },
+    {
+      "id": "disc-212",
+      "title": "血液44种代谢物可早于空腹血糖多年预警2型糖尿病",
+      "angle": "Nature Medicine研究：2.3万人26年追踪，血液44种代谢物可早于空腹血糖多年预警2型糖尿病。BMI通过148种代谢物推高风险，体力活动通过50种代谢物降低风险。前沿研究科普角度。",
+      "category": "前沿研究",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "丁香园论坛2026年1月汇编，引用Nature Medicine顶刊原文",
+      "source_urls": [
+        "https://3g.dxy.cn/bbs/topic/52871221"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-03",
+      "platform_data": {
+        "evidence_level": "A",
+        "use_as": "verify_before_script",
+        "journal": "Nature Medicine",
+        "study_size": "2.3万人26年追踪",
+        "institution": "麻省总医院/哈佛",
+        "creator_note": "A级顶刊研究，关键数字须回源核实期刊原文"
+      }
+    },
+    {
+      "id": "disc-213",
+      "title": "血管内去神经术（EDN）：中国院士团队的降糖新方向",
+      "angle": "STTT发表：血管内去神经术（EDN）治疗2型糖尿病临床试验，HbA1c降1.0%，37例患者。滕皋军院士/翁建平教授团队。介入治疗新方向科普角度。",
+      "category": "前沿研究",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "丁香园论坛2026年1月汇编，引用STTT顶刊原文",
+      "source_urls": [
+        "https://3g.dxy.cn/bbs/topic/52871221"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-03",
+      "platform_data": {
+        "evidence_level": "A",
+        "use_as": "verify_before_script",
+        "journal": "STTT (Signal Transduction and Targeted Therapy)",
+        "study_size": "37例患者",
+        "team": "滕皋军院士/翁建平教授",
+        "creator_note": "A级顶刊但样本量小(37例)，须注明为临床试验阶段"
+      }
+    },
+    {
+      "id": "disc-214",
+      "title": "胰岛素抵抗减肥：先改「进食顺序」再谈节食",
+      "angle": "切入「先菜后肉再主食降餐后血糖波动」这一可操作且低门槛的行为，避开「最快/翻倍」类夸张。把进食顺序作为胰岛素抵抗管理的第一步。",
+      "category": "生活方式",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "今日头条行为类建议传播力中等以上；小荷健康B级来源支持",
+      "source_urls": [
+        "http://m.toutiao.com/group/7576898480455565824/",
+        "https://m.xiaohe.cn/medical/qa/70000132373621"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-03",
+      "platform_data": {
+        "evidence_level": "C",
+        "use_as": "verify_before_script",
+        "actionable_point": "先菜后肉再主食",
+        "creator_note": "进食顺序研究须回源查证；加「非医疗建议」"
       }
     }
   ],
