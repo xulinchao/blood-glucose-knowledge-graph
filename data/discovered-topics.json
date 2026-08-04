@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-08-03",
+  "updated": "2026-08-04",
   "topics": [
     {
       "id": "disc-016",
@@ -4043,6 +4043,169 @@
         "use_as": "verify_before_script",
         "actionable_point": "先菜后肉再主食",
         "creator_note": "进食顺序研究须回源查证；加「非医疗建议」"
+      }
+    },
+    {
+      "id": "disc-178",
+      "title": "低GI食品是智商税吗？——收割中产的低GI食物实则高油高糖",
+      "angle": "低GI概念被滥用，蜂蜜、红糖、果汁也来蹭热度。同一产品标上低GI售价翻倍，但实际可能高油高糖。适合做成'打假'或'避坑'类口播，强调看配料表比看GI标签更重要。",
+      "category": "饮食误区",
+      "platform": "dy,xhs",
+      "duration": "15-30s",
+      "heat": "hot",
+      "heat_source": "头条搜索'低GI'，多条10w+互动，评论区争议激烈",
+      "source_urls": [
+        "http://m.toutiao.com/group/7662319488351748659/",
+        "http://m.toutiao.com/group/7669712571116651018/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-04",
+      "platform_data": {
+        "note": "低GI智商税话题多平台热议，适合快节奏短视頻"
+      }
+    },
+    {
+      "id": "disc-179",
+      "title": "2026 ADA指南大更新：糖尿病管理不只是降糖，护心肾才是关键",
+      "angle": "2026 ADA指南三大核心升级：1）GLP-1RA首次推荐用于1型肥胖、心衰、脂肪肝人群；2）告别'一刀切'，个体化用药+器官保护优先；3）中医首次纳入指南。适合做成'权威指南解读'类口播，强调控糖理念的转变。",
+      "category": "政策指南",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "头条搜索'2026 ADA指南'，医生自媒体广泛转发",
+      "source_urls": [
+        "http://m.toutiao.com/group/7612489282363621940/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-04",
+      "platform_data": {
+        "note": "权威指南更新，可信度高，适合深度解读"
+      }
+    },
+    {
+      "id": "disc-180",
+      "title": "糖前期逆转可降低心血管风险51%——《柳叶刀》最新研究",
+      "angle": "《柳叶刀·糖尿病与内分泌学》发表大庆研究和DPPOS最新分析：实现糖前期缓解（空腹血糖<5.6，餐后<7.8，HbA1c<5.7），心血管死亡或心衰住院风险降低51%-59%。配合'锌离子/ZnT8靶点'发现，糖前期人群迎来药物干预希望。",
+      "category": "最新研究",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "《柳叶刀》发表+搜狐健康等大号转发",
+      "source_urls": [
+        "https://m.sohu.com/a/989868231_107387/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-04",
+      "platform_data": {
+        "note": "顶级期刊背书，数据震撼，适合科普向口播"
+      }
+    },
+    {
+      "id": "disc-181",
+      "title": "2026血糖仪横评：CGM、激光、指尖、无创，四种技术怎么选",
+      "angle": "动态血糖仪（CGM）成为2026年热门品类，国产三诺、鱼跃Anytime 5Pro等崛起。但传统指尖血、激光采血、无创技术各有适用场景。适合做成'选购指南'类口播，帮助观众根据预算和需求选择。",
+      "category": "器械测评",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "头条多篇血糖仪横评，MARD值成为核心选购指标",
+      "source_urls": [
+        "http://m.toutiao.com/group/7632143195748516388/",
+        "http://m.toutiao.com/group/7660082703777268224/",
+        "http://m.toutiao.com/group/7668601700705387059/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-04",
+      "platform_data": {
+        "note": "CGM普及趋势明显，国产品牌突围"
+      }
+    },
+    {
+      "id": "disc-182",
+      "title": "糖尿病年轻化：35岁成血糖管理关键年龄",
+      "angle": "我国成人糖尿病高危人群筛查年龄从40岁下调至35岁。糖尿病年轻化趋势加快，职场人群成为新增主力。适合做成'年龄焦虑+健康警示'类口播， targeting 25-40岁白领。",
+      "category": "健康趋势",
+      "platform": "dy,xhs",
+      "duration": "15-30s",
+      "heat": "warm",
+      "heat_source": "头条搜索'糖尿病年轻化'，医生自媒体传播",
+      "source_urls": [
+        "http://m.toutiao.com/group/7582806802354487858/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-04",
+      "platform_data": {
+        "note": "年轻化话题共鸣强，适合情绪钩子"
+      }
+    },
+    {
+      "id": "disc-183",
+      "title": "6招改善胰岛素抵抗，减脂效率翻倍",
+      "angle": "胰岛素抵抗是减脂难的隐藏原因。6个改善方法：1）戒掉精制碳水；2）吃对早餐；3）避免频繁进食；4）调整进食顺序（菜→肉→主食）；5）增加肌肉量；6）降低皮质醇（减少压力/熬夜）。适合做成'清单体'口播。",
+      "category": "减脂控糖",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "头条搜索'胰岛素抵抗'，多条高互动内容",
+      "source_urls": [
+        "http://m.toutiao.com/group/7576898480455565824/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-04",
+      "platform_data": {
+        "note": "清单体结构清晰，适合快节奏口播"
+      }
+    },
+    {
+      "id": "disc-184",
+      "title": "二甲双胍天天吃，却把肾吃坏了？2026年新研究提醒",
+      "angle": "2026年发表于《中国临床药理学与治疗学》的研究观察到，二甲双胍在高糖环境下可上调肾脏细胞Nrf2蛋白表达，具有肾脏保护作用——但同时也提醒长期服药者需定期检查肾功能和维生素B12水平。适合做成'辟谣+提醒'类口播，纠正'二甲双胍伤肾'误读。",
+      "category": "用药科普",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "头条搜索'二甲双胍副作用'，争议性话题互动高",
+      "source_urls": [
+        "http://m.toutiao.com/group/7669712697184862720/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-04",
+      "platform_data": {
+        "note": "争议性话题，需注意措辞，强调遵医嘱"
+      }
+    },
+    {
+      "id": "disc-185",
+      "title": "热销'控糖药'成分里竟然含糖？起底控糖产品灰色营销",
+      "angle": "记者调查揭露：部分热销'控糖产品'冒用医生身份、贬损处方药、鼓吹'治愈糖尿病'，实际成分含糖。适合做成'打假曝光'类口播，提醒观众警惕控糖骗局，认准正规渠道。",
+      "category": "打假曝光",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "头条 investigative report，记者起底报道",
+      "source_urls": [
+        "http://m.toutiao.com/group/7594633851960312354/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-04",
+      "platform_data": {
+        "note": " investigative 报道，可信度较高，适合警示类内容"
       }
     }
   ],
