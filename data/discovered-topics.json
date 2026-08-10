@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-08-04",
+  "updated": "2026-08-10",
   "topics": [
     {
       "id": "disc-016",
@@ -4206,6 +4206,320 @@
       "discovered_date": "2026-08-04",
       "platform_data": {
         "note": " investigative 报道，可信度较高，适合警示类内容"
+      }
+    },
+    {
+      "id": "disc-215",
+      "title": "如果，只看糖化血红蛋白指标",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "症状预警",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 857",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1WMMk6jEue"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-10",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 52,
+          "label": "中",
+          "reasons": [
+            "命中关键词「糖化血红蛋白」"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-216",
+      "title": "体检出来血糖偏高",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 220",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1q84114736"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-10",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 52,
+          "label": "中",
+          "reasons": [
+            "命中关键词「体检 血糖偏高」"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-217",
+      "title": "体检查出血糖高，但是没有症状，需要治疗么？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "症状预警",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 907",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1c5Z5BpEUt"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-10",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 52,
+          "label": "中",
+          "reasons": [
+            "命中关键词「体检 血糖偏高」"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-218",
+      "title": "饭后低血糖咋回事",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 2830",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1tT4y1d7AY"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-10",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 50,
+          "label": "中",
+          "reasons": [
+            "有一定互动(2,830)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-219",
+      "title": "RNA预处理提升胰岛移植效率：分子导航精准递送至β细胞",
+      "angle": "新华网8月9日报道，最新研究利用小激活RNA精准递送至胰岛β细胞，短暂增强血管生成基因，帮助移植物更快恢复血液供应。小鼠实验显示存活且保持功能的β细胞更多，血糖控制更好。前沿基础研究，尚未进入临床。A级来源可引用。",
+      "category": "前沿研究",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "新华网2026-08-09报道，前沿研究首发",
+      "source_urls": [
+        "http://www.xinhuanet.com/20260809/773115373e7a4f42a96a027e58ad2c02/c.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-10",
+      "platform_data": {
+        "source": "新华网",
+        "evidence_level": "A",
+        "use_as": "cite_directly",
+        "study_stage": "小鼠实验，尚未进入临床",
+        "required_hedges": [
+          "待临床验证",
+          "不构成医疗建议"
+        ],
+        "creator_note": "A级来源可引用，须标注为小鼠实验阶段，未进入临床"
+      }
+    },
+    {
+      "id": "disc-220",
+      "title": "糖尿病用药依从性影响心血管健康：10年队列追踪79,510人",
+      "angle": "哥本哈根大学8月7日发布研究，追踪79,510名新诊断2型糖尿病患者10年，发现用药依从性低者心血管疾病发生率更高。按时服药不仅是控糖，更是护心。A级队列研究，数据可引用。",
+      "category": "前沿研究",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "哥本哈根大学2026-08-07发布，大规模队列研究",
+      "source_urls": [
+        "https://news.europawire.eu/university-of-copenhagen-research-shows-heart-health-impact-of-diabetes-medication-adherence/eu-press-release/2026/08/07/14/28/16/179030/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-10",
+      "platform_data": {
+        "source": "哥本哈根大学",
+        "evidence_level": "A",
+        "use_as": "cite_directly",
+        "study_size": "79,510人，10年追踪",
+        "required_hedges": [
+          "个体差异较大",
+          "用药请遵医嘱"
+        ],
+        "creator_note": "A级队列研究可引用，涉及用药须加「请遵医嘱」"
+      }
+    },
+    {
+      "id": "disc-221",
+      "title": "埃诺格鲁肽公布SLIMMER女性亚组分析：cAMP偏向型GLP-1新机制",
+      "angle": "经济参考报8月9日报道，新一代cAMP偏向型GLP-1受体激动剂埃诺格鲁肽（2026年3月获NMPA批准用于2型糖尿病及肥胖管理）公布SLIMMER女性亚组分析结果，偏向性机制被比喻为智能导航。B级来源，写稿前须核实。",
+      "category": "前沿研究",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "经济参考报2026-08-09报道，新药亚组分析",
+      "source_urls": [
+        "http://jjckb.xinhuanet.com/20260809/765b233283e84a318fd76e96acade132/c.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-10",
+      "platform_data": {
+        "source": "经济参考报",
+        "evidence_level": "B",
+        "use_as": "verify_before_script",
+        "drug_name": "埃诺格鲁肽",
+        "approval_date": "2026年3月NMPA批准",
+        "required_hedges": [
+          "药物信息请咨询医生",
+          "不构成医疗建议"
+        ],
+        "creator_note": "B级来源，关键数据须回源核实；涉及药物须加医疗免责声明"
+      }
+    },
+    {
+      "id": "disc-222",
+      "title": "2026 ADA/EASD 2型糖尿病高血糖管理共识声明草案公布",
+      "angle": "2026年6月ADA年会公布第四版ADA/EASD共识声明草案，覆盖近4年11,301篇文献。糖尿病管理理念持续更新，从降糖为主转向综合代谢管理。指南级选题，可引用但须核实最终版本。",
+      "category": "指南解读",
+      "platform": "dy,xhs,bili",
+      "duration": "45-60s",
+      "heat": "warm",
+      "heat_source": "2026年6月ADA年会发布，医学自媒体广泛讨论",
+      "source_urls": [
+        "http://m.toutiao.com/group/7668206845089137192/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-10",
+      "platform_data": {
+        "source": "ADA/EASD共识声明草案",
+        "evidence_level": "B",
+        "use_as": "verify_before_script",
+        "literature_coverage": "11,301篇文献",
+        "version": "第四版草案",
+        "required_hedges": [
+          "草案阶段，以最终发布版本为准"
+        ],
+        "creator_note": "B级来源，草案内容须以最终发布版本为准；加「非医疗建议」"
+      }
+    },
+    {
+      "id": "disc-223",
+      "title": "体检隐性指标比血糖更重要：睡前血糖、糖化、C肽90%的人忽视了",
+      "angle": "光明网报道，体检单上睡前血糖、糖化血红蛋白、C肽等隐性指标比空腹血糖更能反映代谢健康。睡前血糖不低于4.4mmol/L、糖化血红蛋白反映3个月平均血糖、C肽反映胰岛功能。认知冲突强，适合数字科普。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "光明网2026-02专题报道，隐性指标概念独占角度",
+      "source_urls": [
+        "https://m.gmw.cn/2026-02/20/content_1304349385.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-10",
+      "platform_data": {
+        "source": "光明网",
+        "evidence_level": "A",
+        "use_as": "cite_directly",
+        "key_indicators": "睡前血糖≥4.4mmol/L、糖化血红蛋白、C肽",
+        "required_hedges": [
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "creator_note": "A级来源可引用，关键数字须对照指南核实"
       }
     }
   ],
