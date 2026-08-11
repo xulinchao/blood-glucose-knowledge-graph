@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-08-10",
+  "updated": "2026-08-11",
   "topics": [
     {
       "id": "disc-016",
@@ -4520,6 +4520,328 @@
           "请以复查和医嘱为准"
         ],
         "creator_note": "A级来源可引用，关键数字须对照指南核实"
+      }
+    },
+    {
+      "id": "disc-224",
+      "title": "三伏天血糖不降反升？皮质醇才是幕后黑手",
+      "angle": "央视财经2026-08-08报道，夏天血糖反升与皮质醇分泌节律紊乱有关。皮质醇命令肝脏加速产糖同时阻止细胞摄糖。四件日常小事（防高温、好睡眠、及时补水、适度运动）帮皮质醇恢复正常节律。时令性强，8月三伏天高关注。",
+      "category": "季节健康",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "央视财经2026-08-08报道，三伏天血糖波动话题多平台热议（CCTV/腾讯/搜狐/东北新闻）",
+      "source_urls": [
+        "https://news.cctv.com/2026/08/08/ARTIoYxQiYaGZZYslvglhcI6260808.shtml",
+        "https://www.hunantoday.cn/news/xhn/202608/33446515.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-11",
+      "platform_data": {
+        "source": "央视财经/新湖南",
+        "evidence_level": "A",
+        "use_as": "cite_directly",
+        "key_points": "皮质醇升糖机制、四件小事（防高温/睡眠/补水/运动）、维C/镁/Omega-3饮食建议",
+        "required_hedges": ["个体差异较大", "不构成医疗建议"],
+        "creator_note": "A级来源可引用，时令性选题窗口8月最热两周"
+      }
+    },
+    {
+      "id": "disc-225",
+      "title": "控糖金标准变了：TIR取代空腹血糖成核心指标",
+      "angle": "《中国老年2型糖尿病防治临床指南（2026年版）》2026年3月发布，TIR（血糖目标范围内时间）正式成为核心控糖指标。70%达标线=每天至少17小时血糖稳定。TIR每提升10%，肾病风险降40%，眼底病变降64%。认知冲突强：两人糖化都7.0，波动大的血管损伤风险翻倍。",
+      "category": "政策指南",
+      "platform": "dy,xhs,bili,toutiao",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "2026版指南3月发布后持续发酵，什么值得买54位作者合集，微信公众号/抖音/知乎多平台传播",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/az85r24r/",
+        "http://health.people.com.cn/n1/2026/0701/c14739-40751470.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-11",
+      "platform_data": {
+        "source": "什么值得买/人民网",
+        "evidence_level": "A",
+        "use_as": "cite_directly",
+        "key_points": "TIR 70%达标线、三档分层目标（60-79岁≥70%/合并基础病≥60%/80+≥50%）、CGM是标配",
+        "required_hedges": ["目标需医生个体化制定", "不构成医疗建议"],
+        "creator_note": "A级来源（正式指南），关键数字须对照原文核实"
+      }
+    },
+    {
+      "id": "disc-226",
+      "title": "JAMA 14万人研究：每周2小时力量训练就能抗糖",
+      "angle": "2026年《JAMA网络开放期刊》发布覆盖14万余人、随访19.2年的研究，抗阻力量训练每周累计2小时（每天十几分钟）可直接降低糖尿病风险。打破「控糖只能靠跑步」的认知，抗阻训练是非药物血糖管理的重要路径。",
+      "category": "运动控糖",
+      "platform": "dy,xhs,bili,toutiao",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "微头条话题#控糖有氧训练#传播，什么值得买控糖抗衰真相文章引用",
+      "source_urls": [
+        "https://weitoutiao.zjurl.cn/rogue/topic_share/?concern_id=1868201358604425&prevent_activate=1",
+        "https://post.m.smzdm.com/p/awwpkn6k/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-11",
+      "platform_data": {
+        "source": "微头条/什么值得买",
+        "evidence_level": "A",
+        "use_as": "cite_directly",
+        "key_points": "JAMA 14万人19.2年随访、每周2小时力量训练、每天十几分钟即可",
+        "required_hedges": ["运动方案需结合个体状况", "不构成医疗建议"],
+        "creator_note": "A级来源（JAMA期刊），引用时注明研究规模和随访年限"
+      }
+    },
+    {
+      "id": "disc-227",
+      "title": "糖尿病筛查年龄提前至35岁：你还不查血糖？",
+      "angle": "《中国糖尿病防治指南（2024版）》将血糖筛查起始年龄从40岁下调至35岁，ADA同步更新。糖尿病年轻化趋势显著：40岁以下发病率20年增长3倍，20-24岁每14人就有1人患病。35岁以下确诊人数逐年暴涨。35岁代谢断崖是关键节点。",
+      "category": "趋势科普",
+      "platform": "dy,xhs,bili,toutiao",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "CCTV 2026-07-16报道，中华网/人民网/搜狐多平台传播，35岁控糖话题高频",
+      "source_urls": [
+        "https://news.cctv.com/2026/07/16/ARTI8datQz4kv13ONkZSUJsF260716.shtml",
+        "https://m.life.china.com/2026-07/13/content_601529.html",
+        "http://health.people.com.cn/n1/2026/0501/c14739-40712529.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-11",
+      "platform_data": {
+        "source": "CCTV/中华网/人民网",
+        "evidence_level": "A",
+        "use_as": "cite_directly",
+        "key_points": "筛查年龄40→35岁、40岁以下发病率20年增3倍、35岁代谢断崖",
+        "required_hedges": ["高危人群更早筛查", "不构成医疗建议"],
+        "creator_note": "A级来源，指南更新+权威媒体报道，适合年轻化角度切入"
+      }
+    },
+    {
+      "id": "disc-228",
+      "title": "\"0糖\"不等于没糖：网红甜品代糖陷阱大揭秘",
+      "angle": "2026年618期间标称「0糖」的网红甜品销量同比增47%，但配料表含隐形糖源问题占比31%。某热销「0糖轻乳茶」被扒出含隐形糖。GB 28050-2025标准：无糖=≤0.5g/100g，低糖=≤5g/100g，差10倍。宋柚汁年销10亿被指虚假宣传，柚汁含量仅2.7%。打假+科普双角度。",
+      "category": "辟谣打假",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "什么值得买618合集12位作者，央视网曝光控糖药配料表升糖，雪球宋柚汁虚假宣传热帖",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/ae690684/",
+        "https://post.m.smzdm.com/p/apq65x22/",
+        "https://m.gmw.cn/2026-01/13/content_1304301182.htm",
+        "https://xueqiu.com/7583629677/384205006"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-11",
+      "platform_data": {
+        "source": "什么值得买/央视网/光明网/雪球",
+        "evidence_level": "B",
+        "use_as": "verify_before_script",
+        "key_points": "无糖≤0.5g vs 低糖≤5g标准差10倍、代糖陷阱、宋柚汁柚汁仅2.7%",
+        "required_hedges": ["具体产品以配料表为准", "不构成医疗建议"],
+        "creator_note": "B级来源，关键标准数字须回源核实GB 28050-2025原文"
+      }
+    },
+    {
+      "id": "disc-229",
+      "title": "2026动态血糖仪怎么选？国产vs进口MARD横评",
+      "angle": "2026年主流CGM产品MARD值7.9%-8.83%均符合iCGM标准。深纳普思欧态M8（MARD 8.10%）、鱼跃Anytime 5Pro（8.58%）、微泰AiDEX二代（校准后7.64%）、雅培瞬感、硅基动感GS3横评。按需求分三类用户：高精度优先型/日常管理型/家人协同型。低血糖区间偏差是保命关键。",
+      "category": "产品测评",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "什么值得买三款横评+选购指南，咸宁新闻网2026选购指南，99健康网7月性能盘点",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/a6zg9w9o/",
+        "https://post.m.smzdm.com/p/aww763vg/",
+        "http://news.xnnews.com.cn/kjzx/202607/t20260728_5151377.shtml",
+        "https://m.99.com.cn/a/2522081/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-11",
+      "platform_data": {
+        "source": "什么值得买/咸宁新闻网/99健康网",
+        "evidence_level": "B",
+        "use_as": "verify_before_script",
+        "key_points": "MARD值对比、三类用户方案、低血糖区间偏差关键、续航时长",
+        "required_hedges": ["产品选择需结合医嘱", "不构成医疗建议"],
+        "creator_note": "B级来源，MARD数据须以官方/临床报告为准，避免带货嫌疑"
+      }
+    },
+    {
+      "id": "disc-230",
+      "title": "二甲双胍延寿神话被扒皮：谁该吃谁别吃",
+      "angle": "二甲双胍延寿说法被科学家质疑。线虫实验结论不能直接套用人类。老年人肾功能下降致药物蓄积可引发乳酸酸中毒。长期服用风险：B12缺乏致贫血/神经病变、肠胃反应致营养不良、加速肌肉流失。《中国2型糖尿病防治指南（2024版）》明确常规剂量无直接肝毒性。理性看待：一线用药但非神药。",
+      "category": "用药科普",
+      "platform": "dy,xhs,bili,toutiao",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "什么值得买延寿神话扒皮文章，搜狐/网易/东方网多平台讨论副作用",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/aqrgd0d2/",
+        "https://m.sohu.com/a/1060122802_122744937/",
+        "https://nw.eastday.com/zq/zh/20260125/3ebfe1accdb01245e2ce80594dfdcd02.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-11",
+      "platform_data": {
+        "source": "什么值得买/搜狐/东方网",
+        "evidence_level": "B",
+        "use_as": "verify_before_script",
+        "key_points": "延寿神话质疑、B12缺乏风险、乳酸酸中毒、指南明确无肝毒性",
+        "forbidden_expressions": ["神药", "延寿", "包治"],
+        "required_hedges": ["用药须遵医嘱", "不可自行停药或加药", "不构成医疗建议"],
+        "creator_note": "B级来源，涉及用药安全，须加「非医疗建议」+ 强调遵医嘱，禁止确定性医学断言"
+      }
+    },
+    {
+      "id": "disc-231",
+      "title": "胰岛素抵抗可逆转：减重5%就能改善",
+      "angle": "人民网报道：早期胰岛素抵抗可控制并逆转，越早干预逆转概率越高。减重是核心——大量脂肪细胞造成胰岛素不敏感。生活方式干预：低GI饮食+优质蛋白+每周150分钟有氧+2-3次抗阻训练+7-8小时睡眠。超重者减重5%-7%即可显著改善。多病之源角度：胰岛素抵抗是糖尿病/心血管/肥胖的共同根源。",
+      "category": "代谢健康",
+      "platform": "dy,xhs,bili,toutiao",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "人民网2026-05/03报道，什么值得买逆转方案文章，澎湃新闻营养干预报道",
+      "source_urls": [
+        "http://health.people.com.cn/n1/2026/0501/c14739-40712529.html",
+        "http://paper.people.com.cn/jksb/pc/content/202603/13/content_30148679.html",
+        "https://post.m.smzdm.com/p/agopd62w/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-11",
+      "platform_data": {
+        "source": "人民网/什么值得买",
+        "evidence_level": "A",
+        "use_as": "cite_directly",
+        "key_points": "早期可逆转、减重5%-7%、低GI+有氧+抗阻+睡眠、多病之源",
+        "required_hedges": ["个体差异较大", "不构成医疗建议"],
+        "creator_note": "A级来源（人民网/健康报），可引用核心观点"
+      }
+    },
+    {
+      "id": "disc-232",
+      "title": "新型降糖药舒地胰岛素：夜间低血糖率低11.6%",
+      "angle": "腾讯新闻2026-08-08报道，舒地胰岛素与传统甘精胰岛素对比研究：夜间低血糖率低11.6%，控糖更平稳。HbA1c下降幅度两组相当。新一代基础胰岛素类似物为控糖提供新选择。同时埃诺格鲁肽作为新一代GLP-1受体激动剂获批用于血糖控制和体重管理。",
+      "category": "药物前沿",
+      "platform": "dy,xhs,bili,toutiao",
+      "duration": "15-30s",
+      "heat": "warm",
+      "heat_source": "腾讯新闻2026-08-08报道，新华社经济参考报埃诺格鲁肽报道",
+      "source_urls": [
+        "http://news.qq.com/rain/a/20260808A0DIOA00",
+        "http://jjckb.xinhuanet.com/20260809/765b233283e84a318fd76e96acade132/c.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-11",
+      "platform_data": {
+        "source": "腾讯新闻/新华社经济参考报",
+        "evidence_level": "B",
+        "use_as": "verify_before_script",
+        "key_points": "舒地胰岛素夜间低血糖率低11.6%、HbA1c下降0.70%、埃诺格鲁肽GLP-1获批",
+        "forbidden_expressions": ["神药", "根治", "包治"],
+        "required_hedges": ["用药须遵医嘱", "不构成医疗建议"],
+        "creator_note": "B级来源，药物前沿仅作信息分享，禁止推荐用药"
+      }
+    },
+    {
+      "id": "disc-233",
+      "title": "RNA预处理提升胰岛移植效率：糖尿病治愈新希望？",
+      "angle": "新华社2026-08-09报道，研究团队开发RNA预处理技术提升胰岛移植效率。小激活RNA精准递送至胰岛β细胞，增强血管生成基因表达，帮助移植物更快恢复血液供应。小鼠实验证实存活β细胞数量更多、血糖控制更好。前沿研究角度，尚处实验阶段。",
+      "category": "科研前沿",
+      "platform": "dy,bili,toutiao",
+      "duration": "15-30s",
+      "heat": "warm",
+      "heat_source": "新华社2026-08-09报道，新华网/腾讯新闻传播",
+      "source_urls": [
+        "http://www.xinhuanet.com/20260809/773115373e7a4f42a96a027e58ad2c02/c.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-11",
+      "platform_data": {
+        "source": "新华社",
+        "evidence_level": "A",
+        "use_as": "cite_directly",
+        "key_points": "RNA预处理技术、小激活RNA精准递送、小鼠实验阶段",
+        "forbidden_expressions": ["治愈", "根治", "突破性治愈"],
+        "required_hedges": ["尚处动物实验阶段", "距临床应用尚远", "不构成医疗建议"],
+        "creator_note": "A级来源（新华社），须强调实验阶段避免过度乐观"
+      }
+    },
+    {
+      "id": "disc-234",
+      "title": "古法降糖操5分钟能控糖？医生说关键看强度",
+      "angle": "社交平台「古法降糖操」热度攀升，主打每天5分钟、不跑不跳、居家可练。医学指南建议糖尿病患者每周至少150分钟中等强度运动。5分钟vs30分钟运动时长存在代谢差异。打假角度：短期跟练无效，须达到中等强度并坚持。控糖运动不能只看时长不看强度。",
+      "category": "辟谣打假",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "什么值得买2026-06古法降糖操测评，社交平台跟练热度持续",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/a26mv087/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-11",
+      "platform_data": {
+        "source": "什么值得买",
+        "evidence_level": "B",
+        "use_as": "verify_before_script",
+        "key_points": "古法降糖操5分钟 vs 指南150分钟中等强度、强度和坚持是关键",
+        "required_hedges": ["运动方案需咨询医生", "不构成医疗建议"],
+        "creator_note": "B级来源，打假角度须避免全盘否定，肯定运动价值但强调科学标准"
+      }
+    },
+    {
+      "id": "disc-235",
+      "title": "糖前期是逆转黄金期：3个月空腹6.5降到5.5",
+      "angle": "人民网报道糖尿病前期可逆，被视为逆转黄金阶段。《糖尿病共识》五维度干预：低GI碳水+膳食纤维、每周150-300分钟有氧+2-3次抗阻、减重5%-7%、戒烟限酒、6-8小时睡眠。空腹血糖6.1-7.0/餐后7.8-11.1属糖尿病前期。真实案例：空腹6.5三个月降到5.5。不同类型糖前期干预重点不同。",
+      "category": "趋势科普",
+      "platform": "dy,xhs,bili,toutiao",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "人民网2026-07-01报道，福建卫生报/澎湃新闻/搜狐多平台传播糖前期逆转",
+      "source_urls": [
+        "http://health.people.com.cn/n1/2026/0701/c14739-40751470.html",
+        "https://fjwsb.fjdaily.com/pc/con/202502/13/content_430013.html",
+        "https://www.hubpd.com/hubpd/rss/sohu/index.html?contentId=3170534137674121906"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-11",
+      "platform_data": {
+        "source": "人民网/福建卫生报/澎湃新闻",
+        "evidence_level": "A",
+        "use_as": "cite_directly",
+        "key_points": "糖前期可逆、五维度干预、减重5%-7%、空腹6.1-7.0/餐后7.8-11.1",
+        "forbidden_expressions": ["保证逆转", "一定恢复"],
+        "required_hedges": ["个体差异较大", "须医生评估确认", "不构成医疗建议"],
+        "creator_note": "A级来源（人民网），可引用五维度干预框架，禁止承诺逆转结果"
       }
     }
   ],
