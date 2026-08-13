@@ -1,8 +1,8 @@
 {
-  "report_date": "2026-08-10",
+  "report_date": "2026-08-13",
   "schema_version": "2.0",
-  "path": "daily-brief-2026-08-10.json",
-  "json": "exports/daily-brief-2026-08-10.json",
-  "html": "research-daily/2026-08-10-精选日报.html",
-  "markdown": "research-daily/2026-08-10-精选日报.md"
+  "path": "daily-brief-2026-08-13.json",
+  "json": "exports/daily-brief-2026-08-13.json",
+  "html": "research-daily/2026-08-13-精选日报.html",
+  "markdown": "research-daily/2026-08-13-精选日报.md"
 }

@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-08-11",
+  "updated": "2026-08-13",
   "topics": [
     {
       "id": "disc-016",
@@ -4544,7 +4544,10 @@
         "evidence_level": "A",
         "use_as": "cite_directly",
         "key_points": "皮质醇升糖机制、四件小事（防高温/睡眠/补水/运动）、维C/镁/Omega-3饮食建议",
-        "required_hedges": ["个体差异较大", "不构成医疗建议"],
+        "required_hedges": [
+          "个体差异较大",
+          "不构成医疗建议"
+        ],
         "creator_note": "A级来源可引用，时令性选题窗口8月最热两周"
       }
     },
@@ -4570,7 +4573,10 @@
         "evidence_level": "A",
         "use_as": "cite_directly",
         "key_points": "TIR 70%达标线、三档分层目标（60-79岁≥70%/合并基础病≥60%/80+≥50%）、CGM是标配",
-        "required_hedges": ["目标需医生个体化制定", "不构成医疗建议"],
+        "required_hedges": [
+          "目标需医生个体化制定",
+          "不构成医疗建议"
+        ],
         "creator_note": "A级来源（正式指南），关键数字须对照原文核实"
       }
     },
@@ -4596,7 +4602,10 @@
         "evidence_level": "A",
         "use_as": "cite_directly",
         "key_points": "JAMA 14万人19.2年随访、每周2小时力量训练、每天十几分钟即可",
-        "required_hedges": ["运动方案需结合个体状况", "不构成医疗建议"],
+        "required_hedges": [
+          "运动方案需结合个体状况",
+          "不构成医疗建议"
+        ],
         "creator_note": "A级来源（JAMA期刊），引用时注明研究规模和随访年限"
       }
     },
@@ -4623,7 +4632,10 @@
         "evidence_level": "A",
         "use_as": "cite_directly",
         "key_points": "筛查年龄40→35岁、40岁以下发病率20年增3倍、35岁代谢断崖",
-        "required_hedges": ["高危人群更早筛查", "不构成医疗建议"],
+        "required_hedges": [
+          "高危人群更早筛查",
+          "不构成医疗建议"
+        ],
         "creator_note": "A级来源，指南更新+权威媒体报道，适合年轻化角度切入"
       }
     },
@@ -4651,7 +4663,10 @@
         "evidence_level": "B",
         "use_as": "verify_before_script",
         "key_points": "无糖≤0.5g vs 低糖≤5g标准差10倍、代糖陷阱、宋柚汁柚汁仅2.7%",
-        "required_hedges": ["具体产品以配料表为准", "不构成医疗建议"],
+        "required_hedges": [
+          "具体产品以配料表为准",
+          "不构成医疗建议"
+        ],
         "creator_note": "B级来源，关键标准数字须回源核实GB 28050-2025原文"
       }
     },
@@ -4679,7 +4694,10 @@
         "evidence_level": "B",
         "use_as": "verify_before_script",
         "key_points": "MARD值对比、三类用户方案、低血糖区间偏差关键、续航时长",
-        "required_hedges": ["产品选择需结合医嘱", "不构成医疗建议"],
+        "required_hedges": [
+          "产品选择需结合医嘱",
+          "不构成医疗建议"
+        ],
         "creator_note": "B级来源，MARD数据须以官方/临床报告为准，避免带货嫌疑"
       }
     },
@@ -4706,8 +4724,16 @@
         "evidence_level": "B",
         "use_as": "verify_before_script",
         "key_points": "延寿神话质疑、B12缺乏风险、乳酸酸中毒、指南明确无肝毒性",
-        "forbidden_expressions": ["神药", "延寿", "包治"],
-        "required_hedges": ["用药须遵医嘱", "不可自行停药或加药", "不构成医疗建议"],
+        "forbidden_expressions": [
+          "神药",
+          "延寿",
+          "包治"
+        ],
+        "required_hedges": [
+          "用药须遵医嘱",
+          "不可自行停药或加药",
+          "不构成医疗建议"
+        ],
         "creator_note": "B级来源，涉及用药安全，须加「非医疗建议」+ 强调遵医嘱，禁止确定性医学断言"
       }
     },
@@ -4734,7 +4760,10 @@
         "evidence_level": "A",
         "use_as": "cite_directly",
         "key_points": "早期可逆转、减重5%-7%、低GI+有氧+抗阻+睡眠、多病之源",
-        "required_hedges": ["个体差异较大", "不构成医疗建议"],
+        "required_hedges": [
+          "个体差异较大",
+          "不构成医疗建议"
+        ],
         "creator_note": "A级来源（人民网/健康报），可引用核心观点"
       }
     },
@@ -4760,8 +4789,15 @@
         "evidence_level": "B",
         "use_as": "verify_before_script",
         "key_points": "舒地胰岛素夜间低血糖率低11.6%、HbA1c下降0.70%、埃诺格鲁肽GLP-1获批",
-        "forbidden_expressions": ["神药", "根治", "包治"],
-        "required_hedges": ["用药须遵医嘱", "不构成医疗建议"],
+        "forbidden_expressions": [
+          "神药",
+          "根治",
+          "包治"
+        ],
+        "required_hedges": [
+          "用药须遵医嘱",
+          "不构成医疗建议"
+        ],
         "creator_note": "B级来源，药物前沿仅作信息分享，禁止推荐用药"
       }
     },
@@ -4786,8 +4822,16 @@
         "evidence_level": "A",
         "use_as": "cite_directly",
         "key_points": "RNA预处理技术、小激活RNA精准递送、小鼠实验阶段",
-        "forbidden_expressions": ["治愈", "根治", "突破性治愈"],
-        "required_hedges": ["尚处动物实验阶段", "距临床应用尚远", "不构成医疗建议"],
+        "forbidden_expressions": [
+          "治愈",
+          "根治",
+          "突破性治愈"
+        ],
+        "required_hedges": [
+          "尚处动物实验阶段",
+          "距临床应用尚远",
+          "不构成医疗建议"
+        ],
         "creator_note": "A级来源（新华社），须强调实验阶段避免过度乐观"
       }
     },
@@ -4812,7 +4856,10 @@
         "evidence_level": "B",
         "use_as": "verify_before_script",
         "key_points": "古法降糖操5分钟 vs 指南150分钟中等强度、强度和坚持是关键",
-        "required_hedges": ["运动方案需咨询医生", "不构成医疗建议"],
+        "required_hedges": [
+          "运动方案需咨询医生",
+          "不构成医疗建议"
+        ],
         "creator_note": "B级来源，打假角度须避免全盘否定，肯定运动价值但强调科学标准"
       }
     },
@@ -4839,9 +4886,459 @@
         "evidence_level": "A",
         "use_as": "cite_directly",
         "key_points": "糖前期可逆、五维度干预、减重5%-7%、空腹6.1-7.0/餐后7.8-11.1",
-        "forbidden_expressions": ["保证逆转", "一定恢复"],
-        "required_hedges": ["个体差异较大", "须医生评估确认", "不构成医疗建议"],
+        "forbidden_expressions": [
+          "保证逆转",
+          "一定恢复"
+        ],
+        "required_hedges": [
+          "个体差异较大",
+          "须医生评估确认",
+          "不构成医疗建议"
+        ],
         "creator_note": "A级来源（人民网），可引用五维度干预框架，禁止承诺逆转结果"
+      }
+    },
+    {
+      "id": "disc-236",
+      "title": "空腹血糖高，糖化血红蛋白正常？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 795",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV12hWfeFEHv"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-13",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 40,
+          "label": "低",
+          "reasons": []
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-237",
+      "title": "空腹血糖高，餐后血糖却是正常的，这些原因要引起重视",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 2897",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1d84y1X7bj"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-13",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 50,
+          "label": "中",
+          "reasons": [
+            "有一定互动(2,897)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "纤维先形成物理屏障，延缓碳水吸收",
+        "蛋白质刺激GLP-1分泌，延缓胃排空",
+        "可将餐后血糖峰值降低20-40%",
+        "同样食物，不同顺序，血糖反应差异显著",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-238",
+      "title": "糖尿病专科郭医生113：空腹血糖正常，总是餐后高，该吃什么药？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "饮食指南",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 5783",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV14U4y1a7eX"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-13",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 62,
+          "label": "中",
+          "reasons": [
+            "有一定互动(5,783)",
+            "命中关键词「空腹血糖正常 餐后高」"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-239",
+      "title": "空腹血糖和餐后血糖，究竟哪一个更重要？医生告诉你正确答案！",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 42211",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1zT411y7Fu"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-13",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 58,
+          "label": "中",
+          "reasons": [
+            "互动量中等(42,211)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "纤维先形成物理屏障，延缓碳水吸收",
+        "蛋白质刺激GLP-1分泌，延缓胃排空",
+        "可将餐后血糖峰值降低20-40%",
+        "同样食物，不同顺序，血糖反应差异显著",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-240",
+      "title": "餐后1小时血糖，多少钱是正常？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 9724",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1VD421V736"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-13",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 50,
+          "label": "中",
+          "reasons": [
+            "有一定互动(9,724)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-241",
+      "title": "智能益生菌登《自然》：喝酸奶式控糖成为可能？",
+      "angle": "华东师范大学叶海峰团队2026年8月12日在《自然》发表成果：工程益生菌GIFT可智能感应血糖浓度并按需输出GLP-1，实现闭环精准血糖管理。小鼠和食蟹猴实验证实有效，安全性优于司美格鲁肽。已成立公司推进临床转化。重大科研前沿选题，须强调尚处动物实验阶段。",
+      "category": "科研前沿",
+      "platform": "dy,bili,xhs,toutiao",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "《自然》期刊2026-08-12在线发表，上观新闻/解放日报/中国经济网等权威媒体同日报道",
+      "source_urls": [
+        "https://www.shobserver.cn/wx/detail.do?id=1158951",
+        "http://adimg.ce.cn/xwzx/gnsz/gdxw/202608/t20260813_3145636.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-13",
+      "platform_data": {
+        "source": "《自然》期刊/上观新闻",
+        "evidence_level": "A",
+        "use_as": "cite_directly",
+        "key_points": "工程益生菌GIFT、葡萄糖感应+GLP-1按需输出、闭环控糖、动物实验阶段、安全性优于司美格鲁肽",
+        "forbidden_expressions": [
+          "治愈糖尿病",
+          "根治",
+          "马上就能用",
+          "替代胰岛素"
+        ],
+        "required_hedges": [
+          "尚处动物实验阶段",
+          "距临床应用和上市尚远",
+          "不构成医疗建议",
+          "请遵医嘱治疗"
+        ],
+        "creator_note": "A级来源（Nature+权威媒体），重磅前沿选题，但必须严格限定在动物实验阶段，禁止暗示人体已可用"
+      }
+    },
+    {
+      "id": "disc-242",
+      "title": "2026年CGM怎么选？国产vs进口 5款动态血糖仪深度对比",
+      "angle": "2026年家用CGM市场爆发，选购核心指标：MARD值（准度）、佩戴天数、采样频率、抗干扰能力。主流产品：深纳普思欧态M8(MARD 8.10%)、鱼跃Anytime 5Pro(MARD 8.58%)、三诺爱看i6(15天+AI管家)、雅培瞬感2代(iCGM认证)、硅基仿生GS3(高性价比)。已纳入多省市门诊慢特病医保。",
+      "category": "工具测评",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "什么值得买/千龙网/99健康网2026年7-8月多平台CGM测评与选购指南集中发布",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/a6z7v07n/",
+        "https://china.qianlong.com/2026/0802/8706327.shtml",
+        "https://m.99.com.cn/a/2522081/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-13",
+      "platform_data": {
+        "source": "什么值得买/千龙网/99健康网",
+        "evidence_level": "B",
+        "use_as": "verify_before_script",
+        "key_points": "MARD值、佩戴周期、采样频率、国产vs进口、医保覆盖",
+        "forbidden_expressions": [
+          "最好的CGM",
+          "绝对准确",
+          "替代静脉血检测"
+        ],
+        "required_hedges": [
+          "个体体验有差异",
+          "仅供选购参考",
+          "医疗决策请遵医嘱",
+          "不构成医疗建议"
+        ],
+        "creator_note": "B级来源（科技测评平台+健康媒体），选购指南角度，避免绝对化推荐，须说明MARD值含义"
+      }
+    },
+    {
+      "id": "disc-243",
+      "title": "疾控中心重磅研究：不同血糖诊断标准 漏诊率差出5100万人",
+      "angle": "中国疾控中心慢病中心2026年5月发布研究：基于全国14.2万人群，发现用空腹血糖、餐后2h血糖、糖化血红蛋白(HbA1c)三种指标诊断糖尿病/糖前期，患病率存在显著差异。ADA标准下仅用空腹血糖会漏诊约5100万糖尿病患者、1.2亿糖前期。单一指标筛查风险大。",
+      "category": "数字科普",
+      "platform": "dy,bili,toutiao,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "中国疾控中心慢病中心2026-05-06发布，全国14.2万人群研究",
+      "source_urls": [
+        "https://ncncd.chinacdc.cn/zxdt/202605/t20260506_1835562.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-13",
+      "platform_data": {
+        "source": "中国疾控中心慢病中心",
+        "evidence_level": "A",
+        "use_as": "cite_directly",
+        "key_points": "三种诊断标准差异、空腹血糖漏诊5100万、14.2万人群研究、单一指标筛查风险",
+        "forbidden_expressions": [
+          "体检没用",
+          "空腹血糖不准"
+        ],
+        "required_hedges": [
+          "研究基于特定人群标准",
+          "个体情况请咨询医生",
+          "不构成医疗建议"
+        ],
+        "creator_note": "A级来源（中国疾控中心），可直接引用研究结论，注意不要否定空腹血糖的筛查价值，强调联合筛查更全面"
+      }
+    },
+    {
+      "id": "disc-244",
+      "title": "吃得少却瘦不下来？可能是胰岛素抵抗在捣鬼",
+      "angle": "人民网2026年5月报道：胰岛素抵抗是代谢疾病年轻化根源之一，早期可控制并逆转。核心干预三法：①减重10%可明显改善（减内脏脂肪是关键）；②有氧+抗阻组合运动可使胰岛素敏感性提升20%-50%；③低GI饮食+优质蛋白+膳食纤维。腹型肥胖人群尤需注意。",
+      "category": "趋势科普",
+      "platform": "dy,xhs,bili,toutiao",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "人民网/北京市中医药管理局/健康时报2026年多平台报道胰岛素抵抗与减重话题",
+      "source_urls": [
+        "http://health.people.com.cn/n1/2026/0501/c14739-40712529.html",
+        "https://zyj.beijing.gov.cn/sy/whkp/202607/t20260720_4771783.html",
+        "http://paper.people.com.cn/jksb/pc/content/202603/13/content_30148679.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-13",
+      "platform_data": {
+        "source": "人民网/北京市中医药管理局/健康时报",
+        "evidence_level": "A",
+        "use_as": "cite_directly",
+        "key_points": "胰岛素抵抗、减重10%、有氧+抗阻运动、低GI饮食、腹型肥胖",
+        "forbidden_expressions": [
+          "一定能瘦",
+          "快速逆转",
+          "包治百病"
+        ],
+        "required_hedges": [
+          "个体差异较大",
+          "逆转程度因人而异",
+          "须医生评估确认",
+          "不构成医疗建议"
+        ],
+        "creator_note": "A级来源（人民网+政府官网），可引用干预三法框架，禁止承诺效果，强调早期干预重要性"
+      }
+    },
+    {
+      "id": "disc-245",
+      "title": "全球首例！我国实现再生胰岛移植 1型糖尿病新突破",
+      "angle": "央视2026年3月报道：中科院分子细胞科学卓越创新中心联合上海长征医院，国际首次利用自体与异体干细胞来源的再生胰岛(E-islet)微创移植，实现1型糖尿病患者胰岛功能重建与血糖自主调控。成果发表于《柳叶刀·糖尿病与内分泌学》。",
+      "category": "科研前沿",
+      "platform": "dy,bili,toutiao",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "央视网2026-03-17报道，《柳叶刀·糖尿病与内分泌学》发表",
+      "source_urls": [
+        "https://news.cctv.cn/2026/03/17/ARTI4raWFRt8C1O3nDphrq0Q260317.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-13",
+      "platform_data": {
+        "source": "央视网/《柳叶刀》",
+        "evidence_level": "A",
+        "use_as": "cite_directly",
+        "key_points": "再生胰岛移植、1型糖尿病、胰岛功能重建、全球首例、干细胞来源",
+        "forbidden_expressions": [
+          "治愈糖尿病",
+          "根治",
+          "已广泛应用"
+        ],
+        "required_hedges": [
+          "尚处临床研究阶段",
+          "距广泛应用尚远",
+          "不构成医疗建议",
+          "请遵医嘱治疗"
+        ],
+        "creator_note": "A级来源（央视+柳叶刀），重磅前沿选题，须强调临床研究阶段，禁止暗示已成熟可用"
       }
     }
   ],
