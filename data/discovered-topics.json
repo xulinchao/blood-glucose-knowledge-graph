@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-08-13",
+  "updated": "2026-08-15",
   "topics": [
     {
       "id": "disc-016",
@@ -5339,6 +5339,203 @@
           "请遵医嘱治疗"
         ],
         "creator_note": "A级来源（央视+柳叶刀），重磅前沿选题，须强调临床研究阶段，禁止暗示已成熟可用"
+      }
+    },
+    {
+      "id": "disc-246",
+      "title": "饭前喝醋降血糖？社交平台爆火的控糖革命是真有效还是流量密码",
+      "angle": "《控糖革命》提出的饭前喝一勺醋降20%~30%餐后血糖引爆社交平台，拆解苹果醋/白醋/米醋的真实效果差异，澄清适用人群和禁忌（胃酸过多、胃溃疡、正在服药的4类人别碰）。认知冲突强，适合实测/打假类内容。",
+      "category": "误区辟谣",
+      "platform": "xhs,dy,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "光明网报道相关话题浏览量破亿；小红书/抖音控糖革命/饭前喝醋关键词高热度；B站控糖革命精读视频6万+播放",
+      "source_urls": [
+        "https://m.gmw.cn/2026-06/30/content_1304514508.htm",
+        "https://post.m.smzdm.com/p/a6zq59zn/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-15",
+      "platform_data": {
+        "source": "光明网/什么值得买/B站",
+        "evidence_tier": "B",
+        "use_as": "hook_only",
+        "creator_note": "传播热度高但需注意科学边界，醋对血糖的影响有研究支撑但幅度被夸大，口播须加非医疗建议"
+      }
+    },
+    {
+      "id": "disc-247",
+      "title": "健康人也戴CGM？动态血糖仪怎么成了年轻人的抗衰新玩具",
+      "angle": "原本给糖尿病人用的CGM现在成了年轻人健康标配。年轻人用CGM不是为了治病：①发现隐形血糖过山车（喝完奶茶飙到多少）②优化饮食结构（什么食物自己升糖最快）③减肥辅助。医疗设备消费化现象，认知冲突强。",
+      "category": "数字科普",
+      "platform": "xhs,dy,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "B站和医生们用动态血糖仪20天后105万播放，4款主流动态血糖仪大横评14.2万播放；浙江日报报道年轻人与糖共处现象",
+      "source_urls": [
+        "http://zjnews.zjol.com.cn/zjnews/202607/t20260723_31803728.shtml",
+        "https://www.bilibili.com/video/BV1ADMk6mErS",
+        "https://www.bilibili.com/video/BV1T221YAESz"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-15",
+      "platform_data": {
+        "source": "浙江日报/B站",
+        "evidence_tier": "B",
+        "use_as": "hook_only",
+        "creator_note": "社会现象级话题，年轻人高关注。健康人用CGM属消费行为，不建议推荐购买，可作现象讨论"
+      }
+    },
+    {
+      "id": "disc-248",
+      "title": "35岁血糖急转弯？为什么糖尿病专挑30+职场人下手",
+      "angle": "糖尿病筛查年龄下调到35岁政策背景，讲30+年轻人血糖出问题的3个核心原因：①肌肉量下降（久坐导致糖代谢能力跳水）②慢性压力（皮质醇升高→胰岛素抵抗）③代谢记忆效应。每6个成年人就有1个糖前期数字冲击。",
+      "category": "数字科普",
+      "platform": "xhs,dy,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "央视网2026年7月报道别等胰岛累坏才后悔；中华网/澎湃新闻/搜狐健康多平台报道糖尿病年轻化趋势；35岁筛查年龄下调为政策级信号",
+      "source_urls": [
+        "https://news.cctv.cn/2026/07/16/ARTI8datQz4kv13ONkZSUJsF260716.shtml",
+        "https://m.life.china.com/2026-07/13/content_601529.html",
+        "https://m.thepaper.cn/newsDetail_forward_33243785"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-15",
+      "platform_data": {
+        "source": "央视网/中华网/澎湃新闻",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "权威媒体报道，政策背景明确，可引用来源观点。口播须加非医疗建议"
+      }
+    },
+    {
+      "id": "disc-249",
+      "title": "二甲双胍当减肥药吃？1000+网友吵翻了，医生说这6种人别碰",
+      "angle": "健康人吃二甲双胍减肥的巨大争议（45%觉得有用 vs 55%认为危险），用真实用户体验做钩子。讲清楚：①二甲双胍减重原理（不是燃脂，是抑制食欲+减少吸收）②为什么健康人吃没用甚至有害（B12缺乏、乳酸酸中毒风险）③真正适合什么人。",
+      "category": "误区辟谣",
+      "platform": "xhs,dy,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "什么值得买二甲双胍减肥神药话题1000+用户观点讨论；B站二甲双胍四大副作用4.9万播放；健康人滥用处方药现象值得警惕",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/a46zv98l/",
+        "https://www.bilibili.com/video/BV1XP411B7FG",
+        "https://m.bohe.cn/article/mip/ptj4va06lkr986u.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-15",
+      "platform_data": {
+        "source": "什么值得买/B站/博禾医生",
+        "evidence_tier": "B",
+        "use_as": "hook_only",
+        "creator_note": "涉及处方药，必须严格遵守Risk Gate规则：不得推荐健康人使用，须强调处方药需遵医嘱，加非医疗建议声明"
+      }
+    },
+    {
+      "id": "disc-250",
+      "title": "胰岛素抵抗减肥越减越胖？先搞对顺序再谈节食",
+      "angle": "从明明吃得很少却瘦不下来的痛点切入，讲胰岛素抵抗和减肥的关系：①为什么胰岛素抵抗的人减肥特别难（身体一直处于储存脂肪模式）②怎么判断自己有没有胰岛素抵抗（9个信号）③改善的正确顺序（先调饮食结构→再运动→最后才考虑药物）。",
+      "category": "实操方法",
+      "platform": "xhs,dy,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "人民网2026年5月吃得少却瘦不下来专题；B站胰岛素抵抗减肥攻略13.2万播放；什么值得买逆转胰岛素抵抗高热度长文",
+      "source_urls": [
+        "http://health.people.com.cn/n1/2026/0501/c14739-40712529.html",
+        "https://www.bilibili.com/video/BV15L411P7Tq",
+        "https://post.m.smzdm.com/p/agopd62w/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-15",
+      "platform_data": {
+        "source": "人民网/B站/什么值得买",
+        "evidence_tier": "B",
+        "use_as": "verify_before_script",
+        "creator_note": "减肥+胰岛素抵抗交叉话题，受众广。涉及健康建议须谨慎，关键数字建议二次查证，加非医疗建议"
+      }
+    },
+    {
+      "id": "disc-251",
+      "title": "一边控糖一边炫软糖？这届年轻人的与糖共处哲学",
+      "angle": "从中国糖果第一股背后的年轻人消费矛盾切入——不是戒糖，而是主动选择吃糖。拆解三种年轻人典型画像：①理智控糖党②情绪补偿党③成分党。给出可持续控糖的中庸方案——建立糖预算思维。角度新颖，戳中年轻人情绪。",
+      "category": "饮食指南",
+      "platform": "xhs,dy",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "杭州网2026年7月一边说控糖一边炫软糖报道；浙江日报与糖共处专题；年轻人控糖消费趋势话题",
+      "source_urls": [
+        "http://hznews.hangzhou.com.cn/jingji/content/2026-07/09/content_9251906_0.htm",
+        "http://zjnews.zjol.com.cn/zjnews/202607/t20260723_31803728.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-15",
+      "platform_data": {
+        "source": "杭州网/浙江日报",
+        "evidence_tier": "B",
+        "use_as": "hook_only",
+        "creator_note": "社会观察类选题，角度新颖。不涉及医疗建议，安全性高，适合做情绪共鸣型内容"
+      }
+    },
+    {
+      "id": "disc-252",
+      "title": "控糖的6个大坑，第3个90%的人都踩过",
+      "angle": "反向科普6大控糖误区：①控糖=完全不吃糖②无糖食品随便吃③只看GI值不看GL④控糖比控盐控油重要⑤杂粮=健康⑥运动越剧烈控糖越好。每条配中招了吗互动钩子。信息来源权威（央视网/科普中国）。",
+      "category": "误区辟谣",
+      "platform": "xhs,dy,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "央视网控糖的6个误区专题；科普中国四大控糖陷阱；西安新闻网2026年8月控糖凭经验易踩多重误区报道",
+      "source_urls": [
+        "https://news.cctv.cn/2025/07/01/ARTIb2ApbXhAh6rtMpf7GPaT250701.shtml",
+        "http://kpzg.people.com.cn/n1/2025/1202/c404214-40615380.html",
+        "https://www.xiancn.com/content/2026-08/13/content_7493114.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-15",
+      "platform_data": {
+        "source": "央视网/科普中国/西安新闻网",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "权威来源，清单体内容适合短视频传播。可直接引用，加非医疗建议"
+      }
+    },
+    {
+      "id": "disc-253",
+      "title": "夏季血糖不降反升？三伏天控糖的4个关键提醒",
+      "angle": "季节性强话题，夏天明明代谢快为什么血糖反而更高成为高频疑问。核心关注点：皮质醇与血糖的关系、夏季低血糖风险、胰岛素储存注意事项、三伏天稳糖食材清单。央视财经8月8日专门报道。",
+      "category": "饮食指南",
+      "platform": "xhs,dy,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "央视财经2026年8月8日夏天血糖不降反升专题报道；搜狐健康糖尿病三伏天降糖饮食清单；多平台季节性高搜索量",
+      "source_urls": [
+        "https://news.cctv.com/2026/08/08/ARTIoYxQiYaGZZYslvglhcI6260808.shtml",
+        "https://m.sohu.com/a/1058643215_107387/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-15",
+      "platform_data": {
+        "source": "央视网/搜狐健康",
+        "evidence_tier": "A-B",
+        "use_as": "cite_directly",
+        "creator_note": "权威媒体报道，季节性时效强。可引用来源观点，加非医疗建议"
       }
     }
   ],
