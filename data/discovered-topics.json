@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-08-15",
+  "updated": "2026-08-18",
   "topics": [
     {
       "id": "disc-016",
@@ -5536,6 +5536,195 @@
         "evidence_tier": "A-B",
         "use_as": "cite_directly",
         "creator_note": "权威媒体报道，季节性时效强。可引用来源观点，加非医疗建议"
+      }
+    },
+    {
+      "id": "disc-254",
+      "title": "35岁控糖警戒线：指南为什么把筛查年龄提前了5岁？",
+      "angle": "2024版中国糖尿病防治指南将高危人群筛查年龄从40岁提前至35岁。年轻化趋势+三大诱因（久坐/肥胖/代谢下降）+ 自我检测清单。权威政策变化+年龄焦虑强共鸣。",
+      "category": "年轻化科普",
+      "platform": "xhs,dy,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "央视新闻/澎湃新闻/中华网多平台集中报道，35岁年龄焦虑话题天然高传播",
+      "source_urls": [
+        "https://content-static.cctvnews.cctv.com/snow-book/index.html?channelId=1119&item_id=11948991180846320613",
+        "https://m.thepaper.cn/newsDetail_forward_33243785",
+        "https://m.life.china.com/2026-07/13/content_601529.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-18",
+      "platform_data": {
+        "source": "全网网页搜索(Exa)",
+        "evidence_level": "A",
+        "use_as": "cite_directly"
+      }
+    },
+    {
+      "id": "disc-255",
+      "title": "糖前期黄金干预期：怎么判断自己在崖边？3个月能逆转多少？",
+      "angle": "糖前期是逆转黄金窗口，减重5%-7%+规律运动可降低40%-58%进展风险。ABCD自测法+饮食运动体重三维行动方案。希望感+可操作性强。",
+      "category": "疾病预防",
+      "platform": "xhs,dy,bili",
+      "duration": "45-60s",
+      "heat": "hot",
+      "heat_source": "央视网/光明网权威报道，可逆转让点强，案例故事有传播性",
+      "source_urls": [
+        "https://jiankang.cctv.com/2026/07/01/ARTIz4OY6xfbMkKTmLmASSAV260701.shtml",
+        "http://health.gmw.cn/2026-07/20/content_38889899.htm",
+        "https://m.thepaper.cn/newsDetail_forward_33555657"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-18",
+      "platform_data": {
+        "source": "全网网页搜索(Exa)",
+        "evidence_level": "A",
+        "use_as": "cite_directly"
+      }
+    },
+    {
+      "id": "disc-256",
+      "title": "CGM动态血糖仪怎么选？2026国产vs进口四大维度横评",
+      "angle": "硬核消费决策：MARD精度/佩戴周期/佩戴体验/智能功能四参数对比。国产替代加速，主流品牌MARD值对比（深纳普思8.10%/鱼跃8.58%）。三类人群对应三套方案。",
+      "category": "工具测评",
+      "platform": "xhs,dy,bili,zhibo",
+      "duration": "45-60s",
+      "heat": "hot",
+      "heat_source": "2026年8月最新产品迭代，CGM消费化转型，多平台选购指南热度高",
+      "source_urls": [
+        "https://china.qianlong.com/2026/0802/8706327.shtml",
+        "https://post.m.smzdm.com/p/a6zg9w9o/",
+        "https://m.99.com.cn/a/2522081/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-18",
+      "platform_data": {
+        "source": "全网网页搜索(Exa)",
+        "evidence_level": "B",
+        "use_as": "verify_before_script"
+      }
+    },
+    {
+      "id": "disc-257",
+      "title": "胰岛素抵抗才是瘦不下来的元凶？3个不节食的逆转方法",
+      "angle": "减肥+健康双痛点叠加。吃得少瘦不下来？可能是胰岛素抵抗。减重5%-10%即可逆转，有氧+力量组合运动可提升胰岛素敏感性20%-50%。打破认知误区。",
+      "category": "减肥代谢",
+      "platform": "xhs,dy,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "减肥话题天然高流量，科学解释打破认知误区，可操作性强",
+      "source_urls": [
+        "http://health.people.com.cn/n1/2026/0501/c14739-40712529.html",
+        "https://zyj.beijing.gov.cn/sy/whkp/202607/t20260720_4771783.html",
+        "https://www.lifetimes.cn/article/4IjuhTKGSjv"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-18",
+      "platform_data": {
+        "source": "全网网页搜索(Exa)",
+        "evidence_level": "A",
+        "use_as": "cite_directly"
+      }
+    },
+    {
+      "id": "disc-258",
+      "title": "网红控糖产品打假：热销降糖神药配料前三全是升糖成分？",
+      "angle": "央视曝光人参苦瓜荞麦桑叶片骗局，王海测评英贝健果蔬纤维果饮成分虚标。配料表解读教学+识别伪控糖3个套路。打假类内容高传播。",
+      "category": "测评打假",
+      "platform": "bili,dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "央视权威曝光+打假IP加持，消费者受骗情绪强共鸣",
+      "source_urls": [
+        "https://news.cctv.cn/2026/01/13/ARTIy7jxyP3viDwJn1R5viwl260113.shtml",
+        "https://www.bilibili.com/video/BV1LkNu6PE1b/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-18",
+      "platform_data": {
+        "source": "全网网页搜索(Exa)",
+        "evidence_level": "A",
+        "use_as": "cite_directly"
+      }
+    },
+    {
+      "id": "disc-259",
+      "title": "低GI零食越吃越胖？盒马热门款实测+避坑指南",
+      "angle": "认知反差：低GI≠低热量≠随便吃。山姆低GI五黑坚果脆月销超千万，但伪低GI产品泛滥。热门产品实测+正确选购3原则（碳水总量/蛋白纤维/总热量）。",
+      "category": "零食测评",
+      "platform": "xhs,dy,zhibo",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "低GI赛道2026年持续升温，消费者认知偏差大，零食话题高互动",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/a26odzzp/",
+        "https://post.m.smzdm.com/p/a4qr2dek/",
+        "https://www.inewfood.com/sam-hema-popular-low-gi-snacks-suppliers.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-18",
+      "platform_data": {
+        "source": "全网网页搜索(Exa)",
+        "evidence_level": "B",
+        "use_as": "hook_only"
+      }
+    },
+    {
+      "id": "disc-260",
+      "title": "二甲双胍伤肝？6个必须停药的信号（附缓释片vs普通片区别）",
+      "angle": "辟谣伤肝论（常规剂量无肝毒性）+ 真风险识别（乳酸酸中毒罕见但死亡率30-50%/B12缺乏/胃肠道反应）+ 6种停药信号 + 缓释片vs普通片区别。用药安全高关注。",
+      "category": "用药安全",
+      "platform": "dy,xhs,bili",
+      "duration": "45-60s",
+      "heat": "warm",
+      "heat_source": "用药安全是高关注话题，标题党内容传播广，辟谣类内容有价值感",
+      "source_urls": [
+        "https://m.sohu.com/a/1060122802_122744937/",
+        "https://k.sina.com.cn/article_5525746896_1495c34d0020013o5m.html",
+        "https://c.m.163.com/news/a/L1VLDTFN05569GJR.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-18",
+      "platform_data": {
+        "source": "全网网页搜索(Exa)",
+        "evidence_level": "B",
+        "use_as": "verify_before_script"
+      }
+    },
+    {
+      "id": "disc-261",
+      "title": "全球首例再生胰岛移植：中国团队实现1型糖尿病功能治愈突破",
+      "angle": "央视网报道，中国团队首次在国际上证明自体/异体再生胰岛移植，可实现胰岛功能重建、血糖自主调控与外源胰岛素脱离。重大科研突破题材，权威性高。",
+      "category": "前沿科技",
+      "platform": "bili,dy,xhs,toutiao",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "央视网全球首例报道，国家级科研突破，行业影响力大",
+      "source_urls": [
+        "https://news.cctv.cn/2026/03/17/ARTI4raWFRt8C1O3nDphrq0Q260317.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-08-18",
+      "platform_data": {
+        "source": "全网网页搜索(Exa)",
+        "evidence_level": "A",
+        "use_as": "cite_directly"
       }
     }
   ],
