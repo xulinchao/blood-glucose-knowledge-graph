@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-08-18",
+  "updated": "2026-09-01",
   "topics": [
     {
       "id": "disc-016",
@@ -5725,6 +5725,341 @@
         "source": "全网网页搜索(Exa)",
         "evidence_level": "A",
         "use_as": "cite_directly"
+      }
+    },
+    {
+      "id": "disc-262",
+      "title": "有这五种情况，小心糖尿病！",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "warm",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 109513",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1uP4y1b7uE"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-01",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 68,
+          "label": "中",
+          "reasons": [
+            "互动量高(109,513)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-263",
+      "title": "为什么空腹血糖比餐后血糖还高",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "60-90s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 1470",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1nV411Y73D"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-01",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 50,
+          "label": "中",
+          "reasons": [
+            "有一定互动(1,470)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "纤维先形成物理屏障，延缓碳水吸收",
+        "蛋白质刺激GLP-1分泌，延缓胃排空",
+        "可将餐后血糖峰值降低20-40%",
+        "同样食物，不同顺序，血糖反应差异显著",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-264",
+      "title": "万益蓝控控片虚假宣传：阻断66%碳水实为压片糖果，黑猫投诉1561条",
+      "angle": "新京报深度调查。白芸豆提取物产品打擦边球，宣称'少摄入热量=游泳20分钟'，实际仅普通食品。退款被拒、腹泻恶心等不良反应。律师明确表态：普通食品宣称减肥功效涉嫌虚假宣传。",
+      "category": "产品打假",
+      "platform": "dy,xhs,bili",
+      "duration": "45-60s",
+      "heat": "hot",
+      "heat_source": "新京报深度调查报道，黑猫投诉超1561条",
+      "source_urls": [
+        "https://www.bjnews.com.cn/detail/1758763550168697.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-01",
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "writability_score": 85,
+      "platform_data": {
+        "source": "新京报",
+        "complaints": 1561
+      }
+    },
+    {
+      "id": "disc-265",
+      "title": "成本10元卖190元的进口控糖饮：宣称可替代西药，专家揭穿虚假宣传",
+      "angle": "光明网深度时评。控糖卫等品牌宣称'美国进口''一个月见效''停药后血糖不反弹'，实则国内生产成本不超过10元。专家观点：糖尿病目前无法治愈，任何宣称'修复胰岛''逆转糖尿病'的产品涉嫌虚假宣传。",
+      "category": "产品打假",
+      "platform": "dy,xhs,bili",
+      "duration": "45-60s",
+      "heat": "hot",
+      "heat_source": "光明网深度时评，官方媒体揭露",
+      "source_urls": [
+        "http://guancha.gmw.cn/2025-08/28/content_38249789.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-01",
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "writability_score": 85,
+      "platform_data": {
+        "source": "光明网"
+      }
+    },
+    {
+      "id": "disc-266",
+      "title": "血糖控制目标不是越低越好！指南推荐宽松控制，低血糖比高血糖更危险",
+      "angle": "丁香医生科普。《指南》推荐'宽松控制、精细管理'，优先避免低血糖。关键指标：空腹5.6-8.0mmol/L、餐后2小时<10.0mmol/L、HbA1c<7%、日间波动<4.4mmol/L。很多糖友追求'越低越好'是误区。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "丁香医生医疗平台科普，糖友日常关注话题",
+      "source_urls": [
+        "https://weixin.91160.com/h5/wecontent/doctorarticle/detail.html?id=703883"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-01",
+      "evidence_level": "B",
+      "use_as": "cite_directly",
+      "writability_score": 78,
+      "platform_data": {
+        "source": "丁香医生"
+      }
+    },
+    {
+      "id": "disc-267",
+      "title": "血糖焦虑正在成为年轻人的新型健康偏执——小红书控糖话题下的恐惧叙事",
+      "angle": "搜狐/趋势互联深度报道。小红书'控糖'话题下大量非糖尿病年轻人过度关注血糖，正常波动被曲解为'血糖崩溃'。'血糖刺客''碳水慢性毒药'等耸动话术盛行。专家观点：餐后正常血糖波动是生理反应。2025年控糖食品市场规模412亿元。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "搜狐/趋势互联深度报道，引用北大公卫、协和医院专家观点",
+      "source_urls": [
+        "https://m.sohu.com/a/1002053442_122592823/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-01",
+      "evidence_level": "B",
+      "use_as": "cite_directly",
+      "writability_score": 80,
+      "platform_data": {
+        "source": "搜狐",
+        "market_size": "412亿元"
+      }
+    },
+    {
+      "id": "disc-268",
+      "title": "JAMA研究：糖前期生活方式干预比二甲双胍更有效，21年随访风险降58%",
+      "angle": "人民日报健康客户端报道。基于DPP研究21年随访，3234名糖前期人群。生活方式干预组糖尿病发病风险降低58%，二甲双胍组降低31%。21年后干预组多重慢病发生率82% vs 用药组85% vs 安慰剂87%。复旦华东医院蒋翠萍主任解读。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "45-60s",
+      "heat": "hot",
+      "heat_source": "人民日报健康客户端转载JAMA研究，权威媒体背书",
+      "source_urls": [
+        "https://www.163.com/dy/article/L09NU7LF052583KJ.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-01",
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "writability_score": 88,
+      "platform_data": {
+        "source": "人民日报健康客户端",
+        "journal": "JAMA",
+        "sample_size": 3234
+      }
+    },
+    {
+      "id": "disc-269",
+      "title": "别等确诊再补救：糖前期不干预6年后66%进展为糖尿病，大庆研究20年数据",
+      "angle": "光明网健康频道深度科普。大庆糖尿病预防研究：完全不做干预的糖前期人群，6年后约66%进展为2型糖尿病，随访20年累计转化率93%。血糖缓解可降低约50%远期心血管死亡或心衰住院风险。糖前期干预6个月不达标再考虑药物。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "45-60s",
+      "heat": "hot",
+      "heat_source": "光明网健康频道，引用大庆糖尿病预防研究和《中国2型糖尿病防治指南（2024版）》",
+      "source_urls": [
+        "http://health.gmw.cn/2026-07/20/content_38889899.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-01",
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "writability_score": 86,
+      "platform_data": {
+        "source": "光明网",
+        "study": "大庆糖尿病预防研究"
+      }
+    },
+    {
+      "id": "disc-270",
+      "title": "ADA 2026糖尿病诊疗标准更新：CGM推荐范围大幅拓宽，首次纳入患者权益框架",
+      "angle": "ADA官方期刊Diabetes Care发布。核心更新：CGM推荐范围大幅拓宽（确诊后只要能获益即可用）；首次系统性将'患者权益'纳入综合管理核心框架；纳入数字自我管理软件作为支持工具；新增肥胖药理学治疗个体化剂量指导。",
+      "category": "政策/研究",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "ADA官方期刊《Diabetes Care》，国际糖尿病权威学术机构",
+      "source_urls": [
+        "https://diabetesjournals.org/care/article/49/Supplement_1/S6/163930/Summary-of-Revisions-Standards-of-Care-in-Diabetes",
+        "https://m.thepaper.cn/newsDetail_forward_33781072"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-01",
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "writability_score": 75,
+      "platform_data": {
+        "source": "ADA/Diabetes Care"
+      }
+    },
+    {
+      "id": "disc-271",
+      "title": "AACE 2026版2型糖尿病管理共识：新增糖尿病分类算法，首次将脂肪肝列为合并症",
+      "angle": "美国临床内分泌学家协会（AACE）时隔3年发布共识声明。新增糖尿病分类算法，首次将代谢功能障碍相关脂肪性肝病（MASLD）认定为合并症，纳入新肥胖和血脂异常指南。",
+      "category": "政策/研究",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "AACE官方共识声明，专业医疗媒体转载解读",
+      "source_urls": [
+        "https://m.familydoctor.cn/news/aace-2xingtangniaobing-suanfa-jujiao-fenlei-xinyao-381646.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-01",
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "writability_score": 72,
+      "platform_data": {
+        "source": "AACE"
+      }
+    },
+    {
+      "id": "disc-272",
+      "title": "糖尿病三师共管试点：内分泌医师+中医师+健康管理师联合管理模式",
+      "angle": "央视网报道。我国开展糖尿病'三师共管'中西医诊疗试点。西医侧重血糖等指标控制，中医侧重整体调治，健康管理师关注日常生活方式管理。中西医结合管理新模式。",
+      "category": "政策/研究",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "央视网官方报道，政策试点动态",
+      "source_urls": [
+        "https://news.cctv.com/2026/05/21/ARTIQoq7ESOb5fm7cabnZGpm260521.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-01",
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "writability_score": 70,
+      "platform_data": {
+        "source": "央视网"
+      }
+    },
+    {
+      "id": "disc-273",
+      "title": "年轻人把CGM当减肥神器：动态血糖仪破圈背后的健康焦虑",
+      "angle": "科普中国（中国科协官方）报道。年轻人开始在胳膊上贴CGM测奶茶、测米饭血糖反应。CGM从糖尿病专属设备变成'潮流监测工具'。专家警示：健康人群佩戴CGM可能加剧健康焦虑而非解决健康问题。CGM适用人群：1型/2型糖尿病患者、血糖波动大人群。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "45-60s",
+      "heat": "hot",
+      "heat_source": "科普中国（中国科协官方澎湃号），A级信源",
+      "source_urls": [
+        "https://m.thepaper.cn/newsDetail_forward_33271085"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-01",
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "writability_score": 82,
+      "platform_data": {
+        "source": "科普中国"
       }
     }
   ],
