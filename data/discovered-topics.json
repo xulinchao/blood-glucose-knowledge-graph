@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-09-01",
+  "updated": "2026-09-02",
   "topics": [
     {
       "id": "disc-016",
@@ -6060,6 +6060,286 @@
       "writability_score": 82,
       "platform_data": {
         "source": "科普中国"
+      }
+    },
+    {
+      "id": "disc-274",
+      "title": "新版国家基本药物目录2026版施行：新增糖尿病药物5种",
+      "angle": "政策热点。《国家基本药物目录（2026版）》9月1日施行，药物总数增至794种，新增116品种。糖尿病用药新增5种，高血压新增4种。适合做政策解读口播，强调对糖友用药可及性的影响。",
+      "category": "政策动态",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "央广网 2026-09-01 报道，今日施行",
+      "source_urls": [
+        "http://news.cnr.cn/native/gd/20260901/t20260901_527801145.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-02",
+      "platform_data": {
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "gate_passed": true,
+        "source_label": "央广网"
+      }
+    },
+    {
+      "id": "disc-275",
+      "title": "全球首例再生胰岛移植：干细胞治疗1型糖尿病，成果发表于《柳叶刀》",
+      "angle": "前沿研究。中科院程新团队联合上海长征医院殷浩团队，首次利用自体/异体干细胞来源再生胰岛（E-islet）微创移植，实现1型糖尿病患者胰岛功能重建。发表于《柳叶刀·糖尿病与内分泌学》。可作为前沿科普选题，注意标注「研究阶段，非临床常规」。",
+      "category": "前沿研究",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "央视新闻 2026-03-17 报道，《柳叶刀》发表",
+      "source_urls": [
+        "https://news.cctv.cn/2026/03/17/ARTI4raWFRt8C1O3nDphrq0Q260317.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-02",
+      "platform_data": {
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "gate_passed": true,
+        "source_label": "央视新闻/柳叶刀"
+      }
+    },
+    {
+      "id": "disc-276",
+      "title": "锌离子ZnT8靶点：同济大学发现糖尿病治疗「黄金靶点」",
+      "angle": "前沿研究。同济大学李维达教授与高绍荣院士团队，首次揭示锌离子积累是胰岛β细胞功能失活的关键致病因素，ZnT8转运蛋白可作为「黄金靶点」。论文发表于《细胞研究》。口播注意标注「基础研究阶段」。",
+      "category": "前沿研究",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "人民日报客户端 2026-01-28 报道，《细胞研究》发表",
+      "source_urls": [
+        "https://www.peopleapp.com/column/30051323149-500007330260"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-02",
+      "platform_data": {
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "gate_passed": true,
+        "source_label": "人民日报/Cell Research"
+      }
+    },
+    {
+      "id": "disc-277",
+      "title": "「像糖尿病人一样吃饭」走红：4个能照做的控糖吃法+2个坑",
+      "angle": "饮食热点。该吃法在知乎、小红书走红。4个方法：先吃菜肉后吃米饭、白米2/3+杂粮1/3、米饭粒粒分明少煮粥、饭后活动10-20分钟。2个坑：冷饭控糖效果有限、照搬糖友治疗期菜单不适合健康人。适合做实用口播。",
+      "category": "饮食指南",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "什么值得买聚合知乎/小红书/微博内容，88位全网作者",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/a95852k7/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-02",
+      "platform_data": {
+        "evidence_tier": "D",
+        "use_as": "hook_only",
+        "gate_passed": true,
+        "source_label": "知乎/小红书 UGC聚合"
+      }
+    },
+    {
+      "id": "disc-278",
+      "title": "低GI食品白皮书：GI每增10单位糖尿病风险升27%，市场2024年148亿美元",
+      "angle": "行业趋势。新华网报道《低GI食品与健康白皮书》科普研讨会。GI每增10单位糖尿病风险升27%；低GI食品可减少10%-15%食物摄入；2024年全球市场148亿美元，2033年预计329亿美元。适合做数据驱动口播。",
+      "category": "行业趋势",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "新华网 2026-05-19 报道，中国营养学会",
+      "source_urls": [
+        "https://www.news.cn/health/20260519/44738503ee444a2aa1bc8174334ae5f8/c.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-02",
+      "platform_data": {
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "gate_passed": true,
+        "source_label": "新华网/中国营养学会"
+      }
+    },
+    {
+      "id": "disc-279",
+      "title": "35岁血糖警戒线：ADA将筛查年龄从45降至35，越早干预效果越好",
+      "angle": "年轻人相关。ADA将糖尿病筛查起始年龄从45岁提前至35岁，中国指南也建议35岁为警戒线。35岁前控糖效果更好；40岁以下确诊死亡风险更高。20-24岁男性患病率从1.99%增至7.42%。适合做年轻人向口播。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "光明网/央视频/西安交大第一附属医院/中国经济网 2025-2026",
+      "source_urls": [
+        "http://www.jdyfy.com/info/1321/177241.htm",
+        "https://m.gmw.cn/2025-05/28/content_1304046583.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-02",
+      "platform_data": {
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "gate_passed": true,
+        "source_label": "西安交大附属医院/光明网"
+      }
+    },
+    {
+      "id": "disc-280",
+      "title": "二甲双胍不是减肥神药：专家紧急提醒健康人勿自行服用",
+      "angle": "反套路辟谣。年轻人容易在小红书/抖音看到「二甲双胍减肥」内容。上海交大六院周健主任提醒：二甲双胍是处方降糖药，不是减肥药；健康人自行服用有胃肠道反应、B12吸收障碍等风险。生命时报也辟谣三大误区。",
+      "category": "辟谣纠偏",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "北京日报/上海网络辟谣 2026-01-26；生命时报",
+      "source_urls": [
+        "https://xinwen.bjd.com.cn/content/s6976dcbfe4b0687a28904b31.html",
+        "https://www.lifetimes.cn/article/439z5FHEydy"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-02",
+      "platform_data": {
+        "evidence_tier": "B",
+        "use_as": "cite_directly",
+        "gate_passed": true,
+        "source_label": "北京日报/生命时报"
+      }
+    },
+    {
+      "id": "disc-281",
+      "title": "胰岛素抵抗：吃得少却瘦不下来的真正原因",
+      "angle": "减肥痛点。央视新闻报道：胰岛素抵抗导致「吃得少也瘦不下来」。北京友谊医院李晓辉副主任医师指出早期胰岛素抵抗可以控制并逆转，减重是根源之一。人民日报健康报称胰岛素抵抗是「多病之源」。适合做系列选题。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "央视新闻 2026-05-01；人民日报健康报 2026-03-13",
+      "source_urls": [
+        "https://news.cctv.com/2026/05/01/ARTIEqzJ18OnVy4l1bv1QX4f260430.shtml",
+        "http://paper.people.com.cn/jksb/pc/content/202603/13/content_30148679.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-02",
+      "platform_data": {
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "gate_passed": true,
+        "source_label": "央视新闻/人民日报"
+      }
+    },
+    {
+      "id": "disc-282",
+      "title": "低GI标签陷阱：收割中产的低GI食物实则高油高糖？",
+      "angle": "消费避坑。腾讯新闻报道低GI标签可能成为溢价噱头，部分产品实则高油高糖。东方网也报道「低GI标签≠健康食品」。适合做消费观察+避坑指南口播，注意不带货、不点名特定品牌。",
+      "category": "消费避坑",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "腾讯新闻 2026-07-19；东方网 2026-04-29",
+      "source_urls": [
+        "http://news.qq.com/rain/a/20260719A07JN400",
+        "https://nw.eastday.com/zq/zh/20260429/f892339035ebb3084183fda4e2998f75.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-02",
+      "platform_data": {
+        "evidence_tier": "B",
+        "use_as": "verify_before_script",
+        "gate_passed": true,
+        "source_label": "腾讯新闻/东方网"
+      }
+    },
+    {
+      "id": "disc-283",
+      "title": "网红减肥糖揭秘：3天躺瘦6斤实含违禁药西布曲明",
+      "angle": "安全警示。腾讯新闻/都市报道调查：网红「减肥糖」可能含违禁药西布曲明（已被FDA禁止），三无产品。适合做打假/安全警示口播，强调不推荐任何减肥产品。",
+      "category": "辟谣纠偏",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "腾讯新闻/都市报道 2026-03-17",
+      "source_urls": [
+        "http://news.qq.com/rain/a/20260317A086O000"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-02",
+      "platform_data": {
+        "evidence_tier": "B",
+        "use_as": "cite_directly",
+        "gate_passed": true,
+        "source_label": "腾讯新闻/都市报道"
+      }
+    },
+    {
+      "id": "disc-284",
+      "title": "力量训练降糖尿病风险27%：JAMA研究14万人19年随访",
+      "angle": "运动干预。2026年《JAMA网络开放期刊》发表研究：超14万人、随访19.2年，每周坚持2小时以上力量训练，糖尿病风险降低27%。适合做运动科普口播，强调力量训练对控糖的作用。",
+      "category": "运动干预",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "搜狐报道，引用JAMA网络开放期刊研究",
+      "source_urls": [
+        "https://m.sohu.com/a/1058887864_120405541/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-02",
+      "platform_data": {
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "gate_passed": true,
+        "source_label": "搜狐/JAMA Network Open"
+      }
+    },
+    {
+      "id": "disc-285",
+      "title": "隐形升糖食物：7种不甜却让血糖飙升的食物",
+      "angle": "饮食科普。黑龙江省政府+科普中国发布7种隐形升糖食物：精加工粗杂粮（速溶麦片GI=79 vs 整粒燕麦GI=42）、山楂（GL=13）、土豆泥（GI=87）、胡萝卜（GI=71）、南瓜（GI=75）、「无糖」饮料（上海消保委抽检全检出糖）、糯米饭（GI=90）。数据硬，适合做可视化口播。",
+      "category": "饮食指南",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "黑龙江省人民政府 2026-04-03，科普中国",
+      "source_urls": [
+        "https://www.hlj.gov.cn/hlj/c116268/202604/c00_31930078.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-02",
+      "platform_data": {
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "gate_passed": true,
+        "source_label": "黑龙江省政府/科普中国"
       }
     }
   ],
