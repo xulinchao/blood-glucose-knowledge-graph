@@ -6341,6 +6341,207 @@
         "gate_passed": true,
         "source_label": "黑龙江省政府/科普中国"
       }
+    },
+    {
+      "id": "disc-286",
+      "title": "35岁控糖警戒线——糖尿病正在年轻化",
+      "angle": "健康趋势科普。CCTV、中国疾控中心及《中国糖尿病防治指南（2024版）》均将糖尿病筛查年龄从40岁提前至35岁。过去30年全球15-34岁人群2型糖尿病发病率近乎翻倍。口播可结合「35岁是代谢分水岭」这一认知冲突点，警示年轻群体提前关注血糖。",
+      "category": "健康趋势",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "CCTV、中国疾控中心2025研究、ADA指南、界面新闻",
+      "source_urls": [
+        "https://ysxw.cctv.cn/article.html?channelId=1119&item_id=6302386953359232560",
+        "https://m.jiemian.com/article/13858011.html",
+        "http://news.qq.com/rain/a/20260516A08I3800"
+      ],
+      "status": "discovered",
+      "discovered_date": "2026-09-06",
+      "publish_status": "pending",
+      "script_status": "pending",
+      "platform_data": {
+        "evidence_tier": "A",
+        "gate_passed": true,
+        "source_label": "CCTV/中国疾控中心/ADA指南",
+        "use_as": "cite_directly"
+      }
+    },
+    {
+      "id": "disc-287",
+      "title": "低GI零食打假——月销十万的\"低GI\"实测升糖比白米饭还高",
+      "angle": "测评打假。什么值得买汇总180位作者实测：某款月销十万+的\"低GI饼干\"实测GI值高达68，超过白米饭。低GI≠低热量、≠健康，部分低GI饼干脂肪堪比薯片。口播可做「你买的低GI可能是假的」冲突选题，教观众看配料表和检测报告。",
+      "category": "测评打假",
+      "platform": "dy,xhs",
+      "duration": "20-30s",
+      "heat": "hot",
+      "heat_source": "什么值得买（180位作者汇总）、新京报",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/ak8p2x94/",
+        "https://c.m.163.com/news/a/L5RLLUN10514BV6Q.html",
+        "https://www.bjnews.com.cn/detail/1758763550168697.html"
+      ],
+      "status": "discovered",
+      "discovered_date": "2026-09-06",
+      "publish_status": "pending",
+      "script_status": "pending",
+      "platform_data": {
+        "evidence_tier": "D",
+        "gate_passed": true,
+        "source_label": "UGC实测/消费媒体",
+        "use_as": "verify_before_script",
+        "required_hedges": [
+          "部分产品存在个体差异",
+          "以具体检测报告为准"
+        ],
+        "forbidden_expressions": [
+          "所有低GI零食都是智商税",
+          "绝对假"
+        ]
+      }
+    },
+    {
+      "id": "disc-288",
+      "title": "二甲双胍争议——\"神药\"期望 vs 副作用现实",
+      "angle": "用药科普。二甲双胍作为60年老药，近年被赋予减重、抗衰期望，但2026年研究显示其无法改善非糖尿病人群身体机能，且长期服用或加速脑衰老。常见副作用：胃肠道反应（约20%）、维生素B12缺乏、乳酸酸中毒（罕见但致死率高）。口播须强调：药物需遵医嘱，不可自行服用。",
+      "category": "用药科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "腾讯新闻、北京日报、家庭医生在线",
+      "source_urls": [
+        "http://news.qq.com/rain/a/20260831A03W1V00",
+        "https://xinwen.bjd.com.cn/content/s6976dcbfe4b0687a28904b31.html",
+        "https://m.familydoctor.cn/hlthsci/erjiashuanggua-jianfei-zhen-xiangyu-fengxian-xu-renqing-420297.html"
+      ],
+      "status": "discovered",
+      "discovered_date": "2026-09-06",
+      "publish_status": "pending",
+      "script_status": "pending",
+      "platform_data": {
+        "evidence_tier": "B",
+        "gate_passed": true,
+        "source_label": "医疗媒体/医生提醒",
+        "use_as": "verify_before_script",
+        "required_hedges": [
+          "请遵医嘱",
+          "个体情况不同，不可自行用药",
+          "本内容不构成医疗建议"
+        ],
+        "forbidden_expressions": [
+          "二甲双胍一定",
+          "保证减重",
+          "绝对安全"
+        ]
+      }
+    },
+    {
+      "id": "disc-289",
+      "title": "动态血糖仪(CGM)选购——国产vs进口怎么选",
+      "angle": "器械测评。2026年CGM选购核心看三维度：MARD值（准不准，越低越好）、续航时长（14-16天主流）、佩戴体验（防水等级/胶贴/厚度）。国产三诺爱看i6、硅基动感GS3、微泰二代等已获iCGM认证，性价比优于进口。口播可做「从指尖血升级到动态监测」的科普+选购指南。",
+      "category": "器械测评",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "咸宁新闻网、CSDN、什么值得买",
+      "source_urls": [
+        "http://m.xnnews.com.cn/kjzx/202607/t20260728_5151377.shtml",
+        "https://www.csdn.net/article/2026-05-08/160886469",
+        "https://post.smzdm.com/p/avgn92qp"
+      ],
+      "status": "discovered",
+      "discovered_date": "2026-09-06",
+      "publish_status": "pending",
+      "script_status": "pending",
+      "platform_data": {
+        "evidence_tier": "C",
+        "gate_passed": true,
+        "source_label": "消费测评/科技媒体",
+        "use_as": "verify_before_script"
+      }
+    },
+    {
+      "id": "disc-290",
+      "title": "胰岛素抵抗——吃得少却瘦不下来的隐形阻碍",
+      "angle": "健康科普。CCTV/人民网报道：代谢疾病年轻化根源之一是胰岛素抵抗。早期可逆，减重5%-10%可大幅提升胰岛素敏感性。改善四维度：低GI饮食、科学减重（每周0.5-1kg）、规律运动（每周150分钟有氧+抗阻）、充足睡眠。口播可切中「少吃也不瘦」的普遍焦虑。",
+      "category": "健康科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "CCTV、人民网健康、健康时报",
+      "source_urls": [
+        "https://news.cctv.com/2026/05/01/ARTIEqzJ18OnVy4l1bv1QX4f260430.shtml",
+        "http://health.people.com.cn/n1/2026/0501/c14739-40712529.html",
+        "http://paper.people.com.cn/jksb/pc/content/202603/13/content_30148679.html"
+      ],
+      "status": "discovered",
+      "discovered_date": "2026-09-06",
+      "publish_status": "pending",
+      "script_status": "pending",
+      "platform_data": {
+        "evidence_tier": "C",
+        "gate_passed": true,
+        "source_label": "权威媒体健康频道",
+        "use_as": "cite_directly"
+      }
+    },
+    {
+      "id": "disc-291",
+      "title": "糖前期逆转——抓住黄金干预期",
+      "angle": "健康科普。央视网/光明网：糖尿病前期有三种转归（恢复正常/维持/进展）。《中国2型糖尿病防治指南（2024版）》明确生活方式干预为首选：规范减重5%-7%、维持规律运动可降低40%-58%进展风险。口播重点：糖前期是\"可逆窗口期\"，但\"逆转\"不等于\"治愈\"，需长期管理。",
+      "category": "健康科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "央视网、光明网、指南引用",
+      "source_urls": [
+        "http://jiankang.cctv.com/2026/07/01/ARTIz4OY6xfbMkKTmLmASSAV260701.shtml",
+        "http://health.gmw.cn/2026-07/20/content_38889899.htm",
+        "https://news.cctv.cn/2025/11/14/ARTIZqLokgFqf5VxQ4gv18xs251114.shtml"
+      ],
+      "status": "discovered",
+      "discovered_date": "2026-09-06",
+      "publish_status": "pending",
+      "script_status": "pending",
+      "platform_data": {
+        "evidence_tier": "B",
+        "gate_passed": true,
+        "source_label": "央视网/光明网/指南",
+        "use_as": "verify_before_script",
+        "required_hedges": [
+          "逆转指恢复血糖正常，不等于治愈",
+          "需长期坚持生活方式干预"
+        ]
+      }
+    },
+    {
+      "id": "disc-292",
+      "title": "\"无糖\"零食陷阱——糖醇过量反而腹胀腹泻",
+      "angle": "测评打假。什么值得买实测：12款网红低卡零食中，67%试吃者摄入混合糖醇后出现腹胀或腹泻，某魔芋爽单包糖醇总量超耐受阈值3倍。\"无糖\"≠\"无负担\"，糖醇（赤藓糖醇、麦芽糖醇）过量会扰乱肠道。口播可做「你以为的健康零食正在伤你的胃」警示选题。",
+      "category": "测评打假",
+      "platform": "dy,xhs",
+      "duration": "20-30s",
+      "heat": "warm",
+      "heat_source": "什么值得买UGC实测",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/a4qednpl/"
+      ],
+      "status": "discovered",
+      "discovered_date": "2026-09-06",
+      "publish_status": "pending",
+      "script_status": "pending",
+      "platform_data": {
+        "evidence_tier": "D",
+        "gate_passed": true,
+        "source_label": "UGC实测（单一来源）",
+        "use_as": "hook_only",
+        "agent_hints": {
+          "top_script_angles": {
+            "why_selected": "反映年轻群体对\"无糖\"标签的盲目信任，适合作为辟谣/科普钩子",
+            "risk_note": "67%为单一来源数据，口播中应标注\"据某测评博主实测\"，不可作为医学统计结论"
+          }
+        }
+      }
     }
   ],
   "archive": [
