@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-09-02",
+  "updated": "2026-09-07",
   "topics": [
     {
       "id": "disc-016",
@@ -6542,6 +6542,129 @@
           }
         }
       }
+    },
+    {
+      "id": "disc-293",
+      "title": "CGM焦虑症——贴上动态血糖仪后，年轻人吃口米饭就恐慌",
+      "angle": "CGM从糖尿病管理工具变成年轻人健康潮流，但过度监测带来焦虑。澎湃新闻报道年轻人因一口米饭血糖升高而恐慌，引发'被动态血糖仪困住的年轻人'讨论。角度：工具赋能还是工具绑架？个体情况请咨询医生。",
+      "category": "心理健康",
+      "platform": "xhs,dy",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "澎湃新闻2026年报道'被困在动态血糖检测仪里的年轻人'，社交平台'控血糖'成健康新潮流",
+      "source_urls": [
+        "https://m.thepaper.cn/newsDetail_forward_33271085"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-07"
+    },
+    {
+      "id": "disc-294",
+      "title": "\"控糖\"\"抗炎\"成年轻人饮食新标签——无糖茶饮、姜黄粉走红",
+      "angle": "信息时报2026年8月报道：年轻人主动拒绝含糖饮料，无糖茶饮、姜黄粉、鱼油等'抗炎'健康产品走俏。控糖+抗炎成为饮食身份认同。角度：从'戒糖'到'抗炎'，年轻人饮食观念升级。",
+      "category": "饮食趋势",
+      "platform": "xhs,dy,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "信息时报2026-08-18报道'控糖抗炎成年轻人饮食新标签'，碳酸饮料'送都送不出去'成热议",
+      "source_urls": [
+        "https://huacheng.gz-cmc.com/pages/2026/08/18/b42db82939854bd1ac4bf95b44081c44.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-07"
+    },
+    {
+      "id": "disc-295",
+      "title": "中秋低糖月饼真相——代糖≠不升糖，热量仍超标",
+      "angle": "什么值得买测评低糖/无糖月饼：代糖款GI 35-65，无糖款0-35（糖醇为主），但热量仍200-300大卡/块。角度：季节性选题，低糖月饼的升糖指数和热量实测对比，消费者避坑指南。",
+      "category": "饮食指南",
+      "platform": "xhs,dy",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "什么值得买月饼配料表热量对比测评，季节性热点（中秋临近）",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/a823xnpn/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-07"
+    },
+    {
+      "id": "disc-296",
+      "title": "控糖\"211吃法\"+吃饭顺序——真的能稳血糖？",
+      "angle": "什么值得买+广东省疾控科普控糖饮食方案：211餐盘法（2份蔬菜+1份蛋白+1份主食）+蔬菜→蛋白质→主食进食顺序。隐形升糖陷阱：红烧/糖醋菜、浓肉汤、酱料。角度：可操作的控糖饮食方法实测。",
+      "category": "饮食指南",
+      "platform": "xhs,dy",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "什么值得买控糖饮食方案汇总+广东省疾控'升糖高手'科普，127位用户真实体验",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/aomdp8r7/",
+        "http://cdcp.gd.gov.cn/jkjy/jkts/content/mpost_4846630.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-07"
+    },
+    {
+      "id": "disc-297",
+      "title": "二甲双胍→B12缺乏→假性痴呆？被忽视的长期用药认知风险",
+      "angle": "PMC多项研究：长期二甲双胍治疗与维生素B12缺乏显著相关。Psychiatria Danubina病例报告：60岁女性因二甲双胍致B12缺乏出现假性痴呆。角度：长期用药者需定期查B12，认知功能下降可能不是老而是药源性。个体情况请咨询医生，不构成医疗建议。",
+      "category": "用药安全",
+      "platform": "bili,dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "PMC系统综述+Psychiatria Danubina病例报告，长期二甲双胍→B12缺乏→假性痴呆链条",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11374140/",
+        "https://www.psychiatria-danubina.com/UserDocsImages/pdf/dnb_vol37_no3/dnb_vol37_no3_370.pdf"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-07"
+    },
+    {
+      "id": "disc-298",
+      "title": "低GI主食改写中国饭碗——从\"病人专用\"到2500亿大市场",
+      "angle": "界面新闻报道：低GI主食从'病人专用'变成'健康生活方式'标签。小红书'低GI主食'笔记持续攀升，从健身博主减脂餐到白领轻食推荐。市场规模2024年1762亿→预计2026年突破2500亿。角度：产业+文化双视角，控糖主食的全民化运动。",
+      "category": "产业趋势",
+      "platform": "xhs,dy,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "界面新闻'每3个成年人就有1个要控糖'+36kr产业报道，低GI食品市场年增长率超40%",
+      "source_urls": [
+        "https://m.jiemian.com/article/14935626.html",
+        "https://36kr.com/p/3943392340917383"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-07"
+    },
+    {
+      "id": "disc-299",
+      "title": "iCGM标准来了——13项性能指标终结CGM精度乱象",
+      "angle": "网易新闻报道：传统CGM精度参差不齐，国际提出iCGM（集成式持续葡萄糖监测系统）标准，涵盖13项严格性能指标。肖新华教授：目标范围内时间90%比60%平稳得多。角度：选购CGM不能只看品牌，要看iCGM认证标准。个体情况请咨询医生。",
+      "category": "器械测评",
+      "platform": "bili,dy",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "网易新闻光看血糖数值不够+什么值得买4款国产CGM对比测评+2026选购指南",
+      "source_urls": [
+        "https://www.163.com/dy/article/KTTUITL4052583KJ.html",
+        "https://post.smzdm.com/p/avgn92qp"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-07"
     }
   ],
   "archive": [
