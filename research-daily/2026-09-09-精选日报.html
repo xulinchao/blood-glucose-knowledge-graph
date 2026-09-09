@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>血糖控糖精选日报 · 2026-09-09</title>
+
+<style>
+
+:root { --bg:#0f1117; --bg2:#1a1d27; --ink:#e8eaed; --muted:#8b8fa3; --accent:#00d4aa; --accent2:#ff6b6b; --accent3:#ffd93d; --accent4:#6c8cff; --rule:#2a2d3a; }
+
+* { box-sizing:border-box; margin:0; padding:0; }
+
+body { font-family:-apple-system,'Segoe UI','Noto Sans CJK SC',sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; }
+
+.wrap { max-width:920px; margin:0 auto; padding:28px 18px 48px; }
+
+.hero { text-align:center; padding-bottom:24px; border-bottom:1px solid var(--rule); margin-bottom:24px; }
+
+.hero .tag { display:inline-block; background:linear-gradient(135deg,var(--accent),var(--accent4)); color:var(--bg); font-size:11px; font-weight:700; padding:4px 12px; border-radius:20px; margin-bottom:10px; }
+
+.hero h1 { font-size:24px; margin-bottom:6px; }
+
+.hero p { color:var(--muted); font-size:13px; }
+
+.stats { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:28px; }
+
+.stat { background:var(--bg2); border:1px solid var(--rule); border-radius:10px; padding:10px 14px; min-width:88px; }
+
+.stat b { display:block; font-size:20px; color:var(--accent); }
+
+.stat span { font-size:11px; color:var(--muted); }
+
+h2 { font-size:16px; color:var(--accent); margin:24px 0 14px; }
+
+.tl-item { display:flex; gap:14px; margin-bottom:16px; padding-bottom:16px; border-bottom:1px solid var(--rule); }
+
+.tl-rank { flex:0 0 28px; height:28px; border-radius:50%; background:var(--bg2); border:1px solid var(--rule); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; color:var(--accent); }
+
+.tl-body h3 { font-size:15px; margin-bottom:8px; font-weight:600; }
+
+.tl-meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:6px; font-size:11px; }
+
+.plat { background:rgba(0,212,170,.12); color:var(--accent); padding:2px 8px; border-radius:6px; }
+
+.score { color:var(--accent3); font-weight:600; }
+
+.heat { color:var(--muted); }
+
+.gate-ok { color:var(--accent); font-weight:700; }
+
+.gate-no { color:var(--accent2); font-weight:700; }
+
+.use { color:var(--muted); }
+
+.badge { padding:2px 7px; border-radius:4px; font-weight:700; }
+
+.tier-a,.tier-b { background:rgba(0,212,170,.15); color:var(--accent); }
+
+.tier-c { background:rgba(108,140,255,.15); color:var(--accent4); }
+
+.tier-d,.tier-e { background:rgba(255,217,61,.12); color:var(--accent3); }
+
+.flag { background:rgba(255,107,107,.12); color:var(--accent2); padding:1px 6px; border-radius:4px; }
+
+.note { font-size:12px; color:var(--muted); margin:6px 0; }
+
+.claim-checks { font-size:12px; margin:8px 0 0; padding-left:18px; list-style:disc; }
+
+.claim-checks li { margin-bottom:6px; line-height:1.5; }
+
+.claim-tag { font-size:10px; font-weight:700; padding:1px 7px; border-radius:4px; margin-left:6px; }
+
+.claim-pending_verify { background:rgba(255,217,61,.15); color:var(--accent3); }
+
+.claim-disputed,.claim-exaggerated { background:rgba(255,107,107,.12); color:var(--accent2); }
+
+.claim-opinion { background:rgba(108,140,255,.15); color:var(--accent4); }
+
+.claim-verified { background:rgba(0,212,170,.15); color:var(--accent); }
+
+.source-preview { font-size:12px; margin:10px 0; padding:10px 12px; background:rgba(108,140,255,.06); border:1px solid rgba(108,140,255,.2); border-radius:8px; }
+
+.source-preview-title { font-weight:600; margin-bottom:6px; color:var(--accent4); }
+
+.source-kp { margin:6px 0 0 18px; padding:0; line-height:1.55; }
+
+.source-excerpt { font-size:11px; white-space:pre-wrap; margin:8px 0 0; color:var(--muted); max-height:140px; overflow:auto; }
+
+.source-note { font-size:11px; color:var(--accent3); margin:6px 0 0; }
+
+.tl-foot a { color:var(--accent4); font-size:12px; text-decoration:none; }
+
+.panel { background:var(--bg2); border:1px solid var(--rule); border-radius:10px; padding:16px; margin-bottom:14px; }
+
+.panel ul { padding-left:18px; font-size:13px; }
+
+.panel li { margin-bottom:6px; }
+
+.muted { color:var(--muted); font-size:12px; }
+
+.warn { color:var(--accent2); font-size:11px; }
+
+.agent-box { font-size:12px; color:var(--muted); }
+
+.agent-box code { color:var(--accent); font-size:11px; }
+
+.footer { text-align:center; color:var(--muted); font-size:11px; margin-top:32px; padding-top:16px; border-top:1px solid var(--rule); }
+
+</style></head><body><div class="wrap">
+
+<div class="hero">
+
+  <div class="tag">CURATED · Schema 2.0</div>
+
+  <h1>血糖 / 控糖精选日报</h1>
+
+  <p>2026-09-09 · 从 329 条采集中精选 12 条 · Gate 分权排序</p>
+
+</div>
+
+<div class="stats">
+
+  <div class="stat"><b>12</b><span>时间线</span></div>
+
+  <div class="stat"><b>8</b><span>可写稿</span></div>
+
+  <div class="stat"><b>6</b><span>仅钩子</span></div>
+
+  <div class="stat"><b>1</b><span>跨平台</span></div>
+
+  <div class="stat"><b>3</b><span>新入库</span></div>
+
+</div>
+
+<div class="panel" style="border-color:var(--accent2)">⚠️ 选题积压 233 条（阈值 20），建议优先清理已有选题，本期暂缓新增</div>
+
+<section>
+
+  <h2>时间线</h2>
+
+  <article class="tl-item">
+
+  <div class="tl-rank">1</div>
+
+  <div class="tl-body">
+
+    <h3>中国糖尿病防治指南（2024版）</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">全网网页(Exa)</span>
+
+      <span class="badge tier-b">B</span>
+
+      <span class="score">可写84</span>
+
+      <span class="heat">热52</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">写稿前对照原帖/指南核实；口播避免给个体诊断</p>
+
+    <p class="source-preview muted">原贴内容未拉取：HTTP Error 403: Forbidden</p>
+
+    <ul class="claim-checks"><li><span>中国糖尿病防治指南（2024版）</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">对照指南或原链接二次查证</small></li></ul>
+
+    <div class="tl-foot"><a href="https://newdrugs.dxy.cn/pc/clinicalGuidelines/pO5WGhrIalTk_Ev_HTedvpw" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">2</div>
+
+  <div class="tl-body">
+
+    <h3>中国糖尿病前期筛查防治专家共识（2023版）_糖尿病_糖尿病如何预防 - 好大夫在线</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">全网网页(Exa)</span>
+
+      <span class="badge tier-b">B</span>
+
+      <span class="score">可写78</span>
+
+      <span class="heat">热40</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">写稿前对照原帖/指南核实；口播避免给个体诊断</p>
+
+    <p class="source-preview muted">原贴内容未拉取：HTTP Error 403: Forbidden</p>
+
+    <ul class="claim-checks"><li><span>中国糖尿病前期筛查防治专家共识（2023版）_糖尿病_糖尿病如何预防 - 好大夫在线</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">对照指南或原链接二次查证</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.haodf.com/neirong/wenzhang/9392899190.html" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">3</div>
+
+  <div class="tl-body">
+
+    <h3>公务员体检血糖超过多少就需复检</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">B站</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写74</span>
+
+      <span class="heat">热52</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>来源视频标题：公务员体检血糖超过多少就需复检</li></ul>
+<p class="source-note">该视频无 CC 字幕/简介（BV1KmPeeCEPT）。请用 `bili audio BV1KmPeeCEPT` + `agent-reach transcribe` 转写，或 opencli bilibili subtitle / 人工看视频。</p>
+<p class="muted">来源：视频简介</p>
+</div>
+
+    <ul class="claim-checks"><li><span>公务员体检血糖超过多少就需复检</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.bilibili.com/video/BV1KmPeeCEPT" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">4</div>
+
+  <div class="tl-body">
+
+    <h3>糖化血红蛋白，到底多少算达标？</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">知乎</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写74</span>
+
+      <span class="heat">热52</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <p class="source-preview muted">原贴内容未拉取：HTTP Error 403: Forbidden</p>
+
+    <ul class="claim-checks"><li><span>糖化血红蛋白，到底多少算达标？</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值</small></li></ul>
+
+    <div class="tl-foot"><a href="https://zhuanlan.zhihu.com/p/568777844" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">5</div>
+
+  <div class="tl-body">
+
+    <h3>糖化5.7%，真的要注意了</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">小红书</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写74</span>
+
+      <span class="heat">热40</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <p class="source-preview muted">原贴内容未拉取：HTTP Error 403: Forbidden</p>
+
+    <ul class="claim-checks"><li><span>糖化5.7%，真的要注意了</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">须找到原始出处（DOI/报告页），核对统计范围与时间</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.xiaohongshu.com/search_result/69d6345c00000000230244c7?xsec_token=ABgDfKLv72j8KNCKBBql7SoiPNO57kpmDOEOq5J_Y2Mbs=&amp;xsec_source=" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">6</div>
+
+  <div class="tl-body">
+
+    <h3>血糖超不超标，看双腿就知道了，腿部就是人体自带的血糖仪</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">B站</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热80</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>与其自己乱猜，不如去医院花15块钱做个血糖检测，或者某些药店活动免费测血糖</li><li>冷知识：其实想知道有没有糖尿病，最有效的方法是多测血糖[笑哭]</li></ul>
+<pre class="source-excerpt">热门评论摘录：
+冷知识：其实想知道有没有糖尿病，最有效的方法是多测血糖[笑哭]
+与其自己乱猜，不如去医院花15块钱做个血糖检测，或者某些药店活动免费测血糖
+我之前被诊断为糖前的时候，腿痒真的很明显，而且有那种蚂蚁爬的感觉，尤其是晚上躺在被窝的时候，我甚至一度以为是不是我被窝里有螨虫之类的…后来开始减肥戒糖，现在血糖降下来了，基本上正常值了吧，腿痒的症状几乎没有了…哦对了，提前说一下，我是只要洗澡就会涂身体乳，天冷的时候即便不洗澡，晚上也会涂点身体乳，所以不存在因为太干了才痒的情况…</pre>
+<p class="source-note">无逐字字幕，以下为简介/AI摘要/评论摘录；写稿前须点开原视频核对。</p>
+<p class="muted">来源：bili-cli评论</p>
+</div>
+
+    <ul class="claim-checks"><li><span>血糖超不超标，看双腿就知道了，腿部就是人体自带的血糖仪</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.bilibili.com/video/BV1U3N3zGEdt" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">7</div>
+
+  <div class="tl-body">
+
+    <h3>如果，非要，医生推荐一款血糖仪</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">B站</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热80</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>医生说可能是年轻 身体恢复的快，回家自己打啦一个月德古门冬混合的 ，因为我出院到时候只有中午餐后高啦， 到月底的时候 每天大三两个单位血糖都在正常范围， 后来就停啦 ，裸奔到现在，从2020年1月到现在两年啦，糖化稳定在5.1以下 空腹5以</li><li>我最开始的时候身体很难受，去医院检查，血糖高达35，我就去上个厕所，医院的护士到处找我</li><li>后来才知道，血糖高到33以上的，是会要人命的</li><li>第八天血糖差不多稳定在11左右了</li><li>前期的患者控糖过程中，千万不能吃太多的碳水，不然升糖嘎嘎快</li></ul>
+<pre class="source-excerpt">热门评论摘录：
+我二型的，当初发现自己口渴还一直喝就百度啦下，感觉可能是血糖高就起门诊侧拉下，好家伙i哦，19.8   第二天直接去医院啦，静脉空腹16  ，糖化11....... 糖耐医生说没必要做啦，再做更伤身体，直接住院带泵，我就每顿饭只吃一个馒头，还爬楼梯，血糖第三天就餐后十二啦，  然后跟其他病人聊天，发现啦一个恐怖的事实[脸红] 我竟然没开餐后的胰岛素，原来吃饭前需要护士来开下胰岛素[doge]  。过啦六七天就血糖稳定啦。 医生说可能是年轻 身体恢复的快，回家自己打啦一个月德古门冬混合的  ，因为我出院到时候只有中午餐后高啦， 到月底的时候  每天大三两个单位血糖都在正常范围， 后来就停啦  ，裸奔到现在，从2020年1月到现在两年啦，糖化稳定在5.1以下    空腹5以下，。餐后7以下  。
+我最开始的时候身体很难受，去医院检查，血糖高达35，我就去上个厕所，医院的护士到处找我。后来才知道，血糖高到33以上的，是会要人命的。当天晚上我住院了，一天一周天天躺在床上，泵着胰岛素。第八天血糖差不多稳定在11左右了。后面出院后，我用了半个月彻底控糖平稳了。医生跟我说，少油少盐，少吃多餐。其实我更把他当做减脂餐来吃。前期的患者控糖过程中，千万不能吃太多的碳水，不然升糖嘎嘎快。多吃蔬菜，不要熬夜。基本一个星期左右差不多就可以控下来了
+医院大多用的罗氏强生拜耳这几个品牌</pre>
+<p class="muted">来源：bili-cli评论</p>
+</div>
+
+    <ul class="claim-checks"><li><span>如果，非要，医生推荐一款血糖仪</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.bilibili.com/video/BV1Jq4y1g7LV" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">8</div>
+
+  <div class="tl-body">
+
+    <h3>40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">YouTube</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热75</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<pre class="source-excerpt">🍎大家好，我是张之瀛🙏，一名温暖可靠的心血管医生，在这里分享一些大众的健康问题，🙏🙏《欢迎订阅，欢迎分享，每天更新》 #张之瀛大夫 #张之瀛</pre>
+<p class="muted">来源：YouTube(yt-dlp)</p>
+</div>
+
+    <ul class="claim-checks"><li><span>40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值</small></li><li><span>大家好，我是张之瀛  ，一名温暖可靠的心血管医生，在这里分享一些大众的健康问题，    《欢迎订阅，欢迎分享，每天更新》 ...</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.youtube.com/watch?v=rDDfzPM4WQU" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">9</div>
+
+  <div class="tl-body">
+
+    <h3>糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">B站</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热70</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>好绝望，我妈妈那边有家族史，一大家子都二型，我21，多囊检查胰岛素抵抗的时候发现餐二8.7，其他正常，我是不是过几年也会得啊，我很瘦，平常也不爱吃甜，有时候感觉真的好不公平，有些人一辈子高碳水饮食吃吃喝喝的都不会得，为什么我就会得……</li><li>今天去查了血糖，餐前5.1，喝完葡萄糖两个小时后是7.8了，因为学校化验室一直没人，到十点多才做上，空腹大概15.6个小时，会不会是空腹时间太长了[doge]我以为血糖会变好，结果这样了</li><li>现在我每天低碳水饮食，主食换成红薯紫薯，每晚运动半小时，每天一片二甲双胍，这样有希望一直维持不得糖尿病吗</li><li>今年四月份测血糖餐前6.2 ，喝完葡萄糖两小时后是7.1</li><li>积极干预如果糖耐量异常赶紧减少主食摄入量增加蔬菜摄入，戒烟戒酒，不吃零食，不吃宵夜，积极运动，按时睡觉，能吃二甲双胍赶紧吃，血糖一到两个月应该就能稳定不再恶化</li></ul>
+<p class="muted">来源：视频简介、bili-cli评论</p>
+</div>
+
+    <ul class="claim-checks"><li><span>糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.bilibili.com/video/BV1f84y1q7aA" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">10</div>
+
+  <div class="tl-body">
+
+    <h3>普通人怎么判断自己是不是糖尿病有什么症状？</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">B站</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热70</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>昨天刚去，空腹血糖已经5.94，ogtt一小时11.94，两小时10.4，胰岛素空腹就超了，糖后一小时翻倍超了，两小时还更多了，已经胰岛素抵抗了，我这种应该算糖前了[笑哭]</li><li>越关注越焦虑，最近也是刷一些健康视频，感觉说的各种症状都有点，刚开始是各种癌症，后来又关注脑梗心梗这些，现在又关注血糖血压这种，每次排除了一种病，又能刷到一种能对号入座的，一检查又啥事没有，都快被吓到不能正常生活了[笑哭]</li><li>进icu了 体重从100多斤直接瘦到50多斤 当时在病床上躺了有半个月 当时上厕所也是在床上 治疗了一段时间后可以下床了，我很开心 可我不会走路了 连最基本的走路都要摔倒 只能扶着我妈妈走 如果能重来 我希望当时的我不要再吃那么多垃圾食品 </li><li>那是我第1次直观的感受到了昏迷是什么感觉 很困很困 眼睛睁不开 一直想睡觉 身上插着管子 肚子上胳膊上</li></ul>
+<pre class="source-excerpt">热门评论摘录：
+我给大家说一下吧 早期确实没有什么症状 我都挺正常的 也不知道自己得了糖尿病 还在吃零食垃圾食品 后来症状开始变得明显了 一直口干舌燥 就是喝很多很多水 一点渴的症状也没法缓解  还总是想上厕所  就感觉自己需要喝很多很多的水 皮肤变黄 一吃东西就想吐 醒来第1件事就是往嘴里猛灌水 我知道没用 可是心理作用让我觉得喝水能减少那种很渴的感觉 可能在这不久之前我就已经得了糖尿病了 可我自己不知道 然后我妈妈带我去医院查了一下 当时血糖直接飙到30多 可以说我当时已经算是酮症酸中毒了 然后就上救护车了。那是我第1次直观的感受到了昏迷是什么感觉 很困很困 眼睛睁不开 一直想睡觉 身上插着管子 肚子上胳膊上。 进icu了  体重从100多斤直接瘦到50多斤 当时在病床上躺了有半个月 当时上厕所也是在床上 治疗了一段时间后可以下床了，我很开心 可我不会走路了 连最基本的走路都要摔倒 只能扶着我妈妈走 如果能重来 我希望当时的我不要再吃那么多垃圾食品 不要暴饮暴食[委屈][委屈][委屈]
+越关注越焦虑，最近也是刷一些健康视频，感觉说的各种症状都有点，刚开始是各种癌症，后来又关注脑梗心梗这些，现在又关注血糖血压这种，每次排除了一种病，又能刷到一种能对号入座的，一检查又啥事没有，都快被吓到不能正常生活了[笑哭]
+昨天刚去，空腹血糖已经5.94，ogtt一小时11.94，两小时10.4…</pre>
+<p class="muted">来源：bili-cli评论</p>
+</div>
+
+    <ul class="claim-checks"><li><span>普通人怎么判断自己是不是糖尿病有什么症状？</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.bilibili.com/video/BV1QALx6cELU" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">11</div>
+
+  <div class="tl-body">
+
+    <h3>空腹血糖和餐后血糖，究竟哪一个更重要？医生告诉你正确答案！</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">B站</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热70</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>每个人讲的都不一样，我空腹血糖6.1 糖化6.8 医生说控制的不错挺好的，我说这样不是达不到标准嘛，他说我们正常有个6开头的就都算及格了哪有那么多所谓的标准，每个人体质不一样不可能有一个标准，有的人高点没啥事，有的人低点反而出问题</li><li>空腹血糖8.5，经过两个礼拜的锻炼和控食空腹血糖将至6.2，偶尔不锻炼或者不控食的时候空腹血糖七点多，请问算不算糖尿病呢</li><li>不同量的食物吸收时间和方式也不一样，那假如糖耐量实验的结果显示糖耐量受损，但进食大量面条消化的慢，那胃不是一直往小肠送食物吗，那餐后2小时还在持续吸收糖分，就和缓释剂原理差不多，那这个餐后2小时真的是餐后2小时吗，还是说以糖耐量实验继续作为</li></ul>
+<pre class="source-excerpt">热门评论摘录：
+每个人讲的都不一样，我空腹血糖6.1   糖化6.8  医生说控制的不错挺好的，我说这样不是达不到标准嘛，他说我们正常有个6开头的就都算及格了哪有那么多所谓的标准，每个人体质不一样不可能有一个标准，有的人高点没啥事，有的人低点反而出问题。
+空腹血糖8.5，经过两个礼拜的锻炼和控食空腹血糖将至6.2，偶尔不锻炼或者不控食的时候空腹血糖七点多，请问算不算糖尿病呢？需要服用药物吗？
+不同量的食物吸收时间和方式也不一样，那假如糖耐量实验的结果显示糖耐量受损，但进食大量面条消化的慢，那胃不是一直往小肠送食物吗，那餐后2小时还在持续吸收糖分，就和缓释剂原理差不多，那这个餐后2小时真的是餐后2小时吗，还是说以糖耐量实验继续作为金标准？</pre>
+<p class="muted">来源：bili-cli评论</p>
+</div>
+
+    <ul class="claim-checks"><li><span>空腹血糖和餐后血糖，究竟哪一个更重要？医生告诉你正确答案！</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.bilibili.com/video/BV1zT411y7Fu" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">12</div>
+
+  <div class="tl-body">
+
+    <h3>糖耐量异常怎么才能恢复正常</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">小红书</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热67</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <p class="source-preview muted">原贴内容未拉取：HTTP Error 403: Forbidden</p>
+
+    <ul class="claim-checks"><li><span>糖耐量异常怎么才能恢复正常</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.xiaohongshu.com/search_result/6a9a68ba000000001103943d?xsec_token=ABA7W6saUE-gmOogPQ81xhfLWgt9JnrnDOtXyhr9allpU=&amp;xsec_source=" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article>
+
+</section>
+
+<div class="panel"><h2 style="margin-top:0">可写稿选题</h2><ul><li><strong>中国糖尿病防治指南（2024版）</strong> <span class='muted'>B/写稿前核实</span></li><li><strong>中国糖尿病前期筛查防治专家共识（2023版）_糖尿病_糖尿病如何预防 - 好大夫在线</strong> <span class='muted'>B/写稿前核实</span></li><li><strong>公务员体检血糖超过多少就需复检</strong> <span class='muted'>C/写稿前核实</span></li><li><strong>糖化血红蛋白，到底多少算达标？</strong> <span class='muted'>C/写稿前核实</span></li><li><strong>糖化5.7%，真的要注意了</strong> <span class='muted'>C/写稿前核实</span></li><li><strong>血糖超不超标，看双腿就知道了，腿部就是人体自带的血糖仪</strong> <span class='muted'>C/写稿前核实</span></li><li><strong>如果，非要，医生推荐一款血糖仪</strong> <span class='muted'>C/写稿前核实</span></li><li><strong>40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压</strong> <span class='muted'>C/写稿前核实</span></li></ul></div>
+
+<div class="panel"><h2 style="margin-top:0">跨平台同题</h2><ul><li>N/A — <span class='muted'>Reddit, X/Twitter, YouTube, 全网网页(Exa)</span></li></ul></div>
+
+<div class="panel"><h2 style="margin-top:0">仅钩子</h2><ul><li>血糖真相：高血糖是如何钝刀割肉，腐蚀数亿人的血管和神经的？ <span class='warn'>hook · 热87</span></li><li>你的血糖是如何失控的？ <span class='warn'>hook · 热87</span></li><li>和医生们用动态血糖仪20天后，大家开始集体反思了！（无广真实分享） <span class='warn'>hook · 热87</span></li><li>糖尿病：截肢失明透析 数亿国人体内的定时炸弹 <span class='warn'>hook · 热87</span></li><li>【医学博士】得了糖尿病才知道什么叫碳水炸弹｜糖尿病应该怎么治疗？ <span class='warn'>hook · 热87</span></li><li>血糖最新標準，血糖正常值最新标准，空腹血糖正常值是多少? #空腹血糖值#飯後血糖值 <span class='warn'>hook · 热87</span></li></ul></div>
+
+<div class="panel"><h2 style="margin-top:0">Agent 待核实</h2><ul><li>中国糖尿病防治指南（2024版） — 写稿前对照原帖/指南核实；口播避免给个体诊断</li><li>中国糖尿病前期筛查防治专家共识（2023版）_糖尿病_糖尿病如何预防 - 好大夫 — 写稿前对照原帖/指南核实；口播避免给个体诊断</li><li>公务员体检血糖超过多少就需复检 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿</li><li>糖化血红蛋白，到底多少算达标？ — 可讲话题，关键数字须二次查证；建议找指南或医生审稿</li><li>糖化5.7%，真的要注意了 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿</li><li>血糖超不超标，看双腿就知道了，腿部就是人体自带的血糖仪 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿</li><li>如果，非要，医生推荐一款血糖仪 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿</li><li>40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿</li></ul>
+
+<div class="agent-box" style="margin-top:10px">JSON: <code>data/exports/daily-brief-2026-09-09.json</code> · Markdown: <code>research-daily/2026-09-09-精选日报.md</code></div></div>
+
+<div class="footer">个体情况请咨询医生，不构成医疗建议 · 维护者非执业医生</div>
+
+</div></body></html>
