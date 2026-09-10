@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-09-09",
+  "updated": "2026-09-10",
   "topics": [
     {
       "id": "disc-016",
@@ -6837,7 +6837,9 @@
             "引用专家观点（北大公卫学院/协和医院/复旦社会学系）"
           ],
           "evidence_tier": "B",
-          "adversarial_flags": ["commercial_hook"],
+          "adversarial_flags": [
+            "commercial_hook"
+          ],
           "use_as": "cite_directly",
           "creator_note": "可引用媒体观点和专家引言；口播须加「非医疗建议」并注明信息来源为网上讨论"
         },
@@ -6890,7 +6892,9 @@
             "有具体产品名和检测数据"
           ],
           "evidence_tier": "A",
-          "adversarial_flags": ["commercial_hook"],
+          "adversarial_flags": [
+            "commercial_hook"
+          ],
           "use_as": "cite_directly",
           "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
         },
@@ -7153,7 +7157,9 @@
             "有具体产品检测数值"
           ],
           "evidence_tier": "B",
-          "adversarial_flags": ["commercial_hook"],
+          "adversarial_flags": [
+            "commercial_hook"
+          ],
           "use_as": "verify_before_script",
           "creator_note": "写稿前回源核实具体检测数据；口播须加「非医疗建议」"
         },
@@ -7205,7 +7211,9 @@
             "有临床试验数据和监管机构警示"
           ],
           "evidence_tier": "A",
-          "adversarial_flags": ["commercial_hook"],
+          "adversarial_flags": [
+            "commercial_hook"
+          ],
           "use_as": "cite_directly",
           "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接；不得推荐用药"
         },
@@ -7230,6 +7238,350 @@
         "适应症：2型糖尿病+肥胖症，非减肥万能药",
         "与SGLT2i联用可增加酮症酸中毒风险"
       ]
+    },
+    {
+      "id": "disc-311",
+      "title": "血糖高为什么要做糖耐量试验 - 北京市卫生健康委员会",
+      "angle": "全网网页(Exa) · 证据层级A · cite_directly · 可引用来源观点，口播须加「非医疗建议」并附原链接",
+      "category": "数字科普",
+      "platform": "dy,bili",
+      "duration": "60-90s",
+      "heat": "steady",
+      "heat_source": "每日采集 全网网页(Exa) · 选题分 91 · 互动 -",
+      "source_urls": [
+        "https://wjw.beijing.gov.cn/bmfw_20143/jkzs/jbzs/201912/t20191217_1250199.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-10",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 91,
+          "label": "较高",
+          "reasons": [
+            "一级来源：指南/政府/期刊域名",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+        },
+        "importance": {
+          "score": 40,
+          "label": "低",
+          "reasons": []
+        },
+        "topic_score": 91,
+        "platform": "exa",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-312",
+      "title": "糖尿病前期：要不要用药？怎么用？ - 丁香园",
+      "angle": "全网网页(Exa) · 证据层级B · verify_before_script · 写稿前对照原帖/指南核实；口播避免给个体诊断",
+      "category": "避坑指南",
+      "platform": "dy,bili",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 全网网页(Exa) · 选题分 78 · 互动 -",
+      "source_urls": [
+        "https://endo.dxy.cn/article/529644"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-10",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 78,
+          "label": "较高",
+          "reasons": [
+            "二级来源：医疗专业平台"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "写稿前对照原帖/指南核实；口播避免给个体诊断"
+        },
+        "importance": {
+          "score": 40,
+          "label": "低",
+          "reasons": []
+        },
+        "topic_score": 78,
+        "platform": "exa",
+        "evidence_tier": "B",
+        "use_as": "verify_before_script",
+        "creator_note": "写稿前对照原帖/指南核实；口播避免给个体诊断"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-313",
+      "title": "糖化血红蛋白是什么，怎么去控制？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "60-90s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 2897",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1ru4y1i7RJ"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-10",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 62,
+          "label": "中",
+          "reasons": [
+            "有一定互动(2,897)",
+            "命中关键词「糖化血红蛋白」"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-314",
+      "title": "糖化血红蛋白6.5%，是不是糖尿病？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "辟谣纠偏",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 798",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1srkfBmEDx"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-10",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 52,
+          "label": "中",
+          "reasons": [
+            "命中关键词「糖化血红蛋白」"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-315",
+      "title": "揭秘控糖神药：人参苦瓜荞麦片，成分里竟然含糖",
+      "angle": "央视调查某热销控糖产品实为运动营养食品，配料表前三位是升糖成分。适合打假辟谣方向，揭露网红控糖产品营销套路",
+      "category": "打假辟谣",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "央视网2026-01调查报道；万益蓝控控片黑猫投诉超1561条",
+      "source_urls": [
+        "https://news.cctv.com/2026/01/13/ARTIy7jxyP3viDwJn1R5viwl260113.shtml",
+        "https://m.bjnews.com.cn/detail/1758763550168697.html",
+        "http://zxb.ccn.com.cn/html/zxb/20260715/138789.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-10",
+      "evidence_tier": "B",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "writability_score": 78,
+      "authenticity_score": 82,
+      "agent_hint": "打假方向高传播性，但需核实央视报道细节，不得直接推荐替代产品"
+    },
+    {
+      "id": "disc-316",
+      "title": "半夜低血糖、晨起空腹高血糖？你可能遇到了苏木吉现象",
+      "angle": "血糖忽高忽低的常见但难以自我判断的现象，适合用通俗科普解释苏木吉现象和黎明现象的区别",
+      "category": "数字科普",
+      "platform": "bili,dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "B站搜索'血糖突高突低'有多条相关视频",
+      "source_urls": [
+        "https://search.bilibili.com/all?keyword=%E8%A1%80%E7%B3%96%E7%AA%81%E9%AB%98%E7%AA%81%E4%BD%8E"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-10",
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "writability_score": 74,
+      "authenticity_score": 68,
+      "agent_hint": "涉及用药调整语境（低血糖处理），须标注请咨询医生"
+    },
+    {
+      "id": "disc-317",
+      "title": "查出糖耐量受损后，我三个月减了25斤，逆转了胰岛素抵抗",
+      "angle": "B站用户实践类内容+光明网报道糖前期黄金干预期，适合作为控糖生活方式案例选题",
+      "category": "人群关注",
+      "platform": "bili,dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "B站播放量7396；光明网2026-07报道糖前期干预可实现血糖缓解",
+      "source_urls": [
+        "https://search.bilibili.com/all?keyword=%E8%A1%80%E7%B3%96%E7%AA%81%E9%AB%98%E7%AA%81%E4%BD%8E",
+        "http://health.gmw.cn/2026-07/20/content_38889899.htm",
+        "https://fjwsb.fjdaily.com/pad/con/202502/13/content_430013.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-10",
+      "evidence_tier": "B",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "writability_score": 72,
+      "authenticity_score": 70,
+      "agent_hint": "逆转是医学讨论话题，不承诺治愈；个体案例不得写成普遍规律"
+    },
+    {
+      "id": "disc-318",
+      "title": "三款国产动态血糖仪实测：MARD值、续航、防水全测评",
+      "angle": "2026年国产品牌CGM热度上升，网易/什么值得买出现国产CGM MARD值对比和选购测评内容，适合产品横评",
+      "category": "产品测评",
+      "platform": "dy,bili,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "网易科技2026-05报道国产CGM MARD值进入个位数；什么值得买三款国产CGM实测；B站三诺CGM评测播放量9.1万",
+      "source_urls": [
+        "https://www.163.com/tech/article/L29M1B6J00099BK0.html",
+        "https://post.m.smzdm.com/p/axkexe33/",
+        "https://search.bilibili.com/all?keyword=%E8%A1%80%E7%B3%96%E7%AA%81%E9%AB%98%E7%AA%81%E4%BD%8E"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-10",
+      "evidence_tier": "B",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "writability_score": 70,
+      "authenticity_score": 72,
+      "agent_hint": "产品测评不等于推荐购买，须标注个体差异；不附购买链接"
+    },
+    {
+      "id": "disc-319",
+      "title": "长期吃二甲双胍的糖友注意：这些副作用你可能不知道",
+      "angle": "B站二甲双胍副作用相关视频播放量5万+，适合用药安全科普方向，但涉及处方药须谨慎处理",
+      "category": "用药科普",
+      "platform": "bili,dy",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "B站'二甲双胍四大副作用'播放量5.0万；'服用二甲双胍期间4种情况'播放量1.8万",
+      "source_urls": [
+        "https://search.bilibili.com/all?keyword=%E4%BA%8C%E7%94%B2%E5%8F%8C%E9%85%92%E9%85%B8%20%E5%89%AF%E4%BD%9C%E7%94%A8%20%E4%BA%89%E8%AE%AE"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-10",
+      "evidence_tier": "C",
+      "use_as": "hook_only",
+      "gate_passed": false,
+      "writability_score": 55,
+      "authenticity_score": 50,
+      "agent_hint": "涉及处方药副作用，默认仅作选题钩子，不得写停药/换药建议，须标注请咨询医生"
+    },
+    {
+      "id": "disc-320",
+      "title": "吃得少却瘦不下来？你可能忽略了胰岛素抵抗这个隐形元凶",
+      "angle": "人民网2026-05报道胰岛素抵抗与减重困难的关系，适合减肥卡壳方向的内容",
+      "category": "人群关注",
+      "platform": "dy,xhs",
+      "duration": "15-30s",
+      "heat": "warm",
+      "heat_source": "人民网2026-05报道；人民日报3月报道胰岛素抵抗是多病之源",
+      "source_urls": [
+        "http://health.people.com.cn/n1/2026/0501/c14739-40712529.html",
+        "http://paper.people.com.cn/jksb/pc/content/202603/13/content_30148679.html",
+        "https://m.youlai.cn/yyk/hnote/A0A494mcafn.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-10",
+      "evidence_tier": "B",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "writability_score": 72,
+      "authenticity_score": 75,
+      "agent_hint": "人民网来源可引用但须加非医疗建议；不推荐具体治疗方案"
+    },
+    {
+      "id": "disc-321",
+      "title": "糖尿病年轻化：20-24岁男性患病率暴涨3倍，35岁是警戒线",
+      "angle": "央视网/腾讯/央广网均有报道，35岁筛查起点提前至2024版中国糖尿病防治指南，具备新闻性和紧迫感",
+      "category": "人群关注",
+      "platform": "dy,xhs,bili",
+      "duration": "15-30s",
+      "heat": "hot",
+      "heat_source": "央视网报道20-24岁男性糖尿病患病率从1.99%涨至7.42%；央广网/腾讯新闻均有报道",
+      "source_urls": [
+        "https://ysxw.cctv.cn/article.html?channelId=1215&item_id=6302386953359232560&toc_style_id=feeds_default",
+        "http://news.qq.com/rain/a/20260516A08I3800",
+        "http://news.cnr.cn/native/gd/20250528/t20250528_527187788.shtml",
+        "http://news.qq.com/rain/a/20260125A03HZ300"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-10",
+      "evidence_tier": "B",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "writability_score": 80,
+      "authenticity_score": 82,
+      "agent_hint": "权威媒体来源，高传播性；须核实具体数据来源年份，不得用绝对化表述"
     }
   ],
   "archive": [
