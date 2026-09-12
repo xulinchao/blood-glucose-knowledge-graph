@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-09-10",
+  "updated": "2026-09-12",
   "topics": [
     {
       "id": "disc-016",
@@ -7582,6 +7582,425 @@
       "writability_score": 80,
       "authenticity_score": 82,
       "agent_hint": "权威媒体来源，高传播性；须核实具体数据来源年份，不得用绝对化表述"
+    },
+    {
+      "id": "disc-322",
+      "title": "日本58年研究大揭秘！血糖飚升的真正元凶不是糖，而是这几种高升糖食物，记住「3吃5不吃」血糖稳定不发飙！林强医生",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "辟谣纠偏",
+      "platform": "bili,dy",
+      "duration": "60-90s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 7198",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Ua8Q6TEvf"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-12",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 50,
+          "label": "中",
+          "reasons": [
+            "有一定互动(7,198)"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-323",
+      "title": "糖尿病前期的4种表现你有吗？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 147",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1CnbG6EE3J"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-12",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 40,
+          "label": "低",
+          "reasons": []
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-324",
+      "title": "血糖多高才会有危险？医生提醒：16.7是危险值，糖友们要心中有数",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "症状预警",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 21265",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Vv4y137aw"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-12",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 58,
+          "label": "中",
+          "reasons": [
+            "互动量中等(21,265)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-325",
+      "title": "空腹血糖正常就没事了吗？#全民健康素养提升",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 2236",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1uVYT6WEZf"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-12",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 62,
+          "label": "中",
+          "reasons": [
+            "有一定互动(2,236)",
+            "命中关键词「空腹血糖正常 餐后高」"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-326",
+      "title": "为什么35岁就成了血糖管理的警戒线？",
+      "angle": "中国/美国指南均将血糖筛查年龄从40岁提早到35岁。20-24岁男性糖尿病患病率3年涨3倍多。口播可拆解'代谢断崖'与肌肉量流失的关系，引导年轻 audience 重视早期筛查。",
+      "category": "健康趋势",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "光明网/央视网报道，指南更新+发病率数据",
+      "source_urls": [
+        "http://health.gmw.cn/2026-08/25/content_38965557.htm",
+        "https://news.cctv.cn/2025/11/14/ARTIjG3ouxl6aFxxZwCliwOZ251114.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-12",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 85,
+          "label": "较高",
+          "reasons": [
+            "指南来源",
+            "官方媒体报道"
+          ],
+          "evidence_tier": "B",
+          "use_as": "cite_directly",
+          "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+        }
+      }
+    },
+    {
+      "id": "disc-327",
+      "title": "血糖超不超标，看双腿就知道？——拆解'腿部血糖仪'说法",
+      "angle": "B站热门视频(heat 80)声称腿部是人体自带血糖仪。可作为辟谣/验证选题，拆解糖尿病足/皮肤变化与血糖的关系，强调正规检测不可替代。",
+      "category": "辟谣科普",
+      "platform": "dy,xhs",
+      "duration": "15-30s",
+      "heat": "hot",
+      "heat_source": "B站搜索热度80，精选日报timeline第12条",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1c24y1d7Lc"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-12",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 60,
+          "label": "中",
+          "reasons": [
+            "B站UGC内容，需验证"
+          ],
+          "evidence_tier": "D",
+          "use_as": "hook_only",
+          "creator_note": "仅作选题钩子，不可将标题观点当医学结论"
+        }
+      }
+    },
+    {
+      "id": "disc-328",
+      "title": "10种意想不到的低GI主食，减肥可以放心吃",
+      "angle": "B站热门(heat 62)，低GI从病人专用变为健康生活方式。可转化为口播：低GI≠低热量，控糖/减脂/健身人群如何选主食。",
+      "category": "饮食指南",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "steady",
+      "heat_source": "B站精选日报timeline第6条，低GI话题累计浏览超10亿次",
+      "source_urls": [
+        "https://www.tmtpost.com/8106239.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-12",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 70,
+          "label": "中",
+          "reasons": [
+            "平台热门内容，需核实具体GI数据"
+          ],
+          "evidence_tier": "C",
+          "use_as": "verify_before_script",
+          "creator_note": "关键GI数字须二次查证，口播须加「非医疗建议」"
+        }
+      }
+    },
+    {
+      "id": "disc-329",
+      "title": "CGM动态血糖仪国产替代：三诺/万孚/雅培怎么选？",
+      "angle": "CGM从高端医疗设备走向家用，国产万孚凭8.66% MARD值+1分钟高频监测挑战进口品牌。口播可聚焦'什么人群需要CGM'和'选购3个指标'。",
+      "category": "工具测评",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "steady",
+      "heat_source": "CSDN/中华网2026年测评文章，精选日报未覆盖",
+      "source_urls": [
+        "https://www.csdn.net/article/2026-05-08/160886469",
+        "https://m.tech.china.com/articles/20260617/202606171895468.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-12",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 75,
+          "label": "较高",
+          "reasons": [
+            "技术参数可查"
+          ],
+          "evidence_tier": "C",
+          "use_as": "verify_before_script",
+          "creator_note": "技术参数需回源核实，避免品牌倾向性表述"
+        }
+      }
+    },
+    {
+      "id": "disc-330",
+      "title": "轻断食、戒碳水，血糖反而更高？——代谢可能被锁死了",
+      "angle": "头条热门内容：16:8轻断食和戒碳水可能导致血糖反升。可做成'反常识'选题，解释代谢适应/反弹机制，强调科学控糖而非极端饮食。",
+      "category": "饮食误区",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "头条热门文章，控糖饮食争议话题",
+      "source_urls": [
+        "http://m.toutiao.com/group/7682816063091769891/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-12",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 55,
+          "label": "中",
+          "reasons": [
+            "自媒体内容，证据层级有限"
+          ],
+          "evidence_tier": "D",
+          "use_as": "hook_only",
+          "creator_note": "仅反映'网上在讨论什么'，不得将标题观点当医学结论"
+        }
+      }
+    },
+    {
+      "id": "disc-331",
+      "title": "低GI零食测评：山姆盒马谁更靠谱？",
+      "angle": "低GI零食市场2026年预计突破2500亿元，山姆低GI五黑坚果脆、燕麦控卡代餐棒等成为爆款。口播可聚焦'低GI认证怎么看'和'配料表避坑'。",
+      "category": "测评种草",
+      "platform": "xhs,dy",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "什么值得买/中国日报网，低GI零食年增长率超40%",
+      "source_urls": [
+        "https://post.m.smzdm.com/p/aww5mrr4/",
+        "http://caijing.chinadaily.com.cn/a/202605/09/WS69fefbf3a310942cc49ab788.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-12",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 70,
+          "label": "中",
+          "reasons": [
+            "市场数据可查，产品测评需实测验证"
+          ],
+          "evidence_tier": "C",
+          "use_as": "verify_before_script",
+          "creator_note": "市场数据可引用，具体产品口感/血糖反应需实测或标注来源"
+        }
+      }
+    },
+    {
+      "id": "disc-332",
+      "title": "糖前期逆转：生活方式干预是最佳处方",
+      "angle": "《中国2型糖尿病防治指南(2024版)》明确：规范减重5%-7%、维持规律运动，可降低40%-58%糖尿病前期进展风险。口播强调'黄金干预期'概念。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "steady",
+      "heat_source": "光明网/央视网，指南A级证据",
+      "source_urls": [
+        "https://news.cctv.cn/2025/11/14/ARTIZqLokgFqf5VxQ4gv18xs251114.shtml",
+        "http://health.gmw.cn/2026-07/20/content_38889899.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-12",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 90,
+          "label": "高",
+          "reasons": [
+            "指南来源",
+            "官方媒体"
+          ],
+          "evidence_tier": "A",
+          "use_as": "cite_directly",
+          "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+        }
+      }
+    },
+    {
+      "id": "disc-333",
+      "title": "糖化血红蛋白，到底多少算达标？一人一标准是真的吗？",
+      "angle": "精选日报核心话题：B站内分泌科医生科普+知乎讨论。糖化达标值因人而异（一般人<7%，年轻/病程短<6.5%，有并发症<8%）。口播拆解个体化标准。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "精选日报timeline第2/8条，B站heat 70+知乎heat 52",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1c24y1d7Lc"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-12",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 75,
+          "label": "较高",
+          "reasons": [
+            "医生身份作者"
+          ],
+          "evidence_tier": "C",
+          "use_as": "verify_before_script",
+          "creator_note": "医生科普内容仍需标注「非医疗建议」，关键数字回源核实"
+        }
+      }
     }
   ],
   "archive": [
