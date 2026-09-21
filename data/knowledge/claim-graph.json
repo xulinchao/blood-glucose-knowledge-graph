@@ -2,7 +2,7 @@
   "_meta": {
     "version": "1.0.0",
     "description": "主张记忆图谱：防重复谣言包装与误读升级",
-    "last_updated": "2026-09-12T09:11:11"
+    "last_updated": "2026-09-21T09:05:07"
   },
   "claims": {
     "40a2e10bd40d4026": {
@@ -66,7 +66,12 @@
         "糖尿病前期真的能逆转.不用吃药的3个方法",
         "关于糖耐，深度去理解它，真正反映身体对糖的代谢能力，你的逆转程度#糖尿病 #糖尿病逆转 #胰岛修复食谱 #钟Sir控糖",
         "糖尿病前期如何逆转",
-        "逆转胰岛素抵抗，关键是遵循这两个规则！"
+        "逆转胰岛素抵抗，关键是遵循这两个规则！",
+        "逆转胰岛素抵抗的精准方法（医生们不会告诉你的） - Dr. Ford Brewer MD MPH",
+        "逆转胰岛素抵抗，到底要经历什么过程呢？",
+        "糖前期属于逆转黄金窗口期，胰岛尚未完全受损。干预不代表极端戒碳水，重点降低餐后峰值、减少波动。监测不能只看空腹，瘦糖前切忌盲目拉长空腹，需要个性化方案避开误区。",
+        "血糖偏高？糖前期是逆转黄金期",
+        "被胰岛素抵抗缠上十年，我终于搞懂：原来这些习惯才是“帮凶”！糖友们，你们是怎么发现并逆转的？"
       ],
       "source_urls": [
         "https://bilibili.com/video/BVtest",
@@ -124,7 +129,14 @@
         "https://www.bilibili.com/video/BV1KwYM6SEX1",
         "https://www.xiaohongshu.com/search_result/6a4b711b0000000011011c09?xsec_token=AB5jZy6kR6tsTAd9aEvBldZ3y11wCWfHo3QwB2rgvbB3Y=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/6987e8b2000000002801eddc?xsec_token=ABgEXop4J2ur6rYRNFCtHbzS50wA3yIe-56OdETtpBoK8=&xsec_source=",
-        "https://www.bilibili.com/video/BV1owYu6BEoS"
+        "https://www.bilibili.com/video/BV1owYu6BEoS",
+        "https://www.bilibili.com/video/BV1yWei6wEUw",
+        "https://www.bilibili.com/video/BV18ReB6UEdg",
+        "https://www.bilibili.com/video/BV1Tfes6zEci",
+        "https://www.bilibili.com/video/BV13zYv6uEV9",
+        "https://www.xiaohongshu.com/search_result/691a8cba0000000004001ec6?xsec_token=AB-M34HLu3pOz-VxHmsbuI7MBDtlXcN3tPY0T1-OLPXnw=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6987e8b2000000002801eddc?xsec_token=ABgEXop4J2ur6rYRNFCtHbzdSEkQjMREHH5kC1zzCm9v8=&xsec_source=",
+        "https://www.zhihu.com/question/1959403746430789348/answer/1960724317374514128"
       ]
     },
     "56d377b6d17cc8ff": {
@@ -307,7 +319,22 @@
         "真没招了，临走之前没胰岛素了，来不及买只能硬抗高血糖",
         "肝源性糖尿病根源是肝脏受损，肝脏糖原储存、胰岛素代谢出现紊乱。大多餐后血糖偏高，易发生低血糖，三多一少症状不明显。调理优先改善肝功能，不可照搬普通糖友的控糖方案",
         "查出胰岛素抵抗 血糖正常就没事？大错特错！",
-        "一文读懂｜糖耐量异常➕胰岛素抵抗🔥​"
+        "一文读懂｜糖耐量异常➕胰岛素抵抗🔥​",
+        "判断自己有没有胰岛素抵抗，这4点要牢记",
+        "跟练 多囊胰岛素抵抗升敏训练4既不痛苦也不无聊",
+        "胖糖≠减肥，“挨饿控糖”不仅解决不了你的胰岛素抵抗，反而会加剧抵抗！",
+        "控糖半年后，我的胰岛素抵抗好了吗？",
+        "逆转胰岛素抵抗的精准方法（医生们不会告诉你的） - Dr. Ford Brewer MD MPH",
+        "逆转胰岛素抵抗，到底要经历什么过程呢？",
+        "胰岛素抵抗的真正原因 - Jesse Chappus Clips",
+        "想知道自己是不是胰岛素抵抗吗？今天来教你怎么看报告",
+        "肚子大的注意了，胰岛素抵抗的6个核心症状‼️",
+        "胰岛素抵抗7吃7不吃",
+        "胰岛素抵抗补剂最佳服用时间【附食谱】",
+        "胰岛素分泌延迟（早相分泌不足）",
+        "被胰岛素抵抗缠上十年，我终于搞懂：原来这些习惯才是“帮凶”！糖友们，你们是怎么发现并逆转的？",
+        "胰岛素是如何将葡萄糖送到细胞里的？",
+        "什么是胰岛素抵抗？妙佑医疗国际专家为您解答- 妙佑医疗国际"
       ],
       "source_urls": [
         "https://bilibili.com/video/BVtest",
@@ -492,7 +519,25 @@
         "https://www.bilibili.com/video/BV1EmY16CEud",
         "https://www.bilibili.com/video/BV1n1YL6YEMt",
         "https://www.bilibili.com/video/BV1KEYE6UEmR",
-        "https://www.xiaohongshu.com/search_result/6aa36a0300000000110356cc?xsec_token=ABNAAe5_dI0qYYIJ6ueAoKKQx9BSzKxVcnt7yDDSwFZms=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/6aa36a0300000000110356cc?xsec_token=ABNAAe5_dI0qYYIJ6ueAoKKQx9BSzKxVcnt7yDDSwFZms=&xsec_source=",
+        "https://www.bilibili.com/video/BV14YeH6fEC7",
+        "https://www.bilibili.com/video/BV1QVeB62ESh",
+        "https://www.bilibili.com/video/BV1i4ez6oEQd",
+        "https://www.bilibili.com/video/BV1k5et6KErb",
+        "https://www.bilibili.com/video/BV1yWei6wEUw",
+        "https://www.bilibili.com/video/BV18ReB6UEdg",
+        "https://www.bilibili.com/video/BV1qJeq69ENV",
+        "https://www.bilibili.com/video/BV1N2eq6KEoH",
+        "https://www.xiaohongshu.com/search_result/69c9344700000000220291ec?xsec_token=ABi8pcrvgW3XJJcKFIRWjCRKAqT0rchU4Tnnadg346SsY=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a69e9a6000000000401dab6?xsec_token=ABf0BwXd235o-w82THPUyFvI2KqvLsQCEP1CGNYAhzceg=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a8c22340000000033029632?xsec_token=AB2s5iq0QeDNgW9Gs4ISV71ac1uEhVtwwDb08LxrMXusc=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a5c7cd1000000000100e232?xsec_token=ABNOgl0IJUncTk5ryp5N-5rEApVhSLTLwgHRy7kD-dZt8=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a8d2a0f000000000f03dfd5?xsec_token=ABxmeP2w5qCHeld61i4K1Yl0HvdXCjFXwwNwBoVIafzsQ=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a02268300000000080276b1?xsec_token=ABq66ORuhuhISqQSZA7pT8Xf1QwPpqJwi26d69-uk_Zgo=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a938486000000002003acd1?xsec_token=AB1ZsyAdgrgeycFpQ7Y-hymkzjWsaxNT4TMRviqAbOcus=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a237da7000000002003ae26?xsec_token=ABciA2yJ9LGCpnrHiVhptlO4Wc793Lz7jeXgq8hJA3kuU=&xsec_source=",
+        "https://www.zhihu.com/question/1959403746430789348/answer/1960724317374514128",
+        "https://www.youtube.com/watch?v=LAaMvPs01kw"
       ]
     },
     "167e0973a2290ade": {
@@ -721,7 +766,14 @@
         "一型肌肉男糖人控糖一天会扎自己多少针",
         "﻿公司的商务宴。实习生私自把定好的菜品换成炼乳小馒头、红糖糍粑和奶茶。甲方当场甩脸就走。因为对方有三高，要控糖，对牛奶过敏。zhi 呼《娇娇实习》",
         "肝源性糖尿病根源是肝脏受损，肝脏糖原储存、胰岛素代谢出现紊乱。大多餐后血糖偏高，易发生低血糖，三多一少症状不明显。调理优先改善肝功能，不可照搬普通糖友的控糖方案",
-        "十款低GI食物推荐，看看那几款是你常吃的#控糖 #糖友饮食 #低GI食物 #低升糖食物 #健康饮食科普"
+        "十款低GI食物推荐，看看那几款是你常吃的#控糖 #糖友饮食 #低GI食物 #低升糖食物 #健康饮食科普",
+        "胖糖≠减肥，“挨饿控糖”不仅解决不了你的胰岛素抵抗，反而会加剧抵抗！",
+        "控糖半年后，我的胰岛素抵抗好了吗？",
+        "控糖秋季实用经验分享",
+        "沉浸式体验一型糖人在香港控糖的一天",
+        "饭后耗糖操，边刷手机边控糖",
+        "控糖只盯着主食？这是个误区 真正要防的是游离糖  医生：小心鲜榨果汁是游离糖“重灾区” 先吃蔬菜再肉蛋最后主食 有利于控糖",
+        "小学生早餐#控糖#饮食认知#健康饮食#科学饮食合理搭配#抗炎饮食"
       ],
       "source_urls": [
         "https://bilibili.com/video/BV1",
@@ -913,7 +965,15 @@
         "https://www.bilibili.com/video/BV1zC41157Bk",
         "https://www.bilibili.com/video/BV1dDjGz9EUD",
         "https://www.bilibili.com/video/BV1n1YL6YEMt",
-        "https://www.bilibili.com/video/BV1r14y6eEnX"
+        "https://www.bilibili.com/video/BV1r14y6eEnX",
+        "https://www.bilibili.com/video/BV1i4ez6oEQd",
+        "https://www.bilibili.com/video/BV1k5et6KErb",
+        "https://www.bilibili.com/video/BV13VeB6mEZw",
+        "https://www.bilibili.com/video/BV1Paeb6CEnL",
+        "https://www.bilibili.com/video/BV1GxeG6CEqi",
+        "https://www.bilibili.com/video/BV1mBeq6rER8",
+        "https://www.bilibili.com/video/BV1jEev62E1G",
+        "https://www.bilibili.com/video/BV14Tha62EcU"
       ]
     },
     "388f07c245691283": {
@@ -1298,7 +1358,8 @@
         "《柳叶刀》子刊：糖尿病前期 应该废除"
       ],
       "source_urls": [
-        "https://www.bilibili.com/video/BV1jdLB6VEVJ"
+        "https://www.bilibili.com/video/BV1jdLB6VEVJ",
+        "https://www.xiaohongshu.com/search_result/6a0c79de0000000036018e83?xsec_token=ABLHLv2XxY4DUngSYm8iRaDuylPWz_ARUxcG08QdzK2pw=&xsec_source="
       ]
     },
     "6413bd5d7f3b0fe4": {
@@ -6896,7 +6957,8 @@
         "https://www.xiaohongshu.com/search_result/69c113b9000000001a025876?xsec_token=ABA7zVESg1XoYrtg5CHKvCBO6K_oPluvrfWtGnt3tFVE8=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/69c113b9000000001a025876?xsec_token=ABA7zVESg1XoYrtg5CHKvCBF5NVzoon8CI-AWaKd8O0JM=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/69c113b9000000001a025876?xsec_token=ABA7zVESg1XoYrtg5CHKvCBKg0B_R65zx1-tuD0BvpKgo=&xsec_source=",
-        "https://www.xiaohongshu.com/search_result/69c113b9000000001a025876?xsec_token=ABA7zVESg1XoYrtg5CHKvCBGZq91a5PDhxYojYpX22t7E=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/69c113b9000000001a025876?xsec_token=ABA7zVESg1XoYrtg5CHKvCBGZq91a5PDhxYojYpX22t7E=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/69c113b9000000001a025876?xsec_token=ABA7zVESg1XoYrtg5CHKvCBCclJNmOtw2naKj10DZ4sLw=&xsec_source="
       ]
     },
     "9e4b16eb6ba8cac6": {
@@ -7081,7 +7143,8 @@
         "https://www.xiaohongshu.com/search_result/6a4630be000000001003d99d?xsec_token=ABX0hX20aO7W3WqDUfcTo3Zj1jIFiBqwBzPlO2w1sWUS8=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/6a4630be000000001003d99d?xsec_token=ABX0hX20aO7W3WqDUfcTo3ZhoXyXoEy5zLEVg45HWGbPE=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/6a4630be000000001003d99d?xsec_token=ABX0hX20aO7W3WqDUfcTo3Zq51wEaEcyMoWuidNMRwPYg=&xsec_source=",
-        "https://www.xiaohongshu.com/search_result/6a4630be000000001003d99d?xsec_token=ABX0hX20aO7W3WqDUfcTo3ZlnjJizG9CyGRvvbUp94JQs=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/6a4630be000000001003d99d?xsec_token=ABX0hX20aO7W3WqDUfcTo3ZlnjJizG9CyGRvvbUp94JQs=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a4630be000000001003d99d?xsec_token=ABX0hX20aO7W3WqDUfcTo3ZthJEANhc_pGf0Jx1W1klpQ=&xsec_source="
       ]
     },
     "bc97868e81964afa": {
@@ -7100,7 +7163,8 @@
         "https://www.xiaohongshu.com/search_result/6a47e218000000001003e306?xsec_token=AB1WHmDDkILO27G3A2ALXq6trIsry1xGsHL1deDiIk7-M=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/6a47e218000000001003e306?xsec_token=AB1WHmDDkILO27G3A2ALXq6qoCKD5bmNkdRqaXTMizoJw=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/6a47e218000000001003e306?xsec_token=AB1WHmDDkILO27G3A2ALXq6qc9IQIcFsym99yxZ_pEwRk=&xsec_source=",
-        "https://www.xiaohongshu.com/search_result/6a47e218000000001003e306?xsec_token=AB1WHmDDkILO27G3A2ALXq6hBY-tVEyPcudcWHG7fyCLY=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/6a47e218000000001003e306?xsec_token=AB1WHmDDkILO27G3A2ALXq6hBY-tVEyPcudcWHG7fyCLY=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a47e218000000001003e306?xsec_token=AB1WHmDDkILO27G3A2ALXq6mfawBwGA6xSGB2HxNg_m6o=&xsec_source="
       ]
     },
     "cfd09e0fdf51facb": {
@@ -7119,7 +7183,8 @@
         "https://www.xiaohongshu.com/search_result/69f5475b000000003502a511?xsec_token=ABSkXc6u7d6jOcNENtsl-cs56i-1eJCJEalmCGEwLXPe0=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/69f5475b000000003502a511?xsec_token=ABSkXc6u7d6jOcNENtsl-cs_IZGQwK9BxdUMd3v_KGYn0=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/69f5475b000000003502a511?xsec_token=ABSkXc6u7d6jOcNENtsl-cswrpIuePcoZjiGUPkeZ9B34=&xsec_source=",
-        "https://www.xiaohongshu.com/search_result/69f5475b000000003502a511?xsec_token=ABSkXc6u7d6jOcNENtsl-cs0zx0bUuAFvoZy9SolLCZqE=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/69f5475b000000003502a511?xsec_token=ABSkXc6u7d6jOcNENtsl-cs0zx0bUuAFvoZy9SolLCZqE=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/69f5475b000000003502a511?xsec_token=ABSkXc6u7d6jOcNENtsl-cs-ArRynDMIeVnCFJCwbQ0CE=&xsec_source="
       ]
     },
     "fde3f279a97c917b": {
@@ -7136,7 +7201,8 @@
       ],
       "source_urls": [
         "https://www.xiaohongshu.com/search_result/68ba4cf2000000001b021473?xsec_token=ABPuDMX61oEv5TkURPlzg_JCi5Ndu-O1fYXqCDWTQWChI=&xsec_source=",
-        "https://www.xiaohongshu.com/search_result/68ba4cf2000000001b021473?xsec_token=ABPuDMX61oEv5TkURPlzg_JF6x5aXsvoaDo0Fdl6GVN6k=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/68ba4cf2000000001b021473?xsec_token=ABPuDMX61oEv5TkURPlzg_JF6x5aXsvoaDo0Fdl6GVN6k=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/68ba4cf2000000001b021473?xsec_token=ABPuDMX61oEv5TkURPlzg_JOeT-4vgOM6OsAtoXlnIOrU=&xsec_source="
       ]
     },
     "a77201b5b8ef7d3c": {
@@ -7257,7 +7323,8 @@
         "https://www.xiaohongshu.com/search_result/69e56156000000002003989f?xsec_token=ABNYkC6mMx9mWeRwW7lakm1GvQes1iEYIqnH9CS9QuCCA=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/69e56156000000002003989f?xsec_token=ABNYkC6mMx9mWeRwW7lakm1Fkiy8gemZ4SSgDQN5W2rNs=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/69e56156000000002003989f?xsec_token=ABNYkC6mMx9mWeRwW7lakm1G4bbiClkf8QxxqE7oOw6LY=&xsec_source=",
-        "https://www.xiaohongshu.com/search_result/69e56156000000002003989f?xsec_token=ABNYkC6mMx9mWeRwW7lakm1IzFXaQbFBG1vPOSRA6WO78=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/69e56156000000002003989f?xsec_token=ABNYkC6mMx9mWeRwW7lakm1IzFXaQbFBG1vPOSRA6WO78=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/69e56156000000002003989f?xsec_token=ABNYkC6mMx9mWeRwW7lakm1Cty5OJAqNqUtqWGc0ICwh4=&xsec_source="
       ]
     },
     "671458a9b82934db": {
@@ -15542,7 +15609,8 @@
       "source_urls": [
         "https://www.xiaohongshu.com/search_result/69bbef6f000000001f003375?xsec_token=AB91f8KYFN_oDcldX3YUh-FTg0Z7Aa7Fpe0hujEc41MNE=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/69bbef6f000000001f003375?xsec_token=AB91f8KYFN_oDcldX3YUh-FVCZJLIyvKOuiUYTRc99GF8=&xsec_source=",
-        "https://www.xiaohongshu.com/search_result/69bbef6f000000001f003375?xsec_token=AB91f8KYFN_oDcldX3YUh-FYEnU7-rWu-qBBQhnwi6pDM=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/69bbef6f000000001f003375?xsec_token=AB91f8KYFN_oDcldX3YUh-FYEnU7-rWu-qBBQhnwi6pDM=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/69bbef6f000000001f003375?xsec_token=AB91f8KYFN_oDcldX3YUh-FdlDanF4Qga5YoQ68vdrYbs=&xsec_source="
       ]
     },
     "cc91b43c3c80478d": {
@@ -15560,7 +15628,8 @@
       "source_urls": [
         "https://www.xiaohongshu.com/search_result/69bec99d000000001a022ca0?xsec_token=ABqSg21Muheo65OW3rMTILf4he_rsF78p-jtqudd7-glM=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/69bec99d000000001a022ca0?xsec_token=ABqSg21Muheo65OW3rMTILfwQALRan4bXJV9xC_7Qw7y0=&xsec_source=",
-        "https://www.xiaohongshu.com/search_result/69bec99d000000001a022ca0?xsec_token=ABqSg21Muheo65OW3rMTILf3AGeeJ8YXyek0lXWpRbucc=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/69bec99d000000001a022ca0?xsec_token=ABqSg21Muheo65OW3rMTILf3AGeeJ8YXyek0lXWpRbucc=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/69bec99d000000001a022ca0?xsec_token=ABqSg21Muheo65OW3rMTILf_besFt6V6lqPUuLkKs1ioc=&xsec_source="
       ]
     },
     "68d67c3919794c34": {
@@ -15578,7 +15647,8 @@
       "source_urls": [
         "https://www.xiaohongshu.com/search_result/6a44e098000000000702eb49?xsec_token=ABhsM4qDRfQfxe-vjtIww7R0JJT_cP0w5q3mjsHFSazOs=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/6a44e098000000000702eb49?xsec_token=ABhsM4qDRfQfxe-vjtIww7R4pTO_3HDrfvRr3_daarjZE=&xsec_source=",
-        "https://www.xiaohongshu.com/search_result/6a44e098000000000702eb49?xsec_token=ABhsM4qDRfQfxe-vjtIww7R7HLQUC7XDcX5Ic1Gle8ebM=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/6a44e098000000000702eb49?xsec_token=ABhsM4qDRfQfxe-vjtIww7R7HLQUC7XDcX5Ic1Gle8ebM=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a44e098000000000702eb49?xsec_token=ABhsM4qDRfQfxe-vjtIww7R6SY9EyMNZNwYQHkUca00zc=&xsec_source="
       ]
     },
     "77420de4c58890ac": {
@@ -15748,7 +15818,8 @@
       ],
       "source_urls": [
         "https://www.xiaohongshu.com/search_result/6a3b24e30000000006020e29?xsec_token=ABTPZGb5L3VugXiDAmY73C_JaFGkuLDmLQlpmkZyaebKg=&xsec_source=",
-        "https://www.xiaohongshu.com/search_result/6a3b24e30000000006020e29?xsec_token=ABTPZGb5L3VugXiDAmY73C_NczaGejdRL537TXa4lsKeQ=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/6a3b24e30000000006020e29?xsec_token=ABTPZGb5L3VugXiDAmY73C_NczaGejdRL537TXa4lsKeQ=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a3b24e30000000006020e29?xsec_token=ABTPZGb5L3VugXiDAmY73C_LT3K1ejNtYJE4Zb7df42v4=&xsec_source="
       ]
     },
     "34d314383d7958f4": {
@@ -15848,7 +15919,8 @@
       ],
       "source_urls": [
         "https://www.xiaohongshu.com/search_result/6a9526870000000024005960?xsec_token=AB_vLQG7Scc2rOAC21b1K6cSSwmm4XrBnZZXHMjSsWFUo=&xsec_source=",
-        "https://www.xiaohongshu.com/search_result/6a9526870000000024005960?xsec_token=AB_vLQG7Scc2rOAC21b1K6cekk6xD5pg4xGYQXA0rxTmA=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/6a9526870000000024005960?xsec_token=AB_vLQG7Scc2rOAC21b1K6cekk6xD5pg4xGYQXA0rxTmA=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a9526870000000024005960?xsec_token=AB_vLQG7Scc2rOAC21b1K6cbYLDVfqGMcqYmDuHFDc-OI=&xsec_source="
       ]
     },
     "c87a295469e957c7": {
@@ -15866,7 +15938,8 @@
       "source_urls": [
         "https://www.xiaohongshu.com/search_result/6a7483540000000025007133?xsec_token=AB2qmlOvvUtxL3TwD2j3Py6iIJ0W-vh3_-j-_hmFP5SXU=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/6a7483540000000025007133?xsec_token=AB2qmlOvvUtxL3TwD2j3Py6kTJi6je-ksAlk2Q3diwiQU=&xsec_source=",
-        "https://www.xiaohongshu.com/search_result/6a7483540000000025007133?xsec_token=AB2qmlOvvUtxL3TwD2j3Py6hxtMdaFOM_Mm6BP6eWI6YI=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/6a7483540000000025007133?xsec_token=AB2qmlOvvUtxL3TwD2j3Py6hxtMdaFOM_Mm6BP6eWI6YI=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a7483540000000025007133?xsec_token=AB2qmlOvvUtxL3TwD2j3Py6rGU9FzduIknj_0QEAiAfIk=&xsec_source="
       ]
     },
     "248d10825c740212": {
@@ -15901,7 +15974,8 @@
       "source_urls": [
         "https://www.xiaohongshu.com/search_result/69d9c8e10000000022002740?xsec_token=AB0w_HYpmr_V3ODttsPuGDMnXOb1EnBxMrtAZpEJmh0n4=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/69d9c8e10000000022002740?xsec_token=AB0w_HYpmr_V3ODttsPuGDMhZxoSMg_TFHN9R-xCp-VrU=&xsec_source=",
-        "https://www.xiaohongshu.com/search_result/69d9c8e10000000022002740?xsec_token=AB0w_HYpmr_V3ODttsPuGDMoEyRl-e-rWETYkthgTxYRg=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/69d9c8e10000000022002740?xsec_token=AB0w_HYpmr_V3ODttsPuGDMoEyRl-e-rWETYkthgTxYRg=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/69d9c8e10000000022002740?xsec_token=AB0w_HYpmr_V3ODttsPuGDMjl-hq1fUgpJBynPe5ZzgwI=&xsec_source="
       ]
     },
     "215e790602f51af9": {
@@ -15937,7 +16011,8 @@
       "source_urls": [
         "https://www.xiaohongshu.com/search_result/6a543fa70000000021009e4b?xsec_token=ABmuRCj2bdtAmg643RroQH9fZ1y-JC5UzE20_wqo6xkFs=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/6a543fa70000000021009e4b?xsec_token=ABmuRCj2bdtAmg643RroQH9Q6I9NXGuxvD_RmMlZLl9go=&xsec_source=",
-        "https://www.xiaohongshu.com/search_result/6a543fa70000000021009e4b?xsec_token=ABmuRCj2bdtAmg643RroQH9SlZ_adDrjSsH_F8yVyotCQ=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/6a543fa70000000021009e4b?xsec_token=ABmuRCj2bdtAmg643RroQH9SlZ_adDrjSsH_F8yVyotCQ=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a543fa70000000021009e4b?xsec_token=ABmuRCj2bdtAmg643RroQH9bBupPXhaHIqMlNpe4b9pvw=&xsec_source="
       ]
     },
     "37c140bd66288bc8": {
@@ -15955,7 +16030,8 @@
       "source_urls": [
         "https://www.xiaohongshu.com/search_result/69f82874000000003501db1d?xsec_token=ABk3EaRPIUAzk-4daGXzPgy-P4fUX5chXmU5vTqTKfhCo=&xsec_source=",
         "https://www.xiaohongshu.com/search_result/69f82874000000003501db1d?xsec_token=ABk3EaRPIUAzk-4daGXzPgy0V-DjiSd9QDcBZNl0ZIwAs=&xsec_source=",
-        "https://www.xiaohongshu.com/search_result/69f82874000000003501db1d?xsec_token=ABk3EaRPIUAzk-4daGXzPgy4hdz7DJngv_pl2NYZTawy8=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/69f82874000000003501db1d?xsec_token=ABk3EaRPIUAzk-4daGXzPgy4hdz7DJngv_pl2NYZTawy8=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/69f82874000000003501db1d?xsec_token=ABk3EaRPIUAzk-4daGXzPgywPpsoulFeUQeYjKs7kSOjA=&xsec_source="
       ]
     },
     "1f1773b0d25e0c8e": {
@@ -17495,7 +17571,8 @@
         "糖尿病前期的4种表现你有吗？"
       ],
       "source_urls": [
-        "https://www.bilibili.com/video/BV1CnbG6EE3J"
+        "https://www.bilibili.com/video/BV1CnbG6EE3J",
+        "https://www.bilibili.com/video/BV1YQYa6YEVW"
       ]
     },
     "c2fc4990a57b1346": {
@@ -17927,7 +18004,8 @@
         "《柳叶刀》点名：\"糖尿病前期\"不存在了！5"
       ],
       "source_urls": [
-        "https://www.xiaohongshu.com/search_result/6a34bc400000000015024d16?xsec_token=ABCl7ve1EXFyTPE0j2BHoZXnT7aNXMp3au1ruoV1fIiPM=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/6a34bc400000000015024d16?xsec_token=ABCl7ve1EXFyTPE0j2BHoZXnT7aNXMp3au1ruoV1fIiPM=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a34bc400000000015024d16?xsec_token=ABCl7ve1EXFyTPE0j2BHoZXqacjul9WSx2oIZmLIw-LCo=&xsec_source="
       ]
     },
     "2407e2501e0bfa46": {
@@ -17975,7 +18053,8 @@
         "空腹正常、餐后异常，先别焦虑：这可能正是"
       ],
       "source_urls": [
-        "https://www.xiaohongshu.com/search_result/6a7c77ac0000000035015fe5?xsec_token=AB-uR4rlu7dXsMh6aOtBzYfXvH5EmKgZIfniIy_9BU2Ec=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/6a7c77ac0000000035015fe5?xsec_token=AB-uR4rlu7dXsMh6aOtBzYfXvH5EmKgZIfniIy_9BU2Ec=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/6a7c77ac0000000035015fe5?xsec_token=AB-uR4rlu7dXsMh6aOtBzYfXGavRKNyn84YSk3FnIcC_4=&xsec_source="
       ]
     },
     "39d50ed0ac226197": {
@@ -18023,7 +18102,8 @@
         "三个月糖化血红蛋白从6.02降到4.9"
       ],
       "source_urls": [
-        "https://www.xiaohongshu.com/search_result/697b27f0000000002102b204?xsec_token=AB2bP7PYNiVU2isdllp1-S4cCPMjSDDxxMmszBdgGDqgw=&xsec_source="
+        "https://www.xiaohongshu.com/search_result/697b27f0000000002102b204?xsec_token=AB2bP7PYNiVU2isdllp1-S4cCPMjSDDxxMmszBdgGDqgw=&xsec_source=",
+        "https://www.xiaohongshu.com/search_result/697b27f0000000002102b204?xsec_token=AB2bP7PYNiVU2isdllp1-S4XmXH7C2Ty07WILGT4qrO2w=&xsec_source="
       ]
     },
     "47c20988875ce31a": {
@@ -18888,6 +18968,1174 @@
       ],
       "source_urls": [
         "https://www.youtube.com/watch?v=htIvERApnLE"
+      ]
+    },
+    "f44690c9957297d2": {
+      "claim_text": "又浪费了几百块  糖人真的很不容易  总是有很多意外…",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "又浪费了几百块  糖人真的很不容易  总是有很多意外…"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1kWxQezEHn"
+      ]
+    },
+    "06ae54d7edd541c0": {
+      "claim_text": "震惊！！孕26周我只胖了6斤，糖耐没过，被医院留下....",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "震惊！！孕26周我只胖了6斤，糖耐没过，被医院留下...."
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1e4bJzqE2c"
+      ]
+    },
+    "966251a1f2ca6961": {
+      "claim_text": "【糖友日常】打动态失败了怎么办",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "【糖友日常】打动态失败了怎么办"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV14ta8ztELi"
+      ]
+    },
+    "a9212219df5a18f8": {
+      "claim_text": "天塌了……糖耐没过……",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "天塌了……糖耐没过……"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1kc316bEYS"
+      ]
+    },
+    "ac7a4a9240ff59a3": {
+      "claim_text": "停药",
+      "claim_type": "medication_claim",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "白大褂批准停药第34天，第一次复查糖耐结果如何？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1rLdwBjEfB"
+      ]
+    },
+    "7090ef045e1ff23b": {
+      "claim_text": "糖前了，锻炼了一个月去测下血糖。顺便看看我的两个血糖仪准不准",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖前了，锻炼了一个月去测下血糖。顺便看看我的两个血糖仪准不准"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV17uLm6iEHM"
+      ]
+    },
+    "e8d3b0d36125be71": {
+      "claim_text": "空腹血糖高和餐后血糖高，原因不一样",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹血糖高和餐后血糖高，原因不一样"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1ENeb6wET8"
+      ]
+    },
+    "9ed685d1e54be683": {
+      "claim_text": "公务员体检，这几点你必须要知道！否则可能前功尽弃！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "公务员体检，这几点你必须要知道！否则可能前功尽弃！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1LL4y1F79q"
+      ]
+    },
+    "6103bbe5ce4c72f5": {
+      "claim_text": "招警考试体检常见淘汰原因",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "招警考试体检常见淘汰原因"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1QY411b7na"
+      ]
+    },
+    "aadf228bd8143d71": {
+      "claim_text": "2026公务员体检标准以及特殊标准详细讲解",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "2026公务员体检标准以及特殊标准详细讲解"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1WS1mBWEf7"
+      ]
+    },
+    "b59f85aff208fef4": {
+      "claim_text": "胰腺有多厉害？同时掌管消化与血糖调节",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "胰腺有多厉害？同时掌管消化与血糖调节"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1gXYr69EJM"
+      ]
+    },
+    "90d10822046fd687": {
+      "claim_text": "2026年血糖正常范围你知道了吗？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "2026年血糖正常范围你知道了吗？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1v7eg63Ed2"
+      ]
+    },
+    "d2a9aaef02de7dc9": {
+      "claim_text": "国庆美美七天怎么可能不喝奶茶！！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "国庆美美七天怎么可能不喝奶茶！！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV17FeB64EYz"
+      ]
+    },
+    "66dc9029a3b1cd75": {
+      "claim_text": "奶茶甜还是我甜ovo",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "奶茶甜还是我甜ovo"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Vheq6jEnA"
+      ]
+    },
+    "575cafe63452f552": {
+      "claim_text": "《全糖夏日》AI制作原创歌曲，你的微笑比全糖奶茶还要浓",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "《全糖夏日》AI制作原创歌曲，你的微笑比全糖奶茶还要浓"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Lxez6tEzU"
+      ]
+    },
+    "b0300b1dc52e1949": {
+      "claim_text": "全糖奶茶都不甜了·",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "全糖奶茶都不甜了·"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV19aet69Egb"
+      ]
+    },
+    "2d5c1e4942e448f6": {
+      "claim_text": "奶茶店卖茶叶蛋？我教你没吃过的版本...【冷泡茶叶蛋】",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "奶茶店卖茶叶蛋？我教你没吃过的版本...【冷泡茶叶蛋】"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1upeM6FEeZ"
+      ]
+    },
+    "bbd76467ebd3295a": {
+      "claim_text": "奶茶集体“偷家”咖啡，入口的甜，背后藏着多少信息差？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "奶茶集体“偷家”咖啡，入口的甜，背后藏着多少信息差？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1V4ev63EuS"
+      ]
+    },
+    "84931a3b9a110621": {
+      "claim_text": "奶茶师傅无保留教学怎么做好一杯原味奶茶",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "奶茶师傅无保留教学怎么做好一杯原味奶茶"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1ss4y1v7Jw"
+      ]
+    },
+    "7f92a20379c2eafa": {
+      "claim_text": "大学生毕业初进奶茶店，入职分享与工作介绍。",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "大学生毕业初进奶茶店，入职分享与工作介绍。"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1uBQJYgE7k"
+      ]
+    },
+    "3c99f6a74d1c436f": {
+      "claim_text": "血糖高不是饿肚子，4种食物推荐吃",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "血糖高不是饿肚子，4种食物推荐吃"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1WKeq6YEZQ"
+      ]
+    },
+    "dcabd4cd9392c3a4": {
+      "claim_text": "我67岁但看起来像35岁 这5个习惯能停止衰老",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "我67岁但看起来像35岁 这5个习惯能停止衰老"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV17VYf65Eg2"
+      ]
+    },
+    "906ec9c08b22f6f5": {
+      "claim_text": "年纪轻轻二十多岁就得了糖尿病了，感觉天都塌了，也不敢告诉父母，而且毕业没几年没多少钱",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "年纪轻轻二十多岁就得了糖尿病了，感觉天都塌了，也不敢告诉父母，而且毕业没几年没多少钱"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1aS4y157D6"
+      ]
+    },
+    "d47176dff33bd62f": {
+      "claim_text": "糖尿病病人为什么要检测餐后两小时血糖，而不是一小时或半小时？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病病人为什么要检测餐后两小时血糖，而不是一小时或半小时？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1pu411t7gk"
+      ]
+    },
+    "f699239340d4786e": {
+      "claim_text": "36岁，糖前期，大早上空腹又飙出正常值了，吃块蛋糕压压惊！看看升多少血糖？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "36岁，糖前期，大早上空腹又飙出正常值了，吃块蛋糕压压惊！看看升多少血糖？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1taGGzAED8"
+      ]
+    },
+    "4e1514ca1d05eb35": {
+      "claim_text": "糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Qs3EeZEdG"
+      ]
+    },
+    "c8e73c46622110fd": {
+      "claim_text": "欢迎收看18岁糖尿病住院复查的一天",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "欢迎收看18岁糖尿病住院复查的一天"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1zywkzgEEu"
+      ]
+    },
+    "1325990604a92580": {
+      "claim_text": "刚吃过饭血糖低到2.7，好险差点就无了，没想到我姨还让我给她测一个😂",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "刚吃过饭血糖低到2.7，好险差点就无了，没想到我姨还让我给她测一个😂"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1XmemzsEFG"
+      ]
+    },
+    "c5dcc65d5c229089": {
+      "claim_text": "17岁查出二型糖尿病，年纪轻轻有了糖尿病该怎么办？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "17岁查出二型糖尿病，年纪轻轻有了糖尿病该怎么办？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1vS4y1E7sE"
+      ]
+    },
+    "b7763c82ce64b4e3": {
+      "claim_text": "一个扎手指，一个贴身戴，哪个更准更靠谱？你在用哪种血糖仪？ 它们的作用与误差究竟是什么？很多人都忽略了动态血糖仪的真正价值！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "一个扎手指，一个贴身戴，哪个更准更靠谱？你在用哪种血糖仪？ 它们的作用与误差究竟是什么？很多人都忽略了动态血糖仪的真正价值！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1aftG6bEhn"
+      ]
+    },
+    "6de7cbbf3270ebd3": {
+      "claim_text": "新手必看的动态血糖仪佩戴流程",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "新手必看的动态血糖仪佩戴流程"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1xUez6kEUd"
+      ]
+    },
+    "a3f70d7aa4ba24fa": {
+      "claim_text": "佩戴动态血糖仪 240 天之后｜我重新认识了自己的血糖",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "佩戴动态血糖仪 240 天之后｜我重新认识了自己的血糖"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1kKev6REYT"
+      ]
+    },
+    "bbbbe85f8d91c937": {
+      "claim_text": "【实时监测】硅基动感GS3动态血糖仪",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "【实时监测】硅基动感GS3动态血糖仪"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1qiee6LEP1"
+      ]
+    },
+    "3e646ca5b7998a44": {
+      "claim_text": "博邦芳舟无痛无创血糖仪家用免扎针无采血不扎针动态血糖仪测血糖医用",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "博邦芳舟无痛无创血糖仪家用免扎针无采血不扎针动态血糖仪测血糖医用"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1SNea6ZEJA"
+      ]
+    },
+    "d538e77d0a149826": {
+      "claim_text": "雅培瞬感完整操作教程，经销商可收藏备用。",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "雅培瞬感完整操作教程，经销商可收藏备用。"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV11t4y1M7cc"
+      ]
+    },
+    "770e8aacb57cff70": {
+      "claim_text": "8岁男孩长期吃辣条、喝饮料，浑身长满痘痘，医生：糖尿病前兆",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "8岁男孩长期吃辣条、喝饮料，浑身长满痘痘，医生：糖尿病前兆"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV16BeB68EAx"
+      ]
+    },
+    "2b00c8a020c67f51": {
+      "claim_text": "【偏口鱼博士】糖尿病不只是血糖高！从头到脚全身器官都可能受损，千万别小看！（鱼博士视频健康知识科普）",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "【偏口鱼博士】糖尿病不只是血糖高！从头到脚全身器官都可能受损，千万别小看！（鱼博士视频健康知识科普）"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1BkeQ6NEfi"
+      ]
+    },
+    "461ce6e6ddbeb43e": {
+      "claim_text": "能提前20年发现糖尿病的血液检测",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "能提前20年发现糖尿病的血液检测"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1V8ez6REPn"
+      ]
+    },
+    "71c8d0f7e2824fec": {
+      "claim_text": "【高中生物选必一重难点】体液调节 - 糖尿病专题",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "【高中生物选必一重难点】体液调节 - 糖尿病专题"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV18UCuBXEin"
+      ]
+    },
+    "b38b4ed5c6509045": {
+      "claim_text": "很容易有糖尿病。",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "很容易有糖尿病。"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV162eY6SE4Z"
+      ]
+    },
+    "2d31580a7f1ebcaf": {
+      "claim_text": "糖尿病足几级，你看得出吗？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病足几级，你看得出吗？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV13Mew6LE89"
+      ]
+    },
+    "7d762ef258ec4cde": {
+      "claim_text": "高糖VS戒糖14天！真的差别很大吗？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "高糖VS戒糖14天！真的差别很大吗？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1enYL6SEtU"
+      ]
+    },
+    "01cc34bc9ef8ad67": {
+      "claim_text": "糖友别运动多吃肉",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖友别运动多吃肉"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1bkez62EX3"
+      ]
+    },
+    "53f83dc9f6a90f04": {
+      "claim_text": "豆包说糖尿病前期",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "豆包说糖尿病前期"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6a58f6c1000000000401d350?xsec_token=ABLutyZ0cA05MLS5BQarG7RwBoWHdLThH97PoVehVHTx0=&xsec_source="
+      ]
+    },
+    "cd4ad1afed8b037f": {
+      "claim_text": "餐后血糖比空腹高，更危险！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "餐后血糖比空腹高，更危险！"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6a855d970000000021021294?xsec_token=ABxhqkRevYI8puURa-U5TW_y4xBL1ncCt00y4oHx7a2sk=&xsec_source="
+      ]
+    },
+    "102cdb4c5dc74b82": {
+      "claim_text": "餐后飙升？这是1.5型的“双重失守”特点",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "餐后飙升？这是1.5型的“双重失守”特点"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/696a1380000000000b010864?xsec_token=ABIUfWNkt7TgZZgoX-kvqAZ3xVo94pxQWqMR9cG8MqrLU=&xsec_source="
+      ]
+    },
+    "76e3b772f185237c": {
+      "claim_text": "体检单上血糖6.1，最后一个可逆关口",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "体检单上血糖6.1，最后一个可逆关口"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6aa2bf36000000002803365e?xsec_token=ABI9lLBIIt_yenpt5s4w53NrdgYuXot4cxVyBgB6an5jo=&xsec_source="
+      ]
+    },
+    "000e55a7f485bad8": {
+      "claim_text": "研究发现：只要空腹血糖没超过这个值，不用",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "研究发现：只要空腹血糖没超过这个值，不用"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/68ce2575000000000e032811?xsec_token=ABEUa74kqOTQc3xhHGl-q4qx_-Esu4FiaSxxTonyITKxM=&xsec_source="
+      ]
+    },
+    "827a96b4b0699a8e": {
+      "claim_text": "血糖6.1~6.9是黄灯！还来得及踩刹车",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "血糖6.1~6.9是黄灯！还来得及踩刹车"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6a91a14700000000200340b2?xsec_token=AB-7X2oT6N-NLjtDc73LWXDsLZ1HAfXIsb5KzKrZmrM5Q=&xsec_source="
+      ]
+    },
+    "ff45e1cdae48fc50": {
+      "claim_text": "看懂糖代谢，从根源稳住血糖不飙升",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "看懂糖代谢，从根源稳住血糖不飙升"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6a7eeac1000000002c006405?xsec_token=ABDZnqcxoYixTk578nlsmlqinokcgj2Iu-xI892YAuxx0=&xsec_source="
+      ]
+    },
+    "51736cbcb61934d7": {
+      "claim_text": "糖尿病 或者 糖前期 的看过来",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病 或者 糖前期 的看过来"
+      ],
+      "source_urls": [
+        "https://www.xiaohongshu.com/search_result/6a50a8cb000000000f017ac3?xsec_token=ABlUULBQcaun0hOv_EfFBUFFbu6doJww_zOEN93ZcqJlw=&xsec_source="
+      ]
+    },
+    "6e98fa7303a0dbff": {
+      "claim_text": "我用这5个方法，餐后血糖从14降到8，长达13年",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "我用这5个方法，餐后血糖从14降到8，长达13年"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/719025180"
+      ]
+    },
+    "32bdecce1c40d2b1": {
+      "claim_text": "糖化血红蛋白＝血糖平均值？大错特错！不然测了也白测！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖化血红蛋白＝血糖平均值？大错特错！不然测了也白测！"
+      ],
+      "source_urls": [
+        "https://zhuanlan.zhihu.com/p/2081893392104142592"
+      ]
+    },
+    "c606830df086c832": {
+      "claim_text": "午餐后犯困的生理原因是什么？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "午餐后犯困的生理原因是什么？"
+      ],
+      "source_urls": [
+        "https://www.zhihu.com/question/2076302585779196996/answer/2080648798322349965"
+      ]
+    },
+    "294924d694765fcf": {
+      "claim_text": "If you understand what I say in the next 90 seconds, you'll understand insuli...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "If you understand what I say in the next 90 seconds, you'll understand insuli..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2101316481606668378"
+      ]
+    },
+    "a8f07a0ddc928eb1": {
+      "claim_text": "Don’t drink a daily OJ, please 🙏   A glass has 12-18g fructose equivalents, a...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Don’t drink a daily OJ, please 🙏   A glass has 12-18g fructose equivalents, a..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2101812768181461153"
+      ]
+    },
+    "24dc4d1af4800e80": {
+      "claim_text": "High blood pressure doesn't start with age.  It starts with inflammation, ins...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "High blood pressure doesn't start with age.  It starts with inflammation, ins..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2060707813119467617"
+      ]
+    },
+    "57f2264cfdfd9c46": {
+      "claim_text": "In U.S. youth, school breakfast was linked to higher prediabetes prevalence. ...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "In U.S. youth, school breakfast was linked to higher prediabetes prevalence. ..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2101677787346079790"
+      ]
+    },
+    "9140d7890aedc3c2": {
+      "claim_text": "Prediabetes is a chance to intervene early. The 2026 AACE algorithm emphasize...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Prediabetes is a chance to intervene early. The 2026 AACE algorithm emphasize..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2099520661119263196"
+      ]
+    },
+    "d7287b44a79fb32d": {
+      "claim_text": "Can a high dose of Vitamin D curb the risk of diabetes? A recent study conduc...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Can a high dose of Vitamin D curb the risk of diabetes? A recent study conduc..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2099521052795679055"
+      ]
+    },
+    "9014bd301a3ebbdf": {
+      "claim_text": "Absolutely. Safety and speed aren't a choice in metabolic health either.  You...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Absolutely. Safety and speed aren't a choice in metabolic health either.  You..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2100463692643234132"
+      ]
+    },
+    "0de99c7202c2e133": {
+      "claim_text": "Glucose monitoring just crossed a major line.  589M adults live with diabetes...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Glucose monitoring just crossed a major line.  589M adults live with diabetes..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2099714935622164830"
+      ]
+    },
+    "7e5529121287e37a": {
+      "claim_text": "4 metabolic conditions predicted from wrist-level glucose data ; that breadth...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "4 metabolic conditions predicted from wrist-level glucose data ; that breadth..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2099425421876203639"
+      ]
+    },
+    "bab764f7c3850033": {
+      "claim_text": "Uzmanlar, yemekten birkaç saat sonra yaşanan kan şekeri düşüklüğünü (reaktif ...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Uzmanlar, yemekten birkaç saat sonra yaşanan kan şekeri düşüklüğünü (reaktif ..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2100540820638105812"
+      ]
+    },
+    "096ba3ffb275e3d1": {
+      "claim_text": "My Alzheimer's chart crossed a million views this week. Doctors debated it. P...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "My Alzheimer's chart crossed a million views this week. Doctors debated it. P..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2048438326085267533"
+      ]
+    },
+    "e65b0eb372ad0f46": {
+      "claim_text": "10 squats beats a 30 min walk.  For blood sugar control after a meal, doing 1...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "10 squats beats a 30 min walk.  For blood sugar control after a meal, doing 1..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2042049389880045815"
+      ]
+    },
+    "b76d3d80e97d8e2c": {
+      "claim_text": "Update: I reversed my insulin resistance!",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Update: I reversed my insulin resistance!"
+      ],
+      "source_urls": [
+        "https://www.reddit.com/r/loseit/comments/nj6ud9/update_i_reversed_my_insulin_resistance/"
+      ]
+    },
+    "7a3af05910b4b2f6": {
+      "claim_text": "How long does it take to reverse insulin resistance?",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "How long does it take to reverse insulin resistance?"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=7vFr56cfsdc"
+      ]
+    },
+    "1c9e29fa4f6d587c": {
+      "claim_text": "诊断糖尿病的标准是怎样的？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "诊断糖尿病的标准是怎样的？"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=E9QQUa3NBAI"
+      ]
+    },
+    "3e8d599361f089d8": {
+      "claim_text": "餐后一小时血糖，医生讲解 诊断糖尿病，除了空腹血糖，餐后两小时血糖和糖化血红蛋白，还要考虑餐后一小时血糖。医生详细讲解。#正确的养生知识又增加了#硬核健康科普行动 #糖尿病",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "餐后一小时血糖，医生讲解 诊断糖尿病，除了空腹血糖，餐后两小时血糖和糖化血红蛋白，还要考虑餐后一小时血糖。医生详细讲解。#正确的养生知识又增加了#硬核健康科普行动 #糖尿病"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=ILw1cVBOzvc"
+      ]
+    },
+    "053b143129b8b014": {
+      "claim_text": "体检血糖偏高，就得戒掉米饭？先看懂糖尿病前期",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "体检血糖偏高，就得戒掉米饭？先看懂糖尿病前期"
+      ],
+      "source_urls": [
+        "https://www.youtube.com/watch?v=8xbI9tk9W7A"
+      ]
+    },
+    "dc6d4bb65cba7c80": {
+      "claim_text": "血糖高为什么要做糖耐量试验",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "血糖高为什么要做糖耐量试验"
+      ],
+      "source_urls": [
+        "https://wjw.beijing.gov.cn/bmfw_20143/jkzs/jbzs/201912/t20191217_1250199.html"
+      ]
+    },
+    "d19b446890711477": {
+      "claim_text": "Chinese Guidelines for Medical Nutrition Therapy for Patients with Diabetes (2022 Edition).",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Chinese Guidelines for Medical Nutrition Therapy for Patients with Diabetes (2022 Edition)."
+      ],
+      "source_urls": [
+        "https://doi.org/10.6133/apjcn.202406_33(2).0001"
       ]
     }
   }
