@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-09-23",
+  "updated": "2026-09-24",
   "topics": [
     {
       "id": "disc-016",
@@ -9015,6 +9015,254 @@
         "睡前：指导是否需要加餐防夜间低血糖",
         "CGM（动态血糖仪）可看到完整的24h血糖曲线"
       ]
+    },
+    {
+      "id": "disc-372",
+      "title": "断碳水减肥2个月，她反而查出糖尿病前期",
+      "angle": "杭州26岁白领为做伴娘，两个月极端节食+过量运动暴瘦30斤，后确诊糖尿病前期。医生提醒减重速度每月不应超过原有体重5%。极端减肥反致代谢损伤的真实案例，具备热搜潜质。",
+      "category": "辟谣纠偏",
+      "platform": "dy,xhs,bili,zhihu",
+      "duration": "60-90s",
+      "heat": "hot",
+      "heat_source": "报道称该话题冲上热搜第一，媒体转引中国青年报/新闻坊内容",
+      "source_urls": [
+        "https://m.gmw.cn/2026-03/29/content_1304396608.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-24",
+      "evidence_level": "C",
+      "use_as": "verify_before_script",
+      "writability_score": 65,
+      "authenticity_score": 55,
+      "gate": {
+        "passed": true,
+        "reason": "案例报道非绝对化医学断言，verify_before_script 要求关键数字二次查证"
+      },
+      "forbidden_expressions": [],
+      "required_hedges": [
+        "个体情况请咨询医生，不构成医疗建议"
+      ],
+      "commercial_risk": false,
+      "agent_hints": {
+        "top_script_angles": {
+          "why_selected": "极端减肥反致糖尿病前期，反直觉高冲突选题"
+        }
+      }
+    },
+    {
+      "id": "disc-373",
+      "title": "血糖值到底多少算高？一张图看懂体检单",
+      "angle": "北京小汤山医院/卫健委科普：空腹3.9-6.1正常，6.1-7.0糖前期，7.0以上糖尿病；餐后2h低于7.8正常，7.8-11.1糖前期。将数字做成可视化卡片，工具型刚需选题。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "卫健委/医院官方科普内容，属高频刚需型体检单对照话题",
+      "source_urls": [
+        "https://wjw.beijing.gov.cn/bmfw_20143/jkzs/jksh/202604/t20260424_4607974.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-24",
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "writability_score": 70,
+      "authenticity_score": 85,
+      "gate": {
+        "passed": true,
+        "reason": "卫健委/医院官方科普，数字明确可查，无绝对化表述"
+      },
+      "forbidden_expressions": [],
+      "required_hedges": [
+        "个体情况请咨询医生，不构成医疗建议"
+      ],
+      "commercial_risk": false,
+      "agent_hints": {
+        "top_script_angles": {
+          "why_selected": "体检单对照是高频刚需，用数字卡片可视化呈现"
+        }
+      }
+    },
+    {
+      "id": "disc-374",
+      "title": "CGM是智商税还是真香？扎手指 vs 动态血糖仪真相",
+      "angle": "CGM测组织间液葡萄糖每3分钟自动记录，指尖血糖仪测毛细血管全血获单次即时值。两者是互补关系而非替代。CGM真正价值在持续监测带来的趋势洞察，不是单点精度。",
+      "category": "科普辟谣",
+      "platform": "dy,xhs,zhihu",
+      "duration": "60-90s",
+      "heat": "warm",
+      "heat_source": "千龙网/日照新闻网2026年8月发布，用户存在智商税认知误区",
+      "source_urls": [
+        "https://china.qianlong.com/2026/0802/8706327.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-24",
+      "evidence_level": "B",
+      "use_as": "cite_directly",
+      "writability_score": 68,
+      "authenticity_score": 70,
+      "gate": {
+        "passed": true,
+        "reason": "科普比较类内容，无绝对化医学断言，无带货倾向"
+      },
+      "forbidden_expressions": [],
+      "required_hedges": [
+        "个体情况请咨询医生，不构成医疗建议"
+      ],
+      "commercial_risk": false,
+      "agent_hints": {
+        "top_script_angles": {
+          "why_selected": "智商税 vs 真香对比结构天然吸引点击"
+        }
+      }
+    },
+    {
+      "id": "disc-375",
+      "title": "二甲双胍治脱发？丁香园：不仅不能治，还可能让你脱发",
+      "angle": "丁香园辟谣：Cell子刊小鼠研究不能外推到人类脱发。2006年已有病例报道二甲双胍可致急性脱发，2019年ADA共识建议服用者每年监测B12。从治脱发到致脱发的反转选题。",
+      "category": "辟谣纠偏",
+      "platform": "dy,xhs,bili,zhihu",
+      "duration": "60-90s",
+      "heat": "warm",
+      "heat_source": "丁香园辟谣内容，二甲双胍+脱发在搜索中热度较高",
+      "source_urls": [
+        "http://endo.dxy.cn/article/622050"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-24",
+      "evidence_level": "B",
+      "use_as": "cite_directly",
+      "writability_score": 65,
+      "authenticity_score": 75,
+      "gate": {
+        "passed": true,
+        "reason": "丁香园专业科普辟谣，引用Cell子刊+ADA共识，无绝对化表述"
+      },
+      "forbidden_expressions": [],
+      "required_hedges": [
+        "个体情况请咨询医生，不构成医疗建议"
+      ],
+      "commercial_risk": false,
+      "agent_hints": {
+        "top_script_angles": {
+          "why_selected": "治脱发到致脱发的反转极具信息差"
+        }
+      }
+    },
+    {
+      "id": "disc-376",
+      "title": "胰岛素抵抗=31种疾病的源头！脖子发黑、容易累，别忽视",
+      "angle": "山东第一医科大学附属中心医院宋勇峰团队研究：胰岛素抵抗与31种疾病显著关联。早期症状：体重不受控、疲劳乏力、颈部腋下皮肤发黑(黑棘皮病)。把胰岛素抵抗从血糖问题升级为全身健康警报。",
+      "category": "科普辟谣",
+      "platform": "dy,xhs,bili",
+      "duration": "60-90s",
+      "heat": "warm",
+      "heat_source": "健康时报2026年3月发布，宋勇峰团队研究+31种疾病数字具有传播冲击力",
+      "source_urls": [
+        "http://paper.people.com.cn/jksb/pc/content/202603/13/content_30148679.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-24",
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "writability_score": 72,
+      "authenticity_score": 80,
+      "gate": {
+        "passed": true,
+        "reason": "健康时报引用医院团队研究，31种疾病有研究支撑，无绝对化表述"
+      },
+      "forbidden_expressions": [],
+      "required_hedges": [
+        "个体情况请咨询医生，不构成医疗建议"
+      ],
+      "commercial_risk": false,
+      "agent_hints": {
+        "top_script_angles": {
+          "why_selected": "31种疾病数字冲击力极强，配合症状自查互动形式"
+        }
+      }
+    },
+    {
+      "id": "disc-377",
+      "title": "运动150分钟/周+增肌，逆转胰岛素抵抗的科学方案",
+      "angle": "健康时报+新华网报道：每增加1kg肌肉每天多消耗110大卡。建议每周至少150分钟中等强度有氧运动(快走/游泳/骑车)+力量训练(深蹲/举哑铃/弹力带)。增加肌肉是改善胰岛素敏感性的关键。",
+      "category": "生活方式",
+      "platform": "dy,xhs,bili",
+      "duration": "60-90s",
+      "heat": "warm",
+      "heat_source": "健康时报+新华网2026年3月发布，运动+增肌+胰岛素抵抗组合具有实操价值",
+      "source_urls": [
+        "http://paper.people.com.cn/jksb/pc/content/202603/13/content_30148679.html",
+        "https://app.xinhuanet.com/news/article.html?articleId=3e64592cb9c129b3b5bc88d4219be1a6"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-24",
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "writability_score": 68,
+      "authenticity_score": 80,
+      "gate": {
+        "passed": true,
+        "reason": "新华网+健康时报引用专家建议，方案具体可执行，无绝对化承诺"
+      },
+      "forbidden_expressions": [],
+      "required_hedges": [
+        "个体情况请咨询医生，不构成医疗建议"
+      ],
+      "commercial_risk": false,
+      "agent_hints": {
+        "top_script_angles": {
+          "why_selected": "给出具体运动方案(150分钟/周+增肌)，将抽象科普转化为可执行清单"
+        }
+      }
+    },
+    {
+      "id": "disc-378",
+      "title": "35岁后不管血糖，每年多5%的人得糖尿病！早控糖风险降一半",
+      "angle": "央视/北京市政府/中国经济网报道：35岁后若不管血糖，每年多5%-10%的人从血糖偏高变成2型糖尿病；早注意早调整，风险能直接降一半以上。用5%每年这个数据制造紧迫感。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili,zhihu",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "央视/北京市政府/中国经济网/荆州市政府2026年8月集中发布",
+      "source_urls": [
+        "https://ysxw.cctv.cn/article.html?channelId=1119&item_id=6302386953359232560&toc_style_id=feeds_default",
+        "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202606/t20260623_4711495.html",
+        "http://fashion.ce.cn/tjyd/202608/t20260831_3180108.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-24",
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "writability_score": 65,
+      "authenticity_score": 85,
+      "gate": {
+        "passed": true,
+        "reason": "央视+政府门户引用疾控中心研究+防治指南，数据明确，无绝对化表述"
+      },
+      "forbidden_expressions": [],
+      "required_hedges": [
+        "个体情况请咨询医生，不构成医疗建议"
+      ],
+      "commercial_risk": false,
+      "agent_hints": {
+        "top_script_angles": {
+          "why_selected": "5%每年数据制造紧迫感，30-45秒短视频即可讲透"
+        }
+      }
     }
   ],
   "archive": [
