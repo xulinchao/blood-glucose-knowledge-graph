@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-09-24",
+  "updated": "2026-09-26",
   "topics": [
     {
       "id": "disc-016",
@@ -9262,6 +9262,460 @@
         "top_script_angles": {
           "why_selected": "5%每年数据制造紧迫感，30-45秒短视频即可讲透"
         }
+      }
+    },
+    {
+      "id": "disc-379",
+      "title": "糖尿病前期—做到这些，可从“灰色地带”逆袭！",
+      "angle": "全网网页(Exa) · 证据层级A · cite_directly · 可引用来源观点，口播须加「非医疗建议」并附原链接",
+      "category": "案例故事",
+      "platform": "dy,bili",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 全网网页(Exa) · 选题分 85 · 互动 -",
+      "source_urls": [
+        "https://www.ningguo.gov.cn/OpennessContent/show/2569667.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-26",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 85,
+          "label": "较高",
+          "reasons": [
+            "一级来源：指南/政府/期刊域名"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+        },
+        "importance": {
+          "score": 40,
+          "label": "低",
+          "reasons": []
+        },
+        "topic_score": 85,
+        "platform": "exa",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-380",
+      "title": "糖化血红蛋白换算成我们平时的血糖值请您记好一个公式",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "案例故事",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 110",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1R8eE6PEsU"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-26",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 52,
+          "label": "中",
+          "reasons": [
+            "命中关键词「糖化血红蛋白」"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-381",
+      "title": "低GI无糖月饼，可以放开吃吗？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "饮食指南",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 677",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1MDeC6oEnX"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-26",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 52,
+          "label": "中",
+          "reasons": [
+            "命中关键词「低GI」"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "高GI+低GL（如西瓜）：少量吃影响不大",
+        "低GI+高GL（如大量全麦面包）：仍需注意份量",
+        "高GI+高GL（如白米饭）：最危险组合",
+        "低GI+低GL（如蔬菜）：安全区",
+        "优先选全谷物、豆类、非淀粉蔬菜",
+        "每餐必有蛋白质（肉/鱼/蛋/豆）",
+        "先吃蔬菜→蛋白质→最后吃主食",
+        "避免液态糖（含糖饮料、果汁）",
+        "苹果+一小把花生",
+        "无糖酸奶+蓝莓",
+        "小份黑巧克力（≥70%）",
+        "煮鸡蛋"
+      ]
+    },
+    {
+      "id": "disc-382",
+      "title": "健康人打卡控糖越控越焦虑？控糖焦虑背后的心理陷阱",
+      "angle": "新华社报道引发讨论。健康人群盲目采用糖尿病患者的血糖监测和控糖方式，反而产生焦虑。选题角度：控糖边界在哪里？什么人该控什么人不该。证据层级B（权威媒体），use_as=verify_before_script",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "rising",
+      "heat_source": "新华社微信公众号报道，环球人物网转载，2026-09-20",
+      "source_urls": [
+        "https://www.globalpeople.com.cn/305967/306116/index.html?keywords=血糖"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-26",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 78,
+          "label": "较高",
+          "reasons": [
+            "权威媒体报道",
+            "话题非医学断言，讨论社会现象"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，须加非医疗建议提示"
+        },
+        "importance": {
+          "score": 68,
+          "label": "中",
+          "reasons": [
+            "年轻人关注度高",
+            "控糖焦虑是新兴社会话题"
+          ]
+        },
+        "topic_score": 76,
+        "platform": "web",
+        "evidence_tier": "B",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，须加非医疗建议提示"
+      }
+    },
+    {
+      "id": "disc-383",
+      "title": "90后00后为什么开始控糖？控糖+抗炎成年轻人饮食新标签",
+      "angle": "信息时报报道年轻人控糖+抗炎饮食趋势。无糖茶饮、姜黄粉、鱼油走俏。选题角度：年轻人为什么开始关注血糖？是真需求还是跟风。证据层级B（媒体报道）",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "steady",
+      "heat_source": "信息时报2026-08-18报道，花城网转载",
+      "source_urls": [
+        "https://huacheng.gz-cmc.com/pages/2026/08/18/b42db82939854bd1ac4bf95b44081c44.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-26",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 72,
+          "label": "中等",
+          "reasons": [
+            "媒体报道",
+            "反映消费趋势而非医学结论"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "讨论消费趋势，不作为医学建议"
+        },
+        "importance": {
+          "score": 65,
+          "label": "中",
+          "reasons": [
+            "年轻人目标受众匹配",
+            "控糖消费趋势"
+          ]
+        },
+        "topic_score": 72,
+        "platform": "web",
+        "evidence_tier": "B",
+        "use_as": "verify_before_script",
+        "creator_note": "讨论消费趋势，不作为医学建议"
+      }
+    },
+    {
+      "id": "disc-384",
+      "title": "糖尿病年轻化：为什么35岁被定为血糖警戒线？",
+      "angle": "北京发布引用中国疾控中心数据：20-24岁男性糖尿病患病率从1.99%升至7.42%，40岁以下发病率3倍激增。ADA和《中国糖尿病防治指南》将筛查年龄提前至35岁。证据层级A（政府发布）",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili,zhihu",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "北京市政府发布2026-08-25，引用中国疾控中心2025年研究",
+      "source_urls": [
+        "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202608/t20260825_4836092.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-26",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 91,
+          "label": "高",
+          "reasons": [
+            "政府发布来源",
+            "引用中国疾控中心数据",
+            "可追溯原始研究"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "可引用来源观点，口播须加非医疗建议并附原链接"
+        },
+        "importance": {
+          "score": 82,
+          "label": "高",
+          "reasons": [
+            "35岁警戒线政策更新",
+            "年轻人高度相关",
+            "数据冲击力强"
+          ]
+        },
+        "topic_score": 88,
+        "platform": "web",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "可引用来源观点，口播须加非医疗建议并附原链接"
+      }
+    },
+    {
+      "id": "disc-385",
+      "title": "糖尿病前期能逆转吗？关键在生活方式干预",
+      "angle": "央视网健康频道报道。糖尿病前期通过生活方式干预（饮食、运动、减重）可逆转。选题角度：什么算糖尿病前期？逆转的科学依据是什么。证据层级A（央视网/权威媒体）",
+      "category": "实操方法",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "steady",
+      "heat_source": "央视网健康频道2026-07-01报道",
+      "source_urls": [
+        "http://jiankang.cctv.com/2026/07/01/ARTIz4OY6xfbMkKTmLmASSAV260701.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-26",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 88,
+          "label": "高",
+          "reasons": [
+            "央视网权威报道",
+            "逆转有指南依据"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "可引用来源观点，口播须加非医疗建议并附原链接"
+        },
+        "importance": {
+          "score": 75,
+          "label": "高",
+          "reasons": [
+            "糖前期是年轻人高频关注话题",
+            "逆转希望有传播力"
+          ]
+        },
+        "topic_score": 84,
+        "platform": "web",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "可引用来源观点，口播须加非医疗建议并附原链接"
+      }
+    },
+    {
+      "id": "disc-386",
+      "title": "吃二甲双胍就能减肥？医生提醒：别自行乱用",
+      "angle": "南方网/广东药监局报道二甲双胍副作用和超说明书用药风险。常见副作用包括恶心、腹泻、B12吸收障碍。选题角度：二甲双胍不是减肥药，自行服用危险。证据层级B（权威媒体/药监局）",
+      "category": "避坑指南",
+      "platform": "dy,xhs,bili,zhihu",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "南方网/广东药监局2026年报道，复旦大学相关研究",
+      "source_urls": [
+        "http://mpa.gd.gov.cn/xwdt/xwfbpt/mtzx/content/post_4761343.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-26",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 85,
+          "label": "高",
+          "reasons": [
+            "药监局官方平台报道",
+            "副作用有说明书依据"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "涉及用药安全，必须提示就医，不得给出剂量建议"
+        },
+        "importance": {
+          "score": 80,
+          "label": "高",
+          "reasons": [
+            "二甲双胍减肥是热门误解",
+            "用药安全高伤害性"
+          ]
+        },
+        "topic_score": 82,
+        "platform": "web",
+        "evidence_tier": "B",
+        "use_as": "verify_before_script",
+        "creator_note": "涉及用药安全，必须提示就医，不得给出剂量建议"
+      }
+    },
+    {
+      "id": "disc-387",
+      "title": "胰岛素抵抗是什么？为什么很多人越减越肥",
+      "angle": "人民网报道胰岛素抵抗机制。胰岛素抵抗是代谢综合征核心，导致减重困难。选题角度：什么是胰岛素抵抗？怎么判断自己有没有？科学改善方法。证据层级A（人民网/权威媒体）",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili,zhihu",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "人民网2026-05-01报道，中国疾控中心慢病中心",
+      "source_urls": [
+        "http://health.people.com.cn/n1/2026/0501/c14739-40712529.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-26",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 88,
+          "label": "高",
+          "reasons": [
+            "人民网权威报道",
+            "机制有指南依据"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "可引用来源观点，口播须加非医疗建议并附原链接"
+        },
+        "importance": {
+          "score": 78,
+          "label": "高",
+          "reasons": [
+            "胰岛素抵抗是年轻人热词",
+            "减肥平台期高频关注"
+          ]
+        },
+        "topic_score": 84,
+        "platform": "web",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "可引用来源观点，口播须加非医疗建议并附原链接"
+      }
+    },
+    {
+      "id": "disc-388",
+      "title": "糖尿病治疗新突破：干细胞再生胰岛移植",
+      "angle": "新华网/央视新闻/中国科学院报道。中国团队在《柳叶针》发表研究，利用干细胞来源再生胰岛移植治疗1型糖尿病。选题角度：前沿突破，但仍在研究阶段。证据层级A（权威科研报道）",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili,zhihu",
+      "duration": "30-45s",
+      "heat": "steady",
+      "heat_source": "新华网2026-03-17报道，中科院2026-03-18报道",
+      "source_urls": [
+        "https://www.news.cn/20260317/a70634ff02fa4cbcbaa4cc16ef119848/c.html",
+        "http://www.cas.cn/cm/202603/t20260318_5104522.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-26",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 92,
+          "label": "高",
+          "reasons": [
+            "新华网/中科院权威报道",
+            "《柳叶刀》期刊发表",
+            "可追溯原始论文"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "前沿研究，须强调仍在研究阶段，不构成治疗建议"
+        },
+        "importance": {
+          "score": 72,
+          "label": "高",
+          "reasons": [
+            "科研突破有传播力",
+            "1型糖尿病新希望"
+          ]
+        },
+        "topic_score": 82,
+        "platform": "web",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "前沿研究，须强调仍在研究阶段，不构成治疗建议"
       }
     }
   ],
