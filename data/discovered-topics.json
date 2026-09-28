@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-09-26",
+  "updated": "2026-09-28",
   "topics": [
     {
       "id": "disc-016",
@@ -9717,6 +9717,156 @@
         "use_as": "cite_directly",
         "creator_note": "前沿研究，须强调仍在研究阶段，不构成治疗建议"
       }
+    },
+    {
+      "id": "disc-389",
+      "title": "中秋控糖攻略：月饼怎么吃不爆血糖",
+      "angle": "中秋节令选题，都昌县人民医院内分泌科给出实用建议：1/4块月饼、先菜后饭、餐后散步15-20分钟。节令性内容时效性强。",
+      "category": "饮食指南",
+      "platform": "web",
+      "duration": "15-20s",
+      "heat": "warm",
+      "heat_source": "九江新闻网/都昌县人民医院（2026-09-22）",
+      "source_urls": [
+        "https://www.jjxw.cn/article/2026/09/22/799287.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-28",
+      "platform_data": {}
+    },
+    {
+      "id": "disc-390",
+      "title": "雅培瞬感2代获批国内首款iCGM——CGM进入治疗决策时代",
+      "angle": "国家药监局批准国内首个集成式持续葡萄糖监测系统(iCGM)，测量结果可用于治疗辅助决策。标志CGM从同质化竞争转向技术与价值分层。",
+      "category": "产品测评",
+      "platform": "web",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "新华网报道（2026-09-21），国家药监局批准",
+      "source_urls": [
+        "http://www.news.cn/digital/20260921/47cbda8a36ec4562bb57c0b11e701f12/c.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-28",
+      "platform_data": {}
+    },
+    {
+      "id": "disc-391",
+      "title": "代谢手术长期缓解率94.5%——但门槛极高别急着做",
+      "angle": "OAGB术后10年随访研究：127例T2D合并肥胖患者缓解率94.5%。但需BMI达标、病程短、胰岛功能尚好。术前C肽<2.0是最强非缓解预测因子。须强调这是手术研究非生活方式建议。",
+      "category": "趋势解读",
+      "platform": "web",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "Medscape/Obesity Surgery（2026-04-29），127例10年随访",
+      "source_urls": [
+        "https://www.medscape.com/viewarticle/gastric-bypass-leads-long-term-diabetes-remission-most-2026a1000drn"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-28",
+      "platform_data": {}
+    },
+    {
+      "id": "disc-392",
+      "title": "多学科糖尿病逆转门诊：29.24%缓解率真实世界数据",
+      "angle": "Frontiers in Endocrinology发表：171例T2DM患者经多学科管理后24周以上缓解率29.24%。年龄较轻、病程短、用药少者更易缓解。真实世界数据比实验室数据更贴近受众。",
+      "category": "趋势解读",
+      "platform": "web",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "Frontiers in Endocrinology（2026-04-14），171例真实世界研究",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42058782/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-28",
+      "platform_data": {}
+    },
+    {
+      "id": "disc-393",
+      "title": "控糖产品大起底：「控控片」「控糖饮」虚假宣传被央视曝光",
+      "angle": "新京报+央视深度调查：多款控糖产品实为普通食品，宣称阻断碳水降糖神药，黑猫投诉超1500条。打假类天然高传播，与用户切身利益相关。须注意不帮带货也不复述产品功效。",
+      "category": "打假辟谣",
+      "platform": "web,dy",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "新京报调查+黑猫投诉1561条+央视起底报道",
+      "source_urls": [
+        "https://m.bjnews.com.cn/detail/1758763550168697.html",
+        "https://m.bjnews.com.cn/detail/1766127059129156.html",
+        "https://news.cctv.cn/2026/01/13/ARTIy7jxyP3viDwJn1R5viwl260113.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-28",
+      "platform_data": {
+        "complaints": 1561
+      }
+    },
+    {
+      "id": "disc-394",
+      "title": "2026年CGM动态血糖仪怎么选：MARD值低于10%才够用",
+      "angle": "CGM从糖尿病专用扩展到控糖减肥人群，2026年多款产品集中上市。用户急需不买贵的只买对的选购指南。可做避坑型内容（哪些品牌MARD值虚标、佩戴体验差）。",
+      "category": "产品测评",
+      "platform": "web",
+      "duration": "30-45s",
+      "heat": "medium",
+      "heat_source": "千龙网2026年8月专题报道；新京报消费者关注",
+      "source_urls": [
+        "https://china.qianlong.com/2026/0802/8706327.shtml",
+        "https://m.bjnews.com.cn/detail/1774419296129161.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-28",
+      "platform_data": {}
+    },
+    {
+      "id": "disc-395",
+      "title": "国家卫健委答复：14部门联合糖尿病防治实施方案",
+      "angle": "国家卫健委正式答复，14部门联合印发《健康中国行动——糖尿病防治行动实施方案(2024-2030年)》24条措施。基层高危人群每年至少测1次空腹血糖，糖前期每半年检测。政策级选题。",
+      "category": "趋势解读",
+      "platform": "web",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "国家卫健委官网（2026-09-18公开），14部门联合",
+      "source_urls": [
+        "https://www.nhc.gov.cn/wjw/jiany/202609/fc6c6ba7fc2345da8e8d0b6c87004baa.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-28",
+      "platform_data": {}
+    },
+    {
+      "id": "disc-396",
+      "title": "糖前期逆转的代糖陷阱：添加糖、人工代糖、天然代糖完全不同",
+      "angle": "协和/清华长庚专家背书+耶鲁大学《自然》子刊研究。添加糖、人工代糖(阿斯巴甜/三氯蔗糖)、天然代糖(甜菊糖苷/罗汉果糖苷)对血糖影响完全不同。认知反差极大，适合短视频冲击。",
+      "category": "饮食指南",
+      "platform": "web",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "澎湃新闻/中国临床营养网；耶鲁大学《自然》子刊研究",
+      "source_urls": [
+        "https://m.thepaper.cn/newsDetail_forward_33736506",
+        "https://m.thepaper.cn/newsDetail_forward_33252680"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-09-28",
+      "platform_data": {}
     }
   ],
   "archive": [
