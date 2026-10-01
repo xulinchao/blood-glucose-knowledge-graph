@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-09-28",
+  "updated": "2026-10-01",
   "topics": [
     {
       "id": "disc-016",
@@ -9867,6 +9867,92 @@
       "publish_status": "pending",
       "discovered_date": "2026-09-28",
       "platform_data": {}
+    },
+    {
+      "id": "disc-397",
+      "title": "国家基层糖尿病防治管理指南（2022）",
+      "angle": "全网网页(Exa) · 证据层级A · cite_directly · 可引用来源观点，口播须加「非医疗建议」并附原链接",
+      "category": "数字科普",
+      "platform": "dy,bili",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 全网网页(Exa) · 选题分 91 · 互动 -",
+      "source_urls": [
+        "http://wsjkw.zaozhuang.gov.cn/ztzl/xcyspx/202409/P020240924609010462455.pdf"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-01",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 91,
+          "label": "较高",
+          "reasons": [
+            "一级来源：指南/政府/期刊域名",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+        },
+        "importance": {
+          "score": 40,
+          "label": "低",
+          "reasons": []
+        },
+        "topic_score": 91,
+        "platform": "exa",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-398",
+      "title": "糖化血红蛋白7.0就是糖尿病吗？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 35",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1QAa96QEAT"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-01",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 52,
+          "label": "中",
+          "reasons": [
+            "命中关键词「糖化血红蛋白」"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
     }
   ],
   "archive": [
