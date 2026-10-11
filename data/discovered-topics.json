@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-10-01",
+  "updated": "2026-10-11",
   "topics": [
     {
       "id": "disc-016",
@@ -9953,6 +9953,102 @@
         "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
       },
       "data_ref": []
+    },
+    {
+      "id": "disc-399",
+      "title": "肥胖从来不只是胖，它是全身代谢性疾病 #肥胖 #代谢综合征",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "案例故事",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 118",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1VMHU6mEfG"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-11",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 52,
+          "label": "中",
+          "reasons": [
+            "命中关键词「代谢综合征」"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "胰岛素是「钥匙」，细胞是「锁」，抵抗=锁生锈了",
+        "早期血糖可能正常（高胰岛素代偿期）",
+        "腹部肥胖是最常见诱因",
+        "运动可显著改善胰岛素敏感性"
+      ]
+    },
+    {
+      "id": "disc-400",
+      "title": "什么是代谢综合症？ #代谢综合征 #肥胖",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 283",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1vr8r6nETm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-11",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 52,
+          "label": "中",
+          "reasons": [
+            "命中关键词「代谢综合征」"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "胰岛素是「钥匙」，细胞是「锁」，抵抗=锁生锈了",
+        "早期血糖可能正常（高胰岛素代偿期）",
+        "腹部肥胖是最常见诱因",
+        "运动可显著改善胰岛素敏感性"
+      ]
     }
   ],
   "archive": [

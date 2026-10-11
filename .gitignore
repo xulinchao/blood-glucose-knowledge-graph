@@ -31,6 +31,7 @@ Thumbs.db
 # TRAE workspace (personal)
 .workbuddy/
 .uploads/
+.trae-html-share-packages/
 
 # Local scripts (personal use only)
 push.bat
