@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-10-11",
+  "updated": "2026-10-23",
   "topics": [
     {
       "id": "disc-016",
@@ -10049,6 +10049,137 @@
         "腹部肥胖是最常见诱因",
         "运动可显著改善胰岛素敏感性"
       ]
+    },
+    {
+      "id": "disc-401",
+      "title": "初发糖尿病，空腹血糖挺好，餐后两小时7.6，三小时血糖却到10.1",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "案例故事",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 13718",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Gg411Y7wk"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-23",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 58,
+          "label": "中",
+          "reasons": [
+            "互动量中等(13,718)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-402",
+      "title": "《柳叶刀》子刊：54%糖友停药？「缓解」不等于「治愈」",
+      "angle": "研究解读去标题党：麦吉尔大学团队 2026年10月发表于《柳叶刀》子刊、EASD 2026 公布的研究显示，部分符合条件的年轻 2 型糖友经强化生活方式干预可实现停药（缓解）。传播中易被简化为「糖尿病能治愈」。口播拆解：缓解≠治愈、适用人群有限、停药必须医生评估，禁止复述「54%都能停药」。",
+      "category": "辟谣纠偏",
+      "platform": "抖音,B站",
+      "duration": "45-60s",
+      "heat": "hot",
+      "heat_source": "头条/搜狐 10 月多篇转述《柳叶刀》子刊研究，头条同题文章称「54%糖友成功停药，但这类人别乱学」",
+      "source_urls": [
+        "http://m.toutiao.com/group/7697243411736166927/",
+        "https://news.sohu.com/a/1085857016_122201476"
+      ],
+      "status": "discovered",
+      "discovered_at": "2026-10-23",
+      "evidence_tier": "A",
+      "gate_passed": true,
+      "use_as": "verify_before_script",
+      "notes": "期刊为 A 级，但当前仅自媒体转述：54% 的分母、干预方式、随访时长必须回源核实；口播结尾加非医疗建议声明"
+    },
+    {
+      "id": "disc-403",
+      "title": "糖前期别急着戒主食：均衡饮食长期逆转率反而更高？",
+      "angle": "反常识认知纠偏：光明网 2026-09 科普引述一项覆盖 8 国、追踪 3 年的研究，称盲目「高蛋白+低GI」饮食者的糖前期长期逆转率反而不及均衡饮食人群。与存量「糖前期逆转怎么做」选题互补，主打「别走极端」。",
+      "category": "饮食指南",
+      "platform": "抖音,小红书",
+      "duration": "30-45s",
+      "heat": "中",
+      "heat_source": "光明网 2026-09《糖尿病前期，别急着少吃主食》等权威媒体科普",
+      "source_urls": [
+        "https://m.gmw.cn/2026/09/08/content_1304561350.htm"
+      ],
+      "status": "discovered",
+      "discovered_at": "2026-10-23",
+      "evidence_tier": "B",
+      "gate_passed": true,
+      "use_as": "verify_before_script",
+      "notes": "「8国/3年/逆转率更高」等关键信息须回源找到原始研究核对；不得给出个体饮食处方"
+    },
+    {
+      "id": "disc-404",
+      "title": "2026 ADA/EASD 共识：控糖的终极目标变了？从盯数字到护心肾",
+      "angle": "指南动态解读：2026 版美欧糖尿病专家共识将 2 型糖尿病定位为累及全身的慢性系统性疾病，治疗目标从单纯降糖转向预防并发症与心肾保护；二甲双胍仍是一线选择之一但不再唯一。「300亿大药退位」为标题党不复述。与存量二甲双胍单药角度（disc-349/2167 行条目）区分：本条聚焦治疗目标整体转向。",
+      "category": "数字科普",
+      "platform": "抖音,B站",
+      "duration": "45-60s",
+      "heat": "中",
+      "heat_source": "搜狐/新浪医药 10 月共识解读文章传播",
+      "source_urls": [
+        "https://roll.sohu.com/a/1087981742_121948387",
+        "https://m.weibo.cn/detail/5354298067651750"
+      ],
+      "status": "discovered",
+      "discovered_at": "2026-10-23",
+      "evidence_tier": "B",
+      "gate_passed": true,
+      "use_as": "verify_before_script",
+      "notes": "写稿前须回源核对共识原文（ADA/EASD 官方）；用药话题不得给个体用药建议，须加就医提示"
+    },
+    {
+      "id": "disc-405",
+      "title": "低GI 食品销量暴涨 60 倍：三步看懂「低GI认证」不被收智商税",
+      "angle": "避坑指南 + 商业趋势：AgeClub 报道低GI成盒马/山姆「控糖顶流」，销量暴涨60倍；艺恩数据显示低GI社媒讨论度同比+146%。结合国标 WS/T 652-2019（GI≤55）教观众三步鉴别真低GI：看国标认证、看公开检测报告、警惕「升二全额退」类营销承诺。与存量「低GI标签智商税」角度互补，增量是 60 倍销量数据与国标鉴别步骤。",
+      "category": "避坑指南",
+      "platform": "抖音,小红书",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "AgeClub 行业报道（销量暴涨60倍）+ 艺恩营销智库（讨论度+146%）+ 界面新闻「升二全额退」测评",
+      "source_urls": [
+        "https://m.ageclub.net/article-detail/7568",
+        "https://www.jiemian.com/article/14182843.html"
+      ],
+      "status": "discovered",
+      "discovered_at": "2026-10-23",
+      "evidence_tier": "B",
+      "gate_passed": true,
+      "use_as": "verify_before_script",
+      "notes": "国标 WS/T 652-2019 与 GI≤55 定义可引用（A级可查证）；「60倍/146%」行业数据须标注来源；不推荐具体品牌，测评软文不复述"
     }
   ],
   "archive": [
