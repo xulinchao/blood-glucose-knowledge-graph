@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-10-23",
+  "updated": "2026-10-25",
   "topics": [
     {
       "id": "disc-016",
@@ -10180,6 +10180,176 @@
       "gate_passed": true,
       "use_as": "verify_before_script",
       "notes": "国标 WS/T 652-2019 与 GI≤55 定义可引用（A级可查证）；「60倍/146%」行业数据须标注来源；不推荐具体品牌，测评软文不复述"
+    },
+    {
+      "id": "disc-406",
+      "title": "【汤医科普】餐后两小时血糖升高的原因及应对措施",
+      "angle": "全网网页(Exa) · 证据层级A · cite_directly · 可引用来源观点，口播须加「非医疗建议」并附原链接",
+      "category": "数字科普",
+      "platform": "dy,bili",
+      "duration": "60-90s",
+      "heat": "steady",
+      "heat_source": "每日采集 全网网页(Exa) · 选题分 85 · 互动 -",
+      "source_urls": [
+        "https://wjw.beijing.gov.cn/bmfw_20143/jkzs/jksh/202403/t20240321_3595746.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-25",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 85,
+          "label": "较高",
+          "reasons": [
+            "一级来源：指南/政府/期刊域名"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+        },
+        "importance": {
+          "score": 40,
+          "label": "低",
+          "reasons": []
+        },
+        "topic_score": 85,
+        "platform": "exa",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+      },
+      "data_ref": [
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-407",
+      "title": "肚子大、血压、血糖、血脂高，警惕这种综合征",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "症状预警",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 13792",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1NHZGY8ETB"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-25",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 58,
+          "label": "中",
+          "reasons": [
+            "互动量中等(13,792)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-408",
+      "title": "「低GI认证」已被叫停：花3万能买张证书，你买的低GI还靠谱吗",
+      "angle": "打假+避坑：新京报消费研究院 2026-07-23 调查 60 款标称低GI食品，发现机构低GI标志不少于 12 种；低GI食品认证已被国家认监委全面叫停，机构转向「低GI评价/验证」，企业花 3 万元送样测试即可拿到标志和证书，无法保证全批次持续达标；部分商家绕过 WS/T 652—2019 人体测定法，用体外测试结果宣称低GI。结合新华网 4 要点（肉制品、纯蜂蜜、普通糖果宣称低GI涉虚假宣传），教观众三步辨别：看是否有批次检测报告、看是否按 WS/T 652—2019 测定、看碳水与脂肪配料。",
+      "category": "避坑指南",
+      "platform": "抖音,小红书,B站",
+      "duration": "45-60s",
+      "heat": "hot",
+      "heat_source": "新京报消费研究院调查（2026-07-23，60款产品统计）；新华网（2026-10-16）《辨别低GI食品 4个要点》；光明网（2026-05-14）低GI营销噱头评论",
+      "source_urls": [
+        "https://m.bjnews.com.cn/detail/1784787979169051.html",
+        "https://m.bjnews.com.cn/detail/1784787968168451.html",
+        "http://imgs.xinhuanet.com/food/20261016/268e0b5482cd48d890c060a39f54ae02/c.html",
+        "http://health.gmw.cn/2026-05/14/content_38764155.htm"
+      ],
+      "status": "discovered",
+      "discovered_at": "2026-10-25",
+      "evidence_tier": "B",
+      "gate_passed": true,
+      "use_as": "verify_before_script",
+      "notes": "「认证叫停」「3万元送样发证」「体外测试替代」均出自新京报调查报道，口播须标注「据新京报调查」；WS/T 652-2019 与 GI≤55 定义可引用；不点名具体品牌与检测机构，不复述软文"
+    },
+    {
+      "id": "disc-409",
+      "title": "瘦人也会糖前期：胖人靠减重，瘦人靠增肌，两套打法别用错",
+      "angle": "认知纠偏：澎湃报道指出传统「少吃、清淡、减重」的一刀切控糖模式不适用于瘦型糖尿病前期人群，瘦人逆转核心是用动植物双蛋白保证肌肉、均衡膳食、力量训练优化体成分。人民网（2026-07-01）给出糖前期干预五维度：优先低GI碳水、增加膳食纤维、每周 150-300 分钟中等强度有氧+2-3 次抗阻、超重者减重 5%-7%、戒烟限酒并保证睡眠。口播用「体重正常≠低风险」破题，落到体成分与抗阻训练。",
+      "category": "认知纠偏",
+      "platform": "抖音,B站,小红书",
+      "duration": "30-45s",
+      "heat": "中",
+      "heat_source": "澎湃「胖人控糖靠减重，瘦人控糖靠增肌：糖尿病前期也分两套打法」；人民网健康《糖尿病前期如何「逆转」？专家：健康生活方式是关键》",
+      "source_urls": [
+        "https://m.thepaper.cn/newsDetail_forward_33650782",
+        "http://health.people.com.cn/n1/2026/0701/c14739-40751470.html"
+      ],
+      "status": "discovered",
+      "discovered_at": "2026-10-25",
+      "evidence_tier": "B",
+      "gate_passed": true,
+      "use_as": "verify_before_script",
+      "notes": "「瘦人进展快、逆转空间大」为科普媒体表述，须弱化为「个体差异较大」；减重 5%-7% 与运动量按《中国2型糖尿病防治指南（2024版）》语境引用；不得给出个体饮食或训练处方"
+    },
+    {
+      "id": "disc-410",
+      "title": "2026中国专家共识：2型糖尿病「缓解」怎么判定？ABCD 评估法 + 5R 原则",
+      "angle": "指南解读：2026 中国专家共识明确「缓解」诊断标准为停用降糖药物后糖化血红蛋白低于 6.5% 并维持至少 3 个月，同时强调缓解并不意味治愈；建议用 ABCD 评估法明确缓解的基础条件、按 5R 原则管理。承接 disc-402（柳叶刀子刊 54% 停药），把「能不能停」从情绪层落到可评估层，讲清「有条件、要评估、可能复发」。",
+      "category": "指南解读",
+      "platform": "抖音,B站",
+      "duration": "45-60s",
+      "heat": "中",
+      "heat_source": "丁香园临床指南库「2026 中国专家共识：2型糖尿病缓解」重要更新摘要",
+      "source_urls": [
+        "http://drugs.dxy.cn/pc/clinicalGuidelines/pDR1lP2e7JBdPTg09b6SvQQ"
+      ],
+      "status": "discovered",
+      "discovered_at": "2026-10-25",
+      "evidence_tier": "B",
+      "gate_passed": true,
+      "use_as": "verify_before_script",
+      "notes": "HbA1c<6.5%、维持≥3个月、ABCD 与 5R 必须回源共识原文核对后再上口播；不得评估任何个体能否停药，一律转「请内分泌科医生评估」"
+    },
+    {
+      "id": "disc-411",
+      "title": "ADA 2026 标准：CGM 从「确诊后再说」变成「确诊即可用」",
+      "angle": "指南动态：ADA《Standards of Care in Diabetes—2026》（2025-12-08 发布）推荐在糖尿病确诊时及之后任何时间使用持续葡萄糖监测（CGM），以改善能从血糖管理获益的人群结局；同时取消起始胰岛素泵/自动胰岛素输注前需满足的某些治疗条件；营养部分纳入地中海式与低碳水饮食模式的预防证据。角度是「CGM 门槛前移，不是老糖友专属」，落到「谁真正需要戴、读数怎么读」，不做品牌对比。",
+      "category": "数字科普",
+      "platform": "B站,抖音",
+      "duration": "30-45s",
+      "heat": "中",
+      "heat_source": "ADA 官方新闻稿（2025-12-08）；国内 CGM 厂商（三诺/微泰/鱼跃）软文密集，均为商业内容",
+      "source_urls": [
+        "https://diabetes.org/sites/default/files/2025-12/2026%20Standards%20of%20Care%20press%20release.pdf",
+        "https://www.yuwell-poctech.com/care/clincal-evidence"
+      ],
+      "status": "discovered",
+      "discovered_at": "2026-10-25",
+      "evidence_tier": "A",
+      "gate_passed": true,
+      "use_as": "cite_directly",
+      "notes": "只引用 ADA 原文表述并附链接；国内「MARD 7.45%/8.71%」等数字多来自厂商稿（D/E 级），不得作为客观测评引用；不做品牌推荐，结尾加非医疗建议声明"
     }
   ],
   "archive": [
