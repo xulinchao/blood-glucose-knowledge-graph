@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "topics": [
     {
       "id": "disc-016",
@@ -8465,14 +8465,18 @@
       "heat_source": "央广网/中国经济网",
       "source_urls": [
         "https://food.cnr.cn/news/20260911/t20260911_527811250.shtml",
-        "http://www.ce.cn/cysc/newmain/yc/jsxw/202609/t20260917_3218013.shtml"
+        "http://www.ce.cn/cysc/newmain/yc/jsxw/202609/t20260917_3218013.shtml",
+        "https://ifnd.caas.cn/docs/2026-09/2b4ac52de29f4c47a7020cdfdb5d32f9.pdf",
+        "http://www.cnr.cn/mspd/yw/20261008/t20261008_527835973.shtml",
+        "http://tuopin.ce.cn/news/202610/t20261013_3255990.shtml"
       ],
       "status": "discovered",
       "discovered_at": "2026-09-21",
       "evidence_tier": "A",
       "gate_passed": true,
       "use_as": "cite_directly",
-      "notes": "A级政策类来源，科普价值高"
+      "notes": "A级政策类来源，科普价值高",
+      "verify_note_20261026": "2026-10-26 Agent 增补：《低GI食品与健康消费行业共识（2026）》原文 PDF（农业农村部食物与营养发展研究所 ifnd.caas.cn，2026-09），由该所牵头、21 家科研院所与企业专家共同编写，回应低GI概念滥用；核心观点含「低GI主食可降低餐后血糖峰值、减少全天血糖波动」，并引用《成人糖尿病食养指南》将低GI主食列为一线膳食干预。政策背景：商务部等 7 部门《关于推动商品消费扩容升级的实施意见》（央广网 2026-10-08），提出到 2030 年培育健康消费等十万亿级市场。与 disc-408（认证叫停打假）构成上下篇：408 讲「证书不可信」，347 讲「行业自划红线怎么用」。"
     },
     {
       "id": "disc-348",
@@ -10152,14 +10156,18 @@
       "heat_source": "搜狐/新浪医药 10 月共识解读文章传播",
       "source_urls": [
         "https://roll.sohu.com/a/1087981742_121948387",
-        "https://m.weibo.cn/detail/5354298067651750"
+        "https://m.weibo.cn/detail/5354298067651750",
+        "https://diabetesjournals.org/care/article/doi/10.2337/dci26-0141/172591/Management-of-Type-2-Diabetes-2026-A-Consensus",
+        "https://gpcardio.org/en/2026-10-02_ada-easd-2026-consensus-on-type-2-diabetes/",
+        "https://health.ifeng.com/c/8wvBxwd4zUS"
       ],
       "status": "discovered",
       "discovered_at": "2026-10-23",
       "evidence_tier": "B",
       "gate_passed": true,
       "use_as": "verify_before_script",
-      "notes": "写稿前须回源核对共识原文（ADA/EASD 官方）；用药话题不得给个体用药建议，须加就医提示"
+      "notes": "写稿前须回源核对共识原文（ADA/EASD 官方）；用药话题不得给个体用药建议，须加就医提示",
+      "verify_note_20261026": "2026-10-26 Agent 回源核实：共识报告 2026-10-02 发表于 Diabetes Care（Davies MJ, Aroda VR, Bajaj HS 等，ADA/EASD 联合）。核心变化：SGLT2 抑制剂和/或 GLP-1 类治疗可考虑从诊断时早期引入；二甲双胍不再是「人人必先吃」的强制第一步（仍是基础选项之一）；体重管理与降糖同等重要；白蛋白尿性 CKD 第三层治疗为 finerenone。Buse 教授「不再推荐二甲双胍作为一线」引语出自凤凰网健康对发布会解读的转述，引用须注明出处。涉药红线：口播只作「共识怎么读」的讨论话题，提示就医，不得给任何个体换药/停药建议；「跌下神坛」「首选药易主」等标题党表述不复述。"
     },
     {
       "id": "disc-405",
@@ -10350,6 +10358,71 @@
       "gate_passed": true,
       "use_as": "cite_directly",
       "notes": "只引用 ADA 原文表述并附链接；国内「MARD 7.45%/8.71%」等数字多来自厂商稿（D/E 级），不得作为客观测评引用；不做品牌推荐，结尾加非医疗建议声明"
+    },
+    {
+      "id": "disc-412",
+      "title": "糖耐全过程记录+注意事项！一条视频讲清楚～",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "症状预警",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 15247",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1vv25BUEuM"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-26",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 58,
+          "label": "中",
+          "reasons": [
+            "互动量中等(15,247)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-413",
+      "title": "同样是膳食纤维，为什么谷物纤维护糖、淀粉类蔬菜纤维或反升风险？",
+      "angle": "认知纠偏：据浙江日报 2026-10-14 版面转述，2026年5月发表于《糖尿病护理》（Diabetes Care）的研究提示——谷物纤维、水果纤维与2型糖尿病风险下降相关，而部分淀粉类蔬菜的纤维摄入反而与风险上升（转述口径 +11%）相关；同篇报道提及红薯等淀粉类蔬菜的 GI 值问题。口播角度是「纤维的来源比数量更重要」，落到实操：土豆、红薯等按主食算份量，不额外叠加主食；不是「蔬菜不能吃」。⚠️ 原始论文未回源，+11% 数字与「淀粉类蔬菜」定义须回源 Diabetes Care 2026年5月原文核对后才可写入正文。",
+      "category": "饮食指南",
+      "platform": "抖音,小红书,B站",
+      "duration": "30-45s",
+      "heat": "中",
+      "heat_source": "浙江日报 2026-10-14 纸媒版面（xcepaper.zjol.com.cn）；无平台互动数据，蝉妈妈需手动补充",
+      "source_urls": [
+        "http://xcepaper.zjol.com.cn/resfile/2026-10-14/04/jrxc-20261014-004.pdf"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-26",
+      "discovered_at": "2026-10-26",
+      "evidence_tier": "B",
+      "gate_passed": true,
+      "use_as": "verify_before_script",
+      "notes": "写稿前必须回源 Diabetes Care 原始论文核对：研究样本、纤维分类定义、+11% 的口径（每多少克/哪类人群）。绝对化红线：不说「蔬菜纤维有害」「红薯土豆不能吃」「吃土豆得糖尿病」；须保留「研究转述」「相关性不等于因果」表述；口播结尾含「这是研究转述，个体情况请咨询医生，不构成医疗建议」。与存量 disc-174（膳食纤维正面角度）、disc-285（隐形升糖食物）区分：本条聚焦「纤维来源差异」的反常识证据。"
     }
   ],
   "archive": [
