@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "topics": [
     {
       "id": "disc-016",
@@ -10423,6 +10423,282 @@
       "gate_passed": true,
       "use_as": "verify_before_script",
       "notes": "写稿前必须回源 Diabetes Care 原始论文核对：研究样本、纤维分类定义、+11% 的口径（每多少克/哪类人群）。绝对化红线：不说「蔬菜纤维有害」「红薯土豆不能吃」「吃土豆得糖尿病」；须保留「研究转述」「相关性不等于因果」表述；口播结尾含「这是研究转述，个体情况请咨询医生，不构成医疗建议」。与存量 disc-174（膳食纤维正面角度）、disc-285（隐形升糖食物）区分：本条聚焦「纤维来源差异」的反常识证据。"
+    },
+    {
+      "id": "disc-414",
+      "title": "空腹血糖大于7，餐后血糖大于10，这种情况怎么办？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 18152",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Vu4y1t7ef"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-27",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 58,
+          "label": "中",
+          "reasons": [
+            "互动量中等(18,152)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "纤维先形成物理屏障，延缓碳水吸收",
+        "蛋白质刺激GLP-1分泌，延缓胃排空",
+        "可将餐后血糖峰值降低20-40%",
+        "同样食物，不同顺序，血糖反应差异显著",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-415",
+      "title": "建议在35岁前就开始控糖！年轻人的血糖窗口期正在关闭",
+      "angle": "认知纠偏：光明网 2026-10-27 刊文「建议在35岁前，就开始控糖！」，背后是中国疾控中心2025年研究——20~24岁男性糖尿病患病率从1.99%升至7.42%；央视网（2025-11-14，国家卫健委发布会）引北京大学公共卫生学院数据：40岁以下群体糖尿病发病率从3%涨到10.9%。角度是「控糖不是中老年专属，35岁前是窗口期」，落到年轻人可执行的3件小事：查一次空腹血糖、把含糖饮料换成水/无糖茶、饭后走10分钟。⚠️「国际医学界将35岁定为血糖管理警戒线」为媒体转述口径、无原始指南出处，口播只说「不少医生建议35岁前开始关注血糖」。",
+      "category": "认知纠偏",
+      "platform": "抖音,小红书,B站",
+      "duration": "30-45s",
+      "heat": "高",
+      "heat_source": "光明网今日刊文（2026-10-27），北京市政府门户、央视网等央媒/政府站多次转载同主题；蝉妈妈数据需手动补充",
+      "source_urls": [
+        "https://m.gmw.cn/2026-10/27/content_1304579657.htm",
+        "https://news.cctv.cn/2025/11/14/ARTIjG3ouxl6aFxxZwCliwOZ251114.shtml",
+        "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202608/t20260825_4836092.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-27",
+      "discovered_at": "2026-10-27",
+      "evidence_tier": "A",
+      "gate_passed": true,
+      "use_as": "cite_directly",
+      "notes": "CDC患病率数字（1.99%→7.42%、3%→10.9%）引用时标注「中国疾控中心2025年研究」「国家卫健委发布会」；不得使用「再不控糖一定得糖尿病」等恐吓句式；结尾必加「体检异常请及时就医，本内容非医疗建议」",
+      "data_ref": []
+    },
+    {
+      "id": "disc-416",
+      "title": "一到换季血糖就飘？入秋血糖波动先看这3个原因",
+      "angle": "季节护理：光明网 2026-10-19 与搜狐健康科普（2026-10-10）指出入秋后血糖频繁超标的主因——贴秋膘盲目进补、气温骤降（应激激素升高+运动量减少）、作息与感染风险叠加；核心结论「秋季控糖重在稳住血糖，切勿自行调药」，做好监测/饮食/运动/并发症防护四件事。",
+      "category": "季节护理",
+      "platform": "抖音,小红书",
+      "duration": "30-45s",
+      "heat": "中",
+      "heat_source": "光明网 2026-10-19 刊文+搜狐健康 2026-10-10；10-11月为季节性搜索高峰；蝉妈妈数据需手动补充",
+      "source_urls": [
+        "https://m.gmw.cn/2026-10/19/content_1304577135.htm",
+        "https://news.sohu.com/a/1085875383_121123808"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-27",
+      "discovered_at": "2026-10-27",
+      "evidence_tier": "B",
+      "gate_passed": true,
+      "use_as": "cite_directly",
+      "notes": "红线「不要自行调整降糖药剂量」必须保留；不提供任何调药/进补方建议；结尾非医疗建议声明必加",
+      "data_ref": []
+    },
+    {
+      "id": "disc-417",
+      "title": "「无糖」饼干吃了血糖照样升？中疾控：无糖≠不升糖",
+      "angle": "辟谣打假：人民网健康 2026-01-15 引中疾控提示——国标「无糖」指每100g固体/100ml液体含糖≤0.5g，但无糖食品仍含精制淀粉与脂肪，总热量照样推高血糖；代糖不升糖≠随便吃。口播角度「配料表三步法」：找「无糖」字样→看碳水化合物总量→看总热量，打破「无糖=敞开吃」误区。",
+      "category": "辟谣打假",
+      "platform": "抖音,小红书",
+      "duration": "15-30s",
+      "heat": "中",
+      "heat_source": "人民网健康（中疾控提示）2026-01-15；无糖食品为常青争议话题；蝉妈妈数据需手动补充",
+      "source_urls": [
+        "http://health.people.com.cn/n1/2026/0115/c14739-40645886.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-27",
+      "discovered_at": "2026-10-27",
+      "evidence_tier": "A",
+      "gate_passed": true,
+      "use_as": "cite_directly",
+      "notes": "国标数值（≤0.5g/100g）标注「预包装食品营养标签通则」口径；不对具体品牌点名；不得出现「无糖食品都是骗局」等绝对化表述；结尾非医疗建议必加",
+      "data_ref": []
+    },
+    {
+      "id": "disc-418",
+      "title": "「激活胰岛、终身控糖、代替药物」？这些降糖产品宣传全违规",
+      "angle": "辟谣打假：中国消费者报 2026-07-15 调查——电商平台大量降糖产品宣称「可代替药物」「血糖稳定5.0Ⅰ型Ⅱ型」「激活胰岛 终身控糖」，有客服甚至建议咨询者逐步减停药物；新京报年终回访发现被下架的控糖饮换名再上架。口播角度「三句违规话术识别法」：凡宣称代替药物、终身控糖、激活胰岛的直接拉黑；糖尿病治疗必须遵医嘱。",
+      "category": "辟谣打假",
+      "platform": "抖音,小红书,B站",
+      "duration": "30-45s",
+      "heat": "中",
+      "heat_source": "中国消费者报 2026-07-15 调查报道+新京报年终回访；打假类内容互动率高；蝉妈妈数据需手动补充",
+      "source_urls": [
+        "http://zxb.ccn.com.cn/html/zxb/20260715/138789.html",
+        "https://www.bjnews.com.cn/detail/1766127059129156.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-27",
+      "discovered_at": "2026-10-27",
+      "evidence_tier": "A",
+      "gate_passed": true,
+      "use_as": "cite_directly",
+      "notes": "引用的是官方媒体调查而非攻击具体品牌；未获官方处罚文书不得点名具体产品；「停药/换药请遵医嘱」必加；不得复述违规宣传语作为事实",
+      "data_ref": []
+    },
+    {
+      "id": "disc-419",
+      "title": "血糖亮黄灯别慌：糖前期是唯一能「逆转」的窗口期",
+      "angle": "认知纠偏：央视网 2025-11-14 采访中国医师协会内分泌代谢科医师分会会长母义明——糖前期最容易逆转，确诊糖尿病3~5年后几乎不可能逆转；建议35岁以上每年至少查一次空腹血糖。糖前期判定（央视口径）：空腹血糖6.1~7.0 / 糖耐量餐后2h 7.8~11.1 / 糖化血红蛋白5.7%~6.5%。人民网 2026-07-01 引《糖尿病共识》干预五维度：优先低GI碳水+膳食纤维、每周150~300分钟中等强度有氧+2~3次抗阻、超重者减重5%~7%、戒烟限酒、6~8小时睡眠。",
+      "category": "症状预警",
+      "platform": "抖音,B站",
+      "duration": "45-60s",
+      "heat": "中高",
+      "heat_source": "央视网联合国糖尿病日专题（2025-11-14/15）+人民网 2026-07-01；糖前期为搜索热词；蝉妈妈数据需手动补充",
+      "source_urls": [
+        "https://news.cctv.cn/2025/11/14/ARTIZqLokgFqf5VxQ4gv18xs251114.shtml",
+        "http://health.people.com.cn/n1/2026/0701/c14739-40751470.html",
+        "https://news.cctv.cn/2025/11/15/ARTISGT7YOQaQu4xsOjFLQhe251115.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-27",
+      "discovered_at": "2026-10-27",
+      "evidence_tier": "A",
+      "gate_passed": true,
+      "use_as": "cite_directly",
+      "notes": "「逆转」必须加限定：指血糖回到正常范围且需长期维持生活方式，不等于「治愈」；不得承诺「照做就能逆转」；判定数值提示「体检异常先就医确诊」；结尾非医疗建议必加",
+      "data_ref": []
+    },
+    {
+      "id": "disc-420",
+      "title": "年轻人开始贴「动态血糖仪」测糖了：健康人要不要戴？",
+      "angle": "趋势观察：新华网 2026-09-21 报道雅培瞬感2代获NMPA批准为国内首款iCGM（集成式持续葡萄糖监测，测量结果可用于成人糖尿病治疗辅助决策）；市场数据（36氪/证券时报，商业口径）：中国动态血糖仪市场预计2022年约3.81亿美元→2029年约15.6亿美元（CAGR约22.3%），2025年国内CGM销售额15.4亿元同比+45.8%，618期间京东健康动态血糖仪同比+64%。角度「年轻人戴CGM看食物反应成新风潮」，落到「糖友遵医嘱戴；健康人短期体验可以，但别把正常血糖波动当焦虑来源」。",
+      "category": "数字科普",
+      "platform": "B站,抖音",
+      "duration": "30-45s",
+      "heat": "中高",
+      "heat_source": "新华网 2026-09-21+36氪/证券时报产业报道；CGM为消费医疗热点；蝉妈妈数据需手动补充",
+      "source_urls": [
+        "http://www.xinhuanet.com/digital/20260921/47cbda8a36ec4562bb57c0b11e701f12/c.html",
+        "https://m.36kr.com/p/3430451479694980",
+        "http://m.toutiao.com/group/7668855251235062312/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-27",
+      "discovered_at": "2026-10-27",
+      "evidence_tier": "B",
+      "gate_passed": true,
+      "use_as": "cite_directly",
+      "notes": "获批事实为A级（新华网）可直接引用；市场数据标注「36氪/证券时报报道」；不做品牌推荐与对比；健康人佩戴不构成医疗监测；结尾非医疗建议必加",
+      "data_ref": []
+    },
+    {
+      "id": "disc-421",
+      "title": "把二甲双胍当减肥药？它其实是个处方药",
+      "angle": "认知纠偏：光明网 2025-04-30 与人民网科普中国——二甲双胍被传「降糖、减肥、抗衰老一把抓」，实为处方药：明显减重需大剂量、伴随腹泻恶心腹胀等不良反应；长期服用影响维生素B12吸收（建议每年至少复查一次，多吃牛奶/蛋/菌菇等富B12食物）；1型糖尿病、严重肝肾功能不全、酗酒者不适用，特定人群有乳酸酸中毒风险。角度「网红神药祛魅」，落到「它是2型糖尿病一线用药，但吃不吃、怎么吃听医生的」。",
+      "category": "用药认知",
+      "platform": "抖音,B站",
+      "duration": "30-45s",
+      "heat": "中",
+      "heat_source": "光明网/人民网科普常青话题+减重圈乱用争议；滨州卫健委 2026-08-28 科普可佐证；蝉妈妈数据需手动补充",
+      "source_urls": [
+        "https://m.gmw.cn/2025-04/30/content_1304026539.htm",
+        "http://health.people.com.cn/n1/2017/0407/c404177-29195193.html",
+        "http://wjw1.binzhou.gov.cn/art/2026/8/28/art_348263_10319584.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-27",
+      "discovered_at": "2026-10-27",
+      "evidence_tier": "A",
+      "gate_passed": true,
+      "use_as": "cite_directly",
+      "notes": "高风险话题——不得提任何剂量、不得建议「可以吃/停」；只做认知边界（处方药、适应症、常见误区）；「乳酸酸中毒」表述限定「特定人群风险」，不恐吓；结尾「用药请遵医嘱」必加",
+      "data_ref": []
+    },
+    {
+      "id": "disc-422",
+      "title": "吃得少还瘦不下来？可能是胰岛素抵抗在捣乱",
+      "angle": "认知纠偏：人民网健康 2026-05-01「吃得少却瘦不下来？」——大量脂肪细胞导致胰岛素不敏感，是「难瘦」的根源之一；人民日报健康客户端 2026-03-13「胰岛素抵抗是多病之源」：生活方式干预是首要手段，很大程度上可逆。落点：科学减重（尤其腹型肥胖）是最有效手段；中疾控口径——每周至少150分钟中等强度有氧+2~3次抗阻训练（重点大肌群）、避免空腹运动、保证蛋白质摄入。",
+      "category": "认知纠偏",
+      "platform": "抖音,小红书,B站",
+      "duration": "30-45s",
+      "heat": "中高",
+      "heat_source": "人民网+中疾控权威口径；减肥×控糖交叉流量池；蝉妈妈数据需手动补充",
+      "source_urls": [
+        "http://health.people.com.cn/n1/2026/0501/c14739-40712529.html",
+        "http://paper.people.com.cn/jksb/pc/content/202603/13/content_30148679.html",
+        "https://www.chinacdc.cn/jkkp/mxfcrb/fpdx/202504/t20250418_306066.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-27",
+      "discovered_at": "2026-10-27",
+      "evidence_tier": "A",
+      "gate_passed": true,
+      "use_as": "cite_directly",
+      "notes": "「可逆」加限定「很大程度上可逆、需长期坚持」；不做任何补剂/药物/减肥产品推荐；结尾非医疗建议必加",
+      "data_ref": []
+    },
+    {
+      "id": "disc-423",
+      "title": "断碳戒糖能减肥抗衰？专家：短期掉秤，长期伤身",
+      "angle": "辟谣打假：中国经济网 2026-07-06——短视频平台「断碳戒糖」话题（戒主食、断糖=快速掉秤/紧致肌肤/延缓衰老）累计数十亿次浏览，并配套带货代餐、抗糖丸、控糖补剂；专家指出极端断碳短期看似见效，实则不利健康，年轻人跟风风险高。选题线索（待核实）：光明网 2026-09-08 称「一项覆盖8国、追踪3年的研究显示，盲目高蛋白+低GI饮食者的糖前期长期逆转率反不如均衡饮食人群」——原始研究未回源，不得直接引用。",
+      "category": "辟谣打假",
+      "platform": "抖音,小红书",
+      "duration": "30-45s",
+      "heat": "高",
+      "heat_source": "「断碳戒糖」平台话题累计数十亿次浏览（中国经济网转述）；抗糖丸/代餐带货争议多；蝉妈妈数据需手动补充",
+      "source_urls": [
+        "http://fashion.ce.cn/tjyd/202607/t20260706_3069609.shtml",
+        "https://m.gmw.cn/2026-09/08/content_1304561350.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-10-27",
+      "discovered_at": "2026-10-27",
+      "evidence_tier": "B",
+      "gate_passed": true,
+      "use_as": "verify_before_script",
+      "notes": "「8国3年研究」必须回源核实后才可写入正文，否则只引用中国经济网专家口径；抗糖丸/代餐/控糖补剂一律不推荐；「伤身」具体机制需医生审稿把关；结尾非医疗建议必加",
+      "data_ref": []
     }
   ],
   "archive": [
