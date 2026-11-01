@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-10-31",
+  "updated": "2026-11-01",
   "topics": [
     {
       "id": "disc-016",
@@ -10896,6 +10896,93 @@
       "use_as": "cite_directly",
       "notes": "政策数字（2/3 覆盖、2030 目标）须引原文；不得承诺「一定能免费」——用「多地可在基层机构获得指导」；不得把政策解读写成疗效承诺；结尾非医疗建议必加",
       "data_ref": []
+    },
+    {
+      "id": "disc-432",
+      "title": "糖前期逆转有了干预规范：饮食运动体重烟酒作息五大维度",
+      "angle": "人民网报道专家共识提出糖前期干预五大维度：低GI碳水+膳食纤维、每周150-300分钟中等强度有氧+2-3次抗阻、超重者减重5%-7%、戒烟限酒、规律作息。与 disc-268（JAMA 21年随访）互补：那条讲证据，这条讲可执行清单。贾伟平教授建议35岁起将血糖检测纳入常规体检。",
+      "category": "实操方法",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "人民网健康频道 2026-07 报道，多家卫健委官网转载（榆林卫健委等）",
+      "source_urls": [
+        "http://health.people.com.cn/n1/2026/0701/c14739-40751470.html",
+        "http://wjw.yl.gov.cn/jkzs/jkshfs/202607/t20260703_2111674.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-01",
+      "platform_data": {
+        "evidence_tier": "B",
+        "use_as": "verify_before_script",
+        "writability_score": 78,
+        "authenticity_score": 75,
+        "adversarial_note": "共识具体文件全称需回源核实；「逆转」须表述为「延缓或阻止进展」，不得承诺治愈；口播结尾须加非医疗建议声明",
+        "required_hedges": [
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ]
+      }
+    },
+    {
+      "id": "disc-433",
+      "title": "含糖饮料卖不动了：含糖即饮茶销售额下滑超10%，控糖成年轻人饮食新标签",
+      "angle": "第三方零售监测数据显示2026年二季度含糖即饮茶销售额下滑10%以上，可口可乐2025年出现近十年首次全球单箱销量零增长；《2026年中国现制饮品健康趋势分析报告》称63%受访者认为现制饮品过于甜腻。切入角度：不是教人戒糖，而是「年轻人已经用钱包投票」——数据背后的控糖趋势科普。",
+      "category": "趋势观察",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "广州日报花城 2026-08、中新网 2026-08 报道，引用马上赢零售监测与行业报告",
+      "source_urls": [
+        "https://huacheng.gz-cmc.com/pages/2026/08/18/b42db82939854bd1ac4bf95b44081c44.html",
+        "http://www.chinanews.com.cn/life/2026/08-13/10677024.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-01",
+      "platform_data": {
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "writability_score": 66,
+        "authenticity_score": 60,
+        "adversarial_note": "二手引用第三方平台数据（马上赢/行业报告），关键百分比须找到原始报告二次查证；无糖饮料不等于可以放开喝，须提示代糖争议；不得暗示喝含糖饮料=必然得糖尿病",
+        "required_hedges": [
+          "数据来自第三方监测，口径待核实",
+          "个体差异较大"
+        ]
+      }
+    },
+    {
+      "id": "disc-434",
+      "title": "ADA 2026疗护标准发布：肥胖药剂量个体化+1型糖尿病肥胖治疗首次写入",
+      "angle": "美国糖尿病协会官方发布 Standards of Care in Diabetes—2026：CGM推荐扩展至确诊即用、肥胖药物治疗剂量个体化新指导、首次纳入1型糖尿病肥胖治疗、慢性肾病(含透析)降糖用药新指导。与库内 disc-270/404/411 区分：这三条讲CGM与心肾，本条聚焦「肥胖管理与1型糖尿病」两个新增章节。",
+      "category": "政策指南",
+      "platform": "bili,dy",
+      "duration": "45-60s",
+      "heat": "warm",
+      "heat_source": "ADA官方新闻稿PDF（diabetes.org），EASD 2026共识报告更新交叉印证",
+      "source_urls": [
+        "https://diabetes.org/sites/default/files/2025-12/2026%20Standards%20of%20Care%20press%20release.pdf",
+        "https://diabetesonthenet.com/wp-content/uploads/9.-EASD-conference-report.pdf"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-01",
+      "platform_data": {
+        "evidence_tier": "A",
+        "use_as": "verify_before_script",
+        "writability_score": 72,
+        "authenticity_score": 88,
+        "adversarial_note": "英文指南解读前须逐条核对官方原文；ADA标准不直接等同中国临床实践，须说明「参考国际指南」；涉药内容仅作信息分享，具体用药遵医嘱；不得使用「治愈」「革命性」表述",
+        "required_hedges": [
+          "指南为美国版本，国内诊疗以国内指南和医嘱为准",
+          "个体差异较大"
+        ]
+      }
     }
   ],
   "archive": [
