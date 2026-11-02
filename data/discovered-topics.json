@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "topics": [
     {
       "id": "disc-016",
@@ -10981,6 +10981,148 @@
         "required_hedges": [
           "指南为美国版本，国内诊疗以国内指南和医嘱为准",
           "个体差异较大"
+        ]
+      }
+    },
+    {
+      "id": "disc-435",
+      "title": "茶饮店「甜味菜单」越拉越长：L-阿拉伯糖、D-阿洛酮糖加价买，值吗？",
+      "angle": "腾讯新闻2026-11-02报道：喜茶/奈雪/乐乐茶等把L-阿拉伯糖（+2元）、罗汉果汁糖（+1元）、D-阿洛酮糖做成加价选项，「白砂糖回归」呼声登上热搜。可做「代糖选项三问」：①这些新糖是什么（L-阿拉伯糖、D-阿洛酮糖的作用机制与安全剂量须回源核实）；②加价2元买的是控糖效果还是心理安慰；③控糖看总量——奶茶基底和小料照样升糖，「不另外加糖」比加价买新糖更实在。落点是「看懂配料表+控制总量」，不做代糖安全性绝对结论。与 disc-433（含糖饮料销量下滑，趋势数据）区分：本条聚焦门店代糖选项的消费场景科普。",
+      "category": "消费避坑",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "腾讯新闻2026-11-02报道+「白砂糖回归」热搜（二手信息，具体热度数据待蝉妈妈补充）",
+      "source_urls": [
+        "https://news.qq.com/rain/a/20261102A03PBV00",
+        "https://m.sohu.com/a/1095927490_362042/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-02",
+      "platform_data": {
+        "evidence_tier": "B",
+        "use_as": "verify_before_script",
+        "writability_score": 68,
+        "authenticity_score": 72,
+        "adversarial_note": "媒体报道含商家产品信息，须防带货动机；具体代糖机制、用量与合规性须回源（GB 2760/卫健委公告）核实；不得出现「喝了血糖稳」「0负担」「无负担」等表述；商超在售产品不点名推荐或贬低",
+        "required_hedges": [
+          "代糖的长期影响仍存争议，个体差异较大",
+          "请以复查和医嘱为准"
+        ]
+      }
+    },
+    {
+      "id": "disc-436",
+      "title": "同一袋小米，煮成粥GI 93.6、蒸成饭只有64.4：粗粮细做才是「升糖刺客」",
+      "angle": "光明网2026-09-13「7种升糖刺客」+央广网2026-01-25数据：小米粥GI 93.6 vs 小米饭64.4，即食燕麦粥、薏米糊粉GI甚至高于粳米饭（78）。核心机理是淀粉糊化程度决定GI——打粉、久煮、软烂都会把低GI粗粮变高GI。可写「粗粮三不」：不打粉、不煮烂、不过度精加工（具体表述按原文核实后调整）。与 disc-043 区分：043讲「食材本身是伪粗粮」（大黄米/糯小米/黑糯玉米/血糯米），本条讲「食材没问题，做法毁了它」，两者互补不重复。",
+      "category": "辟谣纠偏",
+      "platform": "dy,bili",
+      "duration": "30-45s",
+      "heat": "warm",
+      "heat_source": "光明网2026-09-13+央广网2026-01-25 央媒科普持续传播（热度数据待蝉妈妈补充）",
+      "source_urls": [
+        "https://m.gmw.cn/2026-09/13/content_1304563316.htm",
+        "http://news.cnr.cn/native/gd/20260125/t20260125_527505817.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-02",
+      "platform_data": {
+        "evidence_tier": "A",
+        "use_as": "verify_before_script",
+        "writability_score": 72,
+        "authenticity_score": 85,
+        "adversarial_note": "GI数值因品种/产地/检测方法波动，口播用「约」「高达」并标注来源；不得写成「喝粥=血糖爆炸」的恐吓式表达；粥类升糖幅度因人而异，不针对个体下结论",
+        "required_hedges": [
+          "数值为实验室测量值，日常进食存在个体差异",
+          "请以复查和医嘱为准"
+        ]
+      }
+    },
+    {
+      "id": "disc-437",
+      "title": "糖前期别急着极端节食：研究称盲目「高蛋白+低GI」长期逆转率反而更低",
+      "angle": "光明网2026-09-08转述「覆盖8国、追踪3年的研究」：盲目坚持高蛋白+低升糖指数饮食的人，糖前期长期逆转率反不如正常均衡饮食者。可做「为什么极端饮食容易失败」的机制讨论：依从性差、营养结构失衡、难以长期维持。与 disc-432（五大维度干预规范）互补：共识推荐的是「均衡饮食中的低GI碳水」，不是把某一类食物推到极端。本条是认知纠偏，不是否定低GI。",
+      "category": "认知纠偏",
+      "platform": "dy,xhs",
+      "duration": "40-55s",
+      "heat": "warm",
+      "heat_source": "光明网2026-09-08报道（二手转述，热度数据待蝉妈妈补充）",
+      "source_urls": [
+        "https://m.gmw.cn/2026-09/08/content_1304561350.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-02",
+      "platform_data": {
+        "evidence_tier": "B",
+        "use_as": "verify_before_script",
+        "writability_score": 63,
+        "authenticity_score": 65,
+        "adversarial_note": "单篇观察性研究不能推翻共识；「8国3年研究」原始文献身份未明，写稿前必须找到原论文核实，找不到则降级为讨论话题；不得写成「低GI饮食有害」；不得给出个体饮食处方；须提示营养方案个体化",
+        "required_hedges": [
+          "目前证据有限",
+          "饮食调整请结合医嘱与专业营养指导"
+        ]
+      }
+    },
+    {
+      "id": "disc-438",
+      "title": "全球首款干细胞衍生胰岛药物申报上市在即：1型糖尿病离「功能性治愈」还有多远",
+      "angle": "Vertex在学术会议披露：VX-880（Zimislecel）III期FORWARD研究已完成患者入组和给药，计划2026年向全球多国监管递交上市申请，此前获FDA再生医学先进疗法（RMAT）认定。与 disc-388 区分：388是中国团队《柳叶刀》科研论文（干细胞再生胰岛移植），本条是海外产品的产业化注册节点。落点：行业进展信息分享；「功能性治愈」是行业术语不是承诺；1型糖友勿自行停药停监测。",
+      "category": "前沿研究",
+      "platform": "bili,dy",
+      "duration": "45-60s",
+      "heat": "warm",
+      "heat_source": "生物在线等行业媒体2026会议报道（二手信息，须回源Vertex官方公告核实）",
+      "source_urls": [
+        "https://fmgbio.bioon.com.cn/article/31b5297772ef"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-02",
+      "platform_data": {
+        "evidence_tier": "B",
+        "use_as": "verify_before_script",
+        "writability_score": 66,
+        "authenticity_score": 75,
+        "adversarial_note": "企业会议披露存在宣传动机，疗效数据以正式期刊发表和监管文件为准；不得使用「治愈」「革命性」「糖尿病有救了」等表述；涉药内容仅作信息分享，不构成用药建议",
+        "required_hedges": [
+          "尚处研究/注册阶段，国内尚未获批",
+          "个体差异较大，请以复查和医嘱为准"
+        ]
+      }
+    },
+    {
+      "id": "disc-439",
+      "title": "首个「三重激动剂」Retatrutide III期结果公布：降糖减重新选择，还是新等待？",
+      "angle": "ADA 2026年会（2026-06）发布Retatrutide（GIP/GLP-1/胰高血糖素三重受体激动剂）在2型糖尿病+肥胖的首个III期研究结果。可讲「从单靶点到双靶点再到三靶点」的药物演进科普。与 disc-045/048/120（替尔泊肽进医保）区分：那是已上市双靶点药的支付端变化，本条是三靶点新药的临床试验节点。落点：试验阶段、国内未上市，效果与安全性数据以正式发表为准。",
+      "category": "前沿研究",
+      "platform": "bili,dy",
+      "duration": "45-60s",
+      "heat": "warm",
+      "heat_source": "ADA官方新闻稿PDF（2026-06，professional.diabetes.org）",
+      "source_urls": [
+        "https://professional.diabetes.org/sites/dpro/files/2026-06/final_ada.26_retatrutide_press_release.pdf"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-02",
+      "platform_data": {
+        "evidence_tier": "A",
+        "use_as": "verify_before_script",
+        "writability_score": 68,
+        "authenticity_score": 80,
+        "adversarial_note": "会议新闻稿数据须以期刊正式发表为准；不得夸大为「最强降糖药」「躺瘦神药」；须同时提及GLP-1类常见胃肠道反应等安全性信息；防减肥人群滥用预期；美国试验数据不直接等同国内可及性",
+        "required_hedges": [
+          "研究阶段数据，国内未上市",
+          "个体差异较大，用药请遵医嘱"
         ]
       }
     }

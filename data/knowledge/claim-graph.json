@@ -2,7 +2,7 @@
   "_meta": {
     "version": "1.0.0",
     "description": "主张记忆图谱：防重复谣言包装与误读升级",
-    "last_updated": "2026-11-01T09:34:58"
+    "last_updated": "2026-11-02T09:35:02"
   },
   "claims": {
     "40a2e10bd40d4026": {
@@ -425,7 +425,9 @@
         "饭后犯困晕碳！ 废了  又一个胰岛素抵抗",
         "41岁中登控糖vlog，胰岛素抵抗逆转记录。(047)",
         "完结文《我的胰岛素全失效了，我花了一万八！我爸还等着用呢！》",
-        "本期请搭配胰岛素食用"
+        "本期请搭配胰岛素食用",
+        "简单理解IGF-1（胰岛素样生长因子）！",
+        "【胰岛素科普】到底该怎么储存呢"
       ],
       "source_urls": [
         "https://bilibili.com/video/BVtest",
@@ -699,7 +701,9 @@
         "https://www.bilibili.com/video/BV1MyaB6zE5q",
         "https://www.bilibili.com/video/BV15jx16JEjd",
         "https://www.bilibili.com/video/BV1PaxC6hEfR",
-        "https://www.bilibili.com/video/BV1MzxJ6BE89"
+        "https://www.bilibili.com/video/BV1MzxJ6BE89",
+        "https://www.bilibili.com/video/BV1Ef421B73D",
+        "https://www.bilibili.com/video/BV1Zm4y187n1"
       ]
     },
     "167e0973a2290ade": {
@@ -2398,7 +2402,8 @@
         "【降血糖】糖尿病专家分享选择正确的时间运动 降糖效果显著",
         "【降血糖】糖友出现这3个症状千万要留意  6大黄金食物控糖明显",
         "饭后散步，等于无效？专家揭秘：走够30分钟，肌肉开始“狂吞”血糖！#飯後散步 #降血糖 #餐後血糖 #糖尿病前期 #肌肉吞糖 #AMPK #科學健身房",
-        "2023年 最新的糖化血色素，空腹血糖值和餐后血糖值标准"
+        "2023年 最新的糖化血色素，空腹血糖值和餐后血糖值标准",
+        "阿卡波糖是怎么降血糖的？有哪些要注意的？"
       ],
       "source_urls": [
         "https://www.bilibili.com/video/BV1Sn4y1X7G3",
@@ -2412,7 +2417,8 @@
         "https://www.bilibili.com/video/BV1RRNkzVEzT",
         "https://www.bilibili.com/video/BV1SEnd6FEdw",
         "https://www.bilibili.com/video/BV1dLnA6HEVR",
-        "https://www.youtube.com/watch?v=TDirILW5Yes"
+        "https://www.youtube.com/watch?v=TDirILW5Yes",
+        "https://www.bilibili.com/video/BV1hPqpBzEWA"
       ]
     },
     "bd73255eab788758": {
@@ -3629,7 +3635,8 @@
         "空腹血糖高VS餐后血糖高，降糖方法不一样",
         "降糖操，每天运动半小时，轻松控糖又减肥，稳定血压，身体更健康",
         "饭后三个降糖动作，每天坚持从14.3降到6.9，抽空也要练！",
-        "诊断了糖尿病，该如何治疗？必须吃降糖药吗？内分泌科医生告诉你"
+        "诊断了糖尿病，该如何治疗？必须吃降糖药吗？内分泌科医生告诉你",
+        "5个降糖“第一名”，血糖一次降到5.0，胰岛强壮"
       ],
       "source_urls": [
         "https://www.bilibili.com/video/BV1d6Tv67EXn",
@@ -3654,7 +3661,8 @@
         "https://www.bilibili.com/video/BV1BhaJ6vE65",
         "https://www.bilibili.com/video/BV1dP411M7xZ",
         "https://www.bilibili.com/video/BV1zMHizuE2E",
-        "https://www.youtube.com/watch?v=qyMsX_b1RRg"
+        "https://www.youtube.com/watch?v=qyMsX_b1RRg",
+        "https://www.bilibili.com/video/BV1d6421F72p"
       ]
     },
     "50d052b0aa04975e": {
@@ -29439,6 +29447,390 @@
       ],
       "source_urls": [
         "https://x.com/i/status/2115814305300091011"
+      ]
+    },
+    "53b45018a3e317d7": {
+      "claim_text": "糖友餐后血糖一定要运动，血糖才正常？记住这一点，不用那么辛苦",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖友餐后血糖一定要运动，血糖才正常？记住这一点，不用那么辛苦"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1sv41117RC"
+      ]
+    },
+    "455ec0a14c993a81": {
+      "claim_text": "这6种食物体检前最好不要吃，会影响检测结果。",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "这6种食物体检前最好不要吃，会影响检测结果。"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV14X4y1P7ha"
+      ]
+    },
+    "491aa5031ada5242": {
+      "claim_text": "甲减女生减脂专栏（第一节课",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "甲减女生减脂专栏（第一节课"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Ze411A7CK"
+      ]
+    },
+    "93eb7bf752c0637e": {
+      "claim_text": "我才不是“怪人” | 我是如何克服妥瑞氏综合征的",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "我才不是“怪人” | 我是如何克服妥瑞氏综合征的"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1fE411Z7cV"
+      ]
+    },
+    "8d7e12fae781a06d": {
+      "claim_text": "从NAFLD到MASLD，聚焦代谢障碍核心！一起了解代谢疾病MASH(NASH)动物模型开发与应用",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "从NAFLD到MASLD，聚焦代谢障碍核心！一起了解代谢疾病MASH(NASH)动物模型开发与应用"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Bw4m1e7U6"
+      ]
+    },
+    "4bb5c4f3bf62a6eb": {
+      "claim_text": "动态血糖仪实测！夜市小吃升糖真相曝光！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "动态血糖仪实测！夜市小吃升糖真相曝光！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1mbhH6DEnp"
+      ]
+    },
+    "8b04c625f1166bc1": {
+      "claim_text": "糖人吃烙饼 血糖升多少",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖人吃烙饼 血糖升多少"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV18CRCB5EG5"
+      ]
+    },
+    "93368ceb939eabda": {
+      "claim_text": "30多岁别被年龄困住，该留的4条退路",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "30多岁别被年龄困住，该留的4条退路"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1ejxi6tEm4"
+      ]
+    },
+    "5ff10a91ca82288f": {
+      "claim_text": "一型糖必看 | TIR才是血糖管理的“黄金指标”",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "一型糖必看 | TIR才是血糖管理的“黄金指标”"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1NntyzRERq"
+      ]
+    },
+    "264274fa605f011f": {
+      "claim_text": "生日蛋糕升糖实测",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "生日蛋糕升糖实测"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1k4Kf6nEML"
+      ]
+    },
+    "afd8e7a799e0e0ef": {
+      "claim_text": "26岁 14年二型糖友的日常",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "26岁 14年二型糖友的日常"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1AoxW6kEt1"
+      ]
+    },
+    "29ed69519279de06": {
+      "claim_text": "【医学生Re野猪】03年随机血糖18，一天暴食6000大卡！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "【医学生Re野猪】03年随机血糖18，一天暴食6000大卡！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1dJxb6GEjn"
+      ]
+    },
+    "b5491b97ed7bc7d6": {
+      "claim_text": "从淀粉到血糖：身体是怎么操作的？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "从淀粉到血糖：身体是怎么操作的？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1TQxx69ECn"
+      ]
+    },
+    "320d7bc2f4d20d4f": {
+      "claim_text": "解题狂飙！ 高中生物血糖平衡调节模型【德叔 | 高考生物】",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "解题狂飙！ 高中生物血糖平衡调节模型【德叔 | 高考生物】"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV16M411V7V1"
+      ]
+    },
+    "0e9c7a47096363f2": {
+      "claim_text": "血糖是咋来的？是谁让血糖居高不下？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "血糖是咋来的？是谁让血糖居高不下？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1pT411Q7QY"
+      ]
+    },
+    "965c2e00c7a69813": {
+      "claim_text": "【Gi豆本人】最新视频来袭，快来看看吧！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "【Gi豆本人】最新视频来袭，快来看看吧！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1qKxF6bEF5"
+      ]
+    },
+    "d151f0794f5f500a": {
+      "claim_text": "中老年专属低GI营养早餐，呵护健康每",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "中老年专属低GI营养早餐，呵护健康每"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV15L8B6rE8Y"
+      ]
+    },
+    "fefdc64f48955053": {
+      "claim_text": "伊利欣活纾糖膳底低GI低嘌呤 中老年奶粉 礼品礼盒 营养 800g2",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "伊利欣活纾糖膳底低GI低嘌呤 中老年奶粉 礼品礼盒 营养 800g2"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1E1336hESK"
+      ]
+    },
+    "0150fe10522fbeb4": {
+      "claim_text": "低GI大米真的低升糖吗？我吃100克看看对我的血糖有什么影响？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "低GI大米真的低升糖吗？我吃100克看看对我的血糖有什么影响？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1kZ421T7sT"
+      ]
+    },
+    "2755c53128d5e3b6": {
+      "claim_text": "粉丝说家里人得了糖尿病，于是有了这期视频～",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "粉丝说家里人得了糖尿病，于是有了这期视频～"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1wL411K7yV"
+      ]
+    },
+    "2b7c08ca6757a52b": {
+      "claim_text": "Why is CLM (Continuous Lactate Monitoring) so interesting to me? Because I th...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Why is CLM (Continuous Lactate Monitoring) so interesting to me? Because I th..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/1830811439218540803"
+      ]
+    },
+    "0052deeda486b4a5": {
+      "claim_text": "当没 token 额度了 你会手改 AI 生成的代码吗 😂",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "当没 token 额度了 你会手改 AI 生成的代码吗 😂"
+      ],
+      "source_urls": [
+        "https://www.v2ex.com/t/1253543"
+      ]
+    },
+    "8ac8454602c21ad7": {
+      "claim_text": "用 AI 逆向了搜狗输入法， 让搜狗输入法(v16.10)完全断网 / 禁止更新 / 禁止广告 的一键脚本",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "用 AI 逆向了搜狗输入法， 让搜狗输入法(v16.10)完全断网 / 禁止更新 / 禁止广告 的一键脚本"
+      ],
+      "source_urls": [
+        "https://www.v2ex.com/t/1253540"
+      ]
+    },
+    "aba01565fc61d7bb": {
+      "claim_text": "Insulin resistance in type 2 diabetes mellitus",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Insulin resistance in type 2 diabetes mellitus"
+      ],
+      "source_urls": [
+        "https://doi.org/10.1038/s41574-025-01114-y"
       ]
     }
   }
