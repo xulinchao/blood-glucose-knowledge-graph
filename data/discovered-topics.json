@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "topics": [
     {
       "id": "disc-016",
@@ -11125,6 +11125,85 @@
           "个体差异较大，用药请遵医嘱"
         ]
       }
+    },
+    {
+      "id": "disc-440",
+      "title": "含糖饮料卖不动了：2026年Q2含糖即饮茶销售额下滑超10%，年轻人用钱包投票控糖",
+      "angle": "市场数据实锤控糖趋势：第三方平台「马上赢」线下零售监测显示2026年Q2含糖即饮茶销售额下滑10%以上，可口可乐2025年财报出现近十年首次全球单箱销量零增长；「控糖」「抗炎」成年轻人饮食新标签，无糖饮料市场规模持续扩张。角度差异化：disc-294/383 讲的是标签现象，本条用零售数据讲「消费者行为已改变」，可做数据可视化口播。",
+      "category": "趋势观察",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "WebSearch 二手信息：广州日报花城+/人民日报海外版/马上赢零售监测（2026-08~09 报道），蝉妈妈数据待手动补充",
+      "source_urls": [
+        "https://huacheng.gz-cmc.com/pages/2026/08/18/b42db82939854bd1ac4bf95b44081c44.html",
+        "https://www.globalpeople.com.cn/305967/306116/index.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-03",
+      "data_source": "manual_web_search",
+      "platform_data": {}
+    },
+    {
+      "id": "disc-441",
+      "title": "《Science》新研究：无线植入装置1小时血糖回正、连控6周——离人体应用还有多远",
+      "angle": "前沿进展类选题：2026年10月末《Science》发表无线植入装置研究，糖尿病小鼠植入后无线激活1小时内血糖回到正常水平，重复治疗6周血糖稳定且未测到低血糖，体重最多下降10%（机制：血糖下降后身体转向烧脂肪）。口播必须明确「动物实验阶段，尚未用于人体」，避免被解读为治愈承诺。可与 disc-438（VX-880 干细胞）组成「前沿研究双响」。",
+      "category": "前沿研究",
+      "platform": "dy,bili",
+      "duration": "30-45s",
+      "heat": "rising",
+      "heat_source": "WebSearch 二手信息：生物谷报道《Science》研究（2026-10），属期刊一手研究转述，蝉妈妈数据待手动补充",
+      "source_urls": [
+        "https://news.bioon.com/article/ace396021302.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-03",
+      "data_source": "manual_web_search",
+      "platform_data": {}
+    },
+    {
+      "id": "disc-442",
+      "title": "湘雅二院研究：全球15-34岁2型糖尿病发病率30年近乎翻倍——年轻糖尿病患者的3个共性",
+      "angle": "年轻化数据升级版：中南大学湘雅二医院团队发表于《中华糖尿病杂志》的研究显示，过去30年间全球15-34岁人群2型糖尿病发病率近乎翻倍且可能持续攀升；《生命时报》结合研究总结年轻患者的3个共性。与 disc-050/203/248 泛角度不同，本条有具体期刊研究背书+可查数据，适合「数据+自查」结构口播。",
+      "category": "数据科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "WebSearch 二手信息：央视网/河南人民网/生命时报（2026-07~09 报道），蝉妈妈数据待手动补充",
+      "source_urls": [
+        "https://www.cncn.gov.cn/col/col1229459287/art/2026/art_3089986780334af0bd7e6341278d7700.html",
+        "http://henan.people.com.cn/n2/2026/0923/c378397-41705621.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-03",
+      "data_source": "manual_web_search",
+      "platform_data": {}
+    },
+    {
+      "id": "disc-443",
+      "title": "血糖坐过山车？内分泌医生：四个推手里最危险的是「自己乱调药」",
+      "angle": "误区辟谣类选题：据医学论坛报2026-10-15内分泌医生科普，血糖过山车四个常见推手——①药物与进食不匹配（服药后延迟进餐/自行加量「猛踩刹车」矫枉过正砸出低血糖）；②空腹剧烈运动；③酒精抑制肝糖输出；④睡眠与情绪。其中「自行调药是门诊所见过山车最常见的人为推手」。与 disc-416（换季波动）角度不同：本条聚焦人为行为归因+行为纠正，安全角度高（引导就医不指导用药）。",
+      "category": "误区辟谣",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "medium",
+      "heat_source": "WebSearch 二手信息：医学论坛报/安徽卫健委/光明网（2025-08~2026-10 报道），蝉妈妈数据待手动补充",
+      "source_urls": [
+        "https://www.mdweekly.com.cn/uploads/file/20261015/b4d545bd337ab58a4ab44d80b806fdf4.pdf",
+        "https://wjw.ah.gov.cn/ztzl/jkkp/57984041.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-03",
+      "data_source": "manual_web_search",
+      "platform_data": {}
     }
   ],
   "archive": [
