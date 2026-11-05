@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-11-03",
+  "updated": "2026-11-05",
   "topics": [
     {
       "id": "disc-016",
@@ -11202,6 +11202,78 @@
       "script_status": "pending",
       "publish_status": "pending",
       "discovered_date": "2026-11-03",
+      "data_source": "manual_web_search",
+      "platform_data": {}
+    },
+    {
+      "id": "disc-444",
+      "title": "早起喝水，空腹血糖会升还是降？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 1529",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV13hAcepEVg"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-05",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 50,
+          "label": "中",
+          "reasons": [
+            "有一定互动(1,529)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-445",
+      "title": "华为拿到首张消费级CGM三类证：动态血糖仪要变成大众消费品了？",
+      "angle": "新闻事实升级：2026-10-30 国家药监局医疗器械批准送达信息显示，华为终端有限公司申报的「持续葡萄糖监测系统（CGM）」获批，为其首款三类医疗器械注册证（注册证号待回源核对）。库内 disc-177/343 仍停留在「华为要做 CGM」的预期，本条是可核实的既成事实。口播角度：巨头入场 + 价格下探（媒体称已至百元级，须核实）→ 但连续监测解决的是「看见波动」，不等于「管好血糖」，更不替代就医。结构建议：扎手指的旧场景 → 获批新闻 → 消费级 CGM 意味着什么 → 什么人值得戴、什么人不必戴。禁用「不用扎手指了」「人人都该戴」。",
+      "category": "前沿研究",
+      "platform": "dy,bili,xhs",
+      "duration": "30-45s",
+      "heat": "rising",
+      "heat_source": "WebSearch 二手信息：医谷网 / 36氪 / 仪器信息网转国家药监局公示（2026-10-30 至 11-02），蝉妈妈数据待手动补充",
+      "source_urls": [
+        "https://m.medvalley.cn/article/224-0-79909",
+        "https://36kr.com/p/4053279312499849"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-05",
       "data_source": "manual_web_search",
       "platform_data": {}
     }
