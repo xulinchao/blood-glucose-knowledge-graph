@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "topics": [
     {
       "id": "disc-016",
@@ -11276,6 +11276,160 @@
       "discovered_date": "2026-11-05",
       "data_source": "manual_web_search",
       "platform_data": {}
+    },
+    {
+      "id": "disc-446",
+      "title": "胰岛β细胞不是坏死而是在「打盹」：新研究发现可唤醒机制",
+      "angle": "Science Advances 2026-10 研究：部分糖尿病患者胰岛β细胞并未彻底坏死，而是在长期高压下进入「休眠/打盹」状态。给适宜环境或用对「唤醒剂」可恢复功能。与 Lancet 54% 缓解研究形成机制+结果双支撑，是糖尿病可缓解的科学底层。适合做「为什么有的人能缓解、有的人不能」的决策边界型口播。",
+      "category": "数字科普",
+      "platform": "dy,bili,xhs",
+      "duration": "30-45s",
+      "heat": "rising",
+      "heat_source": "Science Advances 2026-10 期刊论文 + MedSci.cn 转述 + 头条健康 2026-11 热门文章",
+      "source_urls": [
+        "https://www.medsci.cn/department/details?module=article&s_id=6&t_id=216",
+        "https://m.gmw.cn/2026-11/01/content_13045724.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-06",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 78,
+          "label": "较高",
+          "reasons": [
+            "WebSearch 补充 · 期刊综述/权威媒体/官网原文",
+            "需回源核对关键数字和研究结论"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "WebSearch 补充条目，证据层级 B，写稿前须二次回源"
+        },
+        "topic_score": 78,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-447",
+      "title": "土豆是控糖新主食？国家都喊你多吃点",
+      "angle": "2026-10-22 搜狐健康/人民日报：土豆 GI 值低（蒸土豆 GI 66 低于白米饭 83），饱腹感强，被推荐为控糖替代主食。但需警惕加工方式——炸薯条 GI 飙升、加油后 GL 升高。主打「同样是主食，换一种选择血糖曲线就不一样」的轻科普。",
+      "category": "饮食指南",
+      "platform": "xhs,dy,bili",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "搜狐健康 2026-10-22 热门文章 + 36kr 低GI主食赛道分析 + 淘宝 50+ 解馋不升糖土豆类产品",
+      "source_urls": [
+        "https://news.sohu.com/a/1091142007_121119347",
+        "https://36kr.com/p/3943392340917383"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-06",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 78,
+          "label": "较高",
+          "reasons": [
+            "WebSearch 补充 · 期刊综述/权威媒体/官网原文",
+            "需回源核对关键数字和研究结论"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "WebSearch 补充条目，证据层级 B，写稿前须二次回源"
+        },
+        "topic_score": 78,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-448",
+      "title": "糖前期做好这几项，稳了",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 21",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1VqxZ6WEfo"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-06",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 52,
+          "label": "中",
+          "reasons": [
+            "命中关键词「糖前期」"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-449",
+      "title": "糖前期做好3件事，降低糖尿病风险",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "症状预警",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 123",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Js486QE68"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-06",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 52,
+          "label": "中",
+          "reasons": [
+            "命中关键词「糖前期」"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
     }
   ],
   "archive": [
