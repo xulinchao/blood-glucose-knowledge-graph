@@ -146,19 +146,20 @@
     <span class="chip">期刊 3 篇</span>
   </div>
   <div class="notice" style="margin-top:16px">
-    <strong>数据底座说明</strong>：今日 09:00 定时采集脚本（<code>daily_topic_harvest.py</code>）运行超时未产出 Schema 2.0 JSON，本次由会话用 WebSearch 多平台补充（20+ 来源），已按 Risk Gate 对抗性审核并标注可信度；<strong>关键数字发布前须回源二次核实</strong>。<span class="verify">未经过 claim_gate.py 完整规则拆解</span>。
+    <strong>数据底座说明</strong>：今日 09:00 定时采集脚本前台超时，但<strong>后台最终完成</strong>，产出 <code>daily-brief-2026-11-06.json</code>（Schema 2.0）和 <code>daily-harvest-2026-11-06.json</code>（311 条原贴）。本日报热点/趋势/研究动态由会话 WebSearch 多平台补充（20+ 来源），已按 Risk Gate 对抗性审核；<strong>关键数字发布前须回源二次核实</strong>。<span class="verify">新增内容未经过 claim_gate.py 完整规则拆解</span>。
   </div>
 </header>
 
 <h2><span class="num">〇</span>数据底座概览</h2>
 <table>
   <tr><th>指标</th><th>数值</th></tr>
-  <tr><td>数据来源</td><td><span class="verify">WebSearch 补充</span>（采集脚本超时）</td></tr>
-  <tr><td>参考基准</td><td>精选日报 2026-11-05（Schema 2.0）+ 全网 20+ 来源</td></tr>
-  <tr><td>新增选题</td><td><span class="gate-pass">+2</span>（disc-446、disc-447）</td></tr>
+  <tr><td>采集脚本</td><td><span class="gate-pass">✅</span> 后台完成（311 条原贴：B 站 249 · X 20 · YouTube 20 · Exa 20 · V2EX 2）</td></tr>
+  <tr><td>Schema 2.0 JSON</td><td><span class="gate-pass">✅</span> <code>daily-brief-2026-11-06.json</code>（精选 12 · 可写 8 · hook_only 6 · 异常 18）</td></tr>
+  <tr><td>WebSearch 补充</td><td>20+ 来源（期刊 / 政府网站 / 权威媒体）用于热点/趋势/研究动态</td></tr>
+  <tr><td>新增选题</td><td><span class="gate-pass">+4</span>（disc-446/447 手动 + disc-448/449 自动入库）</td></tr>
   <tr><td>查重跳过</td><td>1 条（二甲双胍争议综述 → disc-288）</td></tr>
   <tr><td>权威来源命中</td><td><span class="gate-pass">✅</span> 国家卫健委 / 国家药监局 / 3 篇期刊</td></tr>
-  <tr><td>选题库</td><td>376 → 378 条（阈值 20，严重积压）</td></tr>
+  <tr><td>选题库</td><td>376 → 380 条（阈值 20，严重积压）</td></tr>
 </table>
 
 <h2><span class="num">一</span>今日热点（3 个）</h2>
@@ -292,22 +293,21 @@
 
 <h2><span class="num">六</span>验证总结</h2>
 <div class="stat-grid">
+  <div class="stat green"><div class="v">✅</div><div class="k">采集脚本完成</div></div>
   <div class="stat green"><div class="v">✅</div><div class="k">权威来源命中</div></div>
-  <div class="stat green"><div class="v">3</div><div class="k">期刊论文</div></div>
-  <div class="stat"><div class="v">+2</div><div class="k">新增选题</div></div>
-  <div class="stat.warn"><div class="v">1</div><div class="k">查重跳过</div></div>
-  <div class="stat"><div class="v">20+</div><div class="k">WebSearch 来源</div></div>
-  <div class="stat.bad"><div class="v">378</div><div class="k">选题库积压（阈值 20）</div></div>
+  <div class="stat"><div class="v">3</div><div class="k">期刊论文</div></div>
+  <div class="stat"><div class="v">+4</div><div class="k">新增选题</div></div>
+  <div class="stat.warn"><div class="v">18</div><div class="k">采集异常项</div></div>
+  <div class="stat.bad"><div class="v">380</div><div class="k">选题库积压（阈值 20）</div></div>
 </div>
 <ul>
-  <li><strong>数据底座</strong>：今日 09:00 定时采集脚本运行超时未产出 Schema 2.0 JSON，<strong>本次由会话用 WebSearch 多平台补充</strong>，覆盖期刊、政府网站、权威媒体、UGC 平台等 20+ 来源，但< span class="verify">未经过 claim_gate.py 完整规则拆解和评分</span>。</li>
-  <li><strong>平台覆盖</strong>：B 站 / 小红书 / 知乎 / 抖音 / 期刊 / 政府网站 / 海外媒体 = 有覆盖，但小红书、知乎、Reddit 数据来自 WebSearch 二手转述，未直接调用平台 API。</li>
+  <li><strong>数据底座</strong>：采集脚本前台超时但<strong>后台最终完成</strong>，产出 Schema 2.0 精选日报和 311 条原贴。本日报热点/趋势/研究动态由会话 WebSearch 多平台补充，覆盖期刊、政府网站、权威媒体、UGC 平台等 20+ 来源，但< span class="verify">未经过 claim_gate.py 完整规则拆解</span>。</li>
+  <li><strong>平台覆盖</strong>：B 站 249 / X 20 / YouTube 20 / Exa 20 / V2EX 2 = 311；<span class="verify">小红书 / 知乎 / Reddit 全为 0（AUTH_REQUIRED 登录墙）</span>，异常 18 项。小红书/知乎数据来自 WebSearch 二手转述。</li>
   <li><strong>Gate 应用</strong>：热点 3（低 GI 去伪存真）标注为"库内已覆盖，复用旧稿"，避免重复入库；二甲双胍争议综述查重命中 disc-288，跳过。</li>
   <li><strong>对抗性审核</strong>：「断碳戒糖抗衰」「控糖革命 51 个 tips」「5 个胰岛素抵抗早期信号」均归为 hook_only / D 级，未写成事实句。</li>
-  <li><strong>选题库</strong>：+2，pending 378，已进入必须清理区间。</li>
-  <li><strong>本日报同步产物</strong>：Markdown 版 <code>content/research-daily/2026-11-06-日报.md</code>（Quartz 渲染）。</li>
-  <li><strong>采集脚本问题</strong>：建议排查 <code>daily_topic_harvest.py</code> 超时原因（网络依赖、API 限流、平台反爬等），确保 11-07 能正常产出 Schema 2.0 JSON。</li>
-  <li id="git-status"><strong>Git 推送</strong>：待执行。</li>
+  <li><strong>选题库</strong>：+4（手动 disc-446/447 + 自动 disc-448/449），pending 380，已进入必须清理区间。</li>
+  <li><strong>本日报同步产物</strong>：Markdown 版 <code>content/research-daily/2026-11-06-日报.md</code>（Quartz 渲染）。采集脚本同步产出 Schema 2.0 精选日报和采集日报。</li>
+  <li id="git-status"><strong>Git 推送</strong>：<span class="gate-pass">✅ 成功</span>。本地 commit <code>4567e9c</code> 已推送至 <code>origin/main</code>（9 files changed）。</li>
 </ul>
 
 <h2>检索建议（次日复核用）</h2>
