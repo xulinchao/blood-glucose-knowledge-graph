@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "topics": [
     {
       "id": "disc-016",
@@ -11430,6 +11430,288 @@
         "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
       },
       "data_ref": []
+    },
+    {
+      "id": "disc-450",
+      "title": "「低GI」标签大乱斗：蜂蜜肉干也敢标，教你三步看穿",
+      "angle": "新华网 2026-10-27《低GI食品走红 “控糖生意”迎去伪存真大考》：9 月《低GI食品与健康消费行业共识》要求公示实测GI数值、测试方法、检测机构，杜绝“原料低GI=成品低GI”宣传。新京报调查：标签混乱，蜂蜜、肉干也“认证”。光明网：酸奶、豆干天然低GI标注纯属博眼球；部分低GI饼干靠加大量植物油延缓胃排空“掩盖”GI。打假+教看标签角度：一查实测GI数值、二查检测机构、三查是否人体试验。",
+      "category": "打假辟谣",
+      "platform": "xhs,dy,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "新华网 10 月两度发文 + 9 月行业共识发布 + 新京报/光明网跟进调查",
+      "source_urls": [
+        "http://www3.xinhuanet.com/food/20261016/268e0b5482cd48d890c060a39f54ae02/c.html",
+        "http://www3.xinhuanet.com/food/20261027/5e6140ff58f041dd851b0818c4227fb3/c.html",
+        "https://m.bjnews.com.cn/detail/1784787968168451.html",
+        "http://health.gmw.cn/2026-05/14/content_38764155.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-07",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 85,
+          "label": "高",
+          "reasons": [
+            "WebSearch 补充 · 新华网/央视/光明网等 A 级媒体 + 行业共识文件",
+            "关键数值（GI 临界值 55、标准号）写稿前仍须回源"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+        },
+        "topic_score": 85,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-451",
+      "title": "反常识：粗粮糊糊可能比白米饭升糖还快",
+      "angle": "央视网 2026-01-25：粗杂粮加工为糊粉后 GI 值升高，即食燕麦粥、薏米糊粉的 GI 甚至高于精细粮主食——大米饭（粳米）GI 已达 78。「以为健康的粗粮糊可能翻车」反常识选题：整粒结构破坏后淀粉消化吸收变快。给出可操作替代：选整粒/压片燕麦、搭配蛋白质与蔬菜、警惕「即食/预熟化」字样。与 disc-447（土豆主食）构成「主食反常识」系列。",
+      "category": "打假辟谣",
+      "platform": "xhs,dy,bili",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "央视网健康频道文章 + 网易/光明网多篇进食顺序与粗粮 GI 内容互动良好",
+      "source_urls": [
+        "https://news.cctv.com/2026/01/25/ARTInwRRPVFpHxf04VlJX3sV260125.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-07",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 80,
+          "label": "较高",
+          "reasons": [
+            "WebSearch 补充 · 央视网 A 级媒体引用检测数据",
+            "GI 具体数值写稿前须回源核对"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+        },
+        "topic_score": 80,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-452",
+      "title": "不换食谱只换顺序：主食最后吃，餐后曲线更平",
+      "angle": "光明网/网易健康综合研究综述：carbohydrate-last meal pattern（主食最后吃）对改善餐后血糖有效的行为策略；饭前 30 分钟吃低GI水果（GI<55）增强饱腹感、延缓胃排空。零成本行为改变选题，适合「打工人」场景。注意：属研究综述转述，关键结论须回源查原始研究（期刊/样本量），且不得写成「只要换顺序就能降」。",
+      "category": "饮食指南",
+      "platform": "xhs,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "光明网 2026-01-29 + 网易健康进食顺序研究内容",
+      "source_urls": [
+        "https://jiankang.gmw.cn/2026-01/29/content_38567039.htm",
+        "https://m.163.com/dy/article/D7VDGJOJ0514DDQJ.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-07",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 72,
+          "label": "较高",
+          "reasons": [
+            "WebSearch 补充 · B 级媒体转述研究，未核对原始论文",
+            "须回源核对研究出处与效应量"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "WebSearch 补充条目，证据层级 B，写稿前须二次回源"
+        },
+        "topic_score": 72,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-453",
+      "title": "35 岁就该查血糖了：指南把筛查年龄从 40 提前到 35",
+      "angle": "光明网 2025-12：ADA 与《中国糖尿病防治指南（2024 版）》均把血糖筛查起始年龄从 40 岁提前至 35 岁；30 岁后肌肉量每年约减 1%，代谢能力下降。河南人民网科普补充：超重/肥胖+家族史等高危人群不足 35 岁也应提前筛查，首次正常至少每 3 年复查、糖前期每年复查。精准命中「35 岁职场人」人群锚点。",
+      "category": "数字科普",
+      "platform": "dy,bili,xhs",
+      "duration": "15-30s",
+      "heat": "hot",
+      "heat_source": "光明网 35 岁控糖文章 + 新华网年轻化系列 + 指南 2024 版修订",
+      "source_urls": [
+        "https://m.gmw.cn/2025-12/12/content_1304260425.htm",
+        "http://henan.people.com.cn/n2/2026/0923/c378397-41705621.html",
+        "https://news.cctv.com/2025/11/15/ARTIUhRcGpraHkQdVVixis7o251115.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-07",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 82,
+          "label": "高",
+          "reasons": [
+            "WebSearch 补充 · 光明网/人民网/央视网 A 级媒体 + 指南原文",
+            "筛查年龄条款写稿前对照指南原文"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接"
+        },
+        "topic_score": 82,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-454",
+      "title": "年轻糖友新希望：低卡饮食+运动半年，54% 缓解？",
+      "angle": "ScienceDaily 2026-10 报道：45 岁以下年轻成人 2 型糖尿病患者，强化低卡饮食+结构化运动 6 个月后 54% 达到缓解，常规护理组仅 4%。「缓解≠治愈」是红线：缓解指停药后血糖维持达标（具体标准须回源核实），绝不能写成治愈承诺。须核实：原始期刊、样本量、缓解定义（是否停药前提）。年轻人向强钩子但误读风险中高。",
+      "category": "研究解读",
+      "platform": "dy,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "ScienceDaily 2026-10 头条报道，国内健康媒体尚未大规模跟进（首发窗口）",
+      "source_urls": [
+        "https://www.sciencedaily.com/releases/2026/10/261029072129.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-07",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 70,
+          "label": "较高",
+          "reasons": [
+            "WebSearch 补充 · ScienceDaily 为研究新闻聚合（B 级）",
+            "须回源核对原始期刊论文与「缓解」定义",
+            "涉疗效表述，口播必须加「缓解不等于治愈」与就医提示"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [
+            "absolute_claim_risk"
+          ],
+          "use_as": "verify_before_script",
+          "creator_note": "疗效类主张写稿前必须回源；误读升级风险：缓解→治愈，禁用「治愈/根治」"
+        },
+        "topic_score": 70,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-455",
+      "title": "不打胰岛素也该戴 CGM？NEJM 发布 CONNECT 研究",
+      "angle": "Dexcom 官方 2026 发布：CONNECT 研究登陆 NEJM——非胰岛素治疗的 2 型糖尿病患者佩戴 G7 26 周，HbA1c 平均降 1.6%（基线 8.8%），68% 达标 <7.5%、46% <7.0%。CGM 从「打胰岛素人群」向口服药/糖前期人群扩展的临床证据。厂商发布（B 级）必须回源 NEJM 原文核对；可与 disc-445（华为消费级 CGM 三类证）构成「CGM 大众化」系列第二集。",
+      "category": "工具测评",
+      "platform": "dy,bili,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "Dexcom 官方 NEJM 发布 + EASD 2026 报告 + 国内 CGM 测评内容热度（三诺/硅基/鱼跃）",
+      "source_urls": [
+        "https://investors.dexcom.com/news/news-details/2026/Landmark-Dexcom-CONNECT-Study-Published-in-The-New-England-Journal-of-Medicine-Redefining-the-Standard-of-Care-for-People-with-Type-2-Diabetes-Not-on-Insulin/default.aspx",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12909652/pdf/13300_2025_Article_1830.pdf"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-07",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "较高",
+          "reasons": [
+            "WebSearch 补充 · 厂商新闻稿转发 NEJM 研究（利益相关方）",
+            "必须回源 NEJM 原文核对数据",
+            "涉医疗器械，口播不得带「推荐购买」倾向"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [
+            "commercial_hook_risk"
+          ],
+          "use_as": "verify_before_script",
+          "creator_note": "厂商信源存在商业动机标注；数据核实前不得写成疗效断言"
+        },
+        "topic_score": 74,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-456",
+      "title": "官方喊停「控糖焦虑」：健康人没必要卷血糖曲线",
+      "angle": "新华社 2026-09-17 唠「科」话《别让“控糖”焦虑绑架你的正常生活》：官方开始纠偏过度控糖焦虑。对照浙江在线《看年轻人如何“与糖共处”》：血糖打卡、把餐后曲线压平成了社交话题；中国日报：城市夜跑 200 人佩戴动态血糖仪。反焦虑角度——数据是工具不是枷锁，「责己不内耗」框架：看趋势不卷单点、有异常问医生不问评论区。",
+      "category": "观点评论",
+      "platform": "xhs,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "新华社/央视网纠偏文章 + 浙江在线/中国日报年轻人 CGM 佩戴现象报道",
+      "source_urls": [
+        "https://news.cctv.com/2026/09/17/ARTIidX3ScIm19DuvX1ctOsb260917.shtml",
+        "http://zjnews.zjol.com.cn/zjnews/202607/t20260723_31803728.shtml",
+        "http://cn.chinadaily.com.cn/a/202608/18/WS6a83d787a3105d3d7a27b796.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-07",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 80,
+          "label": "高",
+          "reasons": [
+            "WebSearch 补充 · 新华社/央视网 A 级官方口径",
+            "观点类内容，无需核对具体医学数值"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "可引用官方口径，适合做「反焦虑」差异化人设内容"
+        },
+        "topic_score": 80,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-457",
+      "title": "代糖的反弹：喝无糖饮料一年，身体发生了什么",
+      "angle": "三条线索交汇：① 塔夫茨大学 2026 汇总 21 项 RCT——代糖与空腹胰岛素、糖化血红蛋白升高及胰岛素敏感性恶化相关（虎嗅《0.5克定义无糖后却找出21克糖》）；② 利物浦大学 2 年 RCT——无糖甜味饮料与水的减重效果相当（新华网）；③ 韩国 MFDS 2026-10 新规：甜味剂低糖食品禁标「抑制餐后血糖上升」类功能性宣称。「无糖≠随便喝」的反直觉科普。涉代谢机制表述须谨慎，不得写成「代糖致癌/伤身」恐吓。",
+      "category": "饮食指南",
+      "platform": "xhs,dy,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "虎嗅深度文 + 新华网报道 + 韩国新规转载 + 医生提醒「无糖≠零糖」话题持续发酵",
+      "source_urls": [
+        "https://m.huxiu.com/article/4896098.html",
+        "http://www.xinhuanet.com/20261008/830bb87c921c4f249e73a366a235dac9/c.html",
+        "https://amr.hainan.gov.cn/HAIT/bxs/jsxmycs/jsxmycsxw/202611/t20261102_4171775.html",
+        "https://c.m.163.com/news/a/L7ULDOMP052583KJ.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-07",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 76,
+          "label": "较高",
+          "reasons": [
+            "WebSearch 补充 · 新华网 A 级 + 虎嗅深度报道（B）+ 官方监管动态",
+            "塔夫茨 RCT 汇总与韩国新规细节写稿前须回源"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "忌恐吓式表述（致癌/伤身）；用「研究提示相关，证据仍在积累」框架"
+        },
+        "topic_score": 76,
+        "platform": "web_search"
+      }
     }
   ],
   "archive": [

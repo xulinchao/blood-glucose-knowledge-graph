@@ -1,0 +1,3592 @@
+{
+  "schema_version": "2.0",
+  "version": "2.0",
+  "report_date": "2026-11-07",
+  "source_harvest": "daily-harvest-2026-11-07.json",
+  "curated_at": "2026-11-07T09:09:36",
+  "summary": {
+    "total_raw": 219,
+    "after_filter": 216,
+    "featured_count": 12,
+    "writable_count": 8,
+    "hook_only_count": 6,
+    "cross_platform_themes": 1,
+    "new_topics_added": 0,
+    "platforms_ok": [
+      "bili",
+      "exa",
+      "twitter",
+      "youtube"
+    ],
+    "gate_note": "timeline 按 gate.passed → writability_score 排序；heat_score 仅传播展示",
+    "topic_backlog": {
+      "pending_count": 380,
+      "over_threshold": true,
+      "threshold": 20
+    }
+  },
+  "timeline": [
+    {
+      "title": "成人糖尿病食养指南 （2023 年版）",
+      "url": "https://www.nhc.gov.cn/sps/c100088/202301/f01895a06c5349ef999f25da833c166d/files/1732844468278_20318.pdf",
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "author": "",
+      "topic_score": 91,
+      "writability_score": 91,
+      "heat_score": 40,
+      "topic_pick": true,
+      "evidence_tier": "A",
+      "use_as": "cite_directly",
+      "use_as_label": "可引用",
+      "authenticity_score": 91,
+      "importance_score": 40,
+      "importance_label": "低",
+      "adversarial_flags": [],
+      "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 40,
+        "engagement": 0,
+        "platform": "exa",
+        "platform_label": "全网网页(Exa)"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "成人糖尿病食养指南 （2023 年版）",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 91,
+        "use_as": "cite_directly",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "2ff9a3cc05b21d5a",
+          "claim": "成人糖尿病食养指南 （2023 年版）",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "high",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "一级权威来源，非热度驱动",
+        "misleading_risk": "可引用来源观点，口播须加「非医疗建议」并附原链接",
+        "safe_rewrite": "用「指南/来源提到…」并附链接，避免「你应该…」"
+      },
+      "deep_analysis": {
+        "credibility": "A级 · 可引用 · Gate 可写 — 一级权威来源，非热度驱动",
+        "claim_checks": [
+          {
+            "text": "成人糖尿病食养指南 （2023 年版）",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照指南或原链接二次查证"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.nhc.gov.cn/sps/c100088/202301/f01895a06c5349ef999f25da833c166d/files/1732844468278_20318.pdf",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可引用来源观点，口播须加「非医疗建议」并附原链接",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "用「指南/来源提到…」并附链接，避免「你应该…」",
+          "key_points": [
+            "成人糖尿病食养指南 （2023 年版）",
+            "误导风险：可引用来源观点，口播须加「非医疗建议」并附原链接"
+          ],
+          "caution": "可引用来源观点，口播须加「非医疗建议」并附原链接；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "全网网页(Exa) 热度 40",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "web",
+        "url": "https://www.nhc.gov.cn/sps/c100088/202301/f01895a06c5349ef999f25da833c166d/files/1732844468278_20318.pdf",
+        "title": "1732844468278_20318.pdf",
+        "author": "",
+        "excerpt": "成人糖尿病食养指南 \n\n# （2023  年版） \n\n> 国家卫生健康委办公厅\n\n# 目 录\n\n一、前言  ................................ .........  1\n\n二、疾病特点与分型  ...............................  2\n\n（一）糖尿病定义与分类  .........................  2\n\n（二）中医对糖尿病的认识及分型  .................  3\n\n三、食养原则和建议  ...............................  3\n\n（一）食物多样，养成和建立合理膳食习惯  .........  4\n\n（二）能量适宜，控制超重肥胖和预防消瘦  .........  5\n\n（三）主食定量，优选 全谷物和低 血糖生成指数 食物  . 6\n\n（四）积极运动，改善体质和胰岛素敏感性  .........  8\n\n（五）清淡饮食，限制饮酒，预防和延缓并发症  .....  8\n\n（六）食养有道，合理选择应用食药物质  ...........  9\n\n（七）规律进餐，合理加餐，促进餐后血糖稳定  ....  10 \n\n（八）自我管理，定期营养咨询 ，提高血糖控制能力  11 \n\n附录  1 成人 糖尿病 患者的食物选择  ..................  12 \n\n附录  2 常见食物 交换表  ............................  15 \n\n附录  3 不同地区食谱示例  ..........................  20 \n\n一、东北地区  ................................ ..  21 \n\n二、西北地区  ................................ ..  26 \n\n三、华北地区  ................................ ..  32 \n\n四、华东地区  ................................ ..  38 \n\n五、华中地区  ................................ ..  44 \n\n六、西南地区  ................................ ..  49 \n\n七、华南地区  ................................ ..  54 \n\n附录  4 成人 糖尿病 食养方举例  ......................  59 \n\n附录  5 糖尿病诊断标准  ............................  59 1\n\n# 成人糖尿病食养指南 （2023  年版） \n\n一、前言 \n\n糖尿病是遗传因素和环境因素长期共同作用所导致",
+        "key_points": [
+          "制不佳、注射胰岛素的 2 型糖尿病患者和 1 型糖尿病患者，",
+          "对糖尿病患者 的日常 食养 提出 8 条原则和建议",
+          "或加上空腹血糖 ≥7.0mmol/L",
+          "附录 5 糖尿病诊断标准 ............................ 59 1",
+          "引自世界卫生组织 1999 年，中国 2 型糖尿病防治指南（ 2017 年版）",
+          "糖尿病患者可 在餐后运动，每周至少 5 天，每次 30 ～45",
+          "小，有利于餐后血糖控制，所以糖尿病 患者 应多选低 GI 食",
+          "或加上 OGTT 2h 血糖 ≥11.1mmol/L"
+        ],
+        "sources_used": [
+          "网页正文(Jina)"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-06T09:10:21",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "【汤医科普】餐后两小时血糖升高的原因及应对措施",
+      "url": "https://wjw.beijing.gov.cn/bmfw_20143/jkzs/jksh/202403/t20240321_3595746.html",
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "author": "",
+      "topic_score": 85,
+      "writability_score": 85,
+      "heat_score": 40,
+      "topic_pick": true,
+      "evidence_tier": "A",
+      "use_as": "cite_directly",
+      "use_as_label": "可引用",
+      "authenticity_score": 85,
+      "importance_score": 40,
+      "importance_label": "低",
+      "adversarial_flags": [],
+      "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 40,
+        "engagement": 0,
+        "platform": "exa",
+        "platform_label": "全网网页(Exa)"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "【汤医科普】餐后两小时血糖升高的原因及应对措施",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 85,
+        "use_as": "cite_directly",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "487504b86bb73ed1",
+          "claim": "【汤医科普】餐后两小时血糖升高的原因及应对措施",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "high",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "一级权威来源，非热度驱动",
+        "misleading_risk": "可引用来源观点，口播须加「非医疗建议」并附原链接",
+        "safe_rewrite": "用「指南/来源提到…」并附链接，避免「你应该…」"
+      },
+      "deep_analysis": {
+        "credibility": "A级 · 可引用 · Gate 可写 — 一级权威来源，非热度驱动",
+        "claim_checks": [
+          {
+            "text": "【汤医科普】餐后两小时血糖升高的原因及应对措施",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照指南或原链接二次查证"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://wjw.beijing.gov.cn/bmfw_20143/jkzs/jksh/202403/t20240321_3595746.html",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可引用来源观点，口播须加「非医疗建议」并附原链接",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "用「指南/来源提到…」并附链接，避免「你应该…」",
+          "key_points": [
+            "【汤医科普】餐后两小时血糖升高的原因及应对措施",
+            "误导风险：可引用来源观点，口播须加「非医疗建议」并附原链接"
+          ],
+          "caution": "可引用来源观点，口播须加「非医疗建议」并附原链接；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "全网网页(Exa) 热度 40",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "web",
+        "url": "https://wjw.beijing.gov.cn/bmfw_20143/jkzs/jksh/202403/t20240321_3595746.html",
+        "title": "【汤医科普】餐后两小时血糖升高的原因及应对措施",
+        "author": "",
+        "excerpt": "部分人群存在空腹血糖正常但餐后两小时血糖升高的情况，下面为大家解答相关疑问。\n\n一、原因\n\n餐后两小时血糖升高的主要原因是胰岛素分泌不足和胰高血糖素分泌过多。胰岛素是体内唯一能够降低血糖的激素，当胰岛素分泌不足时，血糖无法得到有效控制，导致血糖升高。胰高血糖素是一种升血糖激素，在餐后其分泌量增加，可能导致血糖进一步升高。其他原因包括饮食过量、缺乏运动、疾病和药物等。\n\n二、症状\n\n餐后两小时血糖高可能导致多尿、口渴、疲劳等症状。长期高血糖可能引发糖尿病并发症，如心血管疾病、肾脏疾病、神经病变等。\n\n三、诊断\n\n口服葡萄糖耐量试验（OGTT）是诊断糖尿病常用的方法。在OGTT中，首先要空腹抽一次血，然后用200-300mL的水把75g的葡萄糖溶解，五分钟之内喝完。从喝的第一口开始算时间，在这之后半小时、一个小时、两个小时、三个小时分别抽一次血。以测血糖的时间为横坐标（空腹时为0时），血糖浓度为纵坐标，就可以绘制出糖耐量曲线。正常人服糖后1/2～1小时达到高峰，然后逐渐降低，一般在2小进左右恢复正常值。糖尿病患者可以出现空腹血糖高于正常值，服糖后血糖浓度急剧升高，2小时后仍可高于正常。\n\n四、应对措施\n\n1. 控制饮食\n\n餐后高血糖在饮食方面应控制主食量，不吃甜食，多吃蔬菜。饮食应该低盐、低糖、低脂、高纤维、维生素充足。控制饮食能减少热量摄入，有利于降低血糖。\n\n2. 适当运动\n\n餐后两小时血糖升高可以进行适当运动，比如散步、快走、打太极拳等，能有效降低餐后血糖。不过注意不宜进行剧烈运动，以免引起低血糖。\n\n3. 药物治疗\n\n确诊糖尿病的患者应考虑药物治疗，在医生的指导下服用降糖药或胰岛素注射。\n\n4. 自我监测\n\n自我监测能及时发现血糖升高情况，及时采取措施控制血糖。建议餐后2小时自测血糖，并记录血糖值，以便及时了解血糖变化。\n\n5. 保持良好心态\n\n保持良好的心态对控制血糖有帮助，保持情绪稳定，避免过度焦虑、紧张等不良情绪影响血糖。\n\n6. 就医检查\n\n如果餐后两小时血糖持续升高，应及时就医检查。医生会根据具体情况制定相应的治疗方案，有效控制血糖。\n\n总之，餐后两小时血糖高应该从饮食、运动、药物等方面入手，采取综合措施控制血糖。同时保持良好的心态，正确的生活方式和定期监测血糖，如有问题及时就医检查。",
+        "key_points": [
+          "糖尿病患者可以出现空腹血糖高于正常值，服糖后血糖浓度急剧升高，2小时后仍可高于正常",
+          "建议餐后2小时自测血糖，并记录血糖值，以便及时了解血糖变化",
+          "以测血糖的时间为横坐标（空腹时为0时），血糖浓度为纵坐标，就可以绘制出糖耐量曲线",
+          "部分人群存在空腹血糖正常但餐后两小时血糖升高的情况，下面为大家解答相关疑问",
+          "确诊糖尿病的患者应考虑药物治疗，在医生的指导下服用降糖药或胰岛素注射",
+          "餐后两小时血糖升高的主要原因是胰岛素分泌不足和胰高血糖素分泌过多",
+          "在OGTT中，首先要空腹抽一次血，然后用200-300mL的水把75g的葡萄糖溶解，五分钟之内喝完",
+          "胰岛素是体内唯一能够降低血糖的激素，当胰岛素分泌不足时，血糖无法得到有效控制，导致血糖升高"
+        ],
+        "sources_used": [
+          "网页正文(Jina)"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-06T09:10:26",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "一人一标准？糖化血红蛋白多少算达标？",
+      "url": "https://www.bilibili.com/video/BV1c24y1d7Lc",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "内分泌科陈奇医生",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 70,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 74,
+      "importance_score": 70,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 70,
+        "engagement": 23989,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "一人一标准？糖化血红蛋白多少算达标？",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 74,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "adfd4cb187ac10c1",
+          "claim": "一人一标准？糖化血红蛋白多少算达标？",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "一人一标准？糖化血红蛋白多少算达标？",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1c24y1d7Lc",
+          "核实作者/机构资质：内分泌科陈奇医生",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "一人一标准？糖化血红蛋白多少算达标？",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 70",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1c24y1d7Lc",
+        "title": "一人一标准？糖化血红蛋白多少算达标？",
+        "author": "内分泌科陈奇医生",
+        "excerpt": "热门评论摘录：\n糖化4.9，糖耐空腹和餐2勉强在指标内，餐2 7.4  但是餐半和餐一太高了，餐半9.几，餐1十几了，医生说我空腹餐2在正常范围，糖化也很好，胰岛素和c胎分泌也挺好，就说不算糖前，问医生餐半餐1，医生就说虽然高了，但确诊不看这个。但我觉得血糖肯定是有问题的，家里也没糖尿病，身体一直都是偏瘦，基本不喝饮料不吃零食，就是熬夜不运动。。\n是不是胰岛功能越差越难出现低血糖？而患者越年轻，激素分泌的越多，越容易出现突高的血糖。\n请问我早上空腹验的糖化血红蛋白是5.6，是不是很危险？最近几个月比较控制饮食和加强运动，那我过去是不是本来更糟？ 我感觉经常有三多一少的症状才去验的，本人比较瘦，不容易吃胖。去验OGTT是不是100%能够确认自己有没有患糖尿病？",
+        "key_points": [
+          "糖化4.9，糖耐空腹和餐2勉强在指标内，餐2 7.4 但是餐半和餐一太高了，餐半9.几，餐1十几了，医生说我空腹餐2在正常范围，糖化也很好，胰岛素和c胎分泌也挺好，就说不算糖前，问医生餐半餐1，医生就说虽然高了，但确诊不看这个",
+          "请问我早上空腹验的糖化血红蛋白是5.6，是不是很危险",
+          "去验OGTT是不是100%能够确认自己有没有患糖尿病",
+          "但我觉得血糖肯定是有问题的，家里也没糖尿病，身体一直都是偏瘦，基本不喝饮料不吃零食，就是熬夜不运动",
+          "我感觉经常有三多一少的症状才去验的，本人比较瘦，不容易吃胖",
+          "而患者越年轻，激素分泌的越多，越容易出现突高的血糖",
+          "是不是胰岛功能越差越难出现低血糖"
+        ],
+        "sources_used": [
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-06T09:10:28",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "糖化血红蛋白可以作为糖尿病的诊断标准吗？",
+      "url": "https://www.bilibili.com/video/BV1d34y1j7fR",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "心血管崔松主任",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 70,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 74,
+      "importance_score": 70,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 70,
+        "engagement": 32580,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "糖化血红蛋白可以作为糖尿病的诊断标准吗？",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 74,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "e53718d5c1d3725b",
+          "claim": "糖化血红蛋白可以作为糖尿病的诊断标准吗？",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "糖化血红蛋白可以作为糖尿病的诊断标准吗？",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1d34y1j7fR",
+          "核实作者/机构资质：心血管崔松主任",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "糖化血红蛋白可以作为糖尿病的诊断标准吗？",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 70",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1d34y1j7fR",
+        "title": "糖化血红蛋白可以作为糖尿病的诊断标准吗？",
+        "author": "心血管崔松主任",
+        "excerpt": "糖化血红蛋白检测的主要用途：\n①检测血糖达不达标\n②作为诊断糖尿病的补充条件",
+        "key_points": [
+          "请问我早上空腹验的糖化血红蛋白是5.6，是不是很危险",
+          "去验OGTT是不是100%能够确认自己有没有患糖尿病",
+          "（有不少人空腹正常，但是糖耐量受损，糖尿病初期）",
+          "糖化血红蛋白是过去4-8周平均血糖",
+          "相对于随机测试的空腹血糖来说更具参考价值",
+          "是的，我餐后超标，但是糖化一直挺好",
+          "②作为诊断糖尿病的补充条件",
+          "我感觉经常有三多一少的症状才去验的，本人比较瘦，不容易吃胖"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-06T09:10:31",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "公务员体检血糖超过多少就需复检",
+      "url": "https://www.bilibili.com/video/BV1KmPeeCEPT",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "公考体检上岸指南",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 62,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 74,
+      "importance_score": 62,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 62,
+        "engagement": 1017,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "公务员体检血糖超过多少就需复检",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 74,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "bd73255eab788758",
+          "claim": "公务员体检血糖超过多少就需复检",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "公务员体检血糖超过多少就需复检",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1KmPeeCEPT",
+          "核实作者/机构资质：公考体检上岸指南",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "公务员体检血糖超过多少就需复检",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 62",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "title_only",
+        "content_status": "title_only",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1KmPeeCEPT",
+        "title": "公务员体检血糖超过多少就需复检",
+        "author": "公考体检上岸指南",
+        "excerpt": "-",
+        "key_points": [
+          "来源视频标题：公务员体检血糖超过多少就需复检"
+        ],
+        "sources_used": [
+          "视频简介"
+        ],
+        "note": "该视频无 CC 字幕/简介（BV1KmPeeCEPT）。请用 `bili audio BV1KmPeeCEPT` + `agent-reach transcribe` 转写，或 opencli bilibili subtitle / 人工看视频。",
+        "fetched_at": "2026-11-06T09:10:34",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "5分钟带你了解糖化血红蛋白检查的基本原理、检查方法和读懂报告 3D科普动画（nucleus医学科普视频系列）中文翻译",
+      "url": "https://www.bilibili.com/video/BV1WV4HeZEAH",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "叮当大夫",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 62,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 74,
+      "importance_score": 62,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "实操方法",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 62,
+        "engagement": 4189,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "5分钟带你了解糖化血红蛋白检查的基本原理、检查方法和读懂报告 3D科普动画（nucleus医学科普视频系列）中文翻译",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 74,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "80a67444f4c8ab48",
+          "claim": "5分钟带你了解糖化血红蛋白检查的基本原理、检查方法和读懂报告 3D科普动画（nucleus医学科普视频系列）中文翻译",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "5分钟带你了解糖化血红蛋白检查的基本原理、检查方法和读懂报告 3D科普动画（nucleus医学科普视频系列）中文翻译",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1WV4HeZEAH",
+          "核实作者/机构资质：叮当大夫",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "5分钟带你了解糖化血红蛋白检查的基本原理、检查方法和读懂报告 3D科普动画（nucleus医学科普视频系列）中文翻译",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 62",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1WV4HeZEAH",
+        "title": "5分钟带你了解糖化血红蛋白检查的基本原理、检查方法和读懂报告 3D科普动画（nucleus医学科普视频系列）中文翻译",
+        "author": "叮当大夫",
+        "excerpt": "糖化血红蛋白是血糖检查最常用的检测指标，能反映近2-3个月的平均血糖水平，因此，也是监测糖尿病血糖控制水平的指标。正常人体中糖化蛋白可在4.0%~6.0%波动，患有糖尿病的时候才会出现升高。临床上导致糖化血红蛋白升高的疾病主要为糖尿病。\n\n本视频搬运翻译仅供交流科普，如有不适请立即线下就医",
+        "key_points": [
+          "糖化血红蛋白是血糖检查最常用的检测指标，能反映近2-3个月的平均血糖水平，因此，也是监测糖尿病血糖控制水平的指标",
+          "正常人体中糖化蛋白可在4.0%~6.0%波动，患有糖尿病的时候才会出现升高",
+          "临床上导致糖化血红蛋白升高的疾病主要为糖尿病"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-06T09:10:37",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "糖尿病的“金标准”，糖化血红蛋白",
+      "url": "https://www.bilibili.com/video/BV1yCZ3YxEW1",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "孙静医生",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 62,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 74,
+      "importance_score": 62,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 62,
+        "engagement": 3876,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "糖尿病的“金标准”，糖化血红蛋白",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 74,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "787f004af0a9355a",
+          "claim": "糖尿病的“金标准”，糖化血红蛋白",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "糖尿病的“金标准”，糖化血红蛋白",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1yCZ3YxEW1",
+          "核实作者/机构资质：孙静医生",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "糖尿病的“金标准”，糖化血红蛋白",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 62",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1yCZ3YxEW1",
+        "title": "糖尿病的“金标准”，糖化血红蛋白",
+        "author": "孙静医生",
+        "excerpt": "糖尿病的“金标准”，糖化血红蛋白",
+        "key_points": [
+          "最近体检糖化是6.7，空腹是6.4，是不是说明已经患有糖尿病了",
+          "糖尿病的“金标准”，糖化血红蛋白",
+          "我其他症状没有，就是有点胖，减肥有没有希望恢复正常"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-06T09:10:39",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "空腹血糖高，糖化血红蛋白正常？",
+      "url": "https://www.bilibili.com/video/BV12hWfeFEHv",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "中医科孔军辉教授",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 40,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 74,
+      "importance_score": 40,
+      "importance_label": "低",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 40,
+        "engagement": 829,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "空腹血糖高，糖化血红蛋白正常？",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 74,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "493dc82e0001349c",
+          "claim": "空腹血糖高，糖化血红蛋白正常？",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "空腹血糖高，糖化血红蛋白正常？",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV12hWfeFEHv",
+          "核实作者/机构资质：中医科孔军辉教授",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "空腹血糖高，糖化血红蛋白正常？",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 40",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "title_only",
+        "content_status": "title_only",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV12hWfeFEHv",
+        "title": "空腹血糖高，糖化血红蛋白正常？",
+        "author": "中医科孔军辉教授",
+        "excerpt": "",
+        "key_points": [
+          "来源视频标题：空腹血糖高，糖化血红蛋白正常？"
+        ],
+        "sources_used": [],
+        "note": "该视频无 CC 字幕/简介（BV12hWfeFEHv）。请用 `bili audio BV12hWfeFEHv` + `agent-reach transcribe` 转写，或 opencli bilibili subtitle / 人工看视频。",
+        "fetched_at": "2026-11-06T09:10:44",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "人好好的，为啥会得糖尿病？糖尿病还要锯脚？【人体调查组】",
+      "url": "https://www.bilibili.com/video/BV15U4y1V7sA",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "丁香医生",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 87,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 87,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 87,
+        "engagement": 952636,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "人好好的，为啥会得糖尿病？糖尿病还要锯脚？【人体调查组】",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "01ba8ca5e8b39e72",
+          "claim": "人好好的，为啥会得糖尿病？糖尿病还要锯脚？【人体调查组】",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "人好好的，为啥会得糖尿病？糖尿病还要锯脚？【人体调查组】",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV15U4y1V7sA",
+          "核实作者/机构资质：丁香医生",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "人好好的，为啥会得糖尿病？糖尿病还要锯脚？【人体调查组】",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 87",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV15U4y1V7sA",
+        "title": "人好好的，为啥会得糖尿病？糖尿病还要锯脚？【人体调查组】",
+        "author": "丁香医生",
+        "excerpt": "做好这「六个一点儿」，一起远离糖尿病吧~\n你可能还想看：\n男人的胸用来干嘛？BV1t64y1t7DJ\n怎么解辣？BV1F5411T7De",
+        "key_points": [
+          "每天都要打胰岛素，手指上都是针孔，密密麻麻的那种 打胰岛素的机器如果坏了就无法吃饭，平时如果吃糖类多的食物也要打 他上周因为糖尿病还住了院，他跟我说好像每五年就要住院检查一次（",
+          "平时倒是挺开朗的，但是他一辈子都要通过外界获得胰岛素，希望下学期分班后他还能好好的[拥抱][拥抱]",
+          "把饮料奶茶换成白开水，没营养的零食戒掉，按时吃饭多运动，绝对有效预防糖尿病",
+          "我有个同学是天生患有糖尿病，先天性胰岛发育不良",
+          "做好这「六个一点儿」，一起远离糖尿病吧~",
+          "BV1t64y1t7DJ",
+          "BV1F5411T7De"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-07T09:09:43",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+      "url": "https://www.youtube.com/watch?v=rDDfzPM4WQU",
+      "platform": "youtube",
+      "platform_label": "YouTube",
+      "author": "张之瀛大夫",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 75,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 75,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "大家好，我是张之瀛  ，一名温暖可靠的心血管医生，在这里分享一些大众的健康问题，    《欢迎订阅，欢迎分享，每天更新》 ...",
+      "propagation": {
+        "heat_score": 75,
+        "engagement": 848019,
+        "platform": "youtube",
+        "platform_label": "YouTube"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "8a2028fd52849122",
+          "claim": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          },
+          {
+            "text": "大家好，我是张之瀛  ，一名温暖可靠的心血管医生，在这里分享一些大众的健康问题，    《欢迎订阅，欢迎分享，每天更新》 ...",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "摘要片段须与原视频/正文核对",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.youtube.com/watch?v=rDDfzPM4WQU",
+          "核实作者/机构资质：张之瀛大夫",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "YouTube 热度 75",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=rDDfzPM4WQU",
+        "title": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+        "author": "",
+        "excerpt": "🍎大家好，我是张之瀛🙏，一名温暖可靠的心血管医生，在这里分享一些大众的健康问题，🙏🙏《欢迎订阅，欢迎分享，每天更新》 #张之瀛大夫 #张之瀛",
+        "key_points": [],
+        "sources_used": [
+          "YouTube(yt-dlp)"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-06T09:10:51",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "糖尿病专科郭医生113：空腹血糖正常，总是餐后高，该吃什么药？",
+      "url": "https://www.bilibili.com/video/BV14U4y1a7eX",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "郭建辉大夫",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 62,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 62,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "饮食指南",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 62,
+        "engagement": 5842,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "糖尿病专科郭医生113：空腹血糖正常，总是餐后高，该吃什么药？",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "1470b15f9ab58714",
+          "claim": "糖尿病专科郭医生113：空腹血糖正常，总是餐后高，该吃什么药？",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "糖尿病专科郭医生113：空腹血糖正常，总是餐后高，该吃什么药？",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV14U4y1a7eX",
+          "核实作者/机构资质：郭建辉大夫",
+          "若涉及 GI/食物数据：前往 https://www.glycemicindex.com/ 核对具体品类",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "糖尿病专科郭医生113：空腹血糖正常，总是餐后高，该吃什么药？",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 62",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "partial",
+        "content_status": "partial",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV14U4y1a7eX",
+        "title": "糖尿病专科郭医生113：空腹血糖正常，总是餐后高，该吃什么药？",
+        "author": "郭建辉大夫",
+        "excerpt": "糖尿病专科郭医生113：空腹血糖正常，总是餐后高，该吃什么药？",
+        "key_points": [
+          "糖尿病专科郭医生113：空腹血糖正常，总是餐后高，该吃什么药",
+          "郭医生，除了午饭后餐1特别高，其他全部正常无论早中晚，这个怎么板鸭"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "无逐字字幕，以下为简介/AI摘要/评论摘录；写稿前须点开原视频核对。",
+        "fetched_at": "2026-11-07T09:09:50",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "血糖没超过6.0，为啥入职体检不合格？",
+      "url": "https://www.bilibili.com/video/BV17w4m1176V",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "内分泌科陈奇医生",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 62,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 62,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 62,
+        "engagement": 7419,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "血糖没超过6.0，为啥入职体检不合格？",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "c86cc67e39f58a4f",
+          "claim": "血糖没超过6.0，为啥入职体检不合格？",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "血糖没超过6.0，为啥入职体检不合格？",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV17w4m1176V",
+          "核实作者/机构资质：内分泌科陈奇医生",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "血糖没超过6.0，为啥入职体检不合格？",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 62",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV17w4m1176V",
+        "title": "血糖没超过6.0，为啥入职体检不合格？",
+        "author": "内分泌科陈奇医生",
+        "excerpt": "医学知识分享\n视频内容不能代替门诊就医\n感谢你的关注三连支持",
+        "key_points": [
+          "这个查血糖也可以作假啊，先打一针速效胰岛素[吃瓜]",
+          "啥公司糖尿病不能入职呢",
+          "领导那么大的肚子，哪个血糖不高啊[doge]"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-07T09:09:57",
+        "from_cache": false
+      }
+    }
+  ],
+  "writable_picks": [
+    {
+      "title": "成人糖尿病食养指南 （2023 年版）",
+      "url": "https://www.nhc.gov.cn/sps/c100088/202301/f01895a06c5349ef999f25da833c166d/files/1732844468278_20318.pdf",
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "author": "",
+      "topic_score": 91,
+      "writability_score": 91,
+      "heat_score": 40,
+      "topic_pick": true,
+      "evidence_tier": "A",
+      "use_as": "cite_directly",
+      "use_as_label": "可引用",
+      "authenticity_score": 91,
+      "importance_score": 40,
+      "importance_label": "低",
+      "adversarial_flags": [],
+      "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 40,
+        "engagement": 0,
+        "platform": "exa",
+        "platform_label": "全网网页(Exa)"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "成人糖尿病食养指南 （2023 年版）",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 91,
+        "use_as": "cite_directly",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "2ff9a3cc05b21d5a",
+          "claim": "成人糖尿病食养指南 （2023 年版）",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "high",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "一级权威来源，非热度驱动",
+        "misleading_risk": "可引用来源观点，口播须加「非医疗建议」并附原链接",
+        "safe_rewrite": "用「指南/来源提到…」并附链接，避免「你应该…」"
+      },
+      "deep_analysis": {
+        "credibility": "A级 · 可引用 · Gate 可写 — 一级权威来源，非热度驱动",
+        "claim_checks": [
+          {
+            "text": "成人糖尿病食养指南 （2023 年版）",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照指南或原链接二次查证"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.nhc.gov.cn/sps/c100088/202301/f01895a06c5349ef999f25da833c166d/files/1732844468278_20318.pdf",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可引用来源观点，口播须加「非医疗建议」并附原链接",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "用「指南/来源提到…」并附链接，避免「你应该…」",
+          "key_points": [
+            "成人糖尿病食养指南 （2023 年版）",
+            "误导风险：可引用来源观点，口播须加「非医疗建议」并附原链接"
+          ],
+          "caution": "可引用来源观点，口播须加「非医疗建议」并附原链接；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "全网网页(Exa) 热度 40",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "web",
+        "url": "https://www.nhc.gov.cn/sps/c100088/202301/f01895a06c5349ef999f25da833c166d/files/1732844468278_20318.pdf",
+        "title": "1732844468278_20318.pdf",
+        "author": "",
+        "excerpt": "成人糖尿病食养指南 \n\n# （2023  年版） \n\n> 国家卫生健康委办公厅\n\n# 目 录\n\n一、前言  ................................ .........  1\n\n二、疾病特点与分型  ...............................  2\n\n（一）糖尿病定义与分类  .........................  2\n\n（二）中医对糖尿病的认识及分型  .................  3\n\n三、食养原则和建议  ...............................  3\n\n（一）食物多样，养成和建立合理膳食习惯  .........  4\n\n（二）能量适宜，控制超重肥胖和预防消瘦  .........  5\n\n（三）主食定量，优选 全谷物和低 血糖生成指数 食物  . 6\n\n（四）积极运动，改善体质和胰岛素敏感性  .........  8\n\n（五）清淡饮食，限制饮酒，预防和延缓并发症  .....  8\n\n（六）食养有道，合理选择应用食药物质  ...........  9\n\n（七）规律进餐，合理加餐，促进餐后血糖稳定  ....  10 \n\n（八）自我管理，定期营养咨询 ，提高血糖控制能力  11 \n\n附录  1 成人 糖尿病 患者的食物选择  ..................  12 \n\n附录  2 常见食物 交换表  ............................  15 \n\n附录  3 不同地区食谱示例  ..........................  20 \n\n一、东北地区  ................................ ..  21 \n\n二、西北地区  ................................ ..  26 \n\n三、华北地区  ................................ ..  32 \n\n四、华东地区  ................................ ..  38 \n\n五、华中地区  ................................ ..  44 \n\n六、西南地区  ................................ ..  49 \n\n七、华南地区  ................................ ..  54 \n\n附录  4 成人 糖尿病 食养方举例  ......................  59 \n\n附录  5 糖尿病诊断标准  ............................  59 1\n\n# 成人糖尿病食养指南 （2023  年版） \n\n一、前言 \n\n糖尿病是遗传因素和环境因素长期共同作用所导致",
+        "key_points": [
+          "制不佳、注射胰岛素的 2 型糖尿病患者和 1 型糖尿病患者，",
+          "对糖尿病患者 的日常 食养 提出 8 条原则和建议",
+          "或加上空腹血糖 ≥7.0mmol/L",
+          "附录 5 糖尿病诊断标准 ............................ 59 1",
+          "引自世界卫生组织 1999 年，中国 2 型糖尿病防治指南（ 2017 年版）",
+          "糖尿病患者可 在餐后运动，每周至少 5 天，每次 30 ～45",
+          "小，有利于餐后血糖控制，所以糖尿病 患者 应多选低 GI 食",
+          "或加上 OGTT 2h 血糖 ≥11.1mmol/L"
+        ],
+        "sources_used": [
+          "网页正文(Jina)"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-06T09:10:21",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "【汤医科普】餐后两小时血糖升高的原因及应对措施",
+      "url": "https://wjw.beijing.gov.cn/bmfw_20143/jkzs/jksh/202403/t20240321_3595746.html",
+      "platform": "exa",
+      "platform_label": "全网网页(Exa)",
+      "author": "",
+      "topic_score": 85,
+      "writability_score": 85,
+      "heat_score": 40,
+      "topic_pick": true,
+      "evidence_tier": "A",
+      "use_as": "cite_directly",
+      "use_as_label": "可引用",
+      "authenticity_score": 85,
+      "importance_score": 40,
+      "importance_label": "低",
+      "adversarial_flags": [],
+      "creator_note": "可引用来源观点，口播须加「非医疗建议」并附原链接",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 40,
+        "engagement": 0,
+        "platform": "exa",
+        "platform_label": "全网网页(Exa)"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "【汤医科普】餐后两小时血糖升高的原因及应对措施",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 85,
+        "use_as": "cite_directly",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "487504b86bb73ed1",
+          "claim": "【汤医科普】餐后两小时血糖升高的原因及应对措施",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "high",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "一级权威来源，非热度驱动",
+        "misleading_risk": "可引用来源观点，口播须加「非医疗建议」并附原链接",
+        "safe_rewrite": "用「指南/来源提到…」并附链接，避免「你应该…」"
+      },
+      "deep_analysis": {
+        "credibility": "A级 · 可引用 · Gate 可写 — 一级权威来源，非热度驱动",
+        "claim_checks": [
+          {
+            "text": "【汤医科普】餐后两小时血糖升高的原因及应对措施",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照指南或原链接二次查证"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://wjw.beijing.gov.cn/bmfw_20143/jkzs/jksh/202403/t20240321_3595746.html",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可引用来源观点，口播须加「非医疗建议」并附原链接",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "用「指南/来源提到…」并附链接，避免「你应该…」",
+          "key_points": [
+            "【汤医科普】餐后两小时血糖升高的原因及应对措施",
+            "误导风险：可引用来源观点，口播须加「非医疗建议」并附原链接"
+          ],
+          "caution": "可引用来源观点，口播须加「非医疗建议」并附原链接；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "全网网页(Exa) 热度 40",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "web",
+        "url": "https://wjw.beijing.gov.cn/bmfw_20143/jkzs/jksh/202403/t20240321_3595746.html",
+        "title": "【汤医科普】餐后两小时血糖升高的原因及应对措施",
+        "author": "",
+        "excerpt": "部分人群存在空腹血糖正常但餐后两小时血糖升高的情况，下面为大家解答相关疑问。\n\n一、原因\n\n餐后两小时血糖升高的主要原因是胰岛素分泌不足和胰高血糖素分泌过多。胰岛素是体内唯一能够降低血糖的激素，当胰岛素分泌不足时，血糖无法得到有效控制，导致血糖升高。胰高血糖素是一种升血糖激素，在餐后其分泌量增加，可能导致血糖进一步升高。其他原因包括饮食过量、缺乏运动、疾病和药物等。\n\n二、症状\n\n餐后两小时血糖高可能导致多尿、口渴、疲劳等症状。长期高血糖可能引发糖尿病并发症，如心血管疾病、肾脏疾病、神经病变等。\n\n三、诊断\n\n口服葡萄糖耐量试验（OGTT）是诊断糖尿病常用的方法。在OGTT中，首先要空腹抽一次血，然后用200-300mL的水把75g的葡萄糖溶解，五分钟之内喝完。从喝的第一口开始算时间，在这之后半小时、一个小时、两个小时、三个小时分别抽一次血。以测血糖的时间为横坐标（空腹时为0时），血糖浓度为纵坐标，就可以绘制出糖耐量曲线。正常人服糖后1/2～1小时达到高峰，然后逐渐降低，一般在2小进左右恢复正常值。糖尿病患者可以出现空腹血糖高于正常值，服糖后血糖浓度急剧升高，2小时后仍可高于正常。\n\n四、应对措施\n\n1. 控制饮食\n\n餐后高血糖在饮食方面应控制主食量，不吃甜食，多吃蔬菜。饮食应该低盐、低糖、低脂、高纤维、维生素充足。控制饮食能减少热量摄入，有利于降低血糖。\n\n2. 适当运动\n\n餐后两小时血糖升高可以进行适当运动，比如散步、快走、打太极拳等，能有效降低餐后血糖。不过注意不宜进行剧烈运动，以免引起低血糖。\n\n3. 药物治疗\n\n确诊糖尿病的患者应考虑药物治疗，在医生的指导下服用降糖药或胰岛素注射。\n\n4. 自我监测\n\n自我监测能及时发现血糖升高情况，及时采取措施控制血糖。建议餐后2小时自测血糖，并记录血糖值，以便及时了解血糖变化。\n\n5. 保持良好心态\n\n保持良好的心态对控制血糖有帮助，保持情绪稳定，避免过度焦虑、紧张等不良情绪影响血糖。\n\n6. 就医检查\n\n如果餐后两小时血糖持续升高，应及时就医检查。医生会根据具体情况制定相应的治疗方案，有效控制血糖。\n\n总之，餐后两小时血糖高应该从饮食、运动、药物等方面入手，采取综合措施控制血糖。同时保持良好的心态，正确的生活方式和定期监测血糖，如有问题及时就医检查。",
+        "key_points": [
+          "糖尿病患者可以出现空腹血糖高于正常值，服糖后血糖浓度急剧升高，2小时后仍可高于正常",
+          "建议餐后2小时自测血糖，并记录血糖值，以便及时了解血糖变化",
+          "以测血糖的时间为横坐标（空腹时为0时），血糖浓度为纵坐标，就可以绘制出糖耐量曲线",
+          "部分人群存在空腹血糖正常但餐后两小时血糖升高的情况，下面为大家解答相关疑问",
+          "确诊糖尿病的患者应考虑药物治疗，在医生的指导下服用降糖药或胰岛素注射",
+          "餐后两小时血糖升高的主要原因是胰岛素分泌不足和胰高血糖素分泌过多",
+          "在OGTT中，首先要空腹抽一次血，然后用200-300mL的水把75g的葡萄糖溶解，五分钟之内喝完",
+          "胰岛素是体内唯一能够降低血糖的激素，当胰岛素分泌不足时，血糖无法得到有效控制，导致血糖升高"
+        ],
+        "sources_used": [
+          "网页正文(Jina)"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-06T09:10:26",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "一人一标准？糖化血红蛋白多少算达标？",
+      "url": "https://www.bilibili.com/video/BV1c24y1d7Lc",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "内分泌科陈奇医生",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 70,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 74,
+      "importance_score": 70,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 70,
+        "engagement": 23989,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "一人一标准？糖化血红蛋白多少算达标？",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 74,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "adfd4cb187ac10c1",
+          "claim": "一人一标准？糖化血红蛋白多少算达标？",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "一人一标准？糖化血红蛋白多少算达标？",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1c24y1d7Lc",
+          "核实作者/机构资质：内分泌科陈奇医生",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "一人一标准？糖化血红蛋白多少算达标？",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 70",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1c24y1d7Lc",
+        "title": "一人一标准？糖化血红蛋白多少算达标？",
+        "author": "内分泌科陈奇医生",
+        "excerpt": "热门评论摘录：\n糖化4.9，糖耐空腹和餐2勉强在指标内，餐2 7.4  但是餐半和餐一太高了，餐半9.几，餐1十几了，医生说我空腹餐2在正常范围，糖化也很好，胰岛素和c胎分泌也挺好，就说不算糖前，问医生餐半餐1，医生就说虽然高了，但确诊不看这个。但我觉得血糖肯定是有问题的，家里也没糖尿病，身体一直都是偏瘦，基本不喝饮料不吃零食，就是熬夜不运动。。\n是不是胰岛功能越差越难出现低血糖？而患者越年轻，激素分泌的越多，越容易出现突高的血糖。\n请问我早上空腹验的糖化血红蛋白是5.6，是不是很危险？最近几个月比较控制饮食和加强运动，那我过去是不是本来更糟？ 我感觉经常有三多一少的症状才去验的，本人比较瘦，不容易吃胖。去验OGTT是不是100%能够确认自己有没有患糖尿病？",
+        "key_points": [
+          "糖化4.9，糖耐空腹和餐2勉强在指标内，餐2 7.4 但是餐半和餐一太高了，餐半9.几，餐1十几了，医生说我空腹餐2在正常范围，糖化也很好，胰岛素和c胎分泌也挺好，就说不算糖前，问医生餐半餐1，医生就说虽然高了，但确诊不看这个",
+          "请问我早上空腹验的糖化血红蛋白是5.6，是不是很危险",
+          "去验OGTT是不是100%能够确认自己有没有患糖尿病",
+          "但我觉得血糖肯定是有问题的，家里也没糖尿病，身体一直都是偏瘦，基本不喝饮料不吃零食，就是熬夜不运动",
+          "我感觉经常有三多一少的症状才去验的，本人比较瘦，不容易吃胖",
+          "而患者越年轻，激素分泌的越多，越容易出现突高的血糖",
+          "是不是胰岛功能越差越难出现低血糖"
+        ],
+        "sources_used": [
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-06T09:10:28",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "糖化血红蛋白可以作为糖尿病的诊断标准吗？",
+      "url": "https://www.bilibili.com/video/BV1d34y1j7fR",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "心血管崔松主任",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 70,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 74,
+      "importance_score": 70,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 70,
+        "engagement": 32580,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "糖化血红蛋白可以作为糖尿病的诊断标准吗？",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 74,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "e53718d5c1d3725b",
+          "claim": "糖化血红蛋白可以作为糖尿病的诊断标准吗？",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "糖化血红蛋白可以作为糖尿病的诊断标准吗？",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1d34y1j7fR",
+          "核实作者/机构资质：心血管崔松主任",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "糖化血红蛋白可以作为糖尿病的诊断标准吗？",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 70",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1d34y1j7fR",
+        "title": "糖化血红蛋白可以作为糖尿病的诊断标准吗？",
+        "author": "心血管崔松主任",
+        "excerpt": "糖化血红蛋白检测的主要用途：\n①检测血糖达不达标\n②作为诊断糖尿病的补充条件",
+        "key_points": [
+          "请问我早上空腹验的糖化血红蛋白是5.6，是不是很危险",
+          "去验OGTT是不是100%能够确认自己有没有患糖尿病",
+          "（有不少人空腹正常，但是糖耐量受损，糖尿病初期）",
+          "糖化血红蛋白是过去4-8周平均血糖",
+          "相对于随机测试的空腹血糖来说更具参考价值",
+          "是的，我餐后超标，但是糖化一直挺好",
+          "②作为诊断糖尿病的补充条件",
+          "我感觉经常有三多一少的症状才去验的，本人比较瘦，不容易吃胖"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-06T09:10:31",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "公务员体检血糖超过多少就需复检",
+      "url": "https://www.bilibili.com/video/BV1KmPeeCEPT",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "公考体检上岸指南",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 62,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 74,
+      "importance_score": 62,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 62,
+        "engagement": 1017,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "公务员体检血糖超过多少就需复检",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 74,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "bd73255eab788758",
+          "claim": "公务员体检血糖超过多少就需复检",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "公务员体检血糖超过多少就需复检",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1KmPeeCEPT",
+          "核实作者/机构资质：公考体检上岸指南",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "公务员体检血糖超过多少就需复检",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 62",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "title_only",
+        "content_status": "title_only",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1KmPeeCEPT",
+        "title": "公务员体检血糖超过多少就需复检",
+        "author": "公考体检上岸指南",
+        "excerpt": "-",
+        "key_points": [
+          "来源视频标题：公务员体检血糖超过多少就需复检"
+        ],
+        "sources_used": [
+          "视频简介"
+        ],
+        "note": "该视频无 CC 字幕/简介（BV1KmPeeCEPT）。请用 `bili audio BV1KmPeeCEPT` + `agent-reach transcribe` 转写，或 opencli bilibili subtitle / 人工看视频。",
+        "fetched_at": "2026-11-06T09:10:34",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "5分钟带你了解糖化血红蛋白检查的基本原理、检查方法和读懂报告 3D科普动画（nucleus医学科普视频系列）中文翻译",
+      "url": "https://www.bilibili.com/video/BV1WV4HeZEAH",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "叮当大夫",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 62,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 74,
+      "importance_score": 62,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "实操方法",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 62,
+        "engagement": 4189,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "5分钟带你了解糖化血红蛋白检查的基本原理、检查方法和读懂报告 3D科普动画（nucleus医学科普视频系列）中文翻译",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 74,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "80a67444f4c8ab48",
+          "claim": "5分钟带你了解糖化血红蛋白检查的基本原理、检查方法和读懂报告 3D科普动画（nucleus医学科普视频系列）中文翻译",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "5分钟带你了解糖化血红蛋白检查的基本原理、检查方法和读懂报告 3D科普动画（nucleus医学科普视频系列）中文翻译",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1WV4HeZEAH",
+          "核实作者/机构资质：叮当大夫",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "5分钟带你了解糖化血红蛋白检查的基本原理、检查方法和读懂报告 3D科普动画（nucleus医学科普视频系列）中文翻译",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 62",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1WV4HeZEAH",
+        "title": "5分钟带你了解糖化血红蛋白检查的基本原理、检查方法和读懂报告 3D科普动画（nucleus医学科普视频系列）中文翻译",
+        "author": "叮当大夫",
+        "excerpt": "糖化血红蛋白是血糖检查最常用的检测指标，能反映近2-3个月的平均血糖水平，因此，也是监测糖尿病血糖控制水平的指标。正常人体中糖化蛋白可在4.0%~6.0%波动，患有糖尿病的时候才会出现升高。临床上导致糖化血红蛋白升高的疾病主要为糖尿病。\n\n本视频搬运翻译仅供交流科普，如有不适请立即线下就医",
+        "key_points": [
+          "糖化血红蛋白是血糖检查最常用的检测指标，能反映近2-3个月的平均血糖水平，因此，也是监测糖尿病血糖控制水平的指标",
+          "正常人体中糖化蛋白可在4.0%~6.0%波动，患有糖尿病的时候才会出现升高",
+          "临床上导致糖化血红蛋白升高的疾病主要为糖尿病"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-06T09:10:37",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "糖尿病的“金标准”，糖化血红蛋白",
+      "url": "https://www.bilibili.com/video/BV1yCZ3YxEW1",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "孙静医生",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 62,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 74,
+      "importance_score": 62,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 62,
+        "engagement": 3876,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "糖尿病的“金标准”，糖化血红蛋白",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 74,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "787f004af0a9355a",
+          "claim": "糖尿病的“金标准”，糖化血红蛋白",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "糖尿病的“金标准”，糖化血红蛋白",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1yCZ3YxEW1",
+          "核实作者/机构资质：孙静医生",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "糖尿病的“金标准”，糖化血红蛋白",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 62",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1yCZ3YxEW1",
+        "title": "糖尿病的“金标准”，糖化血红蛋白",
+        "author": "孙静医生",
+        "excerpt": "糖尿病的“金标准”，糖化血红蛋白",
+        "key_points": [
+          "最近体检糖化是6.7，空腹是6.4，是不是说明已经患有糖尿病了",
+          "糖尿病的“金标准”，糖化血红蛋白",
+          "我其他症状没有，就是有点胖，减肥有没有希望恢复正常"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-06T09:10:39",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "空腹血糖高，糖化血红蛋白正常？",
+      "url": "https://www.bilibili.com/video/BV12hWfeFEHv",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "中医科孔军辉教授",
+      "topic_score": 74,
+      "writability_score": 74,
+      "heat_score": 40,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 74,
+      "importance_score": 40,
+      "importance_label": "低",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 40,
+        "engagement": 829,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "空腹血糖高，糖化血红蛋白正常？",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 74,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "493dc82e0001349c",
+          "claim": "空腹血糖高，糖化血红蛋白正常？",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "空腹血糖高，糖化血红蛋白正常？",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV12hWfeFEHv",
+          "核实作者/机构资质：中医科孔军辉教授",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "空腹血糖高，糖化血红蛋白正常？",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 40",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "title_only",
+        "content_status": "title_only",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV12hWfeFEHv",
+        "title": "空腹血糖高，糖化血红蛋白正常？",
+        "author": "中医科孔军辉教授",
+        "excerpt": "",
+        "key_points": [
+          "来源视频标题：空腹血糖高，糖化血红蛋白正常？"
+        ],
+        "sources_used": [],
+        "note": "该视频无 CC 字幕/简介（BV12hWfeFEHv）。请用 `bili audio BV12hWfeFEHv` + `agent-reach transcribe` 转写，或 opencli bilibili subtitle / 人工看视频。",
+        "fetched_at": "2026-11-06T09:10:44",
+        "from_cache": true
+      }
+    }
+  ],
+  "hook_only": [
+    {
+      "title": "糖尿病：截肢失明透析 数亿国人体内的定时炸弹",
+      "url": "https://www.bilibili.com/video/BV1nb421H7BZ",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "医学科普联盟",
+      "topic_score": 42,
+      "writability_score": 42,
+      "heat_score": 87,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 87,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 87,
+        "engagement": 3872542,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "糖尿病：截肢失明透析 数亿国人体内的定时炸弹",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "writability_below_threshold"
+        ]
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 42,
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "writability_below_threshold"
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "4e80c5e55ce8da0b",
+          "claim": "糖尿病：截肢失明透析 数亿国人体内的定时炸弹",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 糖尿病：截肢失明透析 数亿国人体内的定时炸弹…」而非「糖尿病：截肢失明透析 数亿国人体内的定时 是对的」"
+      },
+      "deep_analysis": {
+        "credibility": "D级 · 仅钩子 · 不可当医学结论 — UGC 讨论热点，默认不可当医学结论",
+        "claim_checks": [
+          {
+            "text": "糖尿病：截肢失明透析 数亿国人体内的定时炸弹",
+            "status": "opinion",
+            "status_label": "观点",
+            "note": "UGC 讨论，宜作话题钩子",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1nb421H7BZ",
+          "核实作者/机构资质：医学科普联盟",
+          "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "用「网上很多人在讨论 糖尿病：截肢失明透析 数亿国人体内的定时炸弹…」而非「糖尿病：截肢失明透析 数亿国人体内的定时 是对的」",
+          "key_points": [
+            "糖尿病：截肢失明透析 数亿国人体内的定时炸弹",
+            "误导风险：标题观点可能被当成已验证医学结论"
+          ],
+          "caution": "标题观点可能被当成已验证医学结论；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 87",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1nb421H7BZ",
+        "title": "糖尿病：截肢失明透析 数亿国人体内的定时炸弹",
+        "author": "医学科普联盟",
+        "excerpt": "据世界卫生组织统计，糖尿病并发症高达100多种，是目前已知并发症最多的一种疾病。\n患者可能会因眼部病变导致失明，因糖尿病足需要截肢、因糖尿病肾病发展成尿毒症，\n因血管病变引发各类心脑血管疾病。截至2021年，我国糖尿病患者约有1.4亿人，居全球首位，\n另有约两亿人处于糖尿病前期，并呈高速年轻化趋势，\n如不及时干预，每年约有 5%-10%（糖尿病前期） 进展为糖尿病,",
+        "key_points": [
+          "据世界卫生组织统计，糖尿病并发症高达100多种，是目前已知并发症最多的一种疾病",
+          "如不及时干预，每年约有 5%-10%（糖尿病前期） 进展为糖尿病,",
+          "截至2021年，我国糖尿病患者约有1.4亿人，居全球首位，",
+          "我还没到30，已经二型糖尿病了",
+          "患者可能会因眼部病变导致失明，因糖尿病足需要截肢、因糖尿病肾病发展成尿毒症，",
+          "另有约两亿人处于糖尿病前期，并呈高速年轻化趋势，",
+          "恐怖的不是糖尿病本身而是它的并发症"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-07T09:10:04",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "从失明截肢到心梗脑梗，糖尿病是如何一步步瓦解身体的？",
+      "url": "https://www.bilibili.com/video/BV1X2hB6VE1J",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "神奇菌汤锅",
+      "topic_score": 42,
+      "writability_score": 42,
+      "heat_score": 87,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 87,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "实操方法",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 87,
+        "engagement": 1111702,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "从失明截肢到心梗脑梗，糖尿病是如何一步步瓦解身体的？",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "writability_below_threshold"
+        ]
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 42,
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "writability_below_threshold"
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "3db105814125e3c3",
+          "claim": "从失明截肢到心梗脑梗，糖尿病是如何一步步瓦解身体的？",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 从失明截肢到心梗脑梗，糖尿病是如何一步步瓦解身体的？…」而非「从失明截肢到心梗脑梗，糖尿病是如何一步步 是对的」"
+      },
+      "deep_analysis": {
+        "credibility": "D级 · 仅钩子 · 不可当医学结论 — UGC 讨论热点，默认不可当医学结论",
+        "claim_checks": [
+          {
+            "text": "从失明截肢到心梗脑梗，糖尿病是如何一步步瓦解身体的？",
+            "status": "opinion",
+            "status_label": "观点",
+            "note": "UGC 讨论，宜作话题钩子",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1X2hB6VE1J",
+          "核实作者/机构资质：神奇菌汤锅",
+          "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "用「网上很多人在讨论 从失明截肢到心梗脑梗，糖尿病是如何一步步瓦解身体的？…」而非「从失明截肢到心梗脑梗，糖尿病是如何一步步 是对的」",
+          "key_points": [
+            "从失明截肢到心梗脑梗，糖尿病是如何一步步瓦解身体的？",
+            "误导风险：标题观点可能被当成已验证医学结论"
+          ],
+          "caution": "标题观点可能被当成已验证医学结论；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 87",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1X2hB6VE1J",
+        "title": "从失明截肢到心梗脑梗，糖尿病是如何一步步瓦解身体的？",
+        "author": "神奇菌汤锅",
+        "excerpt": "参考资料：\n \n中国糖尿病防治指南（2024版）\n中国成人糖尿病前期干预的专家共识（2023版）\n葛均波. 内科学（第9版）[M]. 人民卫生出版社,2018\n王庭槐. 生理学（第9版）[M]. 人民卫生出版社,2018\n \n叶春丽,王丽敏,赵艳芳,等. 2010-2018年中国成年居民胰岛素抵抗变化趋势分析[J]. 中华流行病学杂志,2025,46(2):179-187.\n邢小燕,杨文英,杨兆军. 胰岛素抵抗指数在不同糖耐量人群中诊断代谢综合征的作用[J]. 中华糖尿病杂志,2004,12(3):182-186.\n中国老年2型糖尿病防治临床指南编写组,中国老年医学学会老年内分泌代谢分会,中国老年保健医学研究会老年内分泌与代谢分会,等. 中国老年2型糖尿病防治临床指南（2026年版）[J]. 中华内科杂志,2026,65(3):206-255.\n中华医学会糖尿病学分会. 胰岛素抵抗相关临床问题专家共识（2022版）[J]. 中华糖尿病杂志,2022,14(12):1368-1379.\nXu Y, Lu J, Li M et al. Diabetes in China part 1: epidemiology and risk factors. The Lancet Public Health, 2024; 9, e1089-e1097.\nDavies, M.J., Lim, S., Slater, T. et al. Type 2 diabetes mellitus. Nat Rev Dis Primers 12, 13 (2026)\nZhao, L, Yuan, J, Yang, Q et al. Diabetes and its complications: molecular mechanisms, prevention and treatment. Sig Tran",
+        "key_points": [
+          "邢小燕,杨文英,杨兆军. 胰岛素抵抗指数在不同糖耐量人群中诊断代谢综合征的作用[J]. 中华糖尿病杂志,2004,12(3):182-186.",
+          "中国老年2型糖尿病防治临床指南编写组,中国老年医学学会老年内分泌代谢分会,中国老年保健医学研究会老年内分泌与代谢分会,等. 中国老年2型糖尿病防治临床指南（2026年版）[J]. 中华内科杂志,2026,65(3):206-255.",
+          "中华医学会糖尿病学分会. 胰岛素抵抗相关临床问题专家共识（2022版）[J]. 中华糖尿病杂志,2022,14(12):1368-1379.",
+          "叶春丽,王丽敏,赵艳芳,等. 2010-2018年中国成年居民胰岛素抵抗变化趋势分析[J]. 中华流行病学杂志,2025,46(2):179-187.",
+          "胰岛素抵抗，减了15斤，好了[星星眼]",
+          "中国糖尿病防治指南（2024版）",
+          "中国成人糖尿病前期干预的专家共识（2023版）",
+          "JAMA Network Open: Thirty-Year Glycemic Trajectories From Young Adulthood Through Middle Age. doi:10.1001/jamanetworkopen.2025.17455"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-07T09:10:11",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "血糖最新標準，血糖正常值最新标准，空腹血糖正常值是多少? #空腹血糖值#飯後血糖值",
+      "url": "https://www.youtube.com/watch?v=8GPC-pwbfgU",
+      "platform": "youtube",
+      "platform_label": "YouTube",
+      "author": "順糖人生",
+      "topic_score": 42,
+      "writability_score": 42,
+      "heat_score": 87,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 87,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "数字科普",
+      "snippet": "正常的空腹血糖標準值是多少? 餐後的血糖又是多少? 怎樣才算是有糖尿病? 順子的糖尿病故事，如何從沮喪心情轉到正向 ...",
+      "propagation": {
+        "heat_score": 87,
+        "engagement": 2350868,
+        "platform": "youtube",
+        "platform_label": "YouTube"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "血糖最新標準，血糖正常值最新标准，空腹血糖正常值是多少? #空腹血糖值#飯後血糖值",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "writability_below_threshold"
+        ]
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 42,
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "writability_below_threshold"
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "00b565e27b26db84",
+          "claim": "血糖最新標準，血糖正常值最新标准，空腹血糖正常值是多少? #空腹血糖值#飯後血糖值",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 血糖最新標準，血糖正常值最新标准，空腹血糖正常值是多少? #…」而非「血糖最新標準，血糖正常值最新标准，空腹血 是对的」"
+      },
+      "deep_analysis": {
+        "credibility": "D级 · 仅钩子 · 不可当医学结论 — UGC 讨论热点，默认不可当医学结论",
+        "claim_checks": [
+          {
+            "text": "血糖最新標準，血糖正常值最新标准，空腹血糖正常值是多少? #空腹血糖值#飯後血糖值",
+            "status": "opinion",
+            "status_label": "观点",
+            "note": "UGC 讨论，宜作话题钩子",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          },
+          {
+            "text": "正常的空腹血糖標準值是多少? 餐後的血糖又是多少? 怎樣才算是有糖尿病? 順子的糖尿病故事，如何從沮喪心情轉到正向 ...",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "摘要片段须与原视频/正文核对",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.youtube.com/watch?v=8GPC-pwbfgU",
+          "核实作者/机构资质：順糖人生",
+          "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "用「网上很多人在讨论 血糖最新標準，血糖正常值最新标准，空腹血糖正常值是多少? #…」而非「血糖最新標準，血糖正常值最新标准，空腹血 是对的」",
+          "key_points": [
+            "血糖最新標準，血糖正常值最新标准，空腹血糖正常值是多少? #空腹血糖值#飯後血糖值",
+            "误导风险：标题观点可能被当成已验证医学结论"
+          ],
+          "caution": "标题观点可能被当成已验证医学结论；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "YouTube 热度 87",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=8GPC-pwbfgU",
+        "title": "血糖最新標準，血糖正常值最新标准，空腹血糖正常值是多少? #空腹血糖值#飯後血糖值",
+        "author": "",
+        "excerpt": "正常的空腹血糖標準值是多少? 餐後的血糖又是多少? 怎樣才算是有糖尿病?\n\n順子的糖尿病故事，如何從沮喪心情轉到正向看待  https://shun-shop.fourthwall.com/\n\n#血糖標準 #血糖值\n\n糖尿病21年的併發症\nhttps://www.youtube.com/watch?v=lDNBg0FXfZ8&t=4s\n\n糖尿病拿這麼多的藥\nhttps://www.youtube.com/watch?v=i2kT_...\n\n糖尿病友吃中式宴會餐\nhttps://www.youtube.com/watch?v=guRwm...\n\n糖尿病西式早餐怎麼選\nhttps://www.youtube.com/watch?v=YsxeN...\n\n12個胰島素注射技巧\nhttps://www.youtube.com/watch?v=lYrzg...\n\n\n訂閱我的youtube頻道\nhttps://www.youtube.com/channel/UC5K9UllB7sZsYVlMWSg9A2Q\n00:00 什麼是血糖\n00:57 一天的血糖變化圖表\n01:40 異常的血糖一日表\n02:16 控制血糖的器官\n03:24 在家測血糖的方法\n03:45 空腹血糖標準值\n05:01 餐後血糖標準值",
+        "key_points": [
+          "正常的空腹血糖標準值是多少? 餐後的血糖又是多少? 怎樣才算是有糖尿病?",
+          ":45 空腹血糖標準值",
+          "糖尿病21年的併發症",
+          ":57 一天的血糖變化圖表",
+          ":40 異常的血糖一日表",
+          ":24 在家測血糖的方法",
+          ":16 控制血糖的器官",
+          ":01 餐後血糖標準值"
+        ],
+        "sources_used": [
+          "YouTube(yt-dlp)"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-07T09:10:21",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "高血压不是从年龄开始的。  而是从炎症、胰岛素抵抗和一氧化氮不足开始的。  以下是8种科学支持的自然降血压方法：  1. 吃大量大蒜 https://t....",
+      "url": "https://x.com/i/status/2053052871042871596",
+      "platform": "twitter",
+      "platform_label": "X/Twitter",
+      "author": "BrainQuestor",
+      "topic_score": 25,
+      "writability_score": 25,
+      "heat_score": 87,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 87,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "辟谣纠偏",
+      "snippet": "高血压不是从年龄开始的。  而是从炎症、胰岛素抵抗和一氧化氮不足开始的。  以下是8种科学支持的自然降血压方法：  1. 吃大量大蒜 https://t.co/Illlfxd7oP",
+      "propagation": {
+        "heat_score": 87,
+        "engagement": 1159103,
+        "platform": "twitter",
+        "platform_label": "X/Twitter"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "胰岛素",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "verify_with_clinician",
+        "forbidden_expressions": [
+          "自行调整剂量",
+          "停药"
+        ],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "high_harm_claim_D_tier",
+          "writability_below_threshold"
+        ]
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 25,
+        "use_as": "hook_only",
+        "allowed_frame": "verify_with_clinician",
+        "forbidden_expressions": [
+          "自行调整剂量",
+          "停药"
+        ],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "high_harm_claim_D_tier",
+          "writability_below_threshold"
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "56d377b6d17cc8ff",
+          "claim": "胰岛素",
+          "claim_type": "drug_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "high",
+          "misinterpretation_risk": "high",
+          "allowed_frame": "verify_with_clinician",
+          "forbidden_expressions": [
+            "自行调整剂量",
+            "停药"
+          ],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题/摘要含「胰岛素」，易被理解为个体疗效承诺",
+        "safe_rewrite": "强调「用药/调整方案须遵医嘱」，不给出个体剂量建议"
+      },
+      "deep_analysis": {
+        "credibility": "D级 · 仅钩子 · 不可当医学结论 — UGC 讨论热点，默认不可当医学结论",
+        "claim_checks": [
+          {
+            "text": "胰岛素",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "用药内容须遵医嘱",
+            "verify_hint": "对照药品说明书；口播不得给出个体剂量"
+          },
+          {
+            "text": "而是从炎症、胰岛素抵抗和一氧化氮不足开始的",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "摘要片段须与原视频/正文核对",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://x.com/i/status/2053052871042871596",
+          "核实作者/机构资质：BrainQuestor",
+          "写稿避免：自行调整剂量、停药",
+          "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "强调「用药/调整方案须遵医嘱」，不给出个体剂量建议",
+          "key_points": [
+            "胰岛素",
+            "误导风险：标题/摘要含「胰岛素」，易被理解为个体疗效承诺"
+          ],
+          "caution": "标题/摘要含「胰岛素」，易被理解为个体疗效承诺；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "X/Twitter 热度 87",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "web",
+        "url": "https://x.com/i/status/2053052871042871596",
+        "title": "知识玩家 (@BrainQuestor) on X",
+        "author": "",
+        "excerpt": "[](https://x.com/)\n\n## Post\n\nLog inSign up\n\n## Post\n\nLog inSign up\n\n# 知识玩家 on X: \"高血压不是从年龄开始的。 而是从炎症、胰岛素抵抗和一氧化氮不足开始的。 以下是8种科学支持的自然降血压方法： 1. 吃大量大蒜\"\n\n## Conversation\n\n*   [](https://x.com/BrainQuestor)  知识玩家 @BrainQuestor     Show translation 高血压不是从年龄开始的。 而是从炎症、胰岛素抵抗和一氧化氮不足开始的。 以下是8种科学支持的自然降血压方法： 1. 吃大量大蒜   [](https://x.com/BrainQuestor/status/2053052871042871596/photo/1)      [](https://x.com/BrainQuestor/status/2053052871042871596/photo/2)            10:02 AM · May 9, 2026·1.1M Views  1K 413 1.7K 1.7K      \n*   [](https://x.com/BrainQuestor/status/2053052872791937093)[](https://x.com/BrainQuestor)  知识玩家 @BrainQuestor May 9   大蒜是天然药物。 它含有蒜素，作用像ACE抑制剂（与降压药的靶点相同）。 结果： ↓ 血压在数周内下降5-10点 大多数人忽视了这一点…   5 2 47 100K       [](https://x.com/BrainQuestor/status/2053052874025058714)[](https://x.com/BrainQuestor)  知识玩家 @BrainQuestor May 9   2. 你的一氧化氮正在消失 到40岁时，你已经失去了约50%。 这意味着： • 动脉硬化 • 循环不良 • 血压升高 用以下方式修复： • 甜菜 • 叶菜类 • 石榴   1 3 69 94K       [](https://x.com/BrainQuestor/status/2053052875329445970)[](https://x.com/BrainQuestor)  知识玩家 @BrainQuestor May 9   3. 你缺少关键矿物质 血压 = 电解质平衡。 你需要： • 镁 → 放松血管 • 钾 → 抵消钠 • 钠 → （过多 = 问题） 大多数人缺乏这些。 你也应该尽可能多地吃这个…   2 1 28 89K       [](https://x.com/BrainQuestor/stat",
+        "key_points": [
+          "而是从炎症、胰岛素抵抗和一氧化氮不足开始的",
+          "[](https://x.com/fengren_007/status/2053374585261994397)[](https://x.com/fengren_007) 独孤疯人@fengren_007 May 10 东北人天天吃大蒜，得高血压的也挺多 1 5 6.9K",
+          "K [](https://x.com/BrainQuestor/status/2053052878198370347)[](https://x.com/BrainQuestor) 知识玩家 @BrainQuestor May 9 5. 加工食品是真正的问题 不仅仅是盐",
+          "K [](https://x.com/BrainQuestor/status/2053052883781001473)[](https://x.com/BrainQuestor) 知识玩家 @BrainQuestor May 9 底线： 近一半的成年人患有高血压",
+          "[](https://x.com/BrainQuestor/status/2053052872791937093)[](https://x.com/BrainQuestor) 知识玩家 @BrainQuestor May 9 大蒜是天然药物",
+          "Show moreTerms·Privacy·Cookies·Accessibility·Ads Info·More© 2026 X Corp.",
+          "[](https://x.com/compose/post?in_reply_to=2053052883781001473) 7 44 43K",
+          "Omega-3s： • 减少炎症 • 改善灵活性 • 降低甘油三酯 最佳来源： • 三文鱼 • 沙丁鱼 • 鲭鱼 至少每周2-3次"
+        ],
+        "sources_used": [
+          "网页正文(Jina)"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-06T09:11:09",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "胰岛素抵抗的迹象（你可能还没意识到）  1. 小便时出现泡沫 https://t.co/kI28mNjlEa",
+      "url": "https://x.com/i/status/2108110661733724218",
+      "platform": "twitter",
+      "platform_label": "X/Twitter",
+      "author": "TinaLearning",
+      "topic_score": 25,
+      "writability_score": 25,
+      "heat_score": 87,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 87,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "案例故事",
+      "snippet": "胰岛素抵抗的迹象（你可能还没意识到）  1. 小便时出现泡沫 https://t.co/kI28mNjlEa",
+      "propagation": {
+        "heat_score": 87,
+        "engagement": 718903,
+        "platform": "twitter",
+        "platform_label": "X/Twitter"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "胰岛素",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "verify_with_clinician",
+        "forbidden_expressions": [
+          "自行调整剂量",
+          "停药"
+        ],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "high_harm_claim_D_tier",
+          "writability_below_threshold"
+        ]
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 25,
+        "use_as": "hook_only",
+        "allowed_frame": "verify_with_clinician",
+        "forbidden_expressions": [
+          "自行调整剂量",
+          "停药"
+        ],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "high_harm_claim_D_tier",
+          "writability_below_threshold"
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "56d377b6d17cc8ff",
+          "claim": "胰岛素",
+          "claim_type": "drug_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "high",
+          "misinterpretation_risk": "high",
+          "allowed_frame": "verify_with_clinician",
+          "forbidden_expressions": [
+            "自行调整剂量",
+            "停药"
+          ],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题/摘要含「胰岛素」，易被理解为个体疗效承诺",
+        "safe_rewrite": "强调「用药/调整方案须遵医嘱」，不给出个体剂量建议"
+      },
+      "deep_analysis": {
+        "credibility": "D级 · 仅钩子 · 不可当医学结论 — UGC 讨论热点，默认不可当医学结论",
+        "claim_checks": [
+          {
+            "text": "胰岛素",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "用药内容须遵医嘱",
+            "verify_hint": "对照药品说明书；口播不得给出个体剂量"
+          },
+          {
+            "text": "胰岛素抵抗的迹象（你可能还没意识到）  1. 小便时出现泡沫 https://t.co/kI28mNjlEa",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "摘要片段须与原视频/正文核对",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://x.com/i/status/2108110661733724218",
+          "核实作者/机构资质：TinaLearning",
+          "写稿避免：自行调整剂量、停药",
+          "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "强调「用药/调整方案须遵医嘱」，不给出个体剂量建议",
+          "key_points": [
+            "胰岛素",
+            "误导风险：标题/摘要含「胰岛素」，易被理解为个体疗效承诺"
+          ],
+          "caution": "标题/摘要含「胰岛素」，易被理解为个体疗效承诺；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "X/Twitter 热度 87",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "web",
+        "url": "https://x.com/i/status/2108110661733724218",
+        "title": "边忘边学的Tina💋 (@TinaLearning) on X",
+        "author": "",
+        "excerpt": "## Post\n\n## Post\n\n## Conversation\n\n*   [](https://x.com/TinaLearning) \n胰岛素抵抗的迹象（你可能还没意识到） 1. 小便时出现泡沫\n\n     \n*   [](https://x.com/TinaLearning) 1. 小便时出现泡沫 肾脏每天过滤过多蛋白质。多余的糖分会损伤肾脏的过滤器。 尿液排出时带有非常密集的泡沫。身体在不停流失关键营养。   [](https://x.com/TinaLearning) 2. 脖子和腋下皮肤变黑 高胰岛素让皮肤细胞过度增生，形成又黑又厚的一层。 看起来像脏污，但怎么洗都洗不掉。这是危险信号，非常明确。   [](https://x.com/TinaLearning) 3. 总是想吃甜食 细胞完全拒绝接受葡萄糖。大脑以为身体严重缺能量。 你会产生无法控制的吃糖冲动。身体每小时都在索取虚假燃料。   [](https://x.com/TinaLearning) 4. 腰围快速变粗 胰岛素把多余能量全部储存起来。脂肪包裹着最重要的器官。 做再多卷腹也消不掉那个鼓胀。这是明确且非常严重的代谢堵塞。   [](https://x.com/TinaLearning) 5. 午饭后极度困倦 消化碳水化合物会耗尽整个神经系统。胰腺在超负荷工作。 能量急速下降。你必须睡一觉才能撑完剩下的一天。   [](https://x.com/TinaLearning) 6. 脖子上长小纤维瘤 皮肤长出很小、很软的凸起。它们出现在脖子或腋下。 高水平的胰岛素在喂养它们。切掉并不能解决根本问题。   [](https://x.com/TinaLearning) 7. 持续脑雾 大脑得不到高质量的葡萄糖。你一整天都在忘记简单的细节。 工作时很难保持专注。炎症在快速损伤神经连接。   [](https://x.com/TinaLearning) 胰岛素抵抗，就是细胞接收太多葡萄糖后累了，干脆把门全关上。为了补偿，胰腺分泌更多胰岛素，让身体卡在一个根本没法燃烧脂肪的状态。这个激素紊乱，才是现代肥胖的真正元凶，也是严重慢性病的直接前兆。   [](https://x.com/TinaLearning) 只要改变吃法，这个状况完全可以逆转。减少精制碳水，用大重量训练增加肌肉量，让血糖保持稳定，就能逼着细胞自我修复。   [](https://x.com/TinaLearning) [](https://x.com/TinaLearning) \n胰岛素抵抗的迹象（你可能还没意识到） 1. 小便时出现泡沫        \n*   [](https://x.com/Kanade636912) 贴边尿就没有沫了",
+        "key_points": [
+          "胰岛素抵抗的迹象（你可能还没意识到） 1. 小便时出现泡沫",
+          "[](https://x.com/TinaLearning) 2. 脖子和腋下皮肤变黑 高胰岛素让皮肤细胞过度增生，形成又黑又厚的一层",
+          "[](https://x.com/TinaLearning) 4. 腰围快速变粗 胰岛素把多余能量全部储存起来",
+          "[](https://x.com/TinaLearning) 胰岛素抵抗，就是细胞接收太多葡萄糖后累了，干脆把门全关上",
+          "[](https://x.com/TinaLearning) 5. 午饭后极度困倦 消化碳水化合物会耗尽整个神经系统",
+          "[](https://x.com/TinaLearning) 6. 脖子上长小纤维瘤 皮肤长出很小、很软的凸起",
+          "[](https://x.com/TinaLearning) 1. 小便时出现泡沫 肾脏每天过滤过多蛋白质",
+          "[](https://x.com/TinaLearning) 3. 总是想吃甜食 细胞完全拒绝接受葡萄糖"
+        ],
+        "sources_used": [
+          "网页正文(Jina)"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-06T09:11:13",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "5个胰岛素抵抗的早期信号 （你可能还没意识到）：  1. 颈部或腋下出现 深色斑块  高胰岛素会增加 色素细胞活动， 形成深色、天鹅绒般的皮肤褶皱。 ht...",
+      "url": "https://x.com/i/status/2035930637417480653",
+      "platform": "twitter",
+      "platform_label": "X/Twitter",
+      "author": "Bitturing",
+      "topic_score": 25,
+      "writability_score": 25,
+      "heat_score": 87,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 87,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "症状预警",
+      "snippet": "5个胰岛素抵抗的早期信号 （你可能还没意识到）：  1. 颈部或腋下出现 深色斑块  高胰岛素会增加 色素细胞活动， 形成深色、天鹅绒般的皮肤褶皱。 https://t.co/W2816N5Pzs",
+      "propagation": {
+        "heat_score": 87,
+        "engagement": 819129,
+        "platform": "twitter",
+        "platform_label": "X/Twitter"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "胰岛素",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "verify_with_clinician",
+        "forbidden_expressions": [
+          "自行调整剂量",
+          "停药"
+        ],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "high_harm_claim_D_tier",
+          "writability_below_threshold"
+        ]
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 25,
+        "use_as": "hook_only",
+        "allowed_frame": "verify_with_clinician",
+        "forbidden_expressions": [
+          "自行调整剂量",
+          "停药"
+        ],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "high_harm_claim_D_tier",
+          "writability_below_threshold"
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "56d377b6d17cc8ff",
+          "claim": "胰岛素",
+          "claim_type": "drug_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "high",
+          "misinterpretation_risk": "high",
+          "allowed_frame": "verify_with_clinician",
+          "forbidden_expressions": [
+            "自行调整剂量",
+            "停药"
+          ],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题/摘要含「胰岛素」，易被理解为个体疗效承诺",
+        "safe_rewrite": "强调「用药/调整方案须遵医嘱」，不给出个体剂量建议"
+      },
+      "deep_analysis": {
+        "credibility": "D级 · 仅钩子 · 不可当医学结论 — UGC 讨论热点，默认不可当医学结论",
+        "claim_checks": [
+          {
+            "text": "胰岛素",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "用药内容须遵医嘱",
+            "verify_hint": "对照药品说明书；口播不得给出个体剂量"
+          },
+          {
+            "text": "5个胰岛素抵抗的早期信号 （你可能还没意识到）：  1. 颈部或腋下出现 深色斑块  高胰岛素会增加 色素细胞活动， 形成深色、天鹅绒般的皮肤褶皱",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "摘要片段须与原视频/正文核对",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://x.com/i/status/2035930637417480653",
+          "核实作者/机构资质：Bitturing",
+          "写稿避免：自行调整剂量、停药",
+          "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "强调「用药/调整方案须遵医嘱」，不给出个体剂量建议",
+          "key_points": [
+            "胰岛素",
+            "误导风险：标题/摘要含「胰岛素」，易被理解为个体疗效承诺"
+          ],
+          "caution": "标题/摘要含「胰岛素」，易被理解为个体疗效承诺；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "X/Twitter 热度 87",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "web",
+        "url": "https://x.com/i/status/2035930637417480653",
+        "title": "Bitturing (@Bitturing) on X",
+        "author": "",
+        "excerpt": "[](https://x.com/)\n\n## Post\n\nLog inSign up\n\n## Post\n\nLog inSign up\n\n# Bitturing on X: \"5个胰岛素抵抗的早期信号 （你可能还没意识到）： 1. 颈部或腋下出现 深色斑块 高胰岛素会增加 色素细胞活动， 形成深色、天鹅绒般的皮肤褶皱。\"\n\n## Conversation\n\n[](https://x.com/Bitturing)\n\nBitturing@Bitturing\n\nShow translation\n\n5个胰岛素抵抗的早期信号 （你可能还没意识到）： 1. 颈部或腋下出现 深色斑块 高胰岛素会增加 色素细胞活动， 形成深色、天鹅绒般的皮肤褶皱。\n\n\n\n[](https://x.com/Bitturing/status/2035930637417480653/photo/1)\n\n\n\n[](https://x.com/Bitturing/status/2035930637417480653/photo/2)\n\n4:04 AM · Mar 23, 2026·819.1K Views\n\n78\n\n81\n\n626\n\n577\n\n## Log in or sign up for X\n\nSee what’s happening and join the conversation\n\nContinue with phoneContinue with Apple Continue with Google\n\n or \n\nLog in with username or email\n\n## Relevant people\n\n[](https://x.com/Bitturing)\n\n[](https://x.com/Bitturing)\n\nBitturing@BitturingFollow\n\n🗺️大自然的搬运工 🕸️泛互联网 🔭科技 🤖AI 📖学习 🪙Crypto #BTC 💎投资 🪐Web3 🌍看都看了，点点关注\n\n## What’s happening\n\nShow moreTerms·Privacy·Cookies·Accessibility·Ads Info·More© 2026 X Corp.\n\n*   [](https://x.com/Bitturing)  Bitturing @Bitturing     Show translation 5个胰岛素抵抗的早期信号 （你可能还没意识到）： 1. 颈部或腋下出现 深色斑块 高胰岛素会增加 色素细胞活动， 形成深色、天鹅绒般的皮肤褶皱。   [](https://x.com/Bitturing/status/2035930637417480653/photo/1)      [](https://x.com/Bitturing/status/20",
+        "key_points": [
+          "餐后散步帮助GLUT4 转运蛋白将葡萄糖拉入肌肉 无需胰岛素",
+          "[](https://x.com/Bitturing) Bitturing @Bitturing Show translation 5个胰岛素抵抗的早期信号 （你可能还没意识到）： 1. 颈部或腋下出现 深色斑块 高胰岛素会增加 色素细胞活动， 形成深色、天鹅绒般的皮肤褶皱",
+          "Bitturing on X: \"5个胰岛素抵抗的早期信号 （你可能还没意识到）： 1. 颈部或腋下出现 深色斑块 高胰岛素会增加 色素细胞活动， 形成深色、天鹅绒般的皮肤褶皱",
+          "个胰岛素抵抗的早期信号 （你可能还没意识到）： 1. 颈部或腋下出现 深色斑块 高胰岛素会增加 色素细胞活动， 形成深色、天鹅绒般的皮肤褶皱",
+          "下个迹象你不会错过... 2 13 43K [](https://x.com/Bitturing/status/2035930643696365691)[](https://x.com/Bitturing) Bitturing @Bitturing Mar 23 4. 皮肤标签 胰岛素触发皮肤细胞 过度生长信号",
+          "[](https://x.com/Bitturing/status/2035930639154004359)[](https://x.com/Bitturing) Bitturing @Bitturing Mar 23 2. 脸部浮肿或 手脚浮肿 胰岛素告诉肾脏 保留钠，钠保留水分",
+          "长期来看，这会升高 空腹胰岛素、锁定脂肪储存 和组织炎症",
+          "这减少餐后峰值和 日均胰岛素需求"
+        ],
+        "sources_used": [
+          "网页正文(Jina)"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-07T09:10:23",
+        "from_cache": false
+      }
+    }
+  ],
+  "cross_platform": [
+    {
+      "title": "The silent killer poisoning you from within:  Insulin resistance.  38% of Ame...",
+      "platforms": [
+        "twitter",
+        "youtube"
+      ],
+      "platform_labels": [
+        "X/Twitter",
+        "YouTube"
+      ],
+      "topic_score": 48,
+      "writability_score": 48,
+      "heat_score": 89,
+      "urls": [
+        "https://x.com/i/status/2053842197095887276",
+        "https://x.com/i/status/2116307962285428995",
+        "https://x.com/i/status/1891470669755433166",
+        "https://x.com/i/status/2116787345911652613"
+      ],
+      "use_as": "hook_only",
+      "platforms_in_cluster": [
+        "twitter",
+        "youtube"
+      ]
+    }
+  ],
+  "agent_hints": {
+    "query_commands": [
+      "今日精选热点有哪些？",
+      "哪些选题可以写口播？",
+      "待核实清单是什么？",
+      "哪些是 hook_only 不能当医学结论？",
+      "Gate 否决了哪些高热度条目？"
+    ],
+    "top_script_angles": [
+      {
+        "title": "成人糖尿病食养指南 （2023 年版）",
+        "platforms_suggest": "dy,bili",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "url": "https://www.nhc.gov.cn/sps/c100088/202301/f01895a06c5349ef999f25da833c166d/files/1732844468278_20318.pdf",
+        "why_selected": "一级权威来源，非热度驱动",
+        "misleading_risk": "可引用来源观点，口播须加「非医疗建议」并附原链接",
+        "safe_rewrite": "用「指南/来源提到…」并附链接，避免「你应该…」",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ]
+      },
+      {
+        "title": "【汤医科普】餐后两小时血糖升高的原因及应对措施",
+        "platforms_suggest": "dy,bili",
+        "evidence_tier": "A",
+        "use_as": "cite_directly",
+        "url": "https://wjw.beijing.gov.cn/bmfw_20143/jkzs/jksh/202403/t20240321_3595746.html",
+        "why_selected": "一级权威来源，非热度驱动",
+        "misleading_risk": "可引用来源观点，口播须加「非医疗建议」并附原链接",
+        "safe_rewrite": "用「指南/来源提到…」并附链接，避免「你应该…」",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ]
+      },
+      {
+        "title": "一人一标准？糖化血红蛋白多少算达标？",
+        "platforms_suggest": "dy,bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "url": "https://www.bilibili.com/video/BV1c24y1d7Lc",
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ]
+      }
+    ],
+    "verify_list": [
+      "一人一标准？糖化血红蛋白多少算达标？ — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "糖化血红蛋白可以作为糖尿病的诊断标准吗？ — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "公务员体检血糖超过多少就需复检 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "5分钟带你了解糖化血红蛋白检查的基本原理、检查方法和读懂报告 3D科普动画（nu — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "糖尿病的“金标准”，糖化血红蛋白 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "空腹血糖高，糖化血红蛋白正常？ — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "一人一标准？糖化血红蛋白多少算达标？ — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "糖化血红蛋白可以作为糖尿病的诊断标准吗？ — 可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+    ],
+    "do_not_cite_as_fact": [
+      "糖尿病：截肢失明透析 数亿国人体内的定时炸弹（仅钩子）",
+      "从失明截肢到心梗脑梗，糖尿病是如何一步步瓦解身体的？（仅钩子）",
+      "血糖最新標準，血糖正常值最新标准，空腹血糖正常值是多少? #空腹血糖值#飯後血糖值（仅钩子）",
+      "高血压不是从年龄开始的。  而是从炎症、胰岛素抵抗和一氧化氮不足开始的。  以下是8种科学支持的自然（仅钩子）",
+      "胰岛素抵抗的迹象（你可能还没意识到）  1. 小便时出现泡沫 https://t.co/kI28mN（仅钩子）",
+      "5个胰岛素抵抗的早期信号 （你可能还没意识到）：  1. 颈部或腋下出现 深色斑块  高胰岛素会增加（仅钩子）"
+    ],
+    "disclaimer": "个体情况请咨询医生，不构成医疗建议。维护者非执业医生。"
+  }
+}
