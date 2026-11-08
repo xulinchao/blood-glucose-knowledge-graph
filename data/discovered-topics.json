@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "topics": [
     {
       "id": "disc-016",
@@ -11710,6 +11710,359 @@
           "creator_note": "忌恐吓式表述（致癌/伤身）；用「研究提示相关，证据仍在积累」框架"
         },
         "topic_score": 76,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-458",
+      "title": "糖化血红蛋白反映平均血糖，别只看某一次空腹血糖",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "症状预警",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 65",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV16d4q6CEFk"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-08",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 52,
+          "label": "中",
+          "reasons": [
+            "命中关键词「糖化血红蛋白」"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-459",
+      "title": "极端节食把血糖打崩：只吃一顿 / 断碳两个月",
+      "angle": "两条线交汇：① 央视网 2026-03-30 报道——女子几乎完全切断碳水、只吃少量蔬菜鸡胸肉并高强度运动，两个月后确诊糖尿病前期，医生解释为胰岛素分泌紊乱、肌肉与水分大量流失、代谢受损；② 热搜个案——31 岁女性每天只吃一顿减肥，随机血糖 25.7 mmol/L，确诊双眼 2 型糖尿病性增殖性视网膜病变。共同机制：长期能量与碳水严重不足 → 升糖激素与糖异生推高血糖、肌肉流失降低基础代谢。人民日报《彻底戒掉碳水不可取》、央广网《长期控碳水的人后来怎样了》提供官方科普口径。定位：反极端减肥，而不是反碳水。",
+      "category": "打假辟谣",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "热搜个案（一天只吃一顿减肥→血糖爆表）+ 央视网/人民日报/央广网多级媒体科普交叉",
+      "source_urls": [
+        "https://news.cctv.com/2026/03/30/ARTIXGY9cGz6CkUC7zJaiW1k260329.shtml",
+        "http://paper.people.com.cn/rmrb/pc/content/202606/12/content_30162619.html",
+        "https://news.cnr.cn/native/gd/20260523/t20260523_527631952.shtml",
+        "http://m.toutiao.com/group/7705598264782996004/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-08",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 82,
+          "label": "高",
+          "reasons": [
+            "央视网 + 人民日报 + 央广网多级媒体同向科普（官方口径）",
+            "热搜个案为媒体转述医生解读，个案本身不可外推",
+            "机制表述（升糖激素/糖异生/肌肉流失）有教科书级共识"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [
+            "case_report_single"
+          ],
+          "use_as": "cite_directly",
+          "creator_note": "个案只作钩子，不得写「节食必然得糖尿病」；血糖 25.7、视网膜病变等细节发布前回源原始报道"
+        },
+        "topic_score": 82,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-460",
+      "title": "立冬后血糖更容易飘：天冷的四个升糖机制",
+      "angle": "节气刚需（11-07 立冬）。机制侧：寒冷刺激交感神经 → 肾上腺素、糖皮质激素等升糖激素分泌增加，拮抗胰岛素、促进肝糖原分解、减少外周葡萄糖摄取；叠加食欲旺盛（火锅/浓汤/高脂）、户外活动减少、腹型脂肪堆积加重胰岛素抵抗。应对侧（光明网/央广网/人民网口径）：加密监测（尤其餐后与睡前）、不自行加减药、主食粗细搭配、汤类少油少芡、室内运动补量。定位：季节提示型科普，非「冬天血糖一定高」。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "立冬节气 + 央广网/光明网/人民网/北京市卫健委冬季控糖科普集中发布",
+      "source_urls": [
+        "https://m.gmw.cn/2026-01/07/content_1304294411.htm",
+        "http://health.cnr.cn/jkgdxw/20260125/t20260125_527505469.shtml",
+        "http://health.people.com.cn/n1/2025/1224/c14739-40631022.html",
+        "https://wjw.beijing.gov.cn/bmfw_20143/jkzs/jksh/202610/t20261012_4897865.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-08",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 84,
+          "label": "高",
+          "reasons": [
+            "北京市卫健委 + 央广网 + 光明网 + 人民网健康同向口径",
+            "机制为内分泌科常规解释（清华长庚肖建中主任受访）",
+            "无涉药剂量建议"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "不写「冬天血糖必然失控」；用药调整一律引导就医，不做剂量建议"
+        },
+        "topic_score": 84,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-461",
+      "title": "办公室的灯让你更容易血糖高？自然光与代谢",
+      "angle": "热搜借势：「公司的灯会让人变胖」登上热搜。研究侧：Cell Metabolism 2025-12 研究，13 名 2 型糖尿病患者先后在自然光与人工光办公室各工作约 4 天，自然光条件下血糖更稳定、脂肪利用率提高、生物钟节律更优（人民日报健康客户端转述）。写作角度：职场人可执行的「光环境微调」——工位靠窗、午休外出 10 分钟、避免长期全封闭灯光环境。定位：小样本机制研究的生活化转译，不写成「换个工位就能降血糖」。",
+      "category": "生活方式",
+      "platform": "dy,xhs,bili",
+      "duration": "15-30s",
+      "heat": "hot",
+      "heat_source": "「公司的灯会让人变胖」热搜 + 人民日报健康客户端转述 Cell Metabolism 研究",
+      "source_urls": [
+        "http://m.toutiao.com/group/7705583083910693410/",
+        "http://health.people.com.cn/n1/2026/0501/c14739-40712529.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-08",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "样本仅 13 名 2 型糖尿病患者，属机制探索性研究，不能外推健康人群",
+            "媒体为二手转述，须回源 Cell Metabolism 原文核对指标与结论强度",
+            "话题具热搜属性，勿把「相关」写成「因果」"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [
+            "small_sample",
+            "casual_overclaim_risk"
+          ],
+          "use_as": "verify_before_script",
+          "creator_note": "只讲「研究观察到相关」，禁止「换灯就能降糖」；建议配「晒 10 分钟太阳」这类低风险动作"
+        },
+        "topic_score": 72,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-462",
+      "title": "低GI认证被叫停，商家还在拿它背书",
+      "angle": "比 disc-450（标签乱象）更硬的一层：国家认监委 2025 年第 9 号公告起全面暂停低/中 GI 产品认证规则备案，截至 2025-12-23 认证行政监管系统中已无有效备案；但记者调查（新京报、人民日报健康客户端）发现，机构转向「低 GI 评价/验证」换汤不换药，企业花约 3 万元送样检测即可拿标，体外测试替代人体试验，线下商家仍强调标识「权威有效」并主动出示格式各异的报告。写作角度：三步自查——是否为认证而非「评价」、是否有实测 GI 数值与方法、是否人体试验；以及「原料低GI≠成品低GI」「低GI≠低热量」。",
+      "category": "打假辟谣",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "新京报调查 + 人民日报健康客户端 + 中国网博鳌报道 + 新华网《低GI食品与健康白皮书》研讨会",
+      "source_urls": [
+        "https://m.bjnews.com.cn/detail/1784787979169051.html",
+        "https://m.bjnews.com.cn/detail/1784787968168451.html",
+        "https://www.news.cn/health/20260519/44738503ee444a2aa1bc8174334ae5f8/c.html",
+        "http://food.china.com.cn/2026-05/20/content_118504266.shtml",
+        "http://www.xinhuanet.com/food/20261016/268e0b5482cd48d890c060a39f54ae02/c.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-08",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 86,
+          "label": "高",
+          "reasons": [
+            "监管文件（国家认监委 2025 年第 9 号公告）+ 多家 A 级媒体调查报道交叉印证",
+            "「3 万元拿证」「体外替代人体」为记者调查结论，发布前须回源原文",
+            "不涉具体品牌点名，避免商业纠纷"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "可点名行业做法，不点名具体品牌；结论落点在「怎么自查」，不做「所有低GI都是假的」式全称判断"
+        },
+        "topic_score": 86,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-463",
+      "title": "长期吃二甲双胍，别忘了查维生素B12",
+      "angle": "用药讨论话题（不构成用药建议）。证据侧：Frontiers in Pharmacology 2026 综述系统梳理二甲双胍的争议效应；中文综述指出长期服用可能引起维生素 B12 缺乏，进而增加周围神经病变与跌倒风险，建议定期监测并适时补充；另有 MALA（二甲双胍相关乳酸性酸中毒）罕见但严重，多见于肾功能受损人群。写作角度：「你以为是糖尿病神经病变，可能是 B12 低了」——提醒复查时主动问医生要不要查 B12，而不是自行停药或自行补剂。",
+      "category": "用药科普",
+      "platform": "dy,bili,xhs",
+      "duration": "30-45s",
+      "heat": "steady",
+      "heat_source": "Frontiers 2026 综述 + 中文药物综述 + 临床随访场景高频疑问",
+      "source_urls": [
+        "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2026.1799374/full",
+        "https://pdf.hanspub.org/acm_8107355.pdf",
+        "https://pubmed.ncbi.nlm.nih.gov/42178010/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-08",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 76,
+          "label": "较高",
+          "reasons": [
+            "综述类证据，结论为「可能相关、建议监测」，非强因果",
+            "涉处方药，任何表述不得构成用药建议",
+            "MALA 为罕见不良事件，不得渲染为常见风险"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [
+            "medical_advice_risk"
+          ],
+          "use_as": "verify_before_script",
+          "creator_note": "必须出现「是否查 B12、是否补、是否调药，由医生决定」；禁止「吃二甲双胍会伤神经」式恐吓"
+        },
+        "topic_score": 78,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-464",
+      "title": "空腹正常≠安全：漏掉的餐后血糖与TIR",
+      "angle": "体检季刚需。北京市卫健委科普：餐后 2 小时血糖升高常见于饮食结构（精制碳水比例高、进食过快、蔬菜蛋白不足）、餐后久坐、用药与进餐时间不匹配；健康人餐后 2 小时应 <7.8 mmol/L，7.8–11.1 mmol/L 属糖尿病前期区间。补充概念：TIR（葡萄糖目标范围内时间）与血糖波动幅度，比单点数值更能反映风险（光明网）。写作角度：一张体检单只看空腹，等于只看了一天里的一个瞬间。",
+      "category": "数字科普",
+      "platform": "dy,bili,xhs",
+      "duration": "15-30s",
+      "heat": "hot",
+      "heat_source": "北京市卫健委科普 + 光明网 TIR 科普 + 体检季搜索需求（B站餐后血糖话题持续在榜）",
+      "source_urls": [
+        "https://wjw.beijing.gov.cn/bmfw_20143/jkzs/jksh/202403/t20240321_3595746.html",
+        "https://wjw.beijing.gov.cn/bmfw_20143/jkzs/jksh/202604/t20260424_4607974.html",
+        "https://m.gmw.cn/2026-02/20/content_1304349385.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-08",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 83,
+          "label": "高",
+          "reasons": [
+            "北京市卫健委官方科普（空腹 3.9–6.1、餐后 2h <7.8 口径）",
+            "TIR 概念有指南基础，媒体转述需按原文表述",
+            "无涉药内容"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "数值须按卫健委原文表述；建议句用「可以问医生要不要加测餐后」，不写「你必须查」"
+        },
+        "topic_score": 84,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-465",
+      "title": "抗糖丸是智商税？糖化是真的，丸是另一回事",
+      "angle": "拆解「抗糖」生意：AGEs（晚期糖基化终产物）与高血糖、皮肤老化确有机制关联，澳洲一项对照实验提示低升糖饮食可能改善轻中度痘痘，但样本有限；而市售抗糖丸/抗糖饮缺乏高质量人体证据支撑其宣称。写作角度：把「该控的是血糖曲线」与「被卖的是胶囊」分开——控糖收益来自饮食结构与总量，不来自补剂。",
+      "category": "打假辟谣",
+      "platform": "xhs,dy,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "B站抗糖科普拆解视频（2026-09-30）+ 小红书/抖音抗糖补剂带货密度高",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1uzhE67Ekf/",
+        "http://fashion.ce.cn/tjyd/202607/t20260706_3069609.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-08",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 64,
+          "label": "中等",
+          "reasons": [
+            "核心来源为 B站科普拆解（C 级），AGEs 机制部分有共识但具体实验需回源",
+            "「智商税」属观点判断，须以「缺乏证据」表述替代情绪化定性",
+            "存在反向带货风险（拆假货→卖自营），须明确不带货"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [
+            "opinion_framing_risk",
+            "commercial_hook_risk"
+          ],
+          "use_as": "verify_before_script",
+          "creator_note": "不点名具体品牌；不写「抗糖丸有害」；落点放在「先看证据等级再掏钱」"
+        },
+        "topic_score": 66,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-466",
+      "title": "血压不是越低越好：糖友强化降压的意外结果",
+      "angle": "AHA 2026 公布的 OPTIMAL-DIABETES 研究：9000 余名合并高血压的 2 型糖尿病患者随机接受强化或常规降压，强化降压未显著降低心血管事件，研究者认为仍可能存在温和获益，但 2 型糖尿病患者的血压管理应个体化。写作角度：反常识科普——「指标越低越好」在真实临床里经常不成立；对糖友而言，血压目标要看年龄、并发症、耐受性，不是统一压到最低。",
+      "category": "研究解读",
+      "platform": "dy,bili",
+      "duration": "30-45s",
+      "heat": "steady",
+      "heat_source": "AHA 2026 科学年会发布 + 心血管/内分泌媒体报道",
+      "source_urls": [
+        "https://m.newsroom.heart.org/news/intensive-blood-pressure-therapy-did-not-cut-cardiovascular-events-in-adults-with-diabetes"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-08",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 84,
+          "label": "高",
+          "reasons": [
+            "AHA 官方新闻稿（一级学会发布）",
+            "结论以「未显著降低」表述，须保留研究者的「仍可能温和获益」限定",
+            "涉降压目标，不得给出具体数值建议"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [
+            "medical_advice_risk"
+          ],
+          "use_as": "cite_directly",
+          "creator_note": "必须保留「个体化 / 由医生设定目标」；禁止「血压不用管了」式误读"
+        },
+        "topic_score": 78,
         "platform": "web_search"
       }
     }
