@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "topics": [
     {
       "id": "disc-016",
@@ -12063,6 +12063,318 @@
           "creator_note": "必须保留「个体化 / 由医生设定目标」；禁止「血压不用管了」式误读"
         },
         "topic_score": 78,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-467",
+      "title": "医生告诉你：随机血糖是8.0mmol/L，到底算不算高？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "案例故事",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 74 · 互动 10059",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1B14y1p7jb"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-09",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 74,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）",
+            "含可核对的数据或术语（需回源核实）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 58,
+          "label": "中",
+          "reasons": [
+            "互动量中等(10,059)"
+          ]
+        },
+        "topic_score": 74,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-468",
+      "title": "激素胖还能不能瘦？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 50214",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1vy4y1e7fb"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-09",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 58,
+          "label": "中",
+          "reasons": [
+            "互动量中等(50,214)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-469",
+      "title": "ADA/EASD 2026 共识：控糖从「盯住一个数」转向「保住心肾脑」",
+      "angle": "2026 年 10 月 ADA 与 EASD 联合发布 2 型糖尿病管理共识更新：从以 HbA1c 为中心，扩展为整体管理（holistic care），强调更早用药、把并发症评估与治疗纳入日常管理；多数非妊娠成人 HbA1c 目标仍为 6.5%-7%。写作角度：解释「为什么医生现在不只看糖化」——同一个 7.0%，有人只需生活方式，有人要优先护肾护心；把目标值从「考试分数」改写为「风险管理」。",
+      "category": "研究解读",
+      "platform": "dy,bili",
+      "duration": "30-45s",
+      "heat": "steady",
+      "heat_source": "ADA/EASD 2026 联合共识（2026-10）+ Medscape 报道 + Diabetes Care 2026 标准",
+      "source_urls": [
+        "https://www.medscape.com/viewarticle/ada-easd-call-early-holistic-type-2-diabetes-care-2026a10011iv",
+        "https://diabetesjournals.org/care/article/49/Supplement_1/S132/163927/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-09",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 90,
+          "label": "高",
+          "reasons": [
+            "ADA/EASD 为糖尿病领域一级学会联合共识",
+            "HbA1c 6.5%-7% 目标区间与共识原文一致",
+            "共识强调个体化与合并症评估，不得简化成单一数字"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [
+            "medical_advice_risk"
+          ],
+          "use_as": "cite_directly",
+          "creator_note": "必须保留「目标由医生按个体设定」；禁止「吃药越早越好」「不用管糖化」等误读"
+        },
+        "topic_score": 82,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-470",
+      "title": "健康人戴动态血糖仪：目前没有证据证明能「精准控糖抗衰」",
+      "angle": "2026 年 8 月发表的研究综述结论：对没有糖尿病的人，没有科学证据表明 CGM 能改善健康或预防疾病；国内光明网（2026-09-02）、科普中国同向提示健康人群佩戴会放大生理性波动、制造「数字焦虑」。写作角度：把「一个餐后小高峰」和「糖代谢异常」分开——血糖本来就该波动；对健康年轻人，先问「你打算用这个数字改变什么行为」，而不是先买设备。",
+      "category": "打假辟谣",
+      "platform": "dy,xhs,bili",
+      "duration": "15-30s",
+      "heat": "hot",
+      "heat_source": "研究综述（2026-08）+ 光明网 2026-09-02 专家提示 + 科普中国 + 双 11 CGM 促销季",
+      "source_urls": [
+        "https://www.news-medical.net/news/20260804/Continuous-glucose-monitors-show-no-proven-benefits-for-healthy-people.aspx",
+        "https://m.gmw.cn/2026-09/02/content_1304557890.htm",
+        "https://cloud.kepuchina.cn/h5/detail?id=7514052324944437248"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-09",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 82,
+          "label": "高",
+          "reasons": [
+            "研究综述 + 国内官方媒体科普同向",
+            "结论表述为「无证据证明获益」，不是「有害」",
+            "健康人 vs 糖尿病/糖前期人群必须分开讲"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [
+            "health_anxiety_risk",
+            "commercial_context"
+          ],
+          "use_as": "cite_directly",
+          "creator_note": "不得否定 CGM 对糖尿病/糖前期/妊娠糖尿病患者的价值；禁止点名具体品牌与价格"
+        },
+        "topic_score": 80,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-471",
+      "title": "35 岁是控糖分水岭：筛查年龄为什么提前了 5 年",
+      "angle": "《中国糖尿病防治指南（2024 版）》与美国 ADA 均把高危人群血糖筛查起始年龄从 40 岁提前到 35 岁；机制层：30 岁后肌肉量每年约减少 1%，肌肉是最大的「耗糖器官」。写作角度：不是「35 岁就该焦虑」，而是「35 岁该把体检里那管空腹血糖当回事」；给出 35/40/45 三个年龄段的检查频率差异。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "光明网 2026-08-25 / 央视网 2026-07-16 反复引用 + 指南原文",
+      "source_urls": [
+        "http://health.gmw.cn/2026-08/25/content_38962309.htm",
+        "https://news.cctv.com/2026/07/16/ARTI8datQz4kv13ONkZSUJsF260716.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-09",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 86,
+          "label": "高",
+          "reasons": [
+            "指南条文可查（中国糖尿病防治指南 2024 版 / ADA Standards of Care）",
+            "「肌肉每年减少 1%」为常见科普表述，需回源原始研究",
+            "筛查年龄不等于诊断年龄，须讲清区别"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [],
+          "use_as": "cite_directly",
+          "creator_note": "禁止把「35 岁筛查」写成「35 岁就会得糖尿病」"
+        },
+        "topic_score": 78,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-472",
+      "title": "糖前期「逆转」的真实概率：减重 5%-7% 能降低 40%-58% 进展风险",
+      "angle": "人民网 2026-07-01 与光明网 2026-07-20 均引用《糖尿病共识》与《中国 2 型糖尿病防治指南（2024 版）》：糖前期首选生活方式强化干预，规范减重 5%-7% + 规律运动可降低 40%-58% 进展风险；饮食上优先低 GI 碳水、增加膳食纤维，运动为每周 150-300 分钟中等强度 + 2-3 次抗阻。写作角度：把「逆转」拆成可量化的三件事——减多少、动多久、查多勤；同时说明「逆转≠治愈，仍可能复发」。",
+      "category": "生活方式",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "人民网 2026-07-01 + 光明网 2026-07-20 + 指南/共识条文",
+      "source_urls": [
+        "http://health.people.com.cn/n1/2026/0701/c14739-40751470.html",
+        "http://health.gmw.cn/2026-07/20/content_38889899.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-09",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 84,
+          "label": "高",
+          "reasons": [
+            "指南与共识条文可查，数值区间有原始研究支撑（DPP / 大庆研究系）",
+            "「逆转」为媒体用语，学术表述为「缓解（remission）」",
+            "40%-58% 区间跨度大，须说明不同研究人群差异"
+          ],
+          "evidence_tier": "A",
+          "adversarial_flags": [
+            "definition_risk"
+          ],
+          "use_as": "cite_directly",
+          "creator_note": "必须写「缓解不是治愈、需要长期随访」；禁止「照着做就能停药」"
+        },
+        "topic_score": 79,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-473",
+      "title": "长期吃二甲双胍：说明书要求定期查 B12，现实里只有三分之一在查",
+      "angle": "FDA 二甲双胍说明书明确：二甲双胍可能降低维生素 B12 水平，建议每年评估血液学指标、每 2-3 年测一次 B12；2025-2026 年多项初级保健研究显示，医生对「二甲双胍-B12」关联的知晓率高（约 87%），但真正每年检测的比例不足 40%，且有个案以「脊髓亚急性联合变性」起病。写作角度：不制造恐慌，只提醒「手脚麻、乏力、记忆力下降」别默认是年纪大或糖尿病神经病变，可以问医生要不要查 B12。",
+      "category": "用药科普",
+      "platform": "dy,bili,xhs",
+      "duration": "30-45s",
+      "heat": "steady",
+      "heat_source": "FDA 说明书 + 2025-2026 初级保健调查研究 + 个案报告",
+      "source_urls": [
+        "https://www.accessdata.fda.gov/spl/data/2a0bac1b-3575-4b62-a74b-07f54ba064af/2a0bac1b-3575-4b62-a74b-07f54ba064af.xml",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12918417/"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-09",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 85,
+          "label": "高",
+          "reasons": [
+            "FDA 说明书为药品监管一级文件",
+            "「不足 40% 在测」来自单国初级保健调查，不能外推到中国",
+            "个案报告不能作为发生率依据"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [
+            "medical_advice_risk",
+            "single_case_risk"
+          ],
+          "use_as": "verify_before_script",
+          "creator_note": "禁止写「吃二甲双胍会瘫痪」；不得给出补充剂量；落点必须是「问医生要不要查」"
+        },
+        "topic_score": 76,
+        "platform": "web_search"
+      }
+    },
+    {
+      "id": "disc-474",
+      "title": "GLP-1 用于糖尿病预防：比二甲双胍更强？（还只是研究阶段）",
+      "angle": "2026-11-02 发布的会议/期刊新闻稿称：在糖尿病预防场景中，GLP-1 受体激动剂与更低的糖尿病进展、心血管风险相关，效果优于标准预防用药（二甲双胍）；同月礼来公布 retatrutide 头对头 3 期 topline（对司美格鲁肽 2mg：A1C -2.2 vs -1.8，体重 -20.9% vs -9.4%，80 周，未同行评审）。写作角度：把「药越来越强」与「你该不该用」分开——适应证、价格、停药后反弹、肌肉流失都还没定论。",
+      "category": "研究解读",
+      "platform": "dy,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "EurekAlert 2026-11-02 + 礼来 2026-10-28 topline 新闻稿 + 多家媒体报道",
+      "source_urls": [
+        "https://www.eurekalert.org/news-releases/1149482",
+        "https://investor.lilly.com/node/55186"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-09",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 66,
+          "label": "中",
+          "reasons": [
+            "主要来源为厂商新闻稿与会议新闻稿，非同行评审全文",
+            "retatrutide 尚未获批，国内不可及",
+            "「优于二甲双胍」的适用人群与随访时长有限"
+          ],
+          "evidence_tier": "B",
+          "adversarial_flags": [
+            "commercial_hook_risk",
+            "medical_advice_risk",
+            "preliminary_evidence"
+          ],
+          "use_as": "verify_before_script",
+          "creator_note": "只能作为「研究动态」通报；禁止推荐、禁止写剂量、禁止暗示可自行购买"
+        },
+        "topic_score": 68,
         "platform": "web_search"
       }
     }
