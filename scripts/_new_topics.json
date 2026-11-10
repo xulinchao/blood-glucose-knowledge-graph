@@ -1,0 +1,193 @@
+[
+  {
+    "title": "联合国糖尿病日 2026：为什么今年主题是「早发现、早行动」",
+    "angle": "2026-2027 年联合国糖尿病日（11月14日）主题为「Early Action on Diabetes」。全球超5亿糖尿病患者，近半数未确诊。时间锚点+权威主题，口播可结合 35 岁筛查红线和糖前期逆转数据，适合做节气类科普。",
+    "category": "健康趋势",
+    "platform": "dy,xhs,bili",
+    "duration": "30-45s",
+    "heat": "hot",
+    "heat_source": "IDF 官方宣布 2026-2027 主题，全国多地医院 11 月中旬义诊活动联动",
+    "source_urls": [
+      "https://idf.org/news/wdd-2026-27/",
+      "https://www.shobserver.cn/sgh/detail?id=4091280"
+    ],
+    "platform_data": {
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "required_hedges": ["非医疗建议", "个体情况请咨询医生"],
+      "forbidden_expressions": ["保证治愈", "永不复发"]
+    }
+  },
+  {
+    "title": "「碳水脸」是污名化——戒碳水后面部线条变清晰的真相",
+    "angle": "短视频平台断碳戒糖话题累计数十亿浏览量，「碳水脸」标签污名化碳水化合物。中国农大专家指出：面部轮廓由遗传和骨骼决定，短期断碳瘦的是水分而非脂肪。可做辟谣+科普口播，平衡减脂与健康认知。",
+    "category": "辟谣纠偏",
+    "platform": "dy,xhs,bili",
+    "duration": "30-45s",
+    "heat": "hot",
+    "heat_source": "光明网、央视健康、人民日报客户端连续发文辟谣；平台断碳话题数十亿浏览",
+    "source_urls": [
+      "https://www.peopleapp.com/column/30052196219-500007505455",
+      "http://health.gmw.cn/2026-07/06/content_38869004.htm",
+      "https://jiankang.cctv.cn/2026/06/10/ARTI3yOYZ2IhANYGgeKaORGU260609.shtml"
+    ],
+    "platform_data": {
+      "evidence_level": "B",
+      "use_as": "cite_directly",
+      "required_hedges": ["非医疗建议", "个体情况请咨询医生"],
+      "forbidden_expressions": ["戒碳水一定瘦", "碳水是万恶之源"]
+    }
+  },
+  {
+    "title": "为什么 35 岁就该开始控糖？指南把筛查年龄提前了 5 岁",
+    "angle": "《中国糖尿病防治指南(2024版)》和 ADA 均将糖尿病高危人群筛查起始年龄从 40 岁下调至 35 岁。核心依据：30 岁后肌肉量每年流失 1%，肌肉是葡萄糖代谢核心。适合做年龄焦虑+健康警示类口播，target 25-40 岁白领。",
+    "category": "政策指南",
+    "platform": "dy,xhs,bili",
+    "duration": "30-45s",
+    "heat": "hot",
+    "heat_source": "北京市政府门户网站、光明网、央视新闻同步解读；多平台医生自媒体跟进",
+    "source_urls": [
+      "https://www.beijing.gov.cn/fuwu/bmfw/sy/jrts/202606/t20260623_4711495.html",
+      "http://health.gmw.cn/2026-08/25/content_38962309.htm"
+    ],
+    "platform_data": {
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "required_hedges": ["非医疗建议", "个体情况请咨询医生"],
+      "forbidden_expressions": ["所有 35 岁以上都会得糖尿病"]
+    }
+  },
+  {
+    "title": "三靶点减肥药 retatrutide：80 周减重 22.5kg，糖友也能用？",
+    "angle": "EASD 2026 公布礼来 retatrutide 三期数据：肥胖合并 2 型糖尿病患者 80 周平均减重 22.5kg（20.8%），超半数 BMI 不再达标肥胖。三重受体激动剂（GIP+GLP-1+胰高血糖素）比现有的 GLP-1 类减重更强。前沿趋势类口播，须强调：在研中，国内未上市，用药须遵医嘱。",
+    "category": "前沿研究",
+    "platform": "dy,xhs,bili",
+    "duration": "30-45s",
+    "heat": "hot",
+    "heat_source": "礼来 EASD 2026 官方发布，ADA 2026 同期数据，全球医药媒体转载",
+    "source_urls": [
+      "https://www.lilly.com.cn/news/press-releases/CMAT-56919",
+      "https://investor.lilly.com/news-releases/news-release-details/lillys-triple-agonist-retatrutide-delivered-substantial-weight",
+      "https://professional.diabetes.org/sites/dpro/files/2026-06/final_ada.26_retatrutide_press_release.pdf"
+    ],
+    "platform_data": {
+      "evidence_level": "A",
+      "use_as": "verify_before_script",
+      "required_hedges": ["药物在研中，国内未上市", "用药须遵医嘱", "个体情况请咨询医生"],
+      "forbidden_expressions": ["神药", "根治", "所有人都能用"]
+    }
+  },
+  {
+    "title": "糖前期黄金干预期：减重 5-7%，降低 40-58% 进展风险",
+    "angle": "《中国 2 型糖尿病防治指南(2024 版)》明确：糖前期人群首选饮食+运动强化干预，循证研究证实减重 5%-7% 可降低 40%-58% 进展为糖尿病的风险。配合联合国糖尿病日时间窗，适合做实用干货类口播。",
+    "category": "实操方法",
+    "platform": "dy,xhs,bili",
+    "duration": "30-45s",
+    "heat": "hot",
+    "heat_source": "人民网、光明网、央视网同步解读指南数据；多平台医生科普",
+    "source_urls": [
+      "http://health.people.com.cn/n1/2026/0701/c14739-40751470.html",
+      "http://health.gmw.cn/2026-07/20/content_38889899.htm",
+      "https://news.cctv.com/2026/07/16/ARTI8datQz4kv13ONkZSUJsF260716.shtml"
+    ],
+    "platform_data": {
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "required_hedges": ["非医疗建议", "个体情况请咨询医生"],
+      "forbidden_expressions": ["保证逆转", "永不复发"]
+    }
+  },
+  {
+    "title": "每坐 30 分钟起身 2 分钟——就能抵消久坐升糖伤害",
+    "angle": "央视网引用研究证实：每坐 30 分钟起身走动、深蹲、踮脚 2 分钟，可显著降低血糖峰值、改善胰岛素敏感性。微运动门槛极低，适合打工人场景化口播。",
+    "category": "实操方法",
+    "platform": "dy,xhs,bili",
+    "duration": "15-30s",
+    "heat": "warm",
+    "heat_source": "央视网控糖行动指南专题报道，中国 CDC 久坐与血糖研究引用",
+    "source_urls": [
+      "https://news.cctv.com/2026/07/16/ARTI8datQz4kv13ONkZSUJsF260716.shtml",
+      "https://www.chinacdc.cn/jkkp/mxfcrb/fpdx/202504/t20250418_306066.html"
+    ],
+    "platform_data": {
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "required_hedges": ["非医疗建议", "个体情况请咨询医生"],
+      "forbidden_expressions": ["完全抵消", "代替运动"]
+    }
+  },
+  {
+    "title": "全球首创：齿龈干细胞 GMSC 治疗 1 型糖尿病完成随机双盲 I 期",
+    "angle": "上海交通大学郑颂国教授联合中山大学陈燕铭团队，在 STTT（IF=81.2）发表全球首个齿龈间充质干细胞治疗 1 型糖尿病随机双盲安慰剂对照 I 期试验。GMSC 通过诱导 CD8+ T 细胞耗竭缓解胰岛自身免疫损伤。前沿科普角度，须注明 1 型 vs 2 型区别、试验阶段。",
+    "category": "前沿研究",
+    "platform": "dy,xhs,bili",
+    "duration": "30-45s",
+    "heat": "warm",
+    "heat_source": "STTT 顶刊论文，上海交通大学官方新闻稿，国产生物医学突破",
+    "source_urls": [
+      "https://www.shsmu.edu.cn/sri/info/1046/3955.htm"
+    ],
+    "platform_data": {
+      "evidence_level": "A",
+      "use_as": "verify_before_script",
+      "required_hedges": ["临床试验阶段，尚未上市", "1 型与 2 型糖尿病机制不同", "个体情况请咨询医生"],
+      "forbidden_expressions": ["根治糖尿病", "所有人都适用"]
+    }
+  },
+  {
+    "title": "彻底戒碳水为什么会反弹？专家：短期掉的是水分不是脂肪",
+    "angle": "光明网、新华社、人民日报连续发文辟谣极端断碳：短期掉秤是水分流失，长期压低代谢，恢复饮食必反弹。专家建议：碳水是必需营养素，关键是选低 GI 碳水+控制总量，而非彻底戒断。可做成「辟谣+替代方案」结构的口播。",
+    "category": "辟谣纠偏",
+    "platform": "dy,xhs,bili",
+    "duration": "30-45s",
+    "heat": "hot",
+    "heat_source": "光明网、新华社、人民日报三大官媒同步发文明示反对极端断碳；短视频平台断碳话题数十亿浏览",
+    "source_urls": [
+      "http://paper.people.com.cn/rmrb/pc/content/202606/12/content_30162619.html",
+      "http://wjw.sm.gov.cn/xxgk/wjyw/mtbd/202607/t20260724_2262418.htm"
+    ],
+    "platform_data": {
+      "evidence_level": "B",
+      "use_as": "cite_directly",
+      "required_hedges": ["非医疗建议", "个体情况请咨询医生"],
+      "forbidden_expressions": ["断碳一定反弹", "碳水是万恶之源"]
+    }
+  },
+  {
+    "title": "Nature：益生菌改造为口服「智能虚拟器官」，实现血糖闭环调控",
+    "angle": "华东师范大学叶海峰团队在 Nature 发表：将拥有百年安全史的大肠杆菌 Nissle 1917 改造为可口服的工程化益生菌 GIFT，能根据血糖水平自主分泌降糖物质，在糖尿病小鼠中实现血糖闭环精准调控。前沿合成生物学科普角度。",
+    "category": "前沿研究",
+    "platform": "dy,xhs,bili",
+    "duration": "30-45s",
+    "heat": "warm",
+    "heat_source": "Nature 发表+中国 CDC 科技文献服务系统收录；华东师大官方新闻稿",
+    "source_urls": [
+      "https://literature.chinacdc.cn/xuekefuwu/gonggongweishengxueshuredianzhuiz/202609/t20260929_1841904.html"
+    ],
+    "platform_data": {
+      "evidence_level": "A",
+      "use_as": "verify_before_script",
+      "required_hedges": ["动物实验阶段，人体试验仍需等待", "非医疗建议"],
+      "forbidden_expressions": ["即将上市", "根治糖尿病"]
+    }
+  },
+  {
+    "title": "胰岛素抵抗根源：吃得多却瘦不下来，可能是脂肪细胞在捣乱",
+    "angle": "《中国胰岛素抵抗综合管理现状与未来白皮书(2025)》指出：科学减重 5%-10% 可显著提升胰岛素敏感性，彻底打破代谢恶性循环。核心路径：减少高糖油食物、粗粮替代一半精制主食、增加肌肉量、降低压力激素（皮质醇）。可做成「清单体」口播。",
+    "category": "实操方法",
+    "platform": "dy,xhs,bili",
+    "duration": "30-45s",
+    "heat": "warm",
+    "heat_source": "北京市中医药管理局科普专题、人民网健康、中国 CDC 联合解读白皮书",
+    "source_urls": [
+      "https://zyj.beijing.gov.cn/sy/whkp/202607/t20260720_4771783.html",
+      "http://health.people.com.cn/n1/2026/0501/c14739-40712529.html"
+    ],
+    "platform_data": {
+      "evidence_level": "A",
+      "use_as": "cite_directly",
+      "required_hedges": ["非医疗建议", "个体情况请咨询医生"],
+      "forbidden_expressions": ["保证减肥成功", "所有人都有效"]
+    }
+  }
+]
