@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+
+<html lang="zh-CN"><head><meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>血糖控糖精选日报 · 2026-11-11</title>
+
+<style>
+
+:root { --bg:#0f1117; --bg2:#1a1d27; --ink:#e8eaed; --muted:#8b8fa3; --accent:#00d4aa; --accent2:#ff6b6b; --accent3:#ffd93d; --accent4:#6c8cff; --rule:#2a2d3a; }
+
+* { box-sizing:border-box; margin:0; padding:0; }
+
+body { font-family:-apple-system,'Segoe UI','Noto Sans CJK SC',sans-serif; background:var(--bg); color:var(--ink); line-height:1.65; }
+
+.wrap { max-width:920px; margin:0 auto; padding:28px 18px 48px; }
+
+.hero { text-align:center; padding-bottom:24px; border-bottom:1px solid var(--rule); margin-bottom:24px; }
+
+.hero .tag { display:inline-block; background:linear-gradient(135deg,var(--accent),var(--accent4)); color:var(--bg); font-size:11px; font-weight:700; padding:4px 12px; border-radius:20px; margin-bottom:10px; }
+
+.hero h1 { font-size:24px; margin-bottom:6px; }
+
+.hero p { color:var(--muted); font-size:13px; }
+
+.stats { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:28px; }
+
+.stat { background:var(--bg2); border:1px solid var(--rule); border-radius:10px; padding:10px 14px; min-width:88px; }
+
+.stat b { display:block; font-size:20px; color:var(--accent); }
+
+.stat span { font-size:11px; color:var(--muted); }
+
+h2 { font-size:16px; color:var(--accent); margin:24px 0 14px; }
+
+.tl-item { display:flex; gap:14px; margin-bottom:16px; padding-bottom:16px; border-bottom:1px solid var(--rule); }
+
+.tl-rank { flex:0 0 28px; height:28px; border-radius:50%; background:var(--bg2); border:1px solid var(--rule); display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; color:var(--accent); }
+
+.tl-body h3 { font-size:15px; margin-bottom:8px; font-weight:600; }
+
+.tl-meta { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:6px; font-size:11px; }
+
+.plat { background:rgba(0,212,170,.12); color:var(--accent); padding:2px 8px; border-radius:6px; }
+
+.score { color:var(--accent3); font-weight:600; }
+
+.heat { color:var(--muted); }
+
+.gate-ok { color:var(--accent); font-weight:700; }
+
+.gate-no { color:var(--accent2); font-weight:700; }
+
+.use { color:var(--muted); }
+
+.badge { padding:2px 7px; border-radius:4px; font-weight:700; }
+
+.tier-a,.tier-b { background:rgba(0,212,170,.15); color:var(--accent); }
+
+.tier-c { background:rgba(108,140,255,.15); color:var(--accent4); }
+
+.tier-d,.tier-e { background:rgba(255,217,61,.12); color:var(--accent3); }
+
+.flag { background:rgba(255,107,107,.12); color:var(--accent2); padding:1px 6px; border-radius:4px; }
+
+.note { font-size:12px; color:var(--muted); margin:6px 0; }
+
+.claim-checks { font-size:12px; margin:8px 0 0; padding-left:18px; list-style:disc; }
+
+.claim-checks li { margin-bottom:6px; line-height:1.5; }
+
+.claim-tag { font-size:10px; font-weight:700; padding:1px 7px; border-radius:4px; margin-left:6px; }
+
+.claim-pending_verify { background:rgba(255,217,61,.15); color:var(--accent3); }
+
+.claim-disputed,.claim-exaggerated { background:rgba(255,107,107,.12); color:var(--accent2); }
+
+.claim-opinion { background:rgba(108,140,255,.15); color:var(--accent4); }
+
+.claim-verified { background:rgba(0,212,170,.15); color:var(--accent); }
+
+.source-preview { font-size:12px; margin:10px 0; padding:10px 12px; background:rgba(108,140,255,.06); border:1px solid rgba(108,140,255,.2); border-radius:8px; }
+
+.source-preview-title { font-weight:600; margin-bottom:6px; color:var(--accent4); }
+
+.source-kp { margin:6px 0 0 18px; padding:0; line-height:1.55; }
+
+.source-excerpt { font-size:11px; white-space:pre-wrap; margin:8px 0 0; color:var(--muted); max-height:140px; overflow:auto; }
+
+.source-note { font-size:11px; color:var(--accent3); margin:6px 0 0; }
+
+.tl-foot a { color:var(--accent4); font-size:12px; text-decoration:none; }
+
+.panel { background:var(--bg2); border:1px solid var(--rule); border-radius:10px; padding:16px; margin-bottom:14px; }
+
+.panel ul { padding-left:18px; font-size:13px; }
+
+.panel li { margin-bottom:6px; }
+
+.muted { color:var(--muted); font-size:12px; }
+
+.warn { color:var(--accent2); font-size:11px; }
+
+.agent-box { font-size:12px; color:var(--muted); }
+
+.agent-box code { color:var(--accent); font-size:11px; }
+
+.footer { text-align:center; color:var(--muted); font-size:11px; margin-top:32px; padding-top:16px; border-top:1px solid var(--rule); }
+
+</style></head><body><div class="wrap">
+
+<div class="hero">
+
+  <div class="tag">CURATED · Schema 2.0</div>
+
+  <h1>血糖 / 控糖精选日报</h1>
+
+  <p>2026-11-11 · 从 215 条采集中精选 12 条 · Gate 分权排序</p>
+
+</div>
+
+<div class="stats">
+
+  <div class="stat"><b>12</b><span>时间线</span></div>
+
+  <div class="stat"><b>8</b><span>可写稿</span></div>
+
+  <div class="stat"><b>6</b><span>仅钩子</span></div>
+
+  <div class="stat"><b>1</b><span>跨平台</span></div>
+
+  <div class="stat"><b>2</b><span>新入库</span></div>
+
+</div>
+
+<div class="panel" style="border-color:var(--accent2)">⚠️ 选题积压 427 条（阈值 20），建议优先清理已有选题，本期暂缓新增</div>
+
+<section>
+
+  <h2>时间线</h2>
+
+  <article class="tl-item">
+
+  <div class="tl-rank">1</div>
+
+  <div class="tl-body">
+
+    <h3>【汤医科普】餐后两小时血糖升高的原因及应对措施</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">全网网页(Exa)</span>
+
+      <span class="badge tier-a">A</span>
+
+      <span class="score">可写85</span>
+
+      <span class="heat">热40</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">可引用</span>
+
+      
+
+    </div>
+
+    <p class="note">可引用来源观点，口播须加「非医疗建议」并附原链接</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>糖尿病患者可以出现空腹血糖高于正常值，服糖后血糖浓度急剧升高，2小时后仍可高于正常</li><li>建议餐后2小时自测血糖，并记录血糖值，以便及时了解血糖变化</li><li>以测血糖的时间为横坐标（空腹时为0时），血糖浓度为纵坐标，就可以绘制出糖耐量曲线</li><li>部分人群存在空腹血糖正常但餐后两小时血糖升高的情况，下面为大家解答相关疑问</li><li>确诊糖尿病的患者应考虑药物治疗，在医生的指导下服用降糖药或胰岛素注射</li></ul>
+<pre class="source-excerpt">部分人群存在空腹血糖正常但餐后两小时血糖升高的情况，下面为大家解答相关疑问。
+
+一、原因
+
+餐后两小时血糖升高的主要原因是胰岛素分泌不足和胰高血糖素分泌过多。胰岛素是体内唯一能够降低血糖的激素，当胰岛素分泌不足时，血糖无法得到有效控制，导致血糖升高。胰高血糖素是一种升血糖激素，在餐后其分泌量增加，可能导致血糖进一步升高。其他原因包括饮食过量、缺乏运动、疾病和药物等。
+
+二、症状
+
+餐后两小时血糖高可能导致多尿、口渴、疲劳等症状。长期高血糖可能引发糖尿病并发症，如心血管疾病、肾脏疾病、神经病变等。
+
+三、诊断
+
+口服葡萄糖耐量试验（OGTT）是诊断糖尿病常用的方法。在OGTT中，首先要空腹抽一次血，然后用200-300mL的水把75g的葡萄糖溶解，五分钟之内喝完。从喝的第一口开始算时间，在这之后半小时、一个小时、两个小时、三个小时分别抽一次血。以测血糖的时间为横坐标（空腹时为0时），血糖浓度为纵坐标，就可以绘制出糖耐量曲线。正常人服糖后1/2～1小时达到高峰，然后逐渐降低，一般在2小进左右恢复正常值。糖尿病患者可以出现空腹血糖高于正常值，服糖后血糖浓度急剧升高，2小时后仍可高于正常。
+
+四、应对措施
+
+1. 控制饮食
+
+餐后高血糖在饮食方面应控制主食量，不吃甜食，多吃蔬菜。饮食应该低盐、低糖、低脂、高纤维、维生素充足。控制饮食能减少热量摄入，有利于降低血糖。
+
+2. 适当运动
+
+餐后…</pre>
+<p class="muted">来源：网页正文(Jina)</p>
+</div>
+
+    <ul class="claim-checks"><li><span>【汤医科普】餐后两小时血糖升高的原因及应对措施</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">对照指南或原链接二次查证</small></li></ul>
+
+    <div class="tl-foot"><a href="https://wjw.beijing.gov.cn/bmfw_20143/jkzs/jksh/202403/t20240321_3595746.html" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">2</div>
+
+  <div class="tl-body">
+
+    <h3>公务员体检血糖超过多少就需复检</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">B站</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写74</span>
+
+      <span class="heat">热62</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>来源视频标题：公务员体检血糖超过多少就需复检</li></ul>
+<p class="source-note">该视频无 CC 字幕/简介（BV1KmPeeCEPT）。请用 `bili audio BV1KmPeeCEPT` + `agent-reach transcribe` 转写，或 opencli bilibili subtitle / 人工看视频。</p>
+<p class="muted">来源：视频简介</p>
+</div>
+
+    <ul class="claim-checks"><li><span>公务员体检血糖超过多少就需复检</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.bilibili.com/video/BV1KmPeeCEPT" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">3</div>
+
+  <div class="tl-body">
+
+    <h3>40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">YouTube</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热75</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<pre class="source-excerpt">🍎大家好，我是张之瀛🙏，一名温暖可靠的心血管医生，在这里分享一些大众的健康问题，🙏🙏《欢迎订阅，欢迎分享，每天更新》 #张之瀛大夫 #张之瀛</pre>
+<p class="muted">来源：YouTube(yt-dlp)</p>
+</div>
+
+    <ul class="claim-checks"><li><span>40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值</small></li><li><span>大家好，我是张之瀛  ，一名温暖可靠的心血管医生，在这里分享一些大众的健康问题，    《欢迎订阅，欢迎分享，每天更新》 ...</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.youtube.com/watch?v=rDDfzPM4WQU" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">4</div>
+
+  <div class="tl-body">
+
+    <h3>空腹血糖和餐后血糖，究竟哪一个更重要？医生告诉你正确答案！</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">B站</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热70</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>每个人讲的都不一样，我空腹血糖6.1 糖化6.8 医生说控制的不错挺好的，我说这样不是达不到标准嘛，他说我们正常有个6开头的就都算及格了哪有那么多所谓的标准，每个人体质不一样不可能有一个标准，有的人高点没啥事，有的人低点反而出问题</li><li>空腹血糖8.5，经过两个礼拜的锻炼和控食空腹血糖将至6.2，偶尔不锻炼或者不控食的时候空腹血糖七点多，请问算不算糖尿病呢</li><li>不同量的食物吸收时间和方式也不一样，那假如糖耐量实验的结果显示糖耐量受损，但进食大量面条消化的慢，那胃不是一直往小肠送食物吗，那餐后2小时还在持续吸收糖分，就和缓释剂原理差不多，那这个餐后2小时真的是餐后2小时吗，还是说以糖耐量实验继续作为</li></ul>
+<pre class="source-excerpt">热门评论摘录：
+每个人讲的都不一样，我空腹血糖6.1   糖化6.8  医生说控制的不错挺好的，我说这样不是达不到标准嘛，他说我们正常有个6开头的就都算及格了哪有那么多所谓的标准，每个人体质不一样不可能有一个标准，有的人高点没啥事，有的人低点反而出问题。
+空腹血糖8.5，经过两个礼拜的锻炼和控食空腹血糖将至6.2，偶尔不锻炼或者不控食的时候空腹血糖七点多，请问算不算糖尿病呢？需要服用药物吗？
+不同量的食物吸收时间和方式也不一样，那假如糖耐量实验的结果显示糖耐量受损，但进食大量面条消化的慢，那胃不是一直往小肠送食物吗，那餐后2小时还在持续吸收糖分，就和缓释剂原理差不多，那这个餐后2小时真的是餐后2小时吗，还是说以糖耐量实验继续作为金标准？</pre>
+<p class="muted">来源：bili-cli评论</p>
+</div>
+
+    <ul class="claim-checks"><li><span>空腹血糖和餐后血糖，究竟哪一个更重要？医生告诉你正确答案！</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.bilibili.com/video/BV1zT411y7Fu" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">5</div>
+
+  <div class="tl-body">
+
+    <h3>血糖没超过6.0，为啥入职体检不合格？</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">B站</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热62</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>这个查血糖也可以作假啊，先打一针速效胰岛素[吃瓜]</li><li>啥公司糖尿病不能入职呢</li><li>领导那么大的肚子，哪个血糖不高啊[doge]</li></ul>
+<p class="muted">来源：视频简介、bili-cli评论</p>
+</div>
+
+    <ul class="claim-checks"><li><span>血糖没超过6.0，为啥入职体检不合格？</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.bilibili.com/video/BV17w4m1176V" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">6</div>
+
+  <div class="tl-body">
+
+    <h3>糖尿病患者或可告别终身服药，糖友分享“逆糖”经历</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">B站</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热62</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>《中国2型糖尿病合并肥胖逆转治疗临床管理专家共识（2023版）》发布会上，有糖友做了个人逆糖的经历汇报，给糖友们增加了很大的信心</li><li>在大家的印象里，糖尿病和高血压一样，一旦得了就要吃一辈子药，通过糖友的现身说法，分享“逆糖”经历，您将会对糖尿病有一个全新的认知</li><li>,乳清蛋白有助于促进胰岛素分泌(应该就是牛奶)</li><li>,不建议超重和肥胖人群长期食用高蛋白质膳食</li></ul>
+<pre class="source-excerpt">在大家的印象里，糖尿病和高血压一样，一旦得了就要吃一辈子药，通过糖友的现身说法，分享“逆糖”经历，您将会对糖尿病有一个全新的认知。
+《中国2型糖尿病合并肥胖逆转治疗临床管理专家共识（2023版）》发布会上，有糖友做了个人逆糖的经历汇报，给糖友们增加了很大的信心。</pre>
+<p class="muted">来源：视频简介、bili-cli评论</p>
+</div>
+
+    <ul class="claim-checks"><li><span>糖尿病患者或可告别终身服药，糖友分享“逆糖”经历</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.bilibili.com/video/BV1Zw4m1R7KU" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">7</div>
+
+  <div class="tl-body">
+
+    <h3>餐后血糖比空腹血糖的还低？怎回事？该怎么办？</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">B站</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热62</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>来源视频标题：餐后血糖比空腹血糖的还低？怎回事？该怎么办？</li></ul>
+<p class="source-note">该视频无 CC 字幕/简介（BV1pM4y1Q7Ln）。请用 `bili audio BV1pM4y1Q7Ln` + `agent-reach transcribe` 转写，或 opencli bilibili subtitle / 人工看视频。</p>
+<p class="muted">来源：视频简介</p>
+</div>
+
+    <ul class="claim-checks"><li><span>餐后血糖比空腹血糖的还低？怎回事？该怎么办？</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.bilibili.com/video/BV1pM4y1Q7Ln" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">8</div>
+
+  <div class="tl-body">
+
+    <h3>糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">B站</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热58</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>好绝望，我妈妈那边有家族史，一大家子都二型，我21，多囊检查胰岛素抵抗的时候发现餐二8.7，其他正常，我是不是过几年也会得啊，我很瘦，平常也不爱吃甜，有时候感觉真的好不公平，有些人一辈子高碳水饮食吃吃喝喝的都不会得，为什么我就会得……</li><li>今天去查了血糖，餐前5.1，喝完葡萄糖两个小时后是7.8了，因为学校化验室一直没人，到十点多才做上，空腹大概15.6个小时，会不会是空腹时间太长了[doge]我以为血糖会变好，结果这样了</li><li>现在我每天低碳水饮食，主食换成红薯紫薯，每晚运动半小时，每天一片二甲双胍，这样有希望一直维持不得糖尿病吗</li><li>今年四月份测血糖餐前6.2 ，喝完葡萄糖两小时后是7.1</li><li>积极干预如果糖耐量异常赶紧减少主食摄入量增加蔬菜摄入，戒烟戒酒，不吃零食，不吃宵夜，积极运动，按时睡觉，能吃二甲双胍赶紧吃，血糖一到两个月应该就能稳定不再恶化</li></ul>
+<p class="muted">来源：视频简介、bili-cli评论</p>
+</div>
+
+    <ul class="claim-checks"><li><span>糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.bilibili.com/video/BV1f84y1q7aA" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">9</div>
+
+  <div class="tl-body">
+
+    <h3>餐后1小时血糖，糖尿病诊断新标准，听医生详细讲！</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">B站</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热58</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>餐后1小时血糖，糖尿病新的诊断标准</li><li>问一下，本人是胖子，餐一6.8,餐二6.6，现在还没做空腹，吃的是塔斯汀炸鸡汉堡两个，4个炸翅根，一份鸡块，一杯瑞幸咖啡（生椰拿铁）标准杯，这个血糖正常吗</li><li>有些人喝可乐餐一都15，这个也可以诊断为糖尿病</li><li>如果是通过饮食和运动，就算不吃药不打胰岛素，正常了，感觉也不行</li><li>一旦吃糖喝可乐，那血糖还是会不正常</li></ul>
+<p class="muted">来源：视频简介、bili-cli评论</p>
+</div>
+
+    <ul class="claim-checks"><li><span>餐后1小时血糖，糖尿病诊断新标准，听医生详细讲！</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.bilibili.com/video/BV1hx4y1s7TZ" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">10</div>
+
+  <div class="tl-body">
+
+    <h3>餐后1小时血糖，多少钱是正常？</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">B站</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热58</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>警戒线还没普及，我糖耐测试是8.57，但医生说了糖耐测试终究还是跟吃饭不一样，及时干预预防，减少碳水比例，减重，减腰围，做有氧没什么可焦虑的，情绪会让血糖血压都异常</li><li>按照这个标准，人类大部分都是糖尿病前期了</li><li>我餐一8.9 餐2 8.2 糖化不高</li><li>祝点赞关注的朋友们血糖每天达标</li></ul>
+<p class="muted">来源：视频简介、bili-cli评论</p>
+</div>
+
+    <ul class="claim-checks"><li><span>餐后1小时血糖，多少钱是正常？</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.bilibili.com/video/BV1VD421V736" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">11</div>
+
+  <div class="tl-body">
+
+    <h3>初发糖尿病，空腹血糖挺好，餐后两小时7.6，三小时血糖却到10.1</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">B站</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热58</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>我早饭吃的糯米红枣粥血糖到9.4了，吓死我了</li><li>胰岛素生理抵抗了</li><li>他这是碳水吃少了，反应性高血糖</li><li>餐三没超过11，不能算确诊吧</li></ul>
+<pre class="source-excerpt">热门评论摘录：
+胡扯。他这是碳水吃少了，反应性高血糖。胰岛素生理抵抗了。多吃点饭（至少一个拳头），过段时间就好了
+餐三没超过11，不能算确诊吧
+我早饭吃的糯米红枣粥血糖到9.4了，吓死我了</pre>
+<p class="muted">来源：bili-cli评论</p>
+</div>
+
+    <ul class="claim-checks"><li><span>初发糖尿病，空腹血糖挺好，餐后两小时7.6，三小时血糖却到10.1</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.bilibili.com/video/BV1Gg411Y7wk" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article><article class="tl-item">
+
+  <div class="tl-rank">12</div>
+
+  <div class="tl-body">
+
+    <h3>糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的</h3>
+
+    <div class="tl-meta">
+
+      <span class="plat">B站</span>
+
+      <span class="badge tier-c">C</span>
+
+      <span class="score">可写68</span>
+
+      <span class="heat">热58</span>
+
+      <span class="gate-ok">Gate✓</span>
+
+      <span class="use">写稿前核实</span>
+
+      
+
+    </div>
+
+    <p class="note">可讲话题，关键数字须二次查证；建议找指南或医生审稿</p>
+
+    <div class="source-preview">
+<div class="source-preview-title">📄 原贴内容摘要</div>
+<ul class="source-kp"><li>控糖期间千万别断了优质蛋白，鸡蛋、瘦肉、豆制品能增加饱腹感，还能延缓血糖上升，亲测有用</li><li>糖尿病是皮肤受到刀伤时，</li><li>确定自身有没有糖尿病的</li><li>有甜味就是糖尿病，</li><li>不是说“糖尿病”的</li></ul>
+<pre class="source-excerpt">热门评论摘录：
+首先测试糖尿病的。
+尝一尝自身的尿
+有甜味就是糖尿病，
+有咸味就是高血压，
+只有这个办法
+确定自身有没有糖尿病的。
+血糖高，证明的是要换食物的意思。
+不是说“糖尿病”的。
+眼泪是有甜味
+那么，只能接受死亡的。
+糖尿病是皮肤受到刀伤时，
+愈合特别难的。
+经验的说法。
+您试一试吧！
+我也是尝过自身的尿的。
+感谢分享！控糖期间千万别断了优质蛋白，鸡蛋、瘦肉、豆制品能增加饱腹感，还能延缓血糖上升，亲测有用！
+我就想知道能吃什么，不需要强调不能吃啥</pre>
+<p class="muted">来源：bili-cli评论</p>
+</div>
+
+    <ul class="claim-checks"><li><span>糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的</span> <span class="claim-tag claim-pending_verify">待核实</span><br><small class="muted">打开原贴核对，避免把讨论当医学结论</small></li></ul>
+
+    <div class="tl-foot"><a href="https://www.bilibili.com/video/BV1Qs3EeZEdG" target="_blank" rel="noopener">原贴</a></div>
+
+  </div>
+
+</article>
+
+</section>
+
+<div class="panel"><h2 style="margin-top:0">可写稿选题</h2><ul><li><strong>【汤医科普】餐后两小时血糖升高的原因及应对措施</strong> <span class='muted'>A/可引用</span></li><li><strong>公务员体检血糖超过多少就需复检</strong> <span class='muted'>C/写稿前核实</span></li><li><strong>40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压</strong> <span class='muted'>C/写稿前核实</span></li><li><strong>空腹血糖和餐后血糖，究竟哪一个更重要？医生告诉你正确答案！</strong> <span class='muted'>C/写稿前核实</span></li><li><strong>血糖没超过6.0，为啥入职体检不合格？</strong> <span class='muted'>C/写稿前核实</span></li><li><strong>糖尿病患者或可告别终身服药，糖友分享“逆糖”经历</strong> <span class='muted'>C/写稿前核实</span></li><li><strong>餐后血糖比空腹血糖的还低？怎回事？该怎么办？</strong> <span class='muted'>C/写稿前核实</span></li><li><strong>糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？</strong> <span class='muted'>C/写稿前核实</span></li></ul></div>
+
+<div class="panel"><h2 style="margin-top:0">跨平台同题</h2><ul><li>The silent killer poisoning you from within:  Insulin r — <span class='muted'>X/Twitter, YouTube</span></li></ul></div>
+
+<div class="panel"><h2 style="margin-top:0">仅钩子</h2><ul><li>三万元检测40杯奶茶，0卡糖是一元的智商税？丨凰家实验室 <span class='warn'>hook · 热87</span></li><li>1勺茶叶，2勺白糖，半盒牛奶，在家就能自制奶茶，成本不到五块钱 <span class='warn'>hook · 热87</span></li><li>血糖最新標準，血糖正常值最新标准，空腹血糖正常值是多少? #空腹血糖值#飯後血糖值 <span class='warn'>hook · 热87</span></li><li>天天一杯奶茶也没胖？外星人直接把我拽进身体里看了一圈#奶茶##控糖##健康科普##涨知识# <span class='warn'>hook · 热87</span></li><li>胰岛素抵抗的迹象（你可能还没意识到）  1. 小便时出现泡沫 https://t.co/kI28mNjlEa <span class='warn'>hook · 热87</span></li><li>高血压不是从年龄开始的。  而是从炎症、胰岛素抵抗和一氧化氮不足开始的。  以下是8种科学支持的自然降血压方法 <span class='warn'>hook · 热87</span></li></ul></div>
+
+<div class="panel"><h2 style="margin-top:0">Agent 待核实</h2><ul><li>公务员体检血糖超过多少就需复检 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿</li><li>40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿</li><li>空腹血糖和餐后血糖，究竟哪一个更重要？医生告诉你正确答案！ — 可讲话题，关键数字须二次查证；建议找指南或医生审稿</li><li>血糖没超过6.0，为啥入职体检不合格？ — 可讲话题，关键数字须二次查证；建议找指南或医生审稿</li><li>糖尿病患者或可告别终身服药，糖友分享“逆糖”经历 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿</li><li>餐后血糖比空腹血糖的还低？怎回事？该怎么办？ — 可讲话题，关键数字须二次查证；建议找指南或医生审稿</li><li>糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？ — 可讲话题，关键数字须二次查证；建议找指南或医生审稿</li><li>公务员体检血糖超过多少就需复检 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿</li></ul>
+
+<div class="agent-box" style="margin-top:10px">JSON: <code>data/exports/daily-brief-2026-11-11.json</code> · Markdown: <code>research-daily/2026-11-11-精选日报.md</code></div></div>
+
+<div class="footer">个体情况请咨询医生，不构成医疗建议 · 维护者非执业医生</div>
+
+</div></body></html>

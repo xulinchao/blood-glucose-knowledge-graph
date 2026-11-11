@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-11-10",
+  "updated": "2026-11-11",
   "topics": [
     {
       "id": "disc-016",
@@ -12983,6 +12983,318 @@
       "script_status": "pending",
       "publish_status": "pending",
       "discovered_date": "2026-11-10"
+    },
+    {
+      "id": "disc-495",
+      "title": "糖尿病患者或可告别终身服药，糖友分享“逆糖”经历",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "案例故事",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 2834",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Zw4m1R7KU"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-11",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 62,
+          "label": "中",
+          "reasons": [
+            "有一定互动(2,834)",
+            "命中关键词「糖友 年轻人」"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-496",
+      "title": "餐后1小时血糖，糖尿病诊断新标准，听医生详细讲！",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 33134",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1hx4y1s7TZ"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-11",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 58,
+          "label": "中",
+          "reasons": [
+            "互动量中等(33,134)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-497",
+      "title": "FDA 警示 GLP-1 类降糖药可能增加罕见眼病风险",
+      "angle": "2026年11月9日FDA官方通告，涉及司美格鲁肽/利拉鲁肽等全部GLP-1 RA，新增罕见永久性视力丧失风险警示。全网刷屏，时效性强。口播建议做事件解读型：先讲清楚事件，再讲罕见≠不能用的平衡，最后提醒用户及时告知开药医生。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "2026-11-09 FDA药物安全通告，新华社/澎湃/界面新闻/财联社等主流媒体全覆盖",
+      "source_urls": [
+        "https://m.thepaper.cn/newsDetail_forward_34450162",
+        "http://www.xinhuanet.com/world/20261110/b396fa0b9722459a986759fd07bda6a1/c.html",
+        "https://finance.sina.com.cn/jjxw/2026-11-10/doc-iniyhfqw9208752.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-11",
+      "evidence_tier": "A",
+      "use_as": "cite_directly",
+      "gate_passed": true
+    },
+    {
+      "id": "disc-498",
+      "title": "2026世界糖尿病日：35岁就要开始查血糖的3个理由",
+      "angle": "11月14日世界糖尿病日（2026-27主题：早发现早行动）+ 2024版中国糖尿病指南+ADA同步把筛查年龄从40岁提前到35岁的双热点叠加。中国疾控数据显示40岁以下群体发病率激增3倍。钩子用\"你今年多大了\"切入，天然能戳中健康焦虑。",
+      "category": "数字科普",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "世界糖尿病日倒计时3天，清华一附院等医院科普账号微博集中发布，光明网/中国经济网跟进",
+      "source_urls": [
+        "https://idf.org/news-and-resources/news/wdd-2026-27/",
+        "https://m.weibo.cn/detail/5363992902240544",
+        "https://m.gmw.cn/2026-10/27/content_1304579657.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-11",
+      "evidence_tier": "A",
+      "use_as": "cite_directly",
+      "gate_passed": true
+    },
+    {
+      "id": "disc-499",
+      "title": "控糖2.0：从戒奶茶到抓隐形糖——没吃糖为什么还是胖",
+      "angle": "第一波戒糖热潮已过，用户发现\"没吃甜食为什么还是胖\"，开始关注隐形糖和血糖波动。消费端低GI主食从病人专用变健康生活标签。这个选题切中年轻人真实痛点，但证据层级为B级，口播需注意hook_only红线。",
+      "category": "饮食指南",
+      "platform": "xhs,dy",
+      "duration": "30-45s",
+      "heat": "medium",
+      "heat_source": "36Kr报道低GI主食消费趋势，澎湃新闻杭州控糖食堂案例，今日头条控糖2.0话题分析",
+      "source_urls": [
+        "http://m.toutiao.com/group/7706661612563792411/",
+        "https://36kr.com/p/3943392340917383"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-11",
+      "evidence_tier": "B",
+      "use_as": "hook_only",
+      "gate_passed": false,
+      "gate_note": "证据B级，可讲话题但不得当医学结论"
+    },
+    {
+      "id": "disc-500",
+      "title": "Nature最新：把益生菌改成智能降糖药，血糖闭环调控",
+      "angle": "合成生物学前沿研究——上海科技大学叶海峰团队在Nature发表，把百年安全史的大肠杆菌Nissle 1917改造成可口服智能虚拟器官，实现血糖闭环精准调控。未来感强，适合B站数字科普向。",
+      "category": "数字科普",
+      "platform": "bili",
+      "duration": "60-90s",
+      "heat": "medium",
+      "heat_source": "Nature期刊发表，中国疾控中心科技文献服务系统转载，光明日报/中科院官网报道",
+      "source_urls": [
+        "https://literature.chinacdc.cn/xuekefuwu/gonggongweishengxueshuredianzhuiz/202609/t20260929_1841904.html",
+        "http://www.cas.cn/cm/202603/t20260312_5103968.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-11",
+      "evidence_tier": "A",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "gate_note": "前沿研究，可讲但需注明研究阶段"
+    },
+    {
+      "id": "disc-501",
+      "title": "EASD 2026：新GLP-1双靶点试验公布，肥胖糖友减13%",
+      "angle": "欧洲糖尿病研究协会(EASD)2026年会最新研究进展，Survodutide（GLP-1/GCGR双靶点）三期SYNCHRONIZE-2公布：752名肥胖T2DM患者，最高剂量减13.1%，HbA1c显著下降。适合B站医药研究向科普。",
+      "category": "数字科普",
+      "platform": "bili",
+      "duration": "45-60s",
+      "heat": "medium",
+      "heat_source": "EASD 2026年会报告，糖尿病专业媒体报道，生物谷GLP-1赛道分析",
+      "source_urls": [
+        "https://diabetesonthenet.com/wp-content/uploads/9.-EASD-conference-report.pdf",
+        "https://news.bioon.com/article/4fa796243202.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-11",
+      "evidence_tier": "A",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "gate_note": "临床研究阶段，可讲但需注明"
+    },
+    {
+      "id": "disc-497",
+      "title": "FDA 警示 GLP-1 类降糖药可能增加罕见眼病风险",
+      "angle": "2026年11月9日FDA官方通告，涉及司美格鲁肽/利拉鲁肽等全部GLP-1 RA，新增罕见永久性视力丧失风险警示。全网刷屏，时效性强。口播建议做事件解读型：先讲清楚事件，再讲罕见≠不能用的平衡，最后提醒用户及时告知开药医生。",
+      "category": "数字科普",
+      "platform": "dy,xhs,bili",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "2026-11-09 FDA药物安全通告，新华社/澎湃/界面新闻/财联社等主流媒体全覆盖",
+      "source_urls": [
+        "https://m.thepaper.cn/newsDetail_forward_34450162",
+        "http://www.xinhuanet.com/world/20261110/b396fa0b9722459a986759fd07bda6a1/c.html",
+        "https://finance.sina.com.cn/jjxw/2026-11-10/doc-iniyhfqw9208752.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-11",
+      "evidence_tier": "A",
+      "use_as": "cite_directly",
+      "gate_passed": true
+    },
+    {
+      "id": "disc-498",
+      "title": "2026世界糖尿病日：35岁就要开始查血糖的3个理由",
+      "angle": "11月14日世界糖尿病日（2026-27主题：早发现早行动）+ 2024版中国糖尿病指南+ADA同步把筛查年龄从40岁提前到35岁的双热点叠加。中国疾控数据显示40岁以下群体发病率激增3倍。钩子用\"你今年多大了\"切入，天然能戳中健康焦虑。",
+      "category": "数字科普",
+      "platform": "dy,xhs",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "世界糖尿病日倒计时3天，清华一附院等医院科普账号微博集中发布，光明网/中国经济网跟进",
+      "source_urls": [
+        "https://idf.org/news-and-resources/news/wdd-2026-27/",
+        "https://m.weibo.cn/detail/5363992902240544",
+        "https://m.gmw.cn/2026-10/27/content_1304579657.htm"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-11",
+      "evidence_tier": "A",
+      "use_as": "cite_directly",
+      "gate_passed": true
+    },
+    {
+      "id": "disc-499",
+      "title": "控糖2.0：从戒奶茶到抓隐形糖——没吃糖为什么还是胖",
+      "angle": "第一波戒糖热潮已过，用户发现\"没吃甜食为什么还是胖\"，开始关注隐形糖和血糖波动。消费端低GI主食从病人专用变健康生活标签。这个选题切中年轻人真实痛点，但证据层级为B级，口播需注意hook_only红线。",
+      "category": "饮食指南",
+      "platform": "xhs,dy",
+      "duration": "30-45s",
+      "heat": "medium",
+      "heat_source": "36Kr报道低GI主食消费趋势，澎湃新闻杭州控糖食堂案例，今日头条控糖2.0话题分析",
+      "source_urls": [
+        "http://m.toutiao.com/group/7706661612563792411/",
+        "https://36kr.com/p/3943392340917383"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-11",
+      "evidence_tier": "B",
+      "use_as": "hook_only",
+      "gate_passed": false,
+      "gate_note": "证据B级，可讲话题但不得当医学结论"
+    },
+    {
+      "id": "disc-500",
+      "title": "Nature最新：把益生菌改成智能降糖药，血糖闭环调控",
+      "angle": "合成生物学前沿研究——上海科技大学叶海峰团队在Nature发表，把百年安全史的大肠杆菌Nissle 1917改造成可口服智能虚拟器官，实现血糖闭环精准调控。未来感强，适合B站数字科普向。",
+      "category": "数字科普",
+      "platform": "bili",
+      "duration": "60-90s",
+      "heat": "medium",
+      "heat_source": "Nature期刊发表，中国疾控中心科技文献服务系统转载，光明日报/中科院官网报道",
+      "source_urls": [
+        "https://literature.chinacdc.cn/xuekefuwu/gonggongweishengxueshuredianzhuiz/202609/t20260929_1841904.html",
+        "http://www.cas.cn/cm/202603/t20260312_5103968.shtml"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-11",
+      "evidence_tier": "A",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "gate_note": "前沿研究，可讲但需注明研究阶段"
+    },
+    {
+      "id": "disc-501",
+      "title": "EASD 2026：新GLP-1双靶点试验公布，肥胖糖友减13%",
+      "angle": "欧洲糖尿病研究协会(EASD)2026年会最新研究进展，Survodutide（GLP-1/GCGR双靶点）三期SYNCHRONIZE-2公布：752名肥胖T2DM患者，最高剂量减13.1%，HbA1c显著下降。适合B站医药研究向科普。",
+      "category": "数字科普",
+      "platform": "bili",
+      "duration": "45-60s",
+      "heat": "medium",
+      "heat_source": "EASD 2026年会报告，糖尿病专业媒体报道，生物谷GLP-1赛道分析",
+      "source_urls": [
+        "https://diabetesonthenet.com/wp-content/uploads/9.-EASD-conference-report.pdf",
+        "https://news.bioon.com/article/4fa796243202.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-11",
+      "evidence_tier": "A",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "gate_note": "临床研究阶段，可讲但需注明"
     }
   ],
   "archive": [
