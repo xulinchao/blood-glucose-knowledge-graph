@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-11-11",
+  "updated": "2026-11-17",
   "topics": [
     {
       "id": "disc-016",
@@ -13295,6 +13295,327 @@
       "use_as": "verify_before_script",
       "gate_passed": true,
       "gate_note": "临床研究阶段，可讲但需注明"
+    },
+    {
+      "id": "disc-502",
+      "title": "60岁以上老人，正常血糖是多少？若超过&quot;这1范围&quot;，已很危险",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 1308",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Qa41167HV"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-17",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 50,
+          "label": "中",
+          "reasons": [
+            "有一定互动(1,308)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-503",
+      "title": "35、60、80岁的糖友，血糖控制目标分别是多少?",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 1689",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1zQE7zjERw"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-17",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 50,
+          "label": "中",
+          "reasons": [
+            "有一定互动(1,689)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "纤维先形成物理屏障，延缓碳水吸收",
+        "蛋白质刺激GLP-1分泌，延缓胃排空",
+        "可将餐后血糖峰值降低20-40%",
+        "同样食物，不同顺序，血糖反应差异显著"
+      ]
+    },
+    {
+      "id": "disc-504",
+      "title": "糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "饮食指南",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 10579",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Qs3EeZEdG"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-17",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 58,
+          "label": "中",
+          "reasons": [
+            "互动量中等(10,579)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-505",
+      "title": "空腹血糖在8-10，餐后血糖在13-15，糖尿病严重了吗？",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 10215",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1k4421c7ep"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-17",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 58,
+          "label": "中",
+          "reasons": [
+            "互动量中等(10,215)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": [
+        "空腹正常：3.9-6.1 mmol/L",
+        "餐后2h正常：＜7.8 mmol/L",
+        "糖化血红蛋白 HbA1c 正常：＜5.7%",
+        "糖尿病诊断：空腹≥7.0 或 餐后2h≥11.1 或 HbA1c≥6.5%",
+        "纤维先形成物理屏障，延缓碳水吸收",
+        "蛋白质刺激GLP-1分泌，延缓胃排空",
+        "可将餐后血糖峰值降低20-40%",
+        "同样食物，不同顺序，血糖反应差异显著",
+        "空腹血糖：反映基础胰岛素水平和肝糖输出",
+        "餐后2小时：反映饮食和餐时胰岛素效果",
+        "睡前：指导是否需要加餐防夜间低血糖",
+        "CGM（动态血糖仪）可看到完整的24h血糖曲线"
+      ]
+    },
+    {
+      "id": "disc-506",
+      "title": "32岁糖尿病患者，血糖从19.5降到5.7！得益于做对这3事",
+      "angle": "B站 · 证据层级C · verify_before_script · 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "案例故事",
+      "platform": "bili,dy",
+      "duration": "15-30s",
+      "heat": "steady",
+      "heat_source": "每日采集 B站 · 选题分 68 · 互动 27448",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1uF411z7So"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-17",
+      "harvest_meta": {
+        "authenticity": {
+          "score": 68,
+          "label": "中等",
+          "reasons": [
+            "作者具医疗相关身份标识（仍需核对资质）"
+          ],
+          "evidence_tier": "C",
+          "adversarial_flags": [],
+          "use_as": "verify_before_script",
+          "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+        },
+        "importance": {
+          "score": 58,
+          "label": "中",
+          "reasons": [
+            "互动量中等(27,448)"
+          ]
+        },
+        "topic_score": 68,
+        "platform": "bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+      },
+      "data_ref": []
+    },
+    {
+      "id": "disc-507",
+      "title": "SMARTEST 研究：早期2型糖尿病，达格列净没跑赢二甲双胍",
+      "angle": "EASD 2026（米兰）公布 SMARTEST 随机试验：对早期、无明确心肾并发症的2型糖尿病患者，达格列净在死亡、心梗、卒中等硬终点与肾脏复合终点上未优于二甲双胍；两组安全性相近，二甲双胍在耐受性与用药成本上仍有优势。口播角度不做「神药排序」，而是讲清三层：①指南里的「一线」是什么意思；②哪些人仍然该优先 SGLT2i（有心衰/慢性肾病/明确心肾风险）；③研究结论只适用于「早期、低风险」人群。关键数字须回原文/会议摘要二次核实。",
+      "category": "数字科普",
+      "platform": "bili,dy",
+      "duration": "45-60s",
+      "heat": "medium",
+      "heat_source": "EASD 2026 年会 SMARTEST 结果；springermedicine、华夏时报、网易健康跟进报道；国内已有 40+ 家达格列净仿制药获批，产业关注度高",
+      "source_urls": [
+        "https://www.springermedicine.com/type-2-diabetes/easd-2026/no-early-type-2-diabetes-superiority-for-dapagliflozin-or-metfor/53840832",
+        "https://pubmed.ncbi.nlm.nih.gov/41311237/",
+        "https://c.m.163.com/news/a/L8GHTC4C0514ACVH.html"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-17",
+      "evidence_tier": "A",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "gate_note": "会议级证据，可讲但须注明「早期低风险人群」限定与「用药遵医嘱」；不得写成药物优劣排名"
+    },
+    {
+      "id": "disc-508",
+      "title": "现制奶茶「三分糖」到底剩多少糖：一条 755 万播放实测话题的拆解",
+      "angle": "B站「记者实测8款现制饮品含糖量」「奶茶粉过滤出一半白糖」等实测视频单条播放超 75 万、话题总热度居今日榜首，但均属 UGC（D级），只能当钩子。可写版本：把「含糖量实测」转成「点单决策」——糖度选项不等于等比例减糖、小料与奶盖才是隐形糖大头、无糖茶底+去小料是更稳的选择。具体克数必须引用可查的媒体实测或品牌公示，不得直接复述 UGC 数字。",
+      "category": "饮食指南",
+      "platform": "bili,dy",
+      "duration": "30-45s",
+      "heat": "hot",
+      "heat_source": "B站今日热度榜：奶茶实测类视频 75.5 万播放（D级钩子）；「控糖+奶茶」跨平台持续发酵",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1QA411s7b7"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-17",
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "gate_passed": false,
+      "gate_note": "UGC 热度钩子；写稿前须补 A/B 级含糖量数据，否则只做「大家在聊什么」不得当结论"
+    },
+    {
+      "id": "disc-509",
+      "title": "腰围比体重更该盯：代谢综合征 5 条标准，自测只要一条卷尺",
+      "angle": "今日「肚子大+血压血糖血脂高」类内容在 B站集中出现。可写版本：按《中国2型糖尿病防治指南》代谢综合征标准做逐条自测——腹型肥胖（男腰围≥90cm、女≥85cm）、空腹血糖≥6.1mmol/L、血压≥130/85mmHg、空腹甘油三酯≥1.70mmol/L、空腹 HDL-C 男<1.04/女<1.30mmol/L，具备 3 项及以上即符合。强调「腰围是家庭可测指标，体重不是唯一标准」，结尾提示确诊需到医院，不用单一指标自我诊断。",
+      "category": "症状预警",
+      "platform": "dy,xhs,bili",
+      "duration": "40-50s",
+      "heat": "medium",
+      "heat_source": "B站「代谢综合征」相关视频今日多条进入血糖话题池（单条 6-8 万播放）",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1NHZGY8ETB",
+        "https://www.bilibili.com/video/BV1UNZJYWErP"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-17",
+      "evidence_tier": "A",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "gate_note": "诊断标准出自指南可核对；须明确「自测不等于诊断」，不得给出个体治疗建议"
+    },
+    {
+      "id": "disc-510",
+      "title": "「停药逆转」能信吗：2型糖尿病缓解的官方定义与三个前提",
+      "angle": "B站「糖尿病患者或可告别终身服药」「32岁血糖从19.5降到5.7」类内容热度高，但标题容易滑向「治愈承诺」（绝对化风险）。可写版本：先给缓解的官方定义——停用降糖药至少 3 个月后 HbA1c<6.5%（ADA/EASD 2021 共识），再讲三个前提：病程较短、减重幅度足够（常需 10-15kg 量级）、且需长期随访防复发。明确区分「缓解」与「治愈」，不承诺个体结果。",
+      "category": "辟谣",
+      "platform": "bili,dy",
+      "duration": "45-60s",
+      "heat": "medium",
+      "heat_source": "B站「逆糖/告别终身服药」类视频今日多条 5-6 万播放，标题含强承诺倾向",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Zw4m1R7KU",
+        "https://www.bilibili.com/video/BV1uF411z7So"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-17",
+      "evidence_tier": "B",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "gate_note": "不得使用「治愈/根治/摆脱终身服药」作结论句；缓解定义须回原文核对，个体差异必须点明"
     }
   ],
   "archive": [

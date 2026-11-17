@@ -1,0 +1,3500 @@
+{
+  "schema_version": "2.0",
+  "version": "2.0",
+  "report_date": "2026-11-17",
+  "source_harvest": "daily-harvest-2026-11-17.json",
+  "curated_at": "2026-11-17T09:12:45",
+  "summary": {
+    "total_raw": 226,
+    "after_filter": 226,
+    "featured_count": 12,
+    "writable_count": 8,
+    "hook_only_count": 6,
+    "cross_platform_themes": 1,
+    "new_topics_added": 5,
+    "platforms_ok": [
+      "bili",
+      "exa",
+      "v2ex",
+      "youtube"
+    ],
+    "gate_note": "timeline 按 gate.passed → writability_score 排序；heat_score 仅传播展示",
+    "topic_backlog": {
+      "pending_count": 442,
+      "over_threshold": true,
+      "threshold": 20
+    }
+  },
+  "timeline": [
+    {
+      "title": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+      "url": "https://www.youtube.com/watch?v=rDDfzPM4WQU",
+      "platform": "youtube",
+      "platform_label": "YouTube",
+      "author": "张之瀛大夫",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 75,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 75,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "大家好，我是张之瀛  ，一名温暖可靠的心血管医生，在这里分享一些大众的健康问题，    《欢迎订阅，欢迎分享，每天更新》 ...",
+      "propagation": {
+        "heat_score": 75,
+        "engagement": 853088,
+        "platform": "youtube",
+        "platform_label": "YouTube"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "8a2028fd52849122",
+          "claim": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          },
+          {
+            "text": "大家好，我是张之瀛  ，一名温暖可靠的心血管医生，在这里分享一些大众的健康问题，    《欢迎订阅，欢迎分享，每天更新》 ...",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "摘要片段须与原视频/正文核对",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.youtube.com/watch?v=rDDfzPM4WQU",
+          "核实作者/机构资质：张之瀛大夫",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "YouTube 热度 75",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=rDDfzPM4WQU",
+        "title": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+        "author": "",
+        "excerpt": "🍎大家好，我是张之瀛🙏，一名温暖可靠的心血管医生，在这里分享一些大众的健康问题，🙏🙏《欢迎订阅，欢迎分享，每天更新》 #张之瀛大夫 #张之瀛",
+        "key_points": [],
+        "sources_used": [
+          "YouTube(yt-dlp)"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-17T09:12:53",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？",
+      "url": "https://www.bilibili.com/video/BV1f84y1q7aA",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "内分泌科陈奇医生",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 70,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 70,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 70,
+        "engagement": 38982,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "cd23f29c9f8695f6",
+          "claim": "糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1f84y1q7aA",
+          "核实作者/机构资质：内分泌科陈奇医生",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 70",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1f84y1q7aA",
+        "title": "糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？",
+        "author": "内分泌科陈奇医生",
+        "excerpt": "医学科普仅供参考，感谢支持今晚8点40答疑直播",
+        "key_points": [
+          "好绝望，我妈妈那边有家族史，一大家子都二型，我21，多囊检查胰岛素抵抗的时候发现餐二8.7，其他正常，我是不是过几年也会得啊，我很瘦，平常也不爱吃甜，有时候感觉真的好不公平，有些人一辈子高碳水饮食吃吃喝喝的都不会得，为什么我就会得……",
+          "今天去查了血糖，餐前5.1，喝完葡萄糖两个小时后是7.8了，因为学校化验室一直没人，到十点多才做上，空腹大概15.6个小时，会不会是空腹时间太长了[doge]我以为血糖会变好，结果这样了",
+          "现在我每天低碳水饮食，主食换成红薯紫薯，每晚运动半小时，每天一片二甲双胍，这样有希望一直维持不得糖尿病吗",
+          "今年四月份测血糖餐前6.2 ，喝完葡萄糖两小时后是7.1",
+          "积极干预如果糖耐量异常赶紧减少主食摄入量增加蔬菜摄入，戒烟戒酒，不吃零食，不吃宵夜，积极运动，按时睡觉，能吃二甲双胍赶紧吃，血糖一到两个月应该就能稳定不再恶化",
+          "医学科普仅供参考，感谢支持今晚8点40答疑直播"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-17T09:12:55",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "只需三招，改善代谢综合征",
+      "url": "https://www.bilibili.com/video/BV1UNZJYWErP",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "薄世宁医生",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 70,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 70,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 70,
+        "engagement": 25592,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "只需三招，改善代谢综合征",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "8d6986fb1c11a939",
+          "claim": "只需三招，改善代谢综合征",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "只需三招，改善代谢综合征",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1UNZJYWErP",
+          "核实作者/机构资质：薄世宁医生",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "只需三招，改善代谢综合征",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 70",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1UNZJYWErP",
+        "title": "只需三招，改善代谢综合征",
+        "author": "薄世宁医生",
+        "excerpt": "热门评论摘录：\n省流：少吃多动\n力量训练+合理饮食。能解决大部分问题[笑哭]\nAI课代表总结：本视频介绍了三种改善代谢综合征的方法。第一种方法是减轻胰岛素负担，建议每天减少约12%-30%的热量摄入，并采用间断进食的方式（例如8小时进食窗口），同时控制含糖食品的摄取。第二种方法是降低体内炎症水平，这可以通过减肥特别是减少内脏脂肪实现；此外，应避免食用过多饱和脂肪和反式脂肪，多吃富含欧米伽-3的鱼类及橄榄油，多摄入新鲜蔬菜和膳食纤维。第三种方法则是补充必要的营养成分，包括维生素D3和镁，这些可以帮助提高胰岛素敏感性和增强免疫力。最后提醒，在采取任何补充措施之前最好咨询医生意见，并对于严重情况需遵医嘱接受医疗干预。",
+        "key_points": [
+          "第一种方法是减轻胰岛素负担，建议每天减少约12%-30%的热量摄入，并采用间断进食的方式（例如8小时进食窗口），同时控制含糖食品的摄取",
+          "第三种方法则是补充必要的营养成分，包括维生素D3和镁，这些可以帮助提高胰岛素敏感性和增强免疫力",
+          "第二种方法是降低体内炎症水平，这可以通过减肥特别是减少内脏脂肪实现；此外，应避免食用过多饱和脂肪和反式脂肪，多吃富含欧米伽-3的鱼类及橄榄油，多摄入新鲜蔬菜和膳食纤维",
+          "AI课代表总结：本视频介绍了三种改善代谢综合征的方法"
+        ],
+        "sources_used": [
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-17T09:12:58",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "出现糖耐量异常，这样做可摆脱困扰，恢复正常",
+      "url": "https://www.bilibili.com/video/BV1Tt4y137Ff",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "中医周国民大夫",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 62,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 62,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 62,
+        "engagement": 2695,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "出现糖耐量异常，这样做可摆脱困扰，恢复正常",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "ecb6234c25db6440",
+          "claim": "出现糖耐量异常，这样做可摆脱困扰，恢复正常",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "出现糖耐量异常，这样做可摆脱困扰，恢复正常",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1Tt4y137Ff",
+          "核实作者/机构资质：中医周国民大夫",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "出现糖耐量异常，这样做可摆脱困扰，恢复正常",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 62",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "partial",
+        "content_status": "partial",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Tt4y137Ff",
+        "title": "出现糖耐量异常，这样做可摆脱困扰，恢复正常",
+        "author": "中医周国民大夫",
+        "excerpt": "关注\n微-信-公-众-号：当代名医 —— 糖尿病——周国民\n预约咨询",
+        "key_points": [
+          "微-信-公-众-号：当代名医 —— 糖尿病——周国民",
+          "医生说不要紧，还没到糖尿病"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "无逐字字幕，以下为简介/AI摘要/评论摘录；写稿前须点开原视频核对。",
+        "fetched_at": "2026-11-17T09:13:00",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "糖尿病患者或可告别终身服药，糖友分享“逆糖”经历",
+      "url": "https://www.bilibili.com/video/BV1Zw4m1R7KU",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "心血管汤医生",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 62,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 62,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "案例故事",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 62,
+        "engagement": 2835,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "糖尿病患者或可告别终身服药，糖友分享“逆糖”经历",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "d4b6a3de5d57a2ca",
+          "claim": "糖尿病患者或可告别终身服药，糖友分享“逆糖”经历",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "糖尿病患者或可告别终身服药，糖友分享“逆糖”经历",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1Zw4m1R7KU",
+          "核实作者/机构资质：心血管汤医生",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "糖尿病患者或可告别终身服药，糖友分享“逆糖”经历",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 62",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Zw4m1R7KU",
+        "title": "糖尿病患者或可告别终身服药，糖友分享“逆糖”经历",
+        "author": "心血管汤医生",
+        "excerpt": "在大家的印象里，糖尿病和高血压一样，一旦得了就要吃一辈子药，通过糖友的现身说法，分享“逆糖”经历，您将会对糖尿病有一个全新的认知。\n《中国2型糖尿病合并肥胖逆转治疗临床管理专家共识（2023版）》发布会上，有糖友做了个人逆糖的经历汇报，给糖友们增加了很大的信心。",
+        "key_points": [
+          "《中国2型糖尿病合并肥胖逆转治疗临床管理专家共识（2023版）》发布会上，有糖友做了个人逆糖的经历汇报，给糖友们增加了很大的信心",
+          "在大家的印象里，糖尿病和高血压一样，一旦得了就要吃一辈子药，通过糖友的现身说法，分享“逆糖”经历，您将会对糖尿病有一个全新的认知",
+          ",乳清蛋白有助于促进胰岛素分泌(应该就是牛奶)",
+          ",不建议超重和肥胖人群长期食用高蛋白质膳食"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-17T09:13:03",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "肚子大、血压、血糖、血脂高，警惕这种综合征",
+      "url": "https://www.bilibili.com/video/BV1NHZGY8ETB",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "薄世宁医生",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 58,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 58,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "症状预警",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 58,
+        "engagement": 13976,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "肚子大、血压、血糖、血脂高，警惕这种综合征",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "e366a255807c368d",
+          "claim": "肚子大、血压、血糖、血脂高，警惕这种综合征",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "肚子大、血压、血糖、血脂高，警惕这种综合征",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1NHZGY8ETB",
+          "核实作者/机构资质：薄世宁医生",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "肚子大、血压、血糖、血脂高，警惕这种综合征",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 58",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "partial",
+        "content_status": "partial",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1NHZGY8ETB",
+        "title": "肚子大、血压、血糖、血脂高，警惕这种综合征",
+        "author": "薄世宁医生",
+        "excerpt": "热门评论摘录：\n有一条，还得继续减肥\n胰岛素敏感，打胰岛素带葡萄糖静脉滴注，居然十分钟之内需要抢救，差点死医院里\n全中，医院检查直接天塌了",
+        "key_points": [
+          "胰岛素敏感，打胰岛素带葡萄糖静脉滴注，居然十分钟之内需要抢救，差点死医院里"
+        ],
+        "sources_used": [
+          "bili-cli评论"
+        ],
+        "note": "无逐字字幕，以下为简介/AI摘要/评论摘录；写稿前须点开原视频核对。",
+        "fetched_at": "2026-11-17T09:13:06",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "初发糖尿病，空腹血糖挺好，餐后两小时7.6，三小时血糖却到10.1",
+      "url": "https://www.bilibili.com/video/BV1Gg411Y7wk",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "李梅医生说糖尿病",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 58,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 58,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "案例故事",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 58,
+        "engagement": 13847,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "初发糖尿病，空腹血糖挺好，餐后两小时7.6，三小时血糖却到10.1",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "03f385492040e3af",
+          "claim": "初发糖尿病，空腹血糖挺好，餐后两小时7.6，三小时血糖却到10.1",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "初发糖尿病，空腹血糖挺好，餐后两小时7.6，三小时血糖却到10.1",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1Gg411Y7wk",
+          "核实作者/机构资质：李梅医生说糖尿病",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "初发糖尿病，空腹血糖挺好，餐后两小时7.6，三小时血糖却到10.1",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 58",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Gg411Y7wk",
+        "title": "初发糖尿病，空腹血糖挺好，餐后两小时7.6，三小时血糖却到10.1",
+        "author": "李梅医生说糖尿病",
+        "excerpt": "热门评论摘录：\n胡扯。他这是碳水吃少了，反应性高血糖。胰岛素生理抵抗了。多吃点饭（至少一个拳头），过段时间就好了\n餐三没超过11，不能算确诊吧\n我早饭吃的糯米红枣粥血糖到9.4了，吓死我了",
+        "key_points": [
+          "我早饭吃的糯米红枣粥血糖到9.4了，吓死我了",
+          "胰岛素生理抵抗了",
+          "他这是碳水吃少了，反应性高血糖",
+          "餐三没超过11，不能算确诊吧"
+        ],
+        "sources_used": [
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-17T09:13:08",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的",
+      "url": "https://www.bilibili.com/video/BV1Qs3EeZEdG",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "营养师黄冠霆",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 58,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 58,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "饮食指南",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 58,
+        "engagement": 10579,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "4e1514ca1d05eb35",
+          "claim": "糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1Qs3EeZEdG",
+          "核实作者/机构资质：营养师黄冠霆",
+          "若涉及 GI/食物数据：前往 https://www.glycemicindex.com/ 核对具体品类",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 58",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Qs3EeZEdG",
+        "title": "糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的",
+        "author": "营养师黄冠霆",
+        "excerpt": "热门评论摘录：\n首先测试糖尿病的。\n尝一尝自身的尿\n有甜味就是糖尿病，\n有咸味就是高血压，\n只有这个办法\n确定自身有没有糖尿病的。\n血糖高，证明的是要换食物的意思。\n不是说“糖尿病”的。\n眼泪是有甜味\n那么，只能接受死亡的。\n糖尿病是皮肤受到刀伤时，\n愈合特别难的。\n经验的说法。\n您试一试吧！\n我也是尝过自身的尿的。\n感谢分享！控糖期间千万别断了优质蛋白，鸡蛋、瘦肉、豆制品能增加饱腹感，还能延缓血糖上升，亲测有用！\n我就想知道能吃什么，不需要强调不能吃啥",
+        "key_points": [
+          "控糖期间千万别断了优质蛋白，鸡蛋、瘦肉、豆制品能增加饱腹感，还能延缓血糖上升，亲测有用",
+          "糖尿病是皮肤受到刀伤时，",
+          "确定自身有没有糖尿病的",
+          "有甜味就是糖尿病，",
+          "不是说“糖尿病”的",
+          "首先测试糖尿病的",
+          "血糖高，证明的是要换食物的意思"
+        ],
+        "sources_used": [
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-17T09:13:11",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "空腹血糖在8-10，餐后血糖在13-15，糖尿病严重了吗？",
+      "url": "https://www.bilibili.com/video/BV1k4421c7ep",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "中医周国民大夫",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 58,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 58,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 58,
+        "engagement": 10215,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "空腹血糖在8-10，餐后血糖在13-15，糖尿病严重了吗？",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "9136bc990a822a4a",
+          "claim": "空腹血糖在8-10，餐后血糖在13-15，糖尿病严重了吗？",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "空腹血糖在8-10，餐后血糖在13-15，糖尿病严重了吗？",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1k4421c7ep",
+          "核实作者/机构资质：中医周国民大夫",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "空腹血糖在8-10，餐后血糖在13-15，糖尿病严重了吗？",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 58",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "partial",
+        "content_status": "partial",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1k4421c7ep",
+        "title": "空腹血糖在8-10，餐后血糖在13-15，糖尿病严重了吗？",
+        "author": "中医周国民大夫",
+        "excerpt": "有糖尿病并发症问题，可以加我微信YS256895",
+        "key_points": [
+          "我现在现在 5.0左右 但是饭后 能上15 胰岛素抵抗 查胰岛功能是正常的 [脱单doge]",
+          "有糖尿病并发症问题，可以加我微信YS256895"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "无逐字字幕，以下为简介/AI摘要/评论摘录；写稿前须点开原视频核对。",
+        "fetched_at": "2026-11-17T09:13:13",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "血糖多高才会有危险？医生提醒：16.7是危险值，糖友们要心中有数",
+      "url": "https://www.bilibili.com/video/BV1Vv4y137aw",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "全科吴医生",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 58,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 58,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "症状预警",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 58,
+        "engagement": 21669,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "血糖多高才会有危险？医生提醒：16.7是危险值，糖友们要心中有数",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "9dea98071bab9fec",
+          "claim": "血糖多高才会有危险？医生提醒：16.7是危险值，糖友们要心中有数",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "血糖多高才会有危险？医生提醒：16.7是危险值，糖友们要心中有数",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1Vv4y137aw",
+          "核实作者/机构资质：全科吴医生",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "血糖多高才会有危险？医生提醒：16.7是危险值，糖友们要心中有数",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 58",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Vv4y137aw",
+        "title": "血糖多高才会有危险？医生提醒：16.7是危险值，糖友们要心中有数",
+        "author": "全科吴医生",
+        "excerpt": "热门评论摘录：\n医生我一个朋友一米六五，380斤，空腹血糖16，有治愈的风险吗这一块？\n我爸，前几天新冠，去拍个肺片子，肺炎，然后医生写的底下有个肾上腺结节，疑似腺瘤，然后昨天又去做B超看看，顺便做了个大生化，医生说腺瘤没看见看见个结石。然后！重点来了，大生化显示血糖17+，嗯，一波三折了属于是。他在家喝红糖水，血糖高是可以理解的。\n糖尿病并发症大部分是吃西药造成，严格控制血糖造成，讲完了",
+        "key_points": [
+          "医生我一个朋友一米六五，380斤，空腹血糖16，有治愈的风险吗这一块",
+          "糖尿病并发症大部分是吃西药造成，严格控制血糖造成，讲完了",
+          "重点来了，大生化显示血糖17+，嗯，一波三折了属于是",
+          "他在家喝红糖水，血糖高是可以理解的"
+        ],
+        "sources_used": [
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-17T09:13:16",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "32岁糖尿病患者，血糖从19.5降到5.7！得益于做对这3事",
+      "url": "https://www.bilibili.com/video/BV1uF411z7So",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "陈晓斌医生",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 58,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 58,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "案例故事",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 58,
+        "engagement": 27448,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "32岁糖尿病患者，血糖从19.5降到5.7！得益于做对这3事",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "61730159e75bb8c5",
+          "claim": "32岁糖尿病患者，血糖从19.5降到5.7！得益于做对这3事",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "32岁糖尿病患者，血糖从19.5降到5.7！得益于做对这3事",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1uF411z7So",
+          "核实作者/机构资质：陈晓斌医生",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "32岁糖尿病患者，血糖从19.5降到5.7！得益于做对这3事",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 58",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1uF411z7So",
+        "title": "32岁糖尿病患者，血糖从19.5降到5.7！得益于做对这3事",
+        "author": "陈晓斌医生",
+        "excerpt": "32岁糖尿病患者，血糖从19.5降到5.7！称赞：得益于做对这3件事",
+        "key_points": [
+          "岁糖尿病患者，血糖从19.5降到5.7",
+          "二型糖尿病是可以逆转的，但是很多人依然坚持说就得终身吃药",
+          "称赞：得益于做对这3件事",
+          "我的经验是少吃多运动，甜食，甜饮料一律不碰，坚持几个月血糖就下来了"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-17T09:13:18",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "糖尿病专科郭医生153.体检发现自己处于糖耐量受损怎么办？",
+      "url": "https://www.bilibili.com/video/BV1bv41177nk",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "郭建辉大夫",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 50,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 50,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 50,
+        "engagement": 9175,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "糖尿病专科郭医生153.体检发现自己处于糖耐量受损怎么办？",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "f44f121b3dbb1290",
+          "claim": "糖尿病专科郭医生153.体检发现自己处于糖耐量受损怎么办？",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "糖尿病专科郭医生153.体检发现自己处于糖耐量受损怎么办？",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1bv41177nk",
+          "核实作者/机构资质：郭建辉大夫",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "糖尿病专科郭医生153.体检发现自己处于糖耐量受损怎么办？",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 50",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1bv41177nk",
+        "title": "糖尿病专科郭医生153.体检发现自己处于糖耐量受损怎么办？",
+        "author": "郭建辉大夫",
+        "excerpt": "糖尿病专科郭医生153.体检发现自己处于糖耐量受损怎么办？",
+        "key_points": [
+          "闹肚子查出血糖高，然后自己要求做糖耐量检查，空腹5.4，餐一10，餐二8.5",
+          "糖尿病专科郭医生153.体检发现自己处于糖耐量受损怎么办",
+          "今天刚做完糖耐量测试，空腹6.33，一小时13，俩小时8.8，三小时3.69",
+          "虽然听说这个可以通过锻炼调整饮食恢复，但是还是觉得人生一片灰暗，啥都不能吃了，俺才27[大哭][大哭]",
+          "我查了下前几年的报告，发现我21年就已经高了，当时达到了6.6，22年到现在一直是6.2",
+          "我今年体检发现血糖高，去问了医生才知道这是糖耐量异常",
+          "体重偏瘦，114斤",
+          "从得知糖耐量异常后，我开始控制了"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-17T09:13:21",
+        "from_cache": false
+      }
+    }
+  ],
+  "writable_picks": [
+    {
+      "title": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+      "url": "https://www.youtube.com/watch?v=rDDfzPM4WQU",
+      "platform": "youtube",
+      "platform_label": "YouTube",
+      "author": "张之瀛大夫",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 75,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 75,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "大家好，我是张之瀛  ，一名温暖可靠的心血管医生，在这里分享一些大众的健康问题，    《欢迎订阅，欢迎分享，每天更新》 ...",
+      "propagation": {
+        "heat_score": 75,
+        "engagement": 853088,
+        "platform": "youtube",
+        "platform_label": "YouTube"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "8a2028fd52849122",
+          "claim": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          },
+          {
+            "text": "大家好，我是张之瀛  ，一名温暖可靠的心血管医生，在这里分享一些大众的健康问题，    《欢迎订阅，欢迎分享，每天更新》 ...",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "摘要片段须与原视频/正文核对",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.youtube.com/watch?v=rDDfzPM4WQU",
+          "核实作者/机构资质：张之瀛大夫",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "YouTube 热度 75",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "youtube",
+        "url": "https://www.youtube.com/watch?v=rDDfzPM4WQU",
+        "title": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+        "author": "",
+        "excerpt": "🍎大家好，我是张之瀛🙏，一名温暖可靠的心血管医生，在这里分享一些大众的健康问题，🙏🙏《欢迎订阅，欢迎分享，每天更新》 #张之瀛大夫 #张之瀛",
+        "key_points": [],
+        "sources_used": [
+          "YouTube(yt-dlp)"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-17T09:12:53",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？",
+      "url": "https://www.bilibili.com/video/BV1f84y1q7aA",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "内分泌科陈奇医生",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 70,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 70,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 70,
+        "engagement": 38982,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "cd23f29c9f8695f6",
+          "claim": "糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1f84y1q7aA",
+          "核实作者/机构资质：内分泌科陈奇医生",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 70",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1f84y1q7aA",
+        "title": "糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？",
+        "author": "内分泌科陈奇医生",
+        "excerpt": "医学科普仅供参考，感谢支持今晚8点40答疑直播",
+        "key_points": [
+          "好绝望，我妈妈那边有家族史，一大家子都二型，我21，多囊检查胰岛素抵抗的时候发现餐二8.7，其他正常，我是不是过几年也会得啊，我很瘦，平常也不爱吃甜，有时候感觉真的好不公平，有些人一辈子高碳水饮食吃吃喝喝的都不会得，为什么我就会得……",
+          "今天去查了血糖，餐前5.1，喝完葡萄糖两个小时后是7.8了，因为学校化验室一直没人，到十点多才做上，空腹大概15.6个小时，会不会是空腹时间太长了[doge]我以为血糖会变好，结果这样了",
+          "现在我每天低碳水饮食，主食换成红薯紫薯，每晚运动半小时，每天一片二甲双胍，这样有希望一直维持不得糖尿病吗",
+          "今年四月份测血糖餐前6.2 ，喝完葡萄糖两小时后是7.1",
+          "积极干预如果糖耐量异常赶紧减少主食摄入量增加蔬菜摄入，戒烟戒酒，不吃零食，不吃宵夜，积极运动，按时睡觉，能吃二甲双胍赶紧吃，血糖一到两个月应该就能稳定不再恶化",
+          "医学科普仅供参考，感谢支持今晚8点40答疑直播"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-17T09:12:55",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "只需三招，改善代谢综合征",
+      "url": "https://www.bilibili.com/video/BV1UNZJYWErP",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "薄世宁医生",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 70,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 70,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 70,
+        "engagement": 25592,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "只需三招，改善代谢综合征",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "8d6986fb1c11a939",
+          "claim": "只需三招，改善代谢综合征",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "只需三招，改善代谢综合征",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1UNZJYWErP",
+          "核实作者/机构资质：薄世宁医生",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "只需三招，改善代谢综合征",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 70",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1UNZJYWErP",
+        "title": "只需三招，改善代谢综合征",
+        "author": "薄世宁医生",
+        "excerpt": "热门评论摘录：\n省流：少吃多动\n力量训练+合理饮食。能解决大部分问题[笑哭]\nAI课代表总结：本视频介绍了三种改善代谢综合征的方法。第一种方法是减轻胰岛素负担，建议每天减少约12%-30%的热量摄入，并采用间断进食的方式（例如8小时进食窗口），同时控制含糖食品的摄取。第二种方法是降低体内炎症水平，这可以通过减肥特别是减少内脏脂肪实现；此外，应避免食用过多饱和脂肪和反式脂肪，多吃富含欧米伽-3的鱼类及橄榄油，多摄入新鲜蔬菜和膳食纤维。第三种方法则是补充必要的营养成分，包括维生素D3和镁，这些可以帮助提高胰岛素敏感性和增强免疫力。最后提醒，在采取任何补充措施之前最好咨询医生意见，并对于严重情况需遵医嘱接受医疗干预。",
+        "key_points": [
+          "第一种方法是减轻胰岛素负担，建议每天减少约12%-30%的热量摄入，并采用间断进食的方式（例如8小时进食窗口），同时控制含糖食品的摄取",
+          "第三种方法则是补充必要的营养成分，包括维生素D3和镁，这些可以帮助提高胰岛素敏感性和增强免疫力",
+          "第二种方法是降低体内炎症水平，这可以通过减肥特别是减少内脏脂肪实现；此外，应避免食用过多饱和脂肪和反式脂肪，多吃富含欧米伽-3的鱼类及橄榄油，多摄入新鲜蔬菜和膳食纤维",
+          "AI课代表总结：本视频介绍了三种改善代谢综合征的方法"
+        ],
+        "sources_used": [
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-17T09:12:58",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "出现糖耐量异常，这样做可摆脱困扰，恢复正常",
+      "url": "https://www.bilibili.com/video/BV1Tt4y137Ff",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "中医周国民大夫",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 62,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 62,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 62,
+        "engagement": 2695,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "出现糖耐量异常，这样做可摆脱困扰，恢复正常",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "ecb6234c25db6440",
+          "claim": "出现糖耐量异常，这样做可摆脱困扰，恢复正常",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "出现糖耐量异常，这样做可摆脱困扰，恢复正常",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1Tt4y137Ff",
+          "核实作者/机构资质：中医周国民大夫",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "出现糖耐量异常，这样做可摆脱困扰，恢复正常",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 62",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "partial",
+        "content_status": "partial",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Tt4y137Ff",
+        "title": "出现糖耐量异常，这样做可摆脱困扰，恢复正常",
+        "author": "中医周国民大夫",
+        "excerpt": "关注\n微-信-公-众-号：当代名医 —— 糖尿病——周国民\n预约咨询",
+        "key_points": [
+          "微-信-公-众-号：当代名医 —— 糖尿病——周国民",
+          "医生说不要紧，还没到糖尿病"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "无逐字字幕，以下为简介/AI摘要/评论摘录；写稿前须点开原视频核对。",
+        "fetched_at": "2026-11-17T09:13:00",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "糖尿病患者或可告别终身服药，糖友分享“逆糖”经历",
+      "url": "https://www.bilibili.com/video/BV1Zw4m1R7KU",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "心血管汤医生",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 62,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 62,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "案例故事",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 62,
+        "engagement": 2835,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "糖尿病患者或可告别终身服药，糖友分享“逆糖”经历",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "d4b6a3de5d57a2ca",
+          "claim": "糖尿病患者或可告别终身服药，糖友分享“逆糖”经历",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "糖尿病患者或可告别终身服药，糖友分享“逆糖”经历",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1Zw4m1R7KU",
+          "核实作者/机构资质：心血管汤医生",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "糖尿病患者或可告别终身服药，糖友分享“逆糖”经历",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 62",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Zw4m1R7KU",
+        "title": "糖尿病患者或可告别终身服药，糖友分享“逆糖”经历",
+        "author": "心血管汤医生",
+        "excerpt": "在大家的印象里，糖尿病和高血压一样，一旦得了就要吃一辈子药，通过糖友的现身说法，分享“逆糖”经历，您将会对糖尿病有一个全新的认知。\n《中国2型糖尿病合并肥胖逆转治疗临床管理专家共识（2023版）》发布会上，有糖友做了个人逆糖的经历汇报，给糖友们增加了很大的信心。",
+        "key_points": [
+          "《中国2型糖尿病合并肥胖逆转治疗临床管理专家共识（2023版）》发布会上，有糖友做了个人逆糖的经历汇报，给糖友们增加了很大的信心",
+          "在大家的印象里，糖尿病和高血压一样，一旦得了就要吃一辈子药，通过糖友的现身说法，分享“逆糖”经历，您将会对糖尿病有一个全新的认知",
+          ",乳清蛋白有助于促进胰岛素分泌(应该就是牛奶)",
+          ",不建议超重和肥胖人群长期食用高蛋白质膳食"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-17T09:13:03",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "肚子大、血压、血糖、血脂高，警惕这种综合征",
+      "url": "https://www.bilibili.com/video/BV1NHZGY8ETB",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "薄世宁医生",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 58,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 58,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "症状预警",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 58,
+        "engagement": 13976,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "肚子大、血压、血糖、血脂高，警惕这种综合征",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "e366a255807c368d",
+          "claim": "肚子大、血压、血糖、血脂高，警惕这种综合征",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "肚子大、血压、血糖、血脂高，警惕这种综合征",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1NHZGY8ETB",
+          "核实作者/机构资质：薄世宁医生",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "肚子大、血压、血糖、血脂高，警惕这种综合征",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 58",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "partial",
+        "content_status": "partial",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1NHZGY8ETB",
+        "title": "肚子大、血压、血糖、血脂高，警惕这种综合征",
+        "author": "薄世宁医生",
+        "excerpt": "热门评论摘录：\n有一条，还得继续减肥\n胰岛素敏感，打胰岛素带葡萄糖静脉滴注，居然十分钟之内需要抢救，差点死医院里\n全中，医院检查直接天塌了",
+        "key_points": [
+          "胰岛素敏感，打胰岛素带葡萄糖静脉滴注，居然十分钟之内需要抢救，差点死医院里"
+        ],
+        "sources_used": [
+          "bili-cli评论"
+        ],
+        "note": "无逐字字幕，以下为简介/AI摘要/评论摘录；写稿前须点开原视频核对。",
+        "fetched_at": "2026-11-17T09:13:06",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "初发糖尿病，空腹血糖挺好，餐后两小时7.6，三小时血糖却到10.1",
+      "url": "https://www.bilibili.com/video/BV1Gg411Y7wk",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "李梅医生说糖尿病",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 58,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 58,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "案例故事",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 58,
+        "engagement": 13847,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "初发糖尿病，空腹血糖挺好，餐后两小时7.6，三小时血糖却到10.1",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "03f385492040e3af",
+          "claim": "初发糖尿病，空腹血糖挺好，餐后两小时7.6，三小时血糖却到10.1",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "初发糖尿病，空腹血糖挺好，餐后两小时7.6，三小时血糖却到10.1",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "对照《中国糖尿病防治指南》或 ADA 标准核对 cutoff 数值"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1Gg411Y7wk",
+          "核实作者/机构资质：李梅医生说糖尿病",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "初发糖尿病，空腹血糖挺好，餐后两小时7.6，三小时血糖却到10.1",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 58",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Gg411Y7wk",
+        "title": "初发糖尿病，空腹血糖挺好，餐后两小时7.6，三小时血糖却到10.1",
+        "author": "李梅医生说糖尿病",
+        "excerpt": "热门评论摘录：\n胡扯。他这是碳水吃少了，反应性高血糖。胰岛素生理抵抗了。多吃点饭（至少一个拳头），过段时间就好了\n餐三没超过11，不能算确诊吧\n我早饭吃的糯米红枣粥血糖到9.4了，吓死我了",
+        "key_points": [
+          "我早饭吃的糯米红枣粥血糖到9.4了，吓死我了",
+          "胰岛素生理抵抗了",
+          "他这是碳水吃少了，反应性高血糖",
+          "餐三没超过11，不能算确诊吧"
+        ],
+        "sources_used": [
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-17T09:13:08",
+        "from_cache": true
+      }
+    },
+    {
+      "title": "糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的",
+      "url": "https://www.bilibili.com/video/BV1Qs3EeZEdG",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "营养师黄冠霆",
+      "topic_score": 68,
+      "writability_score": 68,
+      "heat_score": 58,
+      "topic_pick": true,
+      "evidence_tier": "C",
+      "use_as": "verify_before_script",
+      "use_as_label": "写稿前核实",
+      "authenticity_score": 68,
+      "importance_score": 58,
+      "importance_label": "中",
+      "adversarial_flags": [],
+      "creator_note": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "category": "饮食指南",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 58,
+        "engagement": 10579,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": true,
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "gate": {
+        "passed": true,
+        "writability_score": 68,
+        "use_as": "verify_before_script",
+        "allowed_frame": "verify_before_script",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": []
+      },
+      "claims": [
+        {
+          "claim_id": "4e1514ca1d05eb35",
+          "claim": "糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "low",
+          "allowed_frame": "verify_before_script",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医"
+      },
+      "deep_analysis": {
+        "credibility": "C级 · 写稿前核实 · Gate 可写 — 作者有医疗相关标识，仍须核对资质",
+        "claim_checks": [
+          {
+            "text": "糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的",
+            "status": "pending_verify",
+            "status_label": "待核实",
+            "note": "写稿前建议核对原贴与权威来源",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1Qs3EeZEdG",
+          "核实作者/机构资质：营养师黄冠霆",
+          "若涉及 GI/食物数据：前往 https://www.glycemicindex.com/ 核对具体品类",
+          "关键数字对照《中国糖尿病防治指南》或 nhc.gov.cn 等权威来源",
+          "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "对照可查数据说明，结尾提醒个体差异与就医",
+          "key_points": [
+            "糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的",
+            "误导风险：可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+          ],
+          "caution": "可讲话题，关键数字须二次查证；建议找指南或医生审稿；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 58",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Qs3EeZEdG",
+        "title": "糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的",
+        "author": "营养师黄冠霆",
+        "excerpt": "热门评论摘录：\n首先测试糖尿病的。\n尝一尝自身的尿\n有甜味就是糖尿病，\n有咸味就是高血压，\n只有这个办法\n确定自身有没有糖尿病的。\n血糖高，证明的是要换食物的意思。\n不是说“糖尿病”的。\n眼泪是有甜味\n那么，只能接受死亡的。\n糖尿病是皮肤受到刀伤时，\n愈合特别难的。\n经验的说法。\n您试一试吧！\n我也是尝过自身的尿的。\n感谢分享！控糖期间千万别断了优质蛋白，鸡蛋、瘦肉、豆制品能增加饱腹感，还能延缓血糖上升，亲测有用！\n我就想知道能吃什么，不需要强调不能吃啥",
+        "key_points": [
+          "控糖期间千万别断了优质蛋白，鸡蛋、瘦肉、豆制品能增加饱腹感，还能延缓血糖上升，亲测有用",
+          "糖尿病是皮肤受到刀伤时，",
+          "确定自身有没有糖尿病的",
+          "有甜味就是糖尿病，",
+          "不是说“糖尿病”的",
+          "首先测试糖尿病的",
+          "血糖高，证明的是要换食物的意思"
+        ],
+        "sources_used": [
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-17T09:13:11",
+        "from_cache": true
+      }
+    }
+  ],
+  "hook_only": [
+    {
+      "title": "【正经料理】只需要红茶、白糖和牛奶，就能在家做一杯焦糖奶茶，温暖这个冬天",
+      "url": "https://www.bilibili.com/video/BV1QA411s7b7",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "正经料理",
+      "topic_score": 42,
+      "writability_score": 42,
+      "heat_score": 87,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 87,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 87,
+        "engagement": 755254,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "【正经料理】只需要红茶、白糖和牛奶，就能在家做一杯焦糖奶茶，温暖这个冬天",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "writability_below_threshold"
+        ]
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 42,
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "writability_below_threshold"
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "91b0847f66741042",
+          "claim": "【正经料理】只需要红茶、白糖和牛奶，就能在家做一杯焦糖奶茶，温暖这个冬天",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 【正经料理】只需要红茶、白糖和牛奶，就能在家做一杯焦糖奶茶，…」而非「【正经料理】只需要红茶、白糖和牛奶，就能 是对的」"
+      },
+      "deep_analysis": {
+        "credibility": "D级 · 仅钩子 · 不可当医学结论 — UGC 讨论热点，默认不可当医学结论",
+        "claim_checks": [
+          {
+            "text": "【正经料理】只需要红茶、白糖和牛奶，就能在家做一杯焦糖奶茶，温暖这个冬天",
+            "status": "opinion",
+            "status_label": "观点",
+            "note": "UGC 讨论，宜作话题钩子",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1QA411s7b7",
+          "核实作者/机构资质：正经料理",
+          "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "用「网上很多人在讨论 【正经料理】只需要红茶、白糖和牛奶，就能在家做一杯焦糖奶茶，…」而非「【正经料理】只需要红茶、白糖和牛奶，就能 是对的」",
+          "key_points": [
+            "【正经料理】只需要红茶、白糖和牛奶，就能在家做一杯焦糖奶茶，温暖这个冬天",
+            "误导风险：标题观点可能被当成已验证医学结论"
+          ],
+          "caution": "标题观点可能被当成已验证医学结论；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 87",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "partial",
+        "content_status": "partial",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1QA411s7b7",
+        "title": "【正经料理】只需要红茶、白糖和牛奶，就能在家做一杯焦糖奶茶，温暖这个冬天",
+        "author": "正经料理",
+        "excerpt": "只需要红茶、白糖和牛奶，就能在家做一杯焦糖奶茶，温暖这个冬天",
+        "key_points": [
+          "做完返评：糖减成了30g，做焦糖时感觉粘锅了就没继续炒，其余步骤大概差不多照做了，成品确实是我做过的几次里味道最好的，奶香茶香都很浓郁又互相融合，我还买了粉圆，做的珍珠奶茶，有外面卖的那种感觉了[OK]"
+        ],
+        "sources_used": [
+          "视频简介",
+          "bili-cli评论"
+        ],
+        "note": "无逐字字幕，以下为简介/AI摘要/评论摘录；写稿前须点开原视频核对。",
+        "fetched_at": "2026-11-17T09:13:23",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "珍珠奶茶-横版【超级变变变】",
+      "url": "https://www.bilibili.com/video/BV1cg4y1P7za",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "综艺哔哔机",
+      "topic_score": 42,
+      "writability_score": 42,
+      "heat_score": 87,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 87,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 87,
+        "engagement": 4881952,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "珍珠奶茶-横版【超级变变变】",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "writability_below_threshold"
+        ]
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 42,
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "writability_below_threshold"
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "cc48a3bb2a4cdd6d",
+          "claim": "珍珠奶茶-横版【超级变变变】",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 珍珠奶茶-横版【超级变变变】…」而非「珍珠奶茶-横版【超级变变变】 是对的」"
+      },
+      "deep_analysis": {
+        "credibility": "D级 · 仅钩子 · 不可当医学结论 — UGC 讨论热点，默认不可当医学结论",
+        "claim_checks": [
+          {
+            "text": "珍珠奶茶-横版【超级变变变】",
+            "status": "opinion",
+            "status_label": "观点",
+            "note": "UGC 讨论，宜作话题钩子",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1cg4y1P7za",
+          "核实作者/机构资质：综艺哔哔机",
+          "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "用「网上很多人在讨论 珍珠奶茶-横版【超级变变变】…」而非「珍珠奶茶-横版【超级变变变】 是对的」",
+          "key_points": [
+            "珍珠奶茶-横版【超级变变变】",
+            "误导风险：标题观点可能被当成已验证医学结论"
+          ],
+          "caution": "标题观点可能被当成已验证医学结论；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 87",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "title_only",
+        "content_status": "title_only",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1cg4y1P7za",
+        "title": "珍珠奶茶-横版【超级变变变】",
+        "author": "综艺哔哔机",
+        "excerpt": "超级变变变",
+        "key_points": [
+          "来源视频标题：珍珠奶茶-横版【超级变变变】"
+        ],
+        "sources_used": [
+          "视频简介"
+        ],
+        "note": "该视频无 CC 字幕/简介（BV1cg4y1P7za）。请用 `bili audio BV1cg4y1P7za` + `agent-reach transcribe` 转写，或 opencli bilibili subtitle / 人工看视频。",
+        "fetched_at": "2026-11-17T09:13:26",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "和医生们用动态血糖仪20天后，大家开始集体反思了！（无广真实分享）",
+      "url": "https://www.bilibili.com/video/BV1ADMk6mErS",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "大物是也",
+      "topic_score": 42,
+      "writability_score": 42,
+      "heat_score": 87,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 87,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "工具测评",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 87,
+        "engagement": 1358043,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "和医生们用动态血糖仪20天后，大家开始集体反思了！（无广真实分享）",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "writability_below_threshold"
+        ]
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 42,
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "writability_below_threshold"
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "f82110705ee69a35",
+          "claim": "和医生们用动态血糖仪20天后，大家开始集体反思了！（无广真实分享）",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 和医生们用动态血糖仪20天后，大家开始集体反思了！（无广真实…」而非「和医生们用动态血糖仪20天后，大家开始集 是对的」"
+      },
+      "deep_analysis": {
+        "credibility": "D级 · 仅钩子 · 不可当医学结论 — UGC 讨论热点，默认不可当医学结论",
+        "claim_checks": [
+          {
+            "text": "和医生们用动态血糖仪20天后，大家开始集体反思了！（无广真实分享）",
+            "status": "opinion",
+            "status_label": "观点",
+            "note": "UGC 讨论，宜作话题钩子",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1ADMk6mErS",
+          "核实作者/机构资质：大物是也",
+          "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "用「网上很多人在讨论 和医生们用动态血糖仪20天后，大家开始集体反思了！（无广真实…」而非「和医生们用动态血糖仪20天后，大家开始集 是对的」",
+          "key_points": [
+            "和医生们用动态血糖仪20天后，大家开始集体反思了！（无广真实分享）",
+            "误导风险：标题观点可能被当成已验证医学结论"
+          ],
+          "caution": "标题观点可能被当成已验证医学结论；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 87",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "ready",
+        "content_status": "ready",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1ADMk6mErS",
+        "title": "和医生们用动态血糖仪20天后，大家开始集体反思了！（无广真实分享）",
+        "author": "大物是也",
+        "excerpt": "热门评论摘录：\n能做一期关于补充维生素D的视频咩，近几年体检发现，好多人都有维D缺乏（祈祷被看见[tv_可爱]）\n这期真的是很客观地给大家介绍我们深度体验动态血糖仪之后的感受，主要是觉得很多东西很有趣很颠覆。如果大家在了解清楚我们说的这些缺点的同时，也想体验一下，可以去小🍊序了解一下。我们试用的这个型号因为正好跟品牌有联系，包括试用完的这些嘉宾朋友们也想回购，所以小🍊序上发起了一个低于市场价甚至直播价的团购活动（但大促期间平台各种优惠叠加可能会更划算，建议大家买之前对比一下，哪里便宜去哪买都行），关于大家自己要不要买这类的东西，买哪个牌子，也可以再多做一些功课。\n大家用这个的时候一定要注意无菌操作啊！上个月我给我妈打的时候没有给皮肤消毒，结果就感染了。取下来的时候流了很多脓，我妈还是疤痕体质。赶紧给她买了疤痕贴，不知道能不能管用。更关键的是我妈现在就不愿意再戴这个动态血糖仪了[委屈]",
+        "key_points": [
+          "我们试用的这个型号因为正好跟品牌有联系，包括试用完的这些嘉宾朋友们也想回购，所以小🍊序上发起了一个低于市场价甚至直播价的团购活动（但大促期间平台各种优惠叠加可能会更划算，建议大家买之前对比一下，哪里便宜去哪买都行），关于大家自己要不要买这类的东西，买哪个牌子，也可以再多做一些功课",
+          "这期真的是很客观地给大家介绍我们深度体验动态血糖仪之后的感受，主要是觉得很多东西很有趣很颠覆",
+          "更关键的是我妈现在就不愿意再戴这个动态血糖仪了[委屈]",
+          "大家用这个的时候一定要注意无菌操作啊"
+        ],
+        "sources_used": [
+          "bili-cli评论"
+        ],
+        "note": "",
+        "fetched_at": "2026-11-17T09:13:28",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "天天一杯奶茶也没胖？外星人直接把我拽进身体里看了一圈#奶茶##控糖##健康科普##涨知识#",
+      "url": "https://www.bilibili.com/video/BV1aGW76hEXm",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "地球博物院1",
+      "topic_score": 32,
+      "writability_score": 32,
+      "heat_score": 87,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 87,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "症状预警",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 87,
+        "engagement": 1258026,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "控糖",
+        "controversy_hint": ""
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [
+          "可以降血糖",
+          "一定能降糖",
+          "保证逆转",
+          "根治"
+        ],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "causal_claim_low_evidence_D_tier",
+          "writability_below_threshold"
+        ]
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 32,
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [
+          "可以降血糖",
+          "一定能降糖",
+          "保证逆转",
+          "根治"
+        ],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "causal_claim_low_evidence_D_tier",
+          "writability_below_threshold"
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "a0744f5bc2810ced",
+          "claim": "控糖",
+          "claim_type": "causal_claim",
+          "evidence_strength": "low",
+          "harm_risk": "medium",
+          "misinterpretation_risk": "high",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [
+            "可以降血糖",
+            "一定能降糖",
+            "保证逆转",
+            "根治"
+          ],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题/摘要含「控糖」，易被理解为个体疗效承诺",
+        "safe_rewrite": "用「网上很多人在讨论 天天一杯奶茶也没胖？外星人直接把我拽进身体里看了一圈#奶茶#…」而非「天天一杯奶茶也没胖？外星人直接把我拽进身 是对的」"
+      },
+      "deep_analysis": {
+        "credibility": "D级 · 仅钩子 · 不可当医学结论 — UGC 讨论热点，默认不可当医学结论",
+        "claim_checks": [
+          {
+            "text": "控糖",
+            "status": "disputed",
+            "status_label": "存疑",
+            "note": "因果/疗效断言来自低证据来源，宜改为「有人在讨论…」",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1aGW76hEXm",
+          "核实作者/机构资质：地球博物院1",
+          "写稿避免：可以降血糖、一定能降糖、保证逆转、根治",
+          "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "用「网上很多人在讨论 天天一杯奶茶也没胖？外星人直接把我拽进身体里看了一圈#奶茶#…」而非「天天一杯奶茶也没胖？外星人直接把我拽进身 是对的」",
+          "key_points": [
+            "控糖",
+            "误导风险：标题/摘要含「控糖」，易被理解为个体疗效承诺"
+          ],
+          "caution": "标题/摘要含「控糖」，易被理解为个体疗效承诺；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 87",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "title_only",
+        "content_status": "title_only",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1aGW76hEXm",
+        "title": "天天一杯奶茶也没胖？外星人直接把我拽进身体里看了一圈#奶茶##控糖##健康科普##涨知识#",
+        "author": "地球博物院1",
+        "excerpt": "",
+        "key_points": [
+          "来源视频标题：天天一杯奶茶也没胖？外星人直接把我拽进身体里看了一圈#奶茶##控糖##健康科普##涨知识#"
+        ],
+        "sources_used": [],
+        "note": "该视频无 CC 字幕/简介（BV1aGW76hEXm）。请用 `bili audio BV1aGW76hEXm` + `agent-reach transcribe` 转写，或 opencli bilibili subtitle / 人工看视频。",
+        "fetched_at": "2026-11-17T09:13:31",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "一杯奶茶，47克糖？记者实测8款现制饮品，含糖量超乎你的想象",
+      "url": "https://www.bilibili.com/video/BV1Rp4G6FEUY",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "央视新闻",
+      "topic_score": 42,
+      "writability_score": 42,
+      "heat_score": 80,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 80,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "数字科普",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 80,
+        "engagement": 245966,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "一杯奶茶，47克糖？记者实测8款现制饮品，含糖量超乎你的想象",
+        "controversy_hint": "以个人体验为主，不宜推广为普适结论"
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "writability_below_threshold"
+        ]
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 42,
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "writability_below_threshold"
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "b7a556121eadf1f8",
+          "claim": "一杯奶茶，47克糖？记者实测8款现制饮品，含糖量超乎你的想象",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 一杯奶茶，47克糖？记者实测8款现制饮品，含糖量超乎你的想象…」而非「一杯奶茶，47克糖？记者实测8款现制饮品 是对的」"
+      },
+      "deep_analysis": {
+        "credibility": "D级 · 仅钩子 · 不可当医学结论 — UGC 讨论热点，默认不可当医学结论",
+        "claim_checks": [
+          {
+            "text": "一杯奶茶，47克糖？记者实测8款现制饮品，含糖量超乎你的想象",
+            "status": "opinion",
+            "status_label": "观点",
+            "note": "UGC 讨论，宜作话题钩子",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1Rp4G6FEUY",
+          "核实作者/机构资质：央视新闻",
+          "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "用「网上很多人在讨论 一杯奶茶，47克糖？记者实测8款现制饮品，含糖量超乎你的想象…」而非「一杯奶茶，47克糖？记者实测8款现制饮品 是对的」",
+          "key_points": [
+            "一杯奶茶，47克糖？记者实测8款现制饮品，含糖量超乎你的想象",
+            "误导风险：标题观点可能被当成已验证医学结论"
+          ],
+          "caution": "标题观点可能被当成已验证医学结论；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 80",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "title_only",
+        "content_status": "title_only",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1Rp4G6FEUY",
+        "title": "一杯奶茶，47克糖？记者实测8款现制饮品，含糖量超乎你的想象",
+        "author": "央视新闻",
+        "excerpt": "",
+        "key_points": [
+          "来源视频标题：一杯奶茶，47克糖？记者实测8款现制饮品，含糖量超乎你的想象"
+        ],
+        "sources_used": [],
+        "note": "该视频无 CC 字幕/简介（BV1Rp4G6FEUY）。请用 `bili audio BV1Rp4G6FEUY` + `agent-reach transcribe` 转写，或 opencli bilibili subtitle / 人工看视频。",
+        "fetched_at": "2026-11-17T09:13:34",
+        "from_cache": false
+      }
+    },
+    {
+      "title": "把奶茶粉进行过滤，一半都是白糖？小伙亲测真假！",
+      "url": "https://www.bilibili.com/video/BV1de411w7FQ",
+      "platform": "bili",
+      "platform_label": "B站",
+      "author": "秋刀鱼的快乐生活",
+      "topic_score": 42,
+      "writability_score": 42,
+      "heat_score": 80,
+      "topic_pick": false,
+      "evidence_tier": "D",
+      "use_as": "hook_only",
+      "use_as_label": "仅钩子",
+      "authenticity_score": 50,
+      "importance_score": 80,
+      "importance_label": "高",
+      "adversarial_flags": [],
+      "creator_note": "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+      "category": "辟谣纠偏",
+      "snippet": "",
+      "propagation": {
+        "heat_score": 80,
+        "engagement": 408079,
+        "platform": "bili",
+        "platform_label": "B站"
+      },
+      "cognitive_conflict": {
+        "claim_summary": "把奶茶粉进行过滤，一半都是白糖？小伙亲测真假！",
+        "controversy_hint": "以个人体验为主，不宜推广为普适结论"
+      },
+      "writing_safety": {
+        "gate_passed": false,
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "writability_below_threshold"
+        ]
+      },
+      "gate": {
+        "passed": false,
+        "writability_score": 42,
+        "use_as": "hook_only",
+        "allowed_frame": "discussion_only",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ],
+        "veto_reasons": [
+          "writability_below_threshold"
+        ]
+      },
+      "claims": [
+        {
+          "claim_id": "366f390d2ec8651c",
+          "claim": "把奶茶粉进行过滤，一半都是白糖？小伙亲测真假！",
+          "claim_type": "topic_discussion",
+          "evidence_strength": "low",
+          "harm_risk": "low",
+          "misinterpretation_risk": "medium",
+          "allowed_frame": "discussion_only",
+          "forbidden_expressions": [],
+          "required_hedges": [
+            "目前证据有限",
+            "个体差异较大",
+            "请以复查和医嘱为准"
+          ]
+        }
+      ],
+      "editorial": {
+        "why_selected": "UGC 讨论热点，默认不可当医学结论",
+        "misleading_risk": "标题观点可能被当成已验证医学结论",
+        "safe_rewrite": "用「网上很多人在讨论 把奶茶粉进行过滤，一半都是白糖？小伙亲测真假！…」而非「把奶茶粉进行过滤，一半都是白糖？小伙亲测 是对的」"
+      },
+      "deep_analysis": {
+        "credibility": "D级 · 仅钩子 · 不可当医学结论 — UGC 讨论热点，默认不可当医学结论",
+        "claim_checks": [
+          {
+            "text": "把奶茶粉进行过滤，一半都是白糖？小伙亲测真假！",
+            "status": "opinion",
+            "status_label": "观点",
+            "note": "UGC 讨论，宜作话题钩子",
+            "verify_hint": "打开原贴核对，避免把讨论当医学结论"
+          }
+        ],
+        "verification_steps": [
+          "打开原贴核对标题与摘要主张：https://www.bilibili.com/video/BV1de411w7FQ",
+          "核实作者/机构资质：秋刀鱼的快乐生活",
+          "适合年轻受众切入点，内容须改写为「生活方式科普+就医提醒」",
+          "口播结尾须含非医疗建议声明（个体情况请咨询医生）"
+        ],
+        "script_angles": {
+          "hook": "用「网上很多人在讨论 把奶茶粉进行过滤，一半都是白糖？小伙亲测真假！…」而非「把奶茶粉进行过滤，一半都是白糖？小伙亲测 是对的」",
+          "key_points": [
+            "把奶茶粉进行过滤，一半都是白糖？小伙亲测真假！",
+            "误导风险：标题观点可能被当成已验证医学结论"
+          ],
+          "caution": "标题观点可能被当成已验证医学结论；须加缓冲：目前证据有限、个体差异较大、请以复查和医嘱为准"
+        },
+        "trend_context": "B站 热度 80",
+        "_source": "rule_engine",
+        "_ai": false
+      },
+      "source_preview": {
+        "status": "title_only",
+        "content_status": "title_only",
+        "type": "bilibili",
+        "url": "https://www.bilibili.com/video/BV1de411w7FQ",
+        "title": "把奶茶粉进行过滤，一半都是白糖？小伙亲测真假！",
+        "author": "秋刀鱼的快乐生活",
+        "excerpt": "把奶茶粉进行过滤，一半都是白糖？小伙亲测真假！",
+        "key_points": [
+          "来源视频标题：把奶茶粉进行过滤，一半都是白糖？小伙亲测真假！"
+        ],
+        "sources_used": [
+          "视频简介"
+        ],
+        "note": "该视频无 CC 字幕/简介（BV1de411w7FQ）。请用 `bili audio BV1de411w7FQ` + `agent-reach transcribe` 转写，或 opencli bilibili subtitle / 人工看视频。",
+        "fetched_at": "2026-11-17T09:13:37",
+        "from_cache": false
+      }
+    }
+  ],
+  "cross_platform": [
+    {
+      "title": "糖前期自救指南：6落地措施｜空腹血糖受损VS 糖耐量受损",
+      "platforms": [
+        "bili",
+        "youtube"
+      ],
+      "platform_labels": [
+        "B站",
+        "YouTube"
+      ],
+      "topic_score": 48,
+      "writability_score": 48,
+      "heat_score": 64,
+      "urls": [
+        "https://www.bilibili.com/video/BV1WhDiBvEHm",
+        "https://www.youtube.com/watch?v=X4TOj-Tul18"
+      ],
+      "use_as": "hook_only",
+      "platforms_in_cluster": [
+        "bili",
+        "youtube"
+      ]
+    }
+  ],
+  "agent_hints": {
+    "query_commands": [
+      "今日精选热点有哪些？",
+      "哪些选题可以写口播？",
+      "待核实清单是什么？",
+      "哪些是 hook_only 不能当医学结论？",
+      "Gate 否决了哪些高热度条目？"
+    ],
+    "top_script_angles": [
+      {
+        "title": "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压",
+        "platforms_suggest": "dy,bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "url": "https://www.youtube.com/watch?v=rDDfzPM4WQU",
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ]
+      },
+      {
+        "title": "糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？",
+        "platforms_suggest": "dy,bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "url": "https://www.bilibili.com/video/BV1f84y1q7aA",
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ]
+      },
+      {
+        "title": "只需三招，改善代谢综合征",
+        "platforms_suggest": "dy,bili",
+        "evidence_tier": "C",
+        "use_as": "verify_before_script",
+        "url": "https://www.bilibili.com/video/BV1UNZJYWErP",
+        "why_selected": "作者有医疗相关标识，仍须核对资质",
+        "misleading_risk": "可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+        "safe_rewrite": "对照可查数据说明，结尾提醒个体差异与就医",
+        "forbidden_expressions": [],
+        "required_hedges": [
+          "目前证据有限",
+          "个体差异较大",
+          "请以复查和医嘱为准"
+        ]
+      }
+    ],
+    "verify_list": [
+      "40-65岁中年人，血糖多少正常？多少算糖尿病？医生说这像高血压 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "糖耐量异常（糖尿病前期）都会变成糖尿病吗？什么时间？差别大吗？ — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "只需三招，改善代谢综合征 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "出现糖耐量异常，这样做可摆脱困扰，恢复正常 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "糖尿病患者或可告别终身服药，糖友分享“逆糖”经历 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "肚子大、血压、血糖、血脂高，警惕这种综合征 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "初发糖尿病，空腹血糖挺好，餐后两小时7.6，三小时血糖却到10.1 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿",
+      "糖尿病早餐| 血糖高早餐该怎么吃，知道这6点，让你的血糖稳稳的 — 可讲话题，关键数字须二次查证；建议找指南或医生审稿"
+    ],
+    "do_not_cite_as_fact": [
+      "【正经料理】只需要红茶、白糖和牛奶，就能在家做一杯焦糖奶茶，温暖这个冬天（仅钩子）",
+      "珍珠奶茶-横版【超级变变变】（仅钩子）",
+      "和医生们用动态血糖仪20天后，大家开始集体反思了！（无广真实分享）（仅钩子）",
+      "天天一杯奶茶也没胖？外星人直接把我拽进身体里看了一圈#奶茶##控糖##健康科普##涨知识#（仅钩子）",
+      "一杯奶茶，47克糖？记者实测8款现制饮品，含糖量超乎你的想象（仅钩子）",
+      "把奶茶粉进行过滤，一半都是白糖？小伙亲测真假！（仅钩子）"
+    ],
+    "disclaimer": "个体情况请咨询医生，不构成医疗建议。维护者非执业医生。"
+  }
+}
