@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-11-17",
+  "updated": "2026-11-19",
   "topics": [
     {
       "id": "disc-016",
@@ -13616,6 +13616,70 @@
       "use_as": "verify_before_script",
       "gate_passed": true,
       "gate_note": "不得使用「治愈/根治/摆脱终身服药」作结论句；缓解定义须回原文核对，个体差异必须点明"
+    },
+    {
+      "id": "disc-511",
+      "title": "体检空腹血糖 6.3，先别慌：三步确认到底是哪一步出了问题",
+      "angle": "今日 B站「公务员体检血糖超过多少就需复检」与「血糖没超过6.0，为啥入职体检不合格？」两条同题内容同时上榜（heat 62），说明「体检血糖卡线」是刚需问题，但库内多为泛泛的「体检血糖高怎么办」。可写版本只做三步：①先确认是不是真空腹（空腹 8–10 小时、前一天不熬夜不饮酒）；②单次空腹血糖不构成诊断，空腹 6.1–6.9mmol/L 属空腹血糖受损，需用 OGTT 2 小时血糖或 HbA1c 复核；③体检是否复检、能否通过由招录/用人单位规定决定，不是医学标准。",
+      "category": "症状预警",
+      "platform": "bili,dy",
+      "duration": "40-50s",
+      "heat": "medium",
+      "heat_source": "B站 2026-11-19 两条体检血糖话题（公务员体检复检 / 入职体检不合格）均进入今日血糖池，heat 62",
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1KmPeeCEPT",
+        "https://www.bilibili.com/video/BV17w4m1176V"
+      ],
+      "status": "discovered",
+      "script_status": "drafted",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-19",
+      "evidence_tier": "B",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "gate_note": "体检合格线由招录/用人单位规定，不得写成统一医学标准；空腹血糖受损阈值须回《中国2型糖尿病防治指南》核对；不得对「能不能通过体检」作承诺"
+    },
+    {
+      "id": "disc-512",
+      "title": "ACLM 2025 生活方式干预指南：糖尿病前期和 2 型糖尿病，先做哪 4 件事",
+      "angle": "今日 Exa 抓取到 ACLM（美国生活方式医学学会）2025 版「成人 2 型糖尿病与糖尿病前期生活方式干预指南」中文条目，同时 B站「只需三招，改善代谢综合征」维持 heat 70。可写版本：把指南落成 4 个可执行动作——减少精制碳水与超加工食品、每周 150 分钟中等强度运动加 2 次抗阻训练、减重 5%–10%、睡眠与压力管理；并说明这是人群层面的建议，个体方案需医生或营养师调整，不是「照着做就能停药」。",
+      "category": "饮食指南",
+      "platform": "bili,dy,xhs",
+      "duration": "45-60s",
+      "heat": "medium",
+      "heat_source": "Exa 2026-11-19 抓取 ACLM 2025 指南中文条目 + B站「改善代谢综合征」heat 70",
+      "source_urls": [
+        "https://www.yxj.org.cn/guide/details?id=38253"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-19",
+      "evidence_tier": "B",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "gate_note": "指南为国外学会版本，须核对原文与适用人群；不得演绎为「停药」「治愈」；运动处方对合并症人群存在禁忌，须提示就医评估"
+    },
+    {
+      "id": "disc-513",
+      "title": "糖前期要不要吃二甲双胍：中国 DPP 研究划出的边界",
+      "angle": "今日 X/YouTube 端「糖前期 8 个动作」「逆转胰岛素抵抗」内容 heat 82–89，但全是 D 级钩子；国内观众真正的疑问是「要不要吃药」。中国 DPP 研究（Diabetes Care，2026）在糖调节受损人群中比较二甲双胍联合生活方式与单纯生活方式，随访约 2 年，联合组缓解率约 31.5%，高于单纯生活方式组。可写版本：先讲生活方式是一线（减重 5%–7%），再讲药物属于医生评估后的选项（BMI、年龄、空腹血糖、妊娠糖尿病史等），明确「缓解不等于治愈」，不推荐自行购药。",
+      "category": "辟谣",
+      "platform": "bili,dy",
+      "duration": "45-60s",
+      "heat": "medium",
+      "heat_source": "X/YouTube 今日糖前期与胰岛素抵抗话题 heat 82–89（均为 hook_only）+ PubMed 中国 DPP 研究",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/42655937"
+      ],
+      "status": "discovered",
+      "script_status": "pending",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-19",
+      "evidence_tier": "B",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "gate_note": "涉药内容只讨论「是否需要用药由医生评估」，禁止出现剂量、购药渠道、替代就医表述；缓解率与缓解定义须回原文核对，不得写成疗效承诺"
     }
   ],
   "archive": [
