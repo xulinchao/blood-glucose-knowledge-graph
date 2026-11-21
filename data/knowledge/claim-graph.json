@@ -2,7 +2,7 @@
   "_meta": {
     "version": "1.0.0",
     "description": "主张记忆图谱：防重复谣言包装与误读升级",
-    "last_updated": "2026-11-19T09:06:54"
+    "last_updated": "2026-11-21T09:06:41"
   },
   "claims": {
     "40a2e10bd40d4026": {
@@ -1164,7 +1164,8 @@
         "【硬核终局】能提前10年预警疾病，体检偏偏不查？万人临床叫停揭开控糖最大黑幕！",
         "【附文稿】（控糖女神）饭后这样活动会帮你改变一切！",
         "空腹正常就代表控糖达标？这4个指标少看一个，都可能漏掉血糖波动！【安澜谈健康】#血糖管理 #糖尿病 #控糖 #空腹血糖 #餐后血糖 #糖化血红蛋白 #HbA1c #TIR #动态血糖监测",
-        "直播预告丨联合国糖尿病日：科学控糖，重在预防_内分泌科_长沙市中心医院"
+        "直播预告丨联合国糖尿病日：科学控糖，重在预防_内分泌科_长沙市中心医院",
+        "猫咪也会糖尿病！大家好这里是11岁糖尿病猫咪壮壮的控糖分享"
       ],
       "source_urls": [
         "https://bilibili.com/video/BV1",
@@ -1531,7 +1532,8 @@
         "https://www.bilibili.com/video/BV1PTsw6CEB6",
         "https://www.bilibili.com/video/BV14hsr68E2Y",
         "https://www.youtube.com/watch?v=IygcjUhN-IY",
-        "https://www.csszxyy.cn/index/keshi/detail/id/1816/type/news"
+        "https://www.csszxyy.cn/index/keshi/detail/id/1816/type/news",
+        "https://www.bilibili.com/video/BV1orsv6tE6a"
       ]
     },
     "388f07c245691283": {
@@ -1951,7 +1953,8 @@
         "糖前期自救指南：6落地措施｜空腹血糖受损VS 糖耐量受损"
       ],
       "source_urls": [
-        "https://www.bilibili.com/video/BV1WhDiBvEHm"
+        "https://www.bilibili.com/video/BV1WhDiBvEHm",
+        "https://www.youtube.com/watch?v=X4TOj-Tul18"
       ]
     },
     "c4cd85a825e3d28a": {
@@ -3854,7 +3857,8 @@
         "【每天5分钟】降糖、解困又减脂，饭后做很舒服！第二期。",
         "胰岛素失效后，第一次吃吡格列酮二甲双胍降糖药，降糖药效果如何呢！",
         "二甲双胍是如何发挥降糖作用改善II型糖尿病的呢？",
-        "【每天5分钟】饭后“上头”，立马做这个！降糖效果很好。"
+        "【每天5分钟】饭后“上头”，立马做这个！降糖效果很好。",
+        "糖尿病埋线-埋线降糖方"
       ],
       "source_urls": [
         "https://www.bilibili.com/video/BV1d6Tv67EXn",
@@ -3887,7 +3891,8 @@
         "https://www.bilibili.com/video/BV1qfWx6wEtW",
         "https://www.bilibili.com/video/BV1kR4y147NB",
         "https://www.bilibili.com/video/BV1134y1j7Rk",
-        "https://www.bilibili.com/video/BV1xgWC6ZEqN"
+        "https://www.bilibili.com/video/BV1xgWC6ZEqN",
+        "https://www.bilibili.com/video/BV1pfCjBFECJ"
       ]
     },
     "50d052b0aa04975e": {
@@ -5487,7 +5492,8 @@
         "中国疾病预防控制中心"
       ],
       "source_urls": [
-        "https://www.chinacdc.cn/jkkp/mxfcrb/fpdx/202504/t20250418_306066.html"
+        "https://www.chinacdc.cn/jkkp/mxfcrb/fpdx/202504/t20250418_306066.html",
+        "https://www.chinacdc.cn/jkkp/yyjk/jbyy/202611/t20261120_1843114.html"
       ]
     },
     "7f34ab01b56df4b6": {
@@ -35196,6 +35202,470 @@
       ],
       "source_urls": [
         "https://www.xa8yuan.com/default/detaile/261020185IweP"
+      ]
+    },
+    "b50a66555a8da93b": {
+      "claim_text": "糖尿病人真实的糖癍！多么痛心的记忆！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病人真实的糖癍！多么痛心的记忆！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1R1ZoBcEK4"
+      ]
+    },
+    "d06e8a0e66784f58": {
+      "claim_text": "体检前一天能喝酒吗？专家：大吃大喝后不仅会引起急性胰腺炎，还会造成血糖、肝功能检测的变化！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "体检前一天能喝酒吗？专家：大吃大喝后不仅会引起急性胰腺炎，还会造成血糖、肝功能检测的变化！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1mT4y1o7xx"
+      ]
+    },
+    "005e103eb3331abd": {
+      "claim_text": "糖尿病周围神经病变",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病周围神经病变"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1qyJSzNECV"
+      ]
+    },
+    "5b97f964f617303e": {
+      "claim_text": "体检发现尿微量白蛋白高？代表什么？是什么疾病的早期表现？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "体检发现尿微量白蛋白高？代表什么？是什么疾病的早期表现？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1vM4neGETy"
+      ]
+    },
+    "f95dbc4fd0d3fd60": {
+      "claim_text": "糖化血红蛋白临床应用",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖化血红蛋白临床应用"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1JJ411z7jB"
+      ]
+    },
+    "eb5330be37306176": {
+      "claim_text": "糖化血红蛋白可不可以用于诊断糖尿病？——医学检验讲师（成美恩）",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖化血红蛋白可不可以用于诊断糖尿病？——医学检验讲师（成美恩）"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1hY411j782"
+      ]
+    },
+    "0b7b8f027ed9a2e6": {
+      "claim_text": "三高 代谢综合征生活方式要改变",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "三高 代谢综合征生活方式要改变"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1R9GJzcEig"
+      ]
+    },
+    "7750420f56d75296": {
+      "claim_text": "5岁得糖如今大一，最高血糖48的她怎么样了",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "5岁得糖如今大一，最高血糖48的她怎么样了"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1SGyszjESV"
+      ]
+    },
+    "b507cf46a039b623": {
+      "claim_text": "不同年龄段血糖要求不同",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "不同年龄段血糖要求不同"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1b3t9zXEzj"
+      ]
+    },
+    "f9ac16d3cda40087": {
+      "claim_text": "35岁，找工作还是赌自己一次？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "35岁，找工作还是赌自己一次？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1VHyWzHEjh"
+      ]
+    },
+    "4c0a770f745e1576": {
+      "claim_text": "【第五届低碳医学大会】李光伟-生活方式干预预防糖尿病30年——大庆糖尿病预防研究",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "【第五届低碳医学大会】李光伟-生活方式干预预防糖尿病30年——大庆糖尿病预防研究"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1cZ421n7Ac"
+      ]
+    },
+    "06a87c2229474b17": {
+      "claim_text": "43岁男子暴瘦10斤，确诊糖尿病酮症，医生：这三个信号，可能是身体在报警",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "43岁男子暴瘦10斤，确诊糖尿病酮症，医生：这三个信号，可能是身体在报警"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Tdsh6YEza"
+      ]
+    },
+    "cdec944cd2c813e0": {
+      "claim_text": "糖尿病早期的8种表现！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病早期的8种表现！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1nR4y1k7G2"
+      ]
+    },
+    "e0f422642568c827": {
+      "claim_text": "空腹血糖多少算糖尿病，多少算糖尿病前期？",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "空腹血糖多少算糖尿病，多少算糖尿病前期？"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Kbsq6LE86"
+      ]
+    },
+    "e65b88e6a79383a2": {
+      "claim_text": "盘点不怕甜的主播，很容易得糖尿病！",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "盘点不怕甜的主播，很容易得糖尿病！"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1Vxs36HEQM"
+      ]
+    },
+    "710232d1e27c66a2": {
+      "claim_text": "伪膜性肠炎：腹泻、发热；一例尿毒症合并高血压、糖尿病患者诊治",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "伪膜性肠炎：腹泻、发热；一例尿毒症合并高血压、糖尿病患者诊治"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV11eLP68EFV"
+      ]
+    },
+    "a7ca35b5b9845336": {
+      "claim_text": "医学带背 8分钟速记 糖尿病的发病机制",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "医学带背 8分钟速记 糖尿病的发病机制"
+      ],
+      "source_urls": [
+        "https://www.bilibili.com/video/BV1D24y1Q7fz"
+      ]
+    },
+    "ade0f108e11ba8db": {
+      "claim_text": "Plasma proteomics identifies insulin resistance signatures predictive of card...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Plasma proteomics identifies insulin resistance signatures predictive of card..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2122450349663666637"
+      ]
+    },
+    "19b14e71f24d8961": {
+      "claim_text": "You can Reverse Insulin Resistance with these 4 Steps https://t.co/sGWdIsSgIh",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "You can Reverse Insulin Resistance with these 4 Steps https://t.co/sGWdIsSgIh"
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2118603128337530933"
+      ]
+    },
+    "449eed55d6460375": {
+      "claim_text": "Managing hyperglycemia in hospitalized adults is an important part of diabete...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Managing hyperglycemia in hospitalized adults is an important part of diabete..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2121943810364104731"
+      ]
+    },
+    "db86cc02329bab7d": {
+      "claim_text": "About 1 in 3 American adults has prediabetes.  More than 8 in 10 of them don'...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "About 1 in 3 American adults has prediabetes.  More than 8 in 10 of them don'..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2122087390474907859"
+      ]
+    },
+    "ca417ffdc27913bb": {
+      "claim_text": "It’s #BlackHistoryMonth  And here’s something from the world of #T1Diabetes i...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "It’s #BlackHistoryMonth  And here’s something from the world of #T1Diabetes i..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/1313383438502764545"
+      ]
+    },
+    "d469d7b8c2f35d69": {
+      "claim_text": "高海拔環境的低壓、低氧及生理壓力反應，可能改變人體葡萄糖代謝。  近年研究開始利用連續血糖監測（Continuous Glucose Monitoring...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "高海拔環境的低壓、低氧及生理壓力反應，可能改變人體葡萄糖代謝。  近年研究開始利用連續血糖監測（Continuous Glucose Monitoring..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2123783591184490561"
+      ]
+    },
+    "d4e8ecda654c0913": {
+      "claim_text": "Biotin megadosing nearly reverses diabetes in multiple studies.  9 mg / day c...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Biotin megadosing nearly reverses diabetes in multiple studies.  9 mg / day c..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2123185229636759750"
+      ]
+    },
+    "de96aeae4db17e47": {
+      "claim_text": "Most people still believe late-night carbs are “just food.”  They’re not.  Yo...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "Most people still believe late-night carbs are “just food.”  They’re not.  Yo..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2122655745912996325"
+      ]
+    },
+    "44e6265ad17435d4": {
+      "claim_text": "🍕 WHAT HAPPENS INSIDE YOUR BODY WHEN YOU EAT PIZZA?  Ever wondered what happe...",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "🍕 WHAT HAPPENS INSIDE YOUR BODY WHEN YOU EAT PIZZA?  Ever wondered what happe..."
+      ],
+      "source_urls": [
+        "https://x.com/i/status/2121841453185814621"
+      ]
+    },
+    "d8b7ea5e7f9488fb": {
+      "claim_text": "家庭健康服務 - 糖尿病篩查與「前期糖尿病」",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "家庭健康服務 - 糖尿病篩查與「前期糖尿病」"
+      ],
+      "source_urls": [
+        "https://www.fhs.gov.hk/tc_chi/mulit_med/000090.html"
+      ]
+    },
+    "425dd90940172fe3": {
+      "claim_text": "血糖正常≠没糖尿病，隐匿性高血糖更危险 - 河南经济网 - 河南经济报社",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "血糖正常≠没糖尿病，隐匿性高血糖更危险 - 河南经济网 - 河南经济报社"
+      ],
+      "source_urls": [
+        "https://www.hnjjbs.com/wskp/c076160b311773fb28894ef9c1761697.html"
+      ]
+    },
+    "32a1052f876e808f": {
+      "claim_text": "糖尿病管理：生活方式、日常起居如何影响血糖 - 妙佑医疗国际",
+      "claim_type": "topic_discussion",
+      "supporting_evidence": [],
+      "counter_evidence": [],
+      "common_misreads": [],
+      "safe_templates": [],
+      "published_versions": [],
+      "related_topics": [],
+      "titles_seen": [
+        "糖尿病管理：生活方式、日常起居如何影响血糖 - 妙佑医疗国际"
+      ],
+      "source_urls": [
+        "https://www.mayoclinic.org/zh-hans/diseases-conditions/diabetes/in-depth/diabetes-management/art-20047963"
       ]
     }
   }

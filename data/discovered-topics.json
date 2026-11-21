@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "updated": "2026-11-19",
+  "updated": "2026-11-21",
   "topics": [
     {
       "id": "disc-016",
@@ -13680,6 +13680,51 @@
       "use_as": "verify_before_script",
       "gate_passed": true,
       "gate_note": "涉药内容只讨论「是否需要用药由医生评估」，禁止出现剂量、购药渠道、替代就医表述；缓解率与缓解定义须回原文核对，不得写成疗效承诺"
+    },
+    {
+      "id": "disc-514",
+      "title": "同一顿饭，两台血糖仪给出两条曲线：先别给自己列「食物黑名单」",
+      "angle": "科普中国 2026-11-13 辟谣「健康人戴动态血糖仪就能精准控糖抗衰」属夸大，CGM 破圈 meanwhile 已成消费现象（有品牌披露健康人群购买占比约 40%，待核实）。库内 disc-470 只回答「健康人该不该戴」，本条回答更前置的问题「读数准不准」：CGM 测的是皮下组织液葡萄糖，不是血管里的血糖；随机交叉试验显示它对部分食物（如商业化果昔）系统性高估，空腹血糖的高估幅度存在个体差异，TIR 也可能被高估。可写版本：先讲设备效度边界，再讲「峰值 = 设备读数 + 身体反应」，最后落到「别用一天曲线给食物判死刑，调药方案交给医生」。",
+      "category": "数字科普",
+      "platform": "bili,dy,xhs",
+      "duration": "45-60s",
+      "heat": "medium",
+      "heat_source": "科普中国科学辟谣 2026-11-13「健康人戴动态血糖仪就能精准控糖抗衰？」；哥德堡大学 2026 证据综述；CGM 随机交叉试验（系统性高估血糖）；CGM 消费破圈（2026Q2，健康人群购买占比约 40%，品牌披露待核实）",
+      "source_urls": [
+        "https://piyao.kepuchina.cn/h5/rumordetail?id=rERw",
+        "https://www.gu.se/en/news/no-evidence-that-continuous-glucose-monitors-improve-health-in-people-without-diabetes",
+        "https://rcastoragev2.blob.core.windows.net/4bdcff10db84796f373acb25fda586a1/main.pdf"
+      ],
+      "status": "discovered",
+      "script_status": "drafted",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-21",
+      "evidence_tier": "B",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "gate_note": "不得给出统一 MARD 数值（须回说明书或原文）；不得否定 CGM 在糖尿病人群的临床价值；禁止「智商税」等绝对化定性；「系统性高估」须注明来自特定试验与特定食物，不得推广为所有食物"
+    },
+    {
+      "id": "disc-515",
+      "title": "血糖正常≠万事大吉：胰岛素抵抗的 5 个身体信号，该查什么不该自己猜",
+      "angle": "晋城市政府门户 2026-11-13 健康提示《早期可能全无症状！身体有这 5 个表现，要重视了》，与 Exa 今日抓到的丁香医生「胰岛素抵抗怎么办」、新华网「解开胰岛素抵抗之惑」同日出现。库内 disc-484 / disc-494 讲机制（脂肪细胞），本条讲「可观察信号 + 就医路径」：腹型肥胖且减重困难、餐前心慌手抖出汗想吃甜、颈腋下黑棘皮、女性月经紊乱与反复痤疮、血脂尿酸肝酶同高。可写版本强调这是「提示就医的信号，不是自诊断标准」：是否查空腹胰岛素、是否算胰岛素抵抗，须医生结合血糖血脂尿酸判断，还要排除多囊、甲减、库欣等；能自己做的只有换主食结构、增加活动、减重。",
+      "category": "症状预警",
+      "platform": "bili,dy",
+      "duration": "45-60s",
+      "heat": "medium",
+      "heat_source": "晋城市人民政府 2026-11-13 健康提示（5 个表现）；Exa 2026-11-21 抓取丁香医生「胰岛素抵抗」条目与新华网「解开胰岛素抵抗之惑」",
+      "source_urls": [
+        "https://jcgov.gov.cn/dtxx/zxts/202611/t20261113_2411654.shtml",
+        "https://m.dxy.com/disease/10925/detail/2"
+      ],
+      "status": "discovered",
+      "script_status": "drafted",
+      "publish_status": "pending",
+      "discovered_date": "2026-11-21",
+      "evidence_tier": "B",
+      "use_as": "verify_before_script",
+      "gate_passed": true,
+      "gate_note": "黑棘皮等体征须注明可能与其他疾病相关，不得据外观自诊；HOMA-IR 不得给统一阈值；不得承诺「逆转」；涉及多囊/甲减/库欣须提示专科就诊"
     }
   ],
   "archive": [
